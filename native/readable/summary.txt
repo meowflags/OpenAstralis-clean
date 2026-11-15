@@ -1,0 +1,6 @@
+files 328
+call slots resolved 656, files left unbound 49
+bound to an import 656, to a code pointer 0
+operands named from the image 386, still opaque 213
+sub_ renamed 857, sub_ left 196
+exports 498, function starts 342822, iat slots 404

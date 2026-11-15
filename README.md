@@ -289,6 +289,20 @@ JNI functions (the whole `sun.security.mscapi` family among them), the 30
 highest in-degree functions, 24 unnamed `.text` samples, and 8 `.vmp0` chunks
 that all decompile to a `JUMPOUT` five bytes into themselves.
 
+`native/readable/` is the same 328 files with the addresses resolved against the
+image instead of printed raw. Two rules do the work: a `sub_1XXXXXXXX` operand is
+an RVA, so it is looked up in the 498 exports and the 342,822 `.pdata` starts;
+and a `MEMORY[0x…]()` call slot is taken from the function's own bytes, because
+`tools/normalize_native.py` decodes every `call/jmp [rip+d]` and `[r14+d]` in the
+window with capstone and matches the slot against the import table or a code
+pointer, in listing order. Result: 857 of 1,053 `sub_` operands get a name, 656
+call slots become `__imp_WS2_32.dll!#7` or
+`__imp_api-ms-win-crt-heap-l1-1-0.dll!free`, 386 operands resolve to a `.text`
+function, and the 213 left carry their RVA plus the Java string they point at
+when that is what they are. The printed operand is not trusted for this: it
+changes base between windows, and on `getIpDontFragment0` it reads `0x799F8`
+where the real slot is `0x132D39F8`.
+
 `.vmp0` is the part that gets misread. It is not a bytecode VM: it opens with
 `u32 294,735` and a 1.77 MB table of `{u32 rva, u16 length}` records describing a
 6.6 MB band of code, and the code there is *mutated in place* — `xor`/`not`/
@@ -399,6 +413,7 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `tools/carve_window.py` | cut `.text`/`.vmp0` windows as flat binaries for a decompiler, with per-window `.pdata` starts |
 | `tools/decompile_native.py` | sort Hex-Rays output into `entry/`, `jdk/`, `runtime/`, `samples/`, `vmp0/` |
 | `tools/analyze_vmp0.py` | decode all 294,735 `.vmp0` chunks, measure terminators, targets and dead registers |
+| `tools/normalize_native.py` | resolve `sub_` and `MEMORY[...]` operands to names, writing `native/readable/` |
 | `mapping/offsets.json` | 3,897 folded constants |
 | `mapping/modules.tsv` | 91 module classes: category, settings, inferred feature |
 | `mapping/modules.proguard.txt` | the 74 identified renames, importable into Recaf |
@@ -409,6 +424,7 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `native/dump/` | `pe.txt`, `exports.tsv`, `imports.tsv`, function counts |
 | `native/devirt/` | `callgraph_top.tsv`, `import_calls.tsv`, `iat_sites.tsv`, the decoded `.vmp0` table |
 | `native/decompiled/` | 328 Hex-Rays functions: client entry points, JDK JNI, hot runtime, samples, `.vmp0` chunks |
+| `native/readable/` | the same 328 with `sub_` and `MEMORY[...]` resolved to export and import names |
 | `native/bodies/`, `native/registry/` | 16 devirtualized bodies, symbol tables |
 | `src/` | 518 decompiled classes, 74 under their real module name |
 | `reconstruct/26.2/scripting/` | 55 files of the 2.2.6 scripting API, the only bytecode in the image |
@@ -464,6 +480,7 @@ tools. No network access is required.
 | host resolves exports itself | `sub_1400071E0` decompiled: PE headers, export name array, ordinal table; called four times from `sub_140001BA0` |
 | host does not import the loader | 13 imports enumerated in IDA, `LoadLibraryW` and `GetProcAddress` absent |
 | client type inventory | `tools/image_inventory.py`, deterministic scan, refuses to finish if the marker `com/astralis/scripting/Script` is missing |
+| `native/readable/` names are right | the slot for each `MEMORY[...]()` is re-decoded from the function bytes, and the bound count equals the listing count in 279 of 328 files; the 49 that disagree keep their operands unresolved rather than guessed |
 
 ---
 
@@ -703,6 +720,20 @@ cliente, 264 funciones JNI del JDK (toda la familia `sun.security.mscapi`
 incluida), las 30 de más in-degree, 24 muestras de `.text` sin nombre y 8
 fragmentos de `.vmp0` que descompilan a un `JUMPOUT` a cinco bytes de su inicio.
 
+`native/readable/` son los mismos 328 ficheros con las direcciones resueltas
+contra la imagen en vez de impresas en crudo. Dos reglas hacen el trabajo: un
+operando `sub_1XXXXXXXX` es una RVA, así que se busca en las 498 exportaciones y
+en los 342.822 inicios de `.pdata`; y un slot de llamada `MEMORY[0x…]()` se saca
+de los bytes de la propia función, porque `tools/normalize_native.py` decodifica
+con capstone cada `call/jmp [rip+d]` y `[r14+d]` de la ventana y casa el slot con
+la tabla de importaciones o con un puntero a código, en orden de listado.
+Resultado: 857 de 1.053 operandos `sub_` reciben nombre, 656 slots pasan a
+`__imp_WS2_32.dll!#7` o `__imp_api-ms-win-crt-heap-l1-1-0.dll!free`, 386 operandos
+resuelven a una función de `.text`, y los 213 restantes conservan su RVA y la
+cadena Java a la que apuntan cuando es eso lo que son. El operando impreso no se
+usa para esto: cambia de base entre ventanas, y en `getIpDontFragment0` pone
+`0x799F8` donde el slot real es `0x132D39F8`.
+
 `.vmp0` es la parte que se malinterpreta. No es una VM de bytecode: empieza con
 `u32 294.735` y una tabla de 1,77 MB de registros `{u32 rva, u16 length}` que
 describen un cinturón de 6,6 MB de código, y el código de ahí está *mutado en
@@ -794,11 +825,13 @@ sale como `<redacted:discord-bot-token>`.
 | `tools/carve_window.py` | corta ventanas de `.text`/`.vmp0` como binario plano, con los inicios de `.pdata` de cada ventana |
 | `tools/decompile_native.py` | ordena la salida de Hex-Rays en `entry/`, `jdk/`, `runtime/`, `samples/`, `vmp0/` |
 | `tools/analyze_vmp0.py` | decodifica los 294.735 fragmentos de `.vmp0` y mide terminadores, destinos y registros muertos |
+| `tools/normalize_native.py` | resuelve operandos `sub_` y `MEMORY[...]` a nombres y escribe `native/readable/` |
 | `mapping/image_inventory.json` | inventario de tipos y recursos de `astralis.dll` |
 | `mapping/image26/` | volcado 26.2: 16.263 tipos de MC, 1.483 del cliente, 593 hooks, 85 manifiestos, 202.366 nombres, 105.012 descriptores |
 | `native/dump/` | `pe.txt`, `exports.tsv`, `imports.tsv`, recuentos de funciones |
 | `native/devirt/` | `callgraph_top.tsv`, `import_calls.tsv`, `iat_sites.tsv`, la tabla de `.vmp0` decodificada |
 | `native/decompiled/` | 328 funciones de Hex-Rays: entradas del cliente, JNI del JDK, runtime caliente, muestras y fragmentos de `.vmp0` |
+| `native/readable/` | las mismas 328 con `sub_` y `MEMORY[...]` resueltos a nombres de exportación e importación |
 | `native/bodies/`, `native/registry/` | 16 cuerpos devirtualizados y tablas de símbolos |
 | `src/` | 518 clases descompiladas, 74 con su nombre real de módulo |
 | `reconstruct/26.2/scripting/` | 55 ficheros de la API de scripting 2.2.6, el único bytecode de la imagen |

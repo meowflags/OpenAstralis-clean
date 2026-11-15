@@ -229,6 +229,7 @@ función por cada inicio de la tabla `.pdata` y se pasa por Hex-Rays.
 | con nombre de exportación | 420 |
 | fragmentos que Hex-Rays no puede unir (`JUMPOUT`) | 652 |
 | publicadas en `native/decompiled/` | 328 |
+| normalizadas en `native/readable/` | las mismas 328 |
 
 Lo publicado se reparte en 2 puntos de entrada del cliente, 264 funciones JNI del
 JDK (`Java_*`, incluida toda la familia `sun.security.mscapi`), 30 funciones del
@@ -238,14 +239,21 @@ fragmentos de `.vmp0`.
 `serenity_client_bind` (`0x1e43d00`, 992 bytes) es el ejemplo corto: comprueba
 `a4` (el `Isolate`), hace un CAS de 3 a 1 sobre `[a4+0x14]` y llama a tres
 helpers de `.text` (`0x1eb6ce0`, `0x1eb6d20`, `0x277f4a0`) antes de devolver un
-`u32`. Los helpers salen como `MEMORY[0x...]()` porque viven fuera de la ventana
-cargada: el descompilador no tiene su código, no es una llamada indirecta.
+`u32`. Los helpers salen como `MEMORY[0x...]()` en `native/decompiled/` porque
+viven fuera de la ventana cargada: el descompilador no tiene su código, no es una
+llamada indirecta. En `native/readable/` esos operandos ya son `sub_1EB6CE0`,
+`sub_1EB6D20` y `sub_277F4A0`.
 
-Un detalle que hay que leer bien: Hex-Rays imprime relativo a la base de la
-ventana todo operando por encima de ella y absoluto el que queda por debajo. La
-cabecera de cada fichero publica su `window base`, así que `MEMORY[0x79BF8]` en
-`loadKeysOrCertificateChains` es `0x19325a000 + 0x79BF8 = 0x1932d3bf8`, o sea
-`rva 0x132d3bf8` en `native/dump/imports.tsv` (`__acrt_iob_func`).
+Un detalle que hay que leer bien: Hex-Rays imprime el operando de memoria
+**relativo a una base que cambia entre ventanas**, y esa base no es la que
+publica la cabecera en todos los casos. `MEMORY[0x79BF8]` en
+`loadKeysOrCertificateChains` sale de `0x19325a000 + 0x79BF8 = 0x1932d3bf8`
+(`rva 0x132d3bf8`, `__acrt_iob_func` en `native/dump/imports.tsv`), pero en
+`getIpDontFragment0` el mismo estilo de operando, `0x799F8`, da
+`0x19325a000 + 0x799F8 = 0x1932d39f8` y ahí sí está `WS2_32.#7`, mientras que
+sumarle la base de su propia ventana (`0x1932a0c98`) cae en `.text` y no lleva a
+nada. La conclusión práctica: el operando impreso sirve para leer un caso
+concreto, no como dirección.
 
 `.vmp0`: los 8 fragmentos elegidos entre los 181 que empiezan con prólogo y
 tienen 96 bytes o más dan todos la misma forma al descompilar:
@@ -257,6 +265,28 @@ void sub_1F289FD7A() { JUMPOUT(0x1F289FD7FLL); }
 El salto cae 5 bytes dentro del propio fragmento. Eso es la mutación vista desde
 Hex-Rays: el flujo no se reconstruye leyendo, y por eso el repositorio no publica
 un listado de `.vmp0` como si fuera código normal.
+
+### Normalización: `native/readable/`
+
+`tools/normalize_native.py` no cree el operando impreso. Para cada fichero
+desensambla los bytes de la ventana con capstone y toma los slots de llamada
+reales (`call/jmp [rip+d]`, `call/jmp [r14+d]`), los casa en orden con la tabla
+de importaciones o los desreferencia a un puntero de código, y sustituye cada
+`MEMORY[0x…]` del listado por el nombre que corresponde. Los `sub_1XXXXXXXX` se
+buscan como RVA en las 498 exportaciones y en los 342.822 inicios de `.pdata`.
+
+| | |
+|---|---|
+| operandos `sub_` con nombre | 857 de 1.053 |
+| slots de llamada `__imp_dll!func` | 656 |
+| operandos resueltos a inicio de función | 386 |
+| operandos que siguen opacos (con RVA y cadena si la hay) | 213 |
+| ficheros | 328 |
+
+Los 213 que quedan son lecturas de datos, no llamadas: se anotan con su RVA y,
+cuando los cuatro bytes anteriores son una longitud y el contenido es imprimible,
+con la cadena Java a la que apuntan. El listado normalizado se publica en
+`native/readable/` con el mismo árbol que `native/decompiled/`.
 
 ### Lo que la decompilación no arregla
 
@@ -336,6 +366,10 @@ python tools/carve_window.py work/exe/Runtime/astralis.dll work/carve \
 python tools/decompile_native.py --raw work/decompiled/raw \
        --raw work/decompiled/vmp0raw --out native/decompiled \
        --image work/exe/Runtime/astralis.dll --hot work/native/hot_functions.tsv
+
+# normalización: direcciones -> nombres, sin IDA
+python tools/normalize_native.py work/exe/Runtime/astralis.dll \
+       native/decompiled native/readable
 ```
 
 Las dos primeras mitades son stdlib puro. `devirt_native.py` usa capstone si está
