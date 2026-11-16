@@ -18,13 +18,11 @@ public class dfr {
       long a = dfr.a ^ 41083207471392L;
       int[] ax = ClientSetup.abu();
       Queue var10000 = cjw;
-      if (ax != null) {
-         if (cjw.isEmpty()) {
-            return;
-         }
-
-         var10000 = cjw;
+      if (cjw.isEmpty()) {
+         return;
       }
+
+      var10000 = cjw;
 
       Runnable[] axx = var10000.toArray(new Runnable[0]);
       cjw.clear();
@@ -36,9 +34,6 @@ public class dfr {
             var9.printStackTrace();
          }
 
-         if (ax == null) {
-            break;
-         }
       }
    }
 }

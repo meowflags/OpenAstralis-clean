@@ -33,9 +33,6 @@ public class WatchdogFull extends hcr {
       for (class_2596<?> axx : a.dsb) {
          gix.fcd(axx);
          a.dsb.remove(axx);
-         if (ax == null) {
-            break;
-         }
       }
    }
 
@@ -46,60 +43,45 @@ public class WatchdogFull extends hcr {
       if (a.cud() != gpy.POST) {
          label123: {
             class_746 var10000 = chi.field_1724;
-            if (axx != null) {
-               if (chi.field_1724 == null) {
-                  break label123;
-               }
-
-               var10000 = chi.field_1724;
+            if (chi.field_1724 == null) {
+               break label123;
             }
+
+            var10000 = chi.field_1724;
 
             int var14 = var10000.field_6012;
-            if (axx != null) {
-               if (var10000.field_6012 <= 1) {
-                  break label123;
-               }
-
-               var14 = chi.field_1724.method_31549().field_7478;
+            if (var10000.field_6012 <= 1) {
+               break label123;
             }
 
-            if (axx != null) {
-               if (var14 != 0) {
-                  break label123;
-               }
+            var14 = chi.field_1724.method_31549().field_7478;
 
-               var14 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
+            if (var14 != 0) {
+               break label123;
             }
 
-            if (axx != null) {
-               if (var14 != 0) {
-                  break label123;
-               }
+            var14 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
 
-               var14 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
+            if (var14 != 0) {
+               break label123;
             }
 
-            if (axx != null) {
-               if (var14 != 0) {
+            var14 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
+
+            if (var14 != 0) {
+               return;
+            }
+
+            var14 = chi.field_1724.method_24828();
+
+            label116: {
+               if (var14 == 0) {
                   return;
                }
 
-               var14 = chi.field_1724.method_24828();
-            }
+               var15 = a;
 
-            label116: {
-               if (axx != null) {
-                  if (var14 == 0) {
-                     return;
-                  }
-
-                  var15 = a;
-                  if (axx == null) {
-                     break label116;
-                  }
-
-                  var14 = a.did;
-               }
+               var14 = a.did;
 
                if (var14 == 0) {
                   return;
@@ -116,13 +98,7 @@ public class WatchdogFull extends hcr {
             for (class_2596<?> axxxxxx : a.dsb) {
                gix.fcd(axxxxxx);
                a.dsb.remove(axxxxxx);
-               if (axx == null) {
-                  return;
-               }
 
-               if (axx == null) {
-                  break;
-               }
             }
 
             chi.field_1724.method_18800(axxx, axxxx, axxxxx);
@@ -132,9 +108,6 @@ public class WatchdogFull extends hcr {
          for (class_2596<?> axxx : a.dsb) {
             gix.fcd(axxx);
             a.dsb.remove(axxx);
-            if (axx == null) {
-               break;
-            }
          }
       }
    }
@@ -146,38 +119,30 @@ public class WatchdogFull extends hcr {
       if (a.cud() == gpy.RECEIVE) {
          label118: {
             class_746 var10000 = chi.field_1724;
-            if (axx != null) {
-               if (chi.field_1724 == null) {
-                  break label118;
-               }
-
-               var10000 = chi.field_1724;
+            if (chi.field_1724 == null) {
+               break label118;
             }
+
+            var10000 = chi.field_1724;
 
             int var9 = var10000.field_6012;
-            if (axx != null) {
-               if (var10000.field_6012 <= 1) {
-                  break label118;
-               }
-
-               var9 = chi.field_1724.method_31549().field_7478;
+            if (var10000.field_6012 <= 1) {
+               break label118;
             }
 
-            if (axx != null) {
-               if (var9 != 0) {
-                  break label118;
-               }
+            var9 = chi.field_1724.method_31549().field_7478;
 
-               var9 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
+            if (var9 != 0) {
+               break label118;
             }
 
-            if (axx != null) {
-               if (var9 != 0) {
-                  break label118;
-               }
+            var9 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
 
-               var9 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
+            if (var9 != 0) {
+               break label118;
             }
+
+            var9 = ((dtd)ClientSetup.gqy().aws().diy(dtd.class)).dsv();
 
             if (var9 != 0) {
                return;
@@ -185,40 +150,32 @@ public class WatchdogFull extends hcr {
 
             class_2596 axxx = a.bed();
             boolean var10 = axxx instanceof class_2743;
-            if (axx != null) {
-               if (var10) {
-                  class_2743 axxxx = (class_2743)axxx;
-                  int var11 = axxxx.method_11818();
-                  if (axx != null) {
-                     if (var11 != chi.field_1724.method_5628()) {
-                        return;
-                     }
-
-                     a.did = true;
-                     a.dsb.add(a.bed());
-                  }
-
-                  a.gmm(true);
-               }
-
-               var10 = a.bed() instanceof class_6373;
-            }
-
-            if (axx != null) {
-               if (!var10) {
+            if (var10) {
+               class_2743 axxxx = (class_2743)axxx;
+               int var11 = axxxx.method_11818();
+               if (var11 != chi.field_1724.method_5628()) {
                   return;
                }
 
-               var10 = a.did;
-            }
-
-            if (axx != null) {
-               if (!var10) {
-                  return;
-               }
-
+               a.did = true;
                a.dsb.add(a.bed());
+
+               a.gmm(true);
             }
+
+            var10 = a.bed() instanceof class_6373;
+
+            if (!var10) {
+               return;
+            }
+
+            var10 = a.did;
+
+            if (!var10) {
+               return;
+            }
+
+            a.dsb.add(a.bed());
 
             a.gmm(true);
             return;
@@ -227,9 +184,6 @@ public class WatchdogFull extends hcr {
          for (class_2596<?> axxxx : a.dsb) {
             gix.fcd(axxxx);
             a.dsb.remove(axxxx);
-            if (axx == null) {
-               break;
-            }
          }
       }
    }
@@ -245,9 +199,6 @@ public class WatchdogFull extends hcr {
          class_2596<?> axxx = (class_2596<?>)var5.next();
          gix.fcd(axxx);
          a.dsb.remove(axxx);
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -268,30 +219,4 @@ public class WatchdogFull extends hcr {
       d = var5;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

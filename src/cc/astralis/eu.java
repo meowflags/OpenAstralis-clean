@@ -483,13 +483,11 @@ public class eu {
    public static void ady() {
       int[] var2 = ClientSetup.abu();
       ImFont var10000 = dbl;
-      if (var2 != null) {
-         if (dbl == null) {
-            return;
-         }
-
-         var10000 = dbl;
+      if (dbl == null) {
+         return;
       }
+
+      var10000 = dbl;
 
       ImGui.pushFont(var10000);
    }

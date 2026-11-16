@@ -21,23 +21,19 @@ public enum hcp {
       int[] var3 = ClientSetup.abu();
       hcp var10000 = a;
       hcp var10001 = Axe;
-      if (var3 != null) {
-         if (a == Axe) {
-            return true;
-         }
-
-         var10000 = a;
-         var10001 = Shovel;
+      if (a == Axe) {
+         return true;
       }
 
-      if (var3 != null) {
-         if (var10000 == var10001) {
-            return true;
-         }
+      var10000 = a;
+      var10001 = Shovel;
 
-         var10000 = a;
-         var10001 = Pickaxe;
+      if (var10000 == var10001) {
+         return true;
       }
+
+      var10000 = a;
+      var10001 = Pickaxe;
 
       return var10000 == var10001;
    }
@@ -47,23 +43,19 @@ public enum hcp {
       int[] var3 = ClientSetup.abu();
       hcp var10000 = a;
       hcp var10001 = Shovel;
-      if (var3 != null) {
-         if (a == Shovel) {
-            return 0;
-         }
-
-         var10000 = a;
-         var10001 = Pickaxe;
+      if (a == Shovel) {
+         return 0;
       }
 
-      if (var3 != null) {
-         if (var10000 == var10001) {
-            return 1;
-         }
+      var10000 = a;
+      var10001 = Pickaxe;
 
-         var10000 = a;
-         var10001 = Axe;
+      if (var10000 == var10001) {
+         return 1;
       }
+
+      var10000 = a;
+      var10001 = Axe;
 
       return var10000 == var10001 ? 2 : -1;
    }
@@ -164,30 +156,4 @@ public enum hcp {
       }
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

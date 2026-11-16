@@ -58,7 +58,7 @@ public class Backtrack extends guu {
    private static final long a = 139292788949018L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -95,90 +95,68 @@ public class Backtrack extends guu {
       long ax = Backtrack.a ^ 126046951648074L;
       int[] axx = ClientSetup.abu();
       amo var10000 = a;
-      if (axx != null) {
-         if (a.cud() != gpy.RECEIVE) {
-            return;
-         }
-
-         var10000 = a;
+      if (a.cud() != gpy.RECEIVE) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000.fmc()) {
-            return;
-         }
+      var10000 = a;
 
-         var10000 = a;
+      if (var10000.fmc()) {
+         return;
       }
+
+      var10000 = a;
 
       class_2596<?> axxx = var10000.bed();
       int var15 = axxx instanceof class_2797;
-      if (axx != null) {
-         if (var15 != 0) {
-            return;
-         }
-
-         var15 = axxx instanceof class_7472;
+      if (var15 != 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var15 != 0) {
-            return;
-         }
+      var15 = axxx instanceof class_7472;
 
-         var15 = axxx instanceof class_7439;
+      if (var15 != 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var15 != 0) {
-            return;
-         }
+      var15 = axxx instanceof class_7439;
 
-         var15 = axxx instanceof class_2708;
+      if (var15 != 0) {
+         return;
       }
+
+      var15 = axxx instanceof class_2708;
 
       label278: {
-         if (axx != null) {
-            if (var15 != 0) {
-               break label278;
-            }
-
-            var15 = axxx instanceof class_2661;
+         if (var15 != 0) {
+            break label278;
          }
 
-         if (axx != null) {
-            if (var15 != 0) {
-               break label278;
-            }
+         var15 = axxx instanceof class_2661;
 
-            var15 = axxx instanceof class_2749;
+         if (var15 != 0) {
+            break label278;
          }
+
+         var15 = axxx instanceof class_2749;
 
          label219: {
             label260: {
                label217:
-               if (axx != null) {
-                  if (var15 != 0) {
-                     float var26;
-                     var15 = (var26 = ((class_2749)axxx).method_11833() - 0.0F) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
-                     if (axx == null) {
-                        break label217;
-                     }
+               if (var15 != 0) {
+                  float var26;
+                  var15 = (var26 = ((class_2749)axxx).method_11833() - 0.0F) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
 
-                     if (var15 <= 0) {
-                        bpa.dhu(b<"m">(12470, 8303960946543382431L ^ ax));
-                        a.enu(true);
-                        return;
-                     }
+                  if (var15 <= 0) {
+                     bpa.dhu("release");
+                     a.enu(true);
+                     return;
                   }
-
-                  var16 = axxx;
-                  if (axx == null) {
-                     break label260;
-                  }
-
-                  var15 = axxx instanceof class_2767;
                }
+
+               var16 = axxx;
+
+               var15 = axxx instanceof class_2767;
 
                if (var15 == 0) {
                   break label219;
@@ -194,147 +172,120 @@ public class Backtrack extends guu {
          }
 
          Backtrack var17 = a;
-         if (axx != null) {
-            label157:
-            if (a.ctp != null) {
-               label199: {
-                  label198: {
-                     class_2596 var18 = axxx;
-                     if (axx != null) {
-                        if (!(axxx instanceof class_2684)) {
-                           break label198;
-                        }
-
-                        var18 = axxx;
-                     }
-
-                     if (((class_2684)var18).method_11645(chi.field_1687) == a.ctp) {
-                        var19 = true;
-                        break label199;
-                     }
+         label157:
+         if (a.ctp != null) {
+            label199: {
+               label198: {
+                  class_2596 var18 = axxx;
+                  if (!(axxx instanceof class_2684)) {
+                     break label198;
                   }
 
-                  var19 = false;
-               }
+                  var18 = axxx;
 
-               boolean axxxx;
-               label190: {
-                  label263: {
-                     axxxx = var19;
-                     var20 = axxx instanceof class_2777;
-                     if (axx != null) {
-                        if (var20 == 0) {
-                           break label263;
-                        }
-
-                        var20 = ((class_2777)axxx).comp_3237();
-                     }
-
-                     if (axx == null) {
-                        break label190;
-                     }
-
-                     if (var20 == a.ctp.method_5628()) {
-                        var20 = 1;
-                        break label190;
-                     }
-                  }
-
-                  var20 = 0;
-               }
-
-               label264: {
-                  boolean axxxxx = (boolean)var20;
-                  int var21 = axxxx;
-                  if (axx != null) {
-                     if (axxxx != 0) {
-                        break label264;
-                     }
-
-                     var21 = axxxxx;
-                  }
-
-                  if (axx == null) {
-                     return;
-                  }
-
-                  if (var21 == 0) {
-                     break label157;
+                  if (((class_2684)var18).method_11645(chi.field_1687) == a.ctp) {
+                     var19 = true;
+                     break label199;
                   }
                }
 
-               class_243 axxxxxx;
-               label173: {
-                  label265: {
-                     axxxxxx = null;
-                     boolean var22 = axxx instanceof class_2684;
-                     if (axx != null) {
-                        label169: {
-                           if (var22) {
-                              var23 = axxx;
-                              if (axx == null) {
-                                 break label169;
-                              }
+               var19 = false;
+            }
 
-                              class_2684 axxxxxxx = (class_2684)var23;
-                              if (a.cd != null) {
-                                 axxxxxx = a.cd.method_43489(axxxxxxx.method_36150(), axxxxxxx.method_36151(), axxxxxxx.method_36152());
-                                 break label173;
-                              }
-                           }
+            boolean axxxx;
+            label190: {
+               label263: {
+                  axxxx = var19;
+                  var20 = axxx instanceof class_2777;
+                  if (var20 == 0) {
+                     break label263;
+                  }
 
-                           var23 = axxx;
+                  var20 = ((class_2777)axxx).comp_3237();
+
+
+                  if (var20 == a.ctp.method_5628()) {
+                     var20 = 1;
+                     break label190;
+                  }
+               }
+
+               var20 = 0;
+            }
+
+            label264: {
+               boolean axxxxx = (boolean)var20;
+               int var21 = axxxx;
+               if (axxxx != 0) {
+                  break label264;
+               }
+
+               var21 = axxxxx;
+
+
+               if (var21 == 0) {
+                  break label157;
+               }
+            }
+
+            class_243 axxxxxx;
+            label173: {
+               label265: {
+                  axxxxxx = null;
+                  boolean var22 = axxx instanceof class_2684;
+                  label169: {
+                     if (var22) {
+                        var23 = axxx;
+
+                        class_2684 axxxxxxx = (class_2684)var23;
+                        if (a.cd != null) {
+                           axxxxxx = a.cd.method_43489(axxxxxxx.method_36150(), axxxxxxx.method_36151(), axxxxxxx.method_36152());
+                           break label173;
                         }
-
-                        if (axx == null) {
-                           break label265;
-                        }
-
-                        var22 = var23 instanceof class_2777;
-                     }
-
-                     if (!var22) {
-                        break label173;
                      }
 
                      var23 = axxx;
                   }
 
-                  class_2777 axxxxxxx = (class_2777)var23;
-                  axxxxxx = new class_243(
-                     axxxxxxx.comp_3238().comp_3148().field_1352, axxxxxxx.comp_3238().comp_3148().field_1351, axxxxxxx.comp_3238().comp_3148().field_1350
-                  );
+
+                  var22 = var23 instanceof class_2777;
+
+                  if (!var22) {
+                     break label173;
+                  }
+
+                  var23 = axxx;
                }
 
-               if (axxxxxx != null) {
-                  class_7422 var24 = a.cd;
-                  if (axx != null) {
-                     if (a.cd == null) {
-                        a.cd = new class_7422();
-                     }
-
-                     var24 = a.cd;
-                  }
-
-                  var24.method_43494(axxxxxx);
-                  double axxxxxxx = axxxxxx.method_1025(chi.field_1724.method_73189());
-                  double axxxxxxxx = a.ctp.method_5858(chi.field_1724);
-                  double var27;
-                  int var25 = (var27 = axxxxxxx - axxxxxxxx) == 0.0 ? 0 : (var27 < 0.0 ? -1 : 1);
-                  if (axx == null) {
-                     return;
-                  }
-
-                  if (var25 < 0) {
-                     a.enu();
-                     return;
-                  }
-               }
+               class_2777 axxxxxxx = (class_2777)var23;
+               axxxxxx = new class_243(
+                  axxxxxxx.comp_3238().comp_3148().field_1352, axxxxxxx.comp_3238().comp_3148().field_1351, axxxxxxx.comp_3238().comp_3148().field_1350
+               );
             }
 
-            a.gmm(true);
-            var17 = a;
+            if (axxxxxx != null) {
+               class_7422 var24 = a.cd;
+               if (a.cd == null) {
+                  a.cd = new class_7422();
+               }
+
+               var24 = a.cd;
+
+               var24.method_43494(axxxxxx);
+               double axxxxxxx = axxxxxx.method_1025(chi.field_1724.method_73189());
+               double axxxxxxxx = a.ctp.method_5858(chi.field_1724);
+               double var27;
+               int var25 = (var27 = axxxxxxx - axxxxxxxx) == 0.0 ? 0 : (var27 < 0.0 ? -1 : 1);
+
+               if (var25 < 0) {
+                  a.enu();
+                  return;
+               }
+            }
          }
+
+         a.gmm(true);
+         var17 = a;
 
          var17.etp.add(new arw(axxx, System.currentTimeMillis()));
          return;
@@ -349,23 +300,16 @@ public class Backtrack extends guu {
       int[] var10000 = ClientSetup.abu();
       class_1297 axx = a.hfw();
       int[] axxx = var10000;
-      if (axxx != null) {
-         if (axx == null) {
-            return;
-         }
 
-         a.hhe = System.currentTimeMillis();
-         a.exx = a.fhx.nextInt(101);
-      }
+      a.hhe = System.currentTimeMillis();
+      a.exx = a.fhx.nextInt(101);
 
       Backtrack var6 = a;
-      if (axxx != null) {
-         if (!a.hba.emb("Attack")) {
-            return;
-         }
-
-         var6 = a;
+      if (!a.hba.emb("Attack")) {
+         return;
       }
+
+      var6 = a;
 
       var6.fix(axx);
    }
@@ -374,52 +318,36 @@ public class Backtrack extends guu {
    public void cop(fnt event) {
       long ax = Backtrack.a ^ 103292497763050L;
       int[] axx = ClientSetup.abu();
-      if (axx != null) {
-         if (a.cud() == gpy.POST) {
-            return;
-         }
-
-         a.efe(a.aoz + "ms");
+      if (a.cud() == gpy.POST) {
+         return;
       }
+
+      a.efe(a.aoz + "ms");
 
       label71: {
          Backtrack var6;
          label75: {
             boolean var10000 = a.hba.emb("Range");
-            if (axx != null) {
-               label60:
-               if (var10000) {
-                  label65: {
-                     class_1309 axxx = bav.elv(false, false, false, true, false, a.dte.dnp().floatValue()).getFirst();
-                     if (axx != null) {
-                        if (axxx == null) {
-                           break label65;
-                        }
+            label60:
+            if (var10000) {
+               label65: {
+                  class_1309 axxx = bav.elv(false, false, false, true, false, a.dte.dnp().floatValue()).getFirst();
 
-                        a.fix(axxx);
-                     }
+                  a.fix(axxx);
 
-                     if (axx != null) {
-                        break label60;
-                     }
-                  }
-
-                  a.fbf();
+                  break label60;
                }
 
-               var6 = a;
-               if (axx == null) {
-                  break label75;
-               }
-
-               var10000 = a.eiu();
+               a.fbf();
             }
+
+            var6 = a;
+
+            var10000 = a.eiu();
 
             if (var10000) {
                a.buu(false);
-               if (axx != null) {
-                  break label71;
-               }
+               break label71;
             }
 
             var6 = a;
@@ -433,13 +361,11 @@ public class Backtrack extends guu {
          return true;
       });
       Backtrack var7 = a;
-      if (axx != null) {
-         if (!a.cz()) {
-            return;
-         }
-
-         var7 = a;
+      if (!a.cz()) {
+         return;
       }
+
+      var7 = a;
 
       var7.aoz = a.fe();
    }
@@ -449,22 +375,18 @@ public class Backtrack extends guu {
       long ax = Backtrack.a ^ 126319906456998L;
       int[] axx = ClientSetup.abu();
       Backtrack var10000 = a;
-      if (axx != null) {
-         if (a.cd == null) {
-            return;
-         }
-
-         var10000 = a;
+      if (a.cd == null) {
+         return;
       }
+
+      var10000 = a;
 
       class_1297 var10 = var10000.ctp;
-      if (axx != null) {
-         if (var10000.ctp == null) {
-            return;
-         }
-
-         var10 = a.ctp;
+      if (var10000.ctp == null) {
+         return;
       }
+
+      var10 = a.ctp;
 
       class_4048 axxx = var10.method_18377(a.ctp.method_18376());
       double axxxx = axxx.comp_2185() / 2.0;
@@ -490,27 +412,20 @@ public class Backtrack extends guu {
             long ax = Backtrack.a ^ 120450238580846L;
             int[] axx = ClientSetup.abu();
             class_1297 var10001 = a;
-            if (axx != null) {
-               if (!(a instanceof class_1309)) {
-                  break label52;
-               }
-
-               var10001 = a;
+            if (!(a instanceof class_1309)) {
+               break label52;
             }
+
+            var10001 = a;
 
             class_1309 axxx = (class_1309)var10001;
             var6 = a.evs.dnp();
-            if (axx != null) {
-               if (var6 == 0) {
-                  break label52;
-               }
-
-               var6 = axxx.field_6235;
+            if (var6 == 0) {
+               break label52;
             }
 
-            if (axx == null) {
-               break label49;
-            }
+            var6 = axxx.field_6235;
+
 
             if (var6 >= a.gvk.dnp().intValue()) {
                var6 = 1;
@@ -540,100 +455,70 @@ public class Backtrack extends guu {
       int[] axxx = var10000;
       double var18;
       int var12 = (var18 = axx - a.dte.dnp().floatValue()) == 0.0 ? 0 : (var18 < 0.0 ? -1 : 1);
-      if (axxx != null) {
-         var12 = var12 <= 0 ? 1 : 0;
-      }
+      var12 = var12 <= 0 ? 1 : 0;
 
       boolean axxxx = (boolean)var12;
       int var13 = axxxx;
-      if (axxx != null) {
-         if (axxxx != 0) {
-            a.blj = System.currentTimeMillis();
-         }
-
-         long var19;
-         var13 = (var19 = System.currentTimeMillis() - a.blj - a.gsk.dnp().longValue()) == 0L ? 0 : (var19 < 0L ? -1 : 1);
+      if (axxxx != 0) {
+         a.blj = System.currentTimeMillis();
       }
 
-      if (axxx != null) {
-         var13 = var13 <= 0 ? 1 : 0;
-      }
+      long var19;
+      var13 = (var19 = System.currentTimeMillis() - a.blj - a.gsk.dnp().longValue()) == 0L ? 0 : (var19 < 0L ? -1 : 1);
+
+      var13 = var13 <= 0 ? 1 : 0;
 
       boolean axxxxx = (boolean)var13;
       int var14 = a.exx;
-      if (axxx != null) {
-         var14 = a.exx < a.bne.dnp().intValue() ? 1 : 0;
-      }
+      var14 = a.exx < a.bne.dnp().intValue() ? 1 : 0;
 
       boolean axxxxxx = (boolean)var14;
       boolean var15 = a.enf;
-      if (axxx != null) {
-         var15 = !a.enf;
-      }
+      var15 = !a.enf;
 
       boolean axxxxxxx = var15;
       long var20;
       int var16 = (var20 = System.currentTimeMillis() - a.hhe - a.gwc.dnp().longValue()) == 0L ? 0 : (var20 < 0L ? -1 : 1);
-      if (axxx != null) {
-         var16 = var16 <= 0 ? 1 : 0;
-      }
+      var16 = var16 <= 0 ? 1 : 0;
 
       boolean axxxxxxxx;
       axxxxxxxx = (boolean)var16;
       var17 = axxxx;
       label130:
-      if (axxx != null) {
-         if (axxxx == 0) {
-            var17 = axxxxx;
-            if (axxx == null) {
-               break label130;
-            }
+      if (axxxx == 0) {
+         var17 = axxxxx;
 
-            if (axxxxx == 0) {
-               return (boolean)0;
-            }
-         }
-
-         var17 = a.method_5805();
-      }
-
-      if (axxx != null) {
-         if (var17 == 0) {
+         if (axxxxx == 0) {
             return (boolean)0;
          }
-
-         var17 = chi.field_1724.field_6012;
       }
 
-      if (axxx != null) {
-         if (var17 <= e<"l">(20204, 2481927845789669360L ^ ax)) {
-            return (boolean)0;
-         }
+      var17 = a.method_5805();
 
-         var17 = axxxxxx;
+      if (var17 == 0) {
+         return (boolean)0;
       }
 
-      if (axxx != null) {
-         if (var17 == 0) {
-            return (boolean)0;
-         }
+      var17 = chi.field_1724.field_6012;
 
-         var17 = axxxxxxx;
+      if (var17 <= 10) {
+         return (boolean)0;
       }
 
-      if (axxx != null) {
-         if (var17 == 0) {
-            return (boolean)0;
-         }
+      var17 = axxxxxx;
 
-         var17 = axxxxxxxx;
+      if (var17 == 0) {
+         return (boolean)0;
       }
 
-      if (axxx == null) {
-         return (boolean)var17;
-      } else {
-         return (boolean)(var17 != 0 ? 1 : 0);
+      var17 = axxxxxxx;
+
+      if (var17 == 0) {
+         return (boolean)0;
       }
+
+      var17 = axxxxxxxx;
+
    }
 
    private void buu(boolean a) {
@@ -642,25 +527,21 @@ public class Backtrack extends guu {
          long ax = Backtrack.a ^ 1233213960469L;
          int[] var7 = ClientSetup.abu();
          int var10000 = a;
-         if (var7 != null) {
-            label27:
-            if (!a) {
-               long var9;
-               var10000 = (var9 = axx.bqk() - (a - a.aoz)) == 0L ? 0 : (var9 < 0L ? -1 : 1);
-               if (var7 != null) {
-                  if (var10000 <= 0) {
-                     break label27;
-                  }
-
-                  var10000 = 0;
-               }
-
-               return (boolean)var10000;
+         label27:
+         if (!a) {
+            long var9;
+            var10000 = (var9 = axx.bqk() - (a - a.aoz)) == 0L ? 0 : (var9 < 0L ? -1 : 1);
+            if (var10000 <= 0) {
+               break label27;
             }
 
-            gix.fdw(axx.aew());
-            var10000 = 1;
+            var10000 = 0;
+
+            return (boolean)var10000;
          }
+
+         gix.fdw(axx.aew());
+         var10000 = 1;
 
          return (boolean)var10000;
       });
@@ -671,17 +552,13 @@ public class Backtrack extends guu {
          label20: {
             long ax = Backtrack.a ^ 97067212687722L;
             int[] var4 = ClientSetup.abu();
-            if (var4 != null) {
-               if (!a) {
-                  break label20;
-               }
-
-               a.enu();
+            if (!a) {
+               break label20;
             }
 
-            if (var4 != null) {
-               break label21;
-            }
+            a.enu();
+
+            break label21;
          }
 
          a.etp.clear();
@@ -701,20 +578,12 @@ public class Backtrack extends guu {
          label21: {
             arw axx = a.etp.poll();
             arw var10000 = axx;
-            if (ax != null) {
-               if (axx == null) {
-                  break label21;
-               }
 
-               var10000 = axx;
-            }
+            var10000 = axx;
 
             gix.fdw(var10000.aew());
          }
 
-         if (ax == null) {
-            break;
-         }
       }
    }
 
@@ -726,22 +595,18 @@ public class Backtrack extends guu {
       long a = Backtrack.a ^ 107710744394892L;
       int[] var3 = ClientSetup.abu();
       class_1297 var10000 = a.ctp;
-      if (var3 != null) {
-         if (a.ctp == null) {
-            return false;
-         }
-
-         var10000 = a.ctp;
+      if (a.ctp == null) {
+         return false;
       }
+
+      var10000 = a.ctp;
 
       boolean var4 = var10000.method_5805();
-      if (var3 != null) {
-         if (!var4) {
-            return false;
-         }
-
-         var4 = a.eaa(a.ctp);
+      if (!var4) {
+         return false;
       }
+
+      var4 = a.eaa(a.ctp);
 
       return var3 == null ? var4 : var4;
    }
@@ -750,13 +615,11 @@ public class Backtrack extends guu {
       long a = Backtrack.a ^ 112732134929684L;
       int[] var3 = ClientSetup.abu();
       boolean var10000 = a.etp.isEmpty();
-      if (var3 != null) {
-         if (!var10000) {
-            return false;
-         }
-
-         var10000 = a.awx.isEmpty();
+      if (!var10000) {
+         return false;
       }
+
+      var10000 = a.awx.isEmpty();
 
       return var3 == null ? var10000 : var10000;
    }
@@ -932,89 +795,6 @@ public class Backtrack extends guu {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 21625;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/dvw", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/dvw" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

@@ -44,32 +44,24 @@ public class amg implements dlc {
       axx = var10000;
       var14 = a;
       label65:
-      if (axx != null) {
-         if (a == 0) {
-            class_1661 var15 = chi.field_1724.method_31548();
-            class_1799 axxxx = var15.method_5438(40);
-            class_1792 axxxxx = axxxx.method_7909();
-            var14 = axxxxx instanceof class_1747;
-            if (axx == null) {
-               break label65;
-            }
+      if (a == 0) {
+         class_1661 var15 = chi.field_1724.method_31548();
+         class_1799 axxxx = var15.method_5438(40);
+         class_1792 axxxxx = axxxx.method_7909();
+         var14 = axxxxx instanceof class_1747;
+
+         if (var14 != 0) {
+            class_1747 axxxxxx = (class_1747)axxxxx;
+            class_2248 axxxxxxx = axxxxxx.method_7711();
+            var14 = ayj(axxxxxxx);
 
             if (var14 != 0) {
-               class_1747 axxxxxx = (class_1747)axxxxx;
-               class_2248 axxxxxxx = axxxxxx.method_7711();
-               var14 = ayj(axxxxxxx);
-               if (axx == null) {
-                  break label65;
-               }
-
-               if (var14 != 0) {
-                  axxx.add(new fux(0, class_1268.field_5810));
-               }
+               axxx.add(new fux(0, class_1268.field_5810));
             }
          }
-
-         var14 = 0;
       }
+
+      var14 = 0;
 
       int axxxxxxxx = var14;
 
@@ -80,26 +72,18 @@ public class amg implements dlc {
 
          class_1799 axxxxxxxxx = (class_1799)chi.field_1724.method_31548().method_67533().get(axxxxxxxx);
          class_1792 axxxxxxxxxx = axxxxxxxxx.method_7909();
-         if (axx != null) {
-            if (axxxxxxxxxx instanceof class_1747 axxxxxxxxxxx) {
-               if (axx == null) {
-                  continue;
-               }
+         if (axxxxxxxxxx instanceof class_1747 axxxxxxxxxxx) {
 
-               if (axxxxxxxxx.method_7947() > 0) {
-                  class_2248 axxxxxxxxxxxx = axxxxxxxxxxx.method_7711();
-                  if (axx == null) {
-                     continue;
-                  }
+            if (axxxxxxxxx.method_7947() > 0) {
+               class_2248 axxxxxxxxxxxx = axxxxxxxxxxx.method_7711();
 
-                  if (ayj(axxxxxxxxxxxx)) {
-                     axxx.add(new fux(axxxxxxxx, class_1268.field_5808));
-                  }
+               if (ayj(axxxxxxxxxxxx)) {
+                  axxx.add(new fux(axxxxxxxx, class_1268.field_5808));
                }
             }
-
-            axxxxxxxx++;
          }
+
+         axxxxxxxx++;
       } while (axx != null);
 
       return axxx.toArray(new fux[0]);
@@ -109,14 +93,12 @@ public class amg implements dlc {
       long ax = amg.a ^ 109662325625037L;
       int[] var3 = ClientSetup.abu();
       Object var10000 = a.gee();
-      if (var3 != null) {
-         if (var10000 == class_1268.field_5810) {
-            var10000 = chi.field_1724.method_31548();
-            return var10000.method_5438(40).method_7947();
-         }
-
-         var10000 = chi.field_1724.method_31548().method_67533().get(a.aqk());
+      if (var10000 == class_1268.field_5810) {
+         var10000 = chi.field_1724.method_31548();
+         return var10000.method_5438(40).method_7947();
       }
+
+      var10000 = chi.field_1724.method_31548().method_67533().get(a.aqk());
 
       return ((class_1799)var10000).method_7947();
    }
@@ -127,13 +109,11 @@ public class amg implements dlc {
       fux[] axx = fww(a);
       int[] axxx = var10000;
       fux[] var5 = axx;
-      if (axxx != null) {
-         if (axx.length <= 0) {
-            return new fux(-1, class_1268.field_5808);
-         }
-
-         var5 = axx;
+      if (axx.length <= 0) {
+         return new fux(-1, class_1268.field_5808);
       }
+
+      var5 = axx;
 
       return var5[0];
    }
@@ -153,13 +133,11 @@ public class amg implements dlc {
       class_2338 axx = new class_2338(chi.field_1724.method_31477(), a, chi.field_1724.method_31479()).method_10074();
       int[] axxx = var10000;
       byte var30 = gmi(axx);
-      if (axxx != null) {
-         if (var30 == 0) {
-            return null;
-         }
-
-         var30 = 4;
+      if (var30 == 0) {
+         return null;
       }
+
+      var30 = 4;
 
       var10000 = new int[var30];
       var10000[0] = 0;
@@ -199,9 +177,6 @@ public class amg implements dlc {
                   int[] var15 = axxxx;
                   int var16 = axxxx.length;
                   var32 = 0;
-                  if (axxx == null) {
-                     continue label103;
-                  }
 
                   int var17 = 0;
 
@@ -218,9 +193,6 @@ public class amg implements dlc {
                         int[] var19 = axxxxx;
                         int var20 = axxxxx.length;
                         var33 = 0;
-                        if (axxx == null) {
-                           continue label98;
-                        }
 
                         int var21 = 0;
 
@@ -236,14 +208,8 @@ public class amg implements dlc {
 
                                  int axxxxxxxxx = var19[var21];
                                  class_2338 axxxxxxxxxx = axx.method_10069(axxxxxx * axxxxxxxxx, axxxxxxx * axxxxxxxxx, axxxxxxxx * axxxxxxxxx);
-                                 if (axxx == null) {
-                                    break label88;
-                                 }
 
                                  var34 = gmi(axxxxxxxxxx);
-                                 if (axxx == null) {
-                                    continue label93;
-                                 }
 
                                  if (var34 == 0) {
                                     break;
@@ -261,45 +227,28 @@ public class amg implements dlc {
                                     class_2350 axxxxxxxxxxx = var24[var26];
                                     class_2338 axxxxxxxxxxxx = axxxxxxxxxx.method_10093(axxxxxxxxxxx);
                                     class_2680 axxxxxxxxxxxxx = chi.field_1687.method_8320(axxxxxxxxxxxx);
-                                    if (axxx != null) {
-                                       var35 = ayj(axxxxxxxxxxxxx.method_26204());
-                                       if (axxx == null) {
-                                          break;
-                                       }
+                                    var35 = ayj(axxxxxxxxxxxxx.method_26204());
 
-                                       if (var35 != 0) {
-                                          return new aqy(axxxxxxxxxxxx, axxxxxxxxxxx.method_10153());
-                                       }
-
-                                       var26++;
+                                    if (var35 != 0) {
+                                       return new aqy(axxxxxxxxxxxx, axxxxxxxxxxx.method_10153());
                                     }
 
-                                    if (axxx == null) {
-                                       break label87;
-                                    }
+                                    var26++;
+
                                  }
                               }
 
                               var21++;
                            }
 
-                           if (axxx == null) {
-                              break label93;
-                           }
                         }
                      }
 
                      var17++;
-                     if (axxx == null) {
-                        break label98;
-                     }
                   }
                }
 
                var13++;
-               if (axxx == null) {
-                  break label103;
-               }
             }
          }
 
@@ -313,437 +262,341 @@ public class amg implements dlc {
       long ax = amg.a ^ 2118371842433L;
       int[] axx = ClientSetup.abu();
       class_2248 var10000 = a;
-      if (axx != null) {
-         if (a == null) {
-            return false;
-         }
-
-         var10000 = a;
+      if (a == null) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == class_2246.field_10124) {
-            return false;
-         }
+      var10000 = a;
 
-         var10000 = a;
+      if (var10000 == class_2246.field_10124) {
+         return false;
       }
+
+      var10000 = a;
 
       class_2680 axxx = var10000.method_9564();
       var10000 = a;
-      if (axx != null) {
-         if (a.method_63499().contains(b)) {
-            return false;
-         }
-
-         var10000 = a;
+      if (a.method_63499().contains(b)) {
+         return false;
       }
+
+      var10000 = a;
 
       class_2248 var10001 = class_2246.field_10375;
-      if (axx != null) {
-         if (var10000 == class_2246.field_10375) {
-            return false;
-         }
-
-         var10000 = a;
-         var10001 = class_2246.field_10179;
+      if (var10000 == class_2246.field_10375) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10179;
 
-         var10000 = a;
-         var10001 = class_2246.field_10327;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10327;
 
-         var10000 = a;
-         var10001 = class_2246.field_10525;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10525;
 
-         var10000 = a;
-         var10001 = class_2246.field_10263;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10263;
 
-         var10000 = a;
-         var10001 = class_2246.field_10395;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10395;
 
-         var10000 = a;
-         var10001 = class_2246.field_10465;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10465;
 
-         var10000 = a;
-         var10001 = class_2246.field_16540;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_16540;
 
-         var10000 = a;
-         var10001 = class_2246.field_10499;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10499;
 
-         var10000 = a;
-         var10001 = class_2246.field_31037;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_31037;
 
-         var10000 = a;
-         var10001 = class_2246.field_10260;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10260;
 
-         var10000 = a;
-         var10001 = class_2246.field_10102;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10102;
 
-         var10000 = a;
-         var10001 = class_2246.field_10255;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10255;
 
-         var10000 = a;
-         var10001 = class_2246.field_10534;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10534;
 
-         var10000 = a;
-         var10001 = class_2246.field_10535;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10535;
 
-         var10000 = a;
-         var10001 = class_2246.field_10105;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10105;
 
-         var10000 = a;
-         var10001 = class_2246.field_10414;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10414;
 
-         var10000 = a;
-         var10001 = class_2246.field_10081;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10081;
 
-         var10000 = a;
-         var10001 = class_2246.field_16492;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_16492;
 
-         var10000 = a;
-         var10001 = class_2246.field_10479;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10479;
 
-         var10000 = a;
-         var10001 = class_2246.field_10214;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10214;
 
-         var10000 = a;
-         var10001 = class_2246.field_10343;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10343;
 
-         var10000 = a;
-         var10001 = class_2246.field_28048;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_28048;
 
-         var10000 = a;
-         var10001 = class_2246.field_10181;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10181;
 
-         var10000 = a;
-         var10001 = class_2246.field_16333;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_16333;
 
-         var10000 = a;
-         var10001 = class_2246.field_16334;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_16334;
 
-         var10000 = a;
-         var10001 = class_2246.field_9980;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_9980;
 
-         var10000 = a;
-         var10001 = class_2246.field_46797;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_46797;
 
-         var10000 = a;
-         var10001 = class_2246.field_10200;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10200;
 
-         var10000 = a;
-         var10001 = class_2246.field_10228;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10228;
 
-         var10000 = a;
-         var10001 = class_2246.field_10312;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10312;
 
-         var10000 = a;
-         var10001 = class_2246.field_10333;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10333;
 
-         var10000 = a;
-         var10001 = class_2246.field_10485;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10485;
 
-         var10000 = a;
-         var10001 = class_2246.field_10443;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10443;
 
-         var10000 = a;
-         var10001 = class_2246.field_10034;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10034;
 
-         var10000 = a;
-         var10001 = class_2246.field_23152;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_23152;
 
-         var10000 = a;
-         var10001 = class_2246.field_23261;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_23261;
 
-         var10000 = a;
-         var10001 = class_2246.field_10560;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10560;
 
-         var10000 = a;
-         var10001 = class_2246.field_10615;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10615;
 
-         var10000 = a;
-         var10001 = class_2246.field_10282;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10282;
 
-         var10000 = a;
-         var10001 = class_2246.field_22422;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_22422;
 
-         var10000 = a;
-         var10001 = class_2246.field_10348;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10348;
 
-         var10000 = a;
-         var10001 = class_2246.field_10363;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10363;
 
-         var10000 = a;
-         var10001 = class_2246.field_10450;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10450;
 
-         var10000 = a;
-         var10001 = class_2246.field_10377;
+      if (var10000 == var10001) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var10000 == var10001) {
-            return false;
-         }
+      var10000 = a;
+      var10001 = class_2246.field_10377;
 
-         var10000 = a;
-         var10001 = class_2246.field_10429;
+      if (var10000 == var10001) {
+         return false;
       }
+
+      var10000 = a;
+      var10001 = class_2246.field_10429;
 
       return var10000 != var10001 ? axxx.method_51367() : false;
    }

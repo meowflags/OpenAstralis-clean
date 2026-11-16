@@ -46,17 +46,15 @@ public class ffz extends bmd {
       axx.aof(axxx, a + a.arq() - (axx.eq(axxx) + 6.0F), a + 4.0F, cbc.fgl);
       float axxxxx = a.arq() - 12.0F;
       float axxxxxx = (a.aeb.dnp().floatValue() - a.aeb.cpl()) / (a.aeb.hgz() - a.aeb.cpl());
-      if (axxxx != null) {
-         if (a.cfz) {
-            float axxxxxxx = Math.min(1.0F, Math.max(0.0F, (a - (a + 6.0F)) / axxxxx));
-            double axxxxxxxx = ftb.ggt(a.aeb.cpl().floatValue(), a.aeb.hgz().floatValue(), axxxxxxx);
-            axxxxxxxx = a.hhb(axxxxxxxx, a.aeb.dvc());
-            a.aeb.gbf(new ImFloat((float)axxxxxxxx));
-         }
-
-         dmp.cpp(a + 6.0F, a + super.ajg(), axxxxx, 7.0F, 2.0F, aot);
-         dmp.aho(a + 6.0F, a + super.ajg(), axxxxx * axxxxxx, 7.0F, 2.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
+      if (a.cfz) {
+         float axxxxxxx = Math.min(1.0F, Math.max(0.0F, (a - (a + 6.0F)) / axxxxx));
+         double axxxxxxxx = ftb.ggt(a.aeb.cpl().floatValue(), a.aeb.hgz().floatValue(), axxxxxxx);
+         axxxxxxxx = a.hhb(axxxxxxxx, a.aeb.dvc());
+         a.aeb.gbf(new ImFloat((float)axxxxxxxx));
       }
+
+      dmp.cpp(a + 6.0F, a + super.ajg(), axxxxx, 7.0F, 2.0F, aot);
+      dmp.aho(a + 6.0F, a + super.ajg(), axxxxx * axxxxxx, 7.0F, 2.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
    }
 
    @Override
@@ -82,14 +80,12 @@ public class ffz extends bmd {
       int[] var6 = ClientSetup.abu();
       float var10000 = a;
       float var10001 = 0.0F;
-      if (var6 != null) {
-         if (a == 0.0F) {
-            return a;
-         }
-
-         var10000 = (float)Math.round(a / a);
-         var10001 = a;
+      if (a == 0.0F) {
+         return a;
       }
+
+      var10000 = (float)Math.round(a / a);
+      var10001 = a;
 
       double var7 = var10000 * var10001;
       return ftb.hbp(var7, 6);

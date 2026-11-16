@@ -44,30 +44,24 @@ public class GuiMoveModernWatchdog extends hcr {
       ekb axx = ClientSetup.gqy().aws().diy(ekb.class);
       int[] axxx = var10000;
       class_746 var7 = chi.field_1724;
-      if (axxx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var7 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var7 = chi.field_1724;
 
       boolean var8 = var7.method_6115();
-      if (axxx != null) {
-         if (var8) {
-            return;
-         }
-
-         var8 = chi.field_1724.method_6039();
+      if (var8) {
+         return;
       }
 
-      if (axxx != null) {
-         if (var8) {
-            return;
-         }
+      var8 = chi.field_1724.method_6039();
 
-         var8 = axx.bfx.isEmpty();
+      if (var8) {
+         return;
       }
+
+      var8 = axx.bfx.isEmpty();
 
       if (var8) {
          class_437 axxxx = chi.field_1755;
@@ -84,101 +78,73 @@ public class GuiMoveModernWatchdog extends hcr {
       ekb axx = ClientSetup.gqy().aws().diy(ekb.class);
       int[] axxx = var10000;
       class_310 var8 = chi;
-      if (axxx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var8 = chi;
+      if (chi.field_1724 == null) {
+         return;
       }
 
-      if (axxx != null) {
-         if (var8.field_1687 == null) {
-            return;
-         }
+      var8 = chi;
 
-         var8 = chi;
+      if (var8.field_1687 == null) {
+         return;
       }
+
+      var8 = chi;
 
       boolean var9 = var8.field_1724.method_6115();
-      if (axxx != null) {
-         if (var9) {
-            return;
-         }
-
-         var9 = chi.field_1724.method_6039();
+      if (var9) {
+         return;
       }
 
-      if (axxx != null) {
-         if (var9) {
-            return;
-         }
+      var9 = chi.field_1724.method_6039();
 
-         var9 = axx.bfx.isEmpty();
+      if (var9) {
+         return;
       }
+
+      var9 = axx.bfx.isEmpty();
 
       if (var9) {
          label185: {
             class_2596 var7 = a.bed();
             boolean var10 = var7 instanceof class_2813;
-            if (axxx != null) {
-               if (var10) {
-                  class_2813 axxxx = (class_2813)var7;
-                  if (axxx != null) {
-                     label152: {
-                        if (axxxx.comp_3842() == chi.field_1724.field_7498.field_7763) {
-                           var11 = a;
-                           if (axxx == null) {
-                              break label152;
-                           }
+            if (var10) {
+               class_2813 axxxx = (class_2813)var7;
+               label152: {
+                  if (axxxx.comp_3842() == chi.field_1724.field_7498.field_7763) {
+                     var11 = a;
 
-                           if (ArrayUtils.contains(a.ajv, axxxx.comp_3846())) {
-                              gix.dsd(new class_2815(axxxx.comp_3842()));
-                              if (axxx != null) {
-                                 break label185;
-                              }
-                           }
-                        }
-
-                        var11 = a;
+                     if (ArrayUtils.contains(a.ajv, axxxx.comp_3846())) {
+                        gix.dsd(new class_2815(axxxx.comp_3842()));
+                        break label185;
                      }
-
-                     var11.ahg = true;
                   }
 
-                  if (axxx != null) {
-                     break label185;
-                  }
+                  var11 = a;
                }
 
-               var10 = a.bed() instanceof class_2815;
+               var11.ahg = true;
+
+               break label185;
             }
 
-            if (axxx != null) {
-               if (var10) {
-                  a.ahg = false;
-                  if (axxx != null) {
-                     break label185;
-                  }
-               }
+            var10 = a.bed() instanceof class_2815;
 
-               var10 = a.bed() instanceof class_2678;
+            if (var10) {
+               a.ahg = false;
+               break label185;
             }
+
+            var10 = a.bed() instanceof class_2678;
 
             label134: {
                label133: {
                   label187: {
-                     if (axxx != null) {
-                        if (var10) {
-                           break label187;
-                        }
-
-                        var10 = a.bed() instanceof class_2708;
+                     if (var10) {
+                        break label187;
                      }
 
-                     if (axxx == null) {
-                        break label134;
-                     }
+                     var10 = a.bed() instanceof class_2708;
+
 
                      if (!var10) {
                         break label133;
@@ -187,9 +153,7 @@ public class GuiMoveModernWatchdog extends hcr {
 
                   a.arf.clear();
                   a.ahg = false;
-                  if (axxx != null) {
-                     break label185;
-                  }
+                  break label185;
                }
 
                var10 = a.ahg;
@@ -198,30 +162,24 @@ public class GuiMoveModernWatchdog extends hcr {
             label120:
             if (var10) {
                amo var12 = a;
-               if (axxx != null) {
-                  if (a.cud() != gpy.SEND) {
-                     break label120;
-                  }
-
-                  var12 = a;
+               if (a.cud() != gpy.SEND) {
+                  break label120;
                }
+
+               var12 = a;
 
                boolean var13 = var12.bed() instanceof class_2827;
-               if (axxx != null) {
-                  if (var13) {
-                     break label120;
-                  }
-
-                  var13 = a.bed() instanceof class_6374;
+               if (var13) {
+                  break label120;
                }
 
-               if (axxx != null) {
-                  if (var13) {
-                     break label120;
-                  }
+               var13 = a.bed() instanceof class_6374;
 
-                  a.arf.add(a.bed());
+               if (var13) {
+                  break label120;
                }
+
+               a.arf.add(a.bed());
 
                a.gmm(true);
             }
@@ -243,20 +201,15 @@ public class GuiMoveModernWatchdog extends hcr {
                label29: {
                   class_2596<?> axx = a.arf.pollFirst();
                   class_2596 var10000 = axx;
-                  if (ax != null) {
-                     if (axx == null) {
-                        break label29;
-                     }
-
-                     var10000 = axx;
+                  if (axx == null) {
+                     break label29;
                   }
+
+                  var10000 = axx;
 
                   gix.eex(var10000);
                }
 
-               if (ax == null) {
-                  break;
-               }
             }
          }
       }
@@ -290,30 +243,4 @@ public class GuiMoveModernWatchdog extends hcr {
       }
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

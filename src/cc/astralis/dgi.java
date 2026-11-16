@@ -42,16 +42,14 @@ public class dgi extends fig {
          int[] axxxx = var10000;
          var9 = axxx;
          float var10001 = ax;
-         if (axxxx != null) {
-            dmp.cpp(axxx, ax, 25.0F, 12.0F, 5.0F, new Color(50, 50, 50));
-            if (!a.byy.dnp()) {
-               var9 = axxx;
-               break label17;
-            }
-
+         dmp.cpp(axxx, ax, 25.0F, 12.0F, 5.0F, new Color(50, 50, 50));
+         if (!a.byy.dnp()) {
             var9 = axxx;
-            var10001 = 15.0F;
+            break label17;
          }
+
+         var9 = axxx;
+         var10001 = 15.0F;
 
          var9 += var10001;
       }
@@ -69,9 +67,7 @@ public class dgi extends fig {
       if (fuv.bfm(a, a, a.byy.dnp() ? axx + 15.0F : axx, axxx + 1.0F, 10.0F, 10.0F)) {
          gbp var11 = a.byy;
          boolean var10001 = a.byy.dnp();
-         if (axxxx != null) {
-            var10001 = !var10001;
-         }
+         var10001 = !var10001;
 
          var11.gbf(var10001);
       }

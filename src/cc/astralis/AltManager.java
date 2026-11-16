@@ -34,7 +34,7 @@ public class AltManager extends class_437 implements dlc {
    private static final long a = 27782558579940L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -57,19 +57,14 @@ public class AltManager extends class_437 implements dlc {
 
          while (axxxx < axxx) {
             String axxxxxx = GLFWDropCallback.getName(axxxx, axxxx);
-            if (axxxxx != null) {
-               short var10001x = 745;
-               long var10002x = 228291720540950538L ^ axxx;
-               if (axxxxxx.endsWith(".txt")) {
-                  SessionHelper.crq(new File(axxxxxx), true);
-               }
-
-               axxxx++;
+            short var10001x = 745;
+            long var10002x = 228291720540950538L ^ axxx;
+            if (axxxxxx.endsWith(".txt")) {
+               SessionHelper.crq(new File(axxxxxx), true);
             }
 
-            if (axxxxx == null) {
-               break;
-            }
+            axxxx++;
+
          }
       });
       GLFW.glfwSetDropCallback(ax, a.gxh);
@@ -84,9 +79,7 @@ public class AltManager extends class_437 implements dlc {
          long ax = AltManager.a ^ 118650718670398L;
          int[] var3x = ClientSetup.abu();
          boolean var10000x = cqb;
-         if (var3x != null) {
-            var10000x = !cqb;
-         }
+         var10000x = !cqb;
 
          cqb = var10000x;
       });
@@ -139,15 +132,12 @@ public class AltManager extends class_437 implements dlc {
                int axxxxxxxxxxxxxxx = axxxxxxxxxxx / axxxxxxxxxxxxx;
                float axxxxxxxxxxxxxxxx = 135.0F + axxxxxxxxxxxxxx * 160.0F;
                float axxxxxxxxxxxxxxxxx = 30.0F + axxxxxxxxxxxxxxx * 60.0F;
-               if (!(axxxxxxxxxxxxxxxxx + 50.0F > axx + axxxxx - 10.0F) || axxxxxxxxx == null) {
+               if (!(axxxxxxxxxxxxxxxxx + 50.0F > axx + axxxxx - 10.0F)) {
                   axxxxxxxxxxxx.ern()
                      .feu(axxxxxxxxxxxx, axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxx, fuv.bfm(a, a, axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxx, 150.0F, 50.0F));
                }
 
                axxxxxxxxxxx++;
-               if (axxxxxxxxx == null) {
-                  break;
-               }
             }
          }
       );
@@ -161,16 +151,14 @@ public class AltManager extends class_437 implements dlc {
       long a = AltManager.a ^ 47944154894816L;
       int[] var3 = ClientSetup.abu();
       AltManager var10000 = a;
-      if (var3 != null) {
-         if (a.gxh != null) {
-            a.gxh.free();
-            a.gxh = null;
-         }
-
-         ClientSetup.gqy().fyf().bet(a);
-         hcu.asr();
-         var10000 = a;
+      if (a.gxh != null) {
+         a.gxh.free();
+         a.gxh = null;
       }
+
+      ClientSetup.gqy().fyf().bet(a);
+      hcu.asr();
+      var10000 = a;
 
       var10000.method_25419();
    }
@@ -201,18 +189,13 @@ public class AltManager extends class_437 implements dlc {
             float axxxxxxxxxxxxxxxx = 30.0F + axxxxxxxxxxxxxx * 60.0F;
             float var23;
             var20 = (var23 = axxxxxxxxxxxxxxxx + 50.0F - (axx + axxxx - 10.0F)) == 0.0F ? 0 : (var23 < 0.0F ? -1 : 1);
-            if (axxxxxxx == null) {
-               break;
-            }
 
             label33: {
-               if (axxxxxxx != null) {
-                  if (var20 > 0 && axxxxxxx != null) {
-                     break label33;
-                  }
-
-                  var20 = fuv.bfm(a.comp_4798(), a.comp_4799(), axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxx, 150.0F, 50.0F);
+               if (var20 > 0) {
+                  break label33;
                }
+
+               var20 = fuv.bfm(a.comp_4798(), a.comp_4799(), axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxx, 150.0F, 50.0F);
 
                if (var20 != 0) {
                   SessionHelper.ckh(axxxxxxxxxxx);
@@ -220,9 +203,7 @@ public class AltManager extends class_437 implements dlc {
             }
 
             axxxxxxxxxx++;
-            if (axxxxxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          var20 = super.method_25402(a, a);
@@ -393,89 +374,6 @@ public class AltManager extends class_437 implements dlc {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 7971;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/AltManager", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/AltManager" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

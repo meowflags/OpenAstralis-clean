@@ -23,39 +23,30 @@ public class WatchdogSafe extends hcr {
       eky axx = ClientSetup.gqy().aws().diy(eky.class);
       int[] axxx = var10000;
       boolean var6 = chi.field_1690.field_1903.method_1434();
-      if (axxx != null) {
-         if (var6) {
-            return;
-         }
-
-         var6 = evd.bpi();
+      if (var6) {
+         return;
       }
 
-      if (axxx != null) {
-         if (var6) {
-            chi.field_1724
-               .method_18800(
-                  chi.field_1724.method_18798().field_1352 * 0.98, chi.field_1724.method_18798().field_1351, chi.field_1724.method_18798().field_1350 * 0.98
-               );
-         }
+      var6 = evd.bpi();
 
-         var6 = evd.fsj();
+      if (var6) {
+         chi.field_1724
+            .method_18800(
+               chi.field_1724.method_18798().field_1352 * 0.98, chi.field_1724.method_18798().field_1351, chi.field_1724.method_18798().field_1350 * 0.98
+            );
       }
+
+      var6 = evd.fsj();
 
       label47: {
          label54: {
-            if (axxx != null) {
-               if (!var6) {
-                  return;
-               }
-
-               var7 = axx;
-               if (axxx == null) {
-                  break label54;
-               }
-
-               var6 = axx.dsv();
+            if (!var6) {
+               return;
             }
+
+            var7 = axx;
+
+            var6 = axx.dsv();
 
             if (!var6) {
                break label47;
@@ -88,30 +79,4 @@ public class WatchdogSafe extends hcr {
       d = var5;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

@@ -13,24 +13,19 @@ public class PacketMine extends guu {
 
    @gdz
    public void cvl(amo event) {
-      long ax = PacketMine.a ^ 73066390570491L;
       int[] var4 = ClientSetup.abu();
       amo var10000 = a;
-      if (var4 != null) {
-         if (a.cud() == gpy.SEND) {
-            return;
-         }
-
-         var10000 = a;
+      if (a.cud() == gpy.SEND) {
+         return;
       }
 
-      if (var4 != null) {
-         if (!(var10000.bed() instanceof class_2720)) {
-            return;
-         }
+      var10000 = a;
 
-         var10000 = a;
+      if (!(var10000.bed() instanceof class_2720)) {
+         return;
       }
+
+      var10000 = a;
 
       var10000.gmm(true);
       gix.eex(new class_2856(chi.field_1724.method_5667(), class_2857.field_13016));

@@ -24,27 +24,19 @@ public class fki {
       long ax = fki.a ^ 20578281769080L;
       int[] var3 = ClientSetup.abu();
       boolean var10000 = a instanceof class_2595;
-      if (var3 != null) {
+      if (!var10000) {
+         var10000 = a instanceof class_2611;
+
          if (!var10000) {
-            var10000 = a instanceof class_2611;
-            if (var3 == null) {
-               return var10000;
-            }
+            var10000 = a instanceof class_3719;
 
             if (!var10000) {
-               var10000 = a instanceof class_3719;
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
          }
-
-         var10000 = true;
       }
+
+      var10000 = true;
 
       return var10000;
    };
@@ -61,33 +53,27 @@ public class fki {
       long a = fki.a ^ 89765998071511L;
       int[] ax = ClientSetup.abu();
       boolean var10000 = dkx;
-      if (ax != null) {
-         if (!dkx) {
-            return;
-         }
-
-         var10000 = gur();
+      if (!dkx) {
+         return;
       }
+
+      var10000 = gur();
 
       if (var10000) {
          class_310 axx = class_310.method_1551();
          class_310 var12 = axx;
-         if (ax != null) {
-            if (axx.field_1687 == null) {
-               return;
-            }
-
-            var12 = axx;
+         if (axx.field_1687 == null) {
+            return;
          }
+
+         var12 = axx;
 
          Object var13 = var12.field_1724;
-         if (ax != null) {
-            if (var12.field_1724 == null) {
-               return;
-            }
-
-            var13 = axx.field_1690.method_42503().method_41753();
+         if (var12.field_1724 == null) {
+            return;
          }
+
+         var13 = axx.field_1690.method_42503().method_41753();
 
          int axxx = (Integer)var13;
          int axxxx = Math.max(2, axxx + 2);
@@ -102,30 +88,20 @@ public class fki {
                   int axxxxxxxx = axxxxx.field_9181 + axxxxxx;
                   int axxxxxxxxx = axxxxx.field_9180 + axxxxxxx;
                   class_2818 axxxxxxxxxx = axx.field_1687.method_2935().method_21730(axxxxxxxx, axxxxxxxxx);
-                  if (ax == null) {
-                     break;
+
+                  if (axxxxxxxxxx != null) {
+                     edf(axxxxxxxxxx);
                   }
 
-                  if (ax != null) {
-                     if (axxxxxxxxxx != null) {
-                        edf(axxxxxxxxxx);
-                     }
+                  axxxxxxx++;
 
-                     axxxxxxx++;
-                  }
-
-                  if (ax != null) {
-                     continue;
-                  }
+                  continue;
                }
 
                axxxxxx++;
                break;
             }
 
-            if (ax == null) {
-               break;
-            }
          }
       }
    }
@@ -141,17 +117,12 @@ public class fki {
          while (true) {
             if (var7.hasNext()) {
                class_2586 axxxxx = (class_2586)var7.next();
-               if (axx == null) {
-                  break;
-               }
 
-               if (axx != null && bdu.test(axxxxx)) {
+               if (bdu.test(axxxxx)) {
                   axxxx.add(axxxxx.method_11016().method_10062());
                }
 
-               if (axx != null) {
-                  continue;
-               }
+               continue;
             }
 
             coo.put(axxx, axxxx);
@@ -168,13 +139,11 @@ public class fki {
       long ax = fki.a ^ 138673823005015L;
       int[] axx = ClientSetup.abu();
       boolean var10000 = dkx;
-      if (axx != null) {
-         if (!dkx) {
-            return;
-         }
-
-         var10000 = bdu.test(a);
+      if (!dkx) {
+         return;
       }
+
+      var10000 = bdu.test(a);
 
       if (var10000) {
          long axxx = a.method_12004().method_8324();
@@ -197,33 +166,21 @@ public class fki {
                if (axxxxx < axxxx.size()) {
                   label53: {
                      class_2338 var10000 = (class_2338)axxxx.get(axxxxx);
-                     if (axx != null) {
-                        var9 = var10000.equals(a);
-                        if (axx == null) {
-                           break;
-                        }
+                     var9 = var10000.equals(a);
 
-                        if (!var9) {
-                           break label53;
-                        }
-
-                        axxxx.remove(axxxxx);
+                     if (!var9) {
+                        break label53;
                      }
 
-                     if (axx != null) {
-                        break label55;
-                     }
+                     axxxx.remove(axxxxx);
+
+                     break label55;
                   }
 
                   axxxxx++;
-                  if (axx != null) {
-                     continue;
-                  }
+                  continue;
                }
 
-               if (axx == null) {
-                  return;
-               }
 
                var9 = axxxx.isEmpty();
                break;
@@ -247,14 +204,9 @@ public class fki {
          if (var4.hasNext()) {
             List<class_2338> axxx = (List<class_2338>)var4.next();
             var6 = ax;
-            if (axx == null) {
-               break;
-            }
 
             ax.addAll(axxx);
-            if (axx != null) {
-               continue;
-            }
+            continue;
          }
 
          var6 = ax;
@@ -288,30 +240,19 @@ public class fki {
                double axxxxxxxxxxx = axxxxxxxx.method_10260() + 0.5 - axxxxxx;
                double var27;
                var25 = (var27 = axxxxxxxxx * axxxxxxxxx + axxxxxxxxxx * axxxxxxxxxx + axxxxxxxxxxx * axxxxxxxxxxx - a) == 0.0 ? 0 : (var27 < 0.0 ? -1 : 1);
-               if (axxxxx == null) {
-                  continue label41;
-               }
 
                if (var25 <= 0) {
                   class_238 axxxxxxxxxxxx = new class_238(axxxxxxxx);
                   boolean var26 = a.test(axxxxxxxxxxxx);
-                  if (axxxxx != null) {
-                     if (!var26) {
-                        continue;
-                     }
-
-                     axx.add(axxxxxxxx);
+                  if (!var26) {
+                     continue;
                   }
 
-                  if (axxxxx == null) {
-                     break;
-                  }
+                  axx.add(axxxxxxxx);
+
                }
             }
 
-            if (axxxxx == null) {
-               return axx;
-            }
             continue label43;
          }
 

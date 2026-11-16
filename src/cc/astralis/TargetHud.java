@@ -29,7 +29,7 @@ public class TargetHud extends guu {
    private static final long a = 119043477712123L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -61,15 +61,13 @@ public class TargetHud extends guu {
          ax = TargetHud.a ^ 54325004497391L;
          axx = ClientSetup.abu();
          var13 = a;
-         if (axx != null) {
-            a.efe("Modern");
-            if (chi.field_1755 instanceof HudEditorScreen) {
-               var13 = chi.field_1724;
-               break label112;
-            }
-
-            var13 = ClientSetup.gqy().aws().diy(KillAura.class);
+         a.efe("Modern");
+         if (chi.field_1755 instanceof HudEditorScreen) {
+            var13 = chi.field_1724;
+            break label112;
          }
+
+         var13 = ClientSetup.gqy().aws().diy(KillAura.class);
 
          var13 = ((KillAura)var13).gvw;
       }
@@ -77,94 +75,74 @@ public class TargetHud extends guu {
       class_1309 axxx;
       label106: {
          axxx = var13;
-         if (axx != null) {
-            if (axxx == null) {
-               break label106;
-            }
-
-            hcu.asr();
+         if (axxx == null) {
+            break label106;
          }
+
+         hcu.asr();
 
          a.bon = axxx;
       }
 
       var13 = a.dgx;
-      if (axx != null) {
-         if (a.dgx.flo()) {
-            a.dgx.bpt(a.dgx.hjo());
-         }
-
-         var13 = a.dgx;
+      if (a.dgx.flo()) {
+         a.dgx.bpt(a.dgx.hjo());
       }
+
+      var13 = a.dgx;
 
       var13.dwm(axxx != null ? 1.0 : 0.0);
       float axxxx = (float)a.dgx.hjo();
       float var22;
       int var15 = (var22 = axxxx - 0.0F) == 0.0F ? 0 : (var22 < 0.0F ? -1 : 1);
-      if (axx != null) {
-         if (var15 == 0) {
-            return;
-         }
-
-         var15 = (int)a.edt.grp();
+      if (var15 == 0) {
+         return;
       }
+
+      var15 = (int)a.edt.grp();
 
       int axxxxx = var15;
       int axxxxxx = (int)a.edt.azb();
       double axxxxxxx = a.bon.method_6032() / a.bon.method_6063();
       var13 = a.bon;
-      if (axx != null) {
-         if (a.bon.method_6032() != a.amt) {
-            a.azu.bpt(a.azu.hjo());
-            a.azu.gbi(axxxxxxx);
-            a.azu.dsw();
-            a.amt = a.bon.method_6032();
-         }
-
-         a.azu.dwm(axxxxxxx);
-         var13 = a.eub.dnp();
+      if (a.bon.method_6032() != a.amt) {
+         a.azu.bpt(a.azu.hjo());
+         a.azu.gbi(axxxxxxx);
+         a.azu.dsw();
+         a.amt = a.bon.method_6032();
       }
+
+      a.azu.dwm(axxxxxxx);
+      var13 = a.eub.dnp();
 
       String var11 = (String)var13;
       byte var12 = -1;
       var17 = var11.hashCode();
       label94:
-      if (axx != null) {
-         switch (var17) {
-            case -1984932033:
-               var17 = var11.equals("Modern");
-               if (axx == null) {
-                  break label94;
-               }
+      switch (var17) {
+         case -1984932033:
+            var17 = var11.equals("Modern");
 
-               if (var17 == 0) {
-                  break;
-               }
+            if (var17 == 0) {
+               break;
+            }
 
-               var12 = 0;
-               if (axx != null) {
-                  break;
-               }
-            case -2022711319:
-               var17 = var11.equals("Legacy");
-               if (axx == null) {
-                  break label94;
-               }
+            var12 = 0;
+            break;
+         case -2022711319:
+            var17 = var11.equals("Legacy");
 
-               if (var17 != 0) {
-                  var12 = 1;
-               }
-         }
-
-         var17 = var12;
+            if (var17 != 0) {
+               var12 = 1;
+            }
       }
+
+      var17 = var12;
 
       switch (var17) {
          case 0:
             a.fmo(axxxxx, axxxxxx, axxxx);
-            if (axx != null) {
-               break;
-            }
+            break;
          case 1:
             a.fqj(axxxxx, axxxxxx, axxxx);
       }
@@ -175,24 +153,20 @@ public class TargetHud extends guu {
       long ax = TargetHud.a ^ 86995143994910L;
       int[] axx = ClientSetup.abu();
       TargetHud var10000 = a;
-      if (axx != null) {
-         if (a.bon == null) {
-            return;
-         }
-
-         var10000 = a;
+      if (a.bon == null) {
+         return;
       }
+
+      var10000 = a;
 
       float axxx = (float)var10000.dgx.hjo();
       float var24;
       int var16 = (var24 = axxx - 0.0F) == 0.0F ? 0 : (var24 < 0.0F ? -1 : 1);
-      if (axx != null) {
-         if (var16 == 0) {
-            return;
-         }
-
-         var16 = (int)a.edt.grp();
+      if (var16 == 0) {
+         return;
       }
+
+      var16 = (int)a.edt.grp();
 
       float axxxx;
       float axxxxx;
@@ -210,42 +184,30 @@ public class TargetHud extends guu {
       byte var13 = -1;
       var19 = var12.hashCode();
       label76:
-      if (axx != null) {
-         switch (var19) {
-            case -1984932033:
-               var19 = var12.equals("Modern");
-               if (axx == null) {
-                  break label76;
-               }
+      switch (var19) {
+         case -1984932033:
+            var19 = var12.equals("Modern");
 
-               if (var19 == 0) {
-                  break;
-               }
+            if (var19 == 0) {
+               break;
+            }
 
-               var13 = 0;
-               if (axx != null) {
-                  break;
-               }
-            case -2022711319:
-               var19 = var12.equals("Legacy");
-               if (axx == null) {
-                  break label76;
-               }
+            var13 = 0;
+            break;
+         case -2022711319:
+            var19 = var12.equals("Legacy");
 
-               if (var19 != 0) {
-                  var13 = 1;
-               }
-         }
-
-         var19 = var13;
+            if (var19 != 0) {
+               var13 = 1;
+            }
       }
+
+      var19 = var13;
 
       switch (var19) {
          case 0:
             dmp.fnq(axxxx, axxxxx, axxxxxx, axxxxxxx, 12.0F * axxx);
-            if (axx != null) {
-               break;
-            }
+            break;
          case 1:
             dmp.fzn(axxxx, axxxxx, axxxxxx, axxxxxxx);
       }
@@ -274,20 +236,15 @@ public class TargetHud extends guu {
       String axxxxxxxxxxxxxx = axxxxxxxxxxxxx.eqi.dnp();
       byte var20 = -1;
       var10000 = axxxxxxxxxxxxxx.hashCode();
-      if (axxxxxxxxxxx != null) {
-         switch (var10000) {
-            case -1656737386:
-               var10000 = axxxxxxxxxxxxxx.equals("Rainbow");
-               if (axxxxxxxxxxx == null) {
-                  break;
-               }
+      switch (var10000) {
+         case -1656737386:
+            var10000 = axxxxxxxxxxxxxx.equals("Rainbow");
 
-               if (var10000 != 0) {
-                  var20 = 0;
-               }
-            default:
-               var10000 = var20;
-         }
+            if (var10000 != 0) {
+               var20 = 0;
+            }
+         default:
+            var10000 = var20;
       }
       Color axxxxxxxxxxxxxxx = switch (var10000) {
          case 0 -> {
@@ -298,20 +255,15 @@ public class TargetHud extends guu {
       String var23 = axxxxxxxxxxxxx.eqi.dnp();
       byte var21 = -1;
       var10000 = var23.hashCode();
-      if (axxxxxxxxxxx != null) {
-         switch (var10000) {
-            case -1656737386:
-               var10000 = var23.equals("Rainbow");
-               if (axxxxxxxxxxx == null) {
-                  break;
-               }
+      switch (var10000) {
+         case -1656737386:
+            var10000 = var23.equals("Rainbow");
 
-               if (var10000 != 0) {
-                  var21 = 0;
-               }
-            default:
-               var10000 = var21;
-         }
+            if (var10000 != 0) {
+               var21 = 0;
+            }
+         default:
+            var10000 = var21;
       }
       Color axxxxxxxxxxxxxxxx = switch (var10000) {
          case 0 -> {
@@ -325,26 +277,24 @@ public class TargetHud extends guu {
       dmp.gst(axxxxxxxx, var43, var52, var10003, new Color(25, 25, 25, 220));
       dmp.dyl(axxxxxxxx, a + 46.0F - 15.0F, axxxxxxxxxx, 12.0F, axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxx, false);
       dmp.dzr(a + 3.0F, a + 3.0F, 40.0F, 40.0F, hcu.fkx(SessionHelper.cyx(a.bon.method_5845())), null);
-      if (axxxxxxxxxxx != null) {
-         if (a.bon.method_6032() <= 0.0F) {
-            a.azu.dsw();
-            a.amt = -1.0;
-         }
-
-         FontManager.emc("Sf-Ui", 12).ebb(a.bon.method_5477().getString(), axxxxxxxx, a + 3.0F, Color.white);
-         fll var35 = FontManager.emc("Sf-Ui", 10);
-         String var48 = WatchdogFull.format(a.bon.method_6032());
-         String var49 = var48 + " Health";
-         var10003 = a + 3.0F + 14.0F;
-         var35.ebb(var49, axxxxxxxx, var10003, new Color(180, 180, 180));
-         dmp.bzg();
+      if (a.bon.method_6032() <= 0.0F) {
+         a.azu.dsw();
+         a.amt = -1.0;
       }
+
+      FontManager.emc("Sf-Ui", 12).ebb(a.bon.method_5477().getString(), axxxxxxxx, a + 3.0F, Color.white);
+      fll var35 = FontManager.emc("Sf-Ui", 10);
+      String var48 = WatchdogFull.format(a.bon.method_6032());
+      String var49 = var48 + " Health";
+      var10003 = a + 3.0F + 14.0F;
+      var35.ebb(var49, axxxxxxxx, var10003, new Color(180, 180, 180));
+      dmp.bzg();
    }
 
    private void fmo(float a, float a, float a) {
       long ax = TargetHud.a ^ 18601317608487L;
-      int axx = e<"x">(20200, 3749756417924528176L ^ ax);
-      int axxx = e<"x">(6837, 7850049966833183863L ^ ax);
+      int axx = 180;
+      int axxx = 55;
       float axxxx = 8.0F;
       float axxxxx = 12.0F;
       float axxxxxx = 39.0F;
@@ -365,24 +315,24 @@ public class TargetHud extends guu {
          55.0F,
          12.0F,
          new Color(
-            e<"x">(2644, 8283382367857786004L ^ ax),
-            e<"x">(26858, 4240239442342108717L ^ ax),
-            e<"x">(22971, 4111929832474210168L ^ ax),
+            18,
+            18,
+            20,
             axxxxxxxxxxx.fug.dnp().intValue()
          )
       );
       float axxxxxxxxxxxx = a + 39.0F + 16.0F;
       float axxxxxxxxxxxxx = 117.0F;
       String axxxxxxxxxxxxxx = a.bon.method_5477().getString();
-      FontManager.emc(b<"g">(1778, 4560997727419051296L ^ ax), e<"x">(17580, 1748507910610645606L ^ ax))
+      FontManager.emc("Product Sans Bold", 14)
          .ebb(axxxxxxxxxxxxxx, axxxxxxxxxxxx, a + 8.0F - 1.0F, Color.WHITE);
-      String axxxxxxxxxxxxxxx = WatchdogFull.format(a.bon.method_6032()) + b<"g">(2088, 4755451403827848177L ^ ax);
-      FontManager.emc(b<"g">(5957, 8784525311967706256L ^ ax), e<"x">(9910, 608429614127681657L ^ ax))
+      String axxxxxxxxxxxxxxx = WatchdogFull.format(a.bon.method_6032()) + " HP";
+      FontManager.emc("Product Sans Regular", 11)
          .ebb(
             axxxxxxxxxxxxxxx,
             axxxxxxxxxxxx,
             a + 8.0F + 15.0F,
-            new Color(e<"x">(26853, 7822112654796611135L ^ ax), e<"x">(30797, 6007379006614425236L ^ ax), e<"x">(4565, 3915973241811674897L ^ ax))
+            new Color(160, 160, 165)
          );
       float axxxxxxxxxxxxxxxx = a + 55.0F - 8.0F - 8.0F;
       float axxxxxxxxxxxxxxxxx = 8.0F;
@@ -393,33 +343,28 @@ public class TargetHud extends guu {
          axxxxxxxxxxxxx,
          8.0F,
          5.0F,
-         new Color(e<"x">(2056, 6495384219008483039L ^ ax), e<"x">(20555, 2556791418104145538L ^ ax), e<"x">(16523, 2896330478954640965L ^ ax))
+         new Color(35, 35, 40)
       );
       float axxxxxxxxxxxxxxxxxxx = (float)(axxxxxxxxxxxxx * a.azu.hjo());
       float var25;
       int var24 = (var25 = axxxxxxxxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
-      if (axxxxxxxxxx != null) {
-         if (var24 > 0) {
-            dmp.aho(axxxxxxxxxxxx - 1.0F, axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxx + 1.0F, 8.0F, 5.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
-         }
-
-         dmp.cpp(
-            a + 8.0F,
-            a + 8.0F,
-            39.0F,
-            39.0F,
-            8.0F,
-            new Color(e<"x">(25438, 8411559853070177678L ^ ax), e<"x">(3282, 4980589028691360260L ^ ax), e<"x">(2760, 6861509018269400083L ^ ax))
-         );
-         dmp.gnj(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, hcu.fkx(SessionHelper.cyx(a.bon.method_5845())), null);
-         dmp.hbm(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true, 1.5F, new Color(0, 0, 0, 0));
-         if (axxxxxxxxxx == null) {
-            return;
-         }
-
-         float var26;
-         var24 = (var26 = a.bon.method_6032() - 0.0F) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
+      if (var24 > 0) {
+         dmp.aho(axxxxxxxxxxxx - 1.0F, axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxx + 1.0F, 8.0F, 5.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
       }
+
+      dmp.cpp(
+         a + 8.0F,
+         a + 8.0F,
+         39.0F,
+         39.0F,
+         8.0F,
+         new Color(45, 45, 50)
+      );
+      dmp.gnj(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, hcu.fkx(SessionHelper.cyx(a.bon.method_5845())), null);
+      dmp.hbm(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true, 1.5F, new Color(0, 0, 0, 0));
+
+      float var26;
+      var24 = (var26 = a.bon.method_6032() - 0.0F) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
 
       if (var24 <= 0) {
          a.azu.dsw();
@@ -668,89 +613,6 @@ public class TargetHud extends guu {
             var37 = var26.substring(++var36, var36 + var25);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 11020;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ckv", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ckv" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

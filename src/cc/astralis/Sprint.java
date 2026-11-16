@@ -9,14 +9,11 @@ public class Sprint extends guu {
 
    @gdz
    public void gv(fxx event) {
-      long ax = Sprint.a ^ 134553644577574L;
       int[] var4 = ClientSetup.abu();
-      if (var4 != null) {
-         if (ClientSetup.gqy().aws().diy(GodBridge.class).dsv()) {
-            return;
-         }
-
-         chi.field_1690.field_1867.method_23481(evd.dbj());
+      if (ClientSetup.gqy().aws().diy(GodBridge.class).dsv()) {
+         return;
       }
+
+      chi.field_1690.field_1867.method_23481(evd.dbj());
    }
 }

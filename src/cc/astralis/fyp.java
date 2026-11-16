@@ -53,13 +53,11 @@ class fyp {
       long a = fyp.a ^ 51960410224560L;
       int[] var3 = ClientSetup.abu();
       boolean var10000 = a.apg.flo();
-      if (var3 != null) {
-         if (!var10000) {
-            return false;
-         }
-
-         var10000 = a.fjf.flo();
+      if (!var10000) {
+         return false;
       }
+
+      var10000 = a.fjf.flo();
 
       return var3 == null ? var10000 : var10000;
    }
@@ -72,50 +70,39 @@ class fyp {
       float axxx = (float)a.fjf.hjo();
       float var8;
       int var6 = (var8 = axxx - 0.01F) == 0.0F ? 0 : (var8 < 0.0F ? -1 : 1);
-      if (axx != null) {
-         if (var6 <= 0) {
-            return;
-         }
-
-         float var9;
-         var6 = (var9 = ax - 0.0F) == 0.0F ? 0 : (var9 < 0.0F ? -1 : 1);
+      if (var6 <= 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var6 <= 0) {
-            return;
-         }
+      float var9;
+      var6 = (var9 = ax - 0.0F) == 0.0F ? 0 : (var9 < 0.0F ? -1 : 1);
 
-         dmp.ery(a.aag, a.fgu, ax, 2.5F, new Color(a.afs.getRed(), a.afs.getGreen(), a.afs.getBlue(), (int)(axxx * 120.0F)));
-         float var10;
-         var6 = (var10 = ax - 10.0F) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
+      if (var6 <= 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var6 > 0) {
-            dmp.ery(a.aag, a.fgu, ax * 0.6F, 1.5F, new Color(a.frs.getRed(), a.frs.getGreen(), a.frs.getBlue(), (int)(axxx * 80.0F)));
-         }
+      dmp.ery(a.aag, a.fgu, ax, 2.5F, new Color(a.afs.getRed(), a.afs.getGreen(), a.afs.getBlue(), (int)(axxx * 120.0F)));
+      float var10;
+      var6 = (var10 = ax - 10.0F) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
 
-         float var11;
-         var6 = (var11 = ax - 3.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
+      if (var6 > 0) {
+         dmp.ery(a.aag, a.fgu, ax * 0.6F, 1.5F, new Color(a.frs.getRed(), a.frs.getGreen(), a.frs.getBlue(), (int)(axxx * 80.0F)));
       }
+
+      float var11;
+      var6 = (var11 = ax - 3.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
 
       float var10001;
       label64: {
-         if (axx != null) {
-            if (var6 < 0) {
-               dmp.baq(a.aag, a.fgu, Math.max(1.0F, ax * 0.1F), new Color(a.afs.getRed(), a.afs.getGreen(), a.afs.getBlue(), (int)(axxx * 200.0F)));
-            }
-
-            var7 = ax;
-            var10001 = 7.0F;
-            if (axx == null) {
-               break label64;
-            }
-
-            float var12;
-            var6 = (var12 = ax - 7.0F) == 0.0F ? 0 : (var12 < 0.0F ? -1 : 1);
+         if (var6 < 0) {
+            dmp.baq(a.aag, a.fgu, Math.max(1.0F, ax * 0.1F), new Color(a.afs.getRed(), a.afs.getGreen(), a.afs.getBlue(), (int)(axxx * 200.0F)));
          }
+
+         var7 = ax;
+         var10001 = 7.0F;
+
+         float var12;
+         var6 = (var12 = ax - 7.0F) == 0.0F ? 0 : (var12 < 0.0F ? -1 : 1);
 
          if (var6 <= 0) {
             return;

@@ -48,7 +48,7 @@ public class bav implements dlc {
    private static final long a = 58786819873865L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -62,28 +62,20 @@ public class bav implements dlc {
       int[] var4 = ClientSetup.abu();
       float var5;
       int var10000 = (var5 = chi.field_1724.method_5739(a) - a) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
-      if (var4 != null) {
+      if (var10000 > 0) {
+         double var6;
+         var10000 = (var6 = dgq.flj(a) - a) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
+
          if (var10000 > 0) {
-            double var6;
-            var10000 = (var6 = dgq.flj(a) - a) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
-            if (var4 == null) {
-               return (boolean)var10000;
-            }
+            boolean var8 = chi.field_1724.method_56094(a, a - 3.0F - 0.001);
 
-            if (var10000 > 0) {
-               boolean var8 = chi.field_1724.method_56094(a, a - 3.0F - 0.001);
-               if (var4 == null) {
-                  return var8;
-               }
-
-               if (!var8 && chi.field_1765.method_17783() != class_240.field_1331) {
-                  return (boolean)0;
-               }
+            if (!var8 && chi.field_1765.method_17783() != class_240.field_1331) {
+               return (boolean)0;
             }
          }
-
-         var10000 = 1;
       }
+
+      var10000 = 1;
 
       return (boolean)var10000;
    }
@@ -96,13 +88,11 @@ public class bav implements dlc {
       long ax = bav.a ^ 121543848717683L;
       int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi;
 
       if (var10000.field_1687 != null) {
          int axxx = 0;
@@ -119,26 +109,19 @@ public class bav implements dlc {
                      == 0.0F
                   ? 0
                   : (var8 < 0.0F ? -1 : 1);
-               if (axx == null) {
-                  break;
-               }
 
                label39: {
-                  if (axx != null) {
-                     if (var7 <= 0) {
-                        break label39;
-                     }
-
-                     var7 = axxxxx;
+                  if (var7 <= 0) {
+                     break label39;
                   }
+
+                  var7 = axxxxx;
 
                   axxx = var7;
                }
 
                axxxxx++;
-               if (axx != null) {
-                  continue;
-               }
+               continue;
             }
 
             var7 = axxx;
@@ -160,33 +143,23 @@ public class bav implements dlc {
       while (ax > -1) {
          class_2338 axxx = new class_2338((int)chi.field_1724.method_23317(), ax, (int)chi.field_1724.method_23321());
          String axxxx = chi.field_1687.method_8320(axxx).method_26204().method_63499();
-         if (axx != null) {
-            label45:
-            if (!axxxx.contains("short_grass")) {
-               boolean var6 = axxxx.contains("tall_grass");
-               if (axx != null) {
-                  if (var6 && axx != null) {
-                     break label45;
-                  }
-
-                  if (axx == null) {
-                     return (float)(chi.field_1724.method_23318() - axxx.method_10264()) - 1.0F;
-                  }
-
-                  var6 = chi.field_1687.method_8320(axxx).method_26204() instanceof class_2189;
-               }
-
-               if (!var6) {
-                  return (float)(chi.field_1724.method_23318() - axxx.method_10264()) - 1.0F;
-               }
+         label45:
+         if (!axxxx.contains("short_grass")) {
+            boolean var6 = axxxx.contains("tall_grass");
+            if (var6) {
+               break label45;
             }
 
-            ax--;
+
+            var6 = chi.field_1687.method_8320(axxx).method_26204() instanceof class_2189;
+
+            if (!var6) {
+               return (float)(chi.field_1724.method_23318() - axxx.method_10264()) - 1.0F;
+            }
          }
 
-         if (axx == null) {
-            break;
-         }
+         ax--;
+
       }
 
       return 0.0F;
@@ -220,45 +193,13 @@ public class bav implements dlc {
       int[] axx = var10000;
       class_1792 axxx = ax.method_7909();
       class_1799 var5 = chi.field_1724.method_6030();
-      if (axx != null) {
-         if (var5.method_7976() == class_1839.field_8949) {
-            return true;
-         }
-
-         var5 = chi.field_1724.method_31548().method_7391();
-      }
-
-      boolean var6 = var5.method_31573(class_3489.field_42611);
-      if (axx == null) {
-         return var6;
-      } else {
-         if (!var6) {
-            boolean var7 = axxx instanceof class_1743;
-            if (axx == null) {
-               return var7;
-            }
-
-            if (!var7) {
-               boolean var8 = axxx instanceof class_9362;
-               if (axx == null) {
-                  return var8;
-               }
-
-               if (!var8) {
-                  boolean var9 = axxx instanceof class_1835;
-                  if (axx == null) {
-                     return var9;
-                  }
-
-                  if (!var9) {
-                     return false;
-                  }
-               }
-            }
-         }
-
+      if (var5.method_7976() == class_1839.field_8949) {
          return true;
       }
+
+      var5 = chi.field_1724.method_31548().method_7391();
+
+      boolean var6 = var5.method_31573(class_3489.field_42611);
    }
 
    public static boolean bfi() {
@@ -272,22 +213,15 @@ public class bav implements dlc {
          int var10001 = ax.method_10264();
          if (axxx >= var10001 - 10) {
             class_2338 axxxx = new class_2338(ax.method_10263(), axxx, ax.method_10260());
-            if (axx != null) {
-               var6 = chi.field_1687.method_8320(axxxx).method_26215();
-               if (axx == null) {
-                  break;
-               }
+            var6 = chi.field_1687.method_8320(axxxx).method_26215();
 
-               if (!var6) {
-                  return false;
-               }
-
-               axxx--;
+            if (!var6) {
+               return false;
             }
 
-            if (axx != null) {
-               continue;
-            }
+            axxx--;
+
+            continue;
          }
 
          var6 = true;
@@ -581,89 +515,6 @@ public class bav implements dlc {
          }
 
          var16 = var17.charAt(var15);
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 1655;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/bav", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/bav" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

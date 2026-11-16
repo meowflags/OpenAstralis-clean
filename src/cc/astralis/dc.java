@@ -35,15 +35,13 @@ public final class dc extends glv<fso> {
       int[] axxx = var10000;
       String var10 = axx;
       String var10001 = ".";
-      if (axxx != null) {
-         if (!axx.startsWith(".")) {
-            return;
-         }
-
-         axx = axx.substring(1);
-         var10 = axx;
-         var10001 = " ";
+      if (!axx.startsWith(".")) {
+         return;
       }
+
+      axx = axx.substring(1);
+      var10 = axx;
+      var10001 = " ";
 
       String[] axxxx = var10.split(var10001);
       AtomicBoolean axxxxx = new AtomicBoolean(false);

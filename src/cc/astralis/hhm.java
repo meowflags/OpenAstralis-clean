@@ -68,15 +68,10 @@ public class hhm extends brc {
       int[] axxxx = var10000;
       String var10 = axxx.toString();
       String[] var10001 = var8;
-      if (axx != null) {
-         byte[] var11 = Base64Util.fsi(var8[1]);
-         var10 = fz.dvr(var10, var11, Base64Util.fsi(var8[7]));
-         if (axxxx == null) {
-            return var10;
-         }
+      byte[] var11 = Base64Util.fsi(var8[1]);
+      var10 = fz.dvr(var10, var11, Base64Util.fsi(var8[7]));
 
-         var10001 = new String[4];
-      }
+      var10001 = new String[4];
 
       cdr.apm(var10001);
       return var10;

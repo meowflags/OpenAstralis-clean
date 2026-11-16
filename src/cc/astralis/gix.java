@@ -15,22 +15,18 @@ public class gix implements dlc {
       long ax = gix.a ^ 18498291160631L;
       int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi.field_1724;
 
       class_634 var5 = var10000.field_3944;
-      if (axx != null) {
-         if (var10000.field_3944 == null) {
-            return;
-         }
-
-         var5 = chi.field_1724.field_3944;
+      if (var10000.field_3944 == null) {
+         return;
       }
+
+      var5 = chi.field_1724.field_3944;
 
       dmt axxx = (dmt)var5.method_48296();
       axxx.receiveNoEvent(a);
@@ -40,22 +36,18 @@ public class gix implements dlc {
       long ax = gix.a ^ 86917963569961L;
       int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi.field_1724;
 
       class_634 var5 = var10000.field_3944;
-      if (axx != null) {
-         if (var10000.field_3944 == null) {
-            return;
-         }
-
-         var5 = chi.field_1724.field_3944;
+      if (var10000.field_3944 == null) {
+         return;
       }
+
+      var5 = chi.field_1724.field_3944;
 
       dmt axxx = (dmt)var5.method_48296();
       axxx.sendNoEvent(a);
@@ -65,22 +57,18 @@ public class gix implements dlc {
       long ax = gix.a ^ 64092931290784L;
       int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi.field_1724;
 
       class_634 var5 = var10000.field_3944;
-      if (axx != null) {
-         if (var10000.field_3944 == null) {
-            return;
-         }
-
-         var5 = chi.field_1724.field_3944;
+      if (var10000.field_3944 == null) {
+         return;
       }
+
+      var5 = chi.field_1724.field_3944;
 
       dmt axxx = (dmt)var5.method_48296();
       axxx.sendWithEvent(a);
@@ -90,13 +78,11 @@ public class gix implements dlc {
       long ax = gix.a ^ 3715236783731L;
       int[] var3 = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (var3 != null) {
-         if (chi.field_1687 == null) {
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.field_1687 == null) {
+         return;
       }
+
+      var10000 = chi;
 
       ((ClientPlayerInteractionManagerAccessor)var10000.field_1761).callSendSequencedPacket(chi.field_1687, a);
    }

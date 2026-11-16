@@ -46,7 +46,7 @@ public class bqf implements dlc {
    private static final long a = 45007057084317L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -116,20 +116,15 @@ public class bqf implements dlc {
       String axxxx = axx.eqi.dnp();
       byte axxxxx = -1;
       int var32 = axxxx.hashCode();
-      if (axxx != null) {
-         switch (var32) {
-            case -1656737386:
-               var32 = axxxx.equals("Rainbow");
-               if (axxx == null) {
-                  break;
-               }
+      switch (var32) {
+         case -1656737386:
+            var32 = axxxx.equals("Rainbow");
 
-               if (var32 != 0) {
-                  axxxxx = 0;
-               }
-            default:
-               var32 = axxxxx;
-         }
+            if (var32 != 0) {
+               axxxxx = 0;
+            }
+         default:
+            var32 = axxxxx;
       }
       Color axxxxxx = switch (var32) {
          case 0 -> {
@@ -140,20 +135,15 @@ public class bqf implements dlc {
       String var29 = axx.eqi.dnp();
       byte axxxxxxx = -1;
       int var35 = var29.hashCode();
-      if (axxx != null) {
-         switch (var35) {
-            case -1656737386:
-               var35 = var29.equals("Rainbow");
-               if (axxx == null) {
-                  break;
-               }
+      switch (var35) {
+         case -1656737386:
+            var35 = var29.equals("Rainbow");
 
-               if (var35 != 0) {
-                  axxxxxxx = 0;
-               }
-            default:
-               var35 = axxxxxxx;
-         }
+            if (var35 != 0) {
+               axxxxxxx = 0;
+            }
+         default:
+            var35 = axxxxxxx;
       }
       Color axxxxxxxx = switch (var35) {
          case 0 -> {
@@ -189,13 +179,8 @@ public class bqf implements dlc {
             axxxxxxxxxxxxxxx.method_22918(axxxxxxxxxxxx, (float)axxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxx, (float)axxxxxxxxxxxxxxxxxxxx)
                .method_39415(ClientSetup.gqy().cxj().getRGB());
             axxxxxxxxxxxxxxxxx++;
-            if (axxx == null) {
-               break;
-            }
 
-            if (axxx != null) {
-               continue;
-            }
+            continue;
          }
 
          axxxxxxxxxxxxxx.method_37104();
@@ -226,24 +211,16 @@ public class bqf implements dlc {
             String axxxxxxxxxxxx = axxxxxxxxxxx.eqi.dnp();
             byte var19 = -1;
             var22 = axxxxxxxxxxxx.hashCode();
-            if (axxx == null) {
-               break;
-            }
 
-            if (axxx != null) {
-               switch (var22) {
-                  case -1656737386:
-                     var22 = axxxxxxxxxxxx.equals("Rainbow");
-                     if (axxx == null) {
-                        break;
-                     }
+            switch (var22) {
+               case -1656737386:
+                  var22 = axxxxxxxxxxxx.equals("Rainbow");
 
-                     if (var22 != 0) {
-                        var19 = 0;
-                     }
-                  default:
-                     var22 = var19;
-               }
+                  if (var22 != 0) {
+                     var19 = 0;
+                  }
+               default:
+                  var22 = var19;
             }
             Color axxxxxxxxxxxxx = switch (var22) {
                case 0 -> {
@@ -255,9 +232,7 @@ public class bqf implements dlc {
             axxxxxx.method_22918(axxxx, axxxxxxxxx, 0.01F, axxxxxxxxxx)
                .method_1336(axxxxxxxxxxxxxx.getRed(), axxxxxxxxxxxxxx.getGreen(), axxxxxxxxxxxxxx.getBlue(), axxxxxxxxxxxxxx.getAlpha());
             axxxxxxx++;
-            if (axxx != null) {
-               continue;
-            }
+            continue;
          }
 
          axxxxx.method_37104();
@@ -280,27 +255,22 @@ public class bqf implements dlc {
       Matrix4f axxxxx = a.method_23760().method_23761();
       class_4598 axxxxxx = ((BufferBuilderStorageAccessor)chi.method_22940()).getEntityVertexConsumers();
       class_4588 axxxxxxx = axxxxxx.method_73477(class_1921.method_49043(1.0));
-      GL11.glEnable(b<"y">(25324, 5981941225414257246L ^ ax));
+      GL11.glEnable(2848);
       int axxxxxxxx = 0;
 
       while (true) {
-         if (axxxxxxxx <= b<"y">(7582, 8597738751812998438L ^ ax)) {
+         if (axxxxxxxx <= 360) {
             double axxxxxxxxx = Math.toRadians(axxxxxxxx);
             float axxxxxxxxxx = (float)Math.sin(axxxxxxxxx) * a;
             float axxxxxxxxxxx = (float)Math.cos(axxxxxxxxx) * a;
             axxxxxxx.method_22918(axxxxx, axxxxxxxxxx, 0.01F, axxxxxxxxxxx).method_39415(ClientSetup.gqy().deo().getRGB());
             axxxxxxxx++;
-            if (axxxx == null) {
-               break;
-            }
 
-            if (axxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          axxxxxx.method_37104();
-         GL11.glDisable(b<"y">(25324, 5981941225414257246L ^ ax));
+         GL11.glDisable(2848);
          a.method_22909();
          break;
       }
@@ -541,89 +511,6 @@ public class bqf implements dlc {
             var36 = var26.substring(++var35, var35 + var25);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 19255;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/bqf", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/bqf" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

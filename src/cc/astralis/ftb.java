@@ -31,9 +31,7 @@ public class ftb {
       int[] var5 = ClientSetup.abu();
       float var6;
       int var10000 = (var6 = Math.abs(a - a) - a) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
-      if (var5 != null) {
-         var10000 = var10000 <= 0 ? 1 : 0;
-      }
+      var10000 = var10000 <= 0 ? 1 : 0;
 
       return (boolean)var10000;
    }
@@ -45,18 +43,13 @@ public class ftb {
       int[] var4 = var10000;
       double var8;
       int var6 = (var8 = a - 180.0) == 0.0 ? 0 : (var8 < 0.0 ? -1 : 1);
-      if (var4 != null) {
-         if (var6 >= 0) {
-            a -= 360.0;
-         }
-
-         if (var4 == null) {
-            return a;
-         }
-
-         double var9;
-         var6 = (var9 = a - -180.0) == 0.0 ? 0 : (var9 < 0.0 ? -1 : 1);
+      if (var6 >= 0) {
+         a -= 360.0;
       }
+
+
+      double var9;
+      var6 = (var9 = a - -180.0) == 0.0 ? 0 : (var9 < 0.0 ? -1 : 1);
 
       if (var6 < 0) {
          a += 360.0;
@@ -82,30 +75,4 @@ public class ftb {
       b = var5;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

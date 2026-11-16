@@ -94,40 +94,32 @@ public class NoSlow extends guu {
       BlinkController axx = ClientSetup.gqy().ccv().gne(BlinkController.class);
       int[] axxx = var10000;
       int var8 = chi.field_1724.method_6115();
-      if (axxx != null) {
-         if (var8 == 0) {
-            a.axl = new dgz("none", 1.0F);
-            a.bb = 0;
-            if (axxx != null) {
-               if (!a.cbc) {
-                  axx.fxn();
-                  a.cbc = true;
-               }
-
-               gxk.dfh("use");
-            }
-
-            return;
+      if (var8 == 0) {
+         a.axl = new dgz("none", 1.0F);
+         a.bb = 0;
+         if (!a.cbc) {
+            axx.fxn();
+            a.cbc = true;
          }
 
-         var8 = chi.field_1724.method_6115();
+         gxk.dfh("use");
+
+         return;
       }
+
+      var8 = chi.field_1724.method_6115();
 
       label197: {
          label196: {
-            if (axxx != null) {
-               if (var8 == 0) {
-                  break label196;
-               }
-
-               var8 = chi.field_1724.method_6014();
+            if (var8 == 0) {
+               break label196;
             }
+
+            var8 = chi.field_1724.method_6014();
 
             if (var8 > 0) {
                a.bb++;
-               if (axxx != null) {
-                  break label197;
-               }
+               break label197;
             }
          }
 
@@ -137,19 +129,13 @@ public class NoSlow extends guu {
       switch (fpa.bxv[chi.field_1724.method_6030().method_7976().ordinal()]) {
          case 1:
             a.axl = new dgz(a.cna.dnp(), a.cyb.dnp().floatValue());
-            if (axxx != null) {
-               break;
-            }
+            break;
          case 2:
             a.axl = new dgz(a.djx.dnp(), a.hhp.dnp().floatValue());
-            if (axxx != null) {
-               break;
-            }
+            break;
          case 3:
             a.axl = new dgz(a.cdx.dnp(), a.dqr.dnp().floatValue());
-            if (axxx != null) {
-               break;
-            }
+            break;
          case 4:
             a.axl = new dgz(a.cfs.dnp(), a.bot.dnp().floatValue());
       }
@@ -158,114 +144,84 @@ public class NoSlow extends guu {
       byte var7 = -1;
       var9 = var6.hashCode();
       label180:
-      if (axxx != null) {
-         switch (var9) {
-            case 609795629:
-               var9 = var6.equals("Watchdog");
-               if (axxx == null) {
-                  break label180;
-               }
+      switch (var9) {
+         case 609795629:
+            var9 = var6.equals("Watchdog");
 
-               if (var9 == 0) {
-                  break;
-               }
+            if (var9 == 0) {
+               break;
+            }
 
-               var7 = 0;
-               if (axxx != null) {
-                  break;
-               }
-            case 1239695398:
-               var9 = var6.equals("Old Watchdog");
-               if (axxx == null) {
-                  break label180;
-               }
+            var7 = 0;
+            break;
+         case 1239695398:
+            var9 = var6.equals("Old Watchdog");
 
-               if (var9 == 0) {
-                  break;
-               }
+            if (var9 == 0) {
+               break;
+            }
 
-               var7 = 1;
-               if (axxx != null) {
-                  break;
-               }
-            case -2099899231:
-               var9 = var6.equals("Intave");
-               if (axxx == null) {
-                  break label180;
-               }
+            var7 = 1;
+            break;
+         case -2099899231:
+            var9 = var6.equals("Intave");
 
-               if (var9 != 0) {
-                  var7 = 2;
-               }
-         }
-
-         var9 = var7;
+            if (var9 != 0) {
+               var7 = 2;
+            }
       }
+
+      var9 = var7;
 
       label160: {
          label208: {
-            if (axxx != null) {
-               switch (var9) {
-                  case 0:
-                     var9 = a.bb;
-                     break;
-                  case 1:
-                     break label208;
-                  case 2:
-                     break label160;
-                  default:
-                     return;
-               }
+            switch (var9) {
+               case 0:
+                  var9 = a.bb;
+                  break;
+               case 1:
+                  break label208;
+               case 2:
+                  break label160;
+               default:
+                  return;
             }
 
-            if (axxx != null) {
-               label149:
-               if (var9 > 12) {
-                  label147: {
-                     BlinkController var10 = axx;
-                     if (axxx != null) {
-                        if (axx.bsw()) {
-                           break label147;
-                        }
-
-                        var10 = axx;
-                     }
-
-                     var10.ckv();
-                     gxk.fcv("use");
-                     a.cbc = false;
-                     if (axxx != null) {
-                        break label149;
-                     }
+            label149:
+            if (var9 > 12) {
+               label147: {
+                  BlinkController var10 = axx;
+                  if (axx.bsw()) {
+                     break label147;
                   }
 
-                  gxk.gbu("use", a.bb / 30.0F);
+                  var10 = axx;
+
+                  var10.ckv();
+                  gxk.fcv("use");
+                  a.cbc = false;
+                  break label149;
                }
 
-               var9 = a.cbc;
+               gxk.gbu("use", a.bb / 30.0F);
             }
 
-            if (axxx != null) {
-               if (var9 != 0) {
+            var9 = a.cbc;
+
+            if (var9 != 0) {
+               return;
+            }
+
+            var9 = chi.field_1724.method_6014();
+
+            label205: {
+               if (var9 >= 0) {
                   return;
                }
 
-               var9 = chi.field_1724.method_6014();
-            }
+               var13 = axx;
 
-            label205: {
-               if (axxx != null) {
-                  if (var9 >= 0) {
-                     return;
-                  }
-
-                  var13 = axx;
-                  if (axxx == null) {
-                     break label205;
-                  }
-
-                  var9 = axx.bsw();
-               }
+               var9 = axx.bsw();
 
                if (var9 == 0) {
                   return;
@@ -277,9 +233,7 @@ public class NoSlow extends guu {
             var13.fxn();
             gxk.dfh("use");
             a.cbc = true;
-            if (axxx != null) {
-               return;
-            }
+            return;
          }
 
          gix.avn(
@@ -294,9 +248,7 @@ public class NoSlow extends guu {
                axxxx
             )
          );
-         if (axxx != null) {
-            return;
-         }
+         return;
       }
 
       gix.dsd(new class_2846(class_2847.field_12974, class_2338.field_10980, class_2350.field_11036));
@@ -323,21 +275,17 @@ public class NoSlow extends guu {
       int[] var4 = ClientSetup.abu();
       String var10000 = a.cdx.dnp();
       int var5 = var10000.equals("Watchdog");
-      if (var4 != null) {
-         if (var5 == 0) {
-            return;
-         }
-
-         var5 = a.bb;
+      if (var5 == 0) {
+         return;
       }
 
-      if (var4 != null) {
-         if (var5 <= 12) {
-            return;
-         }
+      var5 = a.bb;
 
-         var5 = chi.field_1724.method_6115();
+      if (var5 <= 12) {
+         return;
       }
+
+      var5 = chi.field_1724.method_6115();
 
       if (var5 != 0) {
          a.gmm(true);
@@ -491,89 +439,6 @@ public class NoSlow extends guu {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 25819;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/cdo", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/cdo" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

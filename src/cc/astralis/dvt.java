@@ -184,18 +184,12 @@ public class dvt implements dlc {
          try (BufferedReader axxxxx = new BufferedReader(new InputStreamReader(axxx.getInputStream()))) {
             while ((axxxx = axxxxx.readLine()) != null) {
                int axxxxxx = axxxx.indexOf((int)e);
-               if (axx == null) {
-                  return ax;
-               }
 
                if (axxxxxx != -1) {
                   String axxxxxxx = axxxx.substring(0, axxxxxx).trim();
                   String axxxxxxxx = axxxx.substring(axxxxxx + 1).trim();
                   String axxxxxxxxx = axxxxxxxx.split(":")[0].trim();
                   ax.add(new fv(axxxxxxxxx, axxxxxxx));
-                  if (axx == null) {
-                     break;
-                  }
                }
             }
          }
@@ -225,13 +219,8 @@ public class dvt implements dlc {
       File[] axx = a.listFiles();
       int[] axxx = var10000;
       File[] var14 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return;
-         }
 
-         var14 = axx;
-      }
+      var14 = axx;
 
       File[] var6 = var14;
       int var7 = var6.length;
@@ -241,29 +230,25 @@ public class dvt implements dlc {
          label66: {
             File axxxx = var6[var8];
             File var15 = axxxx;
-            if (axxx != null) {
-               if (axxxx.isDirectory()) {
-                  ekv(axxxx, a);
-                  break label66;
-               }
-
-               var15 = axxxx;
+            if (axxxx.isDirectory()) {
+               ekv(axxxx, a);
+               break label66;
             }
+
+            var15 = axxxx;
 
             String axxxxx = var15.getName().toLowerCase();
             byte var16 = axxxxx.endsWith(".ttf");
-            if (axxx != null) {
-               if (var16 == 0) {
-                  if (!axxxxx.endsWith(".otf")) {
-                     break label66;
-                  }
-               }
-
-               try {
-                  var16 = 0;
-               } catch (Exception var13) {
+            if (var16 == 0) {
+               if (!axxxxx.endsWith(".otf")) {
                   break label66;
                }
+            }
+
+            try {
+               var16 = 0;
+            } catch (Exception var13) {
+               break label66;
             }
 
             try {
@@ -274,9 +259,6 @@ public class dvt implements dlc {
          }
 
          var8++;
-         if (axxx == null) {
-            break;
-         }
       }
    }
 

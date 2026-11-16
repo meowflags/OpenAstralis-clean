@@ -55,32 +55,23 @@ public class evd implements dlc {
       int[] axxxxx = var10000;
       float var10;
       int var8 = (var10 = axx.field_1342 - 0.0F) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
-      if (axxxxx != null) {
-         if (var8 < 0) {
-            axxx = a + 180.0F;
-         }
-
-         float var11;
-         var8 = (var11 = axx.field_1342 - 0.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
+      if (var8 < 0) {
+         axxx = a + 180.0F;
       }
+
+      float var11;
+      var8 = (var11 = axx.field_1342 - 0.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
 
       label69: {
          label73: {
-            if (axxxxx != null) {
-               if (var8 < 0) {
-                  axxxx = -0.5F;
-                  if (axxxxx != null) {
-                     break label73;
-                  }
-               }
-
-               float var12;
-               var8 = (var12 = axx.field_1342 - 0.0F) == 0.0F ? 0 : (var12 < 0.0F ? -1 : 1);
+            if (var8 < 0) {
+               axxxx = -0.5F;
+               break label73;
             }
 
-            if (axxxxx == null) {
-               break label69;
-            }
+            float var12;
+            var8 = (var12 = axx.field_1342 - 0.0F) == 0.0F ? 0 : (var12 < 0.0F ? -1 : 1);
+
 
             if (var8 > 0) {
                axxxx = 0.5F;
@@ -90,27 +81,20 @@ public class evd implements dlc {
          var8 = a;
       }
 
-      if (axxxxx != null) {
-         if (var8 == 0) {
-            return axxx;
-         }
-
-         float var13;
-         var8 = (var13 = axx.field_1343 - 0.0F) == 0.0F ? 0 : (var13 < 0.0F ? -1 : 1);
+      if (var8 == 0) {
+         return axxx;
       }
 
-      if (axxxxx != null) {
-         if (var8 > 0) {
-            axxx -= 90.0F * axxxx;
-         }
+      float var13;
+      var8 = (var13 = axx.field_1343 - 0.0F) == 0.0F ? 0 : (var13 < 0.0F ? -1 : 1);
 
-         if (axxxxx == null) {
-            return axx.field_1343;
-         }
-
-         float var14;
-         var8 = (var14 = axx.field_1343 - 0.0F) == 0.0F ? 0 : (var14 < 0.0F ? -1 : 1);
+      if (var8 > 0) {
+         axxx -= 90.0F * axxxx;
       }
+
+
+      float var14;
+      var8 = (var14 = axx.field_1343 - 0.0F) == 0.0F ? 0 : (var14 < 0.0F ? -1 : 1);
 
       if (var8 < 0) {
          axxx += 90.0F * axxxx;
@@ -127,17 +111,13 @@ public class evd implements dlc {
       label20: {
          long ax = evd.a ^ 90385851608168L;
          int[] var4 = ClientSetup.abu();
-         if (var4 != null) {
-            if (!dbj()) {
-               break label20;
-            }
-
-            chi.field_1724.method_18800(-Math.sin(fgd()) * a, chi.field_1724.method_18798().field_1351, Math.cos(fgd()) * a);
+         if (!dbj()) {
+            break label20;
          }
 
-         if (var4 != null) {
-            return;
-         }
+         chi.field_1724.method_18800(-Math.sin(fgd()) * a, chi.field_1724.method_18798().field_1351, Math.cos(fgd()) * a);
+
+         return;
       }
 
       eeo();
@@ -147,18 +127,14 @@ public class evd implements dlc {
       label20: {
          long ax = evd.a ^ 57639617733804L;
          int[] var5 = ClientSetup.abu();
-         if (var5 != null) {
-            if (!dbj()) {
-               break label20;
-            }
-
-            a.dof(-Math.sin(fgd()) * a);
-            a.gni(Math.cos(fgd()) * a);
+         if (!dbj()) {
+            break label20;
          }
 
-         if (var5 != null) {
-            return;
-         }
+         a.dof(-Math.sin(fgd()) * a);
+         a.gni(Math.cos(fgd()) * a);
+
+         return;
       }
 
       eeo();
@@ -168,20 +144,13 @@ public class evd implements dlc {
       int[] var2 = ClientSetup.abu();
       double var3;
       int var10000 = (var3 = Math.abs(chi.field_1724.method_18798().field_1352) - 0.05) == 0.0 ? 0 : (var3 < 0.0 ? -1 : 1);
-      if (var2 != null) {
-         if (var10000 <= 0) {
-            return (boolean)0;
-         }
-
-         double var4;
-         var10000 = (var4 = Math.abs(chi.field_1724.method_18798().field_1350) - 0.05) == 0.0 ? 0 : (var4 < 0.0 ? -1 : 1);
+      if (var10000 <= 0) {
+         return (boolean)0;
       }
 
-      if (var2 == null) {
-         return (boolean)var10000;
-      } else {
-         return (boolean)(var10000 > 0 ? 1 : 0);
-      }
+      double var4;
+      var10000 = (var4 = Math.abs(chi.field_1724.method_18798().field_1350) - 0.05) == 0.0 ? 0 : (var4 < 0.0 ? -1 : 1);
+
    }
 
    public static double fzm() {
@@ -277,19 +246,14 @@ public class evd implements dlc {
       while (true) {
          if (var7.hasNext()) {
             class_1293 axxxx = (class_1293)var7.next();
-            if (axxx == null) {
-               break;
-            }
 
             label45: {
                class_1293 var9 = axxxx;
-               if (axxx != null) {
-                  if (axxxx.method_5579() != class_1294.field_5904) {
-                     break label45;
-                  }
-
-                  var9 = axxxx;
+               if (axxxx.method_5579() != class_1294.field_5904) {
+                  break label45;
                }
+
+               var9 = axxxx;
                axx = switch (var9.method_5578()) {
                   case 0 -> a;
                   case 1 -> a;
@@ -297,9 +261,7 @@ public class evd implements dlc {
                };
             }
 
-            if (axxx != null) {
-               continue;
-            }
+            continue;
          }
 
          if (!chi.field_1724.method_6059(class_1294.field_5904)) {
@@ -322,21 +284,16 @@ public class evd implements dlc {
       int[] axx = var10000;
       float var5;
       int var4 = (var5 = ax.field_1343 - 0.0F) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
-      if (axx != null) {
-         if (!var4) {
-            float var6;
-            int var7 = (var6 = ax.field_1342 - 0.0F) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
-            if (axx == null) {
-               return (boolean)var7;
-            }
+      if (!var4) {
+         float var6;
+         int var7 = (var6 = ax.field_1342 - 0.0F) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
 
-            if (!var7) {
-               return (boolean)0;
-            }
+         if (!var7) {
+            return (boolean)0;
          }
-
-         var4 = 1;
       }
+
+      var4 = 1;
 
       return (boolean)var4;
    }
@@ -348,21 +305,16 @@ public class evd implements dlc {
       int[] axx = var10000;
       float var5;
       int var4 = (var5 = Math.abs(ax.field_1342) - 0.8F) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
-      if (axx != null) {
-         if (var4 < 0) {
-            float var6;
-            int var7 = (var6 = Math.abs(ax.field_1342) - 0.8F) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
-            if (axx == null) {
-               return (boolean)var7;
-            }
+      if (var4 < 0) {
+         float var6;
+         int var7 = (var6 = Math.abs(ax.field_1342) - 0.8F) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
 
-            if (var7 < 0) {
-               return (boolean)0;
-            }
+         if (var7 < 0) {
+            return (boolean)0;
          }
-
-         var4 = 1;
       }
+
+      var4 = 1;
 
       return (boolean)var4;
    }
@@ -380,15 +332,10 @@ public class evd implements dlc {
          while (true) {
             if (axxxx < a) {
                var10000 = (axxx - 0.08) * 0.98F;
-               if (axx == null) {
-                  break;
-               }
 
                axxx = var10000;
                axxxx++;
-               if (axx != null) {
-                  continue;
-               }
+               continue;
             }
 
             var10000 = axxx;
@@ -419,21 +366,14 @@ public class evd implements dlc {
             axxx = 1.0F;
             double var10;
             var10000 = (var10 = a - 0.0) == 0.0 ? 0 : (var10 < 0.0 ? -1 : 1);
-            if (axx != null) {
-               if (var10000 < 0) {
-                  axxx = -0.5F;
-                  if (axx != null) {
-                     break label56;
-                  }
-               }
-
-               double var11;
-               var10000 = (var11 = a - 0.0) == 0.0 ? 0 : (var11 < 0.0 ? -1 : 1);
+            if (var10000 < 0) {
+               axxx = -0.5F;
+               break label56;
             }
 
-            if (axx == null) {
-               break label52;
-            }
+            double var11;
+            var10000 = (var11 = a - 0.0) == 0.0 ? 0 : (var11 < 0.0 ? -1 : 1);
+
 
             if (var10000 > 0) {
                axxx = 0.5F;
@@ -444,18 +384,13 @@ public class evd implements dlc {
          var10000 = (var12 = a - 0.0) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
       }
 
-      if (axx != null) {
-         if (var10000 > 0) {
-            a -= 90.0F * axxx;
-         }
-
-         if (axx == null) {
-            return a;
-         }
-
-         double var13;
-         var10000 = (var13 = a - 0.0) == 0.0 ? 0 : (var13 < 0.0 ? -1 : 1);
+      if (var10000 > 0) {
+         a -= 90.0F * axxx;
       }
+
+
+      double var13;
+      var10000 = (var13 = a - 0.0) == 0.0 ? 0 : (var13 < 0.0 ? -1 : 1);
 
       if (var10000 < 0) {
          a += 90.0F * axxx;
@@ -479,21 +414,12 @@ public class evd implements dlc {
       boolean axxx = chi.field_1690.field_1849.method_1434();
       int[] axxxx = var10000;
       boolean var6 = ax;
-      if (axxxx != null) {
-         if (!ax) {
-            return false;
-         }
-
-         var6 = axx;
+      if (!ax) {
+         return false;
       }
 
-      if (axxxx == null) {
-         return var6;
-      } else if (var6) {
-         return true;
-      } else {
-         return axxxx == null ? axxx : axxx;
-      }
+      var6 = axx;
+
    }
 
    public static void clb(int[] var0) {

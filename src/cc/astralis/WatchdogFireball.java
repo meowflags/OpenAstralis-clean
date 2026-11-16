@@ -25,7 +25,7 @@ public class WatchdogFireball extends hcr {
    private static final long a = 111049558493083L;
    private static final String[] d;
    private static final String[] e;
-   private static final Map f = new HashMap(13);
+
    private static final long[] g;
    private static final Integer[] h;
    private static final Map i;
@@ -50,29 +50,25 @@ public class WatchdogFireball extends hcr {
       int[] var10000 = ClientSetup.abu();
       a.fqf = 0;
       int[] var3 = var10000;
-      if (var3 != null) {
-         if (ClientSetup.gqy().aws().diy(dqk.class).dsv()) {
-            ClientSetup.gqy().aws().diy(dqk.class).fga(false);
-            bpa.dhu("Velocity module was disabled to prevent conflicts.");
-         }
-
-         super.dil();
+      if (ClientSetup.gqy().aws().diy(dqk.class).dsv()) {
+         ClientSetup.gqy().aws().diy(dqk.class).fga(false);
+         bpa.dhu("Velocity module was disabled to prevent conflicts.");
       }
+
+      super.dil();
    }
 
    @Override
    public void cbw() {
       long a = WatchdogFireball.a ^ 71140425762012L;
       int[] var3 = ClientSetup.abu();
-      if (var3 != null) {
-         if (!ClientSetup.gqy().aws().diy(dqk.class).dsv()) {
-            ClientSetup.gqy().aws().diy(dqk.class).fga(true);
-         }
-
-         a.fqf = 0;
-         a.bth = false;
-         super.cbw();
+      if (!ClientSetup.gqy().aws().diy(dqk.class).dsv()) {
+         ClientSetup.gqy().aws().diy(dqk.class).fga(true);
       }
+
+      a.fqf = 0;
+      a.bth = false;
+      super.cbw();
    }
 
    @gdz
@@ -351,94 +347,71 @@ public class WatchdogFireball extends hcr {
       long ax = WatchdogFireball.a ^ 11283878428559L;
       int[] var4 = ClientSetup.abu();
       int var10000 = a.bth;
-      if (var4 != null) {
-         if (!a.bth) {
-            return;
-         }
-
-         var10000 = evd.dbj();
+      if (!a.bth) {
+         return;
       }
 
-      if (var4 != null) {
-         if (var10000 == 0) {
-            return;
-         }
+      var10000 = evd.dbj();
 
-         var10000 = chi.field_1724.field_6235;
+      if (var10000 == 0) {
+         return;
       }
+
+      var10000 = chi.field_1724.field_6235;
 
       label112: {
          short var8 = 9;
-         if (var4 != null) {
-            label95: {
-               label94:
-               if (var10000 == 9) {
-                  label92: {
-                     label91: {
-                        label115: {
-                           var8 = 25478;
-                           var10000 = a.fsb.emb("Boost");
-                           if (var4 != null) {
-                              if (var10000 != 0) {
-                                 break label115;
-                              }
-
-                              var8 = 32380;
-                              var10000 = a.fsb.emb("Opal");
-                           }
-
-                           if (var4 == null) {
-                              break label92;
-                           }
-
-                           if (var10000 == 0) {
-                              break label91;
-                           }
+         label95: {
+            label94:
+            if (var10000 == 9) {
+               label92: {
+                  label91: {
+                     label115: {
+                        var8 = 25478;
+                        var10000 = a.fsb.emb("Boost");
+                        if (var10000 != 0) {
+                           break label115;
                         }
 
-                        evd.fdo(a, a.ggt.dnp().floatValue());
-                        if (var4 != null) {
-                           break label94;
+                        var8 = 32380;
+                        var10000 = a.fsb.emb("Opal");
+
+
+                        if (var10000 == 0) {
+                           break label91;
                         }
                      }
 
-                     var8 = 10065;
-                     var10000 = a.fsb.emb("Flat");
+                     evd.fdo(a, a.ggt.dnp().floatValue());
+                     break label94;
                   }
 
-                  if (var4 != null) {
-                     if (var10000 != 0) {
-                        bpa.dhu("flat");
-                        if (var4 != null) {
-                           break label94;
-                        }
-                     }
-
-                     String var6 = a.fsb.dnp();
-                     var8 = 23482;
-                     var10000 = var6.contains("Chef");
-                  }
-
-                  if (var4 == null) {
-                     break label95;
-                  }
-
-                  if (var10000 != 0) {
-                     bpa.dhu("cjef");
-                     evd.fdo(a, 1.4);
-                  }
+                  var8 = 10065;
+                  var10000 = a.fsb.emb("Flat");
                }
 
-               var10000 = chi.field_1724.field_6235;
+               if (var10000 != 0) {
+                  bpa.dhu("flat");
+                  break label94;
+               }
+
+               String var6 = a.fsb.dnp();
+               var8 = 23482;
+               var10000 = var6.contains("Chef");
+
+
+               if (var10000 != 0) {
+                  bpa.dhu("cjef");
+                  evd.fdo(a, 1.4);
+               }
             }
 
-            if (var4 == null) {
-               break label112;
-            }
-
-            var8 = 25385;
-            var8 = 8;
+            var10000 = chi.field_1724.field_6235;
          }
+
+
+         var8 = 25385;
+         var8 = 8;
 
          if (var10000 != var8) {
             return;
@@ -460,13 +433,11 @@ public class WatchdogFireball extends hcr {
       class_2596 axx = a.bed();
       int[] axxx = var10000;
       class_2596 var8 = axx;
-      if (axxx != null) {
-         if (!(axx instanceof class_2743)) {
-            return;
-         }
-
-         var8 = axx;
+      if (!(axx instanceof class_2743)) {
+         return;
       }
+
+      var8 = axx;
 
       class_2743 axxxx = (class_2743)var8;
       EntityVelocityUpdateS2CPacketAccessor axxxxx = (EntityVelocityUpdateS2CPacketAccessor)axxxx;
@@ -622,89 +593,6 @@ public class WatchdogFireball extends hcr {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 11778;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/WatchdogFireball", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/WatchdogFireball" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

@@ -35,7 +35,7 @@ public class cbc extends bmd {
    private static final long a = 62933262188176L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -63,59 +63,46 @@ public class cbc extends bmd {
                      label37: {
                         Objects.requireNonNull(axxxx);
                         var10000 = (int[])axxxx;
-                        if (axx != null) {
-                           switch (axxxx) {
-                              case gbp var21:
-                                 var10000 = (int[])axxxx;
-                                 break;
-                              case adu var22:
-                                 break label37;
-                              case cyx var23:
-                                 break label38;
-                              case bes var24:
-                                 break label39;
-                              case acn var25:
-                                 break label40;
-                              default:
-                                 break label41;
-                           }
+                        switch (axxxx) {
+                           case gbp var21:
+                              var10000 = (int[])axxxx;
+                              break;
+                           case adu var22:
+                              break label37;
+                           case cyx var23:
+                              break label38;
+                           case bes var24:
+                              break label39;
+                           case acn var25:
+                              break label40;
+                           default:
+                              break label41;
                         }
 
                         gbp axxxxx = (gbp)var10000;
                         a.gaw.add(new dcg(axxxx, new fal(axxxxx, a.arq(), 16.0F)));
-                        if (axx != null) {
-                           break label41;
-                        }
+                        break label41;
                      }
 
                      adu axxxxx = (adu)axxxx;
                      a.gaw.add(new dcg(axxxx, new hcd(axxxxx, a.arq(), 16.0F)));
-                     if (axx != null) {
-                        break label41;
-                     }
+                     break label41;
                   }
 
                   cyx axxxxx = (cyx)axxxx;
                   a.gaw.add(new dcg(axxxx, new biu(axxxxx, a.arq(), 16.0F)));
-                  if (axx != null) {
-                     break label41;
-                  }
+                  break label41;
                }
 
                bes axxxxx = (bes)axxxx;
                a.gaw.add(new dcg(axxxx, new ffz(axxxxx, a.arq(), 16.0F)));
-               if (axx != null) {
-                  break label41;
-               }
+               break label41;
             }
 
             acn axxxxx = (acn)axxxx;
             a.gaw.add(new dcg(axxxx, new crb(axxxxx, a.arq(), 16.0F)));
          }
 
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -133,15 +120,13 @@ public class cbc extends bmd {
       FontManager.emc("Sf-Ui", 11).aof(a.cca.clp(), a + 6.0F, axxx, Color.white.darker());
       String axxxx = a.cca.epz();
       String var13 = axxxx;
-      if (axx != null) {
-         int var14 = axxxx.length();
-         if (var14 > 60) {
-            String var15 = axxxx.substring(0, 60 - "...".length());
-            axxxx = var15 + "...";
-         }
-
-         var13 = "Sf-Ui";
+      int var14 = axxxx.length();
+      if (var14 > 60) {
+         String var15 = axxxx.substring(0, 60 - "...".length());
+         axxxx = var15 + "...";
       }
+
+      var13 = "Sf-Ui";
 
       FontManager.emc(var13, 10).aof(axxxx, a + 6.0F, axxx + 11.0F, fgl);
       float axxxxx = super.ajg() - 12.0F;
@@ -149,15 +134,13 @@ public class cbc extends bmd {
       float var24 = a + 6.0F;
       dmp.cpp(var17, var24, axxxxx, axxxxx, 4.0F, new Color(28, 28, 28));
       int var18 = a.cca.dsv();
-      if (axx != null) {
-         if (var18 != 0) {
-            ezv axxxxxx = ClientSetup.gqy().aws().diy(ezv.class);
-            dmp.dsm(a + a.arq() - (axxxxx + 6.0F), a + 6.0F, axxxxx, axxxxx, 4.0F, axxxxxx.ehf.dnp(), axxxxxx.aoz.dnp());
-         }
-
-         double var32;
-         var18 = (var32 = a.beq.hjo() - 0.0) == 0.0 ? 0 : (var32 < 0.0 ? -1 : 1);
+      if (var18 != 0) {
+         ezv axxxxxx = ClientSetup.gqy().aws().diy(ezv.class);
+         dmp.dsm(a + a.arq() - (axxxxx + 6.0F), a + 6.0F, axxxxx, axxxxx, 4.0F, axxxxxx.ehf.dnp(), axxxxxx.aoz.dnp());
       }
+
+      double var32;
+      var18 = (var32 = a.beq.hjo() - 0.0) == 0.0 ? 0 : (var32 < 0.0 ? -1 : 1);
 
       if (var18 > 0) {
          dmp.abh(a, a, a.arq(), a.ajg(), () -> {
@@ -171,21 +154,16 @@ public class cbc extends bmd {
                label22: {
                   dcg axxxx = (dcg)var9x.next();
                   dcg var11x = axxxx;
-                  if (axxx != null) {
-                     if (!axxxx.eyr.ajf().get()) {
-                        break label22;
-                     }
-
-                     var11x = axxxx;
+                  if (!axxxx.eyr.ajf().get()) {
+                     break label22;
                   }
+
+                  var11x = axxxx;
 
                   var11x.cpk().ckn(a, axx, a, a);
                   axx += axxxx.cpk.ajg() + 4.0F;
                }
 
-               if (axxx == null) {
-                  break;
-               }
             }
          });
       }
@@ -196,66 +174,48 @@ public class cbc extends bmd {
       long ax = cbc.a ^ 39734471383039L;
       int[] axx = ClientSetup.abu();
       int var10000 = fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), super.ajg());
-      if (axx != null) {
-         if (var10000) {
-            label84: {
-               var10000 = a;
-               if (axx != null) {
-                  if (a == 0) {
-                     a.cca.gxo();
-                     if (axx != null) {
-                        return;
-                     }
-                  }
-
-                  var12 = a;
-                  if (axx == null) {
-                     break label84;
-                  }
-
-                  var10000 = a.gaw.isEmpty();
-               }
-
-               if (var10000 != 0) {
-                  return;
-               }
-
-               var12 = a;
-            }
-
-            boolean var10001 = a.aks;
-            if (axx != null) {
-               var10001 = !a.aks;
-            }
-
-            var12.aks = var10001;
-            a.beq.bpt(a.beq.hjo());
-            if (axx != null) {
+      if (var10000) {
+         label84: {
+            var10000 = a;
+            if (a == 0) {
+               a.cca.gxo();
                return;
             }
+
+            var12 = a;
+
+            var10000 = a.gaw.isEmpty();
+
+            if (var10000 != 0) {
+               return;
+            }
+
+            var12 = a;
          }
 
-         var10000 = fuv.bfm(a, a, a.aqy(), a.gpn() + super.ajg(), a.arq(), a.ajg());
+         boolean var10001 = a.aks;
+         var10001 = !a.aks;
+
+         var12.aks = var10001;
+         a.beq.bpt(a.beq.hjo());
+         return;
       }
+
+      var10000 = fuv.bfm(a, a, a.aqy(), a.gpn() + super.ajg(), a.arq(), a.ajg());
 
       if (var10000) {
          for (dcg axxx : a.gaw) {
             label56: {
                dcg var13 = axxx;
-               if (axx != null) {
-                  if (!axxx.eyr.ajf().get()) {
-                     break label56;
-                  }
-
-                  var13 = axxx;
+               if (!axxx.eyr.ajf().get()) {
+                  break label56;
                }
+
+               var13 = axxx;
 
                var13.cpk.gdj(a, a, a);
             }
 
-            if (axx == null) {
-               break;
-            }
          }
       }
    }
@@ -271,20 +231,15 @@ public class cbc extends bmd {
          label22: {
             dcg axxx = (dcg)var9.next();
             dcg var11 = axxx;
-            if (axx != null) {
-               if (!axxx.eyr.ajf().get()) {
-                  break label22;
-               }
-
-               var11 = axxx;
+            if (!axxx.eyr.ajf().get()) {
+               break label22;
             }
+
+            var11 = axxx;
 
             var11.cpk().euk(a, a, a);
          }
 
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -296,43 +251,32 @@ public class cbc extends bmd {
       int[] axx = var10000;
       double var7 = a.beq.hjo();
       double var10001 = 0.0;
-      if (axx != null) {
-         label45: {
-            if (var7 > 0.0) {
-               var8 = a;
-               if (axx == null) {
-                  break label45;
-               }
+      label45: {
+         if (var7 > 0.0) {
+            var8 = a;
 
-               if (!a.gaw.isEmpty()) {
-                  label39: {
-                     for (dcg axxx : a.gaw) {
-                        if (axx == null) {
-                           break label39;
-                        }
+            if (!a.gaw.isEmpty()) {
+               label39: {
+                  for (dcg axxx : a.gaw) {
 
-                        if (axxx.eyr.ajf().get()) {
-                           ax += axxx.cpk.ajg() + 4.0F;
-                        }
-
-                        if (axx == null) {
-                           break;
-                        }
+                     if (axxx.eyr.ajf().get()) {
+                        ax += axxx.cpk.ajg() + 4.0F;
                      }
 
-                     ax += 6.0F;
                   }
 
-                  ax -= 4.0F;
+                  ax += 6.0F;
                }
-            }
 
-            var8 = a;
+               ax -= 4.0F;
+            }
          }
 
-         var7 = var8.ajg();
-         var10001 = ax * a.beq.hjo();
+         var8 = a;
       }
+
+      var7 = var8.ajg();
+      var10001 = ax * a.beq.hjo();
 
       return (float)(var7 + var10001);
    }
@@ -548,89 +492,6 @@ public class cbc extends bmd {
             var36 = var26.substring(++var35, var35 + var25);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 24993;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/cbc", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/cbc" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

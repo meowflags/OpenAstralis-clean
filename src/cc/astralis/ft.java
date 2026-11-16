@@ -39,16 +39,14 @@ public class ft extends fig {
       float axx = (a.fyp.dnp().floatValue() - a.fyp.cpl()) / (a.fyp.hgz() - a.fyp.cpl());
       int[] axxx = var10000;
       ft var18 = a;
-      if (axxx != null) {
-         if (a.fmr) {
-            float axxxx = Math.min(1.0F, Math.max(0.0F, (a - a.hjg()) / a.av()));
-            double axxxxx = ftb.ggt(a.fyp.cpl().floatValue(), a.fyp.hgz().floatValue(), axxxx);
-            axxxxx = a.bef(axxxxx, a.fyp.dvc());
-            a.fyp.gbf(new ImFloat((float)axxxxx));
-         }
-
-         var18 = a;
+      if (a.fmr) {
+         float axxxx = Math.min(1.0F, Math.max(0.0F, (a - a.hjg()) / a.av()));
+         double axxxxx = ftb.ggt(a.fyp.cpl().floatValue(), a.fyp.hgz().floatValue(), axxxx);
+         axxxxx = a.bef(axxxxx, a.fyp.dvc());
+         a.fyp.gbf(new ImFloat((float)axxxxx));
       }
+
+      var18 = a;
 
       float axxxx = var18.dtt() + 10.0F;
       float axxxxx = a.hjg() + 4.0F;
@@ -69,13 +67,11 @@ public class ft extends fig {
       long ax = ft.a ^ 16324847640740L;
       int[] var8 = ClientSetup.abu();
       int var10000 = fuv.bfm(a, a, a.hjg(), a.dtt() + 8.0F, a.av(), 6.0F);
-      if (var8 != null) {
-         if (var10000 == 0) {
-            return;
-         }
-
-         var10000 = a;
+      if (var10000 == 0) {
+         return;
       }
+
+      var10000 = a;
 
       if (var10000 == 0) {
          a.fmr = true;
@@ -87,13 +83,11 @@ public class ft extends fig {
       long ax = ft.a ^ 38701825407660L;
       int[] var8 = ClientSetup.abu();
       ft var10000 = a;
-      if (var8 != null) {
-         if (!a.fmr) {
-            return;
-         }
-
-         var10000 = a;
+      if (!a.fmr) {
+         return;
       }
+
+      var10000 = a;
 
       var10000.fmr = false;
    }
@@ -103,14 +97,12 @@ public class ft extends fig {
       int[] var6 = ClientSetup.abu();
       float var10000 = a;
       float var10001 = 0.0F;
-      if (var6 != null) {
-         if (a == 0.0F) {
-            return a;
-         }
-
-         var10000 = (float)Math.round(a / a);
-         var10001 = a;
+      if (a == 0.0F) {
+         return a;
       }
+
+      var10000 = (float)Math.round(a / a);
+      var10001 = a;
 
       double var7 = var10000 * var10001;
       return ftb.hbp(var7, 6);

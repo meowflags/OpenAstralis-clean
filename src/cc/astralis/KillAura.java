@@ -101,7 +101,7 @@ public class KillAura extends guu {
    private static final long a = 104499179569616L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -147,22 +147,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431887736755688566L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247942356108500490L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247942356108500490L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -172,22 +167,17 @@ public class KillAura extends guu {
          short var10001x = 12390;
          long var10002x = 8213316058764927337L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 31565;
+            var10002x = 7933930881207020102L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 31565;
-               var10002x = 7933930881207020102L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -197,22 +187,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431943963108098391L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247884235667114795L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247884235667114795L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -222,22 +207,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431996717137723900L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247901803044424576L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247901803044424576L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -335,19 +315,12 @@ public class KillAura extends guu {
          short var10001x = 13692;
          long var10002x = 2240900754677225148L ^ ax;
          boolean var10000 = a.dhq.emb("Watchdog 2");
-         if (var3 != null) {
-            if (!var10000) {
-               return false;
-            }
-
-            var10000 = a.boi.dnp();
+         if (!var10000) {
+            return false;
          }
 
-         if (var3 == null) {
-            return var10000;
-         } else {
-            return var10000 ? true : false;
-         }
+         var10000 = a.boi.dnp();
+
       });
       var4[9] = a.esi.bih(a.boi::dnp);
       var4[10] = a.can.bih(a.boi::dnp);
@@ -363,22 +336,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431922713234090242L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247977472441246590L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247977472441246590L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -388,22 +356,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431915833330543689L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247982686893631029L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247982686893631029L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -413,22 +376,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431941415118504075L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247886221015927543L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247886221015927543L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -438,22 +396,17 @@ public class KillAura extends guu {
          short var10001x = 4213;
          long var10002x = 8431897915155049670L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
-         if (var3 != null) {
+         if (!var10000) {
+            var10001x = 23048;
+            var10002x = 2247930544539117242L ^ ax;
+            var10000 = a.bcj.emb("MouseSim");
+
             if (!var10000) {
-               var10001x = 23048;
-               var10002x = 2247930544539117242L ^ ax;
-               var10000 = a.bcj.emb("MouseSim");
-               if (var3 == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -469,9 +422,7 @@ public class KillAura extends guu {
          long ax = KillAura.a ^ 90531660610396L;
          int[] var3 = ClientSetup.abu();
          boolean var10000 = a.dnl.dnp();
-         if (var3 != null) {
-            var10000 = !var10000;
-         }
+         var10000 = !var10000;
 
          return var10000;
       });
@@ -479,9 +430,7 @@ public class KillAura extends guu {
          long ax = KillAura.a ^ 98979080666413L;
          int[] var3 = ClientSetup.abu();
          boolean var10000 = a.dnl.dnp();
-         if (var3 != null) {
-            var10000 = !var10000;
-         }
+         var10000 = !var10000;
 
          return var10000;
       });
@@ -517,53 +466,40 @@ public class KillAura extends guu {
       int[] var4 = ClientSetup.abu();
       if (a.cud() != gpy.POST) {
          int var10000 = ClientSetup.gqy().aws().diy(GodBridge.class).dsv();
-         if (var4 != null) {
-            if (var10000) {
-               return;
-            }
-
-            var10000 = ClientSetup.gqy().aws().diy(AimAssist.class).dsv();
+         if (var10000) {
+            return;
          }
+
+         var10000 = ClientSetup.gqy().aws().diy(AimAssist.class).dsv();
 
          label127: {
             label132: {
-               if (var4 != null) {
-                  if (var10000 && ClientSetup.gqy().aws().diy(AimAssist.class).bvh != null) {
-                     return;
-                  }
-
-                  a.cye++;
-                  a.efe(a.asa.dnp());
-                  a.bfx = bav.elv(a.aps.dnp(), a.fzp.dnp(), a.dv.dnp(), a.gln.dnp(), a.fjt.dnp(), a.flh.dnp().floatValue());
-                  var5 = a;
-                  if (var4 == null) {
-                     break label132;
-                  }
-
-                  var10000 = a.asa.emb("Switch");
+               if (var10000 && ClientSetup.gqy().aws().diy(AimAssist.class).bvh != null) {
+                  return;
                }
+
+               a.cye++;
+               a.efe(a.asa.dnp());
+               a.bfx = bav.elv(a.aps.dnp(), a.fzp.dnp(), a.dv.dnp(), a.gln.dnp(), a.fjt.dnp(), a.flh.dnp().floatValue());
+               var5 = a;
+
+               var10000 = a.asa.emb("Switch");
 
                if (var10000) {
                   KillAura var6 = a;
-                  if (var4 != null) {
-                     if (a.bfx.size() > 1) {
-                        a.bfx = a.bfx
-                           .stream()
-                           .filter(axx -> bav.dtz(axx, a.ejq.dnp().floatValue()))
-                           .sorted(Comparator.comparingDouble(dgq::flj))
-                           .collect(Collectors.toList());
-                        if (var4 != null) {
-                           break label127;
-                        }
-                     }
-
-                     var6 = a;
-                  }
-
-                  var6.bfx = a.bfx.stream().sorted(Comparator.comparingDouble(dgq::flj)).collect(Collectors.toList());
-                  if (var4 != null) {
+                  if (a.bfx.size() > 1) {
+                     a.bfx = a.bfx
+                        .stream()
+                        .filter(axx -> bav.dtz(axx, a.ejq.dnp().floatValue()))
+                        .sorted(Comparator.comparingDouble(dgq::flj))
+                        .collect(Collectors.toList());
                      break label127;
                   }
+
+                  var6 = a;
+
+                  var6.bfx = a.bfx.stream().sorted(Comparator.comparingDouble(dgq::flj)).collect(Collectors.toList());
+                  break label127;
                }
 
                var5 = a;
@@ -573,43 +509,32 @@ public class KillAura extends guu {
          }
 
          var10000 = a.bfx.isEmpty();
-         if (var4 != null) {
-            if (var10000 != 0) {
-               a.gvw = null;
-               a.dan = 0;
-               a.epe(false);
-               return;
-            }
-
-            var10000 = a.asa.emb("Single");
+         if (var10000 != 0) {
+            a.gvw = null;
+            a.dan = 0;
+            a.epe(false);
+            return;
          }
 
-         label134: {
-            if (var4 != null) {
-               if (var10000 != 0) {
-                  a.gvw = a.bfx.getFirst();
-                  a.dan = 0;
-                  if (var4 != null) {
-                     break label134;
-                  }
-               }
+         var10000 = a.asa.emb("Single");
 
-               var10000 = a.dan;
+         label134: {
+            if (var10000 != 0) {
+               a.gvw = a.bfx.getFirst();
+               a.dan = 0;
+               break label134;
             }
 
+            var10000 = a.dan;
+
             label135: {
-               if (var4 != null) {
-                  if (var10000 >= a.bfx.size()) {
-                     a.dan = 0;
-                  }
-
-                  var8 = a;
-                  if (var4 == null) {
-                     break label135;
-                  }
-
-                  var10000 = a.acr.fsc(200L);
+               if (var10000 >= a.bfx.size()) {
+                  a.dan = 0;
                }
+
+               var8 = a;
+
+               var10000 = a.acr.fsc(200L);
 
                if (var10000 != 0) {
                   a.dan = (a.dan + 1) % a.bfx.size();
@@ -623,14 +548,12 @@ public class KillAura extends guu {
          }
 
          KillAura var9 = a;
-         if (var4 != null) {
-            if (a.gvw == null) {
-               a.epe(false);
-               return;
-            }
-
-            var9 = a;
+         if (a.gvw == null) {
+            a.epe(false);
+            return;
          }
+
+         var9 = a;
 
          var9.deb();
       }
@@ -1144,81 +1067,54 @@ public class KillAura extends guu {
       long ax = KillAura.a ^ 86013953107038L;
       int[] var5 = ClientSetup.abu();
       byte var10000 = chi.field_1724.method_24828();
-      if (var5 != null) {
+      if (var10000 == 0) {
+         var10000 = chi.field_1724.method_6101();
+
          if (var10000 == 0) {
-            var10000 = chi.field_1724.method_6101();
-            if (var5 == null) {
-               return (boolean)var10000;
-            }
+            var10000 = chi.field_1724.method_5799();
 
             if (var10000 == 0) {
-               var10000 = chi.field_1724.method_5799();
-               if (var5 == null) {
-                  return (boolean)var10000;
-               }
+               var10000 = chi.field_1724.method_5869();
 
                if (var10000 == 0) {
-                  var10000 = chi.field_1724.method_5869();
-                  if (var5 == null) {
-                     return (boolean)var10000;
-                  }
+                  var10000 = chi.field_1724.method_6059(class_1294.field_5919);
 
                   if (var10000 == 0) {
-                     var10000 = chi.field_1724.method_6059(class_1294.field_5919);
-                     if (var5 == null) {
-                        return (boolean)var10000;
-                     }
+                     var10000 = chi.field_1724.method_5765();
 
+                     label91:
                      if (var10000 == 0) {
-                        var10000 = chi.field_1724.method_5765();
-                        if (var5 == null) {
-                           return (boolean)var10000;
+                        int var6 = a;
+                        if (a) {
+                           double var7;
+                           var6 = (var7 = chi.field_1724.field_6017 - 0.0) == 0.0 ? 0 : (var7 < 0.0 ? -1 : 1);
+
+                           if (var6 <= 0) {
+                              break label91;
+                           }
                         }
 
-                        label91:
-                        if (var10000 == 0) {
-                           int var6 = a;
-                           if (var5 != null) {
-                              if (a) {
-                                 double var7;
-                                 var6 = (var7 = chi.field_1724.field_6017 - 0.0) == 0.0 ? 0 : (var7 < 0.0 ? -1 : 1);
-                                 if (var5 == null) {
-                                    return (boolean)var6;
-                                 }
+                        var6 = a;
 
-                                 if (var6 <= 0) {
-                                    break label91;
-                                 }
-                              }
+                        if (var6) {
+                           boolean var8 = chi.field_1724.method_5624();
 
-                              var6 = a;
+                           if (var8) {
+                              return false;
                            }
-
-                           if (var5 != null) {
-                              if (var6) {
-                                 boolean var8 = chi.field_1724.method_5624();
-                                 if (var5 == null) {
-                                    return var8;
-                                 }
-
-                                 if (var8) {
-                                    return false;
-                                 }
-                              }
-
-                              var6 = 1;
-                           }
-
-                           return (boolean)var6;
                         }
+
+                        var6 = 1;
+
+                        return (boolean)var6;
                      }
                   }
                }
             }
          }
-
-         var10000 = 0;
       }
+
+      var10000 = 0;
 
       return (boolean)var10000;
    }
@@ -1604,13 +1500,11 @@ public class KillAura extends guu {
       long ax = KillAura.a ^ 91096211361065L;
       int[] var4 = ClientSetup.abu();
       KillAura var10000 = a;
-      if (var4 != null) {
-         if (!a.fwx.dnp()) {
-            return;
-         }
-
-         var10000 = a;
+      if (!a.fwx.dnp()) {
+         return;
       }
+
+      var10000 = a;
 
       if (var10000.gvw != null) {
          bqf.enm(a.bus(), a.gvw);
@@ -1623,21 +1517,14 @@ public class KillAura extends guu {
          long ax = KillAura.a ^ 1631443414286L;
          int[] var4 = ClientSetup.abu();
          boolean var10000 = a;
-         if (var4 != null) {
-            if (a) {
-               a.cyo(a.can.dnp(), a.esi.dnp());
-               if (var4 != null) {
-                  return;
-               }
-            }
-
-            var5 = a;
-            if (var4 == null) {
-               break label35;
-            }
-
-            var10000 = a.bzo;
+         if (a) {
+            a.cyo(a.can.dnp(), a.esi.dnp());
+            return;
          }
+
+         var5 = a;
+
+         var10000 = a.bzo;
 
          if (var10000) {
             ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
@@ -1654,20 +1541,16 @@ public class KillAura extends guu {
       long ax = KillAura.a ^ 101122312292328L;
       int[] var5 = ClientSetup.abu();
       boolean var10000 = a;
-      if (var5 != null) {
-         if (a) {
-            chi.field_1761.method_2905(chi.field_1724, a.gvw, class_1268.field_5808);
-         }
-
-         var10000 = a;
+      if (a) {
+         chi.field_1761.method_2905(chi.field_1724, a.gvw, class_1268.field_5808);
       }
+
+      var10000 = a;
 
       label24: {
          if (var10000) {
             gix.avn(axx -> new class_2886(class_1268.field_5808, axx, a.bbh[0], a.bbh[1]));
-            if (var5 != null) {
-               break label24;
-            }
+            break label24;
          }
 
          chi.field_1690.field_1904.method_23481(true);
@@ -1760,22 +1643,18 @@ public class KillAura extends guu {
       long a = KillAura.a ^ 123724835910853L;
       int[] var3 = ClientSetup.abu();
       Object var10000 = a.gvw;
-      if (var3 != null) {
-         if (a.gvw == null) {
-            return false;
-         }
-
-         var10000 = a.boi.dnp();
+      if (a.gvw == null) {
+         return false;
       }
+
+      var10000 = a.boi.dnp();
 
       boolean var4 = (Boolean)var10000;
-      if (var3 != null) {
-         if (!var4) {
-            return false;
-         }
-
-         var4 = a.exv;
+      if (!var4) {
+         return false;
       }
+
+      var4 = a.exv;
 
       return var3 == null ? var4 : var4;
    }
@@ -2044,89 +1923,6 @@ public class KillAura extends guu {
             var37 = var28.substring(++var36, var36 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 20893;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ekb", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ekb" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

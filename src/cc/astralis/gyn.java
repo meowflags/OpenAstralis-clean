@@ -53,13 +53,11 @@ public class gyn extends brc {
       int[] var2 = ClientSetup.abu();
       int var3 = goo();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 114;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 114;
       }
+
+      var10000 = 0;
 
       return var10000;
    }

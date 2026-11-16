@@ -35,13 +35,11 @@ public class DisablerVerusTimer extends hcr {
       class_2596 var6 = a.bed();
       int[] axx = var10000;
       class_2596 var7 = var6;
-      if (axx != null) {
-         if (!(var6 instanceof class_2828)) {
-            return;
-         }
-
-         var7 = var6;
+      if (!(var6 instanceof class_2828)) {
+         return;
       }
+
+      var7 = var6;
 
       class_2828 axxx = (class_2828)var7;
       a.gmm(true);
@@ -59,20 +57,18 @@ public class DisablerVerusTimer extends hcr {
          )
       );
       DisablerVerusTimer var8 = a;
-      if (axx != null) {
-         if (a.ghx % 3 == 0) {
-            gix.dsd(
-               new class_2886(
-                  chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611) ? class_1268.field_5810 : class_1268.field_5808,
-                  0,
-                  0.0F,
-                  0.0F
-               )
-            );
-         }
-
-         var8 = a;
+      if (a.ghx % 3 == 0) {
+         gix.dsd(
+            new class_2886(
+               chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611) ? class_1268.field_5810 : class_1268.field_5808,
+               0,
+               0.0F,
+               0.0F
+            )
+         );
       }
+
+      var8 = a;
 
       var8.ghx++;
    }
@@ -94,30 +90,4 @@ public class DisablerVerusTimer extends hcr {
       d = var5;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

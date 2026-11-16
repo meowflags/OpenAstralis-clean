@@ -24,7 +24,6 @@ public enum fua {
    }
 
    public static fua edx(int code) {
-      long ax = fua.a ^ 31299698473818L;
       fua[] var4 = values();
       int[] var10000 = ClientSetup.abu();
       int var5 = var4.length;
@@ -34,22 +33,15 @@ public enum fua {
       while (true) {
          if (var6 < var5) {
             fua axxx = var4[var6];
-            if (axx != null) {
-               var8 = axxx;
-               if (axx == null) {
-                  break;
-               }
+            var8 = axxx;
 
-               if (axxx.clb == a) {
-                  return axxx;
-               }
-
-               var6++;
+            if (axxx.clb == a) {
+               return axxx;
             }
 
-            if (axx != null) {
-               continue;
-            }
+            var6++;
+
+            continue;
          }
 
          var8 = OTHER;
@@ -177,30 +169,4 @@ public enum fua {
       }
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

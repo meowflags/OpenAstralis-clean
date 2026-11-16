@@ -49,9 +49,6 @@ public class ckg extends fig {
 
       for (ffn<?> axxx : a.cbf()) {
          a.adl(axxx);
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -65,16 +62,12 @@ public class ckg extends fig {
          Color axxx = new Color(30, 30, 30);
          axx = var10000;
          ckg var14 = a;
-         if (axx != null) {
-            if (!a.dty.dsv()) {
-               dmp.euv(a.hjg(), a.dtt(), a.av(), a.gqc(), axxx);
-               if (axx != null) {
-                  break label139;
-               }
-            }
-
-            var14 = a;
+         if (!a.dty.dsv()) {
+            dmp.euv(a.hjg(), a.dtt(), a.av(), a.gqc(), axxx);
+            break label139;
          }
+
+         var14 = a;
 
          dmp.dyl(var14.hjg(), a.dtt(), a.av(), a.gqc(), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
       }
@@ -87,20 +80,15 @@ public class ckg extends fig {
       byte var15;
       var15 = a.dfv;
       label130:
-      if (axx != null) {
-         if (!a.dfv) {
-            var15 = a.btb;
-            if (axx == null) {
-               break label130;
-            }
+      if (!a.dfv) {
+         var15 = a.btb;
 
-            if (!a.btb) {
-               return;
-            }
+         if (!a.btb) {
+            return;
          }
-
-         var15 = 1;
       }
+
+      var15 = 1;
 
       float[] var16 = new float[var15];
       var16[0] = a.dtt() + a.gqc();
@@ -114,23 +102,15 @@ public class ckg extends fig {
                if (axxxxxx.hasNext()) {
                   fig axxxxxxx = (fig)axxxxxx.next();
                   var17 = axxxxxxx.auw().ajf().get();
-                  if (axx == null) {
-                     break;
-                  }
 
                   if (var17) {
                      axxxxx += axxxxxxx.gqc() + 2.0F;
                   }
 
-                  if (axx != null) {
-                     continue;
-                  }
+                  continue;
                }
 
                var18 = a;
-               if (axx == null) {
-                  break label143;
-               }
 
                var17 = a.cxl;
                break;
@@ -140,9 +120,7 @@ public class ckg extends fig {
                a.dmy.bpt(0.0);
                a.dmy.gbi(axxxxx);
                a.dmy.dwm(axxxxx);
-               if (axx != null) {
-                  break label120;
-               }
+               break label120;
             }
 
             a.dmy.bpt(axxxxx);
@@ -162,36 +140,23 @@ public class ckg extends fig {
                axxxxxxxx = axxxxx;
                var15 = a.cxl;
                label99:
-               if (axx != null) {
-                  if (!a.cxl) {
-                     float var28;
-                     var15 = (var28 = a - 0.1F) == 0.0F ? 0 : (var28 < 0.0F ? -1 : 1);
-                     if (axx == null) {
-                        break label99;
-                     }
+               if (!a.cxl) {
+                  float var28;
+                  var15 = (var28 = a - 0.1F) == 0.0F ? 0 : (var28 < 0.0F ? -1 : 1);
 
-                     if (var15 <= 0) {
-                        a.btb = false;
-                        a = 0.0F;
-                        if (axx != null) {
-                           break label148;
-                        }
-                     }
+                  if (var15 <= 0) {
+                     a.btb = false;
+                     a = 0.0F;
+                     break label148;
                   }
-
-                  var15 = a.cxl;
                }
 
-               if (axx == null) {
-                  break label147;
-               }
+               var15 = a.cxl;
+
 
                if (var15 != 0) {
                   float var29;
                   var15 = (var29 = a - (axxxxx - 0.1F)) == 0.0F ? 0 : (var29 < 0.0F ? -1 : 1);
-                  if (axx == null) {
-                     break label147;
-                  }
 
                   if (var15 >= 0) {
                      a = axxxxx;
@@ -201,9 +166,6 @@ public class ckg extends fig {
 
             var20 = a;
             var10001 = 0.0F;
-            if (axx == null) {
-               break label146;
-            }
 
             float var30;
             var15 = (var30 = a - 0.0F) == 0.0F ? 0 : (var30 < 0.0F ? -1 : 1);
@@ -233,23 +195,18 @@ public class ckg extends fig {
             label22: {
                fig axxx = (fig)var8x.next();
                fig var10x = axxx;
-               if (axx != null) {
-                  if (!axxx.auw().ajf().get()) {
-                     break label22;
-                  }
-
-                  axxx.ans(a.hjg());
-                  axxx.dzm(a[0]);
-                  var10x = axxx;
+               if (!axxx.auw().ajf().get()) {
+                  break label22;
                }
+
+               axxx.ans(a.hjg());
+               axxx.dzm(a[0]);
+               var10x = axxx;
 
                var10x.bfi(a, a);
                a[0] += axxx.gqc() + 2.0F;
             }
 
-            if (axx == null) {
-               break;
-            }
          }
       });
    }
@@ -259,46 +216,33 @@ public class ckg extends fig {
       long ax = ckg.a ^ 127353522042544L;
       int[] var8 = ClientSetup.abu();
       int var10000 = a.dfv;
-      if (var8 != null) {
-         if (a.dfv) {
-            a.ais.forEach(axx -> axx.apy(a, a, a));
-         }
-
-         var10000 = fuv.bfm(a, a, a.hjg(), a.dtt(), a.av(), a.gqc());
+      if (a.dfv) {
+         a.ais.forEach(axx -> axx.apy(a, a, a));
       }
 
-      if (var8 != null) {
-         if (var10000 == 0) {
+      var10000 = fuv.bfm(a, a, a.hjg(), a.dtt(), a.av(), a.gqc());
+
+      if (var10000 == 0) {
+         return;
+      }
+
+      var10000 = a;
+
+      if (var10000 == 0) {
+         a.dty.gxo();
+         return;
+      }
+
+      var10000 = a;
+
+      label77: {
+         if (var10000 != 1) {
             return;
          }
 
-         var10000 = a;
-      }
+         var9 = a;
 
-      if (var8 != null) {
-         if (var10000 == 0) {
-            a.dty.gxo();
-            if (var8 != null) {
-               return;
-            }
-         }
-
-         var10000 = a;
-      }
-
-      label77: {
-         if (var8 != null) {
-            if (var10000 != 1) {
-               return;
-            }
-
-            var9 = a;
-            if (var8 == null) {
-               break label77;
-            }
-
-            var10000 = a.ais.isEmpty();
-         }
+         var10000 = a.ais.isEmpty();
 
          if (var10000 != 0) {
             return;
@@ -308,9 +252,7 @@ public class ckg extends fig {
       }
 
       boolean var10001 = a.dfv;
-      if (var8 != null) {
-         var10001 = !a.dfv;
-      }
+      var10001 = !a.dfv;
 
       var9.dfv = var10001;
       a.cxl = a.dfv;
@@ -535,33 +477,6 @@ public class ckg extends fig {
             var36 = 0;
          }
       }
-   }
-
-   private static String b(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
    }
 
    private static int a(int var0, long var1) {

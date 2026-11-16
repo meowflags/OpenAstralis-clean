@@ -53,9 +53,7 @@ public class fal extends bmd {
       if (fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), a.ajg())) {
          gbp var10000 = a.gvd;
          boolean var10001 = a.gvd.dnp();
-         if (var8 != null) {
-            var10001 = !var10001;
-         }
+         var10001 = !var10001;
 
          var10000.gbf(var10001);
       }

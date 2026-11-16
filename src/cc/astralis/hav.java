@@ -32,9 +32,6 @@ public class hav implements dlc {
          class_268 axxxx = chi.field_1724.method_5781();
          class_268 var8 = axxx;
          if (ax != null) {
-            if (axxx == null) {
-               break label72;
-            }
 
             var8 = axxxx;
          }
@@ -90,48 +87,34 @@ public class hav implements dlc {
       long ax = hav.a ^ 60768022434486L;
       int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (axx != null) {
-         if (chi.field_1724.method_5722(a)) {
-            return true;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724.method_5722(a)) {
+         return true;
       }
+
+      var10000 = chi.field_1724;
 
       class_2561 axxx = var10000.method_5476();
       class_2561 axxxx = a.method_5476();
       class_2561 var6 = axxx;
-      if (axx != null) {
-         if (axxx == null) {
-            return false;
-         }
 
-         var6 = axxxx;
+      var6 = axxxx;
+
+      if (var6 == null) {
+         return false;
       }
 
-      if (axx != null) {
-         if (var6 == null) {
-            return false;
-         }
-
-         var6 = axxx;
-      }
+      var6 = axxx;
 
       boolean var7 = cdm(var6, axxxx);
-      if (axx != null) {
-         if (!var7) {
-            boolean var8 = gga(axxxx, axxx);
-            if (axx == null) {
-               return var8;
-            }
+      if (!var7) {
+         boolean var8 = gga(axxxx, axxx);
 
-            if (!var8) {
-               return false;
-            }
+         if (!var8) {
+            return false;
          }
-
-         var7 = true;
       }
+
+      var7 = true;
 
       return var7;
    }
@@ -143,21 +126,17 @@ public class hav implements dlc {
       int[] axxx = var10000;
       class_2583 axxxx = a.method_10866();
       class_5251 var7 = axx.method_10973();
-      if (axxx != null) {
-         if (var7 == null) {
-            return false;
-         }
-
-         var7 = axxxx.method_10973();
+      if (var7 == null) {
+         return false;
       }
 
-      if (axxx != null) {
-         if (var7 == null) {
-            return false;
-         }
+      var7 = axxxx.method_10973();
 
-         var7 = axx.method_10973();
+      if (var7 == null) {
+         return false;
       }
+
+      var7 = axx.method_10973();
 
       boolean var8 = var7.equals(axxxx.method_10973());
       return axxx == null ? var8 : var8;
@@ -207,30 +186,23 @@ public class hav implements dlc {
       long ax = hav.a ^ 99587346902512L;
       int[] axx = ClientSetup.abu();
       class_1309 var10000 = a;
-      if (axx != null) {
-         if (!(a instanceof class_1657)) {
-            return false;
-         }
-
-         var10000 = a;
+      if (!(a instanceof class_1657)) {
+         return false;
       }
+
+      var10000 = a;
 
       class_1657 axxx = (class_1657)var10000;
       boolean var5 = ara(axxx, 3);
-      if (axx != null) {
-         if (!var5) {
-            boolean var6 = ara(axxx, 2);
-            if (axx == null) {
-               return var6;
-            }
+      if (!var5) {
+         boolean var6 = ara(axxx, 2);
 
-            if (!var6) {
-               return false;
-            }
+         if (!var6) {
+            return false;
          }
-
-         var5 = true;
       }
+
+      var5 = true;
 
       return var5;
    }
@@ -247,13 +219,11 @@ public class hav implements dlc {
       long ax = hav.a ^ 82046231663174L;
       int[] var3 = ClientSetup.abu();
       int var10000 = a.method_31573(class_3489.field_48803);
-      if (var3 != null) {
-         if (var10000 == 0) {
-            return null;
-         }
-
-         var10000 = class_9282.method_57470(a, (int)b);
+      if (var10000 == 0) {
+         return null;
       }
+
+      var10000 = class_9282.method_57470(a, (int)b);
 
       return var10000;
    }
@@ -308,30 +278,4 @@ public class hav implements dlc {
       dh = Pattern.compile(var5);
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

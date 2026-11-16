@@ -163,13 +163,11 @@ lbl25:
             InputStream inputStream = hcu.class.getResourceAsStream("assets/astralis/" + a);
             int[] a4 = ClientSetup.abu();
             void v0 = a2;
-            if (a4 != null) {
-                if (v0 == null) {
-                    long cfr_ignored_1 = 0x5E3E7B7615DD6F02L ^ a3;
-                    throw new IllegalArgumentException("Resource not found: " + a);
-                }
-                v0 = a2;
-            }
+             if (v0 == null) {
+                 long cfr_ignored_1 = 0x5E3E7B7615DD6F02L ^ a3;
+                 throw new IllegalArgumentException("Resource not found: " + a);
+             }
+             v0 = a2;
             return hcu.fkx((InputStream)v0);
         });
     }

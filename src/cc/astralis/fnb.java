@@ -33,21 +33,17 @@ public class fnb {
       long a = fnb.a ^ 120075732579776L;
       int[] var3 = ClientSetup.abu();
       en var10000 = a.bmb;
-      if (var3 != null) {
-         if (a.bmb.fjz == null) {
-            throw new IllegalArgumentException(b);
-         }
-
-         var10000 = a.bmb;
+      if (a.bmb.fjz == null) {
+         throw new IllegalArgumentException(b);
       }
 
-      if (var3 != null) {
-         if (var10000.dxb > 0) {
-            return;
-         }
+      var10000 = a.bmb;
 
-         var10000 = a.bmb;
+      if (var10000.dxb > 0) {
+         return;
       }
+
+      var10000 = a.bmb;
 
       var10000.dxb = (int)c;
    }
@@ -113,30 +109,4 @@ public class fnb {
       c = var14;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

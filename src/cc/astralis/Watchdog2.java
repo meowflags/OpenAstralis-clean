@@ -26,7 +26,7 @@ public class Watchdog2 extends hcr {
    private static final long a = 94519210455217L;
    private static final String[] d;
    private static final String[] e;
-   private static final Map f = new HashMap(13);
+
    private static final long[] g;
    private static final Long[] h;
    private static final Map i;
@@ -51,77 +51,60 @@ public class Watchdog2 extends hcr {
    public void dil() {
       long a = Watchdog2.a ^ 93753426490403L;
       int[] ax = ClientSetup.abu();
-      if (ax != null) {
-         label52:
-         if (chi.field_1724 != null) {
-            Object var6;
-            label79: {
-               boolean var10000 = chi.field_1724.method_24828();
-               if (ax != null) {
-                  if (!var10000) {
-                     break label52;
-                  }
-
-                  var6 = (eky)ClientSetup.gqy().aws().diy(eky.class);
-                  if (ax == null) {
-                     break label79;
-                  }
-
-                  var10000 = var6.dsv();
-               }
-
-               if (var10000) {
-                  break label52;
-               }
-
-               var6 = a.fob.dnp();
+      label52:
+      if (chi.field_1724 != null) {
+         Object var6;
+         label79: {
+            boolean var10000 = chi.field_1724.method_24828();
+            if (!var10000) {
+               break label52;
             }
 
-            String var4 = (String)var6;
-            byte var5 = -1;
-            var7 = var4.hashCode();
-            label65:
-            if (ax != null) {
-               switch (var7) {
-                  case 2320462:
-                     var7 = var4.equals("Jump");
-                     if (ax == null) {
-                        break label65;
-                     }
+            var6 = (eky)ClientSetup.gqy().aws().diy(eky.class);
 
-                     if (var7 == 0) {
-                        break;
-                     }
+            var10000 = var6.dsv();
 
-                     var5 = 0;
-                     if (ax != null) {
-                        break;
-                     }
-                  case 2004703496:
-                     var7 = var4.equals("Bypass");
-                     if (ax == null) {
-                        break label65;
-                     }
-
-                     if (var7 != 0) {
-                        var5 = 1;
-                     }
-               }
-
-               var7 = var5;
+            if (var10000) {
+               break label52;
             }
 
-            switch (var7) {
-               case 0:
-                  chi.field_1724.method_6043();
-               case 1:
-            }
+            var6 = a.fob.dnp();
          }
 
-         a.bzg = 0;
-         a.ftw.fwx = true;
-         super.dil();
+         String var4 = (String)var6;
+         byte var5 = -1;
+         var7 = var4.hashCode();
+         label65:
+         switch (var7) {
+            case 2320462:
+               var7 = var4.equals("Jump");
+
+               if (var7 == 0) {
+                  break;
+               }
+
+               var5 = 0;
+               break;
+            case 2004703496:
+               var7 = var4.equals("Bypass");
+
+               if (var7 != 0) {
+                  var5 = 1;
+               }
+         }
+
+         var7 = var5;
+
+         switch (var7) {
+            case 0:
+               chi.field_1724.method_6043();
+            case 1:
+         }
       }
+
+      a.bzg = 0;
+      a.ftw.fwx = true;
+      super.dil();
    }
 
    @Override
@@ -136,85 +119,67 @@ public class Watchdog2 extends hcr {
       long ax = Watchdog2.a ^ 52429121917897L;
       int[] axx = ClientSetup.abu();
       int var10000 = evd.bpi();
-      if (axx != null) {
-         if (var10000 != 0) {
-            chi.field_1724
-               .method_18800(
-                  chi.field_1724.method_18798().field_1352 * 0.95, chi.field_1724.method_18798().field_1351, chi.field_1724.method_18798().field_1350 * 0.95
-               );
-         }
-
-         var10000 = ((eky)ClientSetup.gqy().aws().diy(eky.class)).dsv();
+      if (var10000 != 0) {
+         chi.field_1724
+            .method_18800(
+               chi.field_1724.method_18798().field_1352 * 0.95, chi.field_1724.method_18798().field_1351, chi.field_1724.method_18798().field_1350 * 0.95
+            );
       }
 
-      if (axx != null) {
-         if (var10000 != 0) {
-            return;
-         }
+      var10000 = ((eky)ClientSetup.gqy().aws().diy(eky.class)).dsv();
 
-         var10000 = chi.field_1690.field_1903.method_1434();
+      if (var10000 != 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000 != 0) {
-            return;
-         }
+      var10000 = chi.field_1690.field_1903.method_1434();
 
-         var10000 = evd.dbj();
+      if (var10000 != 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000 == 0) {
-            return;
-         }
+      var10000 = evd.dbj();
 
-         var10000 = a.ftw.bza.dnp();
+      if (var10000 == 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000 == 0) {
-            return;
-         }
+      var10000 = a.ftw.bza.dnp();
 
-         var10000 = a.ftw.gnd;
+      if (var10000 == 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000 == 0) {
-            return;
-         }
+      var10000 = a.ftw.gnd;
 
-         var10000 = a.ftw.dsv();
+      if (var10000 == 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000 == 0) {
-            return;
-         }
+      var10000 = a.ftw.dsv();
 
-         bpa.bez("opffset " + chi.field_1724.field_6012);
-         var10000 = chi.field_1724.method_24828();
+      if (var10000 == 0) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000 != 0) {
-            double axxx = 1.0E-10 + Math.random() * 1.0E-35;
-            a.ewz(a.eil() + axxx);
-            float axxxx = evd.bpi() ? 0.27F : 0.275F;
-            evd.dek(evd.cqz(evd.bpi() ? 0.21F : 0.275F, 0.25F, axxxx));
-            class_243 axxxxx = chi.field_1724.method_73189();
-            double axxxxxx = -0.01;
-            chi.field_1724.method_5814(axxxxx.field_1352, axxxxx.field_1351 + axxxxxx, axxxxx.field_1350);
-            double axxxxxxx = 0.1111111111111111;
-            chi.field_1724.method_5814(axxxxx.field_1352, axxxxx.field_1351 + axxxxxxx, axxxxx.field_1350);
-            a.dad(false);
-            if (axx != null) {
-               return;
-            }
-         }
+      bpa.bez("opffset " + chi.field_1724.field_6012);
+      var10000 = chi.field_1724.method_24828();
 
-         var10000 = evd.bpi();
+      if (var10000 != 0) {
+         double axxx = 1.0E-10 + Math.random() * 1.0E-35;
+         a.ewz(a.eil() + axxx);
+         float axxxx = evd.bpi() ? 0.27F : 0.275F;
+         evd.dek(evd.cqz(evd.bpi() ? 0.21F : 0.275F, 0.25F, axxxx));
+         class_243 axxxxx = chi.field_1724.method_73189();
+         double axxxxxx = -0.01;
+         chi.field_1724.method_5814(axxxxx.field_1352, axxxxx.field_1351 + axxxxxx, axxxxx.field_1350);
+         double axxxxxxx = 0.1111111111111111;
+         chi.field_1724.method_5814(axxxxx.field_1352, axxxxx.field_1351 + axxxxxxx, axxxxx.field_1350);
+         a.dad(false);
+         return;
       }
+
+      var10000 = evd.bpi();
 
       if (var10000 == 0) {
          evd.dek(evd.cqz(0.23F, 0.24F, 0.27F));
@@ -331,89 +296,6 @@ public class Watchdog2 extends hcr {
             var24 = var17.substring(++var23, var23 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 20320;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/Watchdog2", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/Watchdog2" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

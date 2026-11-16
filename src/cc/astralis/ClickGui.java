@@ -34,7 +34,7 @@ public class ClickGui extends guu {
    private static final long a = 24480334018513L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -73,9 +73,7 @@ public class ClickGui extends guu {
          long ax = ClickGui.a ^ 70321045205006L;
          int[] var4 = ClientSetup.abu();
          boolean var10000 = a.flm.contains(axx.aiq().name());
-         if (var4 != null) {
-            var10000 = !var10000;
-         }
+         var10000 = !var10000;
 
          return var10000;
       }).map(axx -> new dmm(axx, axx.dtp(true), (int)a.dsq().ena(axx.dtp(true)))).sorted(Comparator.comparingInt(axx -> -axx.hec)).toList();
@@ -101,27 +99,16 @@ public class ClickGui extends guu {
          if (var13.hasNext()) {
             dmm axxxxxxxxxxx = (dmm)var13.next();
             boolean var36 = axxxxxxxxxxx.gts().dsv();
-            if (axxxx == null) {
-               if (!var36) {
-                  return;
-               }
-               break;
-            }
 
             label250: {
                label251: {
-                  if (axxxx != null) {
-                     if (!var36) {
-                        break label250;
-                     }
-
-                     var37 = axxxxxxxxxxx;
-                     if (axxxx == null) {
-                        break label251;
-                     }
-
-                     var36 = axxxxxxxxxxx.gts().aov();
+                  if (!var36) {
+                     break label250;
                   }
+
+                  var37 = axxxxxxxxxxx;
+
+                  var36 = axxxxxxxxxxx.gts().aov();
 
                   if (var36) {
                      break label250;
@@ -130,20 +117,16 @@ public class ClickGui extends guu {
                   var37 = axxxxxxxxx;
                }
 
-               if (axxxx != null) {
-                  if (var37 == null) {
-                     axxxxxxxxx = axxxxxxxxxxx;
-                  }
-
-                  var37 = axxxxxxxxxxx;
+               if (var37 == null) {
+                  axxxxxxxxx = axxxxxxxxxxx;
                }
+
+               var37 = axxxxxxxxxxx;
 
                axxxxxxxxxx = var37;
             }
 
-            if (axxxx != null) {
-               continue;
-            }
+            continue;
 
             var13 = a.byg.iterator();
          } else {
@@ -166,16 +149,14 @@ public class ClickGui extends guu {
          float axxxxxxxxxxxxxxx = (float)axxxxxxxxxxxxxx.hjo();
          float var45;
          int var38 = (var45 = axxxxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var45 < 0.0F ? -1 : 1);
-         if (axxxx != null) {
-            if (var38 <= 0) {
-               if (!var13.hasNext()) {
-                  break;
-               }
-               continue;
+         if (var38 <= 0) {
+            if (!var13.hasNext()) {
+               break;
             }
-
-            var38 = 5 + axxxxxxxxxxxx.hec;
+            continue;
          }
+
+         var38 = 5 + axxxxxxxxxxxx.hec;
 
          float axxxxxxxxxxxxxxxx = var38;
          float axxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxx * axxxxxxxxxxxxxxx;
@@ -186,156 +167,127 @@ public class ClickGui extends guu {
          String axxxxxxxxxxxxxxxxxxxxxx = axx.eqi.dnp();
          byte axxxxxxxxxxxxxxxxxxxxxxx = -1;
          int var39 = axxxxxxxxxxxxxxxxxxxxxx.hashCode();
-         if (axxxx != null) {
-            switch (var39) {
-               case -1656737386:
-                  var39 = axxxxxxxxxxxxxxxxxxxxxx.equals(b<"b">(10043, 4038053739093067618L ^ ax));
-                  if (axxxx != null) {
-                     if (var39 != 0) {
-                        axxxxxxxxxxxxxxxxxxxxxxx = 0;
-                     }
+         switch (var39) {
+            case -1656737386:
+               var39 = axxxxxxxxxxxxxxxxxxxxxx.equals("Rainbow");
+               if (var39 != 0) {
+                  axxxxxxxxxxxxxxxxxxxxxxx = 0;
+               }
 
-                     var39 = axxxxxxxxxxxxxxxxxxxxxxx;
-                  }
-                  break;
-               default:
-                  var39 = axxxxxxxxxxxxxxxxxxxxxxx;
-            }
+               var39 = axxxxxxxxxxxxxxxxxxxxxxx;
+               break;
+            default:
+               var39 = axxxxxxxxxxxxxxxxxxxxxxx;
          }
 
          label229: {
-            if (axxxx != null) {
-               switch (var39) {
-                  case 0:
-                     var40 = Glow.gbq(v, axxxxxxx * e<"v">(2159, 366114737180864750L ^ ax), 0.8F, 1.0F);
-                     break label229;
-                  default:
-                     var39 = a.gfw.dnp().intValue();
-               }
+            switch (var39) {
+               case 0:
+                  var40 = Glow.gbq(v, axxxxxxx * 160, 0.8F, 1.0F);
+                  break label229;
+               default:
+                  var39 = a.gfw.dnp().intValue();
             }
 
-            var40 = dec.fqm(var39, 3 + axxxxxxx * e<"v">(15452, 4054241309666329817L ^ ax), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
+            var40 = dec.fqm(var39, 3 + axxxxxxx * 20, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
          }
 
          Color axxxxxxxxxxxxxxxxxxxxxxxx = var40;
          int var41 = a.afu.dnp();
-         if (axxxx != null) {
-            if (var41 != 0) {
-               float var42 = axxxxx.method_4486() - axxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
-               int var10003 = a.clm.dnp();
-               if (axxxx != null) {
-                  var10003 = var10003 != 0 ? 2 : 1;
-               }
+         if (var41 != 0) {
+            float var42 = axxxxx.method_4486() - axxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
+            int var10003 = a.clm.dnp();
+            var10003 = var10003 != 0 ? 2 : 1;
 
+            dmp.gst(
+               var42,
+               axxxxxx,
+               axxxxxxxxxxxxxxxxxxx + var10003,
+               axxxxxxxxxxxxxxxxxxxx,
+               new Color(
+                  15,
+                  15,
+                  18,
+                  axx.fug.dnp().intValue()
+               )
+            );
+         }
+
+         var41 = a.clm.dnp();
+
+         if (var41 != 0) {
+            dmp.gst(axxxxx.method_4486() - 2, axxxxxx, axxxxxxxxxxxxxxxxxxx + 1.0F, axxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxxx);
+         }
+
+         var41 = a.egk.dnp();
+
+         label221:
+         if (var41 != 0) {
+            float axxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - axxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
+            float axxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - 3;
+            dmp.gst(axxxxxxxxxxxxxxxxxxxxxxxxx - 1.0F, axxxxxx, axxxxxxxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxxx);
+            dmm var43 = axxxxxxxxxxxx;
+            dmm var44 = axxxxxxxxx;
+            if (axxxxxxxxxxxx == axxxxxxxxx) {
+               dmp.gst(axxxxxxxxxxxxxxxxxxxxxxxxx, axxxxxx, axxxxxxxxxxxxxxxxxxxxxxxxxx, axxxxxx + 1.0F, axxxxxxxxxxxxxxxxxxxxxxxx);
+            }
+
+            var43 = axxxxxxxxxxxx;
+            var44 = axxxxxxxxxx;
+
+            if (var43 == var44) {
                dmp.gst(
-                  var42,
-                  axxxxxx,
-                  axxxxxxxxxxxxxxxxxxx + var10003,
+                  axxxxxxxxxxxxxxxxxxxxxxxxx - 1.0F,
                   axxxxxxxxxxxxxxxxxxxx,
-                  new Color(
-                     e<"v">(6658, 393789177143222913L ^ ax),
-                     e<"v">(18612, 6242429508746326070L ^ ax),
-                     e<"v">(5013, 2765047135602993941L ^ ax),
-                     axx.fug.dnp().intValue()
-                  )
+                  axxxxxxxxxxxxxxxxxxxxxxxxxx + 1.0F,
+                  axxxxxxxxxxxxxxxxxxxx + 1.0F,
+                  axxxxxxxxxxxxxxxxxxxxxxxx
                );
             }
 
-            var41 = a.clm.dnp();
-         }
+            int axxxxxxxxxxxxxxxxxxxxxxxxxxx = a.byg.indexOf(axxxxxxxxxxxx);
+            int axxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxxxxxxx + 1;
 
-         if (axxxx != null) {
-            if (var41 != 0) {
-               dmp.gst(axxxxx.method_4486() - 2, axxxxxx, axxxxxxxxxxxxxxxxxxx + 1.0F, axxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxxx);
-            }
+            while (axxxxxxxxxxxxxxxxxxxxxxxxxxxx < a.byg.size()) {
+               dmm axxxxxxxxxxxxxxxxxxxxxxxxxxxxx = a.byg.get(axxxxxxxxxxxxxxxxxxxxxxxxxxxx);
+               var41 = axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts().dsv();
 
-            var41 = a.egk.dnp();
-         }
+               if (var41 != 0) {
+                  if (!axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts().aov()) {
+                     erp axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = ClientSetup.gqy().ftn().gqv(axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts());
+                     float axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = 5.0F + axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.hec * (float)axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.hjo();
+                     float axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
+                     float var46;
+                     var41 = (var46 = Math.abs(axxxxxxxxxxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) - 1.0F) == 0.0F
+                        ? 0
+                        : (var46 < 0.0F ? -1 : 1);
 
-         label221:
-         if (axxxx != null) {
-            if (var41 != 0) {
-               float axxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - axxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
-               float axxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - 3;
-               dmp.gst(axxxxxxxxxxxxxxxxxxxxxxxxx - 1.0F, axxxxxx, axxxxxxxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxxx);
-               dmm var43 = axxxxxxxxxxxx;
-               dmm var44 = axxxxxxxxx;
-               if (axxxx != null) {
-                  if (axxxxxxxxxxxx == axxxxxxxxx) {
-                     dmp.gst(axxxxxxxxxxxxxxxxxxxxxxxxx, axxxxxx, axxxxxxxxxxxxxxxxxxxxxxxxxx, axxxxxx + 1.0F, axxxxxxxxxxxxxxxxxxxxxxxx);
-                  }
-
-                  var43 = axxxxxxxxxxxx;
-                  var44 = axxxxxxxxxx;
-               }
-
-               if (var43 == var44) {
-                  dmp.gst(
-                     axxxxxxxxxxxxxxxxxxxxxxxxx - 1.0F,
-                     axxxxxxxxxxxxxxxxxxxx,
-                     axxxxxxxxxxxxxxxxxxxxxxxxxx + 1.0F,
-                     axxxxxxxxxxxxxxxxxxxx + 1.0F,
-                     axxxxxxxxxxxxxxxxxxxxxxxx
-                  );
-               }
-
-               int axxxxxxxxxxxxxxxxxxxxxxxxxxx = a.byg.indexOf(axxxxxxxxxxxx);
-               int axxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxxxxxxx + 1;
-
-               while (axxxxxxxxxxxxxxxxxxxxxxxxxxxx < a.byg.size()) {
-                  dmm axxxxxxxxxxxxxxxxxxxxxxxxxxxxx = a.byg.get(axxxxxxxxxxxxxxxxxxxxxxxxxxxx);
-                  if (axxxx != null) {
-                     var41 = axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts().dsv();
-                     if (axxxx == null) {
-                        break label221;
+                     if (var41 < 0) {
+                        break;
                      }
 
-                     if (var41 != 0) {
-                        if (!axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts().aov()) {
-                           erp axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = ClientSetup.gqy().ftn().gqv(axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts());
-                           float axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = 5.0F + axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.hec * (float)axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.hjo();
-                           float axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
-                           float var46;
-                           var41 = (var46 = Math.abs(axxxxxxxxxxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) - 1.0F) == 0.0F
-                              ? 0
-                              : (var46 < 0.0F ? -1 : 1);
-                           if (axxxx == null) {
-                              break label221;
-                           }
-
-                           if (var41 < 0) {
-                              break;
-                           }
-
-                           dmp.gst(
-                              axxxxxxxxxxxxxxxxxxxxxxxxx - 1.0F,
-                              axxxxxxxxxxxxxxxxxxxx,
-                              axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
-                              axxxxxxxxxxxxxxxxxxxx + 1.0F,
-                              axxxxxxxxxxxxxxxxxxxxxxxx
-                           );
-                           if (axxxx != null) {
-                              break;
-                           }
-
-                           axxxxxxxxxxxxxxxxxxxxxxxxxxxx++;
-                        } else {
-                           axxxxxxxxxxxxxxxxxxxxxxxxxxxx++;
-                        }
-                     } else {
-                        axxxxxxxxxxxxxxxxxxxxxxxxxxxx++;
-                     }
-                  }
-
-                  if (axxxx == null) {
+                     dmp.gst(
+                        axxxxxxxxxxxxxxxxxxxxxxxxx - 1.0F,
+                        axxxxxxxxxxxxxxxxxxxx,
+                        axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                        axxxxxxxxxxxxxxxxxxxx + 1.0F,
+                        axxxxxxxxxxxxxxxxxxxxxxxx
+                     );
                      break;
-                  }
-               }
-            }
 
-            dmp.hdn();
-            var41 = axxxxx.method_4486();
+                     axxxxxxxxxxxxxxxxxxxxxxxxxxxx++;
+                  } else {
+                     axxxxxxxxxxxxxxxxxxxxxxxxxxxx++;
+                  }
+               } else {
+                  axxxxxxxxxxxxxxxxxxxxxxxxxxxx++;
+               }
+
+            }
          }
+
+         dmp.hdn();
+         var41 = axxxxx.method_4486();
 
          dmp.gpu(var41 - (axxxxxxxxxxxxxxxxxxxxx + (axxxxxxxxxxxxxxxx - 1.5F) * axxxxxxxxxxxxxxx), axxxxxx + 1.0F);
          dmp.fle(axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxx);
@@ -343,7 +295,7 @@ public class ClickGui extends guu {
          dmp.bzg();
          axxxxxx += axxxxxxxxxxxxxxxxxx;
          axxxxxxx++;
-         if (axxxx == null || !var13.hasNext()) {
+         if (!var13.hasNext()) {
             break;
          }
       }
@@ -368,13 +320,11 @@ public class ClickGui extends guu {
                guu axxxxxxxxxx = axxxxxxxx.gts();
                axxxxxxxxx = ClientSetup.gqy().ftn().gqv(axxxxxxxxxx);
                boolean var10001 = axxxxxxxxxx.dsv();
-               if (axxxxx != null) {
-                  if (!var10001) {
-                     break label65;
-                  }
-
-                  var10001 = axxxxxxxxxx.aov();
+               if (!var10001) {
+                  break label65;
                }
+
+               var10001 = axxxxxxxxxx.aov();
 
                if (!var10001) {
                   var23 = 1.0;
@@ -390,13 +340,11 @@ public class ClickGui extends guu {
          float axxxxxxxxxxx = (float)axxxxxxxxx.hjo();
          float var24;
          int var21 = (var24 = axxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var24 < 0.0F ? -1 : 1);
-         if (axxxxx != null) {
-            if (var21 <= 0) {
-               continue;
-            }
-
-            var21 = 5 + axxxxxxxx.hec;
+         if (var21 <= 0) {
+            continue;
          }
+
+         var21 = 5 + axxxxxxxx.hec;
 
          float axxxxxxxxxxxx = var21;
          float axxxxxxxxxxxxx = axxxxxxxxxxxx * axxxxxxxxxxx;
@@ -404,23 +352,16 @@ public class ClickGui extends guu {
          float axxxxxxxxxxxxxxx = axxxx.method_4486() - 4;
          float axxxxxxxxxxxxxxxx = axxxxxx + axxxxxxxxxxxxxx;
          float axxxxxxxxxxxxxxxxx = 2.0F;
-         if (axxxxx != null) {
-            if (a.afu.dnp()) {
-               float var22 = axxxx.method_4486() - axxxxxxxxxxxxx - axxxxxxxxxxxxxxxxx;
-               int var10003 = a.clm.dnp();
-               if (axxxxx != null) {
-                  var10003 = var10003 != 0 ? 2 : 1;
-               }
+         if (a.afu.dnp()) {
+            float var22 = axxxx.method_4486() - axxxxxxxxxxxxx - axxxxxxxxxxxxxxxxx;
+            int var10003 = a.clm.dnp();
+            var10003 = var10003 != 0 ? 2 : 1;
 
-               dmp.grl(var22, axxxxxx, axxxxxxxxxxxxxxx + var10003, axxxxxxxxxxxxxxxx);
-            }
-
-            axxxxxx += axxxxxxxxxxxxxx;
+            dmp.grl(var22, axxxxxx, axxxxxxxxxxxxxxx + var10003, axxxxxxxxxxxxxxxx);
          }
 
-         if (axxxxx == null) {
-            break;
-         }
+         axxxxxx += axxxxxxxxxxxxxx;
+
       }
    }
 
@@ -614,89 +555,6 @@ public class ClickGui extends guu {
             var30 = var22.substring(++var29, var29 + var21);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 32409;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/bnn", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/bnn" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

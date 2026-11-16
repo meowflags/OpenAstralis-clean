@@ -43,13 +43,11 @@ public class dtk implements bvc {
       int[] var2 = ClientSetup.abu();
       boolean var3 = ctr();
       boolean var10000 = var3;
-      if (var2 != null) {
-         if (!var3) {
-            return true;
-         }
-
-         var10000 = false;
+      if (!var3) {
+         return true;
       }
+
+      var10000 = false;
 
       return var10000;
    }

@@ -36,49 +36,38 @@ public class gbg {
       int[] axx = ClientSetup.abu();
       class_243 var10000 = a.fkk;
       class_243 var10001 = class_243.field_1353;
-      if (axx != null) {
-         if (a.fkk.equals(class_243.field_1353)) {
-            return class_243.field_1353;
-         }
-
-         var10000 = a;
-         var10001 = a.fkk;
+      if (a.fkk.equals(class_243.field_1353)) {
+         return class_243.field_1353;
       }
+
+      var10000 = a;
+      var10001 = a.fkk;
 
       class_243 axxx = var10000.method_1020(var10001);
       int var6 = a.aeu.equals(class_243.field_1353);
-      if (axx != null) {
-         if (var6 == 0) {
-            axxx = new class_243(
-               axxx.field_1352 * 0.7 + a.aeu.field_1352 * 0.3, axxx.field_1351 * 0.7 + a.aeu.field_1351 * 0.3, axxx.field_1350 * 0.7 + a.aeu.field_1350 * 0.3
-            );
-         }
-
-         double var8;
-         var6 = (var8 = Math.abs(axxx.field_1352) - 0.003) == 0.0 ? 0 : (var8 < 0.0 ? -1 : 1);
+      if (var6 == 0) {
+         axxx = new class_243(
+            axxx.field_1352 * 0.7 + a.aeu.field_1352 * 0.3, axxx.field_1351 * 0.7 + a.aeu.field_1351 * 0.3, axxx.field_1350 * 0.7 + a.aeu.field_1350 * 0.3
+         );
       }
 
-      if (axx != null) {
-         if (var6 < 0) {
-            axxx = new class_243(0.0, axxx.field_1351, axxx.field_1350);
-         }
+      double var8;
+      var6 = (var8 = Math.abs(axxx.field_1352) - 0.003) == 0.0 ? 0 : (var8 < 0.0 ? -1 : 1);
 
-         double var9;
-         var6 = (var9 = Math.abs(axxx.field_1351) - 0.003) == 0.0 ? 0 : (var9 < 0.0 ? -1 : 1);
+      if (var6 < 0) {
+         axxx = new class_243(0.0, axxx.field_1351, axxx.field_1350);
       }
 
-      if (axx != null) {
-         if (var6 < 0) {
-            axxx = new class_243(axxx.field_1352, 0.0, axxx.field_1350);
-         }
+      double var9;
+      var6 = (var9 = Math.abs(axxx.field_1351) - 0.003) == 0.0 ? 0 : (var9 < 0.0 ? -1 : 1);
 
-         if (axx == null) {
-            return axxx;
-         }
-
-         double var10;
-         var6 = (var10 = Math.abs(axxx.field_1350) - 0.003) == 0.0 ? 0 : (var10 < 0.0 ? -1 : 1);
+      if (var6 < 0) {
+         axxx = new class_243(axxx.field_1352, 0.0, axxx.field_1350);
       }
+
+
+      double var10;
+      var6 = (var10 = Math.abs(axxx.field_1350) - 0.003) == 0.0 ? 0 : (var10 < 0.0 ? -1 : 1);
 
       if (var6 < 0) {
          axxx = new class_243(axxx.field_1352, axxx.field_1351, 0.0);
@@ -96,38 +85,27 @@ public class gbg {
          ax = a.method_23318();
          int[] axxx = var10000;
          int var8 = a.method_24828();
-         if (axxx != null) {
-            if (var8 == 0) {
-               break label45;
-            }
-
-            var8 = a.amq(a, a);
+         if (var8 == 0) {
+            break label45;
          }
 
-         if (axxx != null) {
-            if (var8 != 0) {
-               ax += 0.42;
-               if (axxx != null) {
-                  return ax;
-               }
-            }
+         var8 = a.amq(a, a);
 
-            if (axxx == null) {
-               return a.field_1351;
-            }
-
-            double var10;
-            var8 = (var10 = a.field_1351 - 0.0) == 0.0 ? 0 : (var10 < 0.0 ? -1 : 1);
+         if (var8 != 0) {
+            ax += 0.42;
+            return ax;
          }
+
+
+         double var10;
+         var8 = (var10 = a.field_1351 - 0.0) == 0.0 ? 0 : (var10 < 0.0 ? -1 : 1);
 
          if (var8 <= 0) {
             return ax;
          }
 
          ax += a.field_1351 - 0.08;
-         if (axxx != null) {
-            return ax;
-         }
+         return ax;
       }
 
       ax += (a.field_1351 - 0.08) * 0.91;
@@ -138,28 +116,19 @@ public class gbg {
       long ax = gbg.a ^ 61392000023550L;
       int[] var5 = ClientSetup.abu();
       int var10000 = a.method_24828();
-      if (var5 != null) {
-         if (var10000 == 0) {
-            return (boolean)0;
-         }
-
-         double var6;
-         var10000 = (var6 = a.field_1351 - 0.1) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
+      if (var10000 == 0) {
+         return (boolean)0;
       }
 
-      if (var5 != null) {
-         if (var10000 <= 0) {
-            return (boolean)0;
-         }
+      double var6;
+      var10000 = (var6 = a.field_1351 - 0.1) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
 
-         var10000 = a.method_5715();
+      if (var10000 <= 0) {
+         return (boolean)0;
       }
 
-      if (var5 == null) {
-         return (boolean)var10000;
-      } else {
-         return (boolean)(var10000 == 0 ? 1 : 0);
-      }
+      var10000 = a.method_5715();
+
    }
 
    private class_243 afd(class_1657 a, class_243 a, class_243 a) {
@@ -170,55 +139,41 @@ public class gbg {
       int[] axxxx = var10000;
       double axxxxx = a.cvm(a);
       int var15 = a.method_5799();
-      if (axxxx != null) {
-         if (var15 != 0) {
-            axxxxx *= 0.8;
-         }
-
-         var15 = a.method_5771();
+      if (var15 != 0) {
+         axxxxx *= 0.8;
       }
 
-      if (axxxx != null) {
-         if (var15 != 0) {
-            axxxxx *= 0.5;
-         }
+      var15 = a.method_5771();
 
-         var15 = a.method_5624();
+      if (var15 != 0) {
+         axxxxx *= 0.5;
       }
 
-      if (axxxx != null) {
-         if (var15 != 0) {
-            axxxxx *= 1.3;
-         }
+      var15 = a.method_5624();
 
-         var15 = a.method_5715();
+      if (var15 != 0) {
+         axxxxx *= 1.3;
       }
 
-      if (axxxx != null) {
-         if (var15 != 0) {
-            axxxxx *= 0.3;
-         }
+      var15 = a.method_5715();
 
-         double var16;
-         var15 = (var16 = a.method_37268() - 1.0E-4) == 0.0 ? 0 : (var16 < 0.0 ? -1 : 1);
+      if (var15 != 0) {
+         axxxxx *= 0.3;
       }
 
-      if (axxxx != null) {
-         var15 = var15 > 0 ? 1 : 0;
-      }
+      double var16;
+      var15 = (var16 = a.method_37268() - 1.0E-4) == 0.0 ? 0 : (var16 < 0.0 ? -1 : 1);
+
+      var15 = var15 > 0 ? 1 : 0;
 
       boolean axxxxxx = (boolean)var15;
-      if (axxxx != null) {
-         if (axxxxxx != 0) {
-            axx = a.field_1352 + a.field_1352 * axxxxx;
-            axxx = a.field_1350 + a.field_1350 * axxxxx;
-            if (axxxx != null) {
-               return new class_243(axx, a.field_1351, axxx);
-            }
-         }
-
-         axx = a.field_1352 + a.field_1352 * axxxxx * 0.2;
+      if (axxxxxx != 0) {
+         axx = a.field_1352 + a.field_1352 * axxxxx;
+         axxx = a.field_1350 + a.field_1350 * axxxxx;
+         return new class_243(axx, a.field_1351, axxx);
       }
+
+      axx = a.field_1352 + a.field_1352 * axxxxx * 0.2;
 
       axxx = a.field_1350 + a.field_1350 * axxxxx * 0.2;
       return new class_243(axx, a.field_1351, axxx);
@@ -236,9 +191,7 @@ public class gbg {
       int[] axxx = var10000;
       double var11;
       int var10 = (var11 = axx - a) == 0.0 ? 0 : (var11 < 0.0 ? -1 : 1);
-      if (axxx != null) {
-         var10 = var10 > 0 ? 1 : 0;
-      }
+      var10 = var10 > 0 ? 1 : 0;
 
       return (boolean)var10;
    }

@@ -89,7 +89,7 @@ public class ModernWatchdog extends hcr {
    private static final long a = 107504267842123L;
    private static final String[] d;
    private static final String[] e;
-   private static final Map f = new HashMap(13);
+
    private static final long[] g;
    private static final Integer[] h;
    private static final Map i;
@@ -130,27 +130,20 @@ public class ModernWatchdog extends hcr {
       long ax = ModernWatchdog.a ^ 103391158917223L;
       int[] var4 = ClientSetup.abu();
       int var10000 = a.fjj();
-      if (var4 != null) {
-         if (var10000 != 0) {
+      if (var10000 != 0) {
+         return;
+      }
+
+      var10000 = a.fbg;
+
+      label41: {
+         if (var10000 == 0) {
             return;
          }
 
-         var10000 = a.fbg;
-      }
+         var5 = a;
 
-      label41: {
-         if (var4 != null) {
-            if (var10000 == 0) {
-               return;
-            }
-
-            var5 = a;
-            if (var4 == null) {
-               break label41;
-            }
-
-            var10000 = a.ags;
-         }
+         var10000 = a.ags;
 
          if (var10000 != 0) {
             return;
@@ -175,26 +168,20 @@ public class ModernWatchdog extends hcr {
                axx.method_65081(chi.method_1562());
             } catch (Exception var5) {
                var5.printStackTrace();
-               if (ax != null) {
-                  continue;
-               }
+               continue;
                break label31;
             }
 
-            if (ax != null) {
-               continue;
-            }
+            continue;
             break;
          }
 
          ModernWatchdog var10000 = a;
-         if (ax != null) {
-            if (a.bir.dnp()) {
-               ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
-            }
-
-            var10000 = a;
+         if (a.bir.dnp()) {
+            ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
          }
+
+         var10000 = a;
 
          var10000.bfs = false;
          break;
@@ -206,13 +193,11 @@ public class ModernWatchdog extends hcr {
       long ax = ModernWatchdog.a ^ 26557068412942L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = a.fjj();
-      if (var4 != null) {
-         if (var10000) {
-            return;
-         }
-
-         var10000 = a.ffc;
+      if (var10000) {
+         return;
       }
+
+      var10000 = a.ffc;
 
       if (var10000) {
          a.avm(1.0F);
@@ -225,58 +210,43 @@ public class ModernWatchdog extends hcr {
       long ax = ModernWatchdog.a ^ 128676225715280L;
       int[] var4 = ClientSetup.abu();
       int var10000 = a.fjj();
-      if (var4 != null) {
-         if (var10000 != 0) {
-            return;
-         }
-
-         var10000 = a.bfs;
+      if (var10000 != 0) {
+         return;
       }
 
-      if (var4 != null) {
-         if (var10000 == 0) {
-            return;
-         }
+      var10000 = a.bfs;
 
-         a.ay++;
-         var10000 = a.bul.dnp();
+      if (var10000 == 0) {
+         return;
       }
+
+      a.ay++;
+      var10000 = a.bul.dnp();
 
       label75: {
          int var10001;
          label63: {
             label62:
-            if (var4 != null) {
+            if (var10000 != 0) {
+               var10000 = chi.field_1724.method_24828();
+
                if (var10000 != 0) {
-                  var10000 = chi.field_1724.method_24828();
-                  if (var4 == null) {
-                     break label62;
-                  }
+                  var10000 = a.ay;
+                  var10001 = 1;
 
-                  if (var10000 != 0) {
-                     var10000 = a.ay;
-                     var10001 = 1;
-                     if (var4 == null) {
-                        break label63;
-                     }
-
-                     if (a.ay > 1) {
-                        a.fbg = true;
-                        a.bfs = false;
-                        a.ay = 0;
-                        a.ejj();
-                        return;
-                     }
+                  if (a.ay > 1) {
+                     a.fbg = true;
+                     a.bfs = false;
+                     a.ay = 0;
+                     a.ejj();
+                     return;
                   }
                }
-
-               var5 = a;
-               if (var4 == null) {
-                  break label75;
-               }
-
-               var10000 = a.ay;
             }
+
+            var5 = a;
+
+            var10000 = a.ay;
 
             var10001 = a.azb.dnp().intValue();
          }
@@ -303,122 +273,97 @@ public class ModernWatchdog extends hcr {
       long ax = ModernWatchdog.a ^ 62312368707793L;
       int[] axx = ClientSetup.abu();
       int var10000 = a.fjj();
-      if (axx != null) {
-         if (var10000 != 0) {
-            return;
-         }
-
-         var10000 = a.gyt;
+      if (var10000 != 0) {
+         return;
       }
 
+      var10000 = a.gyt;
+
       label128: {
-         if (axx != null) {
-            if (var10000 > 0) {
-               boolean axxx = a.edp;
-               ModernWatchdog var9 = a;
-               if (axx != null) {
-                  label93:
-                  if (!a.hdd) {
-                     boolean var10 = axxx;
-                     if (axx != null) {
-                        if (!axxx) {
-                           break label93;
-                        }
+         if (var10000 > 0) {
+            boolean axxx = a.edp;
+            ModernWatchdog var9 = a;
+            label93:
+            if (!a.hdd) {
+               boolean var10 = axxx;
+               if (!axxx) {
+                  break label93;
+               }
 
-                        var10 = false;
-                     }
+               var10 = false;
 
-                     class_1297 axxxx;
-                     label114: {
-                        bfc.fpt(var10);
-                        axxxx = bfc.exm().method_17782();
-                        var11 = axxxx;
-                        label113:
-                        if (axx != null) {
-                           if (axxxx == null) {
-                              axxxx = ClientSetup.gqy().aws().diy(ekb.class).gvw;
-                              var11 = axxxx;
-                              if (axx == null) {
-                                 break label113;
+               class_1297 axxxx;
+               label114: {
+                  bfc.fpt(var10);
+                  axxxx = bfc.exm().method_17782();
+                  var11 = axxxx;
+                  label113:
+                  if (axxxx == null) {
+                     axxxx = ClientSetup.gqy().aws().diy(ekb.class).gvw;
+                     var11 = axxxx;
+
+                     if (axxxx != null) {
+                        label107: {
+                           label106: {
+                              class_3966 axxxxx = bfc.exm();
+                              class_3966 var12 = axxxxx;
+                              if (axxxxx == null) {
+                                 break label106;
                               }
 
-                              if (axxxx != null) {
-                                 label107: {
-                                    label106: {
-                                       class_3966 axxxxx = bfc.exm();
-                                       class_3966 var12 = axxxxx;
-                                       if (axx != null) {
-                                          if (axxxxx == null) {
-                                             break label106;
-                                          }
+                              var12 = axxxxx;
 
-                                          var12 = axxxxx;
-                                       }
-
-                                       if (var12.method_17782() != null) {
-                                          var10 = true;
-                                          break label107;
-                                       }
-                                    }
-
-                                    var10 = false;
-                                 }
-
-                                 boolean axxxxxx = var10;
-                                 var10 = axxxxxx;
-                                 if (axx == null) {
-                                    break label114;
-                                 }
-
-                                 if (!axxxxxx) {
-                                    axxxx = null;
-                                 }
+                              if (var12.method_17782() != null) {
+                                 var10 = true;
+                                 break label107;
                               }
                            }
 
-                           var11 = axxxx;
+                           var10 = false;
                         }
 
-                        var10 = var11 instanceof class_742;
-                     }
+                        boolean axxxxxx = var10;
+                        var10 = axxxxxx;
 
-                     if (axx != null) {
-                        if (!var10) {
-                           break label93;
+                        if (!axxxxxx) {
+                           axxxx = null;
                         }
-
-                        var10 = a.cir.dnp();
                      }
-
-                     if (var10) {
-                        class_634 var15 = chi.method_1562();
-                        int var10003 = chi.field_1724.method_31548().method_67532() + 1;
-                        var15.method_52787(new class_2868(var10003 % 9));
-                        chi.method_1562().method_52787(new class_2868(chi.field_1724.method_31548().method_67532()));
-                     }
-
-                     chi.field_1724.method_5728(false);
-                     chi.field_1724.method_18799(chi.field_1724.method_18798().method_18805(0.6, 1.0, 0.6));
-                     chi.method_1562().method_52787(class_2824.method_34206(axxxx, chi.field_1724.method_5715()));
-                     chi.field_1724.method_6104(class_1268.field_5808);
                   }
 
-                  var9 = a;
+                  var11 = axxxx;
+
+                  var10 = var11 instanceof class_742;
                }
 
-               var9.gyt--;
-               if (axx != null) {
-                  return;
+               if (!var10) {
+                  break label93;
                }
+
+               var10 = a.cir.dnp();
+
+               if (var10) {
+                  class_634 var15 = chi.method_1562();
+                  int var10003 = chi.field_1724.method_31548().method_67532() + 1;
+                  var15.method_52787(new class_2868(var10003 % 9));
+                  chi.method_1562().method_52787(new class_2868(chi.field_1724.method_31548().method_67532()));
+               }
+
+               chi.field_1724.method_5728(false);
+               chi.field_1724.method_18799(chi.field_1724.method_18798().method_18805(0.6, 1.0, 0.6));
+               chi.method_1562().method_52787(class_2824.method_34206(axxxx, chi.field_1724.method_5715()));
+               chi.field_1724.method_6104(class_1268.field_5808);
             }
 
-            var16 = a;
-            if (axx == null) {
-               break label128;
-            }
+            var9 = a;
 
-            var10000 = a.ffc;
+            var9.gyt--;
+            return;
          }
+
+         var16 = a;
+
+         var10000 = a.ffc;
 
          if (var10000 == 0) {
             return;
@@ -439,42 +384,30 @@ public class ModernWatchdog extends hcr {
          label656: {
             class_2596<?> axxx = a.bed();
             boolean var10000 = axxx instanceof class_2824;
-            if (axx != null) {
-               if (var10000) {
-                  class_2824 axxxx = (class_2824)axxx;
-                  axxxx.method_34209(new eal(a));
-               }
-
-               var14 = a;
-               if (axx == null) {
-                  break label656;
-               }
-
-               var10000 = a.bed() instanceof class_2848;
+            if (var10000) {
+               class_2824 axxxx = (class_2824)axxx;
+               axxxx.method_34209(new eal(a));
             }
+
+            var14 = a;
+
+            var10000 = a.bed() instanceof class_2848;
 
             if (var10000) {
                var14 = a;
-               if (axx == null) {
-                  break label656;
-               }
 
                class_2848 axxxx;
                label643:
                if ((axxxx = (class_2848)a.bed()).method_36173() == chi.field_1724.method_5628()) {
                   class_2849 var15 = axxxx.method_12365();
                   class_2849 var10001 = class_2849.field_12981;
-                  if (axx != null) {
-                     if (var15 == class_2849.field_12981) {
-                        a.edp = true;
-                        if (axx != null) {
-                           break label643;
-                        }
-                     }
-
-                     var15 = axxxx.method_12365();
-                     var10001 = class_2849.field_12985;
+                  if (var15 == class_2849.field_12981) {
+                     a.edp = true;
+                     break label643;
                   }
+
+                  var15 = axxxx.method_12365();
+                  var10001 = class_2849.field_12985;
 
                   if (var15 == var10001) {
                      a.edp = false;
@@ -485,412 +418,280 @@ public class ModernWatchdog extends hcr {
             var14 = a;
          }
 
-         if (axx != null) {
-            if (var14.cud() != gpy.RECEIVE) {
-               return;
-            }
-
-            var14 = a;
+         if (var14.cud() != gpy.RECEIVE) {
+            return;
          }
+
+         var14 = a;
 
          boolean var16 = var14.fmc();
-         if (axx != null) {
-            if (var16) {
-               return;
-            }
-
-            var16 = a.bfs;
+         if (var16) {
+            return;
          }
+
+         var16 = a.bfs;
 
          label626: {
             label659: {
                label660: {
-                  if (axx != null) {
-                     if (!var16) {
-                        break label660;
-                     }
-
-                     var16 = a.gsh.dnp();
+                  if (!var16) {
+                     break label660;
                   }
 
-                  if (axx != null) {
-                     if (!var16) {
-                        var17 = a.bed() instanceof class_2684;
-                        if (axx == null) {
-                           break label626;
-                        }
+                  var16 = a.gsh.dnp();
 
-                        if (var17 != 0) {
-                           break label659;
-                        }
+                  if (!var16) {
+                     var17 = a.bed() instanceof class_2684;
 
-                        var17 = a.bed() instanceof class_10264;
-                        if (axx == null) {
-                           break label626;
-                        }
+                     if (var17 != 0) {
+                        break label659;
+                     }
 
-                        if (var17 != 0) {
-                           break label659;
-                        }
+                     var17 = a.bed() instanceof class_10264;
 
-                        class_2596 axxxx = a.bed();
-                        var17 = axxxx instanceof class_2743;
-                        if (axx != null) {
-                           if (var17 != 0) {
-                              class_2743 axxxxx = (class_2743)axxxx;
-                              var17 = axxxxx.method_11818();
-                              if (axx == null) {
-                                 break label626;
-                              }
+                     if (var17 != 0) {
+                        break label659;
+                     }
 
-                              if (var17 != chi.field_1724.method_5628()) {
-                                 break label659;
-                              }
-                           }
+                     class_2596 axxxx = a.bed();
+                     var17 = axxxx instanceof class_2743;
+                     if (var17 != 0) {
+                        class_2743 axxxxx = (class_2743)axxxx;
+                        var17 = axxxxx.method_11818();
 
-                           var17 = a.bed() instanceof class_2663;
-                        }
-
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2923;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2744;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2783;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2739;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_8143;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2740;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2752;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2781;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2616;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2670;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_9151;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2626;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2622;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2777;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2924;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_8913;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_6682;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_8914;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2673;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2692;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2788;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2734;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_10265;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2707;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2749;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2664;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2726;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_9178;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_5891;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_5890;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
-                           break label659;
-                        }
-
-                        var17 = a.bed() instanceof class_2637;
-                        if (axx == null) {
-                           break label626;
-                        }
-
-                        if (var17 != 0) {
+                        if (var17 != chi.field_1724.method_5628()) {
                            break label659;
                         }
                      }
 
-                     var16 = a.gsh.dnp();
+                     var17 = a.bed() instanceof class_2663;
+
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2923;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2744;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2783;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2739;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_8143;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2740;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2752;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2781;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2616;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2670;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_9151;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2626;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2622;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2777;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2924;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_8913;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_6682;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_8914;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2673;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2692;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2788;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2734;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_10265;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2707;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2749;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2664;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2726;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_9178;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_5891;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_5890;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
+
+                     var17 = a.bed() instanceof class_2637;
+
+                     if (var17 != 0) {
+                        break label659;
+                     }
                   }
+
+                  var16 = a.gsh.dnp();
 
                   label669: {
                      label615:
-                     if (axx != null) {
-                        if (!var16) {
-                           boolean var18 = a.bed() instanceof class_6373;
-                           if (axx == null) {
-                              break label615;
-                           }
+                     if (!var16) {
+                        boolean var18 = a.bed() instanceof class_6373;
 
-                           if (!var18) {
-                              boolean var19 = a.bed() instanceof class_2664;
-                              if (axx == null) {
+                        if (!var18) {
+                           boolean var19 = a.bed() instanceof class_2664;
+
+                           if (!var19) {
+                              class_2596 var9 = a.bed();
+                              var17 = var9 instanceof class_2743;
+
+                              if (var17 == 0) {
                                  break label615;
                               }
 
-                              if (!var19) {
-                                 class_2596 var9 = a.bed();
-                                 var17 = var9 instanceof class_2743;
-                                 if (axx == null) {
-                                    break label669;
-                                 }
+                              class_2743 axxxxxx = (class_2743)var9;
+                              var17 = axxxxxx.method_11818();
 
-                                 if (var17 == 0) {
-                                    break label615;
-                                 }
-
-                                 class_2743 axxxxxx = (class_2743)var9;
-                                 var17 = axxxxxx.method_11818();
-                                 if (axx == null) {
-                                    break label669;
-                                 }
-
-                                 if (var17 != chi.field_1724.method_5628()) {
-                                    break label615;
-                                 }
+                              if (var17 != chi.field_1724.method_5628()) {
+                                 break label615;
                               }
                            }
                         }
-
-                        a.gmm(true);
-                        a.chj.add((class_2596<class_2602>)a.bed());
                      }
+
+                     a.gmm(true);
+                     a.chj.add((class_2596<class_2602>)a.bed());
 
                      var17 = a.bed() instanceof class_2708;
                   }
 
-                  if (axx == null) {
-                     break label626;
-                  }
 
                   if (var17 == 0) {
                      break label659;
@@ -901,98 +702,69 @@ public class ModernWatchdog extends hcr {
                   a.ay = 0;
                   a.bfs = false;
                   a.fbg = false;
-                  if (axx != null) {
-                     break label659;
-                  }
+                  break label659;
                }
 
                class_2596 var13 = a.bed();
                var17 = var13 instanceof class_2743;
-               if (axx == null) {
-                  break label626;
-               }
 
                if (var17 != 0) {
                   class_2743 axxxxxxx = (class_2743)var13;
                   var17 = axxxxxxx.method_11818();
-                  if (axx == null) {
-                     break label626;
-                  }
 
                   label478:
                   if (var17 == chi.field_1724.method_5628()) {
                      var17 = a.fgh;
                      label475:
-                     if (axx != null) {
-                        if (a.fgh) {
-                           a.fgh = false;
-                           var17 = a.bln.dnp();
-                           if (axx != null) {
-                              if (var17 != 0) {
-                                 a.gmm(true);
-                                 return;
-                              }
-
-                              var17 = a.bqr.dnp();
-                           }
-
-                           if (axx == null) {
-                              break label475;
-                           }
-
-                           if (var17 != 0) {
-                              return;
-                           }
-                        }
-
-                        var17 = a.bka.dnp();
-                     }
-
-                     if (axx != null) {
+                     if (a.fgh) {
+                        a.fgh = false;
+                        var17 = a.bln.dnp();
                         if (var17 != 0) {
-                           a.ffc = true;
-                           a.gyt = 2;
+                           a.gmm(true);
+                           return;
                         }
 
-                        double var23;
-                        var17 = (var23 = a.azb.dnp().intValue() - 0.0) == 0.0 ? 0 : (var23 < 0.0 ? -1 : 1);
+                        var17 = a.bqr.dnp();
+
+
+                        if (var17 != 0) {
+                           return;
+                        }
                      }
 
-                     if (axx != null) {
+                     var17 = a.bka.dnp();
+
+                     if (var17 != 0) {
+                        a.ffc = true;
+                        a.gyt = 2;
+                     }
+
+                     double var23;
+                     var17 = (var23 = a.azb.dnp().intValue() - 0.0) == 0.0 ? 0 : (var23 < 0.0 ? -1 : 1);
+
+                     if (var17 == 0) {
+                        var17 = chi.field_1724.method_24828();
+
                         if (var17 == 0) {
-                           var17 = chi.field_1724.method_24828();
-                           if (axx == null) {
-                              break label626;
-                           }
-
-                           if (var17 == 0) {
-                              break label478;
-                           }
-
-                           a.fbg = true;
-                           if (axx != null) {
-                              break label478;
-                           }
+                           break label478;
                         }
 
-                        var17 = a.ags;
+                        a.fbg = true;
+                        break label478;
                      }
 
-                     if (axx == null) {
-                        break label626;
-                     }
+                     var17 = a.ags;
+
 
                      if (var17 <= 0) {
                         boolean var20 = a.bir.dnp();
-                        if (axx != null) {
-                           if (var20) {
-                              ClientSetup.gqy().ccv().gne(BlinkController.class).ckv();
-                           }
-
-                           a.ay = 0;
-                           a.bfs = true;
-                           a.chj.add(axxxxxxx);
+                        if (var20) {
+                           ClientSetup.gqy().ccv().gne(BlinkController.class).ckv();
                         }
+
+                        a.ay = 0;
+                        a.bfs = true;
+                        a.chj.add(axxxxxxx);
 
                         a.gmm(true);
                      }
@@ -1004,18 +776,13 @@ public class ModernWatchdog extends hcr {
          }
 
          label667: {
-            if (axx != null) {
-               if (var17 == 0) {
-                  return;
-               }
-
-               var21 = a;
-               if (axx == null) {
-                  break label667;
-               }
-
-               var17 = a.bln.dnp();
+            if (var17 == 0) {
+               return;
             }
+
+            var21 = a;
+
+            var17 = a.bln.dnp();
 
             if (var17 != 0) {
                a.gmm(true);
@@ -1032,9 +799,7 @@ public class ModernWatchdog extends hcr {
       long a = ModernWatchdog.a ^ 9335513935095L;
       int[] var3 = ClientSetup.abu();
       boolean var10000 = a.gmz.fsc(a.bvl.dnp().longValue());
-      if (var3 != null) {
-         var10000 = !var10000;
-      }
+      var10000 = !var10000;
 
       return var10000;
    }
@@ -1186,89 +951,6 @@ public class ModernWatchdog extends hcr {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 12947;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ModernWatchdog", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ModernWatchdog" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

@@ -41,14 +41,12 @@ public class asz {
       super();
       int[] axxx = var9;
       byte[] var10 = a;
-      if (axxx != null) {
-         var10000 = a.length;
-         if (var10000 != 32) {
-            throw new IllegalArgumentException(asz.a[2]);
-         }
-
-         var10 = Arrays.copyOfRange(a, 0, 16);
+      var10000 = a.length;
+      if (var10000 != 32) {
+         throw new IllegalArgumentException(asz.a[2]);
       }
+
+      var10 = Arrays.copyOfRange(a, 0, 16);
 
       ByteBuffer axxxx = ByteBuffer.wrap(var10).order(ByteOrder.LITTLE_ENDIAN);
       a.drt = new BigInteger(1, axxxx.array()).and(bso);
@@ -383,13 +381,11 @@ public class asz {
       int[] var2 = ClientSetup.abu();
       boolean var3 = gry();
       boolean var10000 = var3;
-      if (var2 != null) {
-         if (!var3) {
-            return true;
-         }
-
-         var10000 = false;
+      if (!var3) {
+         return true;
       }
+
+      var10000 = false;
 
       return var10000;
    }
@@ -505,10 +501,6 @@ public class asz {
 
          byte[] var10;
          try {
-            if (var9 == null) {
-               var9 = new Object[]{Cipher.getInstance("DES/CBC/NoPadding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               e.put(var8, var9);
-            }
 
             DESKeySpec var11 = new DESKeySpec(var4);
             SecretKey var12 = ((SecretKeyFactory)var9[1]).generateSecret(var11);
@@ -579,10 +571,6 @@ public class asz {
 
          byte[] var10;
          try {
-            if (var9 == null) {
-               var9 = new Object[]{Cipher.getInstance("DES/CBC/NoPadding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               h.put(var8, var9);
-            }
 
             DESKeySpec var11 = new DESKeySpec(var4);
             SecretKey var12 = ((SecretKeyFactory)var9[1]).generateSecret(var11);

@@ -33,7 +33,7 @@ public class AutoCrystal extends guu {
    private static final long a = 16944584109118L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -56,47 +56,39 @@ public class AutoCrystal extends guu {
       long ax = AutoCrystal.a ^ 56100581011423L;
       int[] axx = ClientSetup.abu();
       Object var10000 = chi.field_1724;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return false;
-         }
-
-         var10000 = a;
-      }
-
-      if (var10000 != null) {
-         double axxx = chi.field_1724.method_18798().field_1352;
-         double axxxx = chi.field_1724.method_18798().field_1350;
-         double var27 = Math.sqrt(axxx * axxx + axxxx * axxxx);
-         double var10001 = 0.1;
-         if (axx != null) {
-            if (var27 < 0.1) {
-               return false;
-            }
-
-            var27 = a.method_23317();
-            var10001 = chi.field_1724.method_23317();
-         }
-
-         double axxxxx = var27 - var10001;
-         double axxxxxx = a.method_23321() - chi.field_1724.method_23321();
-         double axxxxxxx = Math.sqrt(axxx * axxx + axxxx * axxxx);
-         double axxxxxxxx = Math.sqrt(axxxxx * axxxxx + axxxxxx * axxxxxx);
-         double axxxxxxxxx = axxx / axxxxxxx;
-         double axxxxxxxxxx = axxxx / axxxxxxx;
-         double axxxxxxxxxxx = axxxxx / axxxxxxxx;
-         double axxxxxxxxxxxx = axxxxxx / axxxxxxxx;
-         double axxxxxxxxxxxxx = axxxxxxxxx * axxxxxxxxxxx + axxxxxxxxxx * axxxxxxxxxxxx;
-         double var29;
-         int var28 = (var29 = axxxxxxxxxxxxx - 0.0) == 0.0 ? 0 : (var29 < 0.0 ? -1 : 1);
-         if (axx != null) {
-            var28 = var28 > 0 ? 1 : 0;
-         }
-
-         return (boolean)var28;
-      } else {
+      if (chi.field_1724 == null) {
          return false;
       }
+
+      var10000 = a;
+
+      double axxx = chi.field_1724.method_18798().field_1352;
+      double axxxx = chi.field_1724.method_18798().field_1350;
+      double var27 = Math.sqrt(axxx * axxx + axxxx * axxxx);
+      double var10001 = 0.1;
+      if (var27 < 0.1) {
+         return false;
+      }
+
+      var27 = a.method_23317();
+      var10001 = chi.field_1724.method_23317();
+
+      double axxxxx = var27 - var10001;
+      double axxxxxx = a.method_23321() - chi.field_1724.method_23321();
+      double axxxxxxx = Math.sqrt(axxx * axxx + axxxx * axxxx);
+      double axxxxxxxx = Math.sqrt(axxxxx * axxxxx + axxxxxx * axxxxxx);
+      double axxxxxxxxx = axxx / axxxxxxx;
+      double axxxxxxxxxx = axxxx / axxxxxxx;
+      double axxxxxxxxxxx = axxxxx / axxxxxxxx;
+      double axxxxxxxxxxxx = axxxxxx / axxxxxxxx;
+      double axxxxxxxxxxxxx = axxxxxxxxx * axxxxxxxxxxx + axxxxxxxxxx * axxxxxxxxxxxx;
+      double var29;
+      int var28 = (var29 = axxxxxxxxxxxxx - 0.0) == 0.0 ? 0 : (var29 < 0.0 ? -1 : 1);
+      var28 = var28 > 0 ? 1 : 0;
+
+      return (boolean)var28;
+   } else {
+      return false;
    }
 
    @Override
@@ -117,90 +109,70 @@ public class AutoCrystal extends guu {
          class_1309 axxx = bav.elv(false, false, a.fwk.dnp(), true, false, a.fsf.dnp().floatValue()).getFirst();
          int[] axxxx = var10000;
          AutoCrystal var12 = a;
-         if (axxxx != null) {
-            if (a.ese.fsc(a.gmb.dnp().longValue())) {
+         if (a.ese.fsc(a.gmb.dnp().longValue())) {
+            var13 = axx;
+
+            if (axx.bsw()) {
                var13 = axx;
-               if (axxxx == null) {
-                  break label155;
-               }
-
-               if (axx.bsw()) {
-                  var13 = axx;
-                  break label155;
-               }
+               break label155;
             }
-
-            var12 = a;
          }
+
+         var12 = a;
 
          label160: {
             var14 = var12.fqj;
             label129:
-            if (axxxx != null) {
-               label141: {
-                  if (var12.fqj != null) {
-                     var15 = a;
-                     if (axxxx == null) {
-                        break label160;
-                     }
+            label141: {
+               if (var12.fqj != null) {
+                  var15 = a;
 
-                     if (!a.fqj.method_5805()) {
-                        break label141;
-                     }
-
-                     var15 = a;
-                     if (axxxx == null) {
-                        break label160;
-                     }
-
-                     if (a.fqj.method_29504()) {
-                        break label141;
-                     }
-
-                     var14 = a.fqj;
-                     if (axxxx == null) {
-                        break label129;
-                     }
-
-                     if (a.fqj.method_6032() <= 0.0F) {
-                        break label141;
-                     }
+                  if (!a.fqj.method_5805()) {
+                     break label141;
                   }
 
-                  a.fqj = axxx;
+                  var15 = a;
+
+                  if (a.fqj.method_29504()) {
+                     break label141;
+                  }
+
                   var14 = a.fqj;
-                  break label129;
+
+                  if (a.fqj.method_6032() <= 0.0F) {
+                     break label141;
+                  }
                }
 
+               a.fqj = axxx;
+               var14 = a.fqj;
+               break label129;
+            }
+
+            bpa.bez("dead");
+            axx.fxn();
+            a.gqa = null;
+            var15 = a;
+            break label160;
+
+            if (var14 == null) {
                bpa.bez("dead");
                axx.fxn();
                a.gqa = null;
-               var15 = a;
-               break label160;
+               return;
             }
 
-            if (axxxx != null) {
-               if (var14 == null) {
-                  bpa.bez("dead");
-                  axx.fxn();
-                  a.gqa = null;
-                  return;
-               }
-
-               var14 = a.fqj;
-            }
+            var14 = a.fqj;
 
             float[] axxxxx = dgq.dxs(var14);
             AutoCrystal var16 = a;
-            if (axxxx != null) {
-               if (a.elz(axxxxx[0], chi.field_1724.method_36454()) > 100.0F) {
-                  axx.fxn();
-                  a.gqa = null;
-                  return;
-               }
-
-               var16 = a;
+            if (a.elz(axxxxx[0], chi.field_1724.method_36454()) > 100.0F) {
+               axx.fxn();
+               a.gqa = null;
+               return;
             }
+
+            var16 = a;
 
             double axxxxxx = dgq.flj(var16.fqj);
             float axxxxxxx = Math.min(a.abj.dnp().floatValue(), a.ebx.dnp().floatValue());
@@ -208,47 +180,34 @@ public class AutoCrystal extends guu {
             double var23;
             var17 = (var23 = axxxxxx - axxxxxxxx) == 0.0 ? 0 : (var23 < 0.0 ? -1 : 1);
             label118:
-            if (axxxx != null) {
-               if (var17 <= 0) {
-                  double var24;
-                  var17 = (var24 = axxxxxx - axxxxxxx) == 0.0 ? 0 : (var24 < 0.0 ? -1 : 1);
-                  if (axxxx == null) {
-                     break label118;
-                  }
+            if (var17 <= 0) {
+               double var24;
+               var17 = (var24 = axxxxxx - axxxxxxx) == 0.0 ? 0 : (var24 < 0.0 ? -1 : 1);
 
-                  if (var17 >= 0) {
-                     var17 = axx.bsw();
-                     if (axxxx == null) {
-                        break label118;
-                     }
+               if (var17 >= 0) {
+                  var17 = axx.bsw();
 
-                     if (var17 == 0) {
-                        var17 = a.hjv(a.fqj);
-                        if (axxxx == null) {
-                           break label118;
+                  if (var17 == 0) {
+                     var17 = a.hjv(a.fqj);
+
+                     if (var17 != 0) {
+                        class_7422 var18 = a.gqa;
+                        if (a.gqa == null) {
+                           a.gqa = new class_7422();
                         }
 
-                        if (var17 != 0) {
-                           class_7422 var18 = a.gqa;
-                           if (axxxx != null) {
-                              if (a.gqa == null) {
-                                 a.gqa = new class_7422();
-                              }
+                        var18 = a.gqa;
 
-                              var18 = a.gqa;
-                           }
-
-                           var18.method_43494(chi.field_1724.method_73189());
-                           axx.ckv();
-                           a.ese.glr();
-                        }
+                        var18.method_43494(chi.field_1724.method_73189());
+                        axx.ckv();
+                        a.ese.glr();
                      }
                   }
                }
-
-               double var25;
-               var17 = (var25 = axxxxxx - axxxxxxxx) == 0.0 ? 0 : (var25 < 0.0 ? -1 : 1);
             }
+
+            double var25;
+            var17 = (var25 = axxxxxx - axxxxxxxx) == 0.0 ? 0 : (var25 < 0.0 ? -1 : 1);
 
             if (var17 > 0) {
                axx.fxn();
@@ -273,18 +232,13 @@ public class AutoCrystal extends guu {
       int[] axxx = var10000;
       float var10;
       int var7 = (var10 = axx - 180.0F) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
-      if (axxx != null) {
-         if (var7 > 0) {
-            return Math.abs(axx - 360.0F);
-         }
-
-         if (axxx == null) {
-            return Math.abs(axx + -180.0F);
-         }
-
-         float var11;
-         var7 = (var11 = axx - -180.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
+      if (var7 > 0) {
+         return Math.abs(axx - 360.0F);
       }
+
+
+      float var11;
+      var7 = (var11 = axx - -180.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
 
       return var7 >= 0 ? Math.abs(axx) : Math.abs(axx + 360.0F);
    }
@@ -294,31 +248,25 @@ public class AutoCrystal extends guu {
       long ax = AutoCrystal.a ^ 114747300612576L;
       int[] axx = ClientSetup.abu();
       AutoCrystal var10000 = a;
-      if (axx != null) {
-         if (a.fqj == null) {
-            return;
-         }
-
-         var10000 = a;
+      if (a.fqj == null) {
+         return;
       }
+
+      var10000 = a;
 
       Object var7 = var10000.gqa;
-      if (axx != null) {
-         if (var10000.gqa == null) {
-            return;
-         }
-
-         var7 = a.dsp.dnp();
+      if (var10000.gqa == null) {
+         return;
       }
+
+      var7 = a.dsp.dnp();
 
       boolean var8 = (Boolean)var7;
-      if (axx != null) {
-         if (!var8) {
-            return;
-         }
-
-         var8 = chi.field_1690.method_31044().method_31034();
+      if (!var8) {
+         return;
       }
+
+      var8 = chi.field_1690.method_31044().method_31034();
 
       if (!var8) {
          class_4048 axxx = a.fqj.method_18377(a.fqj.method_18376());
@@ -441,89 +389,6 @@ public class AutoCrystal extends guu {
             var24 = var17.substring(++var23, var23 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 5769;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/cuu", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/cuu" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

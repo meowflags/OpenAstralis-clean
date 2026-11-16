@@ -110,22 +110,17 @@ public class Glow extends guu {
          short var10001x = 18660;
          long var10002x = 203683374179316238L ^ ax;
          boolean var10000 = a.hjj.emb("PSD");
-         if (var3x != null) {
+         if (!var10000) {
+            var10001x = 5328;
+            var10002x = 6412656450956209688L ^ ax;
+            var10000 = a.hjj.emb("Gif");
+
             if (!var10000) {
-               var10001x = 5328;
-               var10002x = 6412656450956209688L ^ ax;
-               var10000 = a.hjj.emb("Gif");
-               if (var3x == null) {
-                  return var10000;
-               }
-
-               if (!var10000) {
-                  return false;
-               }
+               return false;
             }
-
-            var10000 = true;
          }
+
+         var10000 = true;
 
          return var10000;
       });
@@ -160,95 +155,68 @@ public class Glow extends guu {
       fll axxx = FontManager.emc(var37, 9);
       class_1041 axxxx = chi.method_22683();
       var10000 = (int[])chi.field_1755;
-      if (axx != null) {
-         if (!(chi.field_1755 instanceof class_408)) {
-            String var39 = aml.hjr.eus();
-            var10001 = aml.hjr.cfs();
-            double axxxxx = evd.glu();
-            int axxxxxx = var10001;
-            String axxxxxxx = var39;
-            String axxxxxxxx = "User: " + axxxxxxx + " (" + axxxxxx + ") BPS: " + axxxxx;
-            fuv.dfe(cbl, axxxxxxxx, 5.0F, axxxx.method_4502() - (cbl.biu(axxxxxxxx) + 5.0F), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true);
-         }
-
-         var10000 = (int[])a.hjj.dnp();
+      if (!(chi.field_1755 instanceof class_408)) {
+         String var39 = aml.hjr.eus();
+         var10001 = aml.hjr.cfs();
+         double axxxxx = evd.glu();
+         int axxxxxx = var10001;
+         String axxxxxxx = var39;
+         String axxxxxxxx = "User: " + axxxxxxx + " (" + axxxxxx + ") BPS: " + axxxxx;
+         fuv.dfe(cbl, axxxxxxxx, 5.0F, axxxx.method_4502() - (cbl.biu(axxxxxxxx) + 5.0F), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true);
       }
+
+      var10000 = (int[])a.hjj.dnp();
 
       String var31 = (String)var10000;
       byte var8 = -1;
       var41 = var31.hashCode();
       label206:
-      if (axx != null) {
-         switch (var41) {
-            case 2603341:
-               var41 = var31.equals("Text");
-               if (axx == null) {
-                  break label206;
-               }
+      switch (var41) {
+         case 2603341:
+            var41 = var31.equals("Text");
 
-               if (var41 == 0) {
-                  break;
-               }
+            if (var41 == 0) {
+               break;
+            }
 
-               var8 = 0;
-               if (axx != null) {
-                  break;
-               }
-            case 71588:
-               var41 = var31.equals("Gif");
-               if (axx == null) {
-                  break label206;
-               }
+            var8 = 0;
+            break;
+         case 71588:
+            var41 = var31.equals("Gif");
 
-               if (var41 == 0) {
-                  break;
-               }
+            if (var41 == 0) {
+               break;
+            }
 
-               var8 = 1;
-               if (axx != null) {
-                  break;
-               }
-            case 1956520879:
-               var41 = var31.equals("Adjust");
-               if (axx == null) {
-                  break label206;
-               }
+            var8 = 1;
+            break;
+         case 1956520879:
+            var41 = var31.equals("Adjust");
 
-               if (var41 == 0) {
-                  break;
-               }
+            if (var41 == 0) {
+               break;
+            }
 
-               var8 = 2;
-               if (axx != null) {
-                  break;
-               }
-            case -268477211:
-               var41 = var31.equals("Astralis");
-               if (axx == null) {
-                  break label206;
-               }
+            var8 = 2;
+            break;
+         case -268477211:
+            var41 = var31.equals("Astralis");
 
-               if (var41 == 0) {
-                  break;
-               }
+            if (var41 == 0) {
+               break;
+            }
 
-               var8 = 3;
-               if (axx != null) {
-                  break;
-               }
-            case 79770510:
-               var41 = var31.equals("Sense");
-               if (axx == null) {
-                  break label206;
-               }
+            var8 = 3;
+            break;
+         case 79770510:
+            var41 = var31.equals("Sense");
 
-               if (var41 != 0) {
-                  var8 = 4;
-               }
-         }
-
-         var41 = var8;
+            if (var41 != 0) {
+               var8 = 4;
+            }
       }
+
+      var41 = var8;
 
       label215: {
          switch (var41) {
@@ -256,9 +224,7 @@ public class Glow extends guu {
                fll axxxxx = FontManager.emc("Product Sans Bold", 20);
                String axxxxxx = a.eyi.dnp();
                fuv.dfe(axxxxx, axxxxxx, 3.0F, 3.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
-               if (axx != null) {
-                  return;
-               }
+               return;
             case 1:
                try {
                   String[] axxxxxxx = hee.asu(a.aht.dnp());
@@ -269,57 +235,43 @@ public class Glow extends guu {
                      String axxxxxxxxx = chi.field_1697.getAbsolutePath() + "/" + axxxxxxx[axxxxxxxx];
                      a.bpz[axxxxxxxx] = axxxxxxxxx;
                      axxxxxxxx++;
-                     if (axx == null || axx == null) {
-                        break;
-                     }
                   }
                } catch (IOException var30) {
                   var30.printStackTrace();
                }
 
                Glow var43 = a;
-               if (axx != null) {
-                  if (a.brd.fsc(a.gle.dnp().longValue())) {
-                     label219: {
-                        a.gdj++;
-                        int var44 = a.gdj;
-                        if (axx != null) {
-                           if (a.gdj > a.bpz.length - 1) {
-                              a.gdj = 0;
-                           }
-
-                           ard = a.bpz[a.gdj];
-                           var45 = a;
-                           if (axx == null) {
-                              break label219;
-                           }
-
-                           var44 = a.gzk.containsKey(ard);
-                        }
-
-                        if (var44 == 0) {
-                           a.gzk.put(ard, hcu.fbz(ard));
-                        }
-
-                        var45 = a;
+               if (a.brd.fsc(a.gle.dnp().longValue())) {
+                  label219: {
+                     a.gdj++;
+                     int var44 = a.gdj;
+                     if (a.gdj > a.bpz.length - 1) {
+                        a.gdj = 0;
                      }
 
-                     var45.brd.glr();
+                     ard = a.bpz[a.gdj];
+                     var45 = a;
+
+                     var44 = a.gzk.containsKey(ard);
+
+                     if (var44 == 0) {
+                        a.gzk.put(ard, hcu.fbz(ard));
+                     }
+
+                     var45 = a;
                   }
 
-                  var43 = a;
+                  var45.brd.glr();
                }
 
+               var43 = a;
+
                dmp.dzr(var43.grl.grp(), a.grl.azb(), 80.0F, 80.0F, a.gzk.get(ard), null);
-               if (axx != null) {
-                  return;
-               }
+               return;
             case 2:
                fuv.fhp(euz, "A", a.grl.grp(), a.grl.azb(), 0.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true);
                enh.aof("djust", a.grl.grp() + euz.eq("A"), a.grl.azb(), Color.white);
-               if (axx != null) {
-                  return;
-               }
+               return;
             case 3:
                break;
             case 4:
@@ -331,14 +283,12 @@ public class Glow extends guu {
          label145: {
             var46 = String.valueOf(class_124.field_1068);
             class_310 var64 = chi;
-            if (axx != null) {
-               if (chi.method_1542()) {
-                  var65 = "none";
-                  break label145;
-               }
-
-               var64 = chi;
+            if (chi.method_1542()) {
+               var65 = "none";
+               break label145;
             }
+
+            var64 = chi;
 
             var65 = a(var64.method_1558().field_3761);
          }
@@ -356,9 +306,7 @@ public class Glow extends guu {
          Color var119 = ClientSetup.gqy().cxj();
          dmp.hbm(var48, var68, axxxxxxxxx, 18.0F, 3.0F, var114, var119, false, 1.5F, new Color(0, 0, 0, 100));
          axxx.ebb(axxxxxxxx, a.grl.grp() + 3.5F, a.grl.azb() + 3.0F, ClientSetup.gqy().deo());
-         if (axx != null) {
-            return;
-         }
+         return;
       }
 
       String axxxxx;
@@ -369,14 +317,12 @@ public class Glow extends guu {
          axxxxx = "Sense";
          var51 = ClientSetup.dul;
          class_310 var71 = chi;
-         if (axx != null) {
-            if (chi.method_1542()) {
-               var72 = "none";
-               break label134;
-            }
-
-            var71 = chi;
+         if (chi.method_1542()) {
+            var72 = "none";
+            break label134;
          }
+
+         var71 = chi;
 
          var72 = a(var71.method_1558().field_3761);
       }
@@ -420,23 +366,19 @@ public class Glow extends guu {
       String axx = "liquidproxy.net";
       int[] axxx = var10000;
       String var6 = a;
-      if (axxx != null) {
-         if (a == null) {
-            return null;
-         }
-
-         var6 = a;
+      if (a == null) {
+         return null;
       }
 
-      if (axxx != null) {
-         if (var6.endsWith(axx)) {
-            int axxxx = a.lastIndexOf(axx);
-            String var7 = a.substring(axxxx);
-            return "***" + var7;
-         }
+      var6 = a;
 
-         var6 = a;
+      if (var6.endsWith(axx)) {
+         int axxxx = a.lastIndexOf(axx);
+         String var7 = a.substring(axxxx);
+         return "***" + var7;
       }
+
+      var6 = a;
 
       return var6;
    }
@@ -454,20 +396,10 @@ public class Glow extends guu {
       long a = Glow.a ^ 104071507122341L;
       int[] ax = ClientSetup.abu();
       class_634 var10000 = chi.method_1562();
-      if (ax != null) {
-         if (var10000 == null) {
-            return -1;
-         }
 
-         var10000 = chi.method_1562();
-      }
+      var10000 = chi.method_1562();
 
       class_640 axx = var10000.method_2871(chi.field_1724.method_5667());
-      if (ax == null) {
-         return axx.method_2959();
-      } else {
-         return axx != null ? axx.method_2959() : -1;
-      }
    }
 
    static {
@@ -650,89 +582,6 @@ public class Glow extends guu {
             var30 = var22.substring(++var29, var29 + var21);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 9911;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ezv", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ezv" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

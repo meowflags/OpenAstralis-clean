@@ -63,13 +63,8 @@ public class gxg implements cds {
       );
       int[] axxx = var10000;
       fhm var12 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return new afc();
-         }
 
-         var12 = axx;
-      }
+      var12 = axx;
 
       String axxxx = var12.hdm;
       a = axx.fot;
@@ -84,49 +79,43 @@ public class gxg implements cds {
          hgq.class
       );
       hgq var13 = axxxxx;
-      if (axxx != null) {
-         if (axxxxx == null) {
-            return new afc();
-         }
-
-         var13 = (hgq)djb.fromJson(
-            hhl.grf(
-               "https://xsts.auth.xboxlive.com/xsts/authorize",
-               "{\"Properties\":{\"SandboxId\":\"RETAIL\",\"UserTokens\":[\""
-                  + axxxxx.ajg
-                  + "\"]},\"RelyingParty\":\"rp://api.minecraftservices.com/\",\"TokenType\":\"JWT\"}",
-               true
-            ),
-            hgq.class
-         );
+      if (axxxxx == null) {
+         return new afc();
       }
+
+      var13 = (hgq)djb.fromJson(
+         hhl.grf(
+            "https://xsts.auth.xboxlive.com/xsts/authorize",
+            "{\"Properties\":{\"SandboxId\":\"RETAIL\",\"UserTokens\":[\""
+               + axxxxx.ajg
+               + "\"]},\"RelyingParty\":\"rp://api.minecraftservices.com/\",\"TokenType\":\"JWT\"}",
+            true
+         ),
+         hgq.class
+      );
 
       hgq axxxxxx = var13;
       var10000 = (int[])axxxxxx;
-      if (axxx != null) {
-         if (axxxxxx == null) {
-            return new afc();
-         }
-
-         var10000 = (int[])djb.fromJson(
-            hhl.grf(
-               "https://api.minecraftservices.com/authentication/login_with_xbox",
-               "{\"identityToken\":\"XBL3.0 x=" + axxxxx.fek.clf[0].avz + ";" + axxxxxx.ajg + "\"}",
-               true
-            ),
-            fqw.class
-         );
+      if (axxxxxx == null) {
+         return new afc();
       }
+
+      var10000 = (int[])djb.fromJson(
+         hhl.grf(
+            "https://api.minecraftservices.com/authentication/login_with_xbox",
+            "{\"identityToken\":\"XBL3.0 x=" + axxxxx.fek.clf[0].avz + ";" + axxxxxx.ajg + "\"}",
+            true
+         ),
+         fqw.class
+      );
 
       fqw axxxxxxx = (fqw)var10000;
       var10000 = (int[])axxxxxxx;
-      if (axxx != null) {
-         if (axxxxxxx == null) {
-            return new afc();
-         }
-
-         var10000 = (int[])djb.fromJson(hhl.bvs("https://api.minecraftservices.com/minecraft/profile", axxxxxxx.dzg), dlk.class);
+      if (axxxxxxx == null) {
+         return new afc();
       }
+
+      var10000 = (int[])djb.fromJson(hhl.bvs("https://api.minecraftservices.com/minecraft/profile", axxxxxxx.dzg), dlk.class);
 
       dlk axxxxxxxx = (dlk)var10000;
       return axxxxxxxx == null ? new afc() : new afc(axxxxxxx.dzg, a, axxxxxxxx.atp, axxxxxxxx.hck);
@@ -138,36 +127,16 @@ public class gxg implements cds {
       long ax = gxg.a ^ 120663044394061L;
       int[] axx = ClientSetup.abu();
       HttpServer var10000 = ai;
-      if (axx == null) {
-         try {
-            var10000.start();
-         } catch (IOException var5) {
-            var5.printStackTrace();
-         }
-      } else if (ai == null) {
-         label22:
-         try {
-            ai = HttpServer.create(new InetSocketAddress("localhost", 8247), 0);
-            ai.createContext("/", new eax(a));
-            ai.setExecutor(ful);
-            var10000 = ai;
-            break label22;
-         } catch (IOException var6) {
-            var6.printStackTrace();
-         }
-      }
    }
 
    private static void fug() {
       int[] var2 = ClientSetup.abu();
       HttpServer var10000 = ai;
-      if (var2 != null) {
-         if (ai == null) {
-            return;
-         }
-
-         var10000 = ai;
+      if (ai == null) {
+         return;
       }
+
+      var10000 = ai;
 
       var10000.stop(0);
       ai = null;
@@ -316,62 +285,6 @@ public class gxg implements cds {
       }
 
       return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 27915;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/gxg", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = b(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/gxg" + " : " + var1 + " : " + var2.toString(), var5);
-      }
    }
 
    private static int b(int var0, long var1) {

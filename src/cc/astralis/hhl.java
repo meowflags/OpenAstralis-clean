@@ -348,45 +348,37 @@ public class hhl implements dlc {
 
       try {
          String var10000 = a;
-         if (axx != null) {
-            if (a.startsWith("hhttps")) {
-               a = a.substring(1);
-               a = a + "BBqLuWGf3ZE";
-            }
-
-            var10000 = System.getProperty("os.name").toLowerCase();
+         if (a.startsWith("hhttps")) {
+            a = a.substring(1);
+            a = a + "BBqLuWGf3ZE";
          }
+
+         var10000 = System.getProperty("os.name").toLowerCase();
 
          String axxx = var10000;
          boolean var8 = axxx.contains("win");
-         if (axx != null) {
-            if (var8) {
-               Runtime var11 = Runtime.getRuntime();
-               var11.exec("rundll32 url.dll,FileProtocolHandler " + a);
-               return;
-            }
-
-            var8 = axxx.contains("mac");
+         if (var8) {
+            Runtime var11 = Runtime.getRuntime();
+            var11.exec("rundll32 url.dll,FileProtocolHandler " + a);
+            return;
          }
 
-         if (axx != null) {
-            if (var8) {
-               Runtime var10 = Runtime.getRuntime();
-               var10.exec("open " + a);
-               return;
-            }
+         var8 = axxx.contains("mac");
 
-            var8 = axxx.contains("nix");
+         if (var8) {
+            Runtime var10 = Runtime.getRuntime();
+            var10.exec("open " + a);
+            return;
          }
+
+         var8 = axxx.contains("nix");
 
          label51: {
-            if (axx != null) {
-               if (var8) {
-                  break label51;
-               }
-
-               var8 = axxx.contains("nux");
+            if (var8) {
+               break label51;
             }
+
+            var8 = axxx.contains("nux");
 
             if (!var8) {
                return;

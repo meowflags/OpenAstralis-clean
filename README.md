@@ -375,10 +375,15 @@ variant (`str_patched=0`) and its pipeline breaks the Vineflower fold — §13
 has the numbers. The native pass for the 275 closes empty
 (`mapping/native_pass.tsv`: no image types, no hooks, no resources, no
 class-name strings — §13).
-The 55 sites that stay unfolded are all `(IJ)J` in `cc/astralis/brc`/`cvn`; their
-bootstrap method builds the call site at runtime from a bytewise-composed
-`long[]` that has no static table in the class file, so there is nothing to fold
-against.
+A final machinery pass closes the rest: an exact-signature call graph
+(`tools/zkm_gc.py`) proves 958 of 1,264 ZKM machinery methods and 953 fields
+dead; `tools/fold_sites.py` folds the 136 remaining indy sites (127/127; `fz`'s
+9 keep their machinery — its seed is assigned by the native loader); and
+`tools/strip_zkm_dead.py` deletes the dead code and folds 110 cipher-fragment
+`<clinit>`s plus the 2,773 `abu()` guards that JLS 12.4.2 proves non-null
+(§14). 144 files keep behaviour-preserving ZKM residue (enum-inits inside the
+fragment, live `Map`/`Object[]` clinit fields, shared pools) — each one listed
+in §14.
 
 `mapping/modules.tsv` organises the cheat layer: the 91 classes that extend the
 module base `guu`, the category each one registers under (`bfm`), its recovered
@@ -427,6 +432,10 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `tools/fingerprint_obfuscator.py` | class-file fingerprint: DES runtimes, indy sites, native methods, vendor markers |
 | `tools/strip_zkm_residue.py` | delete the dead operand stores the folded `invokedynamic` sites left behind |
 | `tools/infer_names.py`, `tools/apply_names.py` | infer names for the remaining obfuscated classes from their own constants, then apply them |
+| `tools/zkm_gc.py` | reachability GC over the exact `(owner, name, desc)` call graph from `work/ScanRefs.java`; writes `mapping/zkm_machinery.tsv` (958 dead / 306 live machinery methods, 953 dead fields) |
+| `tools/fold_sites.py` | parse + fold the 136 remaining indy sites (shared pools, positional locals, 127/127 folded; `fz`'s 9 stay - native-assigned seed) |
+| `tools/decrypt_tables.py` | Python DES salvage for intermediate ciphertext tables (provenance of the negative result in §13) |
+| `tools/strip_zkm_dead.py` | strip the proven-dead ZKM machinery (692 methods, 404 fields/blocks incl. 110 cipher-fragment clinits, 1,038 imports) and fold the 2,773 provable `abu()` guards |
 | `tools/native_pass.py` | per-class native-image evidence ledger for the unnamed classes |
 | `tools/jarscan.py`, `tools/rebuild_jar.py` | archive-level inventory and rebuild |
 | `tools/Sanitize.java` | neutralise hardcoded endpoints and `halt` calls |
@@ -822,9 +831,15 @@ cadenas no cubre esta variante indy de ZKM 26 (`str_patched=0`) y su
 pipeline rompe el plegado de Vineflower — §13 tiene las cifras. La pasada
 nativa de las 275 cierra vacía (`mapping/native_pass.tsv`: sin tipos en la
 imagen, sin hooks, sin recursos, sin cadenas de nombre de clase — §13).
-Los 55 sitios sin plegar son todos `(IJ)J` en `cc/astralis/brc`/`cvn`: su
-bootstrap construye el call site en ejecución desde un `long[]` compuesto byte a
-byte que no existe como tabla estática en el class file.
+Una pasada final de maquinario cierra el resto: un grafo de llamadas de firma
+exacta (`tools/zkm_gc.py`) prueba 958 de 1.264 métodos de maquinaria ZKM y 953
+campos muertos; `tools/fold_sites.py` pliega los 136 sitios indy restantes
+(127/127; los 9 de `fz` conservan su maquinario - su semilla la asigna el
+loader nativo); y `tools/strip_zkm_dead.py` borra el código muerto y pliega
+110 `<clinit>`s de fragmentos cifrados más las 2.773 guardas `abu()` que
+JLS 12.4.2 demuestra no-null (§14). 144 ficheros conservan residuo ZKM que
+preserva el comportamiento (inits de enum dentro del fragmento, campos
+`Map`/`Object[]` vivos en clinit, pools compartidos) - cada uno listado en §14.
 
 `mapping/modules.tsv` organiza la capa de módulos: las 91 clases que heredan de
 `guu`, la categoría con la que se registran (`bfm`), los nombres de sus ajustes
@@ -866,6 +881,10 @@ sale como `<redacted:discord-bot-token>`.
 | `tools/fingerprint_obfuscator.py` | huella de los `.class`: runtimes DES, sitios indy, métodos `native`, marcadores de fabricante |
 | `tools/strip_zkm_residue.py` | borra las tiendas muertas que dejaron los sitios `invokedynamic` plegados |
 | `tools/infer_names.py`, `tools/apply_names.py` | infiere nombres para las clases ofuscadas restantes desde sus propias constantes y los aplica |
+| `tools/zkm_gc.py` | recolector de basura por alcanzabilidad sobre el grafo de llamadas exacto `(owner, name, desc)` de `work/ScanRefs.java`; escribe `mapping/zkm_machinery.tsv` (958 métodos muertos / 306 vivos, 953 campos muertos) |
+| `tools/fold_sites.py` | analiza y pliega los 136 sitios indy restantes (pools compartidos, locales posicionales; 127/127 plegados; los 9 de `fz` se quedan - semilla asignada nativamente) |
+| `tools/decrypt_tables.py` | salvamento DES en Python para tablas de cifrado intermedias (procedencia del resultado negativo en §13) |
+| `tools/strip_zkm_dead.py` | limpia el maquinario ZKM probado muerto (692 métodos, 404 campos/bloques con 110 `<clinit>`s cifrados, 1.038 imports) y pliega las 2.773 guardas `abu()` demostrables |
 | `tools/native_pass.py` | libro de evidencia nativa por clase para las clases sin nombre |
 | `mapping/offsets.json` | 3.897 constantes plegadas |
 | `mapping/modules.tsv` | 91 clases de módulo: categoría, ajustes, función inferida |

@@ -62,13 +62,11 @@ public class ggk extends brc {
       int[] axxxx = var10000;
       String var9 = fz.dvr(axx.toString(), Base64Util.fsi(var8[3]), Base64Util.fsi(var8[1]));
       var10001 = axxx;
-      if (axxxx != null) {
-         if (axxx != null) {
-            return var9;
-         }
-
-         var10001 = new String[1];
+      if (axxx != null) {
+         return var9;
       }
+
+      var10001 = new String[1];
 
       cdr.apm(var10001);
       return var9;

@@ -33,130 +33,92 @@ public class ScaffoldMode extends fwu {
 
    @Override
    public void ayy(eih event) {
-      long ax = ScaffoldMode.a ^ 100763245794470L;
       int[] var10000 = ClientSetup.abu();
       class_1657 axx = a.bv().fyt;
       int[] axxx = var10000;
       class_1657 var9 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return;
-         }
-
-         var9 = axx;
+      if (axx == null) {
+         return;
       }
+
+      var9 = axx;
 
       label138: {
          short var13;
          label132: {
             var10 = var9.field_6252;
             label131:
-            if (axxx != null) {
-               if (var9.field_6252) {
-                  float var18;
-                  var10 = (var18 = axx.method_36455() - 70.0F) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
-                  if (axxx == null) {
-                     break label131;
+            if (var9.field_6252) {
+               float var18;
+               var10 = (var18 = axx.method_36455() - 70.0F) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
+
+               label127:
+               if (var10 >= 0) {
+                  class_1799 var11 = axx.method_6030();
+                  if (var11 == null) {
+                     break label127;
                   }
 
-                  label127:
-                  if (var10 >= 0) {
-                     class_1799 var11 = axx.method_6030();
-                     if (axxx != null) {
-                        if (var11 == null) {
-                           break label127;
-                        }
+                  var11 = axx.method_6030();
 
-                        var11 = axx.method_6030();
-                     }
+                  var10 = var11.method_7909() instanceof class_1747;
 
-                     var10 = var11.method_7909() instanceof class_1747;
-                     if (axxx == null) {
-                        break label131;
-                     }
+                  if (var10 != 0) {
+                     var10 = a.bv().djk;
+                     var13 = 17426;
+                     var13 = 20;
 
-                     if (var10 != 0) {
-                        var10 = a.bv().djk;
-                        var13 = 17426;
-                        var13 = 20;
-                        if (axxx == null) {
-                           break label132;
-                        }
+                     if (var10 >= 20) {
+                        var10 = axx.field_6012 - a.bv().gab;
+                        var13 = 17734;
+                        var13 = 30;
 
-                        if (var10 >= 20) {
-                           var10 = axx.field_6012 - a.bv().gab;
-                           var13 = 17734;
-                           var13 = 30;
-                           if (axxx == null) {
-                              break label132;
-                           }
+                        if (var10 >= 30) {
+                           var10 = axx.field_6012 - a.bv().dfw;
+                           var13 = 22600;
+                           var13 = 20;
 
-                           if (var10 >= 30) {
-                              var10 = axx.field_6012 - a.bv().dfw;
-                              var13 = 22600;
-                              var13 = 20;
-                              if (axxx == null) {
-                                 break label132;
-                              }
+                           if (var10 >= 20) {
+                              boolean axxxx = true;
+                              class_2338 axxxxx = axx.method_24515().method_10087(2);
+                              int axxxxxx = 0;
 
-                              if (var10 >= 20) {
-                                 boolean axxxx = true;
-                                 class_2338 axxxxx = axx.method_24515().method_10087(2);
-                                 int axxxxxx = 0;
+                              label111: {
+                                 while (axxxxxx < 4) {
+                                    var10 = dlc.chi.field_1687.method_8320(axxxxx).method_26204() instanceof class_2189;
 
-                                 label111: {
-                                    while (axxxxxx < 4) {
-                                       var10 = dlc.chi.field_1687.method_8320(axxxxx).method_26204() instanceof class_2189;
-                                       if (axxx == null) {
-                                          break label111;
+                                    label107: {
+                                       if (var10 != 0) {
+                                          break label107;
                                        }
 
-                                       label107: {
-                                          if (axxx != null) {
-                                             if (var10 != 0) {
-                                                break label107;
-                                             }
+                                       var10 = 0;
 
-                                             var10 = 0;
-                                          }
-
-                                          axxxx = (boolean)var10;
-                                          if (axxx != null) {
-                                             break;
-                                          }
-                                       }
-
-                                       axxxxx = axxxxx.method_10074();
-                                       axxxxxx++;
-                                       if (axxx == null) {
-                                          break;
-                                       }
+                                       axxxx = (boolean)var10;
+                                       break;
                                     }
 
-                                    var10 = axxxx;
+                                    axxxxx = axxxxx.method_10074();
+                                    axxxxxx++;
                                  }
 
-                                 if (axxx == null) {
-                                    break label131;
-                                 }
+                                 var10 = axxxx;
+                              }
 
-                                 if (var10 != 0) {
-                                    a.grm();
-                                 }
+
+                              if (var10 != 0) {
+                                 a.grm();
                               }
                            }
                         }
                      }
                   }
                }
-
-               var12 = a;
-               if (axxx == null) {
-                  break label138;
-               }
-
-               var10 = a.bv().gjk;
             }
+
+            var12 = a;
+
+            var10 = a.bv().gjk;
 
             var13 = 3;
          }

@@ -306,13 +306,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = cub();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 119;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 119;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -353,13 +351,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = hgn();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 99;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 99;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -424,13 +420,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = fjm();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 110;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 110;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -447,13 +441,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = bsq();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 113;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 113;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -470,13 +462,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = afr();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 10;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 10;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -493,13 +483,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = DisablerCubecraft();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 109;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 109;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -532,13 +520,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       boolean var3 = ef();
       boolean var10000 = var3;
-      if (var2 != null) {
-         if (!var3) {
-            return true;
-         }
-
-         var10000 = false;
+      if (!var3) {
+         return true;
       }
+
+      var10000 = false;
 
       return var10000;
    }
@@ -587,13 +573,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = acc();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 48;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 48;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -634,13 +618,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       boolean var3 = fhj();
       boolean var10000 = var3;
-      if (var2 != null) {
-         if (!var3) {
-            return true;
-         }
-
-         var10000 = false;
+      if (!var3) {
+         return true;
       }
+
+      var10000 = false;
 
       return var10000;
    }
@@ -689,13 +671,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = gcc();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 3;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 3;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -720,13 +700,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       int var3 = drn();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 2;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 2;
       }
+
+      var10000 = 0;
 
       return var10000;
    }
@@ -751,13 +729,11 @@ public abstract class cdr {
       int[] var2 = ClientSetup.abu();
       boolean var3 = cge();
       boolean var10000 = var3;
-      if (var2 != null) {
-         if (!var3) {
-            return true;
-         }
-
-         var10000 = false;
+      if (!var3) {
+         return true;
       }
+
+      var10000 = false;
 
       return var10000;
    }
@@ -768,33 +744,6 @@ public abstract class cdr {
 
    public static String[] fbr() {
       return cwg;
-   }
-
-   private static String b(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
    }
 
    private static int c(int var0, long var1) {

@@ -54,24 +54,17 @@ public class dnu extends brc {
       JsonObject var13 = a;
       String[] var12 = b;
       String var16 = var12[9];
-      if (axxxx != null) {
-         if (!a.has(var16)) {
-            return;
-         }
-
-         var13 = a;
-         var16 = b[9];
+      if (!a.has(var16)) {
+         return;
       }
+
+      var13 = a;
+      var16 = b[9];
 
       JsonArray axxxxx = var13.getAsJsonArray(var16);
       JsonArray var14 = axxxxx;
-      if (axxxx != null) {
-         if (axxxxx == null) {
-            return;
-         }
 
-         var14 = axxxxx;
-      }
+      var14 = axxxxx;
 
       for (JsonElement axxxxxx : var14) {
          JsonObject axxxxxxx = axxxxxx.getAsJsonObject();
@@ -102,10 +95,8 @@ public class dnu extends brc {
          } else {
             var17 = axx;
             String[] var12 = b;
-            if (axxxxx != null) {
-               axx.add(fz.dsg(var12[8], a.fkm, a.cis), axxx);
-               break;
-            }
+            axx.add(fz.dsg(var12[8], a.fkm, a.cis), axxx);
+            break;
          }
 
          String[] var14;
@@ -131,17 +122,10 @@ public class dnu extends brc {
             a.eqw(axxxxxxx, var22);
             axxx.add(axxxxxxx);
             int[] var18 = axxxx;
-            if (axxxxx != null) {
-               if (axxxx != null) {
-                  break label33;
-               }
+            break label33;
 
-               var18 = axxxx;
-            }
+            var18 = axxxx;
 
-            if (var18 == null) {
-               continue label33;
-            }
 
             var17 = axx;
             var14 = b;

@@ -51,7 +51,7 @@ public class SilentAim extends guu {
    private static final long a = 99645546734152L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -134,187 +134,185 @@ public class SilentAim extends guu {
 
       class_1297 axxx = var19.arr(a.deb.dnp().floatValue());
       if (axx != null) {
-         if (axxx != null) {
-            bgi axxxx;
-            float[] axxxxx;
-            label211: {
-               axxxx = a.dip(axxx);
-               axxxxx = dgq.dxs(axxx);
-               float var31;
-               int var20 = (var31 = a.atv(axxxxx[0], chi.field_1724.method_36454()) - a.ff.dnp().floatValue()) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
-               if (axx != null) {
-                  if (var20 > 0) {
+         bgi axxxx;
+         float[] axxxxx;
+         label211: {
+            axxxx = a.dip(axxx);
+            axxxxx = dgq.dxs(axxx);
+            float var31;
+            int var20 = (var31 = a.atv(axxxxx[0], chi.field_1724.method_36454()) - a.ff.dnp().floatValue()) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
+            if (axx != null) {
+               if (var20 > 0) {
+                  a.egm = 0.0F;
+                  return;
+               }
+
+               var21 = a.hda.dnp();
+               if (axx == null) {
+                  break label211;
+               }
+
+               var20 = var21;
+            }
+
+            if (var20 != 0) {
+               class_239 axxxxxx = chi.field_1765;
+               var21 = axxxxxx;
+               if (axx == null) {
+                  break label211;
+               }
+
+               if (axxxxxx instanceof class_3966 axxxxxxx) {
+                  var21 = axxxxxxx.method_17782();
+                  if (axx == null) {
+                     break label211;
+                  }
+
+                  if (var21 == axxx) {
                      a.egm = 0.0F;
                      return;
                   }
-
-                  var21 = a.hda.dnp();
-                  if (axx == null) {
-                     break label211;
-                  }
-
-                  var20 = var21;
                }
-
-               if (var20 != 0) {
-                  class_239 axxxxxx = chi.field_1765;
-                  var21 = axxxxxx;
-                  if (axx == null) {
-                     break label211;
-                  }
-
-                  if (axxxxxx instanceof class_3966 axxxxxxx) {
-                     var21 = axxxxxxx.method_17782();
-                     if (axx == null) {
-                        break label211;
-                     }
-
-                     if (var21 == axxx) {
-                        a.egm = 0.0F;
-                        return;
-                     }
-                  }
-               }
-
-               var21 = a.brm.dnp();
             }
 
-            float axxxxxxx;
-            float axxxxxxxx;
-            label172: {
-               axxxxxxx = (((ImFloat)var21).floatValue() + a.fpp.dnp().floatValue()) / 2.0F;
-               axxxxxxxx = 1.0F;
-               Object var22 = a.fd.dnp();
-               if (axx != null) {
-                  if (!var22) {
-                     break label172;
-                  }
+            var21 = a.brm.dnp();
+         }
 
-                  var22 = chi.field_1690.method_42495().method_41753();
+         float axxxxxxx;
+         float axxxxxxxx;
+         label172: {
+            axxxxxxx = (((ImFloat)var21).floatValue() + a.fpp.dnp().floatValue()) / 2.0F;
+            axxxxxxxx = 1.0F;
+            Object var22 = a.fd.dnp();
+            if (axx != null) {
+               if (!var22) {
+                  break label172;
                }
 
-               float axxxxxxxxx = ((Double)var22).floatValue();
-               axxxxxxxx = axxxxxxxxx * 2.0F;
+               var22 = chi.field_1690.method_42495().method_41753();
             }
 
-            float axxxxxxxxx;
-            float axxxxxxxxxx;
-            label166: {
-               label165: {
-                  label213: {
-                     axxxxxxxxxx = axxxxxxx * 0.05F * axxxxxxxx;
-                     axxxxxxxxx = axxxxxxx * 0.05F * axxxxxxxx;
-                     var23 = a.gcy.dnp();
-                     label163:
-                     if (axx != null) {
-                        if (var23 != 0) {
-                           float axxxxxxxxxxx = a.atv(axxxxx[0], chi.field_1724.method_36454()) + a.atv(axxxxx[1], chi.field_1724.method_36455());
-                           float var32;
-                           var23 = (var32 = axxxxxxxxxxx - a.gux.dnp().floatValue()) == 0.0F ? 0 : (var32 < 0.0F ? -1 : 1);
-                           if (axx == null) {
-                              break label163;
-                           }
+            float axxxxxxxxx = ((Double)var22).floatValue();
+            axxxxxxxx = axxxxxxxxx * 2.0F;
+         }
 
-                           if (var23 < 0) {
-                              float axxxxxxxxxxxx = Math.max(a.cte.dnp().floatValue(), axxxxxxxxxxx / a.gux.dnp().floatValue());
-                              axxxxxxxxxx *= axxxxxxxxxxxx;
-                              axxxxxxxxx *= axxxxxxxxxxxx;
-                           }
-                        }
-
-                        var19 = a;
-                        if (axx == null) {
-                           break label213;
-                        }
-
-                        var23 = a.cxj.dnp();
-                     }
-
+         float axxxxxxxxx;
+         float axxxxxxxxxx;
+         label166: {
+            label165: {
+               label213: {
+                  axxxxxxxxxx = axxxxxxx * 0.05F * axxxxxxxx;
+                  axxxxxxxxx = axxxxxxx * 0.05F * axxxxxxxx;
+                  var23 = a.gcy.dnp();
+                  label163:
+                  if (axx != null) {
                      if (var23 != 0) {
-                        a.egm = a.egm + a.bff.dnp().floatValue();
-                        var25 = a;
+                        float axxxxxxxxxxx = a.atv(axxxxx[0], chi.field_1724.method_36454()) + a.atv(axxxxx[1], chi.field_1724.method_36455());
+                        float var32;
+                        var23 = (var32 = axxxxxxxxxxx - a.gux.dnp().floatValue()) == 0.0F ? 0 : (var32 < 0.0F ? -1 : 1);
                         if (axx == null) {
-                           break label166;
+                           break label163;
                         }
 
-                        if (a.egm > 1.0F) {
-                           a.egm = 1.0F;
+                        if (var23 < 0) {
+                           float axxxxxxxxxxxx = Math.max(a.cte.dnp().floatValue(), axxxxxxxxxxx / a.gux.dnp().floatValue());
+                           axxxxxxxxxx *= axxxxxxxxxxxx;
+                           axxxxxxxxx *= axxxxxxxxxxxx;
                         }
-                        break label165;
                      }
 
                      var19 = a;
+                     if (axx == null) {
+                        break label213;
+                     }
+
+                     var23 = a.cxj.dnp();
                   }
 
-                  var19.egm = 0.0F;
+                  if (var23 != 0) {
+                     a.egm = a.egm + a.bff.dnp().floatValue();
+                     var25 = a;
+                     if (axx == null) {
+                        break label166;
+                     }
+
+                     if (a.egm > 1.0F) {
+                        a.egm = 1.0F;
+                     }
+                     break label165;
+                  }
+
+                  var19 = a;
                }
 
-               var25 = a.ggy.dnp();
+               var19.egm = 0.0F;
             }
 
-            String var17 = (String)var25;
-            byte var18 = -1;
-            var26 = var17.hashCode();
-            label147:
-            if (axx != null) {
-               switch (var26) {
-                  case -1955878649:
-                     var26 = var17.equals("Normal");
-                     if (axx == null) {
-                        break label147;
-                     }
+            var25 = a.ggy.dnp();
+         }
 
-                     if (var26 == 0) {
-                        break;
-                     }
-
-                     var18 = 0;
-                     if (axx != null) {
-                        break;
-                     }
-                  case -1818460043:
-                     var26 = var17.equals("Silent");
-                     if (axx == null) {
-                        break label147;
-                     }
-
-                     if (var26 == 0) {
-                        break;
-                     }
-
-                     var18 = 1;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 2192409:
-                     var26 = var17.equals("Flex");
-                     if (axx == null) {
-                        break label147;
-                     }
-
-                     if (var26 != 0) {
-                        var18 = 2;
-                     }
-               }
-
-               var26 = var18;
-            }
-
+         String var17 = (String)var25;
+         byte var18 = -1;
+         var26 = var17.hashCode();
+         label147:
+         if (axx != null) {
             switch (var26) {
-               case 0:
-                  a.auv(a.gbk(axxx, axxxx), axxxxxxxxxx, axxxxxxxxx, axxx);
-                  break;
-               case 1:
-                  dqq.cms(axxxxx, a.brm.dnp().floatValue(), a.fpp.dnp().floatValue());
+               case -1955878649:
+                  var26 = var17.equals("Normal");
+                  if (axx == null) {
+                     break label147;
+                  }
+
+                  if (var26 == 0) {
+                     break;
+                  }
+
+                  var18 = 0;
                   if (axx != null) {
                      break;
                   }
-               case 2:
-                  a.hgc(axxx, axxxx);
+               case -1818460043:
+                  var26 = var17.equals("Silent");
+                  if (axx == null) {
+                     break label147;
+                  }
+
+                  if (var26 == 0) {
+                     break;
+                  }
+
+                  var18 = 1;
+                  if (axx != null) {
+                     break;
+                  }
+               case 2192409:
+                  var26 = var17.equals("Flex");
+                  if (axx == null) {
+                     break label147;
+                  }
+
+                  if (var26 != 0) {
+                     var18 = 2;
+                  }
             }
 
-            return;
+            var26 = var18;
          }
+
+         switch (var26) {
+            case 0:
+               a.auv(a.gbk(axxx, axxxx), axxxxxxxxxx, axxxxxxxxx, axxx);
+               break;
+            case 1:
+               dqq.cms(axxxxx, a.brm.dnp().floatValue(), a.fpp.dnp().floatValue());
+               if (axx != null) {
+                  break;
+               }
+            case 2:
+               a.hgc(axxx, axxxx);
+         }
+
+         return;
 
          a.egm = 0.0F;
       }
@@ -330,32 +328,25 @@ public class SilentAim extends guu {
          float axxxx = axx[0];
          float axxxxx = axx[1];
          int var10 = a.anv;
-         if (axxx != null) {
-            if (a.anv) {
-               float axxxxxx = 6.0F;
-               a.hbq += axxxxxx;
-               if (axxx != null) {
-                  if (a.hbq >= a.cbt) {
-                     a.anv = false;
-                  }
-
-                  chi.field_1724.method_36456(a.hbq % 360.0F);
-                  chi.field_1724.method_36457(axxxxx);
-               }
-
-               return;
+         if (a.anv) {
+            float axxxxxx = 6.0F;
+            a.hbq += axxxxxx;
+            if (a.hbq >= a.cbt) {
+               a.anv = false;
             }
 
-            chi.field_1724.method_36456(axxxx);
+            chi.field_1724.method_36456(a.hbq % 360.0F);
             chi.field_1724.method_36457(axxxxx);
-            a.fh++;
-            var11 = a;
-            if (axxx == null) {
-               break label41;
-            }
 
-            var10 = a.fh;
+            return;
          }
+
+         chi.field_1724.method_36456(axxxx);
+         chi.field_1724.method_36457(axxxxx);
+         a.fh++;
+         var11 = a;
+
+         var10 = a.fh;
 
          if (var10 < 15) {
             return;
@@ -387,30 +378,23 @@ public class SilentAim extends guu {
          double axxxxxxxx = class_3532.method_15338(axxxxx - chi.field_1724.method_36454());
          ax = axxxxxx - chi.field_1724.method_36455();
          int var31 = a.cxj.dnp();
-         if (axxxxxxx != null) {
-            if (var31 != 0) {
-               float axxxxxxxxx = a.atv((float)axxxxx, chi.field_1724.method_36454()) + a.atv((float)axxxxxx, chi.field_1724.method_36455());
-               float axxxxxxxxxx = a.fzb.dnp().floatValue() * Math.min(1.0F, axxxxxxxxx / a.gux.dnp().floatValue());
-               class_243 axxxxxxxxxxx = a.method_18798();
-               float axxxxxxxxxxxx = (float)Math.signum(axxxxxxxxxxx.field_1352 * axxxx.field_1350 - axxxxxxxxxxx.field_1350 * axxxx.field_1352);
-               var33 = axxxxxxxxxxxx;
-               if (axxxxxxx != null) {
-                  var33 = axxxxxxxxxxxx == 0.0F ? 1.0F : axxxxxxxxxxxx;
-               }
+         if (var31 != 0) {
+            float axxxxxxxxx = a.atv((float)axxxxx, chi.field_1724.method_36454()) + a.atv((float)axxxxxx, chi.field_1724.method_36455());
+            float axxxxxxxxxx = a.fzb.dnp().floatValue() * Math.min(1.0F, axxxxxxxxx / a.gux.dnp().floatValue());
+            class_243 axxxxxxxxxxx = a.method_18798();
+            float axxxxxxxxxxxx = (float)Math.signum(axxxxxxxxxxx.field_1352 * axxxx.field_1350 - axxxxxxxxxxx.field_1350 * axxxx.field_1352);
+            var33 = axxxxxxxxxxxx;
+            var33 = axxxxxxxxxxxx == 0.0F ? 1.0F : axxxxxxxxxxxx;
 
-               axxxxxxxxxxxx = var33;
-               axxxxxxxx += Math.sin(a.egm * Math.PI) * axxxxxxxxxx * axxxxxxxxxxxx;
-               ax += Math.cos(a.egm * Math.PI) * axxxxxxxxxx * 0.5;
-            }
-
-            var33 = a.acu.dnp().floatValue();
-            if (axxxxxxx == null) {
-               break label38;
-            }
-
-            float var34;
-            var31 = (var34 = var33 - 0.0F) == 0.0F ? 0 : (var34 < 0.0F ? -1 : 1);
+            axxxxxxxxxxxx = var33;
+            axxxxxxxx += Math.sin(a.egm * Math.PI) * axxxxxxxxxx * axxxxxxxxxxxx;
+            ax += Math.cos(a.egm * Math.PI) * axxxxxxxxxx * 0.5;
          }
+
+         var33 = a.acu.dnp().floatValue();
+
+         float var34;
+         var31 = (var34 = var33 - 0.0F) == 0.0F ? 0 : (var34 < 0.0F ? -1 : 1);
 
          if (var31 > 0) {
             float axxxxxxxxx = a.acu.dnp().floatValue();
@@ -453,9 +437,6 @@ public class SilentAim extends guu {
       while (true) {
          if (var11 < var10) {
             var16 = var9[var11];
-            if (axxxxx == null) {
-               break;
-            }
 
             label32: {
                bgi axxxxxx = var16;
@@ -463,23 +444,19 @@ public class SilentAim extends guu {
                float[] axxxxxxxx = a.byk(axxxxxxx);
                float axxxxxxxxx = a.atv(axxxxxxxx[0], chi.field_1724.method_36454()) + a.atv(axxxxxxxx[1], chi.field_1724.method_36455());
                float var17 = axxxxxxxxx;
-               if (axxxxx != null) {
-                  if (!(axxxxxxxxx < axxx) && (axxxxxxxxx != axxx || !(axxxxxxx.field_1351 > axxxx))) {
-                     break label32;
-                  }
-
-                  axx = axxxxxx;
-                  var17 = axxxxxxxxx;
+               if (!(axxxxxxxxx < axxx) && (axxxxxxxxx != axxx || !(axxxxxxx.field_1351 > axxxx))) {
+                  break label32;
                }
+
+               axx = axxxxxx;
+               var17 = axxxxxxxxx;
 
                axxx = var17;
                axxxx = axxxxxxx.field_1351;
             }
 
             var11++;
-            if (axxxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          var16 = axx;
@@ -522,18 +499,13 @@ public class SilentAim extends guu {
       int[] axxx = var10000;
       float var10;
       int var7 = (var10 = axx - 180.0F) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
-      if (axxx != null) {
-         if (var7 > 0) {
-            return Math.abs(axx - 360.0F);
-         }
-
-         if (axxx == null) {
-            return Math.abs(axx + -180.0F);
-         }
-
-         float var11;
-         var7 = (var11 = axx - -180.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
+      if (var7 > 0) {
+         return Math.abs(axx - 360.0F);
       }
+
+
+      float var11;
+      var7 = (var11 = axx - -180.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
 
       return var7 >= 0 ? Math.abs(axx) : Math.abs(axx + 360.0F);
    }
@@ -723,89 +695,6 @@ public class SilentAim extends guu {
             var30 = var22.substring(++var29, var29 + var21);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 2324;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ezw", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ezw" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

@@ -10,13 +10,10 @@ public class cbm {
    }
 
    public boolean fsc(long delay) {
-      long ax = cbm.a ^ 50053690831291L;
       int[] var5 = ClientSetup.abu();
       long var6;
       int var10000 = (var6 = System.currentTimeMillis() - a - a.edc) == 0L ? 0 : (var6 < 0L ? -1 : 1);
-      if (var5 != null) {
-         var10000 = var10000 >= 0 ? 1 : 0;
-      }
+      var10000 = var10000 >= 0 ? 1 : 0;
 
       return (boolean)var10000;
    }

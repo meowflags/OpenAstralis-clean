@@ -44,70 +44,60 @@ public class avq extends guu {
       class_1309 axxx = ClientSetup.gqy().aws().diy(ekb.class).gvw;
       eky axxxx = ClientSetup.gqy().aws().diy(eky.class);
       bni axxxxx = ClientSetup.gqy().aws().diy(bni.class);
-      if (axxx != null) {
-         int var13 = evd.dbj();
-         if (axx != null) {
-            if (var13 == 0) {
-               return;
-            }
-
-            float var15;
-            var13 = (var15 = chi.field_1724.method_5739(axxx) - 3.0F) == 0.0F ? 0 : (var15 < 0.0F ? -1 : 1);
-         }
-
-         if (axx != null) {
-            if (var13 > 0) {
-               return;
-            }
-
-            var13 = axxxx.dsv();
-         }
-
-         label64: {
-            if (axx != null) {
-               if (var13 != 0) {
-                  break label64;
-               }
-
-               var13 = axxxxx.dsv();
-            }
-
-            if (var13 == 0) {
-               return;
-            }
-         }
-
-         double axxxxxx;
-         float axxxxxxx;
-         label50: {
-            label49: {
-               axxxxxx = evd.chd();
-               axxxxxxx = dgq.dxs(axxx)[0];
-               class_243 axxxxxxxx = new class_243(
-                  -Math.sin(Math.toRadians(chi.field_1724.method_36454())) * a.cxe, 0.0, Math.cos(Math.toRadians(chi.field_1724.method_36454())) * a.cxe
-               );
-               class_243 axxxxxxxxx = chi.field_1724.method_73189().method_1019(axxxxxxxx.method_1021(axxxxxx));
-               boolean var14 = chi.field_1687
-                  .method_8320(new class_2338((int)axxxxxxxxx.field_1352, (int)axxxxxxxxx.field_1351, (int)axxxxxxxxx.field_1350))
-                  .method_26215();
-               if (axx != null) {
-                  if (!var14) {
-                     break label49;
-                  }
-
-                  var14 = chi.field_1724.field_5976;
-               }
-
-               if (!var14) {
-                  break label50;
-               }
-            }
-
-            a.cxe = -a.cxe;
-         }
-
-         azr(a, axxxxxx, axxxxxxx, a.cxe, chi.field_1724.method_5739(axxx) <= a.buo.dnp().floatValue() ? 0.0 : 1.0);
+      int var13 = evd.dbj();
+      if (var13 == 0) {
+         return;
       }
+
+      float var15;
+      var13 = (var15 = chi.field_1724.method_5739(axxx) - 3.0F) == 0.0F ? 0 : (var15 < 0.0F ? -1 : 1);
+
+      if (var13 > 0) {
+         return;
+      }
+
+      var13 = axxxx.dsv();
+
+      label64: {
+         if (var13 != 0) {
+            break label64;
+         }
+
+         var13 = axxxxx.dsv();
+
+         if (var13 == 0) {
+            return;
+         }
+      }
+
+      double axxxxxx;
+      float axxxxxxx;
+      label50: {
+         label49: {
+            axxxxxx = evd.chd();
+            axxxxxxx = dgq.dxs(axxx)[0];
+            class_243 axxxxxxxx = new class_243(
+               -Math.sin(Math.toRadians(chi.field_1724.method_36454())) * a.cxe, 0.0, Math.cos(Math.toRadians(chi.field_1724.method_36454())) * a.cxe
+            );
+            class_243 axxxxxxxxx = chi.field_1724.method_73189().method_1019(axxxxxxxx.method_1021(axxxxxx));
+            boolean var14 = chi.field_1687
+               .method_8320(new class_2338((int)axxxxxxxxx.field_1352, (int)axxxxxxxxx.field_1351, (int)axxxxxxxxx.field_1350))
+               .method_26215();
+            if (!var14) {
+               break label49;
+            }
+
+            var14 = chi.field_1724.field_5976;
+
+            if (!var14) {
+               break label50;
+            }
+         }
+
+         a.cxe = -a.cxe;
+      }
+
+      azr(a, axxxxxx, axxxxxxx, a.cxe, chi.field_1724.method_5739(axxx) <= a.buo.dnp().floatValue() ? 0.0 : 1.0);
    }
 
    @gdz
@@ -116,76 +106,61 @@ public class avq extends guu {
       int[] var10000 = ClientSetup.abu();
       class_1309 axx = ClientSetup.gqy().aws().diy(ekb.class).gvw;
       int[] axxx = var10000;
-      if (axxx != null) {
-         if (axx == null) {
-            return;
-         }
 
-         bqf.aag(a.bus(), axx, a.buo.dnp().floatValue());
-      }
+      bqf.aag(a.bus(), axx, a.buo.dnp().floatValue());
    }
 
    public static void azr(elx moveEvent, double moveSpeed, float yaw, double strafe, double forward) {
       long ax = avq.a ^ 39882610609800L;
       int[] axx = ClientSetup.abu();
       double var10000 = a;
-      if (axx != null) {
-         if (a != 0.0) {
-            float var19;
-            label68: {
-               double var26;
-               int var10001 = (var26 = a - 0.0) == 0.0 ? 0 : (var26 < 0.0 ? -1 : 1);
-               if (axx != null) {
-                  if (var10001 > 0) {
-                     double var27;
-                     int var20 = (var27 = a - 0.0) == 0.0 ? 0 : (var27 < 0.0 ? -1 : 1);
-                     if (axx != null) {
-                        if (var20 > 0) {
-                           var20 = -45;
-                        } else {
-                           var20 = 45;
-                        }
-                     }
-
-                     var19 = var20;
-                     break label68;
-                  }
-
-                  double var28;
-                  var10001 = (var28 = a - 0.0) == 0.0 ? 0 : (var28 < 0.0 ? -1 : 1);
+      if (a != 0.0) {
+         float var19;
+         label68: {
+            double var26;
+            int var10001 = (var26 = a - 0.0) == 0.0 ? 0 : (var26 < 0.0 ? -1 : 1);
+            if (var10001 > 0) {
+               double var27;
+               int var20 = (var27 = a - 0.0) == 0.0 ? 0 : (var27 < 0.0 ? -1 : 1);
+               if (var20 > 0) {
+                  var20 = -45;
+               } else {
+                  var20 = 45;
                }
 
-               label55: {
-                  if (axx != null) {
-                     if (var10001 >= 0) {
-                        var10001 = 0;
-                        break label55;
-                     }
-
-                     double var29;
-                     var10001 = (var29 = a - 0.0) == 0.0 ? 0 : (var29 < 0.0 ? -1 : 1);
-                  }
-
-                  if (axx != null) {
-                     if (var10001 > 0) {
-                        var10001 = 45;
-                     } else {
-                        var10001 = -45;
-                     }
-                  }
-               }
-
-               var19 = var10001;
+               var19 = var20;
+               break label68;
             }
 
-            a += var19;
-            a = 0.0;
-            a = Math.signum(a);
+            double var28;
+            var10001 = (var28 = a - 0.0) == 0.0 ? 0 : (var28 < 0.0 ? -1 : 1);
+
+            label55: {
+               if (var10001 >= 0) {
+                  var10001 = 0;
+                  break label55;
+               }
+
+               double var29;
+               var10001 = (var29 = a - 0.0) == 0.0 ? 0 : (var29 < 0.0 ? -1 : 1);
+
+               if (var10001 > 0) {
+                  var10001 = 45;
+               } else {
+                  var10001 = -45;
+               }
+            }
+
+            var19 = var10001;
          }
 
+         a += var19;
+         a = 0.0;
          a = Math.signum(a);
-         var10000 = Math.toRadians(a + 90.0F);
       }
+
+      a = Math.signum(a);
+      var10000 = Math.toRadians(a + 90.0F);
 
       double axxx = var10000;
       double axxxx = Math.cos(axxx);
@@ -302,33 +277,6 @@ public class avq extends guu {
             var27 = 0;
          }
       }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
    }
 
    private static int b(int var0, long var1) {

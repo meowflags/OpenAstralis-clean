@@ -29,7 +29,7 @@ public final class fbr {
    private static final long a = 91441437679548L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -50,22 +50,17 @@ public final class fbr {
             Method axxx = var5[var7];
             fbr var9 = a;
             Method var10001 = axxx;
-            if (axx != null) {
-               if (a.chu(axxx)) {
-                  break label24;
-               }
-
-               var9 = a;
-               var10001 = axxx;
+            if (a.chu(axxx)) {
+               break label24;
             }
+
+            var9 = a;
+            var10001 = axxx;
 
             var9.bo(var10001, a);
          }
 
          var7++;
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -83,23 +78,18 @@ public final class fbr {
             fbr var10 = a;
             Method var10001 = axxx;
             Object var10002 = a;
-            if (axx != null) {
-               if (a.duq(axxx, a)) {
-                  break label24;
-               }
-
-               var10 = a;
-               var10001 = axxx;
-               var10002 = a;
+            if (a.duq(axxx, a)) {
+               break label24;
             }
+
+            var10 = a;
+            var10001 = axxx;
+            var10002 = a;
 
             var10.bo(var10001, var10002);
          }
 
          var8++;
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -116,28 +106,17 @@ public final class fbr {
          label45:
          while (var9) {
             List<fdg> axxx = (List<fdg>)var5.next();
-            if (axx == null) {
-               return;
-            }
 
             for (fdg axxxx : axxx) {
                var9 = axxxx.gwa().equals(a);
-               if (axx == null) {
-                  continue label45;
-               }
 
-               if (axx != null && var9) {
+               if (var9) {
                   axxx.remove(axxxx);
                }
 
-               if (axx == null) {
-                  break;
-               }
             }
 
-            if (axx != null) {
-               continue label48;
-            }
+            continue label48;
             break;
          }
 
@@ -151,27 +130,19 @@ public final class fbr {
       int[] axx = ClientSetup.abu();
       Map var10000 = brd;
       Class var10001 = a;
-      if (axx != null) {
-         if (!brd.containsKey(a)) {
-            return;
-         }
-
-         var10000 = brd;
-         var10001 = a;
+      if (!brd.containsKey(a)) {
+         return;
       }
 
-      for (fdg axxx : (List)var10000.get(var10001)) {
-         if (axx == null) {
-            return;
-         }
+      var10000 = brd;
+      var10001 = a;
 
-         if (axx != null && axxx.gwa().equals(a)) {
+      for (fdg axxx : (List)var10000.get(var10001)) {
+
+         if (axxx.gwa().equals(a)) {
             brd.get(a).remove(axxx);
          }
 
-         if (axx == null) {
-            break;
-         }
       }
 
       a.fpq(true);
@@ -188,19 +159,14 @@ public final class fbr {
          ax = new fdg(a, a, a.getAnnotation(gdz.class).value());
          int[] axxxx = var10000;
          boolean var8 = ax.dpg().isAccessible();
-         if (axxxx != null) {
-            if (!var8) {
-               ax.dpg().setAccessible(true);
-            }
-
-            var9 = brd;
-            var10001 = axxx;
-            if (axxxx == null) {
-               break label35;
-            }
-
-            var8 = brd.containsKey(axxx);
+         if (!var8) {
+            ax.dpg().setAccessible(true);
          }
+
+         var9 = brd;
+         var10001 = axxx;
+
+         var8 = brd.containsKey(axxx);
 
          if (var8) {
             if (!brd.get(axxx).contains(ax)) {
@@ -229,10 +195,8 @@ public final class fbr {
 
          while (((Class)var10000).equals(a)) {
             var10000 = (int[])axx;
-            if (axxx != null) {
-               axx.remove();
-               return;
-            }
+            axx.remove();
+            return;
          }
       }
    }
@@ -250,9 +214,6 @@ public final class fbr {
          while (var6) {
             if (a) {
                var6 = ((List)((Entry)axx.next()).getValue()).isEmpty();
-               if (axxx == null) {
-                  continue;
-               }
 
                if (!var6) {
                   continue label28;
@@ -260,9 +221,6 @@ public final class fbr {
             }
 
             axx.remove();
-            if (axxx == null) {
-               return;
-            }
             continue label28;
          }
 
@@ -288,35 +246,22 @@ public final class fbr {
          while (var12 < var10001) {
             byte axxxx = var6[var8];
             Iterator var13 = brd.get(a).iterator();
-            if (axxx == null) {
-               return;
-            }
 
             Iterator var10 = var13;
 
             while (var10.hasNext()) {
                fdg axxxxx = (fdg)var10.next();
                var12 = axxxxx.dle();
-               if (axxx != null) {
-                  var10001 = axxxx;
-                  if (axxx == null) {
-                     continue label45;
-                  }
+               var10001 = axxxx;
 
-                  if (var12 == axxxx) {
-                     axx.add(axxxxx);
-                  }
+               if (var12 == axxxx) {
+                  axx.add(axxxxx);
                }
 
-               if (axxx == null) {
-                  break;
-               }
             }
 
             var8++;
-            if (axxx != null) {
-               continue label48;
-            }
+            continue label48;
             break;
          }
 
@@ -329,9 +274,7 @@ public final class fbr {
       long ax = fbr.a ^ 136493038455170L;
       int[] var4 = ClientSetup.abu();
       int var10000 = a.getParameterTypes().length;
-      if (var4 != null) {
-         var10000 = var10000 == 1 && a.isAnnotationPresent(gdz.class) ? 0 : 1;
-      }
+      var10000 = var10000 == 1 && a.isAnnotationPresent(gdz.class) ? 0 : 1;
 
       return (boolean)var10000;
    }
@@ -340,9 +283,7 @@ public final class fbr {
       long ax = fbr.a ^ 131592519785880L;
       int[] var5 = ClientSetup.abu();
       boolean var10000 = a.chu(a);
-      if (var5 != null) {
-         var10000 = var10000 || !a.getParameterTypes()[0].equals(a);
-      }
+      var10000 = var10000 || !a.getParameterTypes()[0].equals(a);
 
       return var10000;
    }
@@ -356,18 +297,13 @@ public final class fbr {
             ax = fbr.a ^ 33198783018077L;
             axx = ClientSetup.abu();
             class_310 var10000 = class_310.method_1551();
-            if (axx != null) {
-               if (var10000.field_1724 != null && class_310.method_1551().field_1687 != null) {
-                  break label173;
-               }
-
-               var10000 = class_310.method_1551();
+            if (var10000.field_1724 != null && class_310.method_1551().field_1687 != null) {
+               break label173;
             }
+
+            var10000 = class_310.method_1551();
 
             var20 = var10000.field_1755 instanceof AltManager;
-            if (axx == null) {
-               break label170;
-            }
 
             if (!var20) {
                if (ClientSetup.gqy().aws() != null && ClientSetup.gqy().aws().diy(dvw.class) != null) {
@@ -383,14 +319,12 @@ public final class fbr {
 
       label174: {
          label175: {
-            if (axx != null) {
-               if (var20) {
-                  break label175;
-               }
-
-               var20 = (short)21775;
-               var20 = "gud boy".equals(aml.eyu);
+            if (var20) {
+               break label175;
             }
+
+            var20 = (short)21775;
+            var20 = "gud boy".equals(aml.eyu);
 
             if (var20 && aml.aod) {
                var20 = aml.hjr.cfs();
@@ -400,9 +334,6 @@ public final class fbr {
                   if (!var23.equalsIgnoreCase("fag") && aml.dxk && aml.grg && aml.fyy) {
                      if (aml.exv && !aml.fii) {
                         var24 = aml.fhj;
-                        if (axx == null) {
-                           break label174;
-                        }
 
                         if (aml.fhj.fsc(10000L)) {
                            break label147;
@@ -446,30 +377,20 @@ public final class fbr {
       }
 
       List<fdg> axxx = (List<fdg>)var24;
-      if (axxx != null) {
-         if (a instanceof cak axxxx) {
-            for (fdg axxxxx : axxx) {
-               a.ejg(axxxxx, a);
-               if (axx == null) {
-                  return axxxx;
-               }
+      if (a instanceof cak axxxx) {
+         for (fdg axxxxx : axxx) {
+            a.ejg(axxxxx, a);
 
-               if (axxxx.bae() || axx == null) {
-                  break;
-               }
-            }
-
-            if (axx != null) {
-               return a;
-            }
-         }
-
-         for (fdg axxxx : axxx) {
-            a.ejg(axxxx, a);
-            if (axx == null) {
+            if (axxxx.bae()) {
                break;
             }
          }
+
+         return a;
+      }
+
+      for (fdg axxxx : axxx) {
+         a.ejg(axxxx, a);
       }
 
       return a;
@@ -661,89 +582,6 @@ public final class fbr {
          }
 
          var27 = var28.charAt(var26);
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 28840;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/fbr", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/fbr" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

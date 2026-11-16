@@ -42,29 +42,23 @@ public class SpeedVulcanGround extends hcr {
       int[] var10000 = ClientSetup.abu();
       int[] axxx = var10000;
       int var7 = evd.dbj();
-      if (axxx != null) {
-         if (var7 == 0) {
-            return;
-         }
-
-         var7 = chi.field_1724.method_24828();
+      if (var7 == 0) {
+         return;
       }
 
-      if (axxx != null) {
-         if (var7 != 0) {
-            ((LivingEntityAccessor)chi.field_1724).setJumpingCooldown(2);
-            float axxxx = 0.00788F;
-            bav.fym(axxxx);
-            a.ewz(a.eil() + axxxx);
-            double var8 = evd.fzm();
-            evd.dek(var8 * evd.cqz(1.712F, 1.712F, !a.ena.fsc(100L) ? 1.46F : 1.8F));
-            if (axxx != null) {
-               return;
-            }
-         }
+      var7 = chi.field_1724.method_24828();
 
-         var7 = bni;
+      if (var7 != 0) {
+         ((LivingEntityAccessor)chi.field_1724).setJumpingCooldown(2);
+         float axxxx = 0.00788F;
+         bav.fym(axxxx);
+         a.ewz(a.eil() + axxxx);
+         double var8 = evd.fzm();
+         evd.dek(var8 * evd.cqz(1.712F, 1.712F, !a.ena.fsc(100L) ? 1.46F : 1.8F));
+         return;
       }
+
+      var7 = bni;
 
       if (var7 == 1) {
          double var9 = evd.fzm();

@@ -23,13 +23,11 @@ public class fey implements dlc {
       long a = fey.a ^ 121110406755454L;
       int[] ax = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (ax != null) {
-         if (chi.field_1724 == null) {
-            return false;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return false;
       }
+
+      var10000 = chi.field_1724;
 
       Iterator var3 = var10000.method_6026().stream().toList().iterator();
 
@@ -37,21 +35,13 @@ public class fey implements dlc {
          if (var3.hasNext()) {
             class_1293 axx = (class_1293)var3.next();
             var5 = ((class_1291)axx.method_5579().comp_349()).method_5573();
-            if (ax == null) {
-               break;
-            }
 
-            if (ax == null) {
-               return var5;
-            }
 
             if (var5) {
                return true;
             }
 
-            if (ax != null) {
-               continue;
-            }
+            continue;
          }
 
          var5 = false;
@@ -65,13 +55,11 @@ public class fey implements dlc {
       long a = fey.a ^ 106950294883468L;
       int[] ax = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (ax != null) {
-         if (chi.field_1724 == null) {
-            return false;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return false;
       }
+
+      var10000 = chi.field_1724;
 
       Iterator var3 = var10000.method_6026().stream().toList().iterator();
 
@@ -79,21 +67,13 @@ public class fey implements dlc {
          if (var3.hasNext()) {
             class_1293 axx = (class_1293)var3.next();
             var5 = ((class_1291)axx.method_5579().comp_349()).method_5573();
-            if (ax == null) {
-               break;
-            }
 
-            if (ax == null) {
-               return var5;
-            }
 
             if (!var5) {
                return true;
             }
 
-            if (ax != null) {
-               continue;
-            }
+            continue;
          }
 
          var5 = false;
@@ -106,13 +86,11 @@ public class fey implements dlc {
    public static boolean gpy() {
       int[] var2 = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (var2 != null) {
-         if (chi.field_1724 == null) {
-            return false;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return false;
       }
+
+      var10000 = chi.field_1724;
 
       boolean var3 = var10000.method_6026().isEmpty();
       return var2 == null ? var3 : !var3;
@@ -121,13 +99,11 @@ public class fey implements dlc {
    public static List<class_1293> epm() {
       int[] var2 = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (var2 != null) {
-         if (chi.field_1724 == null) {
-            return List.of();
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return List.of();
       }
+
+      var10000 = chi.field_1724;
 
       return var10000.method_6026().stream().toList();
    }
@@ -139,14 +115,12 @@ public class fey implements dlc {
       int[] axxx = var10000;
       int var7 = a.method_5578();
       int var10001 = 1;
-      if (axxx != null) {
-         if (var7 < 1) {
-            return axx;
-         }
-
-         var7 = a.method_5578();
-         var10001 = (int)c;
+      if (var7 < 1) {
+         return axx;
       }
+
+      var7 = a.method_5578();
+      var10001 = (int)c;
 
       if (var7 <= var10001) {
          class_5250 axxxx = axx.method_10852(class_5244.field_41874);
@@ -206,30 +180,4 @@ public class fey implements dlc {
       c = var14;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

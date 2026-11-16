@@ -51,7 +51,7 @@ public class eyj {
          axxxxxxxxxx.put(axxxxxxxx);
          axxxxxxxxxx.put(axxxxxxxxx);
          byte[] var17 = axxxxxxxxxx.array();
-         if (axxxx != null && cdr.haa() == null) {
+         if (cdr.haa() == null) {
             fz.gpz(new cdr[5]);
          }
 
@@ -124,13 +124,11 @@ public class eyj {
       int[] var2 = ClientSetup.abu();
       int var3 = ceu();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 43;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 43;
       }
+
+      var10000 = 0;
 
       return var10000;
    }

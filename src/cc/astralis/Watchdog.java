@@ -80,14 +80,12 @@ public class Watchdog extends hcr {
    public void dil() {
       long a = Watchdog.a ^ 6359149070661L;
       int[] var3 = ClientSetup.abu();
-      if (var3 != null) {
-         if (chi.field_1724 != null) {
-            a.hat = false;
-            a.fsf = false;
-         }
-
-         super.dil();
+      if (chi.field_1724 != null) {
+         a.hat = false;
+         a.fsf = false;
       }
+
+      super.dil();
    }
 
    @gdz
@@ -100,18 +98,13 @@ public class Watchdog extends hcr {
             ax = Watchdog.a ^ 97459270558745L;
             axx = ClientSetup.abu();
             boolean var10000 = ((fhd)ClientSetup.gqy().aws().diy(fhd.class)).dsv();
-            if (axx != null) {
-               if (!var10000) {
-                  break label179;
-               }
-
-               var7 = chi;
-               if (axx == null) {
-                  break label180;
-               }
-
-               var10000 = chi.field_1690.field_1903.method_1434();
+            if (!var10000) {
+               break label179;
             }
+
+            var7 = chi;
+
+            var10000 = chi.field_1690.field_1903.method_1434();
 
             if (var10000) {
                return;
@@ -127,18 +120,13 @@ public class Watchdog extends hcr {
                class_2248 axxx = var7.field_1687.method_8320(chi.field_1724.method_24515().method_10074()).method_26204();
                String var8 = axxx.method_63499();
                var9 = var8.contains("stairs");
-               if (axx != null) {
-                  if (var9 != 0) {
-                     break label184;
-                  }
-
-                  String var10 = axxx.method_63499();
-                  var9 = var10.contains("slab");
+               if (var9 != 0) {
+                  break label184;
                }
 
-               if (axx == null) {
-                  break label170;
-               }
+               String var10 = axxx.method_63499();
+               var9 = var10.contains("slab");
+
 
                if (var9 == 0) {
                   break label169;
@@ -152,102 +140,75 @@ public class Watchdog extends hcr {
       }
 
       label157:
-      if (axx != null) {
+      if (var9 != 0) {
+         var9 = a.clv().dsv();
+
          if (var9 != 0) {
-            var9 = a.clv().dsv();
-            if (axx == null) {
-               break label157;
-            }
+            a.csp = a.elr = false;
+            chi.field_1724.method_6043();
+            var9 = a.fz.fsc(m);
 
             if (var9 != 0) {
-               a.csp = a.elr = false;
-               chi.field_1724.method_6043();
-               var9 = a.fz.fsc(m);
-               if (axx == null) {
-                  break label157;
-               }
-
-               if (var9 != 0) {
-                  evd.dek(evd.cqz(a.aqu.dnp().floatValue(), a.eso.dnp().floatValue(), a.faq.dnp().floatValue()));
-               }
+               evd.dek(evd.cqz(a.aqu.dnp().floatValue(), a.eso.dnp().floatValue(), a.faq.dnp().floatValue()));
             }
          }
-
-         a.dji();
-         var9 = chi.field_1724.field_5976;
       }
+
+      a.dji();
+      var9 = chi.field_1724.field_5976;
 
       label147:
-      if (axx != null) {
-         if (var9 != 0) {
-            var9 = evd.dbj();
-            if (axx == null) {
-               break label147;
-            }
+      if (var9 != 0) {
+         var9 = evd.dbj();
 
-            if (var9 == 0) {
-               return;
-            }
-         }
-
-         var9 = a.fbw.dnp();
-      }
-
-      if (axx != null) {
          if (var9 == 0) {
             return;
          }
-
-         var9 = a.gzc.dnp();
       }
 
-      if (axx != null) {
-         if (var9 != 0) {
-            return;
-         }
+      var9 = a.fbw.dnp();
 
-         var9 = (int)Math.round(chi.field_1724.method_23318() % 1.0 * 10000.0);
+      if (var9 == 0) {
+         return;
       }
+
+      var9 = a.gzc.dnp();
+
+      if (var9 != 0) {
+         return;
+      }
+
+      var9 = (int)Math.round(chi.field_1724.method_23318() % 1.0 * 10000.0);
 
       int axxxx = var9;
       int var11 = axxxx;
-      if (axx != null) {
-         switch (axxxx) {
-            case 13:
-               bav.fym(bav.hai() - 0.02483);
-               if (axx != null) {
-                  break;
-               }
-            case 2000:
-               bav.fym(bav.hai() - 0.1913);
-         }
-
-         var11 = axxxx;
+      switch (axxxx) {
+         case 13:
+            bav.fym(bav.hai() - 0.02483);
+            break;
+         case 2000:
+            bav.fym(bav.hai() - 0.1913);
       }
 
-      if (axx != null) {
-         if (var11 == 13) {
-            a.elr = true;
-         }
+      var11 = axxxx;
 
-         var11 = a.elr;
+      if (var11 == 13) {
+         a.elr = true;
       }
 
-      if (axx != null) {
-         if (var11 != 0) {
-            a.ewz(a.eil() - 1.0E-5);
-         }
+      var11 = a.elr;
 
-         var11 = axxxx;
+      if (var11 != 0) {
+         a.ewz(a.eil() - 1.0E-5);
       }
 
-      if (axx != null) {
-         if (var11 == 3426) {
-            a.csp = true;
-         }
+      var11 = axxxx;
 
-         var11 = a.csp;
+      if (var11 == 3426) {
+         a.csp = true;
       }
+
+      var11 = a.csp;
 
       if (var11 != 0) {
          evd.dek(evd.fzm());
@@ -259,29 +220,23 @@ public class Watchdog extends hcr {
       long ax = Watchdog.a ^ 48699050739404L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = a.fqj.dnp();
-      if (var4 != null) {
-         if (var10000) {
-            a.dji();
-         }
-
-         var10000 = a.esl.emb("Update");
+      if (var10000) {
+         a.dji();
       }
 
-      if (var4 != null) {
-         if (var10000) {
-            a.enj();
-         }
+      var10000 = a.esl.emb("Update");
 
-         var10000 = a.gzc.dnp();
+      if (var10000) {
+         a.enj();
       }
 
-      if (var4 != null) {
-         if (!var10000) {
-            return;
-         }
+      var10000 = a.gzc.dnp();
 
-         var10000 = a.fbw.dnp();
+      if (!var10000) {
+         return;
       }
+
+      var10000 = a.fbw.dnp();
 
       if (var10000) {
          bav.fym(bav.hai() + switch (hjr) {
@@ -301,18 +256,13 @@ public class Watchdog extends hcr {
          long ax = Watchdog.a ^ 60072743000882L;
          int[] var4 = ClientSetup.abu();
          boolean var10000 = a.fqj.dnp();
-         if (var4 != null) {
-            if (var10000) {
-               a.dji();
-            }
-
-            var5 = a;
-            if (var4 == null) {
-               break label29;
-            }
-
-            var10000 = a.esl.emb("Correction");
+         if (var10000) {
+            a.dji();
          }
+
+         var5 = a;
+
+         var10000 = a.esl.emb("Correction");
 
          if (!var10000) {
             return;
@@ -331,18 +281,13 @@ public class Watchdog extends hcr {
          long ax = Watchdog.a ^ 117133098857506L;
          int[] var4 = ClientSetup.abu();
          boolean var10000 = a.fqj.dnp();
-         if (var4 != null) {
-            if (var10000) {
-               a.dji();
-            }
-
-            var5 = a;
-            if (var4 == null) {
-               break label29;
-            }
-
-            var10000 = a.esl.emb("Strafe");
+         if (var10000) {
+            a.dji();
          }
+
+         var5 = a;
+
+         var10000 = a.esl.emb("Strafe");
 
          if (!var10000) {
             return;
@@ -361,18 +306,13 @@ public class Watchdog extends hcr {
          long ax = Watchdog.a ^ 38496918790519L;
          int[] var4 = ClientSetup.abu();
          boolean var10000 = a.bed() instanceof class_2664;
-         if (var4 != null) {
-            if (!var10000) {
-               return;
-            }
-
-            var5 = a;
-            if (var4 == null) {
-               break label30;
-            }
-
-            var10000 = a.hat;
+         if (!var10000) {
+            return;
          }
+
+         var5 = a;
+
+         var10000 = a.hat;
 
          if (var10000) {
             return;
@@ -389,24 +329,18 @@ public class Watchdog extends hcr {
       long a = Watchdog.a ^ 60611332032346L;
       int[] ax = ClientSetup.abu();
       int var10000 = a.bhq.dnp();
-      if (ax != null) {
-         if (var10000 == 0) {
-            return;
-         }
-
-         var10000 = chi.field_1724.method_24828();
+      if (var10000 == 0) {
+         return;
       }
 
-      if (ax != null) {
-         if (var10000 != 0) {
-            a.fsf = false;
-            if (ax != null) {
-               return;
-            }
-         }
+      var10000 = chi.field_1724.method_24828();
 
-         var10000 = hjr;
+      if (var10000 != 0) {
+         a.fsf = false;
+         return;
       }
+
+      var10000 = hjr;
 
       if (var10000 == 1) {
          double axx = evd.cqz(0.33F, 0.4F, 0.48F);
@@ -420,34 +354,23 @@ public class Watchdog extends hcr {
             double axxx = ftb.hbp(axx, 2);
             double var11;
             var10000 = (var11 = axxx - 0.0) == 0.0 ? 0 : (var11 < 0.0 ? -1 : 1);
-            if (ax != null) {
-               if (var10000 >= 0) {
-                  double var12;
-                  var10000 = (var12 = axxx - (a.fbw.dnp() ? 1.2 : 1.3)) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
-                  if (ax == null) {
-                     break label188;
-                  }
+            if (var10000 >= 0) {
+               double var12;
+               var10000 = (var12 = axxx - (a.fbw.dnp() ? 1.2 : 1.3)) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
 
-                  if (var10000 <= 0) {
-                     break label201;
-                  }
-
-                  var10000 = ((efx)ClientSetup.gqy().aws().diy(efx.class)).dsv();
-                  if (ax == null) {
-                     break label188;
-                  }
-
-                  if (var10000 != 0) {
-                     break label201;
-                  }
+               if (var10000 <= 0) {
+                  break label201;
                }
 
-               var10000 = a.fig.dnp();
+               var10000 = ((efx)ClientSetup.gqy().aws().diy(efx.class)).dsv();
+
+               if (var10000 != 0) {
+                  break label201;
+               }
             }
 
-            if (ax == null) {
-               break label188;
-            }
+            var10000 = a.fig.dnp();
+
 
             if (var10000 != 0) {
                return;
@@ -462,25 +385,17 @@ public class Watchdog extends hcr {
       label203: {
          byte var10001;
          label204: {
-            if (ax != null) {
-               if (var10000 != 0) {
-                  var10000 = hjr;
-                  var10001 = 2;
-                  if (ax == null) {
-                     break label204;
-                  }
-
-                  if (hjr > 2) {
-                     evd.dyv();
-                  }
-               }
-
+            if (var10000 != 0) {
                var10000 = hjr;
+               var10001 = 2;
+
+               if (hjr > 2) {
+                  evd.dyv();
+               }
             }
 
-            if (ax == null) {
-               break label203;
-            }
+            var10000 = hjr;
+
 
             var10001 = 2;
          }
@@ -495,62 +410,43 @@ public class Watchdog extends hcr {
       }
 
       label155:
-      if (ax != null) {
-         if (var10000 == 0) {
-            var10000 = hjr;
-            if (ax == null) {
-               break label155;
-            }
+      if (var10000 == 0) {
+         var10000 = hjr;
 
-            if (hjr != b<"w">(3549, 1260860728370024766L ^ a)) {
-               return;
-            }
+         if (hjr != 9) {
+            return;
          }
-
-         double var13;
-         var10000 = (var13 = axx - 0.0) == 0.0 ? 0 : (var13 < 0.0 ? -1 : 1);
       }
+
+      double var13;
+      var10000 = (var13 = axx - 0.0) == 0.0 ? 0 : (var13 < 0.0 ? -1 : 1);
 
       label146: {
          label205: {
             label206: {
                label207: {
-                  if (ax != null) {
-                     if (var10000 >= 0) {
-                        double var14;
-                        var10000 = (var14 = axx - 1.0) == 0.0 ? 0 : (var14 < 0.0 ? -1 : 1);
-                        if (ax == null) {
-                           break label206;
-                        }
+                  if (var10000 >= 0) {
+                     double var14;
+                     var10000 = (var14 = axx - 1.0) == 0.0 ? 0 : (var14 < 0.0 ? -1 : 1);
 
-                        if (var10000 < 0) {
-                           break label207;
-                        }
+                     if (var10000 < 0) {
+                        break label207;
                      }
-
-                     var10000 = a.fig.dnp();
                   }
 
-                  if (ax == null) {
-                     break label206;
-                  }
+                  var10000 = a.fig.dnp();
+
 
                   if (var10000 == 0) {
                      var10000 = ((fhd)ClientSetup.gqy().aws().diy(fhd.class)).dsv();
-                     if (ax == null) {
-                        break label206;
-                     }
 
                      if (var10000 == 0) {
-                        bpa.bez(a<"u">(27879, 4247857584248968353L ^ a) + axx);
+                        bpa.bez("return dist " + axx);
                      }
                   }
                }
 
                var10 = a;
-               if (ax == null) {
-                  break label205;
-               }
 
                var10000 = a.fsf;
             }
@@ -558,9 +454,7 @@ public class Watchdog extends hcr {
             if (var10000 == 0) {
                chi.field_1724.method_18799(chi.field_1724.method_18798().method_1031(0.0, 0.075, 0.0));
                a.fsf = true;
-               if (ax != null) {
-                  break label146;
-               }
+               break label146;
             }
 
             var10 = a;
@@ -576,40 +470,32 @@ public class Watchdog extends hcr {
       long a = Watchdog.a ^ 58721561096870L;
       int[] ax = ClientSetup.abu();
       int var10000 = a.gke.dnp();
-      if (ax != null) {
-         if (var10000 == 0) {
-            return;
-         }
-
-         var10000 = chi.field_1724.method_24828();
+      if (var10000 == 0) {
+         return;
       }
 
-      if (ax != null) {
-         if (var10000 != 0) {
-            return;
-         }
+      var10000 = chi.field_1724.method_24828();
 
-         var10000 = chi.field_1724.field_6235;
+      if (var10000 != 0) {
+         return;
       }
 
-      if (ax != null) {
-         if (var10000 >= 3) {
-            return;
-         }
+      var10000 = chi.field_1724.field_6235;
 
-         double var16;
-         var10000 = (var16 = chi.field_1724.method_18798().field_1352 - 0.0) == 0.0 ? 0 : (var16 < 0.0 ? -1 : 1);
+      if (var10000 >= 3) {
+         return;
       }
+
+      double var16;
+      var10000 = (var16 = chi.field_1724.method_18798().field_1352 - 0.0) == 0.0 ? 0 : (var16 < 0.0 ? -1 : 1);
 
       label86: {
-         if (ax != null) {
-            if (var10000 != 0) {
-               break label86;
-            }
-
-            double var17;
-            var10000 = (var17 = chi.field_1724.method_18798().field_1350 - 0.0) == 0.0 ? 0 : (var17 < 0.0 ? -1 : 1);
+         if (var10000 != 0) {
+            break label86;
          }
+
+         double var17;
+         var10000 = (var17 = chi.field_1724.method_18798().field_1350 - 0.0) == 0.0 ? 0 : (var17 < 0.0 ? -1 : 1);
 
          if (var10000 == 0) {
             return;
@@ -622,37 +508,31 @@ public class Watchdog extends hcr {
          float axxxx = a.fqj.dnp() ? Math.abs((axx - axxx + 540.0F) % 360.0F - 180.0F) : Math.abs(axx - axxx);
          int axxxxx = a.hhq.dnp().intValue();
          var10000 = a.fqj.dnp();
-         if (ax != null) {
-            if (var10000 != 0) {
-               float var18;
-               var10000 = (var18 = axxxx - (180 - axxxxx)) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
-               if (ax != null) {
-                  if (var10000 < 0) {
-                     return;
-                  }
-
-                  float var19;
-                  var10000 = (var19 = axxxx - (180 + axxxxx)) == 0.0F ? 0 : (var19 < 0.0F ? -1 : 1);
-               }
-
-               if (var10000 > 0) {
-                  return;
-               }
-               break label102;
-            }
-
-            float var20;
-            var10000 = (var20 = axxxx - (180 - axxxxx)) == 0.0F ? 0 : (var20 < 0.0F ? -1 : 1);
-         }
-
-         if (ax != null) {
-            if (var10000 <= 0) {
+         if (var10000 != 0) {
+            float var18;
+            var10000 = (var18 = axxxx - (180 - axxxxx)) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
+            if (var10000 < 0) {
                return;
             }
 
-            float var21;
-            var10000 = (var21 = axxxx - (180 + axxxxx)) == 0.0F ? 0 : (var21 < 0.0F ? -1 : 1);
+            float var19;
+            var10000 = (var19 = axxxx - (180 + axxxxx)) == 0.0F ? 0 : (var19 < 0.0F ? -1 : 1);
+
+            if (var10000 > 0) {
+               return;
+            }
+            break label102;
          }
+
+         float var20;
+         var10000 = (var20 = axxxx - (180 - axxxxx)) == 0.0F ? 0 : (var20 < 0.0F ? -1 : 1);
+
+         if (var10000 <= 0) {
+            return;
+         }
+
+         float var21;
+         var10000 = (var21 = axxxx - (180 + axxxxx)) == 0.0F ? 0 : (var21 < 0.0F ? -1 : 1);
 
          if (var10000 >= 0) {
             return;
@@ -671,13 +551,11 @@ public class Watchdog extends hcr {
       float ax = (float)Math.toDegrees(Math.atan2(-chi.field_1724.method_18798().field_1352, chi.field_1724.method_18798().field_1350));
       int[] axx = var10000;
       float var5 = ax;
-      if (axx != null) {
-         if (ax < 0.0F) {
-            ax += 360.0F;
-         }
-
-         var5 = ax;
+      if (ax < 0.0F) {
+         ax += 360.0F;
       }
+
+      var5 = ax;
 
       return var5;
    }
@@ -869,89 +747,6 @@ public class Watchdog extends hcr {
             var30 = var22.substring(++var29, var29 + var21);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 12999;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/Watchdog", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/Watchdog" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

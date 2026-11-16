@@ -79,13 +79,11 @@ public class guu extends cdr implements dlc, amh {
                      ax = c ^ 14982128162435L;
                      axx = ClientSetup.abu();
                      boolean var10000 = aml.gkg;
-                     if (axx != null) {
-                        if (aml.gkg) {
-                           break label154;
-                        }
-
-                        var10000 = "gud boy".equals(aml.eyu);
+                     if (aml.gkg) {
+                        break label154;
                      }
+
+                     var10000 = "gud boy".equals(aml.eyu);
 
                      if (var10000 && aml.aod) {
                         int var16 = aml.hjr.cfs();
@@ -93,27 +91,18 @@ public class guu extends cdr implements dlc, amh {
                            String var17 = aml.hjr.eus();
                            if (!var17.equalsIgnoreCase("fag") && aml.dxk && aml.grg && aml.fyy) {
                               var18 = aml.exv;
-                              if (axx == null) {
-                                 break label163;
-                              }
 
                               if (!aml.exv) {
                                  break label155;
                               }
 
                               var18 = aml.fii;
-                              if (axx == null) {
-                                 break label163;
-                              }
 
                               if (aml.fii) {
                                  break label155;
                               }
 
                               var18 = aml.fhj.fsc(10000L);
-                              if (axx == null) {
-                                 break label163;
-                              }
 
                               if (!var18) {
                                  break label155;
@@ -146,9 +135,6 @@ public class guu extends cdr implements dlc, amh {
 
                         axxxxxxxx--;
                         axxxxxxxx++;
-                        if (axx == null) {
-                           break label156;
-                        }
                      } while (axx != null);
                   }
                }
@@ -158,9 +144,6 @@ public class guu extends cdr implements dlc, amh {
             }
 
             var22 = a;
-            if (axx == null) {
-               break label171;
-            }
 
             var18 = a.dsv();
          }
@@ -168,51 +151,39 @@ public class guu extends cdr implements dlc, amh {
          if (var18) {
             var22 = ClientSetup.gqy().aws().diy(dtc.class);
             label114:
-            if (axx != null) {
-               if (var22 != null) {
-                  var22 = (dtc)ClientSetup.gqy().aws().diy(dtc.class);
-                  if (axx == null) {
-                     break label114;
-                  }
+            if (var22 != null) {
+               var22 = (dtc)ClientSetup.gqy().aws().diy(dtc.class);
 
-                  if (((dtc)var22).bnr.dnp()) {
-                     fnb var24 = fnb.hcp();
-                     String var35 = a.clp();
-                     var24 = var24.ael("Enabled " + var35, gge.INFO);
-                     var24.bvw(1000).evs();
-                  }
+               if (((dtc)var22).bnr.dnp()) {
+                  fnb var24 = fnb.hcp();
+                  String var35 = a.clp();
+                  var24 = var24.ael("Enabled " + var35, gge.INFO);
+                  var24.bvw(1000).evs();
                }
-
-               var22 = a;
             }
+
+            var22 = a;
 
             ((guu)var22).auj();
-            if (axx != null) {
-               return;
-            }
+            return;
          }
 
          var22 = ClientSetup.gqy().aws().diy(dtc.class);
       }
 
       label102:
-      if (axx != null) {
-         if (var22 != null) {
-            var22 = (dtc)ClientSetup.gqy().aws().diy(dtc.class);
-            if (axx == null) {
-               break label102;
-            }
+      if (var22 != null) {
+         var22 = (dtc)ClientSetup.gqy().aws().diy(dtc.class);
 
-            if (((dtc)var22).bnr.dnp()) {
-               fnb var26 = fnb.hcp();
-               String var37 = a.clp();
-               var26 = var26.ael("Disabled " + var37, gge.INFO);
-               var26.bvw(1000).evs();
-            }
+         if (((dtc)var22).bnr.dnp()) {
+            fnb var26 = fnb.hcp();
+            String var37 = a.clp();
+            var26 = var26.ael("Disabled " + var37, gge.INFO);
+            var26.bvw(1000).evs();
          }
-
-         var22 = a;
       }
+
+      var22 = a;
 
       ((guu)var22).frg();
    }
@@ -226,39 +197,30 @@ public class guu extends cdr implements dlc, amh {
          label51: {
             ffn<?> axxx = (ffn<?>)var5.next();
             ffn var9 = axxx;
-            if (axx != null) {
-               if (!(axxx instanceof cyx)) {
-                  break label51;
-               }
-
-               var9 = axxx;
+            if (!(axxx instanceof cyx)) {
+               break label51;
             }
+
+            var9 = axxx;
 
             cyx axxxx = (cyx)var9;
             hcr axxxxx = axxxx.dnp();
             hcr var10 = axxxxx;
-            if (axx != null) {
-               if (axxxxx == null) {
-                  break label51;
-               }
-
-               var10 = axxxxx;
+            if (axxxxx == null) {
+               break label51;
             }
 
-            if (axx != null) {
-               if (!var10.clv().equals(a)) {
-                  break label51;
-               }
+            var10 = axxxxx;
 
-               var10 = axxxxx;
+            if (!var10.clv().equals(a)) {
+               break label51;
             }
+
+            var10 = axxxxx;
 
             var10.hkh(a);
          }
 
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -274,9 +236,7 @@ public class guu extends cdr implements dlc, amh {
       long a = c ^ 109852850254233L;
       int[] var3 = ClientSetup.abu();
       boolean var10001 = a.dsv();
-      if (var3 != null) {
-         var10001 = !var10001;
-      }
+      var10001 = !var10001;
 
       a.fga(var10001);
    }
@@ -296,13 +256,11 @@ public class guu extends cdr implements dlc, amh {
       String axx = a.clp();
       int[] axxx = var10000;
       String var6 = a.fgc;
-      if (axxx != null) {
-         if (a.fgc != null) {
-            axx = axx + (a ? a.arb() + a.duh() : "");
-         }
-
-         var6 = axx;
+      if (a.fgc != null) {
+         axx = axx + (a ? a.arb() + a.duh() : "");
       }
+
+      var6 = axx;
 
       return var6;
    }
@@ -339,9 +297,6 @@ public class guu extends cdr implements dlc, amh {
             }
 
             if (var4 != null) {
-               if (var10000 == null) {
-                  break label39;
-               }
 
                var10000 = a;
             }
@@ -662,89 +617,6 @@ public class guu extends cdr implements dlc, amh {
             var37 = var28.substring(++var36, var36 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String c(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 15142;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/guu", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = c(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/guu" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

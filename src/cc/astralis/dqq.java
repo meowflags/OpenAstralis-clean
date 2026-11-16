@@ -41,41 +41,27 @@ public class dqq extends cec {
             long ax = dqq.a ^ 120975774689185L;
             int[] var4 = ClientSetup.abu();
             byte var10000 = bzx;
-            if (var4 != null) {
-               if (bzx) {
-                  var5 = cit;
-                  if (var4 == null) {
-                     break label58;
-                  }
+            if (bzx) {
+               var5 = cit;
 
-                  if (cit != null) {
-                     var5 = bgj;
-                     if (var4 == null) {
-                        break label58;
-                     }
+               if (cit != null) {
+                  var5 = bgj;
 
-                     if (bgj != null) {
-                        var5 = djj;
-                        if (var4 == null) {
-                           break label58;
-                        }
+                  if (bgj != null) {
+                     var5 = djj;
 
-                        if (djj != null) {
-                           var5 = ezi;
-                           if (var4 == null) {
-                              break label58;
-                           }
+                     if (djj != null) {
+                        var5 = ezi;
 
-                           if (ezi != null) {
-                              break label59;
-                           }
+                        if (ezi != null) {
+                           break label59;
                         }
                      }
                   }
                }
-
-               var10000 = 2;
             }
+
+            var10000 = 2;
 
             var5 = new float[var10000];
             var5[0] = chi.field_1724.method_36454();
@@ -99,21 +85,17 @@ public class dqq extends cec {
       int[] var4 = ClientSetup.abu();
       if (bzx && cit != null) {
          boolean var10000 = fzm;
-         if (var4 != null) {
-            if (!fzm) {
-               return;
-            }
-
-            var10000 = ((eky)ClientSetup.gqy().aws().diy(eky.class)).dsv();
+         if (!fzm) {
+            return;
          }
 
-         if (var4 != null) {
-            if (var10000) {
-               return;
-            }
+         var10000 = ((eky)ClientSetup.gqy().aws().diy(eky.class)).dsv();
 
-            var10000 = ClientSetup.gqy().aws().diy(bni.class).dsv();
+         if (var10000) {
+            return;
          }
+
+         var10000 = ClientSetup.gqy().aws().diy(bni.class).dsv();
 
          if (!var10000) {
             evd.dnu(a, ev());
@@ -146,46 +128,34 @@ public class dqq extends cec {
             long ax = dqq.a ^ 100174301201549L;
             int[] axx = ClientSetup.abu();
             byte var10000 = bzx;
-            if (axx != null) {
-               if (bzx) {
+            if (bzx) {
+               var7 = cit;
+
+               if (cit != null) {
+                  float axxx = cit[0];
+                  float axxxx = cit[1];
+                  a.gty(axxx);
+                  a.bqy(axxxx);
+                  fzm = ClientSetup.gqy().aws().diy(bdh.class).fsr.dnp();
+                  ezi = new float[]{axxx, axxxx};
                   var7 = cit;
-                  if (axx == null) {
-                     break label53;
-                  }
-
-                  if (cit != null) {
-                     float axxx = cit[0];
-                     float axxxx = cit[1];
-                     a.gty(axxx);
-                     a.bqy(axxxx);
-                     fzm = ClientSetup.gqy().aws().diy(bdh.class).fsr.dnp();
-                     ezi = new float[]{axxx, axxxx};
+                  label48:
+                  if (Math.abs((cit[0] - chi.field_1724.method_36454()) % 360.0F) < 1.0F) {
                      var7 = cit;
-                     label48:
-                     if (axx != null) {
-                        if (Math.abs((cit[0] - chi.field_1724.method_36454()) % 360.0F) < 1.0F) {
-                           var7 = cit;
-                           if (axx == null) {
-                              break label48;
-                           }
 
-                           if (Math.abs(cit[1] - chi.field_1724.method_36455()) < 1.0F) {
-                              bzx = false;
-                           }
-                        }
-
-                        var7 = cit;
-                     }
-
-                     bgj = var7;
-                     if (axx != null) {
-                        break label54;
+                     if (Math.abs(cit[1] - chi.field_1724.method_36455()) < 1.0F) {
+                        bzx = false;
                      }
                   }
-               }
 
-               var10000 = 2;
+                  var7 = cit;
+
+                  bgj = var7;
+                  break label54;
+               }
             }
+
+            var10000 = 2;
 
             var7 = new float[var10000];
             var7[0] = chi.field_1724.method_36454();
@@ -204,21 +174,17 @@ public class dqq extends cec {
       ahf();
       int[] ax = var10000;
       float[] var8 = bgj;
-      if (ax != null) {
-         if (bgj == null) {
-            return;
-         }
-
-         var8 = djj;
+      if (bgj == null) {
+         return;
       }
 
-      if (ax != null) {
-         if (var8 == null) {
-            return;
-         }
+      var8 = djj;
 
-         var8 = bgj;
+      if (var8 == null) {
+         return;
       }
+
+      var8 = bgj;
 
       float axx = var8[0];
       float axxx = bgj[1];
@@ -226,35 +192,29 @@ public class dqq extends cec {
       float axxxxx = djj[1];
       float var11;
       int var9 = (var11 = ejv - 180.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
-      if (ax != null) {
-         if (var9 != 0) {
-            axxxx = dgq.gz(axx, axxxx, ejv);
-         }
-
-         float var12;
-         var9 = (var12 = adu - 180.0F) == 0.0F ? 0 : (var12 < 0.0F ? -1 : 1);
+      if (var9 != 0) {
+         axxxx = dgq.gz(axx, axxxx, ejv);
       }
 
-      if (ax != null) {
-         if (var9 != 0) {
-            axxxxx = dgq.gz(axxx, axxxxx, adu);
-         }
+      float var12;
+      var9 = (var12 = adu - 180.0F) == 0.0F ? 0 : (var12 < 0.0F ? -1 : 1);
 
-         var9 = 2;
+      if (var9 != 0) {
+         axxxxx = dgq.gz(axxx, axxxxx, adu);
       }
+
+      var9 = 2;
 
       float[] var10 = new float[var9];
       var10[0] = axxxx;
       var10[1] = axxxxx;
       float[] axxxxxx = dgq.ewm(var10, new float[]{axx, axxx});
       cit = new float[]{axxxxxx[0], axxxxxx[1]};
-      if (ax != null) {
-         if (hjx) {
-            return;
-         }
-
-         ahd = axxxxxx[0];
+      if (hjx) {
+         return;
       }
+
+      ahd = axxxxxx[0];
 
       epd = axxxxxx[1];
    }

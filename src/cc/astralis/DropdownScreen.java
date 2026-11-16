@@ -47,26 +47,19 @@ public class DropdownScreen extends class_437 implements dlc {
       for (bfm axxxx : bfm.values()) {
          label27: {
             label26: {
-               if (ax != null) {
-                  if (axxxx != bfm.CLIENT) {
-                     break label26;
-                  }
-
-                  a.coj.add(new eoy(axxxx, axx - 140, 250.0F, 129.0F, 20.0F));
+               if (axxxx != bfm.CLIENT) {
+                  break label26;
                }
 
-               if (ax != null) {
-                  break label27;
-               }
+               a.coj.add(new eoy(axxxx, axx - 140, 250.0F, 129.0F, 20.0F));
+
+               break label27;
             }
 
             a.coj.add(new eoy(axxxx, axx, axxx, 129.0F, 20.0F));
          }
 
          axx += 140;
-         if (ax == null) {
-            break;
-         }
       }
    }
 
@@ -78,11 +71,9 @@ public class DropdownScreen extends class_437 implements dlc {
       int[] var10000 = ClientSetup.abu();
       a.ecf.add(new fyp((float)a, (float)a));
       int[] var7 = var10000;
-      if (var7 != null) {
-         int var8 = a.ecf.size();
-         if (var8 > 8) {
-            a.ecf.removeFirst();
-         }
+      int var8 = a.ecf.size();
+      if (var8 > 8) {
+         a.ecf.removeFirst();
       }
    }
 
@@ -97,23 +88,16 @@ public class DropdownScreen extends class_437 implements dlc {
             fyp axxx = (fyp)ax.next();
             axxx.env();
             fyp var6 = axxx;
-            if (axx != null) {
-               if (axxx.elp()) {
-                  ax.remove();
-                  if (axx != null) {
-                     break label26;
-                  }
-               }
-
-               var6 = axxx;
+            if (axxx.elp()) {
+               ax.remove();
+               break label26;
             }
+
+            var6 = axxx;
 
             var6.flv();
          }
 
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -129,15 +113,13 @@ public class DropdownScreen extends class_437 implements dlc {
       long ax = DropdownScreen.a ^ 30870174396376L;
       int[] var5 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().gkk(a, a);
-      if (var5 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         a.dgd(a.comp_4798(), a.comp_4799());
-         a.coj.forEach(axx -> axx.apy(a.comp_4798(), a.comp_4799(), a.method_74245()));
-         var10000 = super.method_25402(a, a);
+      if (var10000) {
+         return true;
       }
+
+      a.dgd(a.comp_4798(), a.comp_4799());
+      a.coj.forEach(axx -> axx.apy(a.comp_4798(), a.comp_4799(), a.method_74245()));
+      var10000 = super.method_25402(a, a);
 
       return var10000;
    }
@@ -151,20 +133,15 @@ public class DropdownScreen extends class_437 implements dlc {
       long ax = DropdownScreen.a ^ 69695321229785L;
       int[] axx = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().dmj(a, a, a, a);
-      if (axx != null) {
-         if (!var10000) {
-            for (eoy axxx : a.coj) {
-               axxx.dzm((float)(axxx.dtt() + a * 10.0));
-               if (axx == null) {
-                  break;
-               }
-            }
-
-            return super.method_25401(a, a, a, a);
+      if (!var10000) {
+         for (eoy axxx : a.coj) {
+            axxx.dzm((float)(axxx.dtt() + a * 10.0));
          }
 
-         var10000 = true;
+         return super.method_25401(a, a, a, a);
       }
+
+      var10000 = true;
 
       return var10000;
    }
@@ -173,13 +150,11 @@ public class DropdownScreen extends class_437 implements dlc {
       long ax = DropdownScreen.a ^ 22047794675792L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().chz(a);
-      if (var4 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25404(a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25404(a);
 
       return var10000;
    }
@@ -188,13 +163,11 @@ public class DropdownScreen extends class_437 implements dlc {
       long ax = DropdownScreen.a ^ 9313524824054L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().flf(a);
-      if (var4 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25400(a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25400(a);
 
       return var10000;
    }
@@ -203,13 +176,11 @@ public class DropdownScreen extends class_437 implements dlc {
       long ax = DropdownScreen.a ^ 137538869783824L;
       int[] var8 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().fgn(a, a, a);
-      if (var8 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25403(a, a, a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25403(a, a, a);
 
       return var10000;
    }

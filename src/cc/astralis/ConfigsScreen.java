@@ -77,244 +77,194 @@ public class ConfigsScreen implements dlc {
       ImGui.setNextWindowPos(axxxxxx, axxxxxxx, 4);
       ImGui.setNextWindowSize(1000.0F, 700.0F, 4);
       label243:
-      if (ax != null) {
-         if (a.bwn) {
-            if (ax == null) {
-               break label243;
-            }
+      if (a.bwn) {
 
-            if (!a.bba) {
-               float[] axxxxxxxx = a.grc(a.bt, a.hbr, a.eej, a.azm);
-               ImGui.setNextWindowPos(axxxxxxxx[0], axxxxxxxx[1], 1);
-               ImGui.setNextWindowSize(axxxxxxxx[2], axxxxxxxx[3], 1);
-            }
+         if (!a.bba) {
+            float[] axxxxxxxx = a.grc(a.bt, a.hbr, a.eej, a.azm);
+            ImGui.setNextWindowPos(axxxxxxxx[0], axxxxxxxx[1], 1);
+            ImGui.setNextWindowSize(axxxxxxxx[2], axxxxxxxx[3], 1);
          }
-
       }
 
+
       boolean var22 = ImGui.begin("Cloud Configurations##main", 1057);
-      if (ax != null) {
-         label165:
-         if (var22) {
-            label232: {
-               label247: {
-                  label230: {
-                     label248: {
-                        azx.gab(false, 2.0F);
-                        boolean var23 = a.bba;
-                        if (ax != null) {
-                           if (a.bba) {
-                              float[] axxxxxxxx = a.grc(ImGui.getWindowPosX(), ImGui.getWindowPosY(), 450.0F, 20.0F);
-                              ImGui.setWindowPos(axxxxxxxx[0], axxxxxxxx[1]);
-                              ImGui.setWindowSize(450.0F, 20.0F);
-                              if (ax != null) {
-                                 break label247;
-                              }
-                           }
-
-                           var24 = a;
-                           if (ax == null) {
-                              break label248;
-                           }
-
-                           var23 = a.bwn;
-                        }
-
-                        if (!var23) {
-                           break label230;
-                        }
-
-                        var24 = a;
+      label165:
+      if (var22) {
+         label232: {
+            label247: {
+               label230: {
+                  label248: {
+                     azx.gab(false, 2.0F);
+                     boolean var23 = a.bba;
+                     if (a.bba) {
+                        float[] axxxxxxxx = a.grc(ImGui.getWindowPosX(), ImGui.getWindowPosY(), 450.0F, 20.0F);
+                        ImGui.setWindowPos(axxxxxxxx[0], axxxxxxxx[1]);
+                        ImGui.setWindowSize(450.0F, 20.0F);
+                        break label247;
                      }
 
-                     var24.bwn = false;
+                     var24 = a;
+
+                     var23 = a.bwn;
+
+                     if (!var23) {
+                        break label230;
+                     }
+
+                     var24 = a;
                   }
 
-                  label250: {
-                     float[] axxxxxxxx;
-                     float var18;
-                     label251: {
-                        float var17;
-                        label214: {
-                           float axxxxxxxxx = ImGui.getWindowPosX();
-                           float axxxxxxxxxx = ImGui.getWindowPosY();
-                           float axxxxxxxxxxx = ImGui.getWindowWidth();
-                           float axxxxxxxxxxxx = ImGui.getWindowHeight();
-                           var17 = Math.max(axxxxxxxxxxx, 480.0F);
-                           var18 = Math.max(axxxxxxxxxxxx, 320.0F);
-                           axxxxxxxx = a.grc(axxxxxxxxx, axxxxxxxxxx, var17, var18);
-                           float var25 = axxxxxxxx[0];
-                           float var43 = axxxxxxxxx;
-                           if (ax != null) {
-                              if (var25 == axxxxxxxxx) {
-                                 float var57;
-                                 var26 = (var57 = axxxxxxxx[1] - axxxxxxxxxx) == 0.0F ? 0 : (var57 < 0.0F ? -1 : 1);
-                                 if (ax == null) {
-                                    break label251;
-                                 }
+                  var24.bwn = false;
+               }
 
-                                 if (!var26) {
-                                    break label214;
-                                 }
-                              }
+               label250: {
+                  float[] axxxxxxxx;
+                  float var18;
+                  label251: {
+                     float var17;
+                     label214: {
+                        float axxxxxxxxx = ImGui.getWindowPosX();
+                        float axxxxxxxxxx = ImGui.getWindowPosY();
+                        float axxxxxxxxxxx = ImGui.getWindowWidth();
+                        float axxxxxxxxxxxx = ImGui.getWindowHeight();
+                        var17 = Math.max(axxxxxxxxxxx, 480.0F);
+                        var18 = Math.max(axxxxxxxxxxxx, 320.0F);
+                        axxxxxxxx = a.grc(axxxxxxxxx, axxxxxxxxxx, var17, var18);
+                        float var25 = axxxxxxxx[0];
+                        float var43 = axxxxxxxxx;
+                        if (var25 == axxxxxxxxx) {
+                           float var57;
+                           var26 = (var57 = axxxxxxxx[1] - axxxxxxxxxx) == 0.0F ? 0 : (var57 < 0.0F ? -1 : 1);
 
-                              var25 = axxxxxxxx[0];
-                              var43 = axxxxxxxx[1];
+                           if (!var26) {
+                              break label214;
                            }
-
-                           ImGui.setWindowPos(var25, var43);
                         }
 
-                        var27 = axxxxxxxx[2];
-                        var44 = var17;
-                        if (ax == null) {
-                           break label250;
-                        }
+                        var25 = axxxxxxxx[0];
+                        var43 = axxxxxxxx[1];
 
-                        float var58;
-                        var26 = (var58 = var27 - var17) == 0.0F ? 0 : (var58 < 0.0F ? -1 : 1);
-                     }
-
-                     if (!var26) {
-                        float var59;
-                        var28 = (var59 = axxxxxxxx[3] - var18) == 0.0F ? 0 : (var59 < 0.0F ? -1 : 1);
-                        if (ax == null) {
-                           break label232;
-                        }
-
-                        if (!var28) {
-                           break label247;
-                        }
+                        ImGui.setWindowPos(var25, var43);
                      }
 
                      var27 = axxxxxxxx[2];
-                     var44 = axxxxxxxx[3];
+                     var44 = var17;
+
+                     float var58;
+                     var26 = (var58 = var27 - var17) == 0.0F ? 0 : (var58 < 0.0F ? -1 : 1);
                   }
 
-                  ImGui.setWindowSize(var27, var44);
+                  if (!var26) {
+                     float var59;
+                     var28 = (var59 = axxxxxxxx[3] - var18) == 0.0F ? 0 : (var59 < 0.0F ? -1 : 1);
+
+                     if (!var28) {
+                        break label247;
+                     }
+                  }
+
+                  var27 = axxxxxxxx[2];
+                  var44 = axxxxxxxx[3];
                }
 
-               var28 = ImGui.beginMenuBar();
+               ImGui.setWindowSize(var27, var44);
             }
 
-            if (ax != null) {
-               if (var28) {
-                  ImGui.text("Cloud Configurations");
-                  ImGui.sameLine();
-                  int var46 = aml.cic.size();
-                  ImGui.textDisabled("(" + var46 + " configs)");
-                  ImGui.sameLine(ImGui.getWindowWidth() - (a.bba ? 210.0F : 110.0F));
-                  String var31;
-                  if (a.bba) {
-                     var31 = "Maximize";
-                  } else {
-                     var31 = "Minimize";
-                  }
-
-                  boolean var33 = ImGui.smallButton(var31);
-                  if (ax != null) {
-                     if (var33) {
-                        a.aor();
-                     }
-
-                     var33 = a.bba;
-                  }
-
-                  label253: {
-                     if (ax != null) {
-                        if (!var33) {
-                           break label253;
-                        }
-
-                        ImGui.sameLine();
-                        var33 = ImGui.smallButton("Refresh");
-                     }
-
-                     label254: {
-                        if (ax != null) {
-                           if (var33) {
-                              new fxc().dak(ClientSetup.gqy().gp());
-                           }
-
-                           ImGui.sameLine();
-                           if (ax == null) {
-                              break label254;
-                           }
-
-                           var33 = ImGui.smallButton("Add");
-                        }
-
-                        if (!var33) {
-                           break label253;
-                        }
-
-                        a.efy = true;
-                        a.ebg.set("");
-                     }
-
-                     a.fhe.set("");
-                  }
-
-                  ImGui.endMenuBar();
-               }
-
-               var28 = a.bba;
-            }
-
-            label256: {
-               if (ax != null) {
-                  if (var28) {
-                     ImGui.pushStyleColor(0, 0.7F, 0.75F, 0.85F, 1.0F);
-                     ImGui.setCursorPosY(ImGui.getCursorPosY() + 6.0F);
-                     ImGui.textDisabled("Mini mode — drag to move, click Restore to expand");
-                     ImGui.popStyleColor();
-                     if (ax != null) {
-                        break label165;
-                     }
-                  }
-
-                  var37 = a;
-                  if (ax == null) {
-                     break label256;
-                  }
-
-                  a.eik();
-                  ImGui.separator();
-                  ImGui.spacing();
-                  var28 = axx.isEmpty();
-               }
-
-               if (var28) {
-                  a.eoy();
-                  if (ax != null) {
-                     break label165;
-                  }
-               }
-
-               var37 = a;
-            }
-
-            var37.cgx(axx);
+            var28 = ImGui.beginMenuBar();
          }
 
-         ImGui.end();
-         var22 = ImGui.beginPopupModal("Add New Config", 6);
+         if (var28) {
+            ImGui.text("Cloud Configurations");
+            ImGui.sameLine();
+            int var46 = aml.cic.size();
+            ImGui.textDisabled("(" + var46 + " configs)");
+            ImGui.sameLine(ImGui.getWindowWidth() - (a.bba ? 210.0F : 110.0F));
+            String var31;
+            if (a.bba) {
+               var31 = "Maximize";
+            } else {
+               var31 = "Minimize";
+            }
+
+            boolean var33 = ImGui.smallButton(var31);
+            if (var33) {
+               a.aor();
+            }
+
+            var33 = a.bba;
+
+            label253: {
+               if (!var33) {
+                  break label253;
+               }
+
+               ImGui.sameLine();
+               var33 = ImGui.smallButton("Refresh");
+
+               label254: {
+                  if (var33) {
+                     new fxc().dak(ClientSetup.gqy().gp());
+                  }
+
+                  ImGui.sameLine();
+
+                  var33 = ImGui.smallButton("Add");
+
+                  if (!var33) {
+                     break label253;
+                  }
+
+                  a.efy = true;
+                  a.ebg.set("");
+               }
+
+               a.fhe.set("");
+            }
+
+            ImGui.endMenuBar();
+         }
+
+         var28 = a.bba;
+
+         label256: {
+            if (var28) {
+               ImGui.pushStyleColor(0, 0.7F, 0.75F, 0.85F, 1.0F);
+               ImGui.setCursorPosY(ImGui.getCursorPosY() + 6.0F);
+               ImGui.textDisabled("Mini mode — drag to move, click Restore to expand");
+               ImGui.popStyleColor();
+               break label165;
+            }
+
+            var37 = a;
+
+            a.eik();
+            ImGui.separator();
+            ImGui.spacing();
+            var28 = axx.isEmpty();
+
+            if (var28) {
+               a.eoy();
+               break label165;
+            }
+
+            var37 = a;
+         }
+
+         var37.cgx(axx);
       }
 
+      ImGui.end();
+      var22 = ImGui.beginPopupModal("Add New Config", 6);
+
       label258: {
-         if (ax != null) {
-            if (var22) {
-               a.gkl();
-               ImGui.endPopup();
-            }
-
-            var39 = a;
-            if (ax == null) {
-               break label258;
-            }
-
-            var22 = a.efy;
+         if (var22) {
+            a.gkl();
+            ImGui.endPopup();
          }
+
+         var39 = a;
+
+         var22 = a.efy;
 
          if (!var22) {
             return;
@@ -331,21 +281,17 @@ public class ConfigsScreen implements dlc {
       long a = ConfigsScreen.a ^ 38246892070053L;
       int[] var3 = ClientSetup.abu();
       ConfigsScreen var10000 = a;
-      if (var3 != null) {
-         if (!a.bba) {
-            a.bt = ImGui.getWindowPosX();
-            a.hbr = ImGui.getWindowPosY();
-            a.eej = Math.max(ImGui.getWindowWidth(), 480.0F);
-            a.azm = Math.max(ImGui.getWindowHeight(), 320.0F);
-            a.bba = true;
-            if (var3 != null) {
-               return;
-            }
-         }
-
-         a.bba = false;
-         var10000 = a;
+      if (!a.bba) {
+         a.bt = ImGui.getWindowPosX();
+         a.hbr = ImGui.getWindowPosY();
+         a.eej = Math.max(ImGui.getWindowWidth(), 480.0F);
+         a.azm = Math.max(ImGui.getWindowHeight(), 320.0F);
+         a.bba = true;
+         return;
       }
+
+      a.bba = false;
+      var10000 = a;
 
       var10000.bwn = true;
    }
@@ -373,40 +319,34 @@ public class ConfigsScreen implements dlc {
       int[] axxx = var10000;
       float axxxx = ax * 2.0F + axx;
       byte var8 = ImGui.beginTable("cfg_header", 2, 2121728);
-      if (axxx != null) {
-         if (var8 == 0) {
-            return;
-         }
-
-         ImGui.tableSetupColumn("left", 8);
-         ImGui.tableSetupColumn("right", 16, axxxx);
-         ImGui.tableNextRow();
-         ImGui.tableSetColumnIndex(0);
-         ImGui.tableSetColumnIndex(1);
-         var8 = ImGui.button("Refresh", ax, 0.0F);
+      if (var8 == 0) {
+         return;
       }
 
-      if (axxx != null) {
-         if (var8 != 0) {
-            new fxc().dak(ClientSetup.gqy().gp());
-         }
+      ImGui.tableSetupColumn("left", 8);
+      ImGui.tableSetupColumn("right", 16, axxxx);
+      ImGui.tableNextRow();
+      ImGui.tableSetColumnIndex(0);
+      ImGui.tableSetColumnIndex(1);
+      var8 = ImGui.button("Refresh", ax, 0.0F);
 
-         ImGui.sameLine(0.0F, axx);
-         ImGui.pushStyleColor(21, 0.2F, 0.7F, 0.2F, 1.0F);
-         ImGui.pushStyleColor(22, 0.3F, 0.8F, 0.3F, 1.0F);
-         ImGui.pushStyleColor(23, 0.1F, 0.6F, 0.1F, 1.0F);
-         var8 = ImGui.button("Add Config", ax, 0.0F);
+      if (var8 != 0) {
+         new fxc().dak(ClientSetup.gqy().gp());
       }
 
-      if (axxx != null) {
-         if (var8 != 0) {
-            a.efy = true;
-            a.ebg.set("");
-            a.fhe.set("");
-         }
+      ImGui.sameLine(0.0F, axx);
+      ImGui.pushStyleColor(21, 0.2F, 0.7F, 0.2F, 1.0F);
+      ImGui.pushStyleColor(22, 0.3F, 0.8F, 0.3F, 1.0F);
+      ImGui.pushStyleColor(23, 0.1F, 0.6F, 0.1F, 1.0F);
+      var8 = ImGui.button("Add Config", ax, 0.0F);
 
-         var8 = 3;
+      if (var8 != 0) {
+         a.efy = true;
+         a.ebg.set("");
+         a.fhe.set("");
       }
+
+      var8 = 3;
 
       ImGui.popStyleColor(var8);
       ImGui.endTable();
@@ -436,23 +376,18 @@ public class ConfigsScreen implements dlc {
       float axxxxx = axxx * 280.0F + (axxx - 1) * 16.0F;
       float var11;
       int var9 = (var11 = axxxxx - axx) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
-      if (axxxx != null) {
-         if (var9 > 0) {
-            axxx = Math.max(1, axxx - 1);
-         }
-
-         ImGui.beginChild("ConfigGrid", 0.0F, 0.0F, false, 8);
-         ImGui.setCursorPosY(ImGui.getCursorPosY() + 10.0F);
-         var9 = 0;
+      if (var9 > 0) {
+         axxx = Math.max(1, axxx - 1);
       }
+
+      ImGui.beginChild("ConfigGrid", 0.0F, 0.0F, false, 8);
+      ImGui.setCursorPosY(ImGui.getCursorPosY() + 10.0F);
+      var9 = 0;
 
       int axxxxxx = var9;
 
       while (true) {
          if (axxxxxx < a.size()) {
-            if (axxxx == null) {
-               break;
-            }
 
             if (axxxxxx % axxx != 0) {
                ImGui.sameLine(0.0F, 16.0F);
@@ -460,9 +395,7 @@ public class ConfigsScreen implements dlc {
 
             a.daj(a.get(axxxxxx), axxxxxx);
             axxxxxx++;
-            if (axxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          ImGui.endChild();
@@ -483,99 +416,86 @@ public class ConfigsScreen implements dlc {
       ImGui.pushStyleColor(5, 0.3F, 0.3F, 0.4F, 0.5F);
       String var13 = "ConfigCard##" + a;
       byte var14 = ImGui.beginChild(var13, 280.0F, 180.0F, true, 24);
-      if (axx != null) {
-         if (var14 != 0) {
-            label63: {
-               String axxx;
-               label62: {
-                  ImGui.pushStyleVar(14, 4.0F, 6.0F);
-                  ImGui.pushStyleColor(0, 0.9F, 0.95F, 1.0F, 1.0F);
-                  String var30 = a.amx();
-                  ImGui.text(a.fdn(var30, 28));
-                  ImGui.popStyleColor();
-                  ImGui.pushStyleColor(0, 0.7F, 0.7F, 0.8F, 1.0F);
-                  axxx = a.chb();
-                  String var16 = axxx;
-                  if (axx != null) {
-                     if (axxx != null) {
-                        var17 = axxx.isEmpty();
-                        if (axx == null) {
-                           break label63;
-                        }
-
-                        if (var17 == 0) {
-                           break label62;
-                        }
-                     }
-
-                     var16 = "No description provided";
-                  }
-
-                  axxx = var16;
-               }
-
-               ImGui.textWrapped(a.fdn(axxx, 60));
+      if (var14 != 0) {
+         label63: {
+            String axxx;
+            label62: {
+               ImGui.pushStyleVar(14, 4.0F, 6.0F);
+               ImGui.pushStyleColor(0, 0.9F, 0.95F, 1.0F, 1.0F);
+               String var30 = a.amx();
+               ImGui.text(a.fdn(var30, 28));
                ImGui.popStyleColor();
-               ImGui.separator();
-               ImGui.spacing();
-               ImGui.pushStyleColor(0, 0.6F, 0.8F, 1.0F, 1.0F);
-               ImGui.text("User: ");
-               ImGui.sameLine();
-               var17 = 0;
-            }
+               ImGui.pushStyleColor(0, 0.7F, 0.7F, 0.8F, 1.0F);
+               axxx = a.chb();
+               String var16 = axxx;
+               var17 = axxx.isEmpty();
 
-            ImGui.pushStyleColor(var17, 0.8F, 0.8F, 0.9F, 1.0F);
-            ImGui.text(a.ayq().eus());
-            ImGui.popStyleColor();
-            SimpleDateFormat axxx = new SimpleDateFormat("MMM dd, yyyy");
-            ImGui.text("Date: ");
-            ImGui.sameLine();
-            ImGui.pushStyleColor(0, 0.8F, 0.8F, 0.9F, 1.0F);
-            ImGui.text(axxx.format(new Date(a.bsl())));
-            ImGui.popStyleColor(2);
-            ImGui.pushStyleColor(0, 0.6F, 0.8F, 1.0F, 1.0F);
-            ImGui.text("ID: ");
-            ImGui.sameLine();
-            ImGui.pushStyleColor(0, 0.8F, 0.8F, 0.9F, 1.0F);
-            ImGui.text(String.valueOf(a.cna()));
-            ImGui.popStyleColor(2);
-            ImGui.spacing();
-            ImGui.separator();
-            float axxxx = 256.0F;
-            ImGui.pushStyleColor(21, 0.1F, 0.4F, 0.8F, 1.0F);
-            ImGui.pushStyleColor(22, 0.2F, 0.5F, 0.9F, 1.0F);
-            ImGui.pushStyleColor(23, 0.05F, 0.3F, 0.7F, 1.0F);
-            byte var24 = ImGui.button("Load Config", axxxx, 0.0F);
-            if (axx != null) {
-               if (var24 != 0) {
-                  try {
-                     JsonObject axxxxx = a.dvu();
-                     JsonObject var25 = axxxxx;
-                     if (axx != null) {
-                        if (axxxxx == null) {
-                           return;
-                        }
-
-                        var25 = axxxxx;
-                     }
-
-                     gco.axu(var25);
-                  } catch (Exception var10) {
-                     var10.printStackTrace();
-                  }
+               if (var17 == 0) {
+                  break label62;
                }
 
-               var24 = 3;
+               var16 = "No description provided";
+
+               axxx = var16;
             }
 
-            ImGui.popStyleColor(var24);
-            ImGui.popStyleVar();
+            ImGui.textWrapped(a.fdn(axxx, 60));
+            ImGui.popStyleColor();
+            ImGui.separator();
+            ImGui.spacing();
+            ImGui.pushStyleColor(0, 0.6F, 0.8F, 1.0F, 1.0F);
+            ImGui.text("User: ");
+            ImGui.sameLine();
+            var17 = 0;
          }
 
-         ImGui.endChild();
+         ImGui.pushStyleColor(var17, 0.8F, 0.8F, 0.9F, 1.0F);
+         ImGui.text(a.ayq().eus());
+         ImGui.popStyleColor();
+         SimpleDateFormat axxx = new SimpleDateFormat("MMM dd, yyyy");
+         ImGui.text("Date: ");
+         ImGui.sameLine();
+         ImGui.pushStyleColor(0, 0.8F, 0.8F, 0.9F, 1.0F);
+         ImGui.text(axxx.format(new Date(a.bsl())));
          ImGui.popStyleColor(2);
-         var14 = 2;
+         ImGui.pushStyleColor(0, 0.6F, 0.8F, 1.0F, 1.0F);
+         ImGui.text("ID: ");
+         ImGui.sameLine();
+         ImGui.pushStyleColor(0, 0.8F, 0.8F, 0.9F, 1.0F);
+         ImGui.text(String.valueOf(a.cna()));
+         ImGui.popStyleColor(2);
+         ImGui.spacing();
+         ImGui.separator();
+         float axxxx = 256.0F;
+         ImGui.pushStyleColor(21, 0.1F, 0.4F, 0.8F, 1.0F);
+         ImGui.pushStyleColor(22, 0.2F, 0.5F, 0.9F, 1.0F);
+         ImGui.pushStyleColor(23, 0.05F, 0.3F, 0.7F, 1.0F);
+         byte var24 = ImGui.button("Load Config", axxxx, 0.0F);
+         if (var24 != 0) {
+            try {
+               JsonObject axxxxx = a.dvu();
+               JsonObject var25 = axxxxx;
+               if (axxxxx == null) {
+                  return;
+               }
+
+               var25 = axxxxx;
+
+               gco.axu(var25);
+            } catch (Exception var10) {
+               var10.printStackTrace();
+            }
+         }
+
+         var24 = 3;
+
+         ImGui.popStyleColor(var24);
+         ImGui.popStyleVar();
       }
+
+      ImGui.endChild();
+      ImGui.popStyleColor(2);
+      var14 = 2;
 
       ImGui.popStyleVar(var14);
       ImGui.popID();
@@ -593,18 +513,16 @@ public class ConfigsScreen implements dlc {
       ImGui.setNextItemWidth(-1.0F);
       ImGui.inputText("##name", a.ebg);
       boolean var9 = a.ebg.get().isEmpty();
-      if (ax != null) {
-         if (var9) {
-            ImGui.pushStyleColor(0, 1.0F, 0.4F, 0.4F, 1.0F);
-            ImGui.text("Name is required");
-            ImGui.popStyleColor();
-         }
-
-         ImGui.spacing();
-         ImGui.text("Description (optional):");
-         ImGui.setNextItemWidth(-1.0F);
-         ImGui.inputTextMultiline("##desc", a.fhe, 0.0F, 80.0F);
+      if (var9) {
+         ImGui.pushStyleColor(0, 1.0F, 0.4F, 0.4F, 1.0F);
+         ImGui.text("Name is required");
+         ImGui.popStyleColor();
       }
+
+      ImGui.spacing();
+      ImGui.text("Description (optional):");
+      ImGui.setNextItemWidth(-1.0F);
+      ImGui.inputTextMultiline("##desc", a.fhe, 0.0F, 80.0F);
 
       ImGui.spacing();
       ImGui.separator();
@@ -614,49 +532,38 @@ public class ConfigsScreen implements dlc {
       float axxxx = axx * 2.0F + axxx;
       ImGui.setCursorPosX((ImGui.getWindowWidth() - axxxx) * 0.5F);
       boolean var13 = a.ebg.get().trim().isEmpty();
-      if (ax != null) {
-         var13 = !var13;
-      }
+      var13 = !var13;
 
       boolean axxxxx = var13;
       boolean var14 = axxxxx;
-      if (ax != null) {
-         if (!axxxxx) {
-            ImGui.pushStyleVar(0, 0.5F);
-         }
-
-         ImGui.pushStyleColor(21, 0.2F, 0.7F, 0.2F, 1.0F);
-         ImGui.pushStyleColor(22, 0.3F, 0.8F, 0.3F, 1.0F);
-         var14 = ImGui.button("Create", axx, 0.0F);
+      if (!axxxxx) {
+         ImGui.pushStyleVar(0, 0.5F);
       }
+
+      ImGui.pushStyleColor(21, 0.2F, 0.7F, 0.2F, 1.0F);
+      ImGui.pushStyleColor(22, 0.3F, 0.8F, 0.3F, 1.0F);
+      var14 = ImGui.button("Create", axx, 0.0F);
 
       label66:
-      if (ax != null) {
-         if (var14) {
-            var14 = axxxxx;
-            if (ax == null) {
-               break label66;
-            }
-
-            if (axxxxx) {
-               new hhm(new hbo(a.ebg.get().trim(), a.fhe.get().trim(), aml.hjr.cfs(), aml.hjr.eus(), gco.bbm())).dak(ClientSetup.gqy().gp());
-               new fxc().dak(ClientSetup.gqy().gp());
-               ImGui.closeCurrentPopup();
-            }
-         }
-
-         ImGui.popStyleColor(2);
+      if (var14) {
          var14 = axxxxx;
-      }
 
-      if (ax != null) {
-         if (!var14) {
-            ImGui.popStyleVar();
+         if (axxxxx) {
+            new hhm(new hbo(a.ebg.get().trim(), a.fhe.get().trim(), aml.hjr.cfs(), aml.hjr.eus(), gco.bbm())).dak(ClientSetup.gqy().gp());
+            new fxc().dak(ClientSetup.gqy().gp());
+            ImGui.closeCurrentPopup();
          }
-
-         ImGui.sameLine();
-         var14 = ImGui.button("Cancel", axx, 0.0F);
       }
+
+      ImGui.popStyleColor(2);
+      var14 = axxxxx;
+
+      if (!var14) {
+         ImGui.popStyleVar();
+      }
+
+      ImGui.sameLine();
+      var14 = ImGui.button("Cancel", axx, 0.0F);
 
       if (var14) {
          ImGui.closeCurrentPopup();
@@ -667,24 +574,17 @@ public class ConfigsScreen implements dlc {
       long ax = ConfigsScreen.a ^ 35415495862466L;
       int[] var5 = ClientSetup.abu();
       String var10000 = a;
-      if (var5 != null) {
-         if (a != null) {
-            if (var5 == null) {
-               return a;
-            }
+      if (a != null) {
 
-            if (a.length() > a) {
-               var10000 = a.substring(0, a - 3);
-               return var10000 + "...";
-            }
+         if (a.length() > a) {
+            var10000 = a.substring(0, a - 3);
+            return var10000 + "...";
          }
-
-         var10000 = a;
       }
 
-      if (var5 != null) {
-         var10000 = var10000 != null ? a : "";
-      }
+      var10000 = a;
+
+      var10000 = var10000 != null ? a : "";
 
       return var10000;
    }
@@ -836,89 +736,6 @@ public class ConfigsScreen implements dlc {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 12572;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ConfigsScreen", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ConfigsScreen" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

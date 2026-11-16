@@ -46,19 +46,15 @@ public enum cfg {
 
       while (var9 < var8) {
          cfg axxxxx = var7[var9];
-         if (axxx != null) {
-            if (axxxxx.btr.equalsIgnoreCase(a)) {
-               return axxxxx;
-            }
-
-            var9++;
+         if (axxxxx.btr.equalsIgnoreCase(a)) {
+            return axxxxx;
          }
 
+         var9++;
+
          while (axxxx == null) {
-            if (axxx != null) {
-               cdr.apm(new String[5]);
-               throw new IllegalArgumentException(cfg.a[0] + a);
-            }
+            cdr.apm(new String[5]);
+            throw new IllegalArgumentException(cfg.a[0] + a);
 
             if (5 != 0) {
                return axxxxx;

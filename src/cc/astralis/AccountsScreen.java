@@ -21,7 +21,7 @@ public class AccountsScreen extends class_437 implements dlc, amh {
    private static final long a = 3595060140470L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -31,7 +31,6 @@ public class AccountsScreen extends class_437 implements dlc, amh {
    }
 
    public void feu(gfv alt, float x, float y, boolean hovered) {
-      long ax = AccountsScreen.a ^ 124052871512003L;
       int[] var10000 = ClientSetup.abu();
       int axx = (int)a;
       int[] axxx = var10000;
@@ -61,13 +60,11 @@ public class AccountsScreen extends class_437 implements dlc, amh {
          dmp.baq(var20, var29, 20.0F, new Color(50, 50, 55));
          dmp.gnj(axx + 10, axxxx + 5, 40.0F, 40.0F, 20.0F, hcu.amw(a.hal()), null);
          int var21 = a.cit();
-         if (axxx != null) {
-            if (var21 == 0) {
-               break label50;
-            }
-
-            var21 = axx + 30;
+         if (var21 == 0) {
+            break label50;
          }
+
+         var21 = axx + 30;
 
          float var22 = var21;
          dmp.asa(var22, axxxx + 25, 20.0F, 1.5F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
@@ -244,62 +241,6 @@ public class AccountsScreen extends class_437 implements dlc, amh {
       }
 
       return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 30512;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/AccountsScreen", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = b(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/AccountsScreen" + " : " + var1 + " : " + var2.toString(), var5);
-      }
    }
 
    private static int b(int var0, long var1) {

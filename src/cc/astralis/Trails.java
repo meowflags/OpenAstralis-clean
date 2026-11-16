@@ -32,7 +32,7 @@ public class Trails extends guu {
    private static final long a = 82371839067723L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Long[] q;
    private static final Map r;
@@ -53,19 +53,15 @@ public class Trails extends guu {
       class_243 axx = chi.field_1724.method_73189();
       int[] axxx = var10000;
       var10000 = (int[])a.bwl;
-      if (axxx != null) {
-         if (a.bwl.isEmpty()) {
-            a.bwl.add(new bpi(axx, chi.field_1724.method_18376(), System.currentTimeMillis()));
-            if (axxx != null) {
-               return;
-            }
-         }
-
-         var10000 = (int[])a.bwl.get(a.bwl.size() - 1);
+      if (a.bwl.isEmpty()) {
+         a.bwl.add(new bpi(axx, chi.field_1724.method_18376(), System.currentTimeMillis()));
+         return;
       }
 
+      var10000 = (int[])a.bwl.get(a.bwl.size() - 1);
+
       bpi axxxx = (bpi)var10000;
-      if (axxx != null && axxxx.hho.method_1022(axx) >= a.dpe.dnp().floatValue()) {
+      if (axxxx.hho.method_1022(axx) >= a.dpe.dnp().floatValue()) {
          a.bwl.add(new bpi(axx, chi.field_1724.method_18376(), System.currentTimeMillis()));
       }
    }
@@ -88,20 +84,16 @@ public class Trails extends guu {
             long var10000x = System.currentTimeMillis() - axxxxxxxx.caz;
             long var5x;
             int var4x = (var5x = var10000x - 3000L) == 0L ? 0 : (var5x < 0L ? -1 : 1);
-            if (var3 != null) {
-               var4x = var4x > 0 ? 1 : 0;
-            }
+            var4x = var4x > 0 ? 1 : 0;
 
             return (boolean)var4x;
          });
          Object var10000 = a.bwl;
-         if (axx != null) {
-            if (a.bwl.size() < 2) {
-               return;
-            }
-
-            var10000 = a.cch();
+         if (a.bwl.size() < 2) {
+            return;
          }
+
+         var10000 = a.cch();
 
          List<class_243> axxxxxxxx = (List<class_243>)var10000;
          a.fqz(axxxxx, axxxxxxx, axxxxxxxx);
@@ -116,14 +108,12 @@ public class Trails extends guu {
       ArrayList ax = new ArrayList();
       int[] axx = var10000;
       int var16 = a.bwl.size();
-      if (axx != null) {
-         if (var16 < 2) {
-            return ax;
-         }
-
-         ax.add(a.bwl.get(0).hho.method_1031(0.0, 0.02, 0.0));
-         var16 = 0;
+      if (var16 < 2) {
+         return ax;
       }
+
+      ax.add(a.bwl.get(0).hho.method_1031(0.0, 0.02, 0.0));
+      var16 = 0;
 
       int axxx = var16;
 
@@ -131,31 +121,24 @@ public class Trails extends guu {
          if (axxx < a.bwl.size() - 1) {
             class_243 axxxx = a.bwl.get(axxx).hho.method_1031(0.0, 0.02, 0.0);
             var17 = a.bwl;
-            if (axx == null) {
-               break;
-            }
 
             class_243 axxxxx = a.bwl.get(axxx + 1).hho.method_1031(0.0, 0.02, 0.0);
             class_243 axxxxxx = axxxx;
             class_243 axxxxxxx = axxxxx;
             int var18 = axxx;
-            if (axx != null) {
-               if (axxx > 0) {
-                  class_243 axxxxxxxx = a.bwl.get(axxx - 1).hho.method_1031(0.0, 0.02, 0.0);
-                  axxxxxx = axxxx.method_1019(axxxxx.method_1020(axxxxxxxx).method_1021(0.3));
-               }
-
-               var18 = axxx;
+            if (axxx > 0) {
+               class_243 axxxxxxxx = a.bwl.get(axxx - 1).hho.method_1031(0.0, 0.02, 0.0);
+               axxxxxx = axxxx.method_1019(axxxxx.method_1020(axxxxxxxx).method_1021(0.3));
             }
 
-            if (axx != null) {
-               if (var18 < a.bwl.size() - 2) {
-                  class_243 axxxxxxxx = a.bwl.get(axxx + 2).hho.method_1031(0.0, 0.02, 0.0);
-                  axxxxxxx = axxxxx.method_1019(axxxx.method_1020(axxxxxxxx).method_1021(0.3));
-               }
+            var18 = axxx;
 
-               var18 = a.aui.dnp().intValue();
+            if (var18 < a.bwl.size() - 2) {
+               class_243 axxxxxxxx = a.bwl.get(axxx + 2).hho.method_1031(0.0, 0.02, 0.0);
+               axxxxxxx = axxxxx.method_1019(axxxx.method_1020(axxxxxxxx).method_1021(0.3));
             }
+
+            var18 = a.aui.dnp().intValue();
 
             int axxxxxxxx = var18;
             int axxxxxxxxx = 1;
@@ -166,21 +149,13 @@ public class Trails extends guu {
                   class_243 axxxxxxxxxxx = a.dqf(axxxx, axxxxxx, axxxxxxx, axxxxx, axxxxxxxxxx);
                   ax.add(axxxxxxxxxxx);
                   axxxxxxxxx++;
-                  if (axx == null) {
-                     break label60;
-                  }
 
-                  if (axx == null) {
-                     break;
-                  }
                }
 
                axxx++;
             }
 
-            if (axx != null) {
-               continue;
-            }
+            continue;
          }
 
          var17 = ax;
@@ -217,20 +192,15 @@ public class Trails extends guu {
             String axxxxxxxxx = axxx.eqi.dnp();
             byte var15 = -1;
             int var10000 = axxxxxxxxx.hashCode();
-            if (axx != null) {
-               switch (var10000) {
-                  case -1656737386:
-                     var10000 = axxxxxxxxx.equals("Rainbow");
-                     if (axx == null) {
-                        break;
-                     }
+            switch (var10000) {
+               case -1656737386:
+                  var10000 = axxxxxxxxx.equals("Rainbow");
 
-                     if (var10000 != 0) {
-                        var15 = 0;
-                     }
-                  default:
-                     var10000 = var15;
-               }
+                  if (var10000 != 0) {
+                     var15 = 0;
+                  }
+               default:
+                  var10000 = var15;
             }
             Color axxxxxxxxxx = switch (var10000) {
                case 0 -> {
@@ -241,9 +211,6 @@ public class Trails extends guu {
             Color axxxxxxxxxxx = dec.ceu(axxxxxxxxxx, (int)(axxxxxxxx * 255.0F));
             a.fqw(a, a, axxxxx, axxxxxx, axxxxxxxxxxx);
             axxxx++;
-            if (axx == null) {
-               break;
-            }
          }
       }
    }
@@ -348,89 +315,6 @@ public class Trails extends guu {
          }
 
          var16 = var17.charAt(var15);
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 18929;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/cem", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/cem" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

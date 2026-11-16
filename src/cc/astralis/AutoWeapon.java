@@ -50,44 +50,33 @@ public class AutoWeapon extends guu {
       long ax = AutoWeapon.a ^ 135558152857018L;
       int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.field_1724 == null) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000.field_1761 == null) {
-            return;
-         }
+      var10000 = chi;
 
-         var10000 = chi;
+      if (var10000.field_1761 == null) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000.field_1687 == null) {
-            return;
-         }
+      var10000 = chi;
 
-         var10000 = chi;
+      if (var10000.field_1687 == null) {
+         return;
       }
+
+      var10000 = chi;
 
       label160: {
          int var16 = var10000.field_1755 instanceof class_490;
-         if (axx != null) {
-            if (var16 == 0) {
-               return;
-            }
-
-            var17 = a;
-            if (axx == null) {
-               break label160;
-            }
-
-            var16 = a.bxp;
+         if (var16 == 0) {
+            return;
          }
+
+         var17 = a;
+
+         var16 = a.bxp;
 
          if (var16 < a.ftz.dnp().intValue()) {
             a.bxp++;
@@ -105,122 +94,93 @@ public class AutoWeapon extends guu {
       class_1735[] axxxxxxx = axxx.gwx();
       List<class_1735> axxxxxxxx = axxxx.stream().filter(axxxxxxxxx -> cwp.gvl(axxxxxxxxx.method_7677())).toList();
       boolean var18 = axxxxxxxx.isEmpty();
-      if (axx != null) {
-         if (var18) {
-            List<class_1735> axxxxxxxxx = new ArrayList<>(Arrays.stream(axxxxxx).filter(axxxxxxxxxx -> {
-               long ax = AutoWeapon.a ^ 26262122108873L;
-               int[] var3 = ClientSetup.abu();
-               class_1735 var10000x = axxxxxxxxxx;
-               if (var3 != null) {
-                  if (axxxxxxxxxx == null) {
-                     return (boolean)0;
-                  }
-
-                  var10000x = axxxxxxxxxx;
-               }
-
-               if (var3 == null) {
-                  return (boolean)var10000x.field_7874;
-               } else {
-                  short var10001x = 27344;
-                  return (boolean)(var10000x.field_7874 > 8 ? 1 : 0);
-               }
-            }).toList());
-            var19 = chi.field_1755 instanceof class_490;
-            label132:
-            if (axx != null) {
-               if (var19 != 0) {
-                  Collections.shuffle(axxxxxxxxx);
-                  var19 = axxxxxxxxx.isEmpty();
-                  if (axx == null) {
-                     break label132;
-                  }
-
-                  if (var19 == 0) {
-                     cwp.gmh(axxxxxxxxx.removeFirst().field_7874, 0, class_1713.field_7794);
-                     return;
-                  }
-               }
-
-               Collections.shuffle(axxxx);
-               var19 = axxxx.isEmpty();
+      if (var18) {
+         List<class_1735> axxxxxxxxx = new ArrayList<>(Arrays.stream(axxxxxx).filter(axxxxxxxxxx -> {
+            long ax = AutoWeapon.a ^ 26262122108873L;
+            int[] var3 = ClientSetup.abu();
+            class_1735 var10000x = axxxxxxxxxx;
+            if (axxxxxxxxxx == null) {
+               return (boolean)0;
             }
 
-            if (axx != null) {
-               if (var19 == 0) {
-                  cwp.gmh(axxxx.removeFirst().field_7874, 1, class_1713.field_7795);
-                  return;
-               }
+            var10000x = axxxxxxxxxx;
 
-               var19 = 36 + a.cxi.dnp().intValue();
-            }
+         }).toList());
+         var19 = chi.field_1755 instanceof class_490;
+         label132:
+         if (var19 != 0) {
+            Collections.shuffle(axxxxxxxxx);
+            var19 = axxxxxxxxx.isEmpty();
 
-            label124: {
-               label163: {
-                  int axxxxxxxxxx = var19;
-                  class_1735 var21 = axxxxx[0];
-                  if (axx != null) {
-                     if (var21 == null) {
-                        break label163;
-                     }
-
-                     var21 = axxxxx[0];
-                  }
-
-                  var22 = var21.field_7874;
-                  if (axx == null) {
-                     break label124;
-                  }
-
-                  if (var21.field_7874 != axxxxxxxxxx) {
-                     cwp.gmh(axxxxx[0].field_7874, a.cxi.dnp().intValue(), class_1713.field_7791);
-                     return;
-                  }
-               }
-
-               var22 = 0;
-            }
-
-            int axxxxxxxxxxx = var22;
-
-            int var26;
-            while (true) {
-               if (axxxxxxxxxxx < 3) {
-                  class_1735 axxxxxxxxxxxx = axxxxxxx[axxxxxxxxxxx];
-                  int axxxxxxxxxxxxx = 36 + a.ehm.dnp().intValue() + axxxxxxxxxxx;
-                  if (axx != null) {
-                     if (axxxxxxxxxxxx != null) {
-                        var24 = axxxxxxxxxxxx.field_7874;
-                        var26 = axxxxxxxxxxxxx;
-                        if (axx == null) {
-                           break;
-                        }
-
-                        if (axxxxxxxxxxxx.field_7874 != axxxxxxxxxxxxx) {
-                           var24 = axxxxxxxxxxxx.field_7874;
-                           var26 = a.ehm.dnp().intValue() + axxxxxxxxxxx;
-                           break;
-                        }
-                     }
-
-                     axxxxxxxxxxx++;
-                  }
-
-                  if (axx != null) {
-                     continue;
-                  }
-               }
-
+            if (var19 == 0) {
+               cwp.gmh(axxxxxxxxx.removeFirst().field_7874, 0, class_1713.field_7794);
                return;
             }
+         }
 
-            cwp.gmh(var24, var26, class_1713.field_7791);
+         Collections.shuffle(axxxx);
+         var19 = axxxx.isEmpty();
+
+         if (var19 == 0) {
+            cwp.gmh(axxxx.removeFirst().field_7874, 1, class_1713.field_7795);
             return;
          }
 
-         cwp.gmh(axxxxxxxx.get(0).field_7874, 1, class_1713.field_7795);
-         axxxx.remove(axxxxxxxx.get(0));
+         var19 = 36 + a.cxi.dnp().intValue();
+
+         label124: {
+            label163: {
+               int axxxxxxxxxx = var19;
+               class_1735 var21 = axxxxx[0];
+               if (var21 == null) {
+                  break label163;
+               }
+
+               var21 = axxxxx[0];
+
+               var22 = var21.field_7874;
+
+               if (var21.field_7874 != axxxxxxxxxx) {
+                  cwp.gmh(axxxxx[0].field_7874, a.cxi.dnp().intValue(), class_1713.field_7791);
+                  return;
+               }
+            }
+
+            var22 = 0;
+         }
+
+         int axxxxxxxxxxx = var22;
+
+         int var26;
+         while (true) {
+            if (axxxxxxxxxxx < 3) {
+               class_1735 axxxxxxxxxxxx = axxxxxxx[axxxxxxxxxxx];
+               int axxxxxxxxxxxxx = 36 + a.ehm.dnp().intValue() + axxxxxxxxxxx;
+               if (axxxxxxxxxxxx != null) {
+                  var24 = axxxxxxxxxxxx.field_7874;
+                  var26 = axxxxxxxxxxxxx;
+
+                  if (axxxxxxxxxxxx.field_7874 != axxxxxxxxxxxxx) {
+                     var24 = axxxxxxxxxxxx.field_7874;
+                     var26 = a.ehm.dnp().intValue() + axxxxxxxxxxx;
+                     break;
+                  }
+               }
+
+               axxxxxxxxxxx++;
+
+               continue;
+            }
+
+            return;
+         }
+
+         cwp.gmh(var24, var26, class_1713.field_7791);
+         return;
       }
+
+      cwp.gmh(axxxxxxxx.get(0).field_7874, 1, class_1713.field_7795);
+      axxxx.remove(axxxxxxxx.get(0));
    }
 
    static {
@@ -310,89 +270,6 @@ public class AutoWeapon extends guu {
          }
 
          var16 = var17.charAt(var15);
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 28633;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/aac", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/aac" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

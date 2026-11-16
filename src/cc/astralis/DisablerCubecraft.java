@@ -85,148 +85,113 @@ public class DisablerCubecraft extends hcr {
       if (a.aya.dnp()) {
          ekb axxx = ClientSetup.gqy().aws().diy(ekb.class);
          class_2596 var10000 = a.bed();
-         if (axx != null) {
-            label213:
-            if (var10000 instanceof class_2879) {
-               class_1309 var31 = axxx.gvw;
-               if (axx != null) {
-                  if (axxx.gvw == null) {
-                     break label213;
-                  }
-
-                  a.duw = System.currentTimeMillis();
-                  a.czn = true;
-                  a.dqr = false;
-                  a.ekv = axxx.gvw;
-                  a.bwb = false;
-                  var31 = a.ekv;
-               }
-
-               String var32 = var31.method_5477().getString();
-               bpa.bez("§ePlayer swung at: " + var32);
+         label213:
+         if (var10000 instanceof class_2879) {
+            class_1309 var31 = axxx.gvw;
+            if (axxx.gvw == null) {
+               break label213;
             }
 
-            var10000 = a.bed();
+            a.duw = System.currentTimeMillis();
+            a.czn = true;
+            a.dqr = false;
+            a.ekv = axxx.gvw;
+            a.bwb = false;
+            var31 = a.ekv;
+
+            String var32 = var31.method_5477().getString();
+            bpa.bez("§ePlayer swung at: " + var32);
          }
+
+         var10000 = a.bed();
 
          class_2596 axxxx = var10000;
          var33 = axxxx instanceof class_2767;
          label188:
-         if (axx != null) {
-            label202: {
-               label201:
+         label202: {
+            label201:
+            if (var33 != 0) {
+               class_2767 axxxxx = (class_2767)axxxx;
+               class_2960 axxxxxx = class_7923.field_41172.method_10221((class_3414)axxxxx.method_11894().comp_349());
+               class_2960 var34 = axxxxxx;
+               if (axxxxxx == null) {
+                  break label201;
+               }
+
+               var34 = axxxxxx;
+
+               String var35 = var34.method_12832();
+               var33 = var35.contains("hurt");
+
                if (var33 != 0) {
-                  class_2767 axxxxx = (class_2767)axxxx;
-                  class_2960 axxxxxx = class_7923.field_41172.method_10221((class_3414)axxxxx.method_11894().comp_349());
-                  class_2960 var34 = axxxxxx;
-                  if (axx != null) {
-                     if (axxxxxx == null) {
-                        break label201;
-                     }
+                  var33 = a.czn;
 
-                     var34 = axxxxxx;
-                  }
+                  if (a.czn) {
+                     var36 = a;
 
-                  String var35 = var34.method_12832();
-                  var33 = var35.contains("hurt");
-                  if (axx == null) {
-                     break label188;
-                  }
+                     if (a.ekv != null) {
+                        long axxxxxxx = System.currentTimeMillis() - a.duw;
+                        double axxxxxxxx = axxxxx.method_11890();
+                        double axxxxxxxxx = axxxxx.method_11889();
+                        double axxxxxxxxxx = axxxxx.method_11893();
+                        double axxxxxxxxxxx = a.ekv.method_23317() - axxxxxxxx;
+                        double axxxxxxxxxxxx = a.ekv.method_23318() - axxxxxxxxx;
+                        double axxxxxxxxxxxxx = a.ekv.method_23321() - axxxxxxxxxx;
+                        double axxxxxxxxxxxxxx = axxxxxxxxxxx * axxxxxxxxxxx + axxxxxxxxxxxx * axxxxxxxxxxxx + axxxxxxxxxxxxx * axxxxxxxxxxxxx;
+                        long var56;
+                        var33 = (var56 = axxxxxxx - 150L) == 0L ? 0 : (var56 < 0L ? -1 : 1);
 
-                  if (var33 != 0) {
-                     var33 = a.czn;
-                     if (axx == null) {
-                        break label188;
-                     }
-
-                     if (a.czn) {
-                        var36 = a;
-                        if (axx == null) {
-                           break label202;
-                        }
-
-                        if (a.ekv != null) {
-                           long axxxxxxx = System.currentTimeMillis() - a.duw;
-                           double axxxxxxxx = axxxxx.method_11890();
-                           double axxxxxxxxx = axxxxx.method_11889();
-                           double axxxxxxxxxx = axxxxx.method_11893();
-                           double axxxxxxxxxxx = a.ekv.method_23317() - axxxxxxxx;
-                           double axxxxxxxxxxxx = a.ekv.method_23318() - axxxxxxxxx;
-                           double axxxxxxxxxxxxx = a.ekv.method_23321() - axxxxxxxxxx;
-                           double axxxxxxxxxxxxxx = axxxxxxxxxxx * axxxxxxxxxxx + axxxxxxxxxxxx * axxxxxxxxxxxx + axxxxxxxxxxxxx * axxxxxxxxxxxxx;
-                           long var56;
-                           var33 = (var56 = axxxxxxx - 150L) == 0L ? 0 : (var56 < 0L ? -1 : 1);
-                           if (axx == null) {
-                              break label188;
-                           }
+                        if (var33 < 0) {
+                           double var57;
+                           var33 = (var57 = axxxxxxxxxxxxxx - ClientSetup.gqy().aws().diy(ekb.class).ejq.dnp().floatValue()) == 0.0 ? 0 : (var57 < 0.0 ? -1 : 1);
 
                            if (var33 < 0) {
-                              double var57;
-                              var33 = (var57 = axxxxxxxxxxxxxx - ClientSetup.gqy().aws().diy(ekb.class).ejq.dnp().floatValue()) == 0.0 ? 0 : (var57 < 0.0 ? -1 : 1);
-                              if (axx == null) {
-                                 break label188;
-                              }
-
-                              if (var33 < 0) {
-                                 String var37 = a.ekv.method_5477().getString();
-                                 String var46 = String.valueOf(axxxxxx);
-                                 bpa.bez("§aAttack confirmed on " + var37 + " via sound: " + var46);
-                                 a.czn = false;
-                                 a.ekv = null;
-                                 a.dqr = false;
-                                 a.bwb = false;
-                              }
+                              String var37 = a.ekv.method_5477().getString();
+                              String var46 = String.valueOf(axxxxxx);
+                              bpa.bez("§aAttack confirmed on " + var37 + " via sound: " + var46);
+                              a.czn = false;
+                              a.ekv = null;
+                              a.dqr = false;
+                              a.bwb = false;
                            }
                         }
                      }
                   }
                }
-
-               var36 = a;
             }
 
-            var33 = var36.czn;
+            var36 = a;
          }
 
-         if (axx != null) {
-            if (var33 == 0) {
-               break label217;
-            }
+         var33 = var36.czn;
 
-            var33 = a.dqr;
+         if (var33 == 0) {
+            break label217;
          }
 
-         if (axx != null) {
-            if (var33 != 0) {
-               break label217;
-            }
+         var33 = a.dqr;
 
-            long var38 = System.currentTimeMillis() - a.duw;
-            long var58;
-            var33 = (var58 = var38 - 150L) == 0L ? 0 : (var58 < 0L ? -1 : 1);
+         if (var33 != 0) {
+            break label217;
          }
+
+         long var38 = System.currentTimeMillis() - a.duw;
+         long var58;
+         var33 = (var58 = var38 - 150L) == 0L ? 0 : (var58 < 0L ? -1 : 1);
 
          label224: {
-            if (axx != null) {
-               if (var33 <= 0) {
-                  break label217;
-               }
-
-               a.dqr = true;
-               a.czn = false;
-               var39 = a;
-               if (axx == null) {
-                  break label224;
-               }
-
-               var33 = a.bwb;
+            if (var33 <= 0) {
+               break label217;
             }
+
+            a.dqr = true;
+            a.czn = false;
+            var39 = a;
+
+            var33 = a.bwb;
 
             if (var33 == 0) {
                var39 = a;
-               if (axx == null) {
-                  break label224;
-               }
 
                if (a.ekv != null) {
                   String var40 = a.ekv.method_5477().getString();
@@ -244,45 +209,32 @@ public class DisablerCubecraft extends hcr {
 
       class_2596 var29 = a.bed();
       short var41 = var29 instanceof class_2708;
-      if (axx != null) {
-         if (var41) {
-            var41 = 15277;
-            bpa.bez("Flag. Wait a bit before flying again.");
-            ((eky)ClientSetup.gqy().aws().diy(eky.class)).fga(false);
-            ClientSetup.gqy().aws().diy(bni.class).fga(false);
-         }
-
-         var41 = a.bed() instanceof class_2828;
+      if (var41) {
+         var41 = 15277;
+         bpa.bez("Flag. Wait a bit before flying again.");
+         ((eky)ClientSetup.gqy().aws().diy(eky.class)).fga(false);
+         ClientSetup.gqy().aws().diy(bni.class).fga(false);
       }
+
+      var41 = a.bed() instanceof class_2828;
 
       label227: {
          label150:
-         if (axx != null) {
+         if (var41) {
+            var41 = a.gal.dnp();
+
             if (var41) {
-               var41 = a.gal.dnp();
-               if (axx == null) {
-                  break label150;
-               }
-
-               if (var41) {
-                  PlayerMoveC2SPacketAccessor axxxxxxxxxxxxxxx = (PlayerMoveC2SPacketAccessor)a.bed();
-                  axxxxxxxxxxxxxxx.setY(axxxxxxxxxxxxxxx.getY() - axxxxxxxxxxxxxxx.getY() % 0.015625);
-               }
+               PlayerMoveC2SPacketAccessor axxxxxxxxxxxxxxx = (PlayerMoveC2SPacketAccessor)a.bed();
+               axxxxxxxxxxxxxxx.setY(axxxxxxxxxxxxxxx.getY() - axxxxxxxxxxxxxxx.getY() % 0.015625);
             }
-
-            var43 = a;
-            if (axx == null) {
-               break label227;
-            }
-
-            var41 = a.bed() instanceof class_6373;
          }
+
+         var43 = a;
+
+         var41 = a.bed() instanceof class_6373;
 
          if (!var41) {
             var43 = a;
-            if (axx == null) {
-               break label227;
-            }
 
             if (!(a.bed() instanceof class_2670)) {
                return;
@@ -303,64 +255,48 @@ public class DisablerCubecraft extends hcr {
       long ax = DisablerCubecraft.a ^ 1424367683640L;
       int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (axx != null) {
-         if (chi.method_1496()) {
-            a.clv().gxo();
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.method_1496()) {
+         a.clv().gxo();
+         return;
       }
+
+      var10000 = chi;
 
       label105: {
          label109: {
             class_634 var8 = var10000.method_1562();
-            if (axx != null) {
-               if (var8 == null) {
-                  break label109;
-               }
-
-               var8 = chi.method_1562();
+            if (var8 == null) {
+               break label109;
             }
+
+            var8 = chi.method_1562();
 
             class_640 axxx = var8.method_2871(chi.field_1724.method_5667());
             class_640 var9 = axxx;
-            if (axx != null) {
-               if (axxx == null) {
+            if (axxx == null) {
+               break label109;
+            }
+
+            var9 = axxx;
+
+            int var10 = var9.method_2959();
+            if (var10 > 500) {
+               var11 = a;
+
+               if (a.gin) {
                   break label109;
                }
 
-               var9 = axxx;
+               fnb var12 = fnb.hcp();
+               fnb var13 = var12.ael("Done you can now fly etc", gge.INFO);
+               var13.bvw(10000).evs();
+               a.gin = true;
+               break label109;
             }
 
-            int var10 = var9.method_2959();
-            if (axx != null) {
-               if (var10 > 500) {
-                  var11 = a;
-                  if (axx == null) {
-                     break label105;
-                  }
+            var11 = a;
 
-                  if (a.gin) {
-                     break label109;
-                  }
-
-                  fnb var12 = fnb.hcp();
-                  fnb var13 = var12.ael("Done you can now fly etc", gge.INFO);
-                  var13.bvw(10000).evs();
-                  a.gin = true;
-                  if (axx != null) {
-                     break label109;
-                  }
-               }
-
-               var11 = a;
-               if (axx == null) {
-                  break label105;
-               }
-
-               var10 = a.ezm.dnp();
-            }
+            var10 = a.ezm.dnp();
 
             label85:
             if (var10 != 0) {
@@ -368,21 +304,16 @@ public class DisablerCubecraft extends hcr {
                   eky axxxx = ClientSetup.gqy().aws().diy(eky.class);
                   bni axxxxx = ClientSetup.gqy().aws().diy(bni.class);
                   boolean var14 = axxxx.dsv();
-                  if (axx != null) {
-                     if (var14) {
-                        fnb var15 = fnb.hcp();
-                        fnb var16 = var15.ael("Wait until disabler is finished.", gge.WARNING);
-                        var16.bvw(1000).evs();
-                        axxxx.fga(false);
-                     }
-
-                     var17 = axxxxx;
-                     if (axx == null) {
-                        break label112;
-                     }
-
-                     var14 = axxxxx.dsv();
+                  if (var14) {
+                     fnb var15 = fnb.hcp();
+                     fnb var16 = var15.ael("Wait until disabler is finished.", gge.WARNING);
+                     var16.bvw(1000).evs();
+                     axxxx.fga(false);
                   }
+
+                  var17 = axxxxx;
+
+                  var14 = axxxxx.dsv();
 
                   if (!var14) {
                      break label85;
@@ -402,9 +333,7 @@ public class DisablerCubecraft extends hcr {
       }
 
       int var26 = chi.field_1724.field_6012;
-      if (axx != null) {
-         var26 = chi.field_1724.field_6012 <= 50 ? 1 : 0;
-      }
+      var26 = chi.field_1724.field_6012 <= 50 ? 1 : 0;
 
       var11.gyb((boolean)var26);
    }
@@ -424,34 +353,30 @@ public class DisablerCubecraft extends hcr {
             long ax = DisablerCubecraft.a ^ 52332178558044L;
             int[] var4 = ClientSetup.abu();
             int var10000 = a;
-            if (var4 != null) {
-               label33:
-               if (!a) {
-                  long var5 = ax.dgk();
-                  long var10001 = System.currentTimeMillis();
-                  long var7;
-                  if (chi.field_1724.field_6012 < 150) {
-                     var7 = 5000L;
-                  } else {
-                     var7 = 10000L;
-                  }
-
-                  long var11;
-                  var10000 = (var11 = var5 - (var10001 - var7)) == 0L ? 0 : (var11 < 0L ? -1 : 1);
-                  if (var4 != null) {
-                     if (var10000 <= 0) {
-                        break label33;
-                     }
-
-                     var10000 = 0;
-                  }
-
-                  return (boolean)var10000;
+            label33:
+            if (!a) {
+               long var5 = ax.dgk();
+               long var10001 = System.currentTimeMillis();
+               long var7;
+               if (chi.field_1724.field_6012 < 150) {
+                  var7 = 5000L;
+               } else {
+                  var7 = 10000L;
                }
 
-               gix.fcd(ax.gci());
-               var10000 = 1;
+               long var11;
+               var10000 = (var11 = var5 - (var10001 - var7)) == 0L ? 0 : (var11 < 0L ? -1 : 1);
+               if (var10000 <= 0) {
+                  break label33;
+               }
+
+               var10000 = 0;
+
+               return (boolean)var10000;
             }
+
+            gix.fcd(ax.gci());
+            var10000 = 1;
 
             return (boolean)var10000;
          });
@@ -696,89 +621,6 @@ public class DisablerCubecraft extends hcr {
             var37 = var28.substring(++var36, var36 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 22941;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/DisablerCubecraft", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/DisablerCubecraft" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

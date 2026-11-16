@@ -47,72 +47,51 @@ public class gxk extends cec implements dlc {
                String axxxxxxxxxx = axxxxxxxxx.getKey();
                bcc axxxxxxxxxxx = axxxxxxxxx.getValue();
                axxxxxxxxxxx.atv(axxxxxxxxxxx.hbi() + (axxxxxxxxxxx.ces() - axxxxxxxxxxx.hbi()) * 0.2F);
-               if (axx == null) {
-                  break;
-               }
 
                int var10000;
                var10000 = axxxxxxxxxxx.bsc();
                label144:
-               if (axx != null) {
-                  if (var10000 == 0) {
-                     float var31;
-                     var10000 = (var31 = axxxxxxxxxxx.ces() - 0.999F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
-                     if (axx == null) {
-                        break label144;
-                     }
+               if (var10000 == 0) {
+                  float var31;
+                  var10000 = (var31 = axxxxxxxxxxx.ces() - 0.999F) == 0.0F ? 0 : (var31 < 0.0F ? -1 : 1);
+
+                  if (var10000 >= 0) {
+                     float var32;
+                     var10000 = (var32 = axxxxxxxxxxx.hbi() - 0.999F) == 0.0F ? 0 : (var32 < 0.0F ? -1 : 1);
 
                      if (var10000 >= 0) {
-                        float var32;
-                        var10000 = (var32 = axxxxxxxxxxx.hbi() - 0.999F) == 0.0F ? 0 : (var32 < 0.0F ? -1 : 1);
-                        if (axx == null) {
-                           break label144;
-                        }
-
-                        if (var10000 >= 0) {
-                           axxxxxxxxxxx.cqy(true);
-                           axxxxxxxxxxx.ceg(true);
-                        }
+                        axxxxxxxxxxx.cqy(true);
+                        axxxxxxxxxxx.ceg(true);
                      }
                   }
-
-                  float var33;
-                  var10000 = (var33 = axxxxxxxxxxx.ces() - 0.0F) == 0.0F ? 0 : (var33 < 0.0F ? -1 : 1);
                }
+
+               float var33;
+               var10000 = (var33 = axxxxxxxxxxx.ces() - 0.0F) == 0.0F ? 0 : (var33 < 0.0F ? -1 : 1);
 
                label133:
-               if (axx != null) {
+               if (var10000 <= 0) {
+                  float var34;
+                  var10000 = (var34 = axxxxxxxxxxx.hbi() - 0.001F) == 0.0F ? 0 : (var34 < 0.0F ? -1 : 1);
+
                   if (var10000 <= 0) {
-                     float var34;
-                     var10000 = (var34 = axxxxxxxxxxx.hbi() - 0.001F) == 0.0F ? 0 : (var34 < 0.0F ? -1 : 1);
-                     if (axx == null) {
-                        break label133;
-                     }
-
-                     if (var10000 <= 0) {
-                        var10000 = 0;
-                        break label133;
-                     }
+                     var10000 = 0;
+                     break label133;
                   }
-
-                  var10000 = 1;
                }
+
+               var10000 = 1;
 
                label125: {
                   label157: {
                      boolean axxxxxxxxxxxx = (boolean)var10000;
                      var10000 = axxxxxxxxxxx.dzr();
-                     if (axx != null) {
-                        if (var10000 != 0) {
-                           break label157;
-                        }
-
-                        var10000 = axxxxxxxxxxxx;
+                     if (var10000 != 0) {
+                        break label157;
                      }
 
-                     if (axx == null) {
-                        break label125;
-                     }
+                     var10000 = axxxxxxxxxxxx;
+
 
                      if (var10000 != 0) {
                         var10000 = 1;
@@ -130,29 +109,19 @@ public class gxk extends cec implements dlc {
                   axxxxxxxxxxxxx = (float)axxxxxxxxxxx.hdn().hjo();
                   var10000 = axxxxxxxxxxx.dzr();
                   label112:
-                  if (axx != null) {
-                     if (var10000 != 0) {
-                        float var35;
-                        var10000 = (var35 = axxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var35 < 0.0F ? -1 : 1);
-                        if (axx == null) {
-                           break label112;
-                        }
+                  if (var10000 != 0) {
+                     float var35;
+                     var10000 = (var35 = axxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var35 < 0.0F ? -1 : 1);
 
-                        if (var10000 <= 0) {
-                           axxxxxxxx.add(axxxxxxxxxx);
-                           if (axx != null) {
-                              continue;
-                           }
-                        }
+                     if (var10000 <= 0) {
+                        axxxxxxxx.add(axxxxxxxxxx);
+                        continue;
                      }
-
-                     if (axx == null) {
-                        break label158;
-                     }
-
-                     float var36;
-                     var10000 = (var36 = axxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var36 < 0.0F ? -1 : 1);
                   }
+
+
+                  float var36;
+                  var10000 = (var36 = axxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var36 < 0.0F ? -1 : 1);
 
                   if (var10000 <= 0) {
                      continue;
@@ -174,26 +143,22 @@ public class gxk extends cec implements dlc {
                float axxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxx.hbi() * 200.0F;
                float var28 = axxxxxxxxxxxxxxxxxxxx;
                float var10001 = 0.1F;
-               if (axx != null) {
-                  if (axxxxxxxxxxxxxxxxxxxx > 0.1F) {
-                     dmp.abh(
-                        axxxxxxxxxxxxxxxx,
-                        axxxxxxxxxxxxxxxxx,
-                        axxxxxxxxxxxxxxxxxxxx,
-                        8.0F,
-                        () -> dmp.aho(a, a, 200.0F, 8.0F, 4.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false)
-                     );
-                  }
-
-                  dmp.bzg();
-                  var28 = axxxxxxx;
-                  var10001 = 16.0F;
+               if (axxxxxxxxxxxxxxxxxxxx > 0.1F) {
+                  dmp.abh(
+                     axxxxxxxxxxxxxxxx,
+                     axxxxxxxxxxxxxxxxx,
+                     axxxxxxxxxxxxxxxxxxxx,
+                     8.0F,
+                     () -> dmp.aho(a, a, 200.0F, 8.0F, 4.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false)
+                  );
                }
+
+               dmp.bzg();
+               var28 = axxxxxxx;
+               var10001 = 16.0F;
 
                axxxxxxx = var28 + var10001;
-               if (axx != null) {
-                  continue;
-               }
+               continue;
             }
 
             axxxxxxxx.forEach(bzn::remove);
@@ -212,32 +177,22 @@ public class gxk extends cec implements dlc {
       bcc axx = bzn.get(a);
       int[] axxx = var10000;
       bcc var6 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return;
-         }
 
-         var6 = axx;
-      }
+      var6 = axx;
 
       label37: {
          label36: {
-            if (axxx != null) {
-               if (!var6.dzr()) {
-                  var7 = axx;
-                  if (axxx == null) {
-                     break label37;
-                  }
+            if (!var6.dzr()) {
+               var7 = axx;
 
-                  if (!axx.bsc()) {
-                     break label36;
-                  }
+               if (!axx.bsc()) {
+                  break label36;
                }
-
-               axx.cqy(false);
-               axx.ceg(false);
-               var6 = axx;
             }
+
+            axx.cqy(false);
+            axx.ceg(false);
+            var6 = axx;
 
             var6.hdn().dsw();
          }
@@ -254,14 +209,9 @@ public class gxk extends cec implements dlc {
       bcc axx = bzn.get(a);
       int[] axxx = var10000;
       bcc var5 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return;
-         }
 
-         axx.cqy(true);
-         var5 = axx;
-      }
+      axx.cqy(true);
+      var5 = axx;
 
       var5.ceg(true);
    }

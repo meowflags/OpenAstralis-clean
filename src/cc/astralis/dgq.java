@@ -15,19 +15,14 @@ public class dgq implements dlc {
       int[] axxx = var10000;
       float var9;
       int var7 = (var9 = axx - a) == 0.0F ? 0 : (var9 < 0.0F ? -1 : 1);
-      if (axxx != null) {
-         if (var7 > 0) {
-            axx = a;
-         }
-
-         float var10001 = -a;
-         if (axxx == null) {
-            return axx + var10001;
-         }
-
-         float var10;
-         var7 = (var10 = axx - var10001) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
+      if (var7 > 0) {
+         axx = a;
       }
+
+      float var10001 = -a;
+
+      float var10;
+      var7 = (var10 = axx - var10001) == 0.0F ? 0 : (var10 < 0.0F ? -1 : 1);
 
       if (var7 < 0) {
          axx = -a;

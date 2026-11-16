@@ -1,19 +1,12 @@
 package cc.astralis;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
+
 import java.lang.invoke.MethodHandles;
-import java.lang.invoke.MethodType;
-import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
+
+
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.DESKeySpec;
-import javax.crypto.spec.IvParameterSpec;
+
+
 import net.minecraft.class_1268;
 import net.minecraft.class_2338;
 import net.minecraft.class_2350;
@@ -31,9 +24,7 @@ public class AutoPlace extends guu {
    private int bvz;
    private class_2350 fvj;
    private static final long a = 51537810685214L;
-   private static final String[] g;
-   private static final String[] h;
-   private static final Map i = new HashMap(13);
+
 
    public AutoPlace() {
       long a = AutoPlace.a ^ 79203954915332L;
@@ -54,39 +45,30 @@ public class AutoPlace extends guu {
       long ax = AutoPlace.a ^ 133660526672925L;
       int[] var4 = ClientSetup.abu();
       int var10000 = a.hhz;
-      if (var4 != null) {
-         if (!a.hhz) {
-            a.bap();
-            a.bvz = amg.bdh(true).aqk();
-            return;
-         }
-
-         var10000 = a.fzr;
+      if (!a.hhz) {
+         a.bap();
+         a.bvz = amg.bdh(true).aqk();
+         return;
       }
+
+      var10000 = a.fzr;
 
       label46: {
          int var10001 = a.foa.size();
-         if (var4 != null) {
-            if (var10000 >= var10001) {
-               a.gxo();
-               return;
-            }
-
-            var5 = a;
-            if (var4 == null) {
-               break label46;
-            }
-
-            var10000 = a.fuo;
-            var10001 = a.ccs.dnp().intValue();
+         if (var10000 >= var10001) {
+            a.gxo();
+            return;
          }
+
+         var5 = a;
+
+         var10000 = a.fuo;
+         var10001 = a.ccs.dnp().intValue();
 
          if (var10000 >= var10001) {
             a.gro();
             a.fuo = 0;
-            if (var4 != null) {
-               return;
-            }
+            return;
          }
 
          var5 = a;
@@ -100,27 +82,20 @@ public class AutoPlace extends guu {
       long ax = AutoPlace.a ^ 118343743491827L;
       int[] axx = ClientSetup.abu();
       int var10000 = a.eo.dnp();
-      if (axx != null) {
+      if (var10000 == 0) {
+         return;
+      }
+
+      var10000 = a.hhz;
+
+      label42: {
          if (var10000 == 0) {
             return;
          }
 
-         var10000 = a.hhz;
-      }
+         var7 = a;
 
-      label42: {
-         if (axx != null) {
-            if (var10000 == 0) {
-               return;
-            }
-
-            var7 = a;
-            if (axx == null) {
-               break label42;
-            }
-
-            var10000 = a.fzr;
-         }
+         var10000 = a.fzr;
 
          if (var10000 >= a.foa.size()) {
             return;
@@ -153,9 +128,6 @@ public class AutoPlace extends guu {
          a.foa.add(axxx.method_10069(0, 2, 0));
          a.hhz = true;
          var6++;
-         if (ax == null) {
-            break;
-         }
       }
    }
 
@@ -275,120 +247,4 @@ public class AutoPlace extends guu {
       super.frg();
    }
 
-   static {
-      long var0 = a ^ 91855144687599L;
-      Cipher var2;
-      Cipher var10000 = var2 = Cipher.getInstance("DES/CBC/PKCS5Padding");
-      SecretKeyFactory var10002 = SecretKeyFactory.getInstance("DES");
-      byte[] var10003 = new byte[]{(byte)(var0 >>> 56), 0, 0, 0, 0, 0, 0, 0};
-
-      for (int var3 = 1; var3 < 8; var3++) {
-         var10003[var3] = (byte)(var0 << var3 * 8 >>> 56);
-      }
-
-      var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
-      String[] var9 = new String[3];
-      int var7 = 0;
-      String var6 = "Þ^\u0082Úá\u001a\u0016w7bì\u0092\u0004Ý$9ùW\u0002¤\u001c\u0019C! _ÜÊ\u0082|·6¹\u0010ÜVÕèÁê \n¤\u009fÞ«¦ÏÈºò\u0014\u009b$D÷\b }±ÙQ#\u0092\u0086\u0002|=:V\u0019¹'C\u0098<\u008eÛÔ<§¹E$\u0017ÌS\u0018ûN";
-      int var8 = "Þ^\u0082Úá\u001a\u0016w7bì\u0092\u0004Ý$9ùW\u0002¤\u001c\u0019C! _ÜÊ\u0082|·6¹\u0010ÜVÕèÁê \n¤\u009fÞ«¦ÏÈºò\u0014\u009b$D÷\b }±ÙQ#\u0092\u0086\u0002|=:V\u0019¹'C\u0098<\u008eÛÔ<§¹E$\u0017ÌS\u0018ûN"
-         .length();
-      char var5 = 24;
-      int var4 = -1;
-
-      while (true) {
-         byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
-         String var13 = d(var10).intern();
-         var9[var7++] = var13;
-         if ((var4 += var5) >= var8) {
-            g = var9;
-            h = new String[3];
-            return;
-         }
-
-         var5 = var6.charAt(var4);
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 11120;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/fei", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/fei" + " : " + var1 + " : " + var2.toString(), var5);
-      }
-   }
 }

@@ -47,14 +47,12 @@ public enum bdq {
          int var11 = axxxxx.bme.equalsIgnoreCase(a);
 
          do {
-            if (axxxx != null) {
-               if (var11 != 0) {
-                  return axxxxx;
-               }
-
-               var9++;
-               var11 = axxx;
+            if (var11 != 0) {
+               return axxxxx;
             }
+
+            var9++;
+            var11 = axxx;
 
             if (var11 != 0) {
                continue label29;
@@ -292,13 +290,11 @@ public enum bdq {
       int[] var2 = ClientSetup.abu();
       int var3 = bdi();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 98;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 98;
       }
+
+      var10000 = 0;
 
       return var10000;
    }

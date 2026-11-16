@@ -272,9 +272,7 @@ public class Scaffold extends guu {
          short var10001x = 18203;
          long var10002x = 8473884395555587481L ^ ax;
          boolean var10000x = a.hfi.emb("Intave");
-         if (var3x != null) {
-            var10000x = !var10000x;
-         }
+         var10000x = !var10000x;
 
          return var10000x;
       });
@@ -284,9 +282,7 @@ public class Scaffold extends guu {
          short var10001x = 18203;
          long var10002x = 8473825255495224590L ^ ax;
          boolean var10000x = a.hfi.emb("Intave");
-         if (var3x != null) {
-            var10000x = !var10000x;
-         }
+         var10000x = !var10000x;
 
          return var10000x;
       });
@@ -296,19 +292,12 @@ public class Scaffold extends guu {
          short var10001x = 17758;
          long var10002x = 5268222821387649071L ^ ax;
          boolean var10000x = a.hfi.emb("Modern Watchdog");
-         if (var3x != null) {
-            if (!var10000x) {
-               return false;
-            }
-
-            var10000x = a.esl.dnp();
+         if (!var10000x) {
+            return false;
          }
 
-         if (var3x == null) {
-            return var10000x;
-         } else {
-            return var10000x ? true : false;
-         }
+         var10000x = a.esl.dnp();
+
       });
       var4[33] = a.cci.bih(() -> {
          long ax = Scaffold.a ^ 57955359090107L;
@@ -316,19 +305,12 @@ public class Scaffold extends guu {
          short var10001x = 17758;
          long var10002x = 5268180457919166070L ^ ax;
          boolean var10000x = a.hfi.emb("Modern Watchdog");
-         if (var3x != null) {
-            if (!var10000x) {
-               return false;
-            }
-
-            var10000x = a.esl.dnp();
+         if (!var10000x) {
+            return false;
          }
 
-         if (var3x == null) {
-            return var10000x;
-         } else {
-            return var10000x ? true : false;
-         }
+         var10000x = a.esl.dnp();
+
       });
       var4[34] = a.ewl.bih(a.esl::dnp);
       var4[35] = a.dih.bih(a.esl::dnp);
@@ -338,9 +320,6 @@ public class Scaffold extends guu {
       var4[39] = a.dgj.bih(a.esl::dnp);
       var4[40] = a.cgy;
       a.bfi(var4);
-      if (var3 == null) {
-         ffn.bzf(ffn.czs());
-      }
    }
 
    @Override
@@ -352,42 +331,31 @@ public class Scaffold extends guu {
             long a = Scaffold.a ^ 115192212698534L;
             var3 = ClientSetup.abu();
             Object var10000 = chi.field_1724;
-            if (var3 != null) {
-               if (chi.field_1724 != null) {
-                  a.cj = chi.field_1724.method_31548().method_67532();
-                  a.ebp = chi.field_1724.method_31478();
-                  a.awk = true;
-                  a.eat.glr();
-                  a.gnd = 0;
-                  a.hci = false;
-                  var4 = a.bza.dnp();
-                  if (var3 == null) {
-                     break label47;
-                  }
+            if (chi.field_1724 != null) {
+               a.cj = chi.field_1724.method_31548().method_67532();
+               a.ebp = chi.field_1724.method_31478();
+               a.awk = true;
+               a.eat.glr();
+               a.gnd = 0;
+               a.hci = false;
+               var4 = a.bza.dnp();
 
-                  if (!var4) {
-                     chi.field_1690.method_42450().method_41748(false);
-                     chi.field_1724.method_5728(false);
-                     chi.field_1690.field_1867.method_23481(false);
-                  }
+               if (!var4) {
+                  chi.field_1690.method_42450().method_41748(false);
+                  chi.field_1724.method_5728(false);
+                  chi.field_1690.field_1867.method_23481(false);
                }
-
-               var5 = a;
-               if (var3 == null) {
-                  break label50;
-               }
-
-               var10000 = a.esl.dnp();
             }
+
+            var5 = a;
+
+            var10000 = a.esl.dnp();
 
             var4 = (Boolean)var10000;
          }
 
          if (var4) {
             var5 = a;
-            if (var3 == null) {
-               break label50;
-            }
 
             if (a.epf.dnp()) {
                chi.field_1690.method_42454().method_41748(0.0);
@@ -408,39 +376,30 @@ public class Scaffold extends guu {
       long a = Scaffold.a ^ 105951340897013L;
       int[] var3 = ClientSetup.abu();
       Object var10000 = chi.field_1724;
-      if (var3 != null) {
-         if (chi.field_1724 != null) {
-            chi.field_1724.method_31548().method_61496(a.cj);
-         }
-
-         var10000 = a.cdk.dnp();
+      if (chi.field_1724 != null) {
+         chi.field_1724.method_31548().method_61496(a.cj);
       }
+
+      var10000 = a.cdk.dnp();
 
       boolean var4 = (Boolean)var10000;
-      if (var3 != null) {
-         if (var4) {
-            chi.field_1690.field_1904.method_23481(false);
-         }
-
-         var4 = a.esl.dnp();
+      if (var4) {
+         chi.field_1690.field_1904.method_23481(false);
       }
+
+      var4 = a.esl.dnp();
 
       label43:
-      if (var3 != null) {
+      if (var4) {
+         var4 = a.epf.dnp();
+
          if (var4) {
-            var4 = a.epf.dnp();
-            if (var3 == null) {
-               break label43;
-            }
-
-            if (var4) {
-               chi.field_1690.method_42454().method_41748(1.0);
-            }
+            chi.field_1690.method_42454().method_41748(1.0);
          }
-
-         a.ciu = -1;
-         var4 = false;
       }
+
+      a.ciu = -1;
+      var4 = false;
 
       dqq.axd(var4);
       dqq.cms(a.fub, crg.gj(a.ewl.dnp().floatValue(), a.dih.dnp().floatValue()), crg.gj(a.ezy.dnp().floatValue(), a.ael.dnp().floatValue()));
@@ -451,13 +410,11 @@ public class Scaffold extends guu {
    public void dig(etk event) {
       long ax = Scaffold.a ^ 114416202490459L;
       int[] var4 = ClientSetup.abu();
-      if (var4 != null) {
-         if (!a.bza.dnp()) {
-            chi.field_1724.method_5728(false);
-         }
-
-         chi.field_1690.field_1867.method_23481(false);
+      if (!a.bza.dnp()) {
+         chi.field_1724.method_5728(false);
       }
+
+      chi.field_1690.field_1867.method_23481(false);
    }
 
    @gdz
@@ -472,33 +429,23 @@ public class Scaffold extends guu {
                   ax = Scaffold.a ^ 11603565930606L;
                   var4 = ClientSetup.abu();
                   Object var10000 = a.cud();
-                  if (var4 != null) {
-                     if (var10000 != gpy.POST) {
-                        break label110;
-                     }
-
-                     var10000 = a.coa.dnp();
+                  if (var10000 != gpy.POST) {
+                     break label110;
                   }
+
+                  var10000 = a.coa.dnp();
 
                   var5 = (Boolean)var10000;
-                  if (var4 == null) {
-                     break label108;
-                  }
 
                   if (var5) {
                      break label109;
                   }
 
                   a.fub = a.dba();
-                  if (var4 != null) {
-                     break label109;
-                  }
+                  break label109;
                }
 
                var5 = a.bqc.emb("Click");
-               if (var4 == null) {
-                  break label108;
-               }
 
                if (var5) {
                   a.gsj();
@@ -506,9 +453,6 @@ public class Scaffold extends guu {
             }
 
             var6 = a;
-            if (var4 == null) {
-               break label107;
-            }
 
             var5 = a.coa.dnp();
          }
@@ -526,24 +470,16 @@ public class Scaffold extends guu {
             label77: {
                label112: {
                   var7 = a.bdd.dnp();
-                  if (var4 != null) {
+                  if (var7 == 0) {
+                     var7 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
+
                      if (var7 == 0) {
-                        var7 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
-                        if (var4 == null) {
-                           break label77;
-                        }
-
-                        if (var7 == 0) {
-                           break label112;
-                        }
+                        break label112;
                      }
-
-                     var7 = chi.field_1690.field_1903.method_1434();
                   }
 
-                  if (var4 == null) {
-                     break label77;
-                  }
+                  var7 = chi.field_1690.field_1903.method_1434();
+
 
                   if (var7 == 0) {
                      break label111;
@@ -553,13 +489,11 @@ public class Scaffold extends guu {
                var7 = a.fwx;
             }
 
-            if (var4 != null) {
-               if (var7 != 0) {
-                  break label111;
-               }
-
-               var7 = chi.field_1724.method_31478();
+            if (var7 != 0) {
+               break label111;
             }
+
+            var7 = chi.field_1724.method_31478();
 
             var8 = var7;
             break label79;
@@ -585,17 +519,12 @@ public class Scaffold extends guu {
             chi.field_1690.field_1904.method_23481(false);
             axx = var10000;
             var9 = a.gez.dnp();
-            if (axx != null) {
-               if (!var9) {
-                  break label163;
-               }
-
-               var9 = chi.field_1690.field_1903.method_1434();
+            if (!var9) {
+               break label163;
             }
 
-            if (axx == null) {
-               break label160;
-            }
+            var9 = chi.field_1690.field_1903.method_1434();
+
 
             if (var9) {
                var9 = true;
@@ -611,17 +540,12 @@ public class Scaffold extends guu {
          label164: {
             axxx = var9;
             var9 = a.bza.dnp();
-            if (axx != null) {
-               if (!var9) {
-                  break label164;
-               }
-
-               var9 = evd.dbj();
+            if (!var9) {
+               break label164;
             }
 
-            if (axx == null) {
-               break label149;
-            }
+            var9 = evd.dbj();
+
 
             if (var9) {
                var9 = true;
@@ -637,32 +561,21 @@ public class Scaffold extends guu {
          axxxx = var9;
          var9 = a.fpf.dnp();
          label137:
-         if (axx != null) {
+         if (var9) {
+            var9 = chi.field_1690.field_1903.method_1434();
+
             if (var9) {
-               var9 = chi.field_1690.field_1903.method_1434();
-               if (axx == null) {
-                  break label137;
-               }
+               var9 = a.bza.dnp();
 
                if (var9) {
-                  var9 = a.bza.dnp();
-                  if (axx == null) {
-                     break label137;
-                  }
-
-                  if (var9) {
-                     chi.field_1724.method_5728(evd.dbj());
-                  }
+                  chi.field_1724.method_5728(evd.dbj());
                }
             }
-
-            var12 = a.fpf.dnp();
-            if (axx == null) {
-               break label165;
-            }
-
-            var9 = var12;
          }
+
+         var12 = a.fpf.dnp();
+
+         var9 = var12;
 
          if (!var9 && !axxx) {
             chi.field_1690.field_1867.method_23481(axxxx);
@@ -676,54 +589,43 @@ public class Scaffold extends guu {
          float axxxxx = crg.gj(((ImFloat)var12).floatValue(), a.ael.dnp().floatValue());
          float axxxxxx = crg.gj(a.ewl.dnp().floatValue(), a.dih.dnp().floatValue());
          var9 = a.esl.dnp();
-         if (axx != null) {
-            if (var9) {
-               float var19;
-               label170: {
-                  var14 = a.fub;
-                  int var10002 = 17758;
-                  int var10001 = a.hfi.emb("Modern Watchdog");
-                  if (axx != null) {
-                     if (var10001 == 0) {
-                        var19 = axxxxxx;
-                        break label170;
-                     }
-
-                     var10001 = hjr;
-                  }
-
-                  var10002 = evd.bpi();
-                  if (axx != null) {
-                     var10002 = var10002 != 0 ? 1 : 2;
-                  }
-
-                  short var17;
-                  if (var10001 < var10002) {
-                     var17 = 180;
-                  } else {
-                     var17 = evd.bpi();
-                     if (axx != null) {
-                        if (var17 != 0) {
-                           var17 = 60;
-                        } else {
-                           var17 = 0;
-                        }
-                     }
-                  }
-
-                  var19 = var17;
+         if (var9) {
+            float var19;
+            label170: {
+               var14 = a.fub;
+               int var10002 = 17758;
+               int var10001 = a.hfi.emb("Modern Watchdog");
+               if (var10001 == 0) {
+                  var19 = axxxxxx;
+                  break label170;
                }
 
-               dqq.cms(var14, var19, axxxxx);
+               var10001 = hjr;
+
+               var10002 = evd.bpi();
+               var10002 = var10002 != 0 ? 1 : 2;
+
+               short var17;
+               if (var10001 < var10002) {
+                  var17 = 180;
+               } else {
+                  var17 = evd.bpi();
+                  if (var17 != 0) {
+                     var17 = 60;
+                  } else {
+                     var17 = 0;
+                  }
+               }
+
+               var19 = var17;
             }
 
-            var15 = a;
-            if (axx == null) {
-               break label167;
-            }
-
-            var9 = a.bqc.emb("Update");
+            dqq.cms(var14, var19, axxxxx);
          }
+
+         var15 = a;
+
+         var9 = a.bqc.emb("Update");
 
          if (!var9) {
             return;
@@ -740,83 +642,63 @@ public class Scaffold extends guu {
       long ax = Scaffold.a ^ 130677418956617L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = chi.field_1690.field_1903.method_1434();
-      if (var4 != null) {
-         if (var10000) {
-            a.dsa.glr();
-         }
-
-         var10000 = a.dsa.fsc(v);
+      if (var10000) {
+         a.dsa.glr();
       }
 
-      if (var4 != null) {
-         if (!var10000) {
-            a.ebp = chi.field_1724.method_31478();
-         }
+      var10000 = a.dsa.fsc(v);
 
-         var10000 = a.bdd.dnp();
+      if (!var10000) {
+         a.ebp = chi.field_1724.method_31478();
       }
+
+      var10000 = a.bdd.dnp();
 
       label101: {
          label94:
-         if (var4 != null) {
+         if (var10000) {
+            var10000 = a.cdk.dnp();
+
             if (var10000) {
-               var10000 = a.cdk.dnp();
-               if (var4 == null) {
-                  break label94;
-               }
+               var10000 = a.bza.dnp();
 
                if (var10000) {
-                  var10000 = a.bza.dnp();
-                  if (var4 == null) {
-                     break label94;
+                  if (chi.field_1724.method_24828()) {
                   }
 
-                  if (var10000) {
-                     if (chi.field_1724.method_24828()) {
-                     }
-
-                     int var8;
-                     label85: {
-                        label104: {
-                           float var5 = a.dfv();
-                           float var10001 = chi.field_1724.method_36454() - 110.0F;
-                           bpa.bez(var5 + " expected: " + var10001);
-                           var6 = chi.field_1724;
-                           float var11;
-                           var8 = (var11 = Math.abs(chi.field_1724.method_36454() - 110.0F - a.dfv()) - 30.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
-                           if (var4 != null) {
-                              if (var8 > 0) {
-                                 break label104;
-                              }
-
-                              var8 = evd.dbj();
-                           }
-
-                           if (var4 == null) {
-                              break label85;
-                           }
-
-                           if (var8 != 0) {
-                              var8 = 1;
-                              break label85;
-                           }
+                  int var8;
+                  label85: {
+                     label104: {
+                        float var5 = a.dfv();
+                        float var10001 = chi.field_1724.method_36454() - 110.0F;
+                        bpa.bez(var5 + " expected: " + var10001);
+                        var6 = chi.field_1724;
+                        float var11;
+                        var8 = (var11 = Math.abs(chi.field_1724.method_36454() - 110.0F - a.dfv()) - 30.0F) == 0.0F ? 0 : (var11 < 0.0F ? -1 : 1);
+                        if (var8 > 0) {
+                           break label104;
                         }
 
-                        var8 = 0;
+                        var8 = evd.dbj();
+
+
+                        if (var8 != 0) {
+                           var8 = 1;
+                           break label85;
+                        }
                      }
 
-                     var6.method_5728((boolean)var8);
+                     var8 = 0;
                   }
+
+                  var6.method_5728((boolean)var8);
                }
             }
-
-            var7 = a;
-            if (var4 == null) {
-               break label101;
-            }
-
-            var10000 = a.fwx;
          }
+
+         var7 = a;
+
+         var10000 = a.fwx;
 
          if (var10000) {
             if (hjr == 8) {
@@ -841,22 +723,18 @@ public class Scaffold extends guu {
       long ax = Scaffold.a ^ 15714748086590L;
       int[] var4 = ClientSetup.abu();
       Scaffold var10000 = a;
-      if (var4 != null) {
-         if (!a.dhl.dnp()) {
-            return;
+      if (!a.dhl.dnp()) {
+         return;
+      }
+
+      var10000 = a;
+
+      label35: {
+         if (var10000.hba == null) {
+            break label35;
          }
 
          var10000 = a;
-      }
-
-      label35: {
-         if (var4 != null) {
-            if (var10000.hba == null) {
-               break label35;
-            }
-
-            var10000 = a;
-         }
 
          var10000.adx = a.hba.dnc();
       }
@@ -884,35 +762,25 @@ public class Scaffold extends guu {
          byte var10 = -1;
          var10000 = var9.hashCode();
          label48:
-         if (axx != null) {
-            switch (var10000) {
-               case 1956520879:
-                  var10000 = var9.equals("Adjust");
-                  if (axx == null) {
-                     break label48;
-                  }
+         switch (var10000) {
+            case 1956520879:
+               var10000 = var9.equals("Adjust");
 
-                  if (var10000 == 0) {
-                     break;
-                  }
+               if (var10000 == 0) {
+                  break;
+               }
 
-                  var10 = 0;
-                  if (axx != null) {
-                     break;
-                  }
-               case -268477211:
-                  var10000 = var9.equals("Astralis");
-                  if (axx == null) {
-                     break label48;
-                  }
+               var10 = 0;
+               break;
+            case -268477211:
+               var10000 = var9.equals("Astralis");
 
-                  if (var10000 != 0) {
-                     var10 = 1;
-                  }
-            }
-
-            var10000 = var10;
+               if (var10000 != 0) {
+                  var10 = 1;
+               }
          }
+
+         var10000 = var10;
 
          switch (var10000) {
             case 0:
@@ -921,9 +789,7 @@ public class Scaffold extends guu {
                float axxxxxxxxxxxxxx = axxx - (axxxxxxxxxxxxx + 2.0F + axxxxxxxxxxxx) / 2.0F;
                ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, ClientSetup.gqy().deo());
                acy.aof("Blocks", axxxxxxxxxxxxxx + axxxxxxxxxxxxx + 2.0F, axxxx, Color.white);
-               if (axx != null) {
-                  break;
-               }
+               break;
             case 1:
                float axxxxxxx = ety.eq("Blocks");
                float axxxxxxxx = bsf.eq(axxxxx);
@@ -945,22 +811,18 @@ public class Scaffold extends guu {
       fux[] ax = amg.fww(a.czw.dnp());
       int[] axx = var10000;
       int var7 = ax.length;
-      if (axx != null) {
-         if (var7 == 0) {
-            return;
-         }
-
-         Arrays.sort(ax, (axxx, axxxx) -> {
-            int axx = amg.dzc(axxx);
-            int axxx = amg.dzc(axxxx);
-            return Integer.compare(axxx, axx);
-         });
-         var7 = a.flo.dnp();
+      if (var7 == 0) {
+         return;
       }
 
-      if (axx != null) {
-         var7 = var7 != 0 ? (int)crg.gj(0.0F, ax.length) : 0;
-      }
+      Arrays.sort(ax, (axxx, axxxx) -> {
+         int axx = amg.dzc(axxx);
+         int axxx = amg.dzc(axxxx);
+         return Integer.compare(axxx, axx);
+      });
+      var7 = a.flo.dnp();
+
+      var7 = var7 != 0 ? (int)crg.gj(0.0F, ax.length) : 0;
 
       int axxx = var7;
       fux axxxx = ax[axxx];
@@ -969,96 +831,72 @@ public class Scaffold extends guu {
       }
 
       int var10001 = amg.dul(0.0, -1.0, 0.0).method_26215();
-      if (axx != null) {
-         var10001 = var10001 != 0 ? ++a.btn : 0;
-      }
+      var10001 = var10001 != 0 ? ++a.btn : 0;
 
       a.btn = var10001;
       Scaffold var8 = a;
-      if (axx != null) {
-         if (!a.coa.dnp()) {
-            label203: {
-               label217: {
-                  label201: {
-                     label218: {
-                        var10001 = a.bdd.dnp();
-                        if (axx != null) {
-                           if (var10001 == 0) {
-                              var10001 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
-                              if (axx == null) {
-                                 break label201;
-                              }
-
-                              if (var10001 == 0) {
-                                 break label218;
-                              }
-                           }
-
-                           var10001 = chi.field_1690.field_1903.method_1434();
-                        }
-
-                        if (axx == null) {
-                           break label201;
-                        }
+      if (!a.coa.dnp()) {
+         label203: {
+            label217: {
+               label201: {
+                  label218: {
+                     var10001 = a.bdd.dnp();
+                     if (var10001 == 0) {
+                        var10001 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
 
                         if (var10001 == 0) {
-                           break label217;
+                           break label218;
                         }
                      }
 
-                     var10001 = a.fwx;
-                  }
+                     var10001 = chi.field_1690.field_1903.method_1434();
 
-                  if (axx != null) {
-                     if (var10001 != 0) {
+
+                     if (var10001 == 0) {
                         break label217;
                      }
-
-                     var10001 = chi.field_1724.method_31478();
                   }
 
-                  var13 = var10001;
-                  break label203;
+                  var10001 = a.fwx;
                }
 
-               var13 = a.ebp;
+               if (var10001 != 0) {
+                  break label217;
+               }
+
+               var10001 = chi.field_1724.method_31478();
+
+               var13 = var10001;
+               break label203;
             }
 
-            a.hba = amg.asc((int)var13);
+            var13 = a.ebp;
          }
 
-         var8 = a;
+         a.hba = amg.asc((int)var13);
       }
 
-      if (axx != null) {
-         if (var8.hba == null) {
-            return;
-         }
+      var8 = a;
 
-         var8 = a;
+      if (var8.hba == null) {
+         return;
       }
+
+      var8 = a;
 
       label220: {
          var9 = var8.btn;
          var10001 = a.exn.dnp().intValue();
-         if (axx != null) {
-            if (var9 <= var10001) {
-               return;
-            }
-
-            var9 = a.btd;
-            if (axx == null) {
-               break label220;
-            }
-
-            var10001 = chi.field_1724.field_6012;
+         if (var9 <= var10001) {
+            return;
          }
+
+         var9 = a.btd;
+
+         var10001 = chi.field_1724.field_6012;
 
          if (var9 == var10001) {
             var9 = a.bn.dnp();
-            if (axx == null) {
-               break label220;
-            }
 
             if (var9 != 0) {
                return;
@@ -1071,18 +909,13 @@ public class Scaffold extends guu {
       label158: {
          label157: {
             label222: {
-               if (axx != null) {
-                  if (var9 == 0) {
-                     return;
-                  }
-
-                  chi.field_1761.method_2896(chi.field_1724, axxxx.gee(), new class_3965(a.dri(), a.hba.aoc(), a.hba.dnc(), false));
-                  if (axx == null) {
-                     break label222;
-                  }
-
-                  var9 = a.fqo.dnp();
+               if (var9 == 0) {
+                  return;
                }
+
+               chi.field_1761.method_2896(chi.field_1724, axxxx.gee(), new class_3965(a.dri(), a.hba.aoc(), a.hba.dnc(), false));
+
+               var9 = a.fqo.dnp();
 
                if (var9 == 0) {
                   break label157;
@@ -1091,9 +924,7 @@ public class Scaffold extends guu {
                chi.field_1724.method_6104(axxxx.gee());
             }
 
-            if (axx != null) {
-               break label158;
-            }
+            break label158;
          }
 
          gix.dsd(new class_2879(axxxx.gee()));
@@ -1101,40 +932,33 @@ public class Scaffold extends guu {
 
       var10 = a;
       label132:
-      if (axx != null) {
-         if (a.gez.dnp()) {
-            var10 = a;
-            if (axx == null) {
-               break label132;
-            }
-
-            label138:
-            if (a.cuw.cmt("Watchdog Vertical")) {
-               class_310 var11 = chi;
-               if (axx != null) {
-                  if (!chi.field_1690.field_1903.method_1434()) {
-                     break label138;
-                  }
-
-                  var11 = chi;
-               }
-
-               var11.field_1761
-                  .method_2896(
-                     chi.field_1724,
-                     axxxx.gee(),
-                     new class_3965(
-                        a.dri(), a.hba.aoc(), new class_2338(a.hba.dnc().method_10263() - 1, a.hba.dnc().method_10264(), a.hba.dnc().method_10260()), false
-                     )
-                  );
-            }
-         }
-
-         a.gnd++;
-         a.fmm++;
-         a.btn = 0;
+      if (a.gez.dnp()) {
          var10 = a;
+
+         label138:
+         if (a.cuw.cmt("Watchdog Vertical")) {
+            class_310 var11 = chi;
+            if (!chi.field_1690.field_1903.method_1434()) {
+               break label138;
+            }
+
+            var11 = chi;
+
+            var11.field_1761
+               .method_2896(
+                  chi.field_1724,
+                  axxxx.gee(),
+                  new class_3965(
+                     a.dri(), a.hba.aoc(), new class_2338(a.hba.dnc().method_10263() - 1, a.hba.dnc().method_10264(), a.hba.dnc().method_10260()), false
+                  )
+               );
+         }
       }
+
+      a.gnd++;
+      a.fmm++;
+      a.btn = 0;
+      var10 = a;
 
       var10.btd = chi.field_1724.field_6012;
    }
@@ -1146,18 +970,13 @@ public class Scaffold extends guu {
       int[] var3 = var10000;
       float var7;
       int var5 = (var7 = a - 45.0F) == 0.0F ? 0 : (var7 < 0.0F ? -1 : 1);
-      if (var3 != null) {
-         if (var5 >= 0) {
-            a -= 90.0F;
-         }
-
-         if (var3 == null) {
-            return a;
-         }
-
-         float var8;
-         var5 = (var8 = a - -45.0F) == 0.0F ? 0 : (var8 < 0.0F ? -1 : 1);
+      if (var5 >= 0) {
+         a -= 90.0F;
       }
+
+
+      float var8;
+      var5 = (var8 = a - -45.0F) == 0.0F ? 0 : (var8 < 0.0F ? -1 : 1);
 
       if (var5 < 0) {
          a += 90.0F;
@@ -1176,66 +995,53 @@ public class Scaffold extends guu {
          ax = ClientSetup.abu();
          var10000 = chi.field_1724.method_36454() - a.bld.dnp().floatValue();
          var10001 = chi.field_1690.field_1849.method_1434();
-         if (ax != null) {
-            if (var10001 != 0) {
-               var10001 = (short)14237;
-               var10001 = 45;
-               break label985;
-            }
-
-            var10001 = chi.field_1690.field_1913.method_1434();
+         if (var10001 != 0) {
+            var10001 = (short)14237;
+            var10001 = 45;
+            break label985;
          }
 
-         if (ax != null) {
-            if (var10001 != 0) {
-               var10001 = (short)2257;
-               var10001 = -45;
-               break label985;
-            }
+         var10001 = chi.field_1690.field_1913.method_1434();
 
-            var10001 = chi.field_1690.field_1881.method_1434();
+         if (var10001 != 0) {
+            var10001 = (short)2257;
+            var10001 = -45;
+            break label985;
          }
 
-         if (ax != null) {
-            if (var10001 != 0) {
-               var10001 = (short)24245;
-               var10001 = 180;
-            } else {
-               var10001 = 0;
-            }
+         var10001 = chi.field_1690.field_1881.method_1434();
+
+         if (var10001 != 0) {
+            var10001 = (short)24245;
+            var10001 = 180;
+         } else {
+            var10001 = 0;
          }
       }
 
       float axx = var10000 + var10001;
       Object var51 = a.hba;
-      if (ax != null) {
-         if (a.hba != null) {
-            a.hil = a.hba;
-         }
-
-         var51 = a.dgj.dnp();
+      if (a.hba != null) {
+         a.hil = a.hba;
       }
+
+      var51 = a.dgj.dnp();
 
       float axxx;
       axxx = ((ImFloat)var51).floatValue();
       var52 = evd.dbj();
       label970:
-      if (ax != null) {
-         if (!var52) {
-            var10001 = (short)17493;
-            var52 = a.hfi.emb("Modern Watchdog");
-            if (ax == null) {
-               break label970;
-            }
-
-            if (var52) {
-               return new float[]{axx, axxx};
-            }
-         }
-
-         var10001 = (short)17758;
+      if (!var52) {
+         var10001 = (short)17493;
          var52 = a.hfi.emb("Modern Watchdog");
+
+         if (var52) {
+            return new float[]{axx, axxx};
+         }
       }
+
+      var10001 = (short)17758;
+      var52 = a.hfi.emb("Modern Watchdog");
 
       float axxxx;
       label986: {
@@ -1248,9 +1054,7 @@ public class Scaffold extends guu {
             double axxxxxxxxxx = axxxxx.field_1350 - chi.field_1724.method_23321();
             double var141;
             int var53 = (var141 = axxxxxxx * axxxxxxxxxx - axxxxxxxx * axxxxxxxxx - 0.0) == 0.0 ? 0 : (var141 < 0.0 ? -1 : 1);
-            if (ax != null) {
-               var53 = var53 > 0 ? 1 : 0;
-            }
+            var53 = var53 > 0 ? 1 : 0;
 
             label959: {
                boolean axxxxxxxxxxx = (boolean)var53;
@@ -1261,51 +1065,41 @@ public class Scaffold extends guu {
                float axxxxxxxxxxxxx = 260.0F;
                var10000 = chi.field_1724.method_36454();
                var10001 = evd.bpi();
-               if (ax != null) {
-                  if (var10001 != 0) {
-                     var86 = -135.0F;
-                     break label959;
-                  }
-
-                  var10001 = axxxxxxxxxxx;
+               if (var10001 != 0) {
+                  var86 = -135.0F;
+                  break label959;
                }
+
+               var10001 = axxxxxxxxxxx;
 
                var86 = var10001 == 0 ? axxxxxxxxxxxxx : -axxxxxxxxxxxxx;
             }
 
             axxxx = var10000 + var86;
-            if (ax != null) {
-               break label986;
-            }
+            break label986;
          }
 
          label988: {
             var10000 = chi.field_1724.method_36454() - a.bld.dnp().floatValue();
             var87 = chi.field_1690.field_1849.method_1434();
-            if (ax != null) {
-               if (var87 != 0) {
-                  var87 = 45;
-                  break label988;
-               }
-
-               var87 = chi.field_1690.field_1913.method_1434();
+            if (var87 != 0) {
+               var87 = 45;
+               break label988;
             }
 
-            if (ax != null) {
-               if (var87 != 0) {
-                  var87 = -45;
-                  break label988;
-               }
+            var87 = chi.field_1690.field_1913.method_1434();
 
-               var87 = chi.field_1690.field_1881.method_1434();
+            if (var87 != 0) {
+               var87 = -45;
+               break label988;
             }
 
-            if (ax != null) {
-               if (var87 != 0) {
-                  var87 = 180;
-               } else {
-                  var87 = 0;
-               }
+            var87 = chi.field_1690.field_1881.method_1434();
+
+            if (var87 != 0) {
+               var87 = 180;
+            } else {
+               var87 = 0;
             }
          }
 
@@ -1317,805 +1111,618 @@ public class Scaffold extends guu {
          label939: {
             axxxxxxxxxxx = chi.field_1724.method_36454() + 45.0F;
             byte var56 = a.erx();
-            if (ax != null) {
-               if (var56 != 0) {
-                  float axxxxxxxxxxxx;
-                  float axxxxxxxxxxxxx;
-                  label934: {
-                     label933: {
-                        label990: {
-                           boolean axxxxxxxxxxxxxx = false;
-                           axxxxxxxxxxxxx = axxxx;
-                           axxxxxxxxxxxx = axxx;
-                           var57 = a.aof.dnp();
-                           if (ax != null) {
-                              if (var57 == 0) {
-                                 var57 = a.dgy.dnp();
-                                 if (ax == null) {
-                                    break label934;
-                                 }
-
-                                 if (var57 == 0) {
-                                    break label990;
-                                 }
-                              }
-
-                              var57 = a.hfi.emb("Intave");
-                           }
-
-                           if (ax == null) {
-                              break label934;
-                           }
+            if (var56 != 0) {
+               float axxxxxxxxxxxx;
+               float axxxxxxxxxxxxx;
+               label934: {
+                  label933: {
+                     label990: {
+                        boolean axxxxxxxxxxxxxx = false;
+                        axxxxxxxxxxxxx = axxxx;
+                        axxxxxxxxxxxx = axxx;
+                        var57 = a.aof.dnp();
+                        if (var57 == 0) {
+                           var57 = a.dgy.dnp();
 
                            if (var57 == 0) {
-                              var58 = a.hba;
-                              if (ax == null) {
-                                 break label933;
+                              break label990;
+                           }
+                        }
+
+                        var57 = a.hfi.emb("Intave");
+
+
+                        if (var57 == 0) {
+                           var58 = a.hba;
+
+                           if (a.hba != null) {
+                              var57 = a.dgy.dnp();
+                              label898:
+                              if (var57 != 0) {
+                                 float axxxxxxxxxxxxxxx = 90.0F;
+
+                                 while (axxxxxxxxxxxxxxx > 30.0F) {
+                                    var57 = axxxxxxxxxxxxxx;
+
+                                    if (axxxxxxxxxxxxxx != 0) {
+                                       break;
+                                    }
+
+                                    label913: {
+                                       byte var59 = bfc.gto(a.hba.aoc(), a.hba.dnc(), true, 5.0F, axxxx, axxxxxxxxxxxxxxx);
+                                       if (var59 == 0) {
+                                          break label913;
+                                       }
+
+                                       axxxxxxxxxxxxx = axxxx;
+                                       axxxxxxxxxxxx = axxxxxxxxxxxxxxx;
+                                       var59 = 1;
+
+                                       axxxxxxxxxxxxxx = (boolean)var59;
+                                       a.gpi = new float[]{axxxxxxxxxxxxx, axxxxxxxxxxxx};
+                                       a.hek = 0;
+                                    }
+
+                                    short var116 = chi.field_1724.method_6059(class_1294.field_5904);
+                                    if (var116 != 0) {
+                                       var116 = 29868;
+                                       var116 = 60;
+                                    } else {
+                                       var116 = 17228;
+                                       var116 = 80;
+                                    }
+
+                                    axxxxxxxxxxxxxxx -= axxxxxxxxxxxxxxx > var116 ? 0.5F : 2.0F;
+                                 }
                               }
 
-                              if (a.hba != null) {
-                                 var57 = a.dgy.dnp();
-                                 label898:
-                                 if (ax != null) {
-                                    if (var57 != 0) {
-                                       float axxxxxxxxxxxxxxx = 90.0F;
+                              var57 = a.aof.dnp();
 
-                                       while (axxxxxxxxxxxxxxx > 30.0F) {
-                                          var57 = axxxxxxxxxxxxxx;
-                                          if (ax == null || ax == null) {
-                                             break label898;
+
+                              if (var57 != 0) {
+                                 var57 = axxxxxxxxxxxxxx;
+
+                                 if (axxxxxxxxxxxxxx == 0) {
+                                    float axxxxxxxxxxxxxxx = 0.0F;
+
+                                    label888:
+                                    do {
+                                       float var142;
+                                       int var60 = (var142 = axxxxxxxxxxxxxxx - 180.0F) == 0.0F ? 0 : (var142 < 0.0F ? -1 : 1);
+
+                                       label885:
+                                       while (true) {
+                                          if (var60 > 0) {
+                                             break label888;
                                           }
+
+                                          var57 = axxxxxxxxxxxxxx;
 
                                           if (axxxxxxxxxxxxxx != 0) {
-                                             break;
+                                             break label888;
                                           }
 
-                                          label913: {
-                                             byte var59 = bfc.gto(a.hba.aoc(), a.hba.dnc(), true, 5.0F, axxxx, axxxxxxxxxxxxxxx);
-                                             if (ax != null) {
-                                                if (var59 == 0) {
-                                                   break label913;
-                                                }
+                                          float axxxxxxxxxxxxxxxx = -1.0F;
 
-                                                axxxxxxxxxxxxx = axxxx;
-                                                axxxxxxxxxxxx = axxxxxxxxxxxxxxx;
-                                                var59 = 1;
-                                             }
-
-                                             axxxxxxxxxxxxxx = (boolean)var59;
-                                             a.gpi = new float[]{axxxxxxxxxxxxx, axxxxxxxxxxxx};
-                                             a.hek = 0;
-                                          }
-
-                                          short var116 = chi.field_1724.method_6059(class_1294.field_5904);
-                                          if (ax != null) {
-                                             if (var116 != 0) {
-                                                var116 = 29868;
-                                                var116 = 60;
-                                             } else {
-                                                var116 = 17228;
-                                                var116 = 80;
-                                             }
-                                          }
-
-                                          axxxxxxxxxxxxxxx -= axxxxxxxxxxxxxxx > var116 ? 0.5F : 2.0F;
-                                          if (ax == null) {
-                                             break;
-                                          }
-                                       }
-                                    }
-
-                                    var57 = a.aof.dnp();
-                                 }
-
-                                 if (ax == null) {
-                                    break label934;
-                                 }
-
-                                 if (var57 != 0) {
-                                    var57 = axxxxxxxxxxxxxx;
-                                    if (ax == null) {
-                                       break label934;
-                                    }
-
-                                    if (axxxxxxxxxxxxxx == 0) {
-                                       float axxxxxxxxxxxxxxx = 0.0F;
-
-                                       label888:
-                                       do {
-                                          float var142;
-                                          int var60 = (var142 = axxxxxxxxxxxxxxx - 180.0F) == 0.0F ? 0 : (var142 < 0.0F ? -1 : 1);
-
-                                          label885:
                                           while (true) {
-                                             if (var60 > 0) {
-                                                break label888;
-                                             }
+                                             float var143;
+                                             int var61 = (var143 = axxxxxxxxxxxxxxxx - 1.0F) == 0.0F ? 0 : (var143 < 0.0F ? -1 : 1);
 
-                                             var57 = axxxxxxxxxxxxxx;
-                                             if (ax == null || ax == null) {
-                                                break label934;
-                                             }
-
-                                             if (axxxxxxxxxxxxxx != 0) {
-                                                break label888;
-                                             }
-
-                                             float axxxxxxxxxxxxxxxx = -1.0F;
-
+                                             label880:
                                              while (true) {
-                                                float var143;
-                                                int var61 = (var143 = axxxxxxxxxxxxxxxx - 1.0F) == 0.0F ? 0 : (var143 < 0.0F ? -1 : 1);
-
-                                                label880:
-                                                while (true) {
-                                                   if (var61 > 0) {
-                                                      break label885;
-                                                   }
-
-                                                   var60 = axxxxxxxxxxxxxx;
-                                                   if (ax == null) {
-                                                      continue label885;
-                                                   }
-
-                                                   if (axxxxxxxxxxxxxx != 0) {
-                                                      break label885;
-                                                   }
-
-                                                   float axxxxxxxxxxxxxxxxx = axxxx + axxxxxxxxxxxxxxx * axxxxxxxxxxxxxxxx;
-                                                   float axxxxxxxxxxxxxxxxxx = 85.0F;
-
-                                                   while (true) {
-                                                      if (!(axxxxxxxxxxxxxxxxxx > 30.0F)) {
-                                                         break label880;
-                                                      }
-
-                                                      var61 = axxxxxxxxxxxxxx;
-                                                      if (ax == null) {
-                                                         break;
-                                                      }
-
-                                                      if (ax != null) {
-                                                         if (axxxxxxxxxxxxxx != 0) {
-                                                            break label880;
-                                                         }
-
-                                                         var61 = bfc.gto(a.hba.aoc(), a.hba.dnc(), true, 5.0F, axxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxx);
-                                                      }
-
-                                                      label875: {
-                                                         if (ax != null) {
-                                                            if (var61 == 0) {
-                                                               break label875;
-                                                            }
-
-                                                            axxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx;
-                                                            axxxxxxxxxxxx = axxxxxxxxxxxxxxxxxx;
-                                                            var61 = 1;
-                                                         }
-
-                                                         axxxxxxxxxxxxxx = (boolean)var61;
-                                                         a.gpi = new float[]{axxxxxxxxxxxxx, axxxxxxxxxxxx};
-                                                         a.hek = 0;
-                                                      }
-
-                                                      axxxxxxxxxxxxxxxxxx -= 5.0F;
-                                                      if (ax == null) {
-                                                         break label880;
-                                                      }
-                                                   }
-                                                }
-
-                                                axxxxxxxxxxxxxxxx += 2.0F;
-                                                if (ax == null) {
+                                                if (var61 > 0) {
                                                    break label885;
                                                 }
+
+                                                var60 = axxxxxxxxxxxxxx;
+
+                                                if (axxxxxxxxxxxxxx != 0) {
+                                                   break label885;
+                                                }
+
+                                                float axxxxxxxxxxxxxxxxx = axxxx + axxxxxxxxxxxxxxx * axxxxxxxxxxxxxxxx;
+                                                float axxxxxxxxxxxxxxxxxx = 85.0F;
+
+                                                while (true) {
+                                                   if (!(axxxxxxxxxxxxxxxxxx > 30.0F)) {
+                                                      break label880;
+                                                   }
+
+                                                   var61 = axxxxxxxxxxxxxx;
+
+                                                   if (axxxxxxxxxxxxxx != 0) {
+                                                      break label880;
+                                                   }
+
+                                                   var61 = bfc.gto(a.hba.aoc(), a.hba.dnc(), true, 5.0F, axxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxx);
+
+                                                   label875: {
+                                                      if (var61 == 0) {
+                                                         break label875;
+                                                      }
+
+                                                      axxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx;
+                                                      axxxxxxxxxxxx = axxxxxxxxxxxxxxxxxx;
+                                                      var61 = 1;
+
+                                                      axxxxxxxxxxxxxx = (boolean)var61;
+                                                      a.gpi = new float[]{axxxxxxxxxxxxx, axxxxxxxxxxxx};
+                                                      a.hek = 0;
+                                                   }
+
+                                                   axxxxxxxxxxxxxxxxxx -= 5.0F;
+                                                }
                                              }
-                                          }
 
-                                          axxxxxxxxxxxxxxx += 5.0F;
-                                       } while (ax != null);
-                                    }
-                                 }
-                              }
-                           }
-                        }
-
-                        var58 = a.aof.dnp();
-                     }
-
-                     var57 = (Boolean)var58;
-                  }
-
-                  axxxx = var57 != 0 ? axxxxxxxxxxxxx : axxxx;
-                  axxx = a.dgy.dnp() ? axxxxxxxxxxxx : axxx;
-                  String var32 = a.hfi.dnp();
-                  byte var33 = -1;
-                  var62 = var32.hashCode();
-                  label829:
-                  if (ax != null) {
-                     switch (var62) {
-                        case 63955982:
-                           var62 = var32.equals("Basic");
-                           if (ax == null) {
-                              break label829;
-                           }
-
-                           if (var62 == 0) {
-                              break;
-                           }
-
-                           var33 = 0;
-                           if (ax != null) {
-                              break;
-                           }
-                        case 482016750:
-                           var62 = var32.equals("Modern Watchdog");
-                           if (ax == null) {
-                              break label829;
-                           }
-
-                           if (var62 == 0) {
-                              break;
-                           }
-
-                           var33 = 1;
-                           if (ax != null) {
-                              break;
-                           }
-                        case -638370176:
-                           var62 = var32.equals("Modern Watchdog 2");
-                           if (ax == null) {
-                              break label829;
-                           }
-
-                           if (var62 == 0) {
-                              break;
-                           }
-
-                           var33 = 2;
-                           if (ax != null) {
-                              break;
-                           }
-                        case 2154973:
-                           var62 = var32.equals("Edge");
-                           if (ax == null) {
-                              break label829;
-                           }
-
-                           if (var62 == 0) {
-                              break;
-                           }
-
-                           var33 = 3;
-                           if (ax != null) {
-                              break;
-                           }
-                        case -1310785555:
-                           var62 = var32.equals("God Bridge");
-                           if (ax == null) {
-                              break label829;
-                           }
-
-                           if (var62 == 0) {
-                              break;
-                           }
-
-                           var33 = 4;
-                           if (ax != null) {
-                              break;
-                           }
-                        case -2099899231:
-                           var62 = var32.equals("Intave");
-                           if (ax == null) {
-                              break label829;
-                           }
-
-                           if (var62 != 0) {
-                              var33 = 5;
-                           }
-                     }
-
-                     var62 = var33;
-                  }
-
-                  if (ax == null) {
-                     break label940;
-                  }
-
-                  switch (var62) {
-                     case 0:
-                        var62 = 2;
-                        break label940;
-                     case 1:
-                        aqy var78 = a.hba;
-                        if (ax != null) {
-                           if (a.hba == null) {
-                              return new float[]{axxxx, axxx};
-                           }
-
-                           var78 = a.hba;
-                        }
-
-                        float[] axxxxxxxxxxxxxxxxxxxxxxxxx = SpeedMMC(var78.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
-                        axxx = axxxxxxxxxxxxxxxxxxxxxxxxx[1];
-                        return new float[]{axxxx, axxx};
-                     case 2:
-                        boolean axxxxxxxxxxxxxxxxxxxxxx;
-                        label774: {
-                           axxxxxxxxxxxxxxxxxxxxxx = chi.field_1690.field_1894.method_1434();
-                           boolean axxxxxxxxxxxxxxxxxxxxxxx = chi.field_1690.field_1913.method_1434();
-                           var10000 = chi.field_1724.method_36454();
-                           boolean var106 = axxxxxxxxxxxxxxxxxxxxxxx;
-                           if (ax != null) {
-                              if (axxxxxxxxxxxxxxxxxxxxxxx == chi.field_1690.field_1849.method_1434()) {
-                                 var107 = 0.0;
-                                 break label774;
-                              }
-
-                              var106 = axxxxxxxxxxxxxxxxxxxxxxx;
-                           }
-
-                           var107 = var106 ? 1.0 : -1.0;
-                        }
-
-                        double var133;
-                        label768: {
-                           boolean var132 = axxxxxxxxxxxxxxxxxxxxxx;
-                           if (ax != null) {
-                              if (axxxxxxxxxxxxxxxxxxxxxx == chi.field_1690.field_1881.method_1434()) {
-                                 var133 = 0.0;
-                                 break label768;
-                              }
-
-                              var132 = axxxxxxxxxxxxxxxxxxxxxx;
-                           }
-
-                           var133 = var132 ? 1.0 : -1.0;
-                        }
-
-                        float axxxxxxxxxxxxxxxxxxxxxxx;
-                        float axxxxxxxxxxxxxxxxxxxxxxxx;
-                        int var10004;
-                        label762: {
-                           axxxxxxxxxxxxxxxxxxxxxxx = var10000 - (float)Math.toDegrees(Math.atan2(var107, var133));
-                           axxxxxxxxxxxxxxxxxxxxxxxx = fuk(axxxxxxxxxxxxxxxxxxxxxxx);
-                           var77 = new float[2];
-                           var10004 = gig;
-                           if (ax != null) {
-                              if (gig == 1) {
-                                 var10004 = 0;
-                                 break label762;
-                              }
-
-                              double var162;
-                              var10004 = (var162 = Math.abs(axxxxxxxxxxxxxxxxxxxxxxxx) - 22.5) == 0.0 ? 0 : (var162 < 0.0 ? -1 : 1);
-                           }
-
-                           if (ax != null) {
-                              if (var10004 > 0) {
-                                 var10004 = -140;
-                              } else {
-                                 var10004 = 90;
-                              }
-                           }
-                        }
-
-                        float var140;
-                        label756: {
-                           var137 = var10004;
-                           var140 = axxxxxxxxxxxxxxxxxxxxxxxx;
-                           if (ax != null) {
-                              if (axxxxxxxxxxxxxxxxxxxxxxxx == 0.0F) {
-                                 var140 = 1.0F;
-                                 break label756;
-                              }
-
-                              var140 = axxxxxxxxxxxxxxxxxxxxxxxx;
-                           }
-
-                           var140 = Math.signum(var140);
-                        }
-
-                        var77[0] = axxxxxxxxxxxxxxxxxxxxxxx + var137 * var140;
-                        var77[1] = axxx;
-                        return var77;
-                     case 3:
-                        float axxxxxxxxxxxxxxxxxxxxx;
-                        axxxxxxxxxxxxxxxxxxxxx = evd.fnh();
-                        var71 = a.ggy.dnp();
-                        label750:
-                        if (ax != null) {
-                           if (var71 != 0) {
-                              var71 = evd.dbj();
-                              if (ax == null) {
-                                 break label750;
-                              }
-
-                              if (var71 == 0) {
-                                 return new float[]{chi.field_1724.method_36454() - 180.0F, axxx};
-                              }
-                           }
-
-                           var71 = evd.fsj();
-                        }
-
-                        if (ax != null) {
-                           if (var71 != 0) {
-                              return new float[]{axxxx, axxx};
-                           }
-
-                           var71 = a.hci;
-                        }
-
-                        if (ax != null) {
-                           if (var71 == 0) {
-                              Scaffold var75 = a;
-                              if (ax != null) {
-                                 if (a.hba == null) {
-                                    return new float[]{evd.bpi() ? axxxxxxxxxxxxxxxxxxxxx - 140.0F + a.dku : axxxxxxxxxxxxxxxxxxxxx + 100.0F + a.dku, axxx};
-                                 }
-
-                                 var75 = a;
-                              }
-
-                              var75.hci = true;
-                              return new float[]{evd.bpi() ? axxxxxxxxxxxxxxxxxxxxx - 140.0F + a.dku : axxxxxxxxxxxxxxxxxxxxx + 100.0F + a.dku, axxx};
-                           }
-
-                           var71 = chi.field_1724.field_6012 % 3;
-                        }
-
-                        if (var71 == 0) {
-                           a.dku = crg.gj(0.0F, 9.0F);
-                        }
-
-                        class_243 axxxxxxxxxxxxxxxxxxxxxx = new class_243(
-                           a.hba.dnc.method_10263() + 0.5, a.hba.dnc.method_10264(), a.hba.dnc.method_10260() + 0.5
-                        );
-                        double axxxxxxxxxxxxxxxxxxxxxxx = Math.toRadians(axxxxxxxxxxxxxxxxxxxxx);
-                        double axxxxxxxxxxxxxxxxxxxxxxxx = -Math.sin(axxxxxxxxxxxxxxxxxxxxxxx);
-                        double axxxxxxxxxxxxxxxxxxxxxxxxx = Math.cos(axxxxxxxxxxxxxxxxxxxxxxx);
-                        double axxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx.field_1352 - chi.field_1724.method_23317();
-                        double axxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx.field_1350 - chi.field_1724.method_23321();
-                        double var161;
-                        int var72 = (
-                                 var161 = axxxxxxxxxxxxxxxxxxxxxxxx * axxxxxxxxxxxxxxxxxxxxxxxxxxx
-                                    - axxxxxxxxxxxxxxxxxxxxxxxxx * axxxxxxxxxxxxxxxxxxxxxxxxxx
-                                    - 0.0
-                              )
-                              == 0.0
-                           ? 0
-                           : (var161 < 0.0 ? -1 : 1);
-                        if (ax != null) {
-                           var72 = var72 > 0 ? 1 : 0;
-                        }
-
-                        label739: {
-                           label1009: {
-                              boolean axxxxxxxxxxxxxxxxxxxxxxxxxxxx = (boolean)var72;
-                              var73 = evd.bpi();
-                              if (ax != null) {
-                                 if (var73 != 0) {
-                                    a.dxn = axxxxxxxxxxxxxxxxxxxxx - 140.0F;
-                                    if (ax != null) {
-                                       break label1009;
-                                    }
-                                 }
-
-                                 var73 = evd.bpi();
-                              }
-
-                              if (ax == null) {
-                                 break label739;
-                              }
-
-                              if (var73 == 0) {
-                                 a.dxn = axxxxxxxxxxxxxxxxxxxxx + (axxxxxxxxxxxxxxxxxxxxxxxxxxxx != 0 ? 100.0F + a.dku : -100.0F - a.dku);
-                              }
-                           }
-
-                           var73 = 2;
-                        }
-
-                        float[] var74 = new float[var73];
-                        var74[0] = a.dxn;
-                        var74[1] = 82.0F;
-                        return var74;
-                     case 4:
-                        label1005: {
-                           class_315 axxxxxxxxxxxxxxx = chi.field_1690;
-                           boolean axxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1894.method_1434();
-                           boolean axxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1881.method_1434();
-                           boolean axxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1913.method_1434();
-                           boolean axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1849.method_1434();
-                           var10000 = chi.field_1724.method_36454() - 180.0F;
-                           var98 = axxxxxxxxxxxxxxxx;
-                           if (ax != null) {
-                              if (axxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxx) {
-                                 var98 = axxxxxxxxxxxxxxxxxx;
-                                 if (ax != null) {
-                                    if (axxxxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxxxx) {
-                                       var98 = 0;
-                                       break label1005;
-                                    }
-
-                                    var98 = axxxxxxxxxxxxxxxxxx;
-                                 }
-
-                                 if (ax != null) {
-                                    if (var98 != 0) {
-                                       var98 = -90;
-                                    } else {
-                                       var98 = 90;
-                                    }
-                                 }
-                                 break label1005;
-                              }
-
-                              var98 = axxxxxxxxxxxxxxxx;
-                           }
-
-                           if (ax != null) {
-                              if (var98 != 0) {
-                                 var98 = axxxxxxxxxxxxxxxxxx;
-                                 if (ax != null) {
-                                    if (axxxxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxxxx) {
-                                       var98 = 0;
-                                       break label1005;
-                                    }
-
-                                    var98 = axxxxxxxxxxxxxxxxxx;
-                                 }
-
-                                 if (ax != null) {
-                                    if (var98 != 0) {
-                                       var98 = -45;
-                                    } else {
-                                       var98 = 45;
-                                    }
-                                 }
-                                 break label1005;
-                              }
-
-                              var98 = axxxxxxxxxxxxxxxxxx;
-                           }
-
-                           if (ax != null) {
-                              if (var98 == axxxxxxxxxxxxxxxxxxx) {
-                                 var98 = 180;
-                                 break label1005;
-                              }
-
-                              var98 = axxxxxxxxxxxxxxxxxx;
-                           }
-
-                           if (ax != null) {
-                              if (var98 != 0) {
-                                 var98 = -135;
-                              } else {
-                                 var98 = 135;
-                              }
-                           }
-                        }
-
-                        float axxxxxxxxxxxxxxxxxxxx;
-                        axxxxxxxxxxxxxxxxxxxx = class_3532.method_15393(var10000 + var98);
-                        float var144;
-                        var68 = (var144 = axxxxxxxxxxxxxxxxxxxx - -22.5F) == 0.0F ? 0 : (var144 < 0.0F ? -1 : 1);
-                        label692:
-                        if (ax != null) {
-                           if (var68 >= 0) {
-                              float var145;
-                              var68 = (var145 = axxxxxxxxxxxxxxxxxxxx - 22.5F) == 0.0F ? 0 : (var145 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label692;
-                              }
-
-                              if (var68 < 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = 45.0F;
-                              }
-                           }
-
-                           float var146;
-                           var68 = (var146 = axxxxxxxxxxxxxxxxxxxx - -22.5F) == 0.0F ? 0 : (var146 < 0.0F ? -1 : 1);
-                        }
-
-                        label685:
-                        if (ax != null) {
-                           if (var68 < 0) {
-                              float var147;
-                              var68 = (var147 = axxxxxxxxxxxxxxxxxxxx - -67.5F) == 0.0F ? 0 : (var147 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label685;
-                              }
-
-                              if (var68 >= 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = -45.0F;
-                              }
-                           }
-
-                           float var148;
-                           var68 = (var148 = axxxxxxxxxxxxxxxxxxxx - -67.5F) == 0.0F ? 0 : (var148 < 0.0F ? -1 : 1);
-                        }
-
-                        label678:
-                        if (ax != null) {
-                           if (var68 < 0) {
-                              float var149;
-                              var68 = (var149 = axxxxxxxxxxxxxxxxxxxx - -112.5F) == 0.0F ? 0 : (var149 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label678;
-                              }
-
-                              if (var68 >= 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = -45.0F;
-                              }
-                           }
-
-                           float var150;
-                           var68 = (var150 = axxxxxxxxxxxxxxxxxxxx - -112.5F) == 0.0F ? 0 : (var150 < 0.0F ? -1 : 1);
-                        }
-
-                        label671:
-                        if (ax != null) {
-                           if (var68 < 0) {
-                              float var151;
-                              var68 = (var151 = axxxxxxxxxxxxxxxxxxxx - -157.5F) == 0.0F ? 0 : (var151 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label671;
-                              }
-
-                              if (var68 >= 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = -135.0F;
-                              }
-                           }
-
-                           float var152;
-                           var68 = (var152 = axxxxxxxxxxxxxxxxxxxx - -157.5F) == 0.0F ? 0 : (var152 < 0.0F ? -1 : 1);
-                        }
-
-                        label664: {
-                           label663: {
-                              label662: {
-                                 label1006: {
-                                    if (ax != null) {
-                                       if (var68 < 0) {
-                                          var10000 = axxxxxxxxxxxxxxxxxxxx;
-                                          if (ax == null) {
-                                             break label662;
-                                          }
-
-                                          if (axxxxxxxxxxxxxxxxxxxx >= -180.0F) {
-                                             break label1006;
+                                             axxxxxxxxxxxxxxxx += 2.0F;
                                           }
                                        }
 
-                                       float var153;
-                                       var68 = (var153 = axxxxxxxxxxxxxxxxxxxx - 157.5F) == 0.0F ? 0 : (var153 < 0.0F ? -1 : 1);
-                                    }
+                                       axxxxxxxxxxxxxxx += 5.0F;
+                                    } while (ax != null);
+                                 }
+                              }
+                           }
+                        }
+                     }
 
-                                    if (ax == null) {
-                                       break label664;
-                                    }
+                     var58 = a.aof.dnp();
+                  }
 
-                                    if (var68 < 0) {
-                                       break label663;
-                                    }
+                  var57 = (Boolean)var58;
+               }
 
-                                    float var154;
-                                    var68 = (var154 = axxxxxxxxxxxxxxxxxxxx - 180.0F) == 0.0F ? 0 : (var154 < 0.0F ? -1 : 1);
-                                    if (ax == null) {
-                                       break label664;
-                                    }
+               axxxx = var57 != 0 ? axxxxxxxxxxxxx : axxxx;
+               axxx = a.dgy.dnp() ? axxxxxxxxxxxx : axxx;
+               String var32 = a.hfi.dnp();
+               byte var33 = -1;
+               var62 = var32.hashCode();
+               label829:
+               switch (var62) {
+                  case 63955982:
+                     var62 = var32.equals("Basic");
 
-                                    if (var68 >= 0) {
-                                       break label663;
+                     if (var62 == 0) {
+                        break;
+                     }
+
+                     var33 = 0;
+                     break;
+                  case 482016750:
+                     var62 = var32.equals("Modern Watchdog");
+
+                     if (var62 == 0) {
+                        break;
+                     }
+
+                     var33 = 1;
+                     break;
+                  case -638370176:
+                     var62 = var32.equals("Modern Watchdog 2");
+
+                     if (var62 == 0) {
+                        break;
+                     }
+
+                     var33 = 2;
+                     break;
+                  case 2154973:
+                     var62 = var32.equals("Edge");
+
+                     if (var62 == 0) {
+                        break;
+                     }
+
+                     var33 = 3;
+                     break;
+                  case -1310785555:
+                     var62 = var32.equals("God Bridge");
+
+                     if (var62 == 0) {
+                        break;
+                     }
+
+                     var33 = 4;
+                     break;
+                  case -2099899231:
+                     var62 = var32.equals("Intave");
+
+                     if (var62 != 0) {
+                        var33 = 5;
+                     }
+               }
+
+               var62 = var33;
+
+
+               switch (var62) {
+                  case 0:
+                     var62 = 2;
+                     break label940;
+                  case 1:
+                     aqy var78 = a.hba;
+                     if (a.hba == null) {
+                        return new float[]{axxxx, axxx};
+                     }
+
+                     var78 = a.hba;
+
+                     float[] axxxxxxxxxxxxxxxxxxxxxxxxx = SpeedMMC(var78.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                     axxx = axxxxxxxxxxxxxxxxxxxxxxxxx[1];
+                     return new float[]{axxxx, axxx};
+                  case 2:
+                     boolean axxxxxxxxxxxxxxxxxxxxxx;
+                     label774: {
+                        axxxxxxxxxxxxxxxxxxxxxx = chi.field_1690.field_1894.method_1434();
+                        boolean axxxxxxxxxxxxxxxxxxxxxxx = chi.field_1690.field_1913.method_1434();
+                        var10000 = chi.field_1724.method_36454();
+                        boolean var106 = axxxxxxxxxxxxxxxxxxxxxxx;
+                        if (axxxxxxxxxxxxxxxxxxxxxxx == chi.field_1690.field_1849.method_1434()) {
+                           var107 = 0.0;
+                           break label774;
+                        }
+
+                        var106 = axxxxxxxxxxxxxxxxxxxxxxx;
+
+                        var107 = var106 ? 1.0 : -1.0;
+                     }
+
+                     double var133;
+                     label768: {
+                        boolean var132 = axxxxxxxxxxxxxxxxxxxxxx;
+                        if (axxxxxxxxxxxxxxxxxxxxxx == chi.field_1690.field_1881.method_1434()) {
+                           var133 = 0.0;
+                           break label768;
+                        }
+
+                        var132 = axxxxxxxxxxxxxxxxxxxxxx;
+
+                        var133 = var132 ? 1.0 : -1.0;
+                     }
+
+                     float axxxxxxxxxxxxxxxxxxxxxxx;
+                     float axxxxxxxxxxxxxxxxxxxxxxxx;
+                     int var10004;
+                     label762: {
+                        axxxxxxxxxxxxxxxxxxxxxxx = var10000 - (float)Math.toDegrees(Math.atan2(var107, var133));
+                        axxxxxxxxxxxxxxxxxxxxxxxx = fuk(axxxxxxxxxxxxxxxxxxxxxxx);
+                        var77 = new float[2];
+                        var10004 = gig;
+                        if (gig == 1) {
+                           var10004 = 0;
+                           break label762;
+                        }
+
+                        double var162;
+                        var10004 = (var162 = Math.abs(axxxxxxxxxxxxxxxxxxxxxxxx) - 22.5) == 0.0 ? 0 : (var162 < 0.0 ? -1 : 1);
+
+                        if (var10004 > 0) {
+                           var10004 = -140;
+                        } else {
+                           var10004 = 90;
+                        }
+                     }
+
+                     float var140;
+                     label756: {
+                        var137 = var10004;
+                        var140 = axxxxxxxxxxxxxxxxxxxxxxxx;
+                        if (axxxxxxxxxxxxxxxxxxxxxxxx == 0.0F) {
+                           var140 = 1.0F;
+                           break label756;
+                        }
+
+                        var140 = axxxxxxxxxxxxxxxxxxxxxxxx;
+
+                        var140 = Math.signum(var140);
+                     }
+
+                     var77[0] = axxxxxxxxxxxxxxxxxxxxxxx + var137 * var140;
+                     var77[1] = axxx;
+                     return var77;
+                  case 3:
+                     float axxxxxxxxxxxxxxxxxxxxx;
+                     axxxxxxxxxxxxxxxxxxxxx = evd.fnh();
+                     var71 = a.ggy.dnp();
+                     label750:
+                     if (var71 != 0) {
+                        var71 = evd.dbj();
+
+                        if (var71 == 0) {
+                           return new float[]{chi.field_1724.method_36454() - 180.0F, axxx};
+                        }
+                     }
+
+                     var71 = evd.fsj();
+
+                     if (var71 != 0) {
+                        return new float[]{axxxx, axxx};
+                     }
+
+                     var71 = a.hci;
+
+                     if (var71 == 0) {
+                        Scaffold var75 = a;
+                        if (a.hba == null) {
+                           return new float[]{evd.bpi() ? axxxxxxxxxxxxxxxxxxxxx - 140.0F + a.dku : axxxxxxxxxxxxxxxxxxxxx + 100.0F + a.dku, axxx};
+                        }
+
+                        var75 = a;
+
+                        var75.hci = true;
+                        return new float[]{evd.bpi() ? axxxxxxxxxxxxxxxxxxxxx - 140.0F + a.dku : axxxxxxxxxxxxxxxxxxxxx + 100.0F + a.dku, axxx};
+                     }
+
+                     var71 = chi.field_1724.field_6012 % 3;
+
+                     if (var71 == 0) {
+                        a.dku = crg.gj(0.0F, 9.0F);
+                     }
+
+                     class_243 axxxxxxxxxxxxxxxxxxxxxx = new class_243(
+                        a.hba.dnc.method_10263() + 0.5, a.hba.dnc.method_10264(), a.hba.dnc.method_10260() + 0.5
+                     );
+                     double axxxxxxxxxxxxxxxxxxxxxxx = Math.toRadians(axxxxxxxxxxxxxxxxxxxxx);
+                     double axxxxxxxxxxxxxxxxxxxxxxxx = -Math.sin(axxxxxxxxxxxxxxxxxxxxxxx);
+                     double axxxxxxxxxxxxxxxxxxxxxxxxx = Math.cos(axxxxxxxxxxxxxxxxxxxxxxx);
+                     double axxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx.field_1352 - chi.field_1724.method_23317();
+                     double axxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx.field_1350 - chi.field_1724.method_23321();
+                     double var161;
+                     int var72 = (
+                              var161 = axxxxxxxxxxxxxxxxxxxxxxxx * axxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                 - axxxxxxxxxxxxxxxxxxxxxxxxx * axxxxxxxxxxxxxxxxxxxxxxxxxx
+                                 - 0.0
+                           )
+                           == 0.0
+                        ? 0
+                        : (var161 < 0.0 ? -1 : 1);
+                     var72 = var72 > 0 ? 1 : 0;
+
+                     label739: {
+                        label1009: {
+                           boolean axxxxxxxxxxxxxxxxxxxxxxxxxxxx = (boolean)var72;
+                           var73 = evd.bpi();
+                           if (var73 != 0) {
+                              a.dxn = axxxxxxxxxxxxxxxxxxxxx - 140.0F;
+                              break label1009;
+                           }
+
+                           var73 = evd.bpi();
+
+
+                           if (var73 == 0) {
+                              a.dxn = axxxxxxxxxxxxxxxxxxxxx + (axxxxxxxxxxxxxxxxxxxxxxxxxxxx != 0 ? 100.0F + a.dku : -100.0F - a.dku);
+                           }
+                        }
+
+                        var73 = 2;
+                     }
+
+                     float[] var74 = new float[var73];
+                     var74[0] = a.dxn;
+                     var74[1] = 82.0F;
+                     return var74;
+                  case 4:
+                     label1005: {
+                        class_315 axxxxxxxxxxxxxxx = chi.field_1690;
+                        boolean axxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1894.method_1434();
+                        boolean axxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1881.method_1434();
+                        boolean axxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1913.method_1434();
+                        boolean axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxx.field_1849.method_1434();
+                        var10000 = chi.field_1724.method_36454() - 180.0F;
+                        var98 = axxxxxxxxxxxxxxxx;
+                        if (axxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxx) {
+                           var98 = axxxxxxxxxxxxxxxxxx;
+                           if (axxxxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxxxx) {
+                              var98 = 0;
+                              break label1005;
+                           }
+
+                           var98 = axxxxxxxxxxxxxxxxxx;
+
+                           if (var98 != 0) {
+                              var98 = -90;
+                           } else {
+                              var98 = 90;
+                           }
+                           break label1005;
+                        }
+
+                        var98 = axxxxxxxxxxxxxxxx;
+
+                        if (var98 != 0) {
+                           var98 = axxxxxxxxxxxxxxxxxx;
+                           if (axxxxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxxxx) {
+                              var98 = 0;
+                              break label1005;
+                           }
+
+                           var98 = axxxxxxxxxxxxxxxxxx;
+
+                           if (var98 != 0) {
+                              var98 = -45;
+                           } else {
+                              var98 = 45;
+                           }
+                           break label1005;
+                        }
+
+                        var98 = axxxxxxxxxxxxxxxxxx;
+
+                        if (var98 == axxxxxxxxxxxxxxxxxxx) {
+                           var98 = 180;
+                           break label1005;
+                        }
+
+                        var98 = axxxxxxxxxxxxxxxxxx;
+
+                        if (var98 != 0) {
+                           var98 = -135;
+                        } else {
+                           var98 = 135;
+                        }
+                     }
+
+                     float axxxxxxxxxxxxxxxxxxxx;
+                     axxxxxxxxxxxxxxxxxxxx = class_3532.method_15393(var10000 + var98);
+                     float var144;
+                     var68 = (var144 = axxxxxxxxxxxxxxxxxxxx - -22.5F) == 0.0F ? 0 : (var144 < 0.0F ? -1 : 1);
+                     label692:
+                     if (var68 >= 0) {
+                        float var145;
+                        var68 = (var145 = axxxxxxxxxxxxxxxxxxxx - 22.5F) == 0.0F ? 0 : (var145 < 0.0F ? -1 : 1);
+
+                        if (var68 < 0) {
+                           axxxxxxxxxxxxxxxxxxxx = 45.0F;
+                        }
+                     }
+
+                     float var146;
+                     var68 = (var146 = axxxxxxxxxxxxxxxxxxxx - -22.5F) == 0.0F ? 0 : (var146 < 0.0F ? -1 : 1);
+
+                     label685:
+                     if (var68 < 0) {
+                        float var147;
+                        var68 = (var147 = axxxxxxxxxxxxxxxxxxxx - -67.5F) == 0.0F ? 0 : (var147 < 0.0F ? -1 : 1);
+
+                        if (var68 >= 0) {
+                           axxxxxxxxxxxxxxxxxxxx = -45.0F;
+                        }
+                     }
+
+                     float var148;
+                     var68 = (var148 = axxxxxxxxxxxxxxxxxxxx - -67.5F) == 0.0F ? 0 : (var148 < 0.0F ? -1 : 1);
+
+                     label678:
+                     if (var68 < 0) {
+                        float var149;
+                        var68 = (var149 = axxxxxxxxxxxxxxxxxxxx - -112.5F) == 0.0F ? 0 : (var149 < 0.0F ? -1 : 1);
+
+                        if (var68 >= 0) {
+                           axxxxxxxxxxxxxxxxxxxx = -45.0F;
+                        }
+                     }
+
+                     float var150;
+                     var68 = (var150 = axxxxxxxxxxxxxxxxxxxx - -112.5F) == 0.0F ? 0 : (var150 < 0.0F ? -1 : 1);
+
+                     label671:
+                     if (var68 < 0) {
+                        float var151;
+                        var68 = (var151 = axxxxxxxxxxxxxxxxxxxx - -157.5F) == 0.0F ? 0 : (var151 < 0.0F ? -1 : 1);
+
+                        if (var68 >= 0) {
+                           axxxxxxxxxxxxxxxxxxxx = -135.0F;
+                        }
+                     }
+
+                     float var152;
+                     var68 = (var152 = axxxxxxxxxxxxxxxxxxxx - -157.5F) == 0.0F ? 0 : (var152 < 0.0F ? -1 : 1);
+
+                     label664: {
+                        label663: {
+                           label662: {
+                              label1006: {
+                                 if (var68 < 0) {
+                                    var10000 = axxxxxxxxxxxxxxxxxxxx;
+
+                                    if (axxxxxxxxxxxxxxxxxxxx >= -180.0F) {
+                                       break label1006;
                                     }
                                  }
 
-                                 var10000 = -135.0F;
+                                 float var153;
+                                 var68 = (var153 = axxxxxxxxxxxxxxxxxxxx - 157.5F) == 0.0F ? 0 : (var153 < 0.0F ? -1 : 1);
+
+
+                                 if (var68 < 0) {
+                                    break label663;
+                                 }
+
+                                 float var154;
+                                 var68 = (var154 = axxxxxxxxxxxxxxxxxxxx - 180.0F) == 0.0F ? 0 : (var154 < 0.0F ? -1 : 1);
+
+                                 if (var68 >= 0) {
+                                    break label663;
+                                 }
                               }
 
-                              axxxxxxxxxxxxxxxxxxxx = var10000;
+                              var10000 = -135.0F;
                            }
 
-                           float var155;
-                           var68 = (var155 = axxxxxxxxxxxxxxxxxxxx - 112.5F) == 0.0F ? 0 : (var155 < 0.0F ? -1 : 1);
+                           axxxxxxxxxxxxxxxxxxxx = var10000;
                         }
 
-                        label642:
-                        if (ax != null) {
-                           if (var68 >= 0) {
-                              float var156;
-                              var68 = (var156 = axxxxxxxxxxxxxxxxxxxx - 157.5F) == 0.0F ? 0 : (var156 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label642;
-                              }
+                        float var155;
+                        var68 = (var155 = axxxxxxxxxxxxxxxxxxxx - 112.5F) == 0.0F ? 0 : (var155 < 0.0F ? -1 : 1);
+                     }
 
-                              if (var68 < 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = 135.0F;
-                              }
-                           }
+                     label642:
+                     if (var68 >= 0) {
+                        float var156;
+                        var68 = (var156 = axxxxxxxxxxxxxxxxxxxx - 157.5F) == 0.0F ? 0 : (var156 < 0.0F ? -1 : 1);
 
-                           float var157;
-                           var68 = (var157 = axxxxxxxxxxxxxxxxxxxx - 67.5F) == 0.0F ? 0 : (var157 < 0.0F ? -1 : 1);
+                        if (var68 < 0) {
+                           axxxxxxxxxxxxxxxxxxxx = 135.0F;
                         }
+                     }
 
-                        label635:
-                        if (ax != null) {
-                           if (var68 >= 0) {
-                              float var158;
-                              var68 = (var158 = axxxxxxxxxxxxxxxxxxxx - 112.5F) == 0.0F ? 0 : (var158 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label635;
-                              }
+                     float var157;
+                     var68 = (var157 = axxxxxxxxxxxxxxxxxxxx - 67.5F) == 0.0F ? 0 : (var157 < 0.0F ? -1 : 1);
 
-                              if (var68 < 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = 135.0F;
-                              }
-                           }
+                     label635:
+                     if (var68 >= 0) {
+                        float var158;
+                        var68 = (var158 = axxxxxxxxxxxxxxxxxxxx - 112.5F) == 0.0F ? 0 : (var158 < 0.0F ? -1 : 1);
 
-                           float var159;
-                           var68 = (var159 = axxxxxxxxxxxxxxxxxxxx - 22.5F) == 0.0F ? 0 : (var159 < 0.0F ? -1 : 1);
+                        if (var68 < 0) {
+                           axxxxxxxxxxxxxxxxxxxx = 135.0F;
                         }
+                     }
 
-                        label628:
-                        if (ax != null) {
-                           if (var68 >= 0) {
-                              float var160;
-                              var68 = (var160 = axxxxxxxxxxxxxxxxxxxx - 67.5F) == 0.0F ? 0 : (var160 < 0.0F ? -1 : 1);
-                              if (ax == null) {
-                                 break label628;
-                              }
+                     float var159;
+                     var68 = (var159 = axxxxxxxxxxxxxxxxxxxx - 22.5F) == 0.0F ? 0 : (var159 < 0.0F ? -1 : 1);
 
-                              if (var68 < 0) {
-                                 axxxxxxxxxxxxxxxxxxxx = 45.0F;
-                              }
-                           }
+                     label628:
+                     if (var68 >= 0) {
+                        float var160;
+                        var68 = (var160 = axxxxxxxxxxxxxxxxxxxx - 67.5F) == 0.0F ? 0 : (var160 < 0.0F ? -1 : 1);
 
-                           var68 = 2;
+                        if (var68 < 0) {
+                           axxxxxxxxxxxxxxxxxxxx = 45.0F;
                         }
+                     }
 
-                        float[] var70 = new float[var68];
-                        var70[0] = axxxxxxxxxxxxxxxxxxxx;
-                        var70[1] = 75.7F;
-                        return var70;
-                     case 5:
-                        var63 = chi.field_1690.field_1903.method_1434();
-                        if (ax != null) {
-                           if (var63 != 0) {
-                              return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
-                           }
+                     var68 = 2;
 
-                           var63 = amg.gmi(chi.field_1724.method_24515());
-                        }
+                     float[] var70 = new float[var68];
+                     var70[0] = axxxxxxxxxxxxxxxxxxxx;
+                     var70[1] = 75.7F;
+                     return var70;
+                  case 5:
+                     var63 = chi.field_1690.field_1903.method_1434();
+                     if (var63 != 0) {
+                        return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                     }
 
-                        if (ax == null) {
-                           break label939;
-                        }
+                     var63 = amg.gmi(chi.field_1724.method_24515());
 
-                        if (var63 == 0) {
-                           var63 = 2;
-                           break label939;
-                        }
 
-                        if (ax == null) {
-                           return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
-                        }
+                     if (var63 == 0) {
+                        var63 = 2;
+                        break label939;
+                     }
 
-                        if (a.hba != null) {
-                           return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
-                        }
-                     default:
-                        if (ax != null) {
-                           return new float[]{axxxxxxxxxxx, axxx};
-                        }
-                  }
+
+                     if (a.hba != null) {
+                        return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                     }
+                  default:
+                     return new float[]{axxxxxxxxxxx, axxx};
                }
-
-               var56 = 2;
             }
+
+            var56 = 2;
 
             float[] var65 = new float[var56];
             var65[0] = chi.field_1724.method_36454();
@@ -2138,29 +1745,11 @@ public class Scaffold extends guu {
    public static float[] SpeedMMC(double x, double y, double z, class_2350 direction) {
       long ax = Scaffold.a ^ 77659228772320L;
       class_638 axx = chi.field_1687;
-      if (axx == null) {
-         return new float[]{0.0F, 0.0F};
-      } else {
-         class_1297 axxx = new buf(class_1299.field_6052, axx);
-         axxx.method_5814(a + 0.5 + a.method_10148() * 0.5, a + 0.5 + a.method_10164() * 0.5, a + 0.5 + a.method_10165() * 0.5);
-         return agi(axxx.method_23317(), axxx.method_23318(), axxx.method_23321());
-      }
    }
 
    public static float[] agi(double x, double y, double z) {
       long ax = Scaffold.a ^ 45084619852787L;
       class_746 axx = chi.field_1724;
-      if (axx == null) {
-         return new float[]{0.0F, 0.0F};
-      } else {
-         double axxx = a - axx.method_23317();
-         double axxxx = a - axx.method_23321();
-         double axxxxx = a - axx.method_23318() - 1.2;
-         double axxxxxx = Math.sqrt(axxx * axxx + axxxx * axxxx);
-         float axxxxxxx = (float)(Math.atan2(axxxx, axxx) * 180.0 / (float) Math.PI - 90.0);
-         float axxxxxxxx = (float)(-(Math.atan2(axxxxx, axxxxxx) * 180.0 / (float) Math.PI));
-         return new float[]{axxxxxxx, axxxxxxxx};
-      }
    }
 
    private void fuf() {
@@ -2170,9 +1759,7 @@ public class Scaffold extends guu {
          class_304 var10000 = chi.field_1690.field_1832;
          float var4;
          int var10001 = (var4 = a.gnd % a.grx.dnp().floatValue() - 0.0F) == 0.0F ? 0 : (var4 < 0.0F ? -1 : 1);
-         if (var3 != null) {
-            var10001 = !var10001;
-         }
+         var10001 = !var10001;
 
          var10000.method_23481((boolean)var10001);
       }
@@ -2182,231 +1769,181 @@ public class Scaffold extends guu {
       long ax = Scaffold.a ^ 19025279213700L;
       int[] axx = ClientSetup.abu();
       Scaffold var10000 = a;
-      if (axx != null) {
-         label249:
-         if (a.euz.dnp()) {
-            boolean var8 = chi.field_1724.method_24828();
-            if (axx != null) {
+      label249:
+      if (a.euz.dnp()) {
+         boolean var8 = chi.field_1724.method_24828();
+         if (!var8) {
+            break label249;
+         }
+
+         var8 = evd.dbj();
+
+         if (!var8) {
+            break label249;
+         }
+
+         var8 = chi.field_1690.field_1903.method_1434();
+
+         if (var8) {
+            break label249;
+         }
+
+         var8 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
+
+         if (var8) {
+            break label249;
+         }
+
+         var8 = a.hfi.emb("God Bridge");
+
+         label227: {
+            label256: {
                if (!var8) {
-                  break label249;
+                  break label256;
                }
 
-               var8 = evd.dbj();
-            }
+               var8 = a.esl.dnp();
 
-            if (axx != null) {
-               if (!var8) {
-                  break label249;
-               }
 
-               var8 = chi.field_1690.field_1903.method_1434();
-            }
-
-            if (axx != null) {
                if (var8) {
-                  break label249;
+                  var8 = true;
+                  break label227;
                }
-
-               var8 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
             }
 
-            if (axx != null) {
-               if (var8) {
-                  break label249;
+            var8 = false;
+         }
+
+         boolean axxx;
+         label216: {
+            label257: {
+               axxx = var8;
+               var9 = evd.bpi();
+               if (!var9) {
+                  break label257;
                }
 
-               var8 = a.hfi.emb("God Bridge");
+               var9 = a.hge.dnp();
+
+
+               if (var9) {
+                  var9 = true;
+                  break label216;
+               }
             }
 
-            label227: {
-               label256: {
-                  if (axx != null) {
-                     if (!var8) {
-                        break label256;
+            var9 = false;
+         }
+
+         boolean axxxx;
+         boolean axxxxx;
+         label258: {
+            axxxx = var9;
+            int var10 = axxx;
+            if (axxx != 0) {
+               label200: {
+                  label260: {
+                     var11 = a.btn;
+                     if (a.btn <= 0) {
+                        break label260;
                      }
 
-                     var8 = a.esl.dnp();
+                     var11 = a.fmm;
+
+
+                     if (var11 > a.bjk.dnp().intValue()) {
+                        var11 = 1;
+                        break label200;
+                     }
                   }
 
-                  if (axx == null) {
-                     break label227;
+                  var11 = 0;
+               }
+
+               axxxxx = (boolean)var11;
+               break label258;
+            }
+
+            var10 = a.gnd;
+
+            label185: {
+               label261: {
+                  if (var10 != 0) {
+                     var10 = a.gnd % a.bjk.dnp().intValue();
+
+                     if (var10 == 0) {
+                        break label261;
+                     }
                   }
 
-                  if (var8) {
-                     var8 = true;
-                     break label227;
+                  var10 = a.bjk.dnp().intValue();
+
+
+                  if (var10 != 1) {
+                     var10 = 0;
+                     break label185;
                   }
                }
 
-               var8 = false;
+               var10 = 1;
             }
 
-            boolean axxx;
-            label216: {
-               label257: {
-                  axxx = var8;
-                  var9 = evd.bpi();
-                  if (axx != null) {
-                     if (!var9) {
-                        break label257;
-                     }
+            axxxxx = (boolean)var10;
+         }
 
-                     var9 = a.hge.dnp();
+         label171: {
+            label170: {
+               label262: {
+                  var12 = axxxxx;
+                  if (axxxxx == 0) {
+                     break label262;
                   }
 
-                  if (axx == null) {
-                     break label216;
+                  var12 = axxxx;
+
+                  if (var12 != 0) {
+                     break label262;
                   }
 
-                  if (var9) {
-                     var9 = true;
-                     break label216;
+                  var12 = a.hjm;
+
+                  if (var12 != 0) {
+                     break label262;
                   }
+
+                  a.eeq = true;
+                  a.hjm = true;
+                  var12 = axxx;
+
+
+                  if (var12 == 0) {
+                     break label170;
+                  }
+
+                  a.fmm = -1;
+                  break label170;
                }
 
-               var9 = false;
+               a.eeq = false;
             }
 
-            boolean axxxx;
-            boolean axxxxx;
-            label258: {
-               axxxx = var9;
-               int var10 = axxx;
-               if (axx != null) {
-                  if (axxx != 0) {
-                     label200: {
-                        label260: {
-                           var11 = a.btn;
-                           if (axx != null) {
-                              if (a.btn <= 0) {
-                                 break label260;
-                              }
+            var12 = chi.field_1724.method_24828();
+         }
 
-                              var11 = a.fmm;
-                           }
-
-                           if (axx == null) {
-                              break label200;
-                           }
-
-                           if (var11 > a.bjk.dnp().intValue()) {
-                              var11 = 1;
-                              break label200;
-                           }
-                        }
-
-                        var11 = 0;
-                     }
-
-                     axxxxx = (boolean)var11;
-                     if (axx != null) {
-                        break label258;
-                     }
-                  }
-
-                  var10 = a.gnd;
-               }
-
-               label185: {
-                  label261: {
-                     if (axx != null) {
-                        if (var10 != 0) {
-                           var10 = a.gnd % a.bjk.dnp().intValue();
-                           if (axx == null) {
-                              break label185;
-                           }
-
-                           if (var10 == 0) {
-                              break label261;
-                           }
-                        }
-
-                        var10 = a.bjk.dnp().intValue();
-                     }
-
-                     if (axx == null) {
-                        break label185;
-                     }
-
-                     if (var10 != 1) {
-                        var10 = 0;
-                        break label185;
-                     }
-                  }
-
-                  var10 = 1;
-               }
-
-               axxxxx = (boolean)var10;
-            }
-
-            label171: {
-               label170: {
-                  label262: {
-                     var12 = axxxxx;
-                     if (axx != null) {
-                        if (axxxxx == 0) {
-                           break label262;
-                        }
-
-                        var12 = axxxx;
-                     }
-
-                     if (axx != null) {
-                        if (var12 != 0) {
-                           break label262;
-                        }
-
-                        var12 = a.hjm;
-                     }
-
-                     if (axx != null) {
-                        if (var12 != 0) {
-                           break label262;
-                        }
-
-                        a.eeq = true;
-                        a.hjm = true;
-                        var12 = axxx;
-                     }
-
-                     if (axx == null) {
-                        break label171;
-                     }
-
-                     if (var12 == 0) {
-                        break label170;
-                     }
-
-                     a.fmm = -1;
-                     if (axx != null) {
-                        break label170;
-                     }
-                  }
-
-                  a.eeq = false;
-               }
-
-               var12 = chi.field_1724.method_24828();
-            }
-
-            if (axx != null) {
-               if (var12 == 0) {
-                  return;
-               }
-
-               var12 = chi.field_1690.field_1903.method_1434();
-            }
-
-            if (var12 == 0) {
-               a.hjm = false;
-            }
-
+         if (var12 == 0) {
             return;
          }
 
-         var10000 = a;
+         var12 = chi.field_1690.field_1903.method_1434();
+
+         if (var12 == 0) {
+            a.hjm = false;
+         }
+
+         return;
       }
+
+      var10000 = a;
 
       var10000.hjm = false;
    }
@@ -2418,26 +1955,18 @@ public class Scaffold extends guu {
             long a = Scaffold.a ^ 109687426923737L;
             int[] var3 = ClientSetup.abu();
             boolean var10000 = a.gez.dnp();
-            if (var3 != null) {
-               if (var10000) {
-                  var4 = chi.field_1690.field_1903;
-                  if (var3 == null) {
-                     break label40;
-                  }
+            if (var10000) {
+               var4 = chi.field_1690.field_1903;
 
-                  if (chi.field_1690.field_1903.method_1434()) {
-                     var4 = chi.field_1690.field_1904;
-                     break label40;
-                  }
+               if (chi.field_1690.field_1903.method_1434()) {
+                  var4 = chi.field_1690.field_1904;
+                  break label40;
                }
-
-               var5 = a;
-               if (var3 == null) {
-                  break label38;
-               }
-
-               var10000 = a.dsc;
             }
+
+            var5 = a;
+
+            var10000 = a.dsc;
 
             if (var10000) {
                evd.eeo();
@@ -2528,17 +2057,12 @@ public class Scaffold extends guu {
             a = Scaffold.a ^ 47040505262308L;
             ax = ClientSetup.abu();
             var10000 = a.hfi.emb("Modern Watchdog");
-            if (ax != null) {
-               if (!var10000) {
-                  break label126;
-               }
-
-               var10000 = a.aba.dnp();
+            if (!var10000) {
+               break label126;
             }
 
-            if (ax == null) {
-               break label123;
-            }
+            var10000 = a.aba.dnp();
+
 
             if (var10000) {
                var10000 = 1;
@@ -2553,95 +2077,72 @@ public class Scaffold extends guu {
       float axxx = axx != 0 ? chi.field_1724.method_36454() - 180.0F : dqq.ev();
       float axxxx = dqq.czi();
       Object var10 = a.hba;
-      if (ax != null) {
-         label108:
-         if (a.hba != null) {
-            var10000 = evd.bpi();
-            if (ax != null) {
-               if (var10000 == 0) {
-                  break label108;
-               }
-
-               var10000 = axx;
-            }
-
-            if (ax != null) {
-               if (var10000 == 0) {
-                  break label108;
-               }
-
-               var10000 = a.hba.dnc.method_10263();
-            }
-
-            float[] axxxxx = SpeedMMC(var10000, a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
-            axxx = axxxxx[0];
+      label108:
+      if (a.hba != null) {
+         var10000 = evd.bpi();
+         if (var10000 == 0) {
+            break label108;
          }
 
-         var10 = a.gkz.dnp();
+         var10000 = axx;
+
+         if (var10000 == 0) {
+            break label108;
+         }
+
+         var10000 = a.hba.dnc.method_10263();
+
+         float[] axxxxx = SpeedMMC(var10000, a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+         axxx = axxxxx[0];
       }
+
+      var10 = a.gkz.dnp();
 
       String var9 = (String)var10;
       byte var8 = -1;
       var10000 = var9.hashCode();
       label97:
-      if (ax != null) {
-         switch (var10000) {
-            case -654193598:
-               var10000 = var9.equals("Advanced");
-               if (ax == null) {
-                  break label97;
-               }
+      switch (var10000) {
+         case -654193598:
+            var10000 = var9.equals("Advanced");
 
-               if (var10000 == 0) {
-                  break;
-               }
+            if (var10000 == 0) {
+               break;
+            }
 
-               var8 = 0;
-               if (ax != null) {
-                  break;
-               }
-            case -1955878649:
-               var10000 = var9.equals("Normal");
-               if (ax == null) {
-                  break label97;
-               }
+            var8 = 0;
+            break;
+         case -1955878649:
+            var10000 = var9.equals("Normal");
 
-               if (var10000 == 0) {
-                  break;
-               }
+            if (var10000 == 0) {
+               break;
+            }
 
-               var8 = 1;
-               if (ax != null) {
-                  break;
-               }
-            case 2454:
-               var10000 = var9.equals("MC");
-               if (ax == null) {
-                  break label97;
-               }
+            var8 = 1;
+            break;
+         case 2454:
+            var10000 = var9.equals("MC");
 
-               if (var10000 != 0) {
-                  var8 = 2;
-               }
-         }
-
-         var10000 = var8;
+            if (var10000 != 0) {
+               var8 = 2;
+            }
       }
 
-      if (ax != null) {
-         switch (var10000) {
-            case 0:
-               var10000 = bfc.gto(a.hba.aoc(), a.hba.dnc(), true, 5.0F, axxx, axxxx);
-               break;
-            case 1:
-               var10000 = bfc.gto(a.hba.aoc(), a.hba.dnc(), false, 5.0F, axxx, axxxx);
-               break;
-            case 2:
-               var10000 = a.ddd();
-               break;
-            default:
-               var10000 = 1;
-         }
+      var10000 = var8;
+
+      switch (var10000) {
+         case 0:
+            var10000 = bfc.gto(a.hba.aoc(), a.hba.dnc(), true, 5.0F, axxx, axxxx);
+            break;
+         case 1:
+            var10000 = bfc.gto(a.hba.aoc(), a.hba.dnc(), false, 5.0F, axxx, axxxx);
+            break;
+         case 2:
+            var10000 = a.ddd();
+            break;
+         default:
+            var10000 = 1;
       }
 
       return (boolean)var10000;
@@ -2651,54 +2152,31 @@ public class Scaffold extends guu {
       long a = Scaffold.a ^ 81548417848521L;
       int[] ax = ClientSetup.abu();
       class_239 var10000 = chi.field_1765;
-      if (ax != null) {
-         if (chi.field_1765 == null) {
-            return false;
-         }
-
-         var10000 = chi.field_1765;
+      if (chi.field_1765 == null) {
+         return false;
       }
 
-      if (ax != null) {
-         if (var10000.method_17783() != class_240.field_1332) {
-            return false;
-         }
+      var10000 = chi.field_1765;
 
-         var10000 = chi.field_1765;
+      if (var10000.method_17783() != class_240.field_1332) {
+         return false;
       }
+
+      var10000 = chi.field_1765;
 
       class_239 var5 = var10000;
       boolean var6 = var5 instanceof class_3965;
-      if (ax == null) {
-         return var6;
-      } else if (var6) {
-         class_3965 axx = (class_3965)var5;
-         boolean var7 = axx.method_17777().equals(a.hba.dnc());
-         if (ax != null) {
-            if (!var7) {
-               return false;
-            }
-
-            var7 = axx.method_17780().equals(a.hba.aoc());
-         }
-
-         return ax == null ? var7 : var7;
-      } else {
-         return false;
-      }
    }
 
    private class_243 dri() {
       long a = Scaffold.a ^ 95257378059904L;
       int[] ax = ClientSetup.abu();
       aqy var10000 = a.hba;
-      if (ax != null) {
-         if (a.hba == null) {
-            return null;
-         }
-
-         var10000 = a.hba;
+      if (a.hba == null) {
+         return null;
       }
+
+      var10000 = a.hba;
 
       double axx;
       double axxx;
@@ -2710,44 +2188,29 @@ public class Scaffold extends guu {
          axxxx = axxxxx.method_10260() + Math.random();
          class_239 axxxxxx = chi.field_1765;
          int var13 = fto.gwb[a.hba.aoc.ordinal()];
-         if (ax != null) {
-            switch (var13) {
-               case 1:
-                  axxx = axxxxx.method_10264();
-                  if (ax != null) {
-                     break;
-                  }
-               case 2:
-                  axxx = axxxxx.method_10264() + 1;
-                  if (ax != null) {
-                     break;
-                  }
-               case 3:
-                  axxxx = axxxxx.method_10260();
-                  if (ax != null) {
-                     break;
-                  }
-               case 4:
-                  axxxx = axxxxx.method_10260() + 1;
-                  if (ax != null) {
-                     break;
-                  }
-               case 5:
-                  axx = axxxxx.method_10263();
-                  if (ax != null) {
-                     break;
-                  }
-               case 6:
-                  axx = axxxxx.method_10263() + 1;
-            }
-
-            var14 = axxxxxx;
-            if (ax == null) {
-               break label73;
-            }
-
-            var13 = axxxxxx instanceof class_3965;
+         switch (var13) {
+            case 1:
+               axxx = axxxxx.method_10264();
+               break;
+            case 2:
+               axxx = axxxxx.method_10264() + 1;
+               break;
+            case 3:
+               axxxx = axxxxx.method_10260();
+               break;
+            case 4:
+               axxxx = axxxxx.method_10260() + 1;
+               break;
+            case 5:
+               axx = axxxxx.method_10263();
+               break;
+            case 6:
+               axx = axxxxx.method_10263() + 1;
          }
+
+         var14 = axxxxxx;
+
+         var13 = axxxxxx instanceof class_3965;
 
          if (var13 == 0) {
             return new class_243(axx, axxx, axxxx);
@@ -2758,23 +2221,19 @@ public class Scaffold extends guu {
 
       class_3965 axxxxxxx = (class_3965)var14;
       class_3965 var15 = axxxxxxx;
-      if (ax != null) {
-         if (!axxxxxxx.method_17777().equals(a.hba.dnc())) {
-            return new class_243(axx, axxx, axxxx);
-         }
-
-         var15 = axxxxxxx;
+      if (!axxxxxxx.method_17777().equals(a.hba.dnc())) {
+         return new class_243(axx, axxx, axxxx);
       }
 
-      if (ax != null) {
-         if (var15.method_17780() != a.hba.aoc()) {
-            return new class_243(axx, axxx, axxxx);
-         }
+      var15 = axxxxxxx;
 
-         axx = axxxxxxx.method_17784().field_1352;
-         axxx = axxxxxxx.method_17784().field_1351;
-         var15 = axxxxxxx;
+      if (var15.method_17780() != a.hba.aoc()) {
+         return new class_243(axx, axxx, axxxx);
       }
+
+      axx = axxxxxxx.method_17784().field_1352;
+      axxx = axxxxxxx.method_17784().field_1351;
+      var15 = axxxxxxx;
 
       axxxx = var15.method_17784().field_1350;
       return new class_243(axx, axxx, axxxx);
@@ -2792,30 +2251,20 @@ public class Scaffold extends guu {
             class_1799 axxxx = chi.field_1724.method_31548().method_5438(axx);
             class_1792 axxxxx = axxxx.method_7909();
             label32:
-            if (axxx != null) {
-               var10 = axxxxx instanceof class_1747;
-               if (axxx == null) {
-                  break;
+            var10 = axxxxx instanceof class_1747;
+
+            if (var10 != 0) {
+               class_1747 axxxxxx = (class_1747)axxxxx;
+               class_2248 axxxxxxx = axxxxxx.method_7711();
+
+               if (amg.ayj(axxxxxxx)) {
+                  ax += axxxx.method_7947();
                }
-
-               if (var10 != 0) {
-                  class_1747 axxxxxx = (class_1747)axxxxx;
-                  class_2248 axxxxxxx = axxxxxx.method_7711();
-                  if (axxx == null) {
-                     break label32;
-                  }
-
-                  if (amg.ayj(axxxxxxx)) {
-                     ax += axxxx.method_7947();
-                  }
-               }
-
-               axx++;
             }
 
-            if (axxx != null) {
-               continue;
-            }
+            axx++;
+
+            continue;
          }
 
          var10 = ax;
@@ -3017,89 +2466,6 @@ public class Scaffold extends guu {
             var30 = var22.substring(++var29, var29 + var21);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 25328;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/efx", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/efx" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

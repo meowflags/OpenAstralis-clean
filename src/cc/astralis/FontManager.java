@@ -1,19 +1,16 @@
 package cc.astralis;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
+
 import java.lang.invoke.MethodHandles;
-import java.lang.invoke.MethodType;
-import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
-import java.util.HashMap;
+
+
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
+
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
@@ -25,7 +22,7 @@ public final class FontManager {
    private static final long a = 50376844898819L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long e;
 
    public static fll emc(String name, int size) {
@@ -59,20 +56,15 @@ public final class FontManager {
          if (var4.hasNext()) {
             String axxx = (String)var4.next();
             fry axxxx = cjn(axxx);
-            if (ax == null) {
-               break;
-            }
 
             var10000 = (int[])axxxx;
-            if (ax != null) {
-               if (axxxx == null) {
-                  var10001 = (short)8376;
-                  byp("Invalid key: " + axxx);
-                  continue;
-               }
-
-               var10000 = (int[])gfp.remove(axxx);
+            if (axxxx == null) {
+               var10001 = (short)8376;
+               byp("Invalid key: " + axxx);
+               continue;
             }
+
+            var10000 = (int[])gfp.remove(axxx);
 
             bad axxxxx = (bad)var10000;
             fqm(axxxxx);
@@ -88,9 +80,7 @@ public final class FontManager {
                byp("Failed to reinit " + axxx + ": " + var12);
             }
 
-            if (ax != null) {
-               continue;
-            }
+            continue;
          }
 
          int var11 = gfp.size();
@@ -111,13 +101,8 @@ public final class FontManager {
          if (var3.hasNext()) {
             bad axx = (bad)var3.next();
             fqm(axx);
-            if (ax == null) {
-               break;
-            }
 
-            if (ax != null) {
-               continue;
-            }
+            continue;
          }
 
          gfp.clear();
@@ -138,14 +123,12 @@ public final class FontManager {
          fll axxxx = cmr.remove(axx);
          bad axxxxx = gfp.remove(axx);
          bad var8 = axxxxx;
-         if (axxx != null) {
-            fqm(axxxxx);
-            if (axxxx != null) {
-               break label22;
-            }
-
-            var8 = axxxxx;
+         fqm(axxxxx);
+         if (axxxx != null) {
+            break label22;
          }
+
+         var8 = axxxxx;
 
          if (var8 == null) {
             dip("disposeFont: nothing to dispose for " + axx);
@@ -162,13 +145,11 @@ public final class FontManager {
       int axx = a.lastIndexOf((int)e);
       int[] axxx = var10000;
       int var8 = axx;
-      if (axxx != null) {
-         if (axx <= 0) {
-            return null;
-         }
-
-         var8 = axx;
+      if (axx <= 0) {
+         return null;
       }
+
+      var8 = axx;
 
       if (var8 < a.length() - 1) {
          String axxxx = a.substring(0, axx);
@@ -190,29 +171,12 @@ public final class FontManager {
       long ax = FontManager.a ^ 48692170182111L;
       int[] axx = ClientSetup.abu();
       bad var10000 = a;
-      if (axx == null) {
-         try {
-            var10000.bq();
-         } catch (Throwable var5) {
-            String var8 = String.valueOf(var5);
-            byp("Dispose error: " + var8);
-         }
-      } else if (a != null) {
-         label22:
-         try {
-            var10000 = a;
-            break label22;
-         } catch (Throwable var6) {
-            String var7 = String.valueOf(var6);
-            byp("Dispose error: " + var7);
-         }
-      }
    }
 
    private static void dip(String a) {
       long ax = FontManager.a ^ 18501531606771L;
       int[] var3 = ClientSetup.abu();
-      if (var3 != null && bcf) {
+      if (bcf) {
          ClientSetup.ecj.info("[FontManager] " + a);
       }
    }
@@ -336,86 +300,4 @@ public final class FontManager {
       }
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 29198;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/FontManager", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/FontManager" + " : " + var1 + " : " + var2.toString(), var5);
-      }
-   }
 }

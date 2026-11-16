@@ -48,31 +48,25 @@ public class ag implements dlc {
       long ax = ag.a ^ 59614726895504L;
       int[] axx = ClientSetup.abu();
       int var10000 = Objects.isNull(a.gnz);
-      if (axx != null) {
-         if (var10000 != 0) {
-            a.gnz = DirectContext.makeGL();
-         }
-
-         a.cmc = a;
-         a.hai = a;
-         var10000 = Objects.nonNull(a.byk);
+      if (var10000 != 0) {
+         a.gnz = DirectContext.makeGL();
       }
 
-      if (axx != null) {
-         if (var10000 != 0) {
-            a.byk.close();
-         }
+      a.cmc = a;
+      a.hai = a;
+      var10000 = Objects.nonNull(a.byk);
 
-         var10000 = Objects.nonNull(a.enu);
+      if (var10000 != 0) {
+         a.byk.close();
       }
 
-      if (axx != null) {
-         if (var10000 != 0) {
-            a.enu.close();
-         }
+      var10000 = Objects.nonNull(a.enu);
 
-         var10000 = a;
+      if (var10000 != 0) {
+         a.enu.close();
       }
+
+      var10000 = a;
 
       ara var7 = duz.eqv(var10000, a).avs(1);
       duz axxx = var7.fld(8).ern(0).bys(fua.RGBA8).cpb();
@@ -86,29 +80,23 @@ public class ag implements dlc {
       long a = ag.a ^ 115485896193586L;
       int[] ax = ClientSetup.abu();
       ag var10000 = a;
-      if (ax != null) {
-         if (a.gnz == null) {
-            return;
-         }
-
-         var10000 = a;
+      if (a.gnz == null) {
+         return;
       }
 
-      if (ax != null) {
-         if (var10000.byk == null) {
-            return;
-         }
+      var10000 = a;
 
-         var10000 = a;
+      if (var10000.byk == null) {
+         return;
       }
 
-      if (ax != null) {
-         if (var10000.ekn == null) {
-            return;
-         }
+      var10000 = a;
 
-         var10000 = a;
+      if (var10000.ekn == null) {
+         return;
       }
+
+      var10000 = a;
 
       if (var10000.enu != null) {
          class_1041 axx = chi.method_22683();

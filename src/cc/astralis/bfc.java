@@ -34,40 +34,32 @@ public class bfc implements dlc {
       class_3965 axx = ejr(a, a, a);
       int[] axxx = var10000;
       class_3965 var11 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return false;
-         }
-
-         var11 = axx;
+      if (axx == null) {
+         return false;
       }
 
-      if (axxx != null) {
-         if (var11.method_17783() != class_240.field_1332) {
-            return false;
-         }
+      var11 = axx;
 
-         var11 = axx;
+      if (var11.method_17783() != class_240.field_1332) {
+         return false;
       }
+
+      var11 = axx;
 
       class_2338 axxxx = var11.method_17777();
       class_2338 var12 = axxxx;
-      if (axxx != null) {
-         if (axxxx == null) {
-            return false;
-         }
-
-         var12 = axxxx;
+      if (axxxx == null) {
+         return false;
       }
+
+      var12 = axxxx;
 
       boolean var13 = var12.equals(a);
-      if (axxx != null) {
-         if (!var13) {
-            return false;
-         }
-
-         var13 = a;
+      if (!var13) {
+         return false;
       }
+
+      var13 = a;
 
       return axxx == null ? var13 : !var13 || axx.method_17780() == a;
    }
@@ -98,45 +90,33 @@ public class bfc implements dlc {
       class_3965 axx = cb(a, a, a);
       int[] axxx = var10000;
       class_3965 var10 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return false;
-         }
-
-         var10 = axx;
+      if (axx == null) {
+         return false;
       }
+
+      var10 = axx;
 
       int var11 = var10.method_17777().method_10263();
-      if (axxx != null) {
-         if (var11 == a.method_10263()) {
-            int var13 = axx.method_17777().method_10264();
-            if (axxx == null) {
-               return (boolean)var13;
-            }
+      if (var11 == a.method_10263()) {
+         int var13 = axx.method_17777().method_10264();
 
-            if (var13 == a.method_10264()) {
-               int var14 = axx.method_17777().method_10260();
-               if (axxx == null) {
-                  return (boolean)var14;
+         if (var13 == a.method_10264()) {
+            int var14 = axx.method_17777().method_10260();
+
+            if (var14 == a.method_10260()) {
+               boolean var12 = a;
+               if (a) {
+                  return axx.method_17780() == a;
                }
 
-               if (var14 == a.method_10260()) {
-                  boolean var12 = a;
-                  if (axxx != null) {
-                     if (a) {
-                        return axx.method_17780() == a;
-                     }
+               var12 = true;
 
-                     var12 = true;
-                  }
-
-                  return var12;
-               }
+               return var12;
             }
          }
-
-         var11 = 0;
       }
+
+      var11 = 0;
 
       return (boolean)var11;
    }
@@ -156,23 +136,19 @@ public class bfc implements dlc {
       class_1297 axxxx = chi.method_1560();
       if (axxxx != null) {
          class_310 var12 = chi;
-         if (axxx != null) {
-            if (chi.field_1687 == null) {
-               return;
-            }
-
-            var12 = chi;
+         if (chi.field_1687 == null) {
+            return;
          }
+
+         var12 = chi;
 
          class_746 var13 = var12.field_1724;
-         if (axxx != null) {
-            if (var12.field_1724 == null) {
-               return;
-            }
-
-            class_10209.method_64146().method_15396(b);
-            var13 = chi.field_1724;
+         if (var12.field_1724 == null) {
+            return;
          }
+
+         class_10209.method_64146().method_15396(b);
+         var13 = chi.field_1724;
 
          label37: {
             label36: {
@@ -180,19 +156,15 @@ public class bfc implements dlc {
                double axxxxxx = chi.field_1724.method_55755();
                class_239 axxxxxxx = eut(axxxx, axxxxx, axxxxxx, 1.0F, a);
                class_239 var14 = axxxxxxx;
-               if (axxx != null) {
-                  if (!(axxxxxxx instanceof class_3966)) {
-                     break label36;
-                  }
-
-                  var14 = axxxxxxx;
+               if (!(axxxxxxx instanceof class_3966)) {
+                  break label36;
                }
+
+               var14 = axxxxxxx;
 
                class_3966 axxxxxxxx = (class_3966)var14;
                aub = axxxxxxxx;
-               if (axxx != null) {
-                  break label37;
-               }
+               break label37;
             }
 
             aub = null;
@@ -263,13 +235,11 @@ public class bfc implements dlc {
       class_243 axx = a.method_17784();
       int[] axxx = var10000;
       class_243 var10 = axx;
-      if (axxx != null) {
-         if (axx.method_24802(a, a)) {
-            return a;
-         }
-
-         var10 = a.method_17784();
+      if (axx.method_24802(a, a)) {
+         return a;
       }
+
+      var10 = a.method_17784();
 
       class_243 axxxx = var10;
       class_2350 axxxxx = class_2350.method_10142(axxxx.field_1352 - a.field_1352, axxxx.field_1351 - a.field_1351, axxxx.field_1350 - a.field_1350);
@@ -298,30 +268,4 @@ public class bfc implements dlc {
       aub = null;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

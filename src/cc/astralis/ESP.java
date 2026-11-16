@@ -53,7 +53,7 @@ public class ESP extends guu {
    private static final long a = 41318179238646L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -126,26 +126,21 @@ public class ESP extends guu {
 
    @gdz(0)
    private void awu(ctt a) {
-      long ax = ESP.a ^ 110635434909912L;
       int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (axx != null) {
-         if (chi.method_1561().field_4686 == null) {
+      if (chi.method_1561().field_4686 == null) {
+         return;
+      }
+
+      var10000 = chi;
+
+      if (var10000.field_1687 != null) {
+         var10000 = chi;
+         if (chi.field_1724 == null) {
             return;
          }
 
          var10000 = chi;
-      }
-
-      if (var10000.field_1687 != null) {
-         var10000 = chi;
-         if (axx != null) {
-            if (chi.field_1724 == null) {
-               return;
-            }
-
-            var10000 = chi;
-         }
 
          Iterator var5 = var10000.field_1687.method_18112().iterator();
 
@@ -164,18 +159,13 @@ public class ESP extends guu {
                label309: {
                   axxx = (class_1297)var5.next();
                   boolean var36 = axxx instanceof class_1309;
-                  if (axx != null) {
-                     if (!var36) {
-                        continue label291;
-                     }
-
-                     var37 = axxx;
-                     if (axx == null) {
-                        break label309;
-                     }
-
-                     var36 = axxx instanceof class_1657;
+                  if (!var36) {
+                     continue label291;
                   }
+
+                  var37 = axxx;
+
+                  var36 = axxx instanceof class_1657;
 
                   if (!var36) {
                      continue label291;
@@ -185,46 +175,33 @@ public class ESP extends guu {
                }
 
                label264: {
-                  if (axx != null) {
-                     if (var37 == chi.field_1724) {
-                        var38 = chi.field_1690.method_31044().method_31034();
-                        if (axx == null) {
-                           break label264;
-                        }
+                  if (var37 == chi.field_1724) {
+                     var38 = chi.field_1690.method_31044().method_31034();
 
-                        if (var38 != 0) {
-                           continue label291;
-                        }
+                     if (var38 != 0) {
+                        continue label291;
                      }
-
-                     var37 = axxx;
                   }
+
+                  var37 = axxx;
 
                   var38 = var37 instanceof class_1657;
                }
 
                label311: {
                   label274:
-                  if (axx != null) {
-                     if (var38 != 0) {
-                        class_1657 axxxxx = (class_1657)axxx;
-                        var38 = axxxxx.method_5628();
-                        if (axx == null) {
-                           break label274;
-                        }
+                  if (var38 != 0) {
+                     class_1657 axxxxx = (class_1657)axxx;
+                     var38 = axxxxx.method_5628();
 
-                        if (var38 == chi.field_1724.method_5628()) {
-                           continue label291;
-                        }
+                     if (var38 == chi.field_1724.method_5628()) {
+                        continue label291;
                      }
-
-                     var39 = (class_1657)axxx;
-                     if (axx == null) {
-                        break label311;
-                     }
-
-                     var38 = AntiBot.cnv((class_1657)var39);
                   }
+
+                  var39 = (class_1657)axxx;
+
+                  var38 = AntiBot.cnv((class_1657)var39);
 
                   if (var38 != 0) {
                      return;
@@ -270,144 +247,109 @@ public class ESP extends guu {
 
                   class_243 axxxxxxxxxxxxxx = axxxxxxxxxxx[axxxxxxxxxxxxx];
                   class_243 axxxxxxxxxxxxxxx = guf.at(axxxxxxxxxxxxxx);
-                  if (axx != null) {
-                     double var51;
-                     var35 = (var51 = axxxxxxxxxxxxxxx.field_1350 - 0.0) == 0.0 ? 0 : (var51 < 0.0 ? -1 : 1);
-                     if (axx == null) {
-                        break;
+                  double var51;
+                  var35 = (var51 = axxxxxxxxxxxxxxx.field_1350 - 0.0) == 0.0 ? 0 : (var51 < 0.0 ? -1 : 1);
+
+                  if (var35 > 0 && axxxxxxxxxxxxxxx.field_1350 < 1.0) {
+                     Vector4d var42 = axxxx;
+                     if (axxxx == null) {
+                        axxxx = new Vector4d(axxxxxxxxxxxxxxx.field_1352, axxxxxxxxxxxxxxx.field_1351, axxxxxxxxxxxxxxx.field_1350, 0.0);
                      }
 
-                     if (var35 > 0 && axxxxxxxxxxxxxxx.field_1350 < 1.0) {
-                        Vector4d var42 = axxxx;
-                        if (axx != null) {
-                           if (axxxx == null) {
-                              axxxx = new Vector4d(axxxxxxxxxxxxxxx.field_1352, axxxxxxxxxxxxxxx.field_1351, axxxxxxxxxxxxxxx.field_1350, 0.0);
-                           }
+                     axxxx.x = Math.min(axxxxxxxxxxxxxxx.field_1352, axxxx.x);
+                     axxxx.y = Math.min(axxxxxxxxxxxxxxx.field_1351, axxxx.y);
+                     axxxx.z = Math.max(axxxxxxxxxxxxxxx.field_1352, axxxx.z);
+                     var42 = axxxx;
 
-                           axxxx.x = Math.min(axxxxxxxxxxxxxxx.field_1352, axxxx.x);
-                           axxxx.y = Math.min(axxxxxxxxxxxxxxx.field_1351, axxxx.y);
-                           axxxx.z = Math.max(axxxxxxxxxxxxxxx.field_1352, axxxx.z);
-                           var42 = axxxx;
-                        }
-
-                        var42.w = Math.max(axxxxxxxxxxxxxxx.field_1351, axxxx.w);
-                     }
-
-                     axxxxxxxxxxxxx++;
+                     var42.w = Math.max(axxxxxxxxxxxxxxx.field_1351, axxxx.w);
                   }
 
-                  if (axx == null) {
-                     break label288;
-                  }
+                  axxxxxxxxxxxxx++;
+
                }
             }
 
             label324: {
                Vector4d var43 = axxxx;
-               if (axx != null) {
-                  if (axxxx == null) {
-                     break label324;
-                  }
-
-                  var43 = axxxx;
+               if (axxxx == null) {
+                  break label324;
                }
+
+               var43 = axxxx;
 
                float axxxxxx = (float)var43.x;
                float axxxxxxx = (float)axxxx.y;
                float axxxxxxxx = (float)axxxx.z;
                float axxxxxxxxx = (float)axxxx.w;
                boolean var44 = a.baz.dnp();
-               if (axx != null) {
-                  if (var44) {
-                     dmp.dxg(axxxxxx, axxxxxxx, axxxxxxxx, axxxxxxxxx, a.evq.dnp(), a.fjt.dnp());
-                  }
-
-                  var44 = a.gmw.dnp();
+               if (var44) {
+                  dmp.dxg(axxxxxx, axxxxxxx, axxxxxxxx, axxxxxxxxx, a.evq.dnp(), a.fjt.dnp());
                }
+
+               var44 = a.gmw.dnp();
 
                label213:
-               if (axx != null) {
-                  label240: {
-                     if (var44) {
-                        var10000 = a.bwb.dnp();
-                        if (axx == null) {
-                           break label240;
-                        }
+               label240: {
+                  if (var44) {
+                     var10000 = a.bwb.dnp();
 
-                        if (var10000 != null) {
-                           var44 = a.bwb.dnp().isEmpty();
-                           if (axx == null) {
-                              break label213;
+                     if (var10000 != null) {
+                        var44 = a.bwb.dnp().isEmpty();
+
+                        if (!var44) {
+                           try {
+                              String[] axxxxxxxxxx = hee.asu(a.bwb.dnp());
+                              a.goo = new String[axxxxxxxxxx.length];
+                              int axxxxxxxxxxx = 0;
+
+                              while (axxxxxxxxxxx < axxxxxxxxxx.length) {
+                                 String axxxxxxxxxxxx = chi.field_1697.getAbsolutePath() + "/" + axxxxxxxxxx[axxxxxxxxxxx];
+                                 a.goo[axxxxxxxxxxx] = axxxxxxxxxxxx;
+                                 axxxxxxxxxxx++;
+                              }
+                           } catch (IOException var24) {
+                              var24.printStackTrace();
                            }
 
-                           if (!var44) {
-                              try {
-                                 String[] axxxxxxxxxx = hee.asu(a.bwb.dnp());
-                                 a.goo = new String[axxxxxxxxxx.length];
-                                 int axxxxxxxxxxx = 0;
+                           var44 = a.gcl.fsc(a.dhj.dnp().longValue());
 
-                                 while (axxxxxxxxxxx < axxxxxxxxxx.length) {
-                                    String axxxxxxxxxxxx = chi.field_1697.getAbsolutePath() + "/" + axxxxxxxxxx[axxxxxxxxxxx];
-                                    a.goo[axxxxxxxxxxx] = axxxxxxxxxxxx;
-                                    axxxxxxxxxxx++;
-                                    if (axx == null || axx == null) {
-                                       break;
-                                    }
-                                 }
-                              } catch (IOException var24) {
-                                 var24.printStackTrace();
-                              }
-
-                              var44 = a.gcl.fsc(a.dhj.dnp().longValue());
-                              if (axx == null) {
-                                 break label213;
-                              }
-
-                              if (var44) {
-                                 label319: {
-                                    a.ccz++;
-                                    int var46 = a.ccz;
-                                    if (axx != null) {
-                                       if (a.ccz > a.goo.length - 1) {
-                                          a.ccz = 0;
-                                       }
-
-                                       gpx = a.goo[a.ccz];
-                                       var47 = a;
-                                       if (axx == null) {
-                                          break label319;
-                                       }
-
-                                       var46 = a.ffi.containsKey(gpx);
-                                    }
-
-                                    if (var46 == 0) {
-                                       a.ffi.put(gpx, chz.gcm(gpx));
-                                    }
-
-                                    var47 = a;
+                           if (var44) {
+                              label319: {
+                                 a.ccz++;
+                                 int var46 = a.ccz;
+                                 if (a.ccz > a.goo.length - 1) {
+                                    a.ccz = 0;
                                  }
 
-                                 var47.gcl.glr();
+                                 gpx = a.goo[a.ccz];
+                                 var47 = a;
+
+                                 var46 = a.ffi.containsKey(gpx);
+
+                                 if (var46 == 0) {
+                                    a.ffi.put(gpx, chz.gcm(gpx));
+                                 }
+
+                                 var47 = a;
                               }
+
+                              var47.gcl.glr();
                            }
                         }
                      }
-
-                     var10000 = a.gsw.dnp();
                   }
 
-                  var44 = (Boolean)var10000;
+                  var10000 = a.gsw.dnp();
                }
 
-               label321: {
-                  if (axx != null) {
-                     if (!var44) {
-                        break label321;
-                     }
+               var44 = (Boolean)var10000;
 
-                     var44 = a.ciu.dnp();
+               label321: {
+                  if (!var44) {
+                     break label321;
                   }
+
+                  var44 = a.ciu.dnp();
 
                   if (var44) {
                      dmp.gst(axxxxxx - 1.0F, axxxxxxx, axxxxxx + 0.5F, axxxxxxxxx + 0.5F, Color.BLACK);
@@ -425,13 +367,11 @@ public class ESP extends guu {
                float axxxxxxxxxx = ((class_1657)axxx).method_6032() / ((class_1657)axxx).method_6063();
                float axxxxxxxxxxx = axxxxxxxxx + (axxxxxxx - axxxxxxxxx) * axxxxxxxxxx;
                boolean var48 = a.gqe.dnp();
-               if (axx != null) {
-                  if (!var48) {
-                     break label324;
-                  }
-
-                  var48 = a.drb.dnp();
+               if (!var48) {
+                  break label324;
                }
+
+               var48 = a.drb.dnp();
 
                if (var48) {
                   float axxxxxxxxxxxx = 0.3F;
@@ -443,9 +383,6 @@ public class ESP extends guu {
                dmp.dxg(axxxxxx - 5.0F, axxxxxxxxxxx, axxxxxx - 3.0F, axxxxxxxxx, a.ba.dnp(), a.abb.dnp());
             }
 
-            if (axx == null) {
-               return;
-            }
          }
       }
    }
@@ -598,89 +535,6 @@ public class ESP extends guu {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 24123;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/cc", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/cc" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

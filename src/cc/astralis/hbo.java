@@ -69,15 +69,13 @@ public class hbo implements ago {
       axx.addProperty(var8[4], a.djp);
       JsonObject var10 = axx;
       String[] var12 = var8;
-      if (axxxx != null) {
-         axx.add(var8[5], a.exe);
-         var10 = axx;
-         if (axxx == null) {
-            return axx;
-         }
-
-         var12 = new String[2];
+      axx.add(var8[5], a.exe);
+      var10 = axx;
+      if (axxx == null) {
+         return axx;
       }
+
+      var12 = new String[2];
 
       cdr.apm(var12);
       return var10;
@@ -96,36 +94,26 @@ public class hbo implements ago {
          JsonObject var14 = a;
          String[] var10 = hbo.a;
          String var18 = var10[0];
-         if (axxxx != null) {
-            if (!a.has(var18)) {
-               break label67;
-            }
-
-            var14 = a;
-            var18 = var10[0];
+         if (!a.has(var18)) {
+            break label67;
          }
+
+         var14 = a;
+         var18 = var10[0];
 
          JsonElement axxxxxx = var14.get(var18);
          boolean var15 = axxxxxx.isJsonObject();
-         if (axxxx != null) {
-            label56: {
-               if (var15) {
-                  var16 = axxxxxx.getAsJsonObject();
-                  if (axxxx == null) {
-                     break label56;
-                  }
+         label56: {
+            if (var15) {
+               var16 = axxxxxx.getAsJsonObject();
 
-                  axx = var16;
-                  if (axxxxx == null) {
-                     break label67;
-                  }
-               }
-
-               var16 = axxxxxx;
+               axx = var16;
             }
 
-            var15 = var16.isJsonPrimitive();
+            var16 = axxxxxx;
          }
+
+         var15 = var16.isJsonPrimitive();
 
          if (var15 && axxxxxx.getAsJsonPrimitive().isString()) {
             try {
@@ -558,10 +546,6 @@ public class hbo implements ago {
 
          byte[] var10;
          try {
-            if (var9 == null) {
-               var9 = new Object[]{Cipher.getInstance("DES/CBC/NoPadding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               e.put(var8, var9);
-            }
 
             DESKeySpec var11 = new DESKeySpec(var4);
             SecretKey var12 = ((SecretKeyFactory)var9[1]).generateSecret(var11);
@@ -632,10 +616,6 @@ public class hbo implements ago {
 
          byte[] var10;
          try {
-            if (var9 == null) {
-               var9 = new Object[]{Cipher.getInstance("DES/CBC/NoPadding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               h.put(var8, var9);
-            }
 
             DESKeySpec var11 = new DESKeySpec(var4);
             SecretKey var12 = ((SecretKeyFactory)var9[1]).generateSecret(var11);

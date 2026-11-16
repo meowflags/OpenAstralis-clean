@@ -7,7 +7,6 @@ public class hcr extends cdr implements dlc {
    private boolean gye;
    private static int[] fkp;
    private static int afq;
-   private static final long c = 24842422896400L;
 
    public hcr(guu parentClass, String name) {
       a.hdk = a;
@@ -17,26 +16,20 @@ public class hcr extends cdr implements dlc {
    public void hkh(boolean hooked) {
       int[] var4 = ClientSetup.abu();
       hcr var10000 = a;
-      if (var4 != null) {
-         a.cum = a;
-         if (a) {
-            var10000 = a;
-            if (var4 != null) {
-               if (!a.hdk.dsv()) {
-                  return;
-               }
-
-               var10000 = a;
-            }
-
-            var10000.dil();
-            if (var4 != null) {
-               return;
-            }
+      a.cum = a;
+      if (a) {
+         var10000 = a;
+         if (!a.hdk.dsv()) {
+            return;
          }
 
          var10000 = a;
+
+         var10000.dil();
+         return;
       }
+
+      var10000 = a;
 
       var10000.cbw();
    }
@@ -60,9 +53,6 @@ public class hcr extends cdr implements dlc {
          ffn<?> axxx = var5[var7];
          a.hdk.beb(axxx.bih(a::gph));
          var7++;
-         if (axx == null) {
-            break;
-         }
       }
    }
 

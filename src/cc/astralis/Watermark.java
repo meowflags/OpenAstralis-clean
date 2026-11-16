@@ -30,7 +30,7 @@ public class Watermark extends guu {
    private static final long a = 58791830616871L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -63,45 +63,37 @@ public class Watermark extends guu {
          a.efe(a.doa.dnp());
          axx = var10000;
          IMediaSession var25 = fow.cza;
-         if (axx != null) {
-            if (fow.cza == null) {
-               var26 = null;
-               break label141;
-            }
-
-            var25 = fow.cza;
+         if (fow.cza == null) {
+            var26 = null;
+            break label141;
          }
+
+         var25 = fow.cza;
 
          var26 = var25.getMedia();
       }
 
       MediaInfo axxx = var26;
       var26 = axxx;
-      if (axx != null) {
-         if (axxx == null) {
-            return;
-         }
-
-         var26 = axxx;
+      if (axxx == null) {
+         return;
       }
+
+      var26 = axxx;
 
       label134: {
          label133: {
             byte[] axxxx = var26.getArtworkPng();
             byte[] var28 = axxxx;
-            if (axx != null) {
-               if (axxxx == null) {
-                  break label133;
-               }
-
-               var28 = axxxx;
+            if (axxxx == null) {
+               break label133;
             }
+
+            var28 = axxxx;
 
             if (var28.length > 0) {
                a.fms = hcu.fkx(new ByteArrayInputStream(axxxx));
-               if (axx != null) {
-                  break label134;
-               }
+               break label134;
             }
          }
 
@@ -114,29 +106,25 @@ public class Watermark extends guu {
          axxxxx = (int)a.gss.grp();
          axxxxxx = (int)a.gss.azb();
          long var29 = axxx.getDuration();
-         if (axx != null) {
-            if (var29 <= 0L) {
-               var30 = 0.0;
-               break label124;
-            }
-
-            var29 = axxx.getPosition();
+         if (var29 <= 0L) {
+            var30 = 0.0;
+            break label124;
          }
+
+         var29 = axxx.getPosition();
 
          var30 = (double)var29 / axxx.getDuration();
       }
 
       double axxxxxxx = var30;
-      if (axx != null) {
-         if (axxxxxxx != a.dkr) {
-            a.gqt.bpt(a.gqt.hjo());
-            a.gqt.gbi(axxxxxxx);
-            a.gqt.dsw();
-            a.dkr = axxxxxxx;
-         }
-
-         a.gqt.dwm(axxxxxxx);
+      if (axxxxxxx != a.dkr) {
+         a.gqt.bpt(a.gqt.hjo());
+         a.gqt.gbi(axxxxxxx);
+         a.gqt.dsw();
+         a.dkr = axxxxxxx;
       }
+
+      a.gqt.dwm(axxxxxxx);
 
       String axxxxxxxx = chh(gkn(axxx.getTitle()));
       String axxxxxxxxx = chh(gkn(axxx.getArtist()));
@@ -145,12 +133,10 @@ public class Watermark extends guu {
       String axxxxxxxxxx = var31 + " / " + var10001;
       double axxxxxxxxxxx = a.gqt.hjo();
       short var33 = "Modern".equals(a.doa.dnp());
-      if (axx != null) {
-         if (var33 != 0) {
-            var33 = 250;
-         } else {
-            var33 = 210;
-         }
+      if (var33 != 0) {
+         var33 = 250;
+      } else {
+         var33 = 210;
       }
 
       short axxxxxxxxxxxx = var33;
@@ -159,20 +145,15 @@ public class Watermark extends guu {
          String var21 = axxxxxxxxxxxxxx.eqi.dnp();
          byte var22 = -1;
          int var37 = var21.hashCode();
-         if (axx != null) {
-            switch (var37) {
-               case -1656737386:
-                  var37 = var21.equals("Rainbow");
-                  if (axx == null) {
-                     break;
-                  }
+         switch (var37) {
+            case -1656737386:
+               var37 = var21.equals("Rainbow");
 
-                  if (var37 != 0) {
-                     var22 = 0;
-                  }
-               default:
-                  var37 = var22;
-            }
+               if (var37 != 0) {
+                  var22 = 0;
+               }
+            default:
+               var37 = var22;
          }
          Color axxxxxxxxxxxxxxx = switch (var37) {
             case 0 -> {
@@ -183,20 +164,15 @@ public class Watermark extends guu {
          var21 = axxxxxxxxxxxxxx.eqi.dnp();
          var22 = -1;
          int var40 = var21.hashCode();
-         if (axx != null) {
-            switch (var40) {
-               case -1656737386:
-                  var40 = var21.equals("Rainbow");
-                  if (axx == null) {
-                     break;
-                  }
+         switch (var40) {
+            case -1656737386:
+               var40 = var21.equals("Rainbow");
 
-                  if (var40 != 0) {
-                     var22 = 0;
-                  }
-               default:
-                  var40 = var22;
-            }
+               if (var40 != 0) {
+                  var22 = 0;
+               }
+            default:
+               var40 = var22;
          }
          Color axxxxxxxxxxxxxxxx = switch (var40) {
             case 0 -> {
@@ -207,9 +183,7 @@ public class Watermark extends guu {
          float var52 = axxxxx;
          float var57 = axxxxxx;
          a.edh(var52, var57, axxxxxxxxxxxx, 60, axxxxxxxx, axxxxxxxxx, axxxxxxxxxx, axxxxxxxxxxx, axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxx);
-         if (axx != null) {
-            return;
-         }
+         return;
       }
 
       float var53 = axxxxx;
@@ -226,14 +200,12 @@ public class Watermark extends guu {
          ax = Watermark.a ^ 72569794695578L;
          axx = ClientSetup.abu();
          IMediaSession var10000 = fow.cza;
-         if (axx != null) {
-            if (fow.cza == null) {
-               var13 = null;
-               break label73;
-            }
-
-            var10000 = fow.cza;
+         if (fow.cza == null) {
+            var13 = null;
+            break label73;
          }
+
+         var10000 = fow.cza;
 
          var13 = var10000.getMedia();
       }
@@ -243,12 +215,10 @@ public class Watermark extends guu {
          int axxxx = (int)a.gss.grp();
          int axxxxx = (int)a.gss.azb();
          short var15 = "Modern".equals(a.doa.dnp());
-         if (axx != null) {
-            if (var15 != 0) {
-               var15 = 250;
-            } else {
-               var15 = 210;
-            }
+         if (var15 != 0) {
+            var15 = 250;
+         } else {
+            var15 = 210;
          }
 
          short axxxxxx;
@@ -257,43 +227,31 @@ public class Watermark extends guu {
          byte var11 = -1;
          var19 = var10.hashCode();
          label64:
-         if (axx != null) {
-            switch (var19) {
-               case -1984932033:
-                  var19 = var10.equals("Modern");
-                  if (axx == null) {
-                     break label64;
-                  }
+         switch (var19) {
+            case -1984932033:
+               var19 = var10.equals("Modern");
 
-                  if (var19 == 0) {
-                     break;
-                  }
+               if (var19 == 0) {
+                  break;
+               }
 
-                  var11 = 0;
-                  if (axx != null) {
-                     break;
-                  }
-               case -2022711319:
-                  var19 = var10.equals("Legacy");
-                  if (axx == null) {
-                     break label64;
-                  }
+               var11 = 0;
+               break;
+            case -2022711319:
+               var19 = var10.equals("Legacy");
 
-                  if (var19 != 0) {
-                     var11 = 1;
-                  }
-            }
-
-            var19 = var11;
+               if (var19 != 0) {
+                  var11 = 1;
+               }
          }
+
+         var19 = var11;
 
          switch (var19) {
             case 0:
                float axxxxxxxx = 16.0F;
                dmp.fnq(axxxx, axxxxx, axxxxxx, 60.0F, 16.0F);
-               if (axx != null) {
-                  break;
-               }
+               break;
             case 1:
                dmp.fzn(axxxx, axxxxx, axxxxxx, 60.0F);
          }
@@ -325,25 +283,21 @@ public class Watermark extends guu {
          float var49 = axxxxxxxx;
          float var62 = 8.0F;
          Color var68 = a;
-         if (axx != null) {
-            dmp.dyl(axxx, var35, axxxxxxxx, 8.0F, a, a, false);
-            if (a.fms != null) {
-               float var24 = a + 3.0F;
-               float var36 = a + 3.0F;
-               float var50 = axxxxx;
-               float var63 = axxxxx;
-               dmp.gnj(var24, var36, var50, var63, 3.0F, a.fms, dec.ceu(Color.white, 255));
-               if (axx != null) {
-                  break label41;
-               }
-            }
-
-            var23 = a + 3.0F;
-            var35 = a + 3.0F;
-            var49 = a + 3.0F + axxxxx;
-            var62 = a + 3.0F + axxxxx;
-            var68 = new Color(60, 60, 60, 200);
+         dmp.dyl(axxx, var35, axxxxxxxx, 8.0F, a, a, false);
+         if (a.fms != null) {
+            float var24 = a + 3.0F;
+            float var36 = a + 3.0F;
+            float var50 = axxxxx;
+            float var63 = axxxxx;
+            dmp.gnj(var24, var36, var50, var63, 3.0F, a.fms, dec.ceu(Color.white, 255));
+            break label41;
          }
+
+         var23 = a + 3.0F;
+         var35 = a + 3.0F;
+         var49 = a + 3.0F + axxxxx;
+         var62 = a + 3.0F + axxxxx;
+         var68 = new Color(60, 60, 60, 200);
 
          dmp.gst(var23, var35, var49, var62, var68);
       }
@@ -352,24 +306,19 @@ public class Watermark extends guu {
       label44: {
          int var25 = a.length();
          short var38 = 25;
-         if (axx != null) {
-            if (var25 > 25) {
-               var28 = a.substring(0, 25);
-               var38 = 5655;
-               a = var28 + "...";
-            }
-
-            var38 = 32285;
-            FontManager.emc("Sf-Ui", 12).ebb(a, axxx, a + 3.0F, Color.white);
-            var28 = a;
-            if (axx == null) {
-               break label44;
-            }
-
-            var25 = a.length();
-            var38 = 22740;
-            var38 = 30;
+         if (var25 > 25) {
+            var28 = a.substring(0, 25);
+            var38 = 5655;
+            a = var28 + "...";
          }
+
+         var38 = 32285;
+         FontManager.emc("Sf-Ui", 12).ebb(a, axxx, a + 3.0F, Color.white);
+         var28 = a;
+
+         var25 = a.length();
+         var38 = 22740;
+         var38 = 30;
 
          if (var25 > var38) {
             var28 = a.substring(0, 30);
@@ -412,25 +361,21 @@ public class Watermark extends guu {
                a,
                16.0F,
                new Color(
-                  e<"j">(27619, 4068588166981783577L ^ ax),
-                  e<"j">(7022, 8613853983823847561L ^ ax),
-                  e<"j">(28551, 166862022156883014L ^ ax),
+                  15,
+                  15,
+                  18,
                   axxxxxxxxx.fug.dnp().intValue()
                )
             );
             axxxx = a + axxx + 25.0F;
             axxxxx = a - axxx - 35.0F;
-            if (axx != null) {
-               if (a.fms == null) {
-                  break label54;
-               }
-
-               dmp.gnj(a + 10.0F, a + 10.0F, axxx, axxx, 12.0F, a.fms, null);
+            if (a.fms == null) {
+               break label54;
             }
 
-            if (axx != null) {
-               break label55;
-            }
+            dmp.gnj(a + 10.0F, a + 10.0F, axxx, axxx, 12.0F, a.fms, null);
+
+            break label55;
          }
 
          dmp.aho(
@@ -439,8 +384,8 @@ public class Watermark extends guu {
             axxx,
             axxx,
             12.0F,
-            new Color(e<"j">(3904, 516052335017391246L ^ ax), e<"j">(31562, 191607641346113687L ^ ax), e<"j">(31893, 4381333555839502184L ^ ax)),
-            new Color(e<"j">(3554, 2777160588171212327L ^ ax), e<"j">(4075, 6274918343930541085L ^ ax), e<"j">(26918, 350491456962663115L ^ ax)),
+            new Color(55, 55, 65),
+            new Color(35, 35, 45),
             true
          );
       }
@@ -456,42 +401,37 @@ public class Watermark extends guu {
             new Color(0, 0, 0, 0),
             2.0F,
             new Color(
-               e<"j">(4282, 4140171899396516696L ^ ax),
-               e<"j">(4282, 4140171899396516696L ^ ax),
-               e<"j">(4282, 4140171899396516696L ^ ax),
-               e<"j">(4075, 6274918343930541085L ^ ax)
+               255,
+               255,
+               255,
+               35
             )
          );
          int var23 = a.length();
-         int var10001 = e<"j">(20798, 2255389738105252585L ^ ax);
-         if (axx != null) {
-            if (var23 > var10001) {
-               a = a.substring(0, e<"j">(12827, 5897084761794103746L ^ ax)) + b<"d">(24924, 3531644415791360906L ^ ax);
-            }
-
-            FontManager.emc(b<"d">(2662, 4159493506368733375L ^ ax), e<"j">(24781, 5987274366644230927L ^ ax)).ebb(a, axxxx, a + 10.0F, Color.WHITE);
-            var24 = a;
-            if (axx == null) {
-               break label58;
-            }
-
-            var23 = a.length();
-            var10001 = e<"j">(20677, 5178687948571487014L ^ ax);
+         int var10001 = 20;
+         if (var23 > var10001) {
+            a = a.substring(0, 20) + "...";
          }
+
+         FontManager.emc("Product Sans Bold", 14).ebb(a, axxxx, a + 10.0F, Color.WHITE);
+         var24 = a;
+
+         var23 = a.length();
+         var10001 = 24;
 
          if (var23 > var10001) {
-            a = a.substring(0, e<"j">(17894, 2507461685777186323L ^ ax)) + b<"d">(24924, 3531644415791360906L ^ ax);
+            a = a.substring(0, 24) + "...";
          }
 
-         var24 = b<"d">(21406, 8253681424776124751L ^ ax);
+         var24 = "Product Sans Regular";
       }
 
-      FontManager.emc(var24, e<"j">(16046, 1412814320542008696L ^ ax))
+      FontManager.emc(var24, 12)
          .ebb(
             a,
             axxxx,
             a + 10.0F + 16.0F,
-            new Color(e<"j">(1591, 9211605380096425455L ^ ax), e<"j">(8877, 1784978652227852641L ^ ax), e<"j">(7256, 6856773053116999607L ^ ax))
+            new Color(170, 170, 175)
          );
       float axxxxxxxxxx = a + a - 10.0F - 7.0F;
       float axxxxxxxxxxx = 8.0F;
@@ -502,19 +442,17 @@ public class Watermark extends guu {
          axxxxx,
          8.0F,
          5.0F,
-         new Color(e<"j">(22740, 7663361068340912928L ^ ax), e<"j">(22740, 7663361068340912928L ^ ax), e<"j">(4075, 6274918343930541085L ^ ax))
+         new Color(30, 30, 35)
       );
       float axxxxxxxxxxxxx = (float)(axxxxx * a);
       float var25 = axxxxxxxxxxxxx;
       float var26 = 0.0F;
-      if (axx != null) {
-         if (!(axxxxxxxxxxxxx > 0.0F)) {
-            return;
-         }
-
-         var25 = axxxx;
-         var26 = axxxxxxxxxx;
+      if (!(axxxxxxxxxxxxx > 0.0F)) {
+         return;
       }
+
+      var25 = axxxx;
+      var26 = axxxxxxxxxx;
 
       dmp.aho(var25, var26, axxxxxxxxxxxxx, 8.0F, 5.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
    }
@@ -531,239 +469,185 @@ public class Watermark extends guu {
       long ax = Watermark.a ^ 47753869021151L;
       int[] axx = ClientSetup.abu();
       String var10000 = a;
-      if (axx != null) {
-         if (a != null) {
-            if (axx == null) {
-               return a;
-            }
+      if (a != null) {
 
-            if (!a.isEmpty()) {
-               StringBuilder axxx = new StringBuilder(a.length());
-               int axxxx = 0;
+         if (!a.isEmpty()) {
+            StringBuilder axxx = new StringBuilder(a.length());
+            int axxxx = 0;
 
-               while (true) {
-                  if (axxxx < a.length()) {
-                     var10000 = a;
-                     if (axx == null) {
-                        break;
-                     }
+            while (true) {
+               if (axxxx < a.length()) {
+                  var10000 = a;
 
-                     label236: {
-                        char axxxxx;
-                        short var9;
-                        label217: {
-                           label216: {
-                              label237: {
-                                 axxxxx = a.charAt(axxxx);
+                  label236: {
+                     char axxxxx;
+                     short var9;
+                     label217: {
+                        label216: {
+                           label237: {
+                              axxxxx = a.charAt(axxxx);
+                              var8 = axxxxx;
+                              var9 = 5848;
+                              var9 = 65;
+                              label214:
+                              if (axxxxx >= 'A') {
                                  var8 = axxxxx;
-                                 var9 = 5848;
-                                 var9 = 65;
-                                 label214:
-                                 if (axx != null) {
-                                    if (axxxxx >= 'A') {
-                                       var8 = axxxxx;
-                                       var9 = 20967;
-                                       var9 = 90;
-                                       if (axx == null) {
-                                          break label214;
-                                       }
+                                 var9 = 20967;
+                                 var9 = 90;
 
-                                       if (axxxxx <= 'Z') {
-                                          break label237;
-                                       }
-                                    }
-
-                                    var8 = axxxxx;
-                                    var9 = 3121;
-                                    var9 = 97;
-                                 }
-
-                                 label205:
-                                 if (axx != null) {
-                                    if (var8 >= var9) {
-                                       var8 = axxxxx;
-                                       var9 = 5742;
-                                       var9 = 122;
-                                       if (axx == null) {
-                                          break label205;
-                                       }
-
-                                       if (axxxxx <= 'z') {
-                                          break label237;
-                                       }
-                                    }
-
-                                    var8 = axxxxx;
-                                    var9 = 13480;
-                                    var9 = 48;
-                                 }
-
-                                 label196:
-                                 if (axx != null) {
-                                    if (var8 >= var9) {
-                                       var8 = axxxxx;
-                                       var9 = 31289;
-                                       var9 = 57;
-                                       if (axx == null) {
-                                          break label196;
-                                       }
-
-                                       if (axxxxx <= '9') {
-                                          break label237;
-                                       }
-                                    }
-
-                                    var8 = axxxxx;
-                                    var9 = 9854;
-                                    var9 = 32;
-                                 }
-
-                                 label187:
-                                 if (axx != null) {
-                                    if (var8 >= var9) {
-                                       var8 = axxxxx;
-                                       var9 = 22139;
-                                       var9 = 47;
-                                       if (axx == null) {
-                                          break label187;
-                                       }
-
-                                       if (axxxxx <= '/') {
-                                          break label237;
-                                       }
-                                    }
-
-                                    var8 = axxxxx;
-                                    var9 = 26677;
-                                    var9 = 58;
-                                 }
-
-                                 label178:
-                                 if (axx != null) {
-                                    if (var8 >= var9) {
-                                       var8 = axxxxx;
-                                       var9 = 11427;
-                                       var9 = 64;
-                                       if (axx == null) {
-                                          break label178;
-                                       }
-
-                                       if (axxxxx <= '@') {
-                                          break label237;
-                                       }
-                                    }
-
-                                    var8 = axxxxx;
-                                    var9 = 16032;
-                                    var9 = 91;
-                                 }
-
-                                 label169:
-                                 if (axx != null) {
-                                    if (var8 >= var9) {
-                                       var8 = axxxxx;
-                                       var9 = 16510;
-                                       var9 = 96;
-                                       if (axx == null) {
-                                          break label169;
-                                       }
-
-                                       if (axxxxx <= '`') {
-                                          break label237;
-                                       }
-                                    }
-
-                                    var8 = axxxxx;
-                                    var9 = 2613;
-                                    var9 = 123;
-                                 }
-
-                                 if (axx == null) {
-                                    break label217;
-                                 }
-
-                                 if (var8 < var9) {
-                                    break label216;
-                                 }
-
-                                 var8 = axxxxx;
-                                 var9 = 12815;
-                                 var9 = 126;
-                                 if (axx == null) {
-                                    break label217;
-                                 }
-
-                                 if (axxxxx > '~') {
-                                    break label216;
+                                 if (axxxxx <= 'Z') {
+                                    break label237;
                                  }
                               }
 
-                              axxx.append(axxxxx);
-                              if (axx != null) {
-                                 break label236;
+                              var8 = axxxxx;
+                              var9 = 3121;
+                              var9 = 97;
+
+                              label205:
+                              if (var8 >= var9) {
+                                 var8 = axxxxx;
+                                 var9 = 5742;
+                                 var9 = 122;
+
+                                 if (axxxxx <= 'z') {
+                                    break label237;
+                                 }
+                              }
+
+                              var8 = axxxxx;
+                              var9 = 13480;
+                              var9 = 48;
+
+                              label196:
+                              if (var8 >= var9) {
+                                 var8 = axxxxx;
+                                 var9 = 31289;
+                                 var9 = 57;
+
+                                 if (axxxxx <= '9') {
+                                    break label237;
+                                 }
+                              }
+
+                              var8 = axxxxx;
+                              var9 = 9854;
+                              var9 = 32;
+
+                              label187:
+                              if (var8 >= var9) {
+                                 var8 = axxxxx;
+                                 var9 = 22139;
+                                 var9 = 47;
+
+                                 if (axxxxx <= '/') {
+                                    break label237;
+                                 }
+                              }
+
+                              var8 = axxxxx;
+                              var9 = 26677;
+                              var9 = 58;
+
+                              label178:
+                              if (var8 >= var9) {
+                                 var8 = axxxxx;
+                                 var9 = 11427;
+                                 var9 = 64;
+
+                                 if (axxxxx <= '@') {
+                                    break label237;
+                                 }
+                              }
+
+                              var8 = axxxxx;
+                              var9 = 16032;
+                              var9 = 91;
+
+                              label169:
+                              if (var8 >= var9) {
+                                 var8 = axxxxx;
+                                 var9 = 16510;
+                                 var9 = 96;
+
+                                 if (axxxxx <= '`') {
+                                    break label237;
+                                 }
+                              }
+
+                              var8 = axxxxx;
+                              var9 = 2613;
+                              var9 = 123;
+
+
+                              if (var8 < var9) {
+                                 break label216;
+                              }
+
+                              var8 = axxxxx;
+                              var9 = 12815;
+                              var9 = 126;
+
+                              if (axxxxx > '~') {
+                                 break label216;
                               }
                            }
 
-                           var8 = axxxxx;
-                           var9 = 17367;
-                           var9 = 169;
+                           axxx.append(axxxxx);
+                           break label236;
                         }
 
-                        label238: {
-                           if (axx != null) {
-                              if (var8 == var9) {
-                                 break label238;
-                              }
+                        var8 = axxxxx;
+                        var9 = 17367;
+                        var9 = 169;
+                     }
 
-                              var8 = axxxxx;
-                              var9 = 20765;
-                              var9 = 174;
-                           }
-
-                           if (axx != null) {
-                              if (var8 == var9) {
-                                 break label238;
-                              }
-
-                              var8 = axxxxx;
-                              var9 = 24355;
-                              var9 = 8482;
-                           }
-
-                           if (axx != null) {
-                              if (var8 == var9) {
-                                 break label238;
-                              }
-
-                              var8 = axxxxx;
-                              var9 = 7542;
-                              var9 = 176;
-                           }
-
-                           if (var8 != var9) {
-                              break label236;
-                           }
+                     label238: {
+                        if (var8 == var9) {
+                           break label238;
                         }
 
-                        axxx.append(axxxxx);
+                        var8 = axxxxx;
+                        var9 = 20765;
+                        var9 = 174;
+
+                        if (var8 == var9) {
+                           break label238;
+                        }
+
+                        var8 = axxxxx;
+                        var9 = 24355;
+                        var9 = 8482;
+
+                        if (var8 == var9) {
+                           break label238;
+                        }
+
+                        var8 = axxxxx;
+                        var9 = 7542;
+                        var9 = 176;
+
+                        if (var8 != var9) {
+                           break label236;
+                        }
                      }
 
-                     axxxx++;
-                     if (axx != null) {
-                        continue;
-                     }
+                     axxx.append(axxxxx);
                   }
 
-                  var10000 = axxx.toString();
-                  break;
+                  axxxx++;
+                  continue;
                }
 
-               return var10000;
+               var10000 = axxx.toString();
+               break;
             }
-         }
 
-         var10000 = a;
+            return var10000;
+         }
       }
+
+      var10000 = a;
 
       return var10000;
    }
@@ -774,92 +658,76 @@ public class Watermark extends guu {
       long ax = Watermark.a ^ 82988176095796L;
       int[] axx = ClientSetup.abu();
       String var10000 = a;
-      if (axx != null) {
-         label95:
-         if (a != null) {
+      label95:
+      if (a != null) {
+         var10000 = a;
+         if (a.isEmpty()) {
+            break label95;
+         }
+
+         try {
             var10000 = a;
-            if (axx != null) {
-               if (a.isEmpty()) {
-                  break label95;
-               }
+         } catch (Exception var8) {
+            return a;
+         }
 
+         label102: {
+            String axxx;
+            label84: {
                try {
-                  var10000 = a;
-               } catch (Exception var8) {
-                  return a;
-               }
-            }
+                  byte[] axxxx = var10000.getBytes(StandardCharsets.ISO_8859_1);
+                  axxx = new String(axxxx, StandardCharsets.UTF_8);
+                  var14 = axxx.equals(a);
 
-            label102: {
-               String axxx;
-               label84: {
-                  try {
-                     byte[] axxxx = var10000.getBytes(StandardCharsets.ISO_8859_1);
-                     axxx = new String(axxxx, StandardCharsets.UTF_8);
-                     var14 = axxx.equals(a);
-                     if (axx == null) {
-                        break label84;
-                     }
+                  if (!var14) {
+                     var14 = axxx.contains("�");
 
                      if (!var14) {
-                        var14 = axxx.contains("�");
-                        if (axx == null) {
-                           break label84;
-                        }
-
-                        if (!var14) {
-                           return axxx;
-                        }
-                     }
-                  } catch (Exception var11) {
-                     return a;
-                  }
-
-                  try {
-                     byte[] var12 = a.getBytes(StandardCharsets.ISO_8859_1);
-                     axxx = new String(var12, "Windows-1252");
-                     var10000 = axxx;
-                     if (axx == null) {
-                        break label102;
-                     }
-
-                     var14 = axxx.equals(a);
-                  } catch (Exception var10) {
-                     return a;
-                  }
-               }
-
-               try {
-                  if (!var14) {
-                     var10000 = axxx;
-                     if (axx == null) {
-                        break label102;
-                     }
-
-                     if (!axxx.contains("�")) {
                         return axxx;
                      }
                   }
-               } catch (Exception var9) {
+               } catch (Exception var11) {
                   return a;
                }
 
                try {
-                  var10000 = a;
-               } catch (Exception var7) {
+                  byte[] var12 = a.getBytes(StandardCharsets.ISO_8859_1);
+                  axxx = new String(var12, "Windows-1252");
+                  var10000 = axxx;
+
+                  var14 = axxx.equals(a);
+               } catch (Exception var10) {
                   return a;
                }
             }
 
             try {
-               return var10000;
-            } catch (Exception var6) {
+               if (!var14) {
+                  var10000 = axxx;
+
+                  if (!axxx.contains("�")) {
+                     return axxx;
+                  }
+               }
+            } catch (Exception var9) {
+               return a;
+            }
+
+            try {
+               var10000 = a;
+            } catch (Exception var7) {
                return a;
             }
          }
 
-         var10000 = a;
+         try {
+            return var10000;
+         } catch (Exception var6) {
+            return a;
+         }
       }
+
+      var10000 = a;
 
       return var10000;
    }
@@ -1103,89 +971,6 @@ public class Watermark extends guu {
             var37 = var28.substring(++var36, var36 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 15213;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/fhc", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/fhc" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

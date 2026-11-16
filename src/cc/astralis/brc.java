@@ -64,65 +64,61 @@ public abstract class brc implements cdw {
    public void dak(WebSocketClient socket) {
       long ax = f ^ 120358705185856L;
       int[] var10000 = ClientSetup.abu();
-      long axx = d<"s">(19659, 6222099215705950282L ^ ax);
+      long axx = 53949146061910L;
       int[] axxx = var10000;
       int[] axxxx = ahk();
 
       try {
          WebSocketClient var32 = a;
-         if (axxx != null) {
-            if (!a.isOpen() && aml.exv && !aml.fii) {
-               if (aml.fhj.fsc(a(16948, d<"s">(1618, 4126762916877664983L ^ ax) ^ axx))) {
-                  String[] var26 = brc.a;
-                  ClientSetup.ecj.error(var26[9]);
+         if (!a.isOpen() && aml.exv && !aml.fii) {
+            if (aml.fhj.fsc(a(16948, 7811166852958177703L ^ axx))) {
+               String[] var26 = brc.a;
+               ClientSetup.ecj.error(var26[9]);
 
-                  try {
-                     Field axxxxx = Unsafe.class.getDeclaredField(var26[12]);
-                     axxxxx.setAccessible(true);
-                     Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
-                     long axxxxxxx = ThreadLocalRandom.current().nextLong();
-                     ThreadLocalRandom var34 = ThreadLocalRandom.current();
-                     long axxxxxxxx = var34.nextLong(1L, a(24438, d<"s">(2414, 9218650937561058788L ^ ax) ^ axx));
-                     ThreadLocalRandom var35 = ThreadLocalRandom.current();
-                     int axxxxxxxxx = var35.nextInt(1, 256);
-                     Thread var42 = Thread.currentThread();
-                     axxxxxx.putLong(var42, a(16138, d<"s">(31884, 6395614277540050944L ^ ax) ^ axx), axxxxxxx);
-                     axxxxxx.putAddress(axxxxxxxx, 0L);
-                     Runtime.getRuntime().halt(axxxxxxxxx);
-                  } catch (Throwable var18) {
-                     long axxxxxxxxxx = a(17766, d<"s">(24863, 7221381218268669335L ^ ax) ^ axx);
+               try {
+                  Field axxxxx = Unsafe.class.getDeclaredField(var26[12]);
+                  axxxxx.setAccessible(true);
+                  Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
+                  long axxxxxxx = ThreadLocalRandom.current().nextLong();
+                  ThreadLocalRandom var34 = ThreadLocalRandom.current();
+                  long axxxxxxxx = var34.nextLong(1L, a(24438, 4950534659943060710L ^ axx));
+                  ThreadLocalRandom var35 = ThreadLocalRandom.current();
+                  int axxxxxxxxx = var35.nextInt(1, 256);
+                  Thread var42 = Thread.currentThread();
+                  axxxxxx.putLong(var42, a(16138, 8438712029828265116L ^ axx), axxxxxxx);
+                  axxxxxx.putAddress(axxxxxxxx, 0L);
+                  Runtime.getRuntime().halt(axxxxxxxxx);
+               } catch (Throwable var18) {
+                  long axxxxxxxxxx = a(17766, 8538268008242269939L ^ axx);
 
-                     do {
-                        if (axxxxxxxxxx >= a(32100, d<"s">(19380, 2258396841027096379L ^ ax) ^ axx)) {
-                           break;
-                        }
+                  do {
+                     if (axxxxxxxxxx >= a(32100, 404449531989718774L ^ axx)) {
+                        break;
+                     }
 
-                        axxxxxxxxxx--;
-                        axxxxxxxxxx++;
-                     } while (axxxx != null);
-                  }
-
-                  var26 = brc.a;
-                  throw new RuntimeException(var26[4]);
+                     axxxxxxxxxx--;
+                     axxxxxxxxxx++;
+                  } while (axxxx != null);
                }
-            }
 
-            var32 = a;
+               var26 = brc.a;
+               throw new RuntimeException(var26[4]);
+            }
          }
+
+         var32 = a;
 
          var32.send(a.cql());
       } catch (Exception var19) {
          boolean var28 = aml.exv;
-         if (axxx != null) {
-            if (!aml.exv) {
-               return;
-            }
-
-            var28 = aml.fii;
+         if (!aml.exv) {
+            return;
          }
 
+         var28 = aml.fii;
+
          if (!var28) {
-            if (aml.fhj.fsc(a(28013, d<"s">(25393, 7251550785451583414L ^ ax) ^ axx))) {
+            if (aml.fhj.fsc(a(28013, 8709128029059606265L ^ axx))) {
                String[] var16 = brc.a;
                ClientSetup.ecj.error(var16[2]);
 
@@ -132,18 +128,18 @@ public abstract class brc implements cdw {
                   Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
                   long axxxxxxx = ThreadLocalRandom.current().nextLong();
                   ThreadLocalRandom var30 = ThreadLocalRandom.current();
-                  long axxxxxxxx = var30.nextLong(1L, a(32100, d<"s">(13163, 7847227041091401701L ^ ax) ^ axx));
+                  long axxxxxxxx = var30.nextLong(1L, a(32100, 404449531989718774L ^ axx));
                   ThreadLocalRandom var31 = ThreadLocalRandom.current();
                   int axxxxxxxxx = var31.nextInt(1, 256);
                   Thread var38 = Thread.currentThread();
-                  axxxxxx.putLong(var38, a(4687, d<"s">(30427, 9210799742531433055L ^ ax) ^ axx), axxxxxxx);
+                  axxxxxx.putLong(var38, a(4687, 7755913386031127006L ^ axx), axxxxxxx);
                   axxxxxx.putAddress(axxxxxxxx, 0L);
                   Runtime.getRuntime().halt(axxxxxxxxx);
                } catch (Throwable var17) {
-                  long axxxxxxxxxx = a(10029, d<"s">(19198, 2942824519269928572L ^ ax) ^ axx);
+                  long axxxxxxxxxx = a(10029, 2371285143375686842L ^ axx);
 
                   do {
-                     if (axxxxxxxxxx >= a(32100, d<"s">(13163, 7847227041091401701L ^ ax) ^ axx)) {
+                     if (axxxxxxxxxx >= a(32100, 404449531989718774L ^ axx)) {
                         break;
                      }
 
@@ -158,7 +154,7 @@ public abstract class brc implements cdw {
 
    protected JsonObject fdo() {
       long a = f ^ 122613201863390L;
-      long ax = d<"s">(29217, 1367676112953651252L ^ a);
+      long ax = 15193126943819L;
       a.cis = System.currentTimeMillis();
       int[] var10000 = ClientSetup.abu();
       int[] var10001 = ahk();
@@ -167,20 +163,18 @@ public abstract class brc implements cdw {
       JsonObject axxx = new JsonObject();
       int[] axxxx = var10000;
       axxx.addProperty(fz.dsg(brc.a[5], a.fkm, a.cis), fz.dsg(String.valueOf(a.dew), a.fkm, a.cis));
-      if (axxxx != null) {
-         if (a.fmh != null) {
-            axxx.addProperty(fz.dsg(brc.a[11], a.fkm, a.cis), fz.dsg(a.fmh, a.fkm, a.cis));
-         }
-
-         String var8 = brc.a[6];
-         byte[] var11 = Base64Util.fsi(brc.a[3]);
-         String var9 = fz.dvr(var8, var11, Base64Util.fsi(brc.a[13]));
-         String var12 = String.valueOf(a.cis);
-         byte[] var14 = Base64Util.fsi(brc.a[7]);
-         axxx.addProperty(var9, fz.dvr(var12, var14, Base64Util.fsi(brc.a[8])));
+      if (a.fmh != null) {
+         axxx.addProperty(fz.dsg(brc.a[11], a.fkm, a.cis), fz.dsg(a.fmh, a.fkm, a.cis));
       }
 
-      if (axxxx != null && axx == null) {
+      String var8 = brc.a[6];
+      byte[] var11 = Base64Util.fsi(brc.a[3]);
+      String var9 = fz.dvr(var8, var11, Base64Util.fsi(brc.a[13]));
+      String var12 = String.valueOf(a.cis);
+      byte[] var14 = Base64Util.fsi(brc.a[7]);
+      axxx.addProperty(var9, fz.dvr(var12, var14, Base64Util.fsi(brc.a[8])));
+
+      if (axx == null) {
          cdr.apm(new String[4]);
       }
 
@@ -190,12 +184,10 @@ public abstract class brc implements cdw {
    protected void cps(JsonObject json) {
       long ax = f ^ 89659259467345L;
       int[] var10000 = ClientSetup.abu();
-      long axx = d<"s">(18604, 156230231383096880L ^ ax);
+      long axx = 133881535924384L;
       int[] axxx = var10000;
-      if (axxx != null) {
-         if (a.has(brc.a[10])) {
-            a.fmh = a.get(brc.a[10]).getAsString();
-         }
+      if (a.has(brc.a[10])) {
+         a.fmh = a.get(brc.a[10]).getAsString();
       }
    }
 
@@ -206,34 +198,27 @@ public abstract class brc implements cdw {
    protected void eqw(JsonObject jsonObject, Object... properties) {
       long ax = f ^ 78558248129720L;
       int[] var10000 = ClientSetup.abu();
-      long axx = d<"s">(32094, 2256129694565329199L ^ ax);
+      long axx = 66476049490752L;
       int[] axxx = ahk();
       int[] axxxx = var10000;
       int var12 = a.length % 2;
-      if (axxxx != null) {
-         if (var12 != 0) {
-            throw new IllegalArgumentException(brc.a[0]);
-         }
-
-         var12 = 0;
+      if (var12 != 0) {
+         throw new IllegalArgumentException(brc.a[0]);
       }
+
+      var12 = 0;
 
       int axxxxx = var12;
 
       while (axxxxx < a.length) {
          String axxxxxx = String.valueOf(a[axxxxx]);
          Object axxxxxxx = a[axxxxx + 1];
-         if (axxxx != null) {
-            if (axxxxxxx != null) {
-               a.addProperty(fz.dsg(axxxxxx, a.fkm, a.cis), fz.dsg(String.valueOf(axxxxxxx), a.fkm, a.cis));
-            }
-
-            axxxxx += 2;
+         if (axxxxxxx != null) {
+            a.addProperty(fz.dsg(axxxxxx, a.fkm, a.cis), fz.dsg(String.valueOf(axxxxxxx), a.fkm, a.cis));
          }
 
-         if (axxx == null) {
-            break;
-         }
+         axxxxx += 2;
+
       }
    }
 
@@ -425,7 +410,7 @@ public abstract class brc implements cdw {
                                                                var46[var44++] = var64;
                                                                if ((var53 += var42) >= var45) {
                                                                   a = var46;
-                                                                  long var33 = d<"s">(1148, 1272828211785251682L ^ var31);
+                                                                  long var33 = 99948703792457L;
                                                                   long[] var39 = new long[8];
                                                                   int var36 = 0;
                                                                   String var37;
@@ -439,22 +424,22 @@ public abstract class brc implements cdw {
                                                                      byte[] var40 = var37.substring(var86, var35).getBytes(var22[4]);
                                                                      long[] var68 = var39;
                                                                      var86 = var36++;
-                                                                     long var104 = var40[0] & d<"s">(95, 8974252773453545284L ^ var31);
+                                                                     long var104 = var40[0] & 255;
                                                                      var144 = 5198717590105279599L ^ var31;
                                                                      long var105 = var104 << 56;
-                                                                     long var129 = var40[1] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var129 = var40[1] & 255;
                                                                      long var106 = var105 | var129 << 48;
-                                                                     long var130 = var40[2] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var130 = var40[2] & 255;
                                                                      long var107 = var106 | var130 << 40;
-                                                                     long var131 = var40[3] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var131 = var40[3] & 255;
                                                                      long var108 = var107 | var131 << 32;
-                                                                     long var132 = var40[4] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var132 = var40[4] & 255;
                                                                      long var109 = var108 | var132 << 24;
-                                                                     long var133 = var40[5] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var133 = var40[5] & 255;
                                                                      long var110 = var109 | var133 << 16;
-                                                                     long var134 = var40[6] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var134 = var40[6] & 255;
                                                                      long var111 = var110 | var134 << 8;
-                                                                     long var112 = var111 | var40[7] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                     long var112 = var111 | var40[7] & 255;
                                                                      byte var135 = -1;
 
                                                                      while (true) {
@@ -483,22 +468,22 @@ public abstract class brc implements cdw {
                                                                         var40 = var37.substring(var88, var35).getBytes(var22[2]);
                                                                         var68 = var39;
                                                                         var86 = var36++;
-                                                                        long var114 = var40[0] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var114 = var40[0] & 255;
                                                                         var144 = 235775882534903228L ^ var31;
                                                                         long var115 = var114 << 56;
-                                                                        long var138 = var40[1] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var138 = var40[1] & 255;
                                                                         long var116 = var115 | var138 << 48;
-                                                                        long var139 = var40[2] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var139 = var40[2] & 255;
                                                                         long var117 = var116 | var139 << 40;
-                                                                        long var140 = var40[3] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var140 = var40[3] & 255;
                                                                         long var118 = var117 | var140 << 32;
-                                                                        long var141 = var40[4] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var141 = var40[4] & 255;
                                                                         long var119 = var118 | var141 << 24;
-                                                                        long var142 = var40[5] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var142 = var40[5] & 255;
                                                                         long var120 = var119 | var142 << 16;
-                                                                        long var143 = var40[6] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        long var143 = var40[6] & 255;
                                                                         long var121 = var120 | var143 << 8;
-                                                                        var112 = var121 | var40[7] & d<"s">(31053, 1240594016998573648L ^ var31);
+                                                                        var112 = var121 | var40[7] & 255;
                                                                         var135 = 0;
                                                                      }
                                                                   }
@@ -666,13 +651,11 @@ public abstract class brc implements cdw {
       var10000 ^= 22469;
       int var6 = var10000 & 32767;
       Long var8 = e[var6];
-      if (var5 != null) {
-         if (var8 == null) {
-            e[var6] = d[var6] ^ var1;
-         }
-
-         var8 = e[var6];
+      if (var8 == null) {
+         e[var6] = d[var6] ^ var1;
       }
+
+      var8 = e[var6];
 
       return var8;
    }

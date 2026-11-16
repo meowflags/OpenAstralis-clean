@@ -37,36 +37,25 @@ public class elw implements fgh {
       int[] var10000 = ClientSetup.abu();
       int[] axxx = var10000;
       elw var7 = a;
-      if (axxx != null) {
-         if (a == null) {
-            return false;
-         }
-
-         var7 = a;
+      if (a == null) {
+         return false;
       }
 
-      if (axxx != null) {
-         if (var7.axm != a.axm) {
-            return (boolean)0;
-         }
+      var7 = a;
 
-         var7 = a;
+      if (var7.axm != a.axm) {
+         return (boolean)0;
       }
+
+      var7 = a;
 
       int var8 = Double.compare(var7.guo, a.guo);
-      if (axxx != null) {
-         if (var8 != 0) {
-            return (boolean)0;
-         }
-
-         var8 = a.akt.equals(a.akt);
+      if (var8 != 0) {
+         return (boolean)0;
       }
 
-      if (axxx == null) {
-         return (boolean)var8;
-      } else {
-         return (boolean)(var8 != 0 ? 1 : 0);
-      }
+      var8 = a.akt.equals(a.akt);
+
    }
 
    @Override

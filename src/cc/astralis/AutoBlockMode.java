@@ -18,19 +18,16 @@ public class AutoBlockMode extends fwu {
 
    @Override
    public void ayy(eih event) {
-      long ax = AutoBlockMode.a ^ 113995090067697L;
       int[] var10000 = ClientSetup.abu();
       class_1657 axx = a.bv().fyt;
       int[] axxx = var10000;
       if (axx != null) {
          AutoBlockMode var6 = a;
-         if (axxx != null) {
-            if (a.bv().ace < (int)g) {
-               return;
-            }
-
-            var6 = a;
+         if (a.bv().ace < (int)g) {
+            return;
          }
+
+         var6 = a;
 
          var6.grm();
       }
@@ -85,30 +82,4 @@ public class AutoBlockMode extends fwu {
       g = var14;
    }
 
-   private static String b(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

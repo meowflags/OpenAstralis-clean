@@ -185,28 +185,24 @@ public class GodBridge extends guu {
    public void auj() {
       long a = GodBridge.a ^ 6823736943010L;
       int[] ax = ClientSetup.abu();
-      if (ax != null) {
-         if (chi.field_1724 != null && chi.field_1687 != null) {
-            a.bet = chi.field_1724.method_31478();
-            a.fwb = true;
-            a.czy = chi.field_1724.method_31548().method_67532();
-            a.eru = a.czy;
-            int axx = a.cfe();
-            if (ax != null) {
-               if (axx == -1) {
-                  a.fga(false);
-                  return;
-               }
-
-               chi.field_1724.method_31548().method_61496(axx);
-               a.hfv = 0;
-            }
-
-            a.aos = 0;
+      if (chi.field_1724 != null && chi.field_1687 != null) {
+         a.bet = chi.field_1724.method_31478();
+         a.fwb = true;
+         a.czy = chi.field_1724.method_31548().method_67532();
+         a.eru = a.czy;
+         int axx = a.cfe();
+         if (axx == -1) {
+            a.fga(false);
+            return;
          }
 
-         super.auj();
+         chi.field_1724.method_31548().method_61496(axx);
+         a.hfv = 0;
+
+         a.aos = 0;
       }
+
+      super.auj();
    }
 
    @Override
@@ -216,18 +212,16 @@ public class GodBridge extends guu {
       a.aeb = null;
       int[] var3 = var10000;
       class_746 var4 = chi.field_1724;
-      if (var3 != null) {
-         if (chi.field_1724 != null) {
-            chi.field_1690.field_1904.method_23481(false);
-            chi.field_1690.field_1886.method_23481(false);
-            chi.field_1690.field_1903.method_23481(false);
-         }
-
-         dqq.axd(false);
-         dqq.edu(a.fro, a.bda, a.bax.dnp().floatValue(), a.aco.dnp().floatValue());
-         a.eru = -1;
-         var4 = chi.field_1724;
+      if (chi.field_1724 != null) {
+         chi.field_1690.field_1904.method_23481(false);
+         chi.field_1690.field_1886.method_23481(false);
+         chi.field_1690.field_1903.method_23481(false);
       }
+
+      dqq.axd(false);
+      dqq.edu(a.fro, a.bda, a.bax.dnp().floatValue(), a.aco.dnp().floatValue());
+      a.eru = -1;
+      var4 = chi.field_1724;
 
       var4.method_31548().method_61496(a.czy);
       super.frg();
@@ -247,34 +241,25 @@ public class GodBridge extends guu {
       boolean axx = class_3675.method_15987(var10001, 32);
       int[] axxx = var10000;
       GodBridge var6 = a;
-      if (axxx != null) {
-         if (a.cmi.emb("Modern Watchdog") && axx) {
-            var8 = a.aen();
-            label43:
-            if (axxx != null) {
-               if (!var8) {
-                  var8 = evd.dbj();
-                  if (axxx == null) {
-                     break label43;
-                  }
+      if (a.cmi.emb("Modern Watchdog") && axx) {
+         var8 = a.aen();
+         label43:
+         if (!var8) {
+            var8 = evd.dbj();
 
-                  if (var8) {
-                     var8 = false;
-                     break label43;
-                  }
-               }
-
-               var8 = true;
-            }
-
-            a.eeq = var8;
-            if (axxx != null) {
-               return;
+            if (var8) {
+               var8 = false;
+               break label43;
             }
          }
 
-         var6 = a;
+         var8 = true;
+
+         a.eeq = var8;
+         return;
       }
+
+      var6 = a;
 
       var6.brh(a);
    }
@@ -283,30 +268,24 @@ public class GodBridge extends guu {
       long a = GodBridge.a ^ 70256392400668L;
       int[] ax = ClientSetup.abu();
       int var10000 = chi.field_1724.method_24828();
-      if (ax != null) {
-         if (var10000 == 0) {
-            return false;
-         }
-
-         var10000 = a.erv.dnp().intValue();
+      if (var10000 == 0) {
+         return false;
       }
+
+      var10000 = a.erv.dnp().intValue();
 
       int axx = var10000;
       class_2338 axxx = chi.field_1724.method_24515().method_10074();
       boolean axxxx = chi.field_1687.method_8320(axxx).method_26215();
       int var7 = axxxx;
-      if (ax != null) {
-         if (axxxx && a.aeb != null) {
-            var7 = gig;
-            if (ax != null) {
-               var7 = gig >= axx ? 1 : 0;
-            }
+      if (axxxx && a.aeb != null) {
+         var7 = gig;
+         var7 = gig >= axx ? 1 : 0;
 
-            return (boolean)var7;
-         }
-
-         var7 = 0;
+         return (boolean)var7;
       }
+
+      var7 = 0;
 
       return (boolean)var7;
    }
@@ -318,37 +297,29 @@ public class GodBridge extends guu {
       a.efe("Normal");
       int[] axx = var10000;
       GodBridge var15 = a;
-      if (axx != null) {
-         label218: {
-            label217: {
-               if (a.ady.dnp()) {
-                  var16 = chi;
-                  if (axx == null) {
-                     break label217;
-                  }
+      label218: {
+         label217: {
+            if (a.ady.dnp()) {
+               var16 = chi;
 
-                  if (chi.field_1690.field_1903.method_1434()) {
-                     var17 = chi.field_1724;
-                     if (axx == null) {
-                        break label218;
-                     }
+               if (chi.field_1690.field_1903.method_1434()) {
+                  var17 = chi.field_1724;
 
-                     if (!chi.field_1724.method_24828()) {
-                        a.bet = chi.field_1724.method_31478();
-                     }
+                  if (!chi.field_1724.method_24828()) {
+                     a.bet = chi.field_1724.method_31478();
                   }
                }
-
-               var16 = chi;
             }
 
-            var17 = var16.field_1724;
+            var16 = chi;
          }
 
-         var17.method_5728(evd.dbj());
-         a.bvj();
-         var15 = a;
+         var17 = var16.field_1724;
       }
+
+      var17.method_5728(evd.dbj());
+      a.bvj();
+      var15 = a;
 
       class_2338 axxx;
       float axxxx;
@@ -363,34 +334,27 @@ public class GodBridge extends guu {
          axxxx = dqq.ev();
          axxxxx = dqq.czi();
          boolean var18 = a.cmi.emb("Modern Watchdog");
-         if (axx != null) {
-            if (var18) {
-               dqq.axd(true);
-               dqq.gns(a.fro);
-               dqq.eya(a.bda);
-               axxxx = a.fro;
-               axxxxx = a.bda;
-            }
-
-            var19 = a.ftz.dnp();
-            if (axx == null) {
-               break label223;
-            }
-
-            var18 = var19;
+         if (var18) {
+            dqq.axd(true);
+            dqq.gns(a.fro);
+            dqq.eya(a.bda);
+            axxxx = a.fro;
+            axxxxx = a.bda;
          }
+
+         var19 = a.ftz.dnp();
+
+         var18 = var19;
 
          if (var18) {
             a.awh = a.awh + a.caw.dnp().floatValue();
             float var35;
             int var20 = (var35 = a.awh - 360.0F) == 0.0F ? 0 : (var35 < 0.0F ? -1 : 1);
-            if (axx != null) {
-               if (var20 >= 0) {
-                  a.awh -= 360.0F;
-               }
-
-               var20 = 1;
+            if (var20 >= 0) {
+               a.awh -= 360.0F;
             }
+
+            var20 = 1;
 
             dqq.axd((boolean)var20);
             dqq.gns(a.awh);
@@ -404,84 +368,60 @@ public class GodBridge extends guu {
       byte axxxxxxxxx = -1;
       var21 = axxxxxxxx.hashCode();
       label200:
-      if (axx != null) {
-         switch (var21) {
-            case -1595926131:
-               var21 = axxxxxxxx.equals("Minecraft");
-               if (axx == null) {
-                  break label200;
-               }
+      switch (var21) {
+         case -1595926131:
+            var21 = axxxxxxxx.equals("Minecraft");
 
-               if (var21 == 0) {
-                  break;
-               }
+            if (var21 == 0) {
+               break;
+            }
 
-               axxxxxxxxx = 0;
-               if (axx != null) {
-                  break;
-               }
-            case -1955878649:
-               var21 = axxxxxxxx.equals("Normal");
-               if (axx == null) {
-                  break label200;
-               }
+            axxxxxxxxx = 0;
+            break;
+         case -1955878649:
+            var21 = axxxxxxxx.equals("Normal");
 
-               if (var21 == 0) {
-                  break;
-               }
+            if (var21 == 0) {
+               break;
+            }
 
-               axxxxxxxxx = 1;
-               if (axx != null) {
-                  break;
-               }
-            case -268477211:
-               var21 = axxxxxxxx.equals("Astralis");
-               if (axx == null) {
-                  break label200;
-               }
+            axxxxxxxxx = 1;
+            break;
+         case -268477211:
+            var21 = axxxxxxxx.equals("Astralis");
 
-               if (var21 == 0) {
-                  break;
-               }
+            if (var21 == 0) {
+               break;
+            }
 
-               axxxxxxxxx = 2;
-               if (axx != null) {
-                  break;
-               }
-            case 2433880:
-               var21 = axxxxxxxx.equals("None");
-               if (axx == null) {
-                  break label200;
-               }
+            axxxxxxxxx = 2;
+            break;
+         case 2433880:
+            var21 = axxxxxxxx.equals("None");
 
-               if (var21 != 0) {
-                  axxxxxxxxx = 3;
-               }
-         }
-
-         var21 = axxxxxxxxx;
+            if (var21 != 0) {
+               axxxxxxxxx = 3;
+            }
       }
+
+      var21 = axxxxxxxxx;
 
       label175: {
          switch (var21) {
             case 0:
                class_3965 axxxxxxxxxx = bfc.cb(4.5F, axxxx, axxxxx);
                class_3965 var23 = axxxxxxxxxx;
-               if (axx != null) {
-                  if (axxxxxxxxxx == null) {
-                     return;
-                  }
-
-                  var23 = axxxxxxxxxx;
+               if (axxxxxxxxxx == null) {
+                  return;
                }
 
-               if (axx != null) {
-                  if (var23.method_17783() != class_240.field_1332) {
-                     return;
-                  }
+               var23 = axxxxxxxxxx;
 
-                  var23 = axxxxxxxxxx;
+               if (var23.method_17783() != class_240.field_1332) {
+                  return;
                }
+
+               var23 = axxxxxxxxxx;
 
                if (!var23.method_17777().equals(a.aeb.ddn)) {
                   return;
@@ -489,9 +429,6 @@ public class GodBridge extends guu {
                break;
             case 1:
                var22 = a;
-               if (axx == null) {
-                  break label175;
-               }
 
                if (!bfc.gto(a.aeb.fie, a.aeb.ddn, false, 5.0F, axxxx, axxxxx)) {
                   return;
@@ -499,9 +436,6 @@ public class GodBridge extends guu {
                break;
             case 2:
                var22 = a;
-               if (axx == null) {
-                  break label175;
-               }
 
                if (!bfc.eqw(a.aeb.fie, a.aeb.ddn, true, 4.5F, axxxx, axxxxx)) {
                   return;
@@ -513,28 +447,22 @@ public class GodBridge extends guu {
       }
 
       int var29 = amg.dul(0.0, -1.0, 0.0).method_26215();
-      if (axx != null) {
-         var29 = var29 != 0 ? ++a.cqp : 0;
-      }
+      var29 = var29 != 0 ? ++a.cqp : 0;
 
       var22.cqp = var29;
       int var24 = chi.field_1687.method_8320(axxx).method_26215();
-      if (axx != null) {
-         if (var24 == 0) {
-            return;
-         }
-
-         var24 = a.cfe();
+      if (var24 == 0) {
+         return;
       }
+
+      var24 = a.cfe();
 
       int axxxxxxxxxxx = var24;
-      if (axx != null) {
-         if (axxxxxxxxxxx == -1) {
-            return;
-         }
-
-         chi.field_1724.method_31548().method_61496(axxxxxxxxxxx);
+      if (axxxxxxxxxxx == -1) {
+         return;
       }
+
+      chi.field_1724.method_31548().method_61496(axxxxxxxxxxx);
 
       if (a.aeb != null) {
          class_3965 axxxxxxxxxxxx = new class_3965(a.dax(), a.aeb.fie, a.aeb.ddn, false);
@@ -553,14 +481,12 @@ public class GodBridge extends guu {
          int[] axx = aac.getOrDefault(a.dee.dnp(), new int[0]);
          ax = var10000;
          int var6 = hjr;
-         if (ax != null) {
-            if (hjr >= axx.length) {
-               var7 = 40.0F;
-               break label31;
-            }
-
-            var6 = axx[hjr];
+         if (hjr >= axx.length) {
+            var7 = 40.0F;
+            break label31;
          }
+
+         var6 = axx[hjr];
 
          var7 = var6;
       }
@@ -572,14 +498,12 @@ public class GodBridge extends guu {
          var7 = a.fro;
          var10001 = a.bda;
          Object var10002 = a.cmi;
-         if (ax != null) {
-            if (a.cmi.emb("Modern Watchdog")) {
-               var9 = axx;
-               break label25;
-            }
-
-            var10002 = a.bax.dnp();
+         if (a.cmi.emb("Modern Watchdog")) {
+            var9 = axx;
+            break label25;
          }
+
+         var10002 = a.bax.dnp();
 
          var9 = ((ImFloat)var10002).floatValue();
       }
@@ -649,55 +573,42 @@ public class GodBridge extends guu {
          axxx = chi.field_1690.field_1913.method_1434();
          axxxx = chi.field_1690.field_1849.method_1434();
          var13 = axxxxxx;
-         if (ax != null) {
-            if (axxxxxx != 0) {
-               var13 = 1;
-               break label68;
-            }
-
-            var13 = axxxxxxx;
+         if (axxxxxx != 0) {
+            var13 = 1;
+            break label68;
          }
 
-         if (ax != null) {
-            var13 = var13 != 0 ? -1 : 0;
-         }
+         var13 = axxxxxxx;
+
+         var13 = var13 != 0 ? -1 : 0;
       }
 
       int axxxxxxxx;
       label62: {
          axxxxxxxx = var13;
          var13 = axxxx;
-         if (ax != null) {
-            if (axxxx != 0) {
-               var13 = 1;
-               break label62;
-            }
-
-            var13 = axxx;
+         if (axxxx != 0) {
+            var13 = 1;
+            break label62;
          }
 
-         if (ax != null) {
-            var13 = var13 != 0 ? -1 : 0;
-         }
+         var13 = axxx;
+
+         var13 = var13 != 0 ? -1 : 0;
       }
 
       int axxxxxxxxx = var13;
       var13 = axxxxxxxx;
       label56:
-      if (ax != null) {
-         if (axxxxxxxx == 0) {
-            var13 = axxxxxxxxx;
-            if (ax == null) {
-               break label56;
-            }
-
-            if (axxxxxxxxx == 0) {
-               return axx;
-            }
-         }
-
+      if (axxxxxxxx == 0) {
          var13 = axxxxxxxxx;
+
+         if (axxxxxxxxx == 0) {
+            return axx;
+         }
       }
+
+      var13 = axxxxxxxxx;
 
       double axxxxxxxxxx = Math.atan2(var13, axxxxxxxx);
       return axx + (float)Math.toDegrees(axxxxxxxxxx);
@@ -707,208 +618,163 @@ public class GodBridge extends guu {
       long ax = GodBridge.a ^ 25172407335797L;
       int[] axx = ClientSetup.abu();
       GodBridge var10000 = a;
-      if (axx != null) {
-         label225:
-         if (a.dds.dnp()) {
-            boolean var8 = chi.field_1724.method_24828();
-            if (axx != null) {
-               if (!var8) {
-                  break label225;
+      label225:
+      if (a.dds.dnp()) {
+         boolean var8 = chi.field_1724.method_24828();
+         if (!var8) {
+            break label225;
+         }
+
+         var8 = evd.dbj();
+
+         if (!var8) {
+            break label225;
+         }
+
+         var8 = chi.field_1690.field_1903.method_1434();
+
+         if (var8) {
+            break label225;
+         }
+
+         var8 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
+
+         if (var8) {
+            break label225;
+         }
+
+         var8 = a.cmi.emb("God Bridge");
+
+         boolean axxx;
+         label203: {
+            label232: {
+               axxx = var8;
+               var9 = evd.bpi();
+               if (!var9) {
+                  break label232;
                }
 
-               var8 = evd.dbj();
-            }
+               var9 = a.fgh.dnp();
 
-            if (axx != null) {
-               if (!var8) {
-                  break label225;
+
+               if (var9) {
+                  var9 = true;
+                  break label203;
                }
-
-               var8 = chi.field_1690.field_1903.method_1434();
             }
 
-            if (axx != null) {
-               if (var8) {
-                  break label225;
-               }
+            var9 = false;
+         }
 
-               var8 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
-            }
-
-            if (axx != null) {
-               if (var8) {
-                  break label225;
-               }
-
-               var8 = a.cmi.emb("God Bridge");
-            }
-
-            boolean axxx;
-            label203: {
-               label232: {
-                  axxx = var8;
-                  var9 = evd.bpi();
-                  if (axx != null) {
-                     if (!var9) {
-                        break label232;
+         boolean axxxx;
+         boolean axxxxx;
+         label233: {
+            axxxx = var9;
+            int var10 = axxx;
+            if (axxx != 0) {
+               label187: {
+                  label235: {
+                     var11 = a.cqp;
+                     if (a.cqp <= 0) {
+                        break label235;
                      }
 
-                     var9 = a.fgh.dnp();
-                  }
+                     var11 = a.hfv;
 
-                  if (axx == null) {
-                     break label203;
-                  }
 
-                  if (var9) {
-                     var9 = true;
-                     break label203;
-                  }
-               }
-
-               var9 = false;
-            }
-
-            boolean axxxx;
-            boolean axxxxx;
-            label233: {
-               axxxx = var9;
-               int var10 = axxx;
-               if (axx != null) {
-                  if (axxx != 0) {
-                     label187: {
-                        label235: {
-                           var11 = a.cqp;
-                           if (axx != null) {
-                              if (a.cqp <= 0) {
-                                 break label235;
-                              }
-
-                              var11 = a.hfv;
-                           }
-
-                           if (axx == null) {
-                              break label187;
-                           }
-
-                           if (var11 > a.ait.dnp().intValue()) {
-                              var11 = 1;
-                              break label187;
-                           }
-                        }
-
-                        var11 = 0;
-                     }
-
-                     axxxxx = (boolean)var11;
-                     if (axx != null) {
-                        break label233;
+                     if (var11 > a.ait.dnp().intValue()) {
+                        var11 = 1;
+                        break label187;
                      }
                   }
 
-                  var10 = a.aos;
+                  var11 = 0;
                }
 
-               label172: {
-                  label236: {
-                     if (axx != null) {
-                        if (var10 != 0) {
-                           var10 = a.aos % a.ait.dnp().intValue();
-                           if (axx == null) {
-                              break label172;
-                           }
+               axxxxx = (boolean)var11;
+               break label233;
+            }
 
-                           if (var10 == 0) {
-                              break label236;
-                           }
-                        }
+            var10 = a.aos;
 
-                        var10 = a.ait.dnp().intValue();
-                     }
+            label172: {
+               label236: {
+                  if (var10 != 0) {
+                     var10 = a.aos % a.ait.dnp().intValue();
 
-                     if (axx == null) {
-                        break label172;
-                     }
-
-                     if (var10 != 1) {
-                        var10 = 0;
-                        break label172;
+                     if (var10 == 0) {
+                        break label236;
                      }
                   }
 
-                  var10 = 1;
+                  var10 = a.ait.dnp().intValue();
+
+
+                  if (var10 != 1) {
+                     var10 = 0;
+                     break label172;
+                  }
                }
 
-               axxxxx = (boolean)var10;
+               var10 = 1;
             }
 
-            label158: {
-               label157: {
-                  label237: {
-                     var12 = axxxxx;
-                     if (axx != null) {
-                        if (axxxxx == 0) {
-                           break label237;
-                        }
+            axxxxx = (boolean)var10;
+         }
 
-                        var12 = axxxx;
-                     }
-
-                     if (axx != null) {
-                        if (var12 != 0) {
-                           break label237;
-                        }
-
-                        var12 = a.bcy;
-                     }
-
-                     if (axx != null) {
-                        if (var12 != 0) {
-                           break label237;
-                        }
-
-                        a.eeq = true;
-                        a.bcy = true;
-                        var12 = axxx;
-                     }
-
-                     if (axx == null) {
-                        break label158;
-                     }
-
-                     if (var12 == 0) {
-                        break label157;
-                     }
-
-                     a.hfv = -1;
-                     if (axx != null) {
-                        break label157;
-                     }
+         label158: {
+            label157: {
+               label237: {
+                  var12 = axxxxx;
+                  if (axxxxx == 0) {
+                     break label237;
                   }
 
-                  a.eeq = false;
+                  var12 = axxxx;
+
+                  if (var12 != 0) {
+                     break label237;
+                  }
+
+                  var12 = a.bcy;
+
+                  if (var12 != 0) {
+                     break label237;
+                  }
+
+                  a.eeq = true;
+                  a.bcy = true;
+                  var12 = axxx;
+
+
+                  if (var12 == 0) {
+                     break label157;
+                  }
+
+                  a.hfv = -1;
+                  break label157;
                }
 
-               var12 = chi.field_1724.method_24828();
+               a.eeq = false;
             }
 
-            if (axx != null) {
-               if (var12 == 0) {
-                  return;
-               }
+            var12 = chi.field_1724.method_24828();
+         }
 
-               var12 = chi.field_1690.field_1903.method_1434();
-            }
-
-            if (var12 == 0) {
-               a.bcy = false;
-            }
-
+         if (var12 == 0) {
             return;
          }
 
-         var10000 = a;
+         var12 = chi.field_1690.field_1903.method_1434();
+
+         if (var12 == 0) {
+            a.bcy = false;
+         }
+
+         return;
       }
+
+      var10000 = a;
 
       var10000.bcy = false;
    }
@@ -918,22 +784,18 @@ public class GodBridge extends guu {
       long ax = GodBridge.a ^ 15300708672982L;
       int[] var4 = ClientSetup.abu();
       GodBridge var10000 = a;
-      if (var4 != null) {
-         if (!a.ckt.dnp()) {
-            return;
+      if (!a.ckt.dnp()) {
+         return;
+      }
+
+      var10000 = a;
+
+      label35: {
+         if (var10000.aeb == null) {
+            break label35;
          }
 
          var10000 = a;
-      }
-
-      label35: {
-         if (var4 != null) {
-            if (var10000.aeb == null) {
-               break label35;
-            }
-
-            var10000 = a;
-         }
 
          var10000.gei = a.aeb.ddn;
       }
@@ -965,35 +827,25 @@ public class GodBridge extends guu {
          byte var10 = -1;
          var10000 = var9.hashCode();
          label48:
-         if (axx != null) {
-            switch (var10000) {
-               case 1956520879:
-                  var10000 = var9.equals("Adjust");
-                  if (axx == null) {
-                     break label48;
-                  }
+         switch (var10000) {
+            case 1956520879:
+               var10000 = var9.equals("Adjust");
 
-                  if (var10000 == 0) {
-                     break;
-                  }
+               if (var10000 == 0) {
+                  break;
+               }
 
-                  var10 = 0;
-                  if (axx != null) {
-                     break;
-                  }
-               case -268477211:
-                  var10000 = var9.equals("Astralis");
-                  if (axx == null) {
-                     break label48;
-                  }
+               var10 = 0;
+               break;
+            case -268477211:
+               var10000 = var9.equals("Astralis");
 
-                  if (var10000 != 0) {
-                     var10 = 1;
-                  }
-            }
-
-            var10000 = var10;
+               if (var10000 != 0) {
+                  var10 = 1;
+               }
          }
+
+         var10000 = var10;
 
          switch (var10000) {
             case 0:
@@ -1002,9 +854,7 @@ public class GodBridge extends guu {
                float axxxxxxxxxxxxxx = axxx - (axxxxxxxxxxxxx + 2.0F + axxxxxxxxxxxx) / 2.0F;
                ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, ClientSetup.gqy().deo());
                acy.aof("Blocks", axxxxxxxxxxxxxx + axxxxxxxxxxxxx + 2.0F, axxxx, Color.white);
-               if (axx != null) {
-                  break;
-               }
+               break;
             case 1:
                float axxxxxxx = ety.eq("Blocks");
                float axxxxxxxx = bsf.eq(axxxxx);
@@ -1041,18 +891,13 @@ public class GodBridge extends guu {
       int[] var3 = var10000;
       float var7;
       int var5 = (var7 = a - 45.0F) == 0.0F ? 0 : (var7 < 0.0F ? -1 : 1);
-      if (var3 != null) {
-         if (var5 >= 0) {
-            a -= 90.0F;
-         }
-
-         if (var3 == null) {
-            return a;
-         }
-
-         float var8;
-         var5 = (var8 = a - -45.0F) == 0.0F ? 0 : (var8 < 0.0F ? -1 : 1);
+      if (var5 >= 0) {
+         a -= 90.0F;
       }
+
+
+      float var8;
+      var5 = (var8 = a - -45.0F) == 0.0F ? 0 : (var8 < 0.0F ? -1 : 1);
 
       if (var5 < 0) {
          a += 90.0F;
@@ -1077,126 +922,85 @@ public class GodBridge extends guu {
                axxx = ast(chi.field_1724) + 180.0F;
                var15 = a;
                label240:
-               if (axx != null) {
-                  label238:
-                  if (!a.ert(hjr)) {
-                     var21 = evd.dbj();
-                     if (axx != null) {
-                        if (var21 == 0) {
-                           var15 = a.bij.dnp();
-                           if (axx == null) {
-                              break label240;
-                           }
+               label238:
+               if (!a.ert(hjr)) {
+                  var21 = evd.dbj();
+                  if (var21 == 0) {
+                     var15 = a.bij.dnp();
 
-                           if (var15) {
-                              break label238;
-                           }
-                        }
-
-                        var21 = a.bij.dnp();
-                     }
-
-                     if (axx == null) {
-                        break label242;
-                     }
-
-                     if (var21 != 0) {
-                        break label246;
+                     if (var15) {
+                        break label238;
                      }
                   }
 
-                  var15 = a.cmi.dnp();
+                  var21 = a.bij.dnp();
+
+
+                  if (var21 != 0) {
+                     break label246;
+                  }
                }
+
+               var15 = a.cmi.dnp();
 
                String var6 = (String)var15;
                byte var7 = -1;
                var21 = var6.hashCode();
                label224:
-               if (axx != null) {
-                  switch (var21) {
-                     case 2581482:
-                        var21 = var6.equals("Snap");
-                        if (axx == null) {
-                           break label224;
-                        }
+               switch (var21) {
+                  case 2581482:
+                     var21 = var6.equals("Snap");
 
-                        if (var21 == 0) {
-                           break;
-                        }
+                     if (var21 == 0) {
+                        break;
+                     }
 
-                        var7 = 0;
-                        if (axx != null) {
-                           break;
-                        }
-                     case 444110177:
-                        var21 = var6.equals("Brute Force");
-                        if (axx == null) {
-                           break label224;
-                        }
+                     var7 = 0;
+                     break;
+                  case 444110177:
+                     var21 = var6.equals("Brute Force");
 
-                        if (var21 == 0) {
-                           break;
-                        }
+                     if (var21 == 0) {
+                        break;
+                     }
 
-                        var7 = 1;
-                        if (axx != null) {
-                           break;
-                        }
-                     case 482016750:
-                        var21 = var6.equals("Modern Watchdog");
-                        if (axx == null) {
-                           break label224;
-                        }
+                     var7 = 1;
+                     break;
+                  case 482016750:
+                     var21 = var6.equals("Modern Watchdog");
 
-                        if (var21 == 0) {
-                           break;
-                        }
+                     if (var21 == 0) {
+                        break;
+                     }
 
-                        var7 = 2;
-                        if (axx != null) {
-                           break;
-                        }
-                     case 63955982:
-                        var21 = var6.equals("Basic");
-                        if (axx == null) {
-                           break label224;
-                        }
+                     var7 = 2;
+                     break;
+                  case 63955982:
+                     var21 = var6.equals("Basic");
 
-                        if (var21 != 0) {
-                           var7 = 3;
-                        }
-                  }
-
-                  var21 = var7;
+                     if (var21 != 0) {
+                        var7 = 3;
+                     }
                }
 
-               if (axx == null) {
-                  break label242;
-               }
+               var21 = var7;
+
 
                switch (var21) {
                   case 0:
                      var21 = chi.field_1690.field_1903.method_1434();
-                     if (axx != null) {
-                        if (var21 != 0) {
-                           return cse(a.aeb.ddn.method_10263(), a.aeb.ddn.method_10264(), a.aeb.ddn.method_10260(), a.aeb.fie);
-                        }
-
-                        var21 = amg.gmi(chi.field_1724.method_24515());
+                     if (var21 != 0) {
+                        return cse(a.aeb.ddn.method_10263(), a.aeb.ddn.method_10264(), a.aeb.ddn.method_10260(), a.aeb.fie);
                      }
 
-                     if (axx == null) {
-                        break label243;
-                     }
+                     var21 = amg.gmi(chi.field_1724.method_24515());
+
 
                      if (var21 == 0) {
                         var21 = 2;
                         break label243;
                      }
 
-                     if (axx == null) {
-                        return cse(a.aeb.ddn.method_10263(), a.aeb.ddn.method_10264(), a.aeb.ddn.method_10260(), a.aeb.fie);
-                     }
 
                      if (a.aeb != null) {
                         return cse(a.aeb.ddn.method_10263(), a.aeb.ddn.method_10264(), a.aeb.ddn.method_10260(), a.aeb.fie);
@@ -1204,13 +1008,11 @@ public class GodBridge extends guu {
                      break;
                   case 1:
                      efy var20 = a.aeb;
-                     if (axx != null) {
-                        if (a.aeb == null) {
-                           return new float[]{axxx, a};
-                        }
-
-                        var20 = a.aeb;
+                     if (a.aeb == null) {
+                        return new float[]{axxx, a};
                      }
+
+                     var20 = a.aeb;
 
                      float[] axxxxx = cse(var20.ddn.method_10263(), a.aeb.ddn.method_10264(), a.aeb.ddn.method_10260(), a.aeb.fie);
                      a = axxxxx[1];
@@ -1224,14 +1026,12 @@ public class GodBridge extends guu {
                         boolean axxxxx = chi.field_1690.field_1913.method_1434();
                         var17 = chi.field_1724.method_36454();
                         boolean var28 = axxxxx;
-                        if (axx != null) {
-                           if (axxxxx == chi.field_1690.field_1849.method_1434()) {
-                              var29 = 0.0;
-                              break label178;
-                           }
-
-                           var28 = axxxxx;
+                        if (axxxxx == chi.field_1690.field_1849.method_1434()) {
+                           var29 = 0.0;
+                           break label178;
                         }
+
+                        var28 = axxxxx;
 
                         var29 = var28 ? 1.0 : -1.0;
                      }
@@ -1239,14 +1039,12 @@ public class GodBridge extends guu {
                      double var34;
                      label172: {
                         boolean var33 = axxxx;
-                        if (axx != null) {
-                           if (axxxx == chi.field_1690.field_1881.method_1434()) {
-                              var34 = 0.0;
-                              break label172;
-                           }
-
-                           var33 = axxxx;
+                        if (axxxx == chi.field_1690.field_1881.method_1434()) {
+                           var34 = 0.0;
+                           break label172;
                         }
+
+                        var33 = axxxx;
 
                         var34 = var33 ? 1.0 : -1.0;
                      }
@@ -1255,13 +1053,11 @@ public class GodBridge extends guu {
                         float axxxxx = var17 - (float)Math.toDegrees(Math.atan2(var29, var34));
                         axxx = axxxxx - 180.0F;
                         efy var18 = a.aeb;
-                        if (axx != null) {
-                           if (a.aeb == null) {
-                              break label166;
-                           }
-
-                           var18 = a.aeb;
+                        if (a.aeb == null) {
+                           break label166;
                         }
+
+                        var18 = a.aeb;
 
                         float[] axxxxxxx = cse(var18.ddn.method_10263(), a.aeb.ddn.method_10264(), a.aeb.ddn.method_10260(), a.aeb.fie);
                         a.cvz = axxx = axxxxxxx[0];
@@ -1272,14 +1068,12 @@ public class GodBridge extends guu {
                      label160: {
                         var19 = new float[2];
                         GodBridge var10003 = a;
-                        if (axx != null) {
-                           if (a.gf.dnp()) {
-                              var35 = axxx;
-                              break label160;
-                           }
-
-                           var10003 = a;
+                        if (a.gf.dnp()) {
+                           var35 = axxx;
+                           break label160;
                         }
+
+                        var10003 = a;
 
                         var35 = var10003.cvz;
                      }
@@ -1287,14 +1081,12 @@ public class GodBridge extends guu {
                      label154: {
                         var19[0] = var35;
                         GodBridge var36 = a;
-                        if (axx != null) {
-                           if (a.gf.dnp()) {
-                              var35 = a;
-                              break label154;
-                           }
-
-                           var36 = a;
+                        if (a.gf.dnp()) {
+                           var35 = a;
+                           break label154;
                         }
+
+                        var36 = a;
 
                         var35 = var36.ahz;
                      }
@@ -1328,37 +1120,31 @@ public class GodBridge extends guu {
       int[] axxx = var10000;
       double var11 = axx.method_1027();
       double var10001 = 1.0E-6;
-      if (axxx != null) {
-         if (!(var11 > 1.0E-6)) {
-            float axxxx = a.field_3913.method_3128().field_1343;
-            float axxxxx = a.field_3913.method_3128().field_1342;
-            float var12 = axxxx;
-            if (axxx != null) {
-               label35:
-               if (axxxx == 0.0F) {
-                  float var13 = axxxxx;
-                  if (axxx != null) {
-                     if (axxxxx != 0.0F) {
-                        break label35;
-                     }
-
-                     var13 = class_3532.method_15393(a.method_36454());
-                  }
-
-                  return var13;
-               }
-
-               var12 = axxxxx;
+      if (!(var11 > 1.0E-6)) {
+         float axxxx = a.field_3913.method_3128().field_1343;
+         float axxxxx = a.field_3913.method_3128().field_1342;
+         float var12 = axxxx;
+         label35:
+         if (axxxx == 0.0F) {
+            float var13 = axxxxx;
+            if (axxxxx != 0.0F) {
+               break label35;
             }
 
-            double axxxxxx = Math.toDegrees(Math.atan2(var12, axxxx));
-            float axxxxxxx = a.method_36454() + (float)axxxxxx;
-            return class_3532.method_15393(axxxxxxx);
+            var13 = class_3532.method_15393(a.method_36454());
+
+            return var13;
          }
 
-         var11 = -axx.field_1352;
-         var10001 = axx.field_1350;
+         var12 = axxxxx;
+
+         double axxxxxx = Math.toDegrees(Math.atan2(var12, axxxx));
+         float axxxxxxx = a.method_36454() + (float)axxxxxx;
+         return class_3532.method_15393(axxxxxxx);
       }
+
+      var11 = -axx.field_1352;
+      var10001 = axx.field_1350;
 
       float axxxx = (float)Math.toDegrees(Math.atan2(var11, var10001));
       return class_3532.method_15393(axxxx);
@@ -1367,29 +1153,11 @@ public class GodBridge extends guu {
    public static float[] cse(double x, double y, double z, class_2350 direction) {
       long ax = GodBridge.a ^ 77362082436317L;
       class_638 axx = chi.field_1687;
-      if (axx == null) {
-         return new float[]{0.0F, 0.0F};
-      } else {
-         class_1297 axxx = new fs(class_1299.field_6052, axx);
-         axxx.method_5814(a + 0.5 + a.method_10148() * 0.5, a + 0.5 + a.method_10164() * 0.5, a + 0.5 + a.method_10165() * 0.5);
-         return abo(axxx.method_23317(), axxx.method_23318(), axxx.method_23321());
-      }
    }
 
    public static float[] abo(double x, double y, double z) {
       long ax = GodBridge.a ^ 54941233386513L;
       class_746 axx = chi.field_1724;
-      if (axx == null) {
-         return new float[]{0.0F, 0.0F};
-      } else {
-         double axxx = a - axx.method_23317();
-         double axxxx = a - axx.method_23321();
-         double axxxxx = a - axx.method_23318() - 1.2;
-         double axxxxxx = Math.sqrt(axxx * axxx + axxxx * axxxx);
-         float axxxxxxx = (float)(Math.atan2(axxxx, axxx) * 180.0 / (float) Math.PI - 90.0);
-         float axxxxxxxx = (float)(-(Math.atan2(axxxxx, axxxxxx) * 180.0 / (float) Math.PI));
-         return new float[]{axxxxxxx, axxxxxxxx};
-      }
    }
 
    private boolean ert(int a) {
@@ -1402,70 +1170,49 @@ public class GodBridge extends guu {
       byte var6 = -1;
       var7 = var5.hashCode();
       label78:
-      if (ax != null) {
-         switch (var7) {
-            case 80691912:
-               var7 = var5.equals("Telly");
-               if (ax == null) {
-                  break label78;
-               }
+      switch (var7) {
+         case 80691912:
+            var7 = var5.equals("Telly");
 
-               if (var7 == 0) {
-                  break;
-               }
+            if (var7 == 0) {
+               break;
+            }
 
-               var6 = 0;
-               if (ax != null) {
-                  break;
-               }
-            case -1684174727:
-               var7 = var5.equals("Telly Slow");
-               if (ax == null) {
-                  break label78;
-               }
+            var6 = 0;
+            break;
+         case -1684174727:
+            var7 = var5.equals("Telly Slow");
 
-               if (var7 == 0) {
-                  break;
-               }
+            if (var7 == 0) {
+               break;
+            }
 
-               var6 = 1;
-               if (ax != null) {
-                  break;
-               }
-            case -268477211:
-               var7 = var5.equals("Astralis");
-               if (ax == null) {
-                  break label78;
-               }
+            var6 = 1;
+            break;
+         case -268477211:
+            var7 = var5.equals("Astralis");
 
-               if (var7 != 0) {
-                  var6 = 2;
-               }
-         }
-
-         var7 = var6;
+            if (var7 != 0) {
+               var6 = 2;
+            }
       }
 
-      if (ax != null) {
-         switch (var7) {
-            case 0:
-               var7 = bna.fsc((long)crg.gj(80.0F, 100.0F));
-               break;
-            case 1:
-               var7 = a;
-               if (ax != null) {
-                  var7 = a > 2 ? 1 : 0;
-               }
-               break;
-            case 2:
-               var7 = chi.field_1724.method_24828();
-               if (ax != null) {
-                  var7 = var7 == 0 ? 1 : 0;
-               }
-               break;
-            default:
-               var7 = 0;
-         }
+      var7 = var6;
+
+      switch (var7) {
+         case 0:
+            var7 = bna.fsc((long)crg.gj(80.0F, 100.0F));
+            break;
+         case 1:
+            var7 = a;
+            var7 = a > 2 ? 1 : 0;
+            break;
+         case 2:
+            var7 = chi.field_1724.method_24828();
+            var7 = var7 == 0 ? 1 : 0;
+            break;
+         default:
+            var7 = 0;
       }
 
       return (boolean)var7;
@@ -1484,26 +1231,18 @@ public class GodBridge extends guu {
                axx = chi.field_1724.method_24515();
                ax = var10000;
                var18 = a.ady.dnp();
-               if (ax != null) {
-                  if (var18 == 0) {
-                     break label186;
-                  }
-
-                  var18 = chi.field_1690.field_1903.method_1434();
+               if (var18 == 0) {
+                  break label186;
                }
 
-               if (ax == null) {
-                  break label183;
-               }
+               var18 = chi.field_1690.field_1903.method_1434();
+
 
                if (var18 == 0) {
                   break label182;
                }
 
                var18 = a.fwb;
-               if (ax == null) {
-                  break label183;
-               }
 
                if (a.fwb) {
                   break label182;
@@ -1523,148 +1262,111 @@ public class GodBridge extends guu {
          a.fmi.clear();
          var19 = chi.field_1687.method_8320(axxxx).method_26215();
          label164:
-         if (ax != null) {
-            if (var19) {
-               int axxxxx = 0;
+         if (var19) {
+            int axxxxx = 0;
 
-               label160:
-               do {
-                  float var25;
-                  var18 = (var25 = axxxxx - a.bab.dnp().floatValue()) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
+            label160:
+            do {
+               float var25;
+               var18 = (var25 = axxxxx - a.bab.dnp().floatValue()) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
 
-                  label157:
-                  while (true) {
-                     if (var18 >= 0) {
-                        break label160;
-                     }
-
-                     var19 = false;
-                     if (ax == null) {
-                        break label164;
-                     }
-
-                     int axxxxxx = 0;
-
-                     while (true) {
-                        float var26;
-                        var18 = (var26 = axxxxxx - a.bab.dnp().floatValue()) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
-
-                        label152:
-                        while (true) {
-                           if (var18 >= 0) {
-                              break label157;
-                           }
-
-                           var18 = 1;
-                           if (ax == null) {
-                              continue label157;
-                           }
-
-                           int axxxxxxx = 1;
-
-                           while (true) {
-                              if (axxxxxxx <= -3) {
-                                 break label152;
-                              }
-
-                              class_2338 axxxxxxxx = axxxx.method_10069(axxxxx * axxxxxxx, 0, axxxxxx * axxxxxxx);
-                              label118:
-                              if (ax != null) {
-                                 var18 = chi.field_1687.method_8320(axxxxxxxx).method_26215();
-                                 if (ax == null) {
-                                    break;
-                                 }
-
-                                 if (var18 != 0) {
-                                    class_2350[] var11 = class_2350.values();
-                                    int var12 = var11.length;
-                                    int var13 = 0;
-
-                                    while (var13 < var12) {
-                                       class_2350 axxxxxxxxx = var11[var13];
-                                       if (ax == null) {
-                                          break label118;
-                                       }
-
-                                       label141: {
-                                          if (axxxxxxxxx != class_2350.field_11036) {
-                                             class_2338 axxxxxxxxxx = axxxxxxxx.method_10093(axxxxxxxxx);
-                                             class_2680 axxxxxxxxxxx = chi.field_1687.method_8320(axxxxxxxxxx);
-                                             class_2248 axxxxxxxxxxxx = axxxxxxxxxxx.method_26204();
-                                             if (ax == null) {
-                                                break label141;
-                                             }
-
-                                             label138:
-                                             if (!axxxxxxxxxxx.method_26215()) {
-                                                class_2248 var22 = axxxxxxxxxxxx;
-                                                if (ax != null) {
-                                                   if (axxxxxxxxxxxx instanceof class_2404) {
-                                                      break label138;
-                                                   }
-
-                                                   var22 = axxxxxxxxxxxx;
-                                                }
-
-                                                class_2248 var24 = class_2246.field_10214;
-                                                if (ax != null) {
-                                                   if (var22 == class_2246.field_10214) {
-                                                      break label138;
-                                                   }
-
-                                                   var22 = axxxxxxxxxxxx;
-                                                   var24 = class_2246.field_10479;
-                                                }
-
-                                                if (var22 != var24) {
-                                                   a.fmi.add(new efy(axxxxxxxxxx, axxxxxxxxx.method_10153()));
-                                                }
-                                             }
-                                          }
-
-                                          var13++;
-                                       }
-
-                                       if (ax == null) {
-                                          break;
-                                       }
-                                    }
-                                 }
-
-                                 axxxxxxx -= 2;
-                              }
-
-                              if (ax == null) {
-                                 break label152;
-                              }
-                           }
-                        }
-
-                        axxxxxx++;
-                        if (ax == null) {
-                           break label157;
-                        }
-                     }
+               label157:
+               while (true) {
+                  if (var18 >= 0) {
+                     break label160;
                   }
 
-                  axxxxx++;
-               } while (ax != null);
-            }
+                  var19 = false;
 
-            a.fmi.sort(Comparator.comparingDouble(axxxxx -> axxxxx.ddn.method_10262(a)));
-            var23 = a;
-            if (ax == null) {
-               break label187;
-            }
+                  int axxxxxx = 0;
 
-            var19 = a.fmi.isEmpty();
+                  while (true) {
+                     float var26;
+                     var18 = (var26 = axxxxxx - a.bab.dnp().floatValue()) == 0.0F ? 0 : (var26 < 0.0F ? -1 : 1);
+
+                     label152:
+                     while (true) {
+                        if (var18 >= 0) {
+                           break label157;
+                        }
+
+                        var18 = 1;
+
+                        int axxxxxxx = 1;
+
+                        while (true) {
+                           if (axxxxxxx <= -3) {
+                              break label152;
+                           }
+
+                           class_2338 axxxxxxxx = axxxx.method_10069(axxxxx * axxxxxxx, 0, axxxxxx * axxxxxxx);
+                           label118:
+                           var18 = chi.field_1687.method_8320(axxxxxxxx).method_26215();
+
+                           if (var18 != 0) {
+                              class_2350[] var11 = class_2350.values();
+                              int var12 = var11.length;
+                              int var13 = 0;
+
+                              while (var13 < var12) {
+                                 class_2350 axxxxxxxxx = var11[var13];
+
+                                 label141: {
+                                    if (axxxxxxxxx != class_2350.field_11036) {
+                                       class_2338 axxxxxxxxxx = axxxxxxxx.method_10093(axxxxxxxxx);
+                                       class_2680 axxxxxxxxxxx = chi.field_1687.method_8320(axxxxxxxxxx);
+                                       class_2248 axxxxxxxxxxxx = axxxxxxxxxxx.method_26204();
+
+                                       label138:
+                                       if (!axxxxxxxxxxx.method_26215()) {
+                                          class_2248 var22 = axxxxxxxxxxxx;
+                                          if (axxxxxxxxxxxx instanceof class_2404) {
+                                             break label138;
+                                          }
+
+                                          var22 = axxxxxxxxxxxx;
+
+                                          class_2248 var24 = class_2246.field_10214;
+                                          if (var22 == class_2246.field_10214) {
+                                             break label138;
+                                          }
+
+                                          var22 = axxxxxxxxxxxx;
+                                          var24 = class_2246.field_10479;
+
+                                          if (var22 != var24) {
+                                             a.fmi.add(new efy(axxxxxxxxxx, axxxxxxxxx.method_10153()));
+                                          }
+                                       }
+                                    }
+
+                                    var13++;
+                                 }
+
+                              }
+                           }
+
+                           axxxxxxx -= 2;
+
+                        }
+                     }
+
+                     axxxxxx++;
+                  }
+               }
+
+               axxxxx++;
+            } while (ax != null);
          }
+
+         a.fmi.sort(Comparator.comparingDouble(axxxxx -> axxxxx.ddn.method_10262(a)));
+         var23 = a;
+
+         var19 = a.fmi.isEmpty();
 
          if (!var19) {
             a.aeb = a.fmi.get(0);
-            if (ax != null) {
-               return;
-            }
+            return;
          }
 
          var23 = a;
@@ -1684,33 +1386,24 @@ public class GodBridge extends guu {
       while (true) {
          if (axxxx < 9) {
             class_1799 axxxxx = chi.field_1724.method_31548().method_5438(axxxx);
-            if (axx != null) {
-               var8 = axxxxx.method_7909() instanceof class_1747;
-               if (axx == null) {
-                  break;
+            var8 = axxxxx.method_7909() instanceof class_1747;
+
+            label36:
+            if (var8 != 0) {
+               int var9 = axxxxx.method_7947();
+               if (var9 <= axxx) {
+                  break label36;
                }
 
-               label36:
-               if (var8 != 0) {
-                  int var9 = axxxxx.method_7947();
-                  if (axx != null) {
-                     if (var9 <= axxx) {
-                        break label36;
-                     }
+               axxx = axxxxx.method_7947();
+               var9 = axxxx;
 
-                     axxx = axxxxx.method_7947();
-                     var9 = axxxx;
-                  }
-
-                  ax = var9;
-               }
-
-               axxxx++;
+               ax = var9;
             }
 
-            if (axx != null) {
-               continue;
-            }
+            axxxx++;
+
+            continue;
          }
 
          var8 = ax;
@@ -1724,13 +1417,11 @@ public class GodBridge extends guu {
       long a = GodBridge.a ^ 112315981941545L;
       int[] ax = ClientSetup.abu();
       efy var10000 = a.aeb;
-      if (ax != null) {
-         if (a.aeb == null) {
-            return null;
-         }
-
-         var10000 = a.aeb;
+      if (a.aeb == null) {
+         return null;
       }
+
+      var10000 = a.aeb;
 
       double axx;
       double axxx;
@@ -1742,44 +1433,29 @@ public class GodBridge extends guu {
          axxxx = axxxxx.method_10260() + Math.random();
          class_239 axxxxxx = chi.field_1765;
          int var13 = ezj.gya[a.aeb.fie.ordinal()];
-         if (ax != null) {
-            switch (var13) {
-               case 1:
-                  axxx = axxxxx.method_10264();
-                  if (ax != null) {
-                     break;
-                  }
-               case 2:
-                  axxx = axxxxx.method_10264() + 1;
-                  if (ax != null) {
-                     break;
-                  }
-               case 3:
-                  axxxx = axxxxx.method_10260();
-                  if (ax != null) {
-                     break;
-                  }
-               case 4:
-                  axxxx = axxxxx.method_10260() + 1;
-                  if (ax != null) {
-                     break;
-                  }
-               case 5:
-                  axx = axxxxx.method_10263();
-                  if (ax != null) {
-                     break;
-                  }
-               case 6:
-                  axx = axxxxx.method_10263() + 1;
-            }
-
-            var14 = axxxxxx;
-            if (ax == null) {
-               break label73;
-            }
-
-            var13 = axxxxxx instanceof class_3965;
+         switch (var13) {
+            case 1:
+               axxx = axxxxx.method_10264();
+               break;
+            case 2:
+               axxx = axxxxx.method_10264() + 1;
+               break;
+            case 3:
+               axxxx = axxxxx.method_10260();
+               break;
+            case 4:
+               axxxx = axxxxx.method_10260() + 1;
+               break;
+            case 5:
+               axx = axxxxx.method_10263();
+               break;
+            case 6:
+               axx = axxxxx.method_10263() + 1;
          }
+
+         var14 = axxxxxx;
+
+         var13 = axxxxxx instanceof class_3965;
 
          if (var13 == 0) {
             return new class_243(axx, axxx, axxxx);
@@ -1790,23 +1466,19 @@ public class GodBridge extends guu {
 
       class_3965 axxxxxxx = (class_3965)var14;
       class_3965 var15 = axxxxxxx;
-      if (ax != null) {
-         if (!axxxxxxx.method_17777().equals(a.aeb.ddn)) {
-            return new class_243(axx, axxx, axxxx);
-         }
-
-         var15 = axxxxxxx;
+      if (!axxxxxxx.method_17777().equals(a.aeb.ddn)) {
+         return new class_243(axx, axxx, axxxx);
       }
 
-      if (ax != null) {
-         if (var15.method_17780() != a.aeb.fie) {
-            return new class_243(axx, axxx, axxxx);
-         }
+      var15 = axxxxxxx;
 
-         axx = axxxxxxx.method_17784().field_1352;
-         axxx = axxxxxxx.method_17784().field_1351;
-         var15 = axxxxxxx;
+      if (var15.method_17780() != a.aeb.fie) {
+         return new class_243(axx, axxx, axxxx);
       }
+
+      axx = axxxxxxx.method_17784().field_1352;
+      axxx = axxxxxxx.method_17784().field_1351;
+      var15 = axxxxxxx;
 
       axxxx = var15.method_17784().field_1350;
       return new class_243(axx, axxx, axxxx);
@@ -1824,30 +1496,20 @@ public class GodBridge extends guu {
             class_1799 axxxx = chi.field_1724.method_31548().method_5438(axxx);
             class_1792 axxxxx = axxxx.method_7909();
             label32:
-            if (axx != null) {
-               var10 = axxxxx instanceof class_1747;
-               if (axx == null) {
-                  break;
+            var10 = axxxxx instanceof class_1747;
+
+            if (var10 != 0) {
+               class_1747 axxxxxx = (class_1747)axxxxx;
+               class_2248 axxxxxxx = axxxxxx.method_7711();
+
+               if (amg.ayj(axxxxxxx)) {
+                  ax += axxxx.method_7947();
                }
-
-               if (var10 != 0) {
-                  class_1747 axxxxxx = (class_1747)axxxxx;
-                  class_2248 axxxxxxx = axxxxxx.method_7711();
-                  if (axx == null) {
-                     break label32;
-                  }
-
-                  if (amg.ayj(axxxxxxx)) {
-                     ax += axxxx.method_7947();
-                  }
-               }
-
-               axxx++;
             }
 
-            if (axx != null) {
-               continue;
-            }
+            axxx++;
+
+            continue;
          }
 
          var10 = ax;
@@ -2017,89 +1679,6 @@ public class GodBridge extends guu {
             var25 = var15.substring(++var24, var24 + var14);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 6161;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/fhd", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/fhd" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

@@ -78,15 +78,10 @@ public class dmp {
       while (true) {
          if (axx < a.length) {
             var5 = a;
-            if (axxx == null) {
-               break;
-            }
 
             a[axx] *= bcd;
             axx++;
-            if (axxx != null) {
-               continue;
-            }
+            continue;
          }
 
          var5 = a;
@@ -99,13 +94,11 @@ public class dmp {
    private static void bzp() {
       int[] var2 = ClientSetup.abu();
       Path var10000 = bqh;
-      if (var2 != null) {
-         if (bqh != null) {
-            return;
-         }
-
-         var10000 = new Path();
+      if (bqh != null) {
+         return;
       }
+
+      var10000 = new Path();
 
       bqh = var10000;
    }
@@ -118,18 +111,13 @@ public class dmp {
          ezv axx = ClientSetup.gqy().aws().diy(ezv.class);
          int[] axxx = var10000;
          boolean var6 = axx.dsv();
-         if (axxx != null) {
-            if (!var6) {
-               return;
-            }
-
-            var7 = axx.btt.dnp();
-            if (axxx == null) {
-               break label29;
-            }
-
-            var6 = var7;
+         if (!var6) {
+            return;
          }
+
+         var7 = axx.btt.dnp();
+
+         var6 = var7;
 
          if (!var6) {
             return;
@@ -175,33 +163,24 @@ public class dmp {
       long ax = dmp.a ^ 86167002798790L;
       int[] axx = ClientSetup.abu();
       ModuleManager var10000 = ClientSetup.gqy().aws();
-      if (axx != null) {
-         if (var10000 == null) {
-            return;
-         }
 
-         var10000 = ClientSetup.gqy().aws();
-      }
+      var10000 = ClientSetup.gqy().aws();
 
       ezv axxx = var10000.diy(ezv.class);
       boolean var9 = axxx.dsv();
-      if (axx != null) {
-         if (!var9) {
-            return;
-         }
-
-         var9 = axxx.btt.dnp();
+      if (!var9) {
+         return;
       }
+
+      var9 = axxx.btt.dnp();
 
       if (var9) {
          Object var10 = bqh;
-         if (axx != null) {
-            if (bqh == null) {
-               bqh = new Path();
-            }
-
-            var10 = axxx.fxw.dnp();
+         if (bqh == null) {
+            bqh = new Path();
          }
+
+         var10 = axxx.fxw.dnp();
 
          label77: {
             label90: {
@@ -209,17 +188,12 @@ public class dmp {
                   label92: {
                      label93: {
                         var11 = (Boolean)var10;
-                        if (axx != null) {
-                           if (var11) {
-                              break label93;
-                           }
-
-                           var11 = axxx.btt.dnp();
+                        if (var11) {
+                           break label93;
                         }
 
-                        if (axx == null) {
-                           break label91;
-                        }
+                        var11 = axxx.btt.dnp();
+
 
                         if (!var11) {
                            break label92;
@@ -229,9 +203,6 @@ public class dmp {
                      eel axxxx = new eel(a, a);
                      ClientSetup.gqy().fyf().brx(axxxx);
                      var11 = axxx.btt.dnp();
-                     if (axx == null) {
-                        break label91;
-                     }
 
                      if (var11) {
                         bxf(Color.BLACK.getRGB());
@@ -239,9 +210,6 @@ public class dmp {
                   }
 
                   var10 = axxx.fxw.dnp();
-                  if (axx == null) {
-                     break label90;
-                  }
 
                   var11 = var10;
                }
@@ -277,15 +245,13 @@ public class dmp {
          int[] axx = var10000;
          a = dxk(a);
          var16 = dxk(a);
-         if (axx != null) {
-            a = var16;
-            if (a) {
-               var16 = a;
-               break label21;
-            }
-
+         a = var16;
+         if (a) {
             var16 = a;
+            break label21;
          }
+
+         var16 = a;
 
          var16 += a;
       }
@@ -477,19 +443,14 @@ public class dmp {
       float axxxxxx = Math.max(a, a);
       float var13;
       int var11 = (var13 = axxx - axx - 0.5F) == 0.0F ? 0 : (var13 < 0.0F ? -1 : 1);
-      if (axxxxx != null) {
-         if (var11 < 0) {
-            axxx = axx + 0.5F;
-         }
-
-         float var12 = axxxxxx - axxxx;
-         if (axxxxx == null) {
-            return Rect.makeLTRB(var12, 0.5F, dxk(axxx), dxk(axxxxxx));
-         }
-
-         float var14;
-         var11 = (var14 = var12 - 0.5F) == 0.0F ? 0 : (var14 < 0.0F ? -1 : 1);
+      if (var11 < 0) {
+         axxx = axx + 0.5F;
       }
+
+      float var12 = axxxxxx - axxxx;
+
+      float var14;
+      var11 = (var14 = var12 - 0.5F) == 0.0F ? 0 : (var14 < 0.0F ? -1 : 1);
 
       if (var11 < 0) {
          axxxxxx = axxxx + 0.5F;
@@ -508,13 +469,11 @@ public class dmp {
    public static void dzr(float x, float y, float w, float h, Image image, Color tint) {
       long ax = dmp.a ^ 101390462154759L;
       int[] var8 = ClientSetup.abu();
-      if (var8 != null) {
-         if (a != null) {
-            enz.setColorFilter(ColorFilter.makeBlend(a.getRGB(), BlendMode.SRC_ATOP));
-         }
-
-         gex.drawImageRect(a, dkj(a, a, a, a), enz);
+      if (a != null) {
+         enz.setColorFilter(ColorFilter.makeBlend(a.getRGB(), BlendMode.SRC_ATOP));
       }
+
+      gex.drawImageRect(a, dkj(a, a, a, a), enz);
    }
 
    public static void hdf(float x, float y, float width, float height) {

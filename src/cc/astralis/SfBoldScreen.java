@@ -67,19 +67,14 @@ public class SfBoldScreen extends class_437 {
                axxx = var5[var7];
                axxxx = new gnp(axxx, 21);
                SfBoldScreen var11 = a;
-               if (axx != null) {
-                  a.bfv.add(axxxx);
-                  ax += axxxx.ajg() + 5.0F;
-                  if (axx == null) {
-                     break;
-                  }
+               a.bfv.add(axxxx);
+               ax += axxxx.ajg() + 5.0F;
 
-                  if (axxx != bfm.COMBAT) {
-                     break label25;
-                  }
-
-                  var11 = a;
+               if (axxx != bfm.COMBAT) {
+                  break label25;
                }
+
+               var11 = a;
 
                var11.bal = axxxx;
             }
@@ -87,9 +82,7 @@ public class SfBoldScreen extends class_437 {
             dqp axxxxx = new dqp(axxx, 325.0F, 218.0F);
             a.bia.put(axxxx, axxxxx);
             var7++;
-            if (axx != null) {
-               continue;
-            }
+            continue;
          }
 
          a.apw = ax - 5.0F;
@@ -129,18 +122,13 @@ public class SfBoldScreen extends class_437 {
 
       for (gnp axxxxxxx : a.bfv) {
          axxxxxxx.ckn(axxxxx, axxxxxx, a, a);
-         if (axxx != null) {
-            if (a.bal == axxxxxxx) {
-               int axxxxxxxx = 6;
-               dmp.caz(axxxxx + 6.0F, axxxxxx + axxxxxxx.ajg(), axxxxxxx.arq() - 12.0F, 1.5F, 0.0F, 0.0F, 1.0F, 1.0F, Color.white);
-            }
-
-            axxxxxx += axxxxxxx.ajg() + 5.0F;
+         if (a.bal == axxxxxxx) {
+            int axxxxxxxx = 6;
+            dmp.caz(axxxxx + 6.0F, axxxxxx + axxxxxxx.ajg(), axxxxxxx.arq() - 12.0F, 1.5F, 0.0F, 0.0F, 1.0F, 1.0F, Color.white);
          }
 
-         if (axxx == null) {
-            break;
-         }
+         axxxxxx += axxxxxxx.ajg() + 5.0F;
+
       }
 
       fll axxxxxxx = FontManager.emc(b, 21);
@@ -153,46 +141,32 @@ public class SfBoldScreen extends class_437 {
       long ax = SfBoldScreen.a ^ 116941649672548L;
       int[] axx = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().gkk(a, a);
-      if (axx != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = CloudConfigurations.fpp().fbr();
+      if (var10000) {
+         return true;
       }
 
-      if (axx != null) {
-         if (!var10000) {
-            a.bia.get(a.bal).gdj(a.comp_4798(), a.comp_4799(), a.method_74245());
+      var10000 = CloudConfigurations.fpp().fbr();
 
-            for (gnp axxx : a.bfv) {
-               label47: {
-                  if (axx != null) {
-                     var10000 = axxx.efu(a.comp_4798(), a.comp_4799());
-                     if (axx == null) {
-                        return var10000;
-                     }
+      if (!var10000) {
+         a.bia.get(a.bal).gdj(a.comp_4798(), a.comp_4799(), a.method_74245());
 
-                     if (!var10000) {
-                        break label47;
-                     }
+         for (gnp axxx : a.bfv) {
+            label47: {
+               var10000 = axxx.efu(a.comp_4798(), a.comp_4799());
 
-                     a.bal = axxx;
-                  }
-
-                  if (axx != null) {
-                     break;
-                  }
+               if (!var10000) {
+                  break label47;
                }
 
-               if (axx == null) {
-                  break;
-               }
+               a.bal = axxx;
+
+               break;
             }
-         }
 
-         var10000 = super.method_25402(a, a);
+         }
       }
+
+      var10000 = super.method_25402(a, a);
 
       return var10000;
    }
@@ -206,13 +180,11 @@ public class SfBoldScreen extends class_437 {
       long ax = SfBoldScreen.a ^ 36724491555424L;
       int[] var8 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().fgn(a, a, a);
-      if (var8 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25403(a, a, a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25403(a, a, a);
 
       return var10000;
    }
@@ -222,21 +194,17 @@ public class SfBoldScreen extends class_437 {
       int[] var11 = ClientSetup.abu();
       double var12;
       int var10000 = (var12 = a - 0.0) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
-      if (var11 != null) {
-         if (var10000) {
-            a.bia.get(a.bal).bof(-a);
-         }
-
-         var10000 = CloudConfigurations.fpp().dmj(a, a, a, a);
+      if (var10000) {
+         a.bia.get(a.bal).bof(-a);
       }
 
-      if (var11 != null) {
-         if (var10000) {
-            return true;
-         }
+      var10000 = CloudConfigurations.fpp().dmj(a, a, a, a);
 
-         var10000 = super.method_25401(a, a, a, a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25401(a, a, a, a);
 
       return (boolean)var10000;
    }
@@ -245,13 +213,11 @@ public class SfBoldScreen extends class_437 {
       long ax = SfBoldScreen.a ^ 32222494817492L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().chz(a);
-      if (var4 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25404(a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25404(a);
 
       return var10000;
    }
@@ -260,13 +226,11 @@ public class SfBoldScreen extends class_437 {
       long ax = SfBoldScreen.a ^ 93910203841844L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().flf(a);
-      if (var4 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25400(a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25400(a);
 
       return var10000;
    }

@@ -41,9 +41,6 @@ public class eoy extends fig {
 
       for (guu axxx : ClientSetup.gqy().aws().gtd(a)) {
          a.gzf.add(new ckg(axxx, a.gzf));
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -60,25 +57,18 @@ public class eoy extends fig {
             label60: {
                ckg axxxxx = (ckg)axxxx.next();
                float var12 = axx + axxxxx.gqc();
-               if (axxx != null) {
-                  axx = var12;
-                  if (axxx == null) {
-                     break;
-                  }
+               axx = var12;
 
-                  if (!axxxxx.dfv && !axxxxx.btb) {
-                     break label60;
-                  }
-
-                  var12 = axx + (float)axxxxx.dmy.hjo();
+               if (!axxxxx.dfv && !axxxxx.btb) {
+                  break label60;
                }
+
+               var12 = axx + (float)axxxxx.dmy.hjo();
 
                axx = var12;
             }
 
-            if (axxx != null) {
-               continue;
-            }
+            continue;
          }
 
          float var13 = a.hjg() + 1.0F;
@@ -103,25 +93,18 @@ public class eoy extends fig {
                axxxxxx.cje(20.0F);
                axxxxxx.bfi(a, a);
                float var14 = axxxxx + axxxxxx.gqc();
-               if (axxx != null) {
-                  axxxxx = var14;
-                  if (axxx == null) {
-                     break;
-                  }
+               axxxxx = var14;
 
-                  if (!axxxxxx.dfv && !axxxxxx.btb) {
-                     break label44;
-                  }
-
-                  var14 = axxxxx + (float)axxxxxx.dmy.hjo();
+               if (!axxxxxx.dfv && !axxxxxx.btb) {
+                  break label44;
                }
+
+               var14 = axxxxx + (float)axxxxxx.dmy.hjo();
 
                axxxxx = var14;
             }
 
-            if (axxx != null) {
-               continue;
-            }
+            continue;
          }
 
          dmp.hbm(a.hjg(), a.dtt() - 1.0F, a.av() + 1.0F, axx + 2.0F, 6.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false, 2.0F, new Color(0, 0, 0, 0));
@@ -229,33 +212,6 @@ public class eoy extends fig {
       if (flu() == null) {
          emn(var11);
       }
-   }
-
-   private static String b(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
    }
 
    private static int a(int var0, long var1) {

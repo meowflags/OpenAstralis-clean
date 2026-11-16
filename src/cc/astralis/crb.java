@@ -60,13 +60,11 @@ public class crb extends bmd {
       float axxxxxxxx = axxxx + a.csw * 80.0F;
       dmp.cpp(axxxxxxxx - 1.0F, axxxxxxx - 2.0F, 2.0F, 14.0F, 1.0F, Color.WHITE);
       crb var15 = a;
-      if (axxxxxx != null) {
-         if (!a.gea) {
-            return;
-         }
-
-         var15 = a;
+      if (!a.gea) {
+         return;
       }
+
+      var15 = a;
 
       var15.ead(a, a);
    }
@@ -80,16 +78,12 @@ public class crb extends bmd {
       int[] axxx = var10000;
       float axxxx = a.gpn() + super.ajg();
       boolean var11 = fuv.bfm(a, a, axx, axxxx, 80.0F, 80.0F);
-      if (axxx != null) {
-         if (var11) {
-            a.ee = true;
-            if (axxx != null) {
-               return;
-            }
-         }
-
-         var11 = fuv.bfm(a, a, axx, axxxx + 80.0F + 4.0F, 80.0F, 10.0F);
+      if (var11) {
+         a.ee = true;
+         return;
       }
+
+      var11 = fuv.bfm(a, a, axx, axxxx + 80.0F + 4.0F, 80.0F, 10.0F);
 
       if (var11) {
          a.gsu = true;
@@ -115,27 +109,20 @@ public class crb extends bmd {
          float axxx = a.gpn() + super.ajg();
          int[] axxxx = var10000;
          boolean var16 = a.ee;
-         if (axxxx != null) {
-            if (a.ee) {
-               a = Math.clamp(a, (double)axx, (double)(axx + 80.0F));
-               a = Math.clamp(a, (double)axxx, (double)(axxx + 80.0F));
-               a.csp = (float)(a - axx);
-               a.byo = (float)(a - axxx);
-               float axxxxx = a.csp / 80.0F;
-               float axxxxxx = 1.0F - a.byo / 80.0F;
-               a.goq.gbf(Color.getHSBColor(a.csw, axxxxx, axxxxxx));
-               if (axxxx != null) {
-                  return;
-               }
-            }
-
-            var17 = a;
-            if (axxxx == null) {
-               break label31;
-            }
-
-            var16 = a.gsu;
+         if (a.ee) {
+            a = Math.clamp(a, (double)axx, (double)(axx + 80.0F));
+            a = Math.clamp(a, (double)axxx, (double)(axxx + 80.0F));
+            a.csp = (float)(a - axx);
+            a.byo = (float)(a - axxx);
+            float axxxxx = a.csp / 80.0F;
+            float axxxxxx = 1.0F - a.byo / 80.0F;
+            a.goq.gbf(Color.getHSBColor(a.csw, axxxxx, axxxxxx));
+            return;
          }
+
+         var17 = a;
+
+         var16 = a.gsu;
 
          if (!var16) {
             return;
@@ -168,22 +155,14 @@ public class crb extends bmd {
                Color axxxxxxx = Color.getHSBColor(a, axxxxx, axxxxxx);
                dmp.eq(a + axx, a + axxxx, axxxxxxx);
                axxxx++;
-               if (axxx == null) {
-                  break;
-               }
 
-               if (axxx != null) {
-                  continue;
-               }
+               continue;
             }
 
             axx++;
             break;
          }
 
-         if (axxx == null) {
-            break;
-         }
       }
    }
 
@@ -198,9 +177,6 @@ public class crb extends bmd {
          Color axxxxx = Color.getHSBColor(axxxx, 1.0F, 1.0F);
          dmp.euv(a + axx, a, 1.0F, a, axxxxx);
          axx++;
-         if (axxx == null) {
-            break;
-         }
       }
    }
 

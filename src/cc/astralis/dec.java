@@ -101,15 +101,13 @@ public class dec implements dlc {
          var12 = axx;
          int var10001 = 2146;
          var10001 = 180;
-         if (axxx != null) {
-            if (axx < 180) {
-               var12 = axx;
-               break label23;
-            }
-
-            var12 = 360;
-            var10001 = axx;
+         if (axx < 180) {
+            var12 = axx;
+            break label23;
          }
+
+         var12 = 360;
+         var10001 = axx;
 
          var12 -= var10001;
       }
@@ -167,9 +165,9 @@ public class dec implements dlc {
       int axx = (int)(a + a.getRed() * a);
       int axxx = (int)(a + a.getGreen() * a);
       int axxxx = (int)(a + a.getBlue() * a);
-      axx = Math.min(a<"w">(4375, 11048539784469279L ^ ax), Math.max(0, axx));
-      axxx = Math.min(a<"w">(4375, 11048539784469279L ^ ax), Math.max(0, axxx));
-      axxxx = Math.min(a<"w">(4375, 11048539784469279L ^ ax), Math.max(0, axxxx));
+      axx = Math.min(255, Math.max(0, axx));
+      axxx = Math.min(255, Math.max(0, axxx));
+      axxxx = Math.min(255, Math.max(0, axxxx));
       return new Color(axx, axxx, axxxx);
    }
 

@@ -18,7 +18,7 @@ public class Base64Util {
    private static final long a = 25312250360544L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -27,13 +27,11 @@ public class Base64Util {
       long ax = Base64Util.a ^ 76472031037848L;
       int[] axx = ClientSetup.abu();
       byte[] var10000 = a;
-      if (axx != null) {
-         if (a == null) {
-            return "";
-         }
-
-         var10000 = a;
+      if (a == null) {
+         return "";
       }
+
+      var10000 = a;
 
       if (var10000.length != 0) {
          char[] axxx = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".toCharArray();
@@ -66,13 +64,8 @@ public class Base64Util {
                int var44 = axxxxxxx++;
                axxxxx[var44] = axxx[axxxxxxxxxx & 63];
                axxxxxxxxx++;
-               if (axx == null) {
-                  break;
-               }
 
-               if (axx != null) {
-                  continue;
-               }
+               continue;
             }
 
             axxxxxxxxx = a.length % 3;
@@ -81,41 +74,35 @@ public class Base64Util {
 
          int var30 = axxxxxxxxx;
          int var45 = 1;
-         if (axx != null) {
-            if (axxxxxxxxx == 1) {
-               byte var31 = a[axxxxxx];
-               int var32 = var31 & 255;
-               int axxxxxxxxxxx = var32 << 16;
-               int var48 = axxxxxxx++;
-               int var79 = axxxxxxxxxxx >>> 18;
-               axxxxx[var48] = axxx[var79 & 63];
-               int var49 = axxxxxxx++;
-               var79 = axxxxxxxxxxx >>> 12;
-               axxxxx[var49] = axxx[var79 & 63];
-               int var50 = axxxxxxx++;
-               axxxxx[var50] = '=';
-               axxxxx[axxxxxxx] = '=';
-               if (axx != null) {
-                  return new String(axxxxx);
-               }
-            }
-
-            var30 = axxxxxxxxx;
-            var45 = 2;
+         if (axxxxxxxxx == 1) {
+            byte var31 = a[axxxxxx];
+            int var32 = var31 & 255;
+            int axxxxxxxxxxx = var32 << 16;
+            int var48 = axxxxxxx++;
+            int var79 = axxxxxxxxxxx >>> 18;
+            axxxxx[var48] = axxx[var79 & 63];
+            int var49 = axxxxxxx++;
+            var79 = axxxxxxxxxxx >>> 12;
+            axxxxx[var49] = axxx[var79 & 63];
+            int var50 = axxxxxxx++;
+            axxxxx[var50] = '=';
+            axxxxx[axxxxxxx] = '=';
+            return new String(axxxxx);
          }
 
-         if (axx != null) {
-            if (var30 != var45) {
-               return new String(axxxxx);
-            }
+         var30 = axxxxxxxxx;
+         var45 = 2;
 
-            byte var33 = a[axxxxxx++];
-            int var34 = var33 & 255;
-            var30 = var34 << 16;
-            byte var54 = a[axxxxxx];
-            int var55 = var54 & 255;
-            var45 = var55 << 8;
+         if (var30 != var45) {
+            return new String(axxxxx);
          }
+
+         byte var33 = a[axxxxxx++];
+         int var34 = var33 & 255;
+         var30 = var34 << 16;
+         byte var54 = a[axxxxxx];
+         int var55 = var54 & 255;
+         var45 = var55 << 8;
 
          int axxxxxxxxxxx = var30 | var45;
          int var56 = axxxxxxx++;
@@ -382,89 +369,6 @@ public class Base64Util {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 25095;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/Base64Util", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/Base64Util" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

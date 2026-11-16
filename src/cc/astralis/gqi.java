@@ -71,14 +71,12 @@ public class gqi extends brc {
       int[] axxxx = var10000;
       String var9 = axx.toString();
       String[] var10 = var8;
-      if (axxxx != null) {
-         var9 = fz.dvr(var9, Base64Util.fsi(var8[8]), Base64Util.fsi(var8[5]));
-         if (axxx != null) {
-            return var9;
-         }
-
-         var10 = new String[2];
+      var9 = fz.dvr(var9, Base64Util.fsi(var8[8]), Base64Util.fsi(var8[5]));
+      if (axxx != null) {
+         return var9;
       }
+
+      var10 = new String[2];
 
       cdr.apm(var10);
       return var9;
@@ -112,13 +110,11 @@ public class gqi extends brc {
       int[] var2 = ClientSetup.abu();
       int var3 = bdb();
       int var10000 = var3;
-      if (var2 != null) {
-         if (var3 == 0) {
-            return 57;
-         }
-
-         var10000 = 0;
+      if (var3 == 0) {
+         return 57;
       }
+
+      var10000 = 0;
 
       return var10000;
    }

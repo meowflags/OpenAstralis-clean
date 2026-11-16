@@ -59,14 +59,12 @@ public class HudEditorScreen extends class_437 implements amh, dlc, fjk {
       bfv.forEach(axxxx -> {
          long ax = HudEditorScreen.a ^ 123691419532656L;
          int[] var8 = ClientSetup.abu();
-         if (var8 != null) {
-            if (!fuv.bfm(a, a, axxxx.grp(), axxxx.azb(), axxxx.cxc(), axxxx.evg())) {
-               return;
-            }
-
-            a.avp = axxxx;
-            a.cjg = (float)a - axxxx.grp();
+         if (!fuv.bfm(a, a, axxxx.grp(), axxxx.azb(), axxxx.cxc(), axxxx.evg())) {
+            return;
          }
+
+         a.avp = axxxx;
+         a.cjg = (float)a - axxxx.grp();
 
          a.fiy = (float)a - axxxx.azb();
       });
@@ -80,39 +78,33 @@ public class HudEditorScreen extends class_437 implements amh, dlc, fjk {
       int[] axxx = var10000;
       double axxxx = a.comp_4799();
       HudEditorScreen var16 = a;
-      if (axxx != null) {
-         if (a.avp != null) {
-            float axxxxx = (float)axx - a.cjg;
-            float axxxxxx = (float)axxxx - a.fiy;
-            int axxxxxxx = 4;
-            float var18;
-            int var17 = (var18 = Math.abs(axxxxx - a.field_22789 / 2.0F) - axxxxxxx) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
-            if (axxx != null) {
-               if (var17 < 0) {
-                  axxxxx = a.field_22789 / 2.0F;
-               }
-
-               float var19;
-               var17 = (var19 = Math.abs(axxxxxx - a.field_22790 / 2.0F) - axxxxxxx) == 0.0F ? 0 : (var19 < 0.0F ? -1 : 1);
-            }
-
-            label34: {
-               if (axxx != null) {
-                  if (var17 >= 0) {
-                     break label34;
-                  }
-
-                  var17 = a.field_22790;
-               }
-
-               axxxxxx = var17 / 2.0F;
-            }
-
-            a.avp.evg(axxxxx, axxxxxx);
+      if (a.avp != null) {
+         float axxxxx = (float)axx - a.cjg;
+         float axxxxxx = (float)axxxx - a.fiy;
+         int axxxxxxx = 4;
+         float var18;
+         int var17 = (var18 = Math.abs(axxxxx - a.field_22789 / 2.0F) - axxxxxxx) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
+         if (var17 < 0) {
+            axxxxx = a.field_22789 / 2.0F;
          }
 
-         var16 = a;
+         float var19;
+         var17 = (var19 = Math.abs(axxxxxx - a.field_22790 / 2.0F) - axxxxxxx) == 0.0F ? 0 : (var19 < 0.0F ? -1 : 1);
+
+         label34: {
+            if (var17 >= 0) {
+               break label34;
+            }
+
+            var17 = a.field_22790;
+
+            axxxxxx = var17 / 2.0F;
+         }
+
+         a.avp.evg(axxxxx, axxxxxx);
       }
+
+      var16 = a;
 
       return var16.method_25403(a, a, a);
    }
@@ -235,33 +227,6 @@ public class HudEditorScreen extends class_437 implements amh, dlc, fjk {
             var27 = 0;
          }
       }
-   }
-
-   private static String b(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
    }
 
    private static int a(int var0, long var1) {

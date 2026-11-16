@@ -34,15 +34,13 @@ public class cnx extends cec {
       long ax = cnx.a ^ 135503268901991L;
       int[] axx = ClientSetup.abu();
       int var10000 = ((dtc)ClientSetup.gqy().aws().diy(dtc.class)).dsv();
-      if (axx != null) {
-         if (var10000 == 0) {
-            return;
-         }
-
-         a.ewc.clear();
-         var10000 = (short)3426;
-         var10000 = 40;
+      if (var10000 == 0) {
+         return;
       }
+
+      a.ewc.clear();
+      var10000 = (short)3426;
+      var10000 = 40;
 
       int axxx = var10000;
       int axxxx = 5;
@@ -58,18 +56,13 @@ public class cnx extends cec {
          a.ewc.add(() -> a.dia().gkw(a, a, a));
          cbm var15 = axxxxxx.gcf();
          var10000 = var15.fsc(axxxxxx.dxb + 400);
-         if (axx != null) {
-            if (var10000 != 0) {
-               axxxxx.remove();
-            }
-
-            var10000 = axxxx + axxx;
+         if (var10000 != 0) {
+            axxxxx.remove();
          }
+
+         var10000 = axxxx + axxx;
 
          axxxx = var10000;
-         if (axx == null) {
-            break;
-         }
       }
    }
 
@@ -84,13 +77,8 @@ public class cnx extends cec {
          if (var5.hasNext()) {
             Runnable axxx = (Runnable)var5.next();
             axxx.run();
-            if (axx == null) {
-               break;
-            }
 
-            if (axx != null) {
-               continue;
-            }
+            continue;
          }
 
          a.ewc.clear();

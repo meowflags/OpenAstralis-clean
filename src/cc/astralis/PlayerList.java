@@ -30,7 +30,7 @@ public class PlayerList extends guu {
    private static final long a = 117926962893282L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -53,17 +53,12 @@ public class PlayerList extends guu {
 
          for (class_640 axxxx : axx) {
             boolean var10000 = AntiBot.dtl(axxxx);
-            if (ax != null) {
-               if (var10000 && ax != null) {
-                  continue;
-               }
-
-               axxx.add(axxxx);
+            if (var10000) {
+               continue;
             }
 
-            if (ax == null) {
-               break;
-            }
+            axxx.add(axxxx);
+
          }
 
          return axxx;
@@ -74,45 +69,35 @@ public class PlayerList extends guu {
       long ax = PlayerList.a ^ 42812861451205L;
       int[] axx = ClientSetup.abu();
       class_640 var10000 = a;
-      if (axx != null) {
-         if (a == null) {
-            return "";
-         }
-
-         var10000 = a;
+      if (a == null) {
+         return "";
       }
+
+      var10000 = a;
 
       String axxx;
       label46: {
-         if (axx != null) {
-            if (var10000.method_2971() != null) {
-               axxx = a.method_2971().getString();
-               if (axx != null) {
-                  break label46;
-               }
-            }
-
-            var10000 = a;
+         if (var10000.method_2971() != null) {
+            axxx = a.method_2971().getString();
+            break label46;
          }
+
+         var10000 = a;
 
          String axxxx;
          label35: {
             class_268 axxxxx = var10000.method_2955();
             axxxx = a.method_2966().name();
             class_268 var10 = axxxxx;
-            if (axx != null) {
-               if (axxxxx == null) {
-                  break label35;
-               }
-
-               var10 = axxxxx;
+            if (axxxxx == null) {
+               break label35;
             }
+
+            var10 = axxxxx;
 
             class_2561 axxxxxx = class_268.method_1142(var10, class_2561.method_43470(axxxx));
             axxx = axxxxxx.getString();
-            if (axx != null) {
-               break label46;
-            }
+            break label46;
          }
 
          axxx = axxxx;
@@ -128,13 +113,11 @@ public class PlayerList extends guu {
       long ax = PlayerList.a ^ 16408705693645L;
       int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (axx != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi;
 
       if (!var10000.method_1542()) {
          CopyOnWriteArrayList axxx = a.drj();
@@ -172,17 +155,13 @@ public class PlayerList extends guu {
                axxxxxxxxxxxxx[0] = axxxxxxxxxxxxxxx;
                String[] axxxxxxxxxxxxxxxx = hbc.daf(axxxxxxxxxxxxxxx);
                String[] var30 = axxxxxxxxxxxxxxxx;
-               if (axx != null) {
-                  if (axxxxxxxxxxxxxxxx != null) {
-                     var10004 = axxxxxxxxxxxxxxxx.length;
-                     System.arraycopy(axxxxxxxxxxxxxxxx, 0, axxxxxxxxxxxxx, 1, Math.min(var10004, 8));
-                     if (axx != null) {
-                        break label74;
-                     }
-                  }
-
-                  var30 = axxxxxxxxxxxxx;
+               if (axxxxxxxxxxxxxxxx != null) {
+                  var10004 = axxxxxxxxxxxxxxxx.length;
+                  System.arraycopy(axxxxxxxxxxxxxxxx, 0, axxxxxxxxxxxxx, 1, Math.min(var10004, 8));
+                  break label74;
                }
+
+               var30 = axxxxxxxxxxxxx;
 
                Arrays.fill(var30, 1, 9, "Loading");
                hbc.bfk(axxxxxxxxxxxxxxx);
@@ -195,9 +174,6 @@ public class PlayerList extends guu {
             while (true) {
                if (axxxxxxxxxxxxxxxx < axxxxxxxxxxxxx.length) {
                   var31 = axxxxxxxxxxxxxxxx;
-                  if (axx == null) {
-                     break;
-                  }
 
                   Color var32;
                   if (axxxxxxxxxxxxxxxx == 0) {
@@ -214,9 +190,7 @@ public class PlayerList extends guu {
                   cbl.ebb(var38, var48, axxxxxxxxxx + 7 - 5, axxxxxxxxxxxxxxxxx);
                   axxxxxxxxxxxxxx += (int)(axxxxxxxxxxxxxxxxxx + 12.0F);
                   axxxxxxxxxxxxxxxx++;
-                  if (axx != null) {
-                     continue;
-                  }
+                  continue;
                }
 
                float var87;
@@ -230,9 +204,6 @@ public class PlayerList extends guu {
 
             axxxxxxxxxx += 14;
             axxxxxxxxx++;
-            if (axx == null) {
-               break;
-            }
          }
       }
    }
@@ -385,89 +356,6 @@ public class PlayerList extends guu {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 18014;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/adv", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/adv" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

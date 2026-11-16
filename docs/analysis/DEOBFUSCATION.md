@@ -321,8 +321,63 @@ enlace clase-miembro. La capa nativa no puede nombrarlas.
 
 **Por qué los splices de `abu()` no se pliegan.** `ClientSetup.abu()`
 devuelve `bko`, escrito sólo por `aow(new int[5])`, que se llama bajo
-`if (!ffn.gsn())` — y `ffn.gsn()` pasa de `false` a `true` en el inicializador
+`if (!ffn.gsn())` - y `ffn.gsn()` pasa de `false` a `true` en el inicializador
 estático de `ffn`. La verdad de cada guarda `if (v != null)` depende del orden
 de inicialización de clases en tiempo de ejecución, que no es demostrable
 estáticamente: plegarla por suposición corrompería el artefacto. Los 709
 splices se quedan, documentados aquí como indecidibles sin ejecución.
+
+**(Corrección - el párrafo anterior queda superado.)** La lectura correcta es
+JLS 12.4.2: el `<clinit>` de `ClientSetup` ejecuta `aow(new int[5])`
+*incondicionalmente* (el `if (!ffn.gsn())` vive dentro de `aow`, no alrededor
+de la llamada), y `ClientSetup.<clinit>` corre antes de que la primera llamada
+a `abu()` pueda volver. `bko` nunca es null al leerse: toda variable con raíz
+`abu()` es no-null y sus guardas se pliegan. La pasada 2 de
+`tools/strip_zkm_dead.py` pliega 2.773 guardas; las 707 llamadas `abu()`
+(asignaciones raíz) permanecen.
+
+
+## 14. Recolección de basura del maquinario ZKM y plegado del residuo final
+
+**Grafo de llamadas exacto** (`work/ScanRefs.java`, `tools/zkm_gc.py`). El
+juicio de liveness textual anterior se reemplaza por firmas exactas: un
+escáner ASM emite toda arista `(owner, name, desc)` del árbol, incluidas las
+aristas bootstrap de `visitInvokeDynamicInsn`, a `work/scanrefs.tsv`;
+`tools/zkm_gc.py` corre un fixpoint de alcanzabilidad sobre él y escribe
+`mapping/zkm_machinery.tsv` (clase/método/desc/tipo/vivo). Números: 1.264
+métodos de maquinaria ZKM - **958 muertos**, 306 vivos (anclados por
+`<clinit>`s que la pasada de texto no veía) - y **953 campos estáticos
+muertos**.
+
+**Plegado de los 136 sitios indy restantes** (`tools/fold_sites.py`,
+`work/FoldSites.java`). Los 3.897 sitios plegados en pasadas anteriores
+dejaron 136 sitios que el plegador ASM no alcanzó: pools compartidos
+(`brc.d` 31, `fhc.e` 25, `cvn.c` 24, `ckv.e` 16, `fz.a` 9...). El parser
+resuelve la forma de Vineflower `boot<"indy">(x, longLit ^ local)` hasta el
+accessor real (el nombre del accessor puede diferir del boot: `brc.d`→`e`),
+reconstruye `y = lit ^ seed ^ K` de las declaraciones `long ax = Seed ^ KL;`,
+y el harness corre cada `<clinit>` en un loader con jerarquía simulada.
+124 sitios descifran; los 3 de `bqf` fallan porque su `<clinit>` toca un
+miembro inexistente de Minecraft - se salvan volcando los estáticos de `bqf`
+con `sun.misc.Unsafe` (clase errónea no re-lanza clinit por reflection) y
+descifrando en Python (`idx = x ^ (y & 32767) ^ 7007`, DES/CBC/NoPadding con
+clave = 8 bytes BE de `y`). **127/127 plegados a literales planos**; los 9 de
+`fz` no: su semilla la asigna `Loader.registerNativesForClass` - la maquinaria
+de `fz` se conserva (`mapping/zkm_keep.txt`).
+
+**Limpieza del maquinario muerto** (`tools/strip_zkm_dead.py`). Sobre `src/`:
+692 métodos muertos, 404 campos/bloques (incluye **110 fragmentos de
+`<clinit>` cifrado plegados** - el bloque DES entero muere o se reescribe a
+asignaciones literales de los valores que el harness observó), 1.038 imports
+sin uso, 2.773 guardas `abu()` plegadas, llamadas `abu()` 707 intactas. El
+plegado de fragmentos lleva una puerta de forma: un `static {` que mezcla
+código de negocio (inits de enum, lambdas - p.ej. `dtw`) se salta entero, y
+campos vivos tipados `Map`/`Object[]` no son literalizables (los pools
+`brc`/`cvn`/`ckv`/`SessionHelper` conservan su maquinaria).
+
+**Residuo final: 144 ficheros** con texto ZKM (113 fragments mezclados con
+inits de enum/lambda, 21 clinit con campos `Map`/`Object[]` vivos, pools
+compartidos, y `fz` nativo por diseño). Todo el residuo conserva el
+comportamiento. Verificación: balance de llaves (con literales enmascaradas)
+idéntico en los 466 ficheros antes/después de cada pasada, llamadas `abu()`
+707, `build.ps1` verde.

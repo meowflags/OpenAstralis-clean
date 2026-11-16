@@ -31,7 +31,7 @@ public class HitSelect extends guu {
    private static final long a = 49745545731703L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long p;
    private static final long[] q;
    private static final Long[] r;
@@ -73,74 +73,56 @@ public class HitSelect extends guu {
             class_239 axx = chi.field_1765;
             int[] axxx = var10000;
             class_239 var9 = axx;
-            if (axxx != null) {
-               if (!(axx instanceof class_3966)) {
-                  break label97;
-               }
-
-               var9 = axx;
+            if (!(axx instanceof class_3966)) {
+               break label97;
             }
+
+            var9 = axx;
 
             class_3966 axxxx = (class_3966)var9;
             var10 = a;
-            if (axxx == null) {
-               break label94;
-            }
 
             if (a.cdw(axxxx)) {
                long axxxxx = System.currentTimeMillis();
                long var19;
                int var11 = (var19 = a.ezv - -1L) == 0L ? 0 : (var19 < 0L ? -1 : 1);
-               if (axxx != null) {
-                  if (var11 == 0) {
-                     a.ezv = axxxxx;
-                  }
-
-                  long var20;
-                  var11 = (var20 = axxxxx - a.ezv - a.coh.dnp().intValue()) == 0L ? 0 : (var20 < 0L ? -1 : 1);
+               if (var11 == 0) {
+                  a.ezv = axxxxx;
                }
 
-               if (axxx != null) {
-                  if (var11 < 0) {
-                     return;
-                  }
+               long var20;
+               var11 = (var20 = axxxxx - a.ezv - a.coh.dnp().intValue()) == 0L ? 0 : (var20 < 0L ? -1 : 1);
 
-                  float var21;
-                  var11 = (var21 = chi.field_1724.method_7261(0.0F) - a.hex.dnp().floatValue()) == 0.0F ? 0 : (var21 < 0.0F ? -1 : 1);
+               if (var11 < 0) {
+                  return;
                }
 
-               if (axxx != null) {
-                  if (var11 < 0) {
-                     return;
-                  }
+               float var21;
+               var11 = (var21 = chi.field_1724.method_7261(0.0F) - a.hex.dnp().floatValue()) == 0.0F ? 0 : (var21 < 0.0F ? -1 : 1);
 
-                  var11 = chi.field_1690.field_1904.method_1434();
+               if (var11 < 0) {
+                  return;
                }
 
-               if (axxx != null) {
-                  if (var11 != 0) {
-                     return;
-                  }
+               var11 = chi.field_1690.field_1904.method_1434();
 
-                  double var22;
-                  var11 = (var22 = Math.random() - a.hiy.dnp().floatValue()) == 0.0 ? 0 : (var22 < 0.0 ? -1 : 1);
+               if (var11 != 0) {
+                  return;
                }
+
+               double var22;
+               var11 = (var22 = Math.random() - a.hiy.dnp().floatValue()) == 0.0 ? 0 : (var22 < 0.0 ? -1 : 1);
 
                label99: {
-                  if (axxx != null) {
-                     if (var11 < 0) {
-                        chi.field_1724.method_6104(class_1268.field_5808);
-                        a.ezv = -1L;
-                        return;
-                     }
-
-                     var10 = a;
-                     if (axxx == null) {
-                        break label99;
-                     }
-
-                     var11 = a.fpf();
+                  if (var11 < 0) {
+                     chi.field_1724.method_6104(class_1268.field_5808);
+                     a.ezv = -1L;
+                     return;
                   }
+
+                  var10 = a;
+
+                  var11 = a.fpf();
 
                   if (var11 != 0) {
                      return;
@@ -169,62 +151,48 @@ public class HitSelect extends guu {
       class_1297 var6 = a.method_17782();
       int[] axx = var10000;
       boolean var7 = var6 instanceof class_1657;
-      if (axx != null) {
-         label74:
-         if (var7) {
-            class_1657 axxx = (class_1657)var6;
-            boolean var8 = axxx.method_5805();
-            if (axx != null) {
-               if (!var8) {
-                  break label74;
-               }
-
-               var8 = a.cri.dnp();
-            }
-
-            label64:
-            if (axx != null) {
-               if (var8) {
-                  var8 = bav.glo();
-                  if (axx == null) {
-                     break label64;
-                  }
-
-                  if (!var8) {
-                     return false;
-                  }
-               }
-
-               var8 = a.glx.dnp();
-            }
-
-            label82: {
-               if (axx != null) {
-                  if (!var8) {
-                     break label82;
-                  }
-
-                  var8 = hav.ab(axxx);
-               }
-
-               if (axx == null) {
-                  return var8;
-               }
-
-               if (var8) {
-                  return false;
-               }
-            }
-
-            if (chi.field_1755 != null) {
-               return false;
-            }
-
-            return true;
+      label74:
+      if (var7) {
+         class_1657 axxx = (class_1657)var6;
+         boolean var8 = axxx.method_5805();
+         if (!var8) {
+            break label74;
          }
 
-         var7 = false;
+         var8 = a.cri.dnp();
+
+         label64:
+         if (var8) {
+            var8 = bav.glo();
+
+            if (!var8) {
+               return false;
+            }
+         }
+
+         var8 = a.glx.dnp();
+
+         label82: {
+            if (!var8) {
+               break label82;
+            }
+
+            var8 = hav.ab(axxx);
+
+
+            if (var8) {
+               return false;
+            }
+         }
+
+         if (chi.field_1755 != null) {
+            return false;
+         }
+
+         return true;
       }
+
+      var7 = false;
 
       return var7;
    }
@@ -324,59 +292,42 @@ public class HitSelect extends guu {
       int[] var3 = ClientSetup.abu();
       double var4;
       int var10000 = (var4 = chi.field_1724.field_6017 - 0.1F) == 0.0 ? 0 : (var4 < 0.0 ? -1 : 1);
-      if (var3 != null) {
-         if (var10000 <= 0) {
-            return (boolean)0;
-         }
-
-         var10000 = chi.field_1724.method_24828();
+      if (var10000 <= 0) {
+         return (boolean)0;
       }
 
-      if (var3 != null) {
-         if (var10000 != 0) {
-            return (boolean)0;
-         }
+      var10000 = chi.field_1724.method_24828();
 
-         var10000 = chi.field_1724.method_6101();
+      if (var10000 != 0) {
+         return (boolean)0;
       }
 
-      if (var3 != null) {
-         if (var10000 != 0) {
-            return (boolean)0;
-         }
+      var10000 = chi.field_1724.method_6101();
 
-         var10000 = chi.field_1724.method_5721();
+      if (var10000 != 0) {
+         return (boolean)0;
       }
 
-      if (var3 != null) {
-         if (var10000 != 0) {
-            return (boolean)0;
-         }
+      var10000 = chi.field_1724.method_5721();
 
-         var10000 = chi.field_1724.method_6059(class_1294.field_5919);
+      if (var10000 != 0) {
+         return (boolean)0;
       }
 
-      if (var3 != null) {
-         if (var10000 != 0) {
-            return (boolean)0;
-         }
+      var10000 = chi.field_1724.method_6059(class_1294.field_5919);
 
-         var10000 = chi.field_1724.method_6059(class_1294.field_5909);
+      if (var10000 != 0) {
+         return (boolean)0;
       }
 
-      if (var3 != null) {
-         if (var10000 != 0) {
-            return (boolean)0;
-         }
+      var10000 = chi.field_1724.method_6059(class_1294.field_5909);
 
-         var10000 = chi.field_1724.method_5765();
+      if (var10000 != 0) {
+         return (boolean)0;
       }
 
-      if (var3 == null) {
-         return (boolean)var10000;
-      } else {
-         return (boolean)(var10000 == 0 ? 1 : 0);
-      }
+      var10000 = chi.field_1724.method_5765();
+
    }
 
    static {
@@ -522,89 +473,6 @@ public class HitSelect extends guu {
             var29 = var22.substring(++var28, var28 + var21);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 8387;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/czm", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/czm" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

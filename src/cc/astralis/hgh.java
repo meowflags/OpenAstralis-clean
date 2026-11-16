@@ -39,34 +39,30 @@ public class hgh extends cec {
    public void erx(amo event) {
       long ax = hgh.a ^ 25380268758732L;
       int[] axx = ClientSetup.abu();
-      if (axx != null) {
-         if (chi.field_1724.field_6012 >= 200 && !chi.method_1542()) {
-            if (a.cud() == gpy.RECEIVE) {
-               long axxx = System.currentTimeMillis();
-               a.dps.add(axxx);
-               hgh var10000 = a;
-               if (axx != null) {
-                  int var7 = a.dps.size();
-                  if (var7 > 300) {
-                     a.dps.poll();
-                  }
-
-                  a.gfp = axxx;
-                  var10000 = a;
-               }
-
-               var10000.elf();
+      if (chi.field_1724.field_6012 >= 200 && !chi.method_1542()) {
+         if (a.cud() == gpy.RECEIVE) {
+            long axxx = System.currentTimeMillis();
+            a.dps.add(axxx);
+            hgh var10000 = a;
+            int var7 = a.dps.size();
+            if (var7 > 300) {
+               a.dps.poll();
             }
 
-            return;
+            a.gfp = axxx;
+            var10000 = a;
+
+            var10000.elf();
          }
 
-         a.dps.clear();
-         a.drh = 0.0;
-         a.fqw = false;
-         a.eyj = 0L;
-         a.gfp = 0L;
+         return;
       }
+
+      a.dps.clear();
+      a.drh = 0.0;
+      a.fqw = false;
+      a.eyj = 0L;
+      a.gfp = 0L;
    }
 
    @gdz
@@ -139,15 +135,13 @@ public class hgh extends cec {
       long a = hgh.a ^ 46666303917324L;
       int[] ax = ClientSetup.abu();
       Queue var10000 = a.dps;
-      if (ax != null) {
-         if (a.dps.size() < 2) {
-            a.drh = 0.0;
-            a.eyj = 0L;
-            return;
-         }
-
-         var10000 = a.dps;
+      if (a.dps.size() < 2) {
+         a.drh = 0.0;
+         a.eyj = 0L;
+         return;
       }
+
+      var10000 = a.dps;
 
       Long[] axx = var10000.toArray(new Long[0]);
       int axxx = 0;
@@ -162,30 +156,20 @@ public class hgh extends cec {
                if (axxxxxx < axx.length) {
                   long axxxxxxx = axx[axxxxxx] - axx[axxxxxx - 1];
                   int axxxxxxxx = (int)(axxxxxxx / axxxxx) - 1;
-                  if (ax != null) {
-                     var14 = axxxxxxxx;
-                     if (ax == null) {
-                        break;
-                     }
+                  var14 = axxxxxxxx;
 
-                     if (axxxxxxxx > 0) {
-                        axxx += axxxxxxxx;
-                        a.eyj += axxxxxxxx * axxxxx;
-                     }
-
-                     axxxx++;
-                     axxxxxx++;
+                  if (axxxxxxxx > 0) {
+                     axxx += axxxxxxxx;
+                     a.eyj += axxxxxxxx * axxxxx;
                   }
 
-                  if (ax != null) {
-                     continue;
-                  }
+                  axxxx++;
+                  axxxxxx++;
+
+                  continue;
                }
 
                axxxxxx = axxxx + axxx;
-               if (ax == null) {
-                  break label62;
-               }
 
                var14 = axxxxxx;
                break;
@@ -198,9 +182,7 @@ public class hgh extends cec {
             a.drh = 0.0;
          }
 
-         if (ax != null) {
-            return;
-         }
+         return;
       }
 
       a.drh = (double)axxx / axxxxxx;

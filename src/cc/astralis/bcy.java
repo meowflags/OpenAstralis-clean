@@ -54,25 +54,21 @@ public class bcy extends brc {
       JsonObject var15 = a;
       String[] var12 = c;
       String var19 = var12[5];
-      if (axxxx != null) {
-         if (!a.has(var19)) {
-            return;
-         }
-
-         var15 = a;
-         var12 = c;
-         var19 = var12[4];
+      if (!a.has(var19)) {
+         return;
       }
+
+      var15 = a;
+      var12 = c;
+      var19 = var12[4];
 
       JsonArray axxxxx = var15.getAsJsonArray(var19);
       JsonArray var16 = axxxxx;
-      if (axxxx != null) {
-         if (axxxxx == null) {
-            return;
-         }
-
-         var16 = axxxxx;
+      if (axxxxx == null) {
+         return;
       }
+
+      var16 = axxxxx;
 
       for (JsonElement axxxxxx : var16) {
          JsonObject axxxxxxx = axxxxxx.getAsJsonObject();
@@ -106,10 +102,8 @@ public class bcy extends brc {
          } else {
             var17 = axx;
             String[] var12 = c;
-            if (axxxx != null) {
-               axx.add(fz.dsg(var12[4], a.fkm, a.cis), axxxxx);
-               break;
-            }
+            axx.add(fz.dsg(var12[4], a.fkm, a.cis), axxxxx);
+            break;
          }
 
          String[] var14;
@@ -125,13 +119,11 @@ public class bcy extends brc {
             a.eqw(axxxxxxx, var10002);
             axxxxx.add(axxxxxxx);
             String[] var18 = axxx;
-            if (axxxx != null) {
-               if (axxx == null) {
-                  break label41;
-               }
-
-               var18 = axxx;
+            if (axxx == null) {
+               break label41;
             }
+
+            var18 = axxx;
 
             if (var18 != null) {
                continue label41;
@@ -149,13 +141,11 @@ public class bcy extends brc {
       String[] var15 = c;
       String var20 = fz.dvr(var19, Base64Util.fsi(var15[2]), Base64Util.fsi(var15[0]));
       String[] var22 = cdr.haa();
-      if (axxxx != null) {
-         if (var22 != null) {
-            return var20;
-         }
-
-         var22 = new String[1];
+      if (var22 != null) {
+         return var20;
       }
+
+      var22 = new String[1];
 
       ebr(var22);
       return var20;

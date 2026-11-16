@@ -161,17 +161,12 @@ public class Watchdog22 extends hcr {
          axx.method_10102(chi.field_1724.method_23317(), axxx, chi.field_1724.method_23321());
          class_2680 axxxxx = chi.field_1687.method_8320(axx);
          class_265 axxxxxx = axxxxx.method_26220(chi.field_1687, axx);
-         if (axxxx != null) {
-            if (!axxxxxx.method_1110()) {
-               return ax - (axxx + axxxxxx.method_1105(class_2351.field_11052));
-            }
-
-            axxx -= 0.5;
+         if (!axxxxxx.method_1110()) {
+            return ax - (axxx + axxxxxx.method_1105(class_2351.field_11052));
          }
 
-         if (axxxx == null) {
-            break;
-         }
+         axxx -= 0.5;
+
       }
 
       return -1.0;
@@ -226,30 +221,4 @@ public class Watchdog22 extends hcr {
       e = var14;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

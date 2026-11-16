@@ -25,7 +25,7 @@ public class SpeedVulcanStrafe extends hcr {
    private static final long a = 3363765041782L;
    private static final String[] d;
    private static final String[] e;
-   private static final Map f = new HashMap(13);
+
    private static final long[] g;
    private static final Integer[] h;
    private static final Map i;
@@ -58,13 +58,11 @@ public class SpeedVulcanStrafe extends hcr {
          ax = SpeedVulcanStrafe.a ^ 83093803096792L;
          var4 = ClientSetup.abu();
          int var10000 = hjr;
-         if (var4 != null) {
-            if (hjr <= 5) {
-               break label37;
-            }
-
-            var10000 = evd.dbj();
+         if (hjr <= 5) {
+            break label37;
          }
+
+         var10000 = evd.dbj();
 
          if (var10000 != 0) {
             evd.dek(evd.cqz(1.0F, 1.0F, a.aob.dnp() ? 0.6312F : crg.gj(0.4F, 0.45F)));
@@ -72,9 +70,7 @@ public class SpeedVulcanStrafe extends hcr {
       }
 
       int var10001 = hjr;
-      if (var4 != null) {
-         var10001 = hjr > 6 ? 1 : 0;
-      }
+      var10001 = hjr > 6 ? 1 : 0;
 
       a.bbc = (boolean)var10001;
    }
@@ -85,94 +81,75 @@ public class SpeedVulcanStrafe extends hcr {
       int[] var4 = ClientSetup.abu();
       double var21;
       int var10000 = (var21 = chi.field_1724.field_6017 - 2.0) == 0.0 ? 0 : (var21 < 0.0 ? -1 : 1);
-      if (var4 != null) {
-         if (var10000 > 0) {
-            bpa.bez("returning");
-            a.bbc = false;
-            return;
-         }
-
-         var10000 = a.gtd.dnp();
+      if (var10000 > 0) {
+         bpa.bez("returning");
+         a.bbc = false;
+         return;
       }
+
+      var10000 = a.gtd.dnp();
 
       label118:
-      if (var4 != null) {
-         if (var10000 != 0) {
+      if (var10000 != 0) {
+         var10000 = hjr;
+
+         if (hjr > 6) {
             var10000 = hjr;
-            if (var4 == null) {
-               break label118;
+            short var11 = a.dtm.dnp();
+            if (var11 == 0) {
+               var11 = 7965;
+               var11 = 16;
+            } else {
+               var11 = 14958;
+               var11 = 20;
             }
 
-            if (hjr > 6) {
-               var10000 = hjr;
-               short var11 = a.dtm.dnp();
-               if (var4 != null) {
-                  if (var11 == 0) {
-                     var11 = 7965;
-                     var11 = 16;
-                  } else {
-                     var11 = 14958;
-                     var11 = 20;
-                  }
-               }
-
-               if (var10000 < var11) {
-                  label122: {
-                     var10000 = chi.field_1724.field_6012 % 3;
-                     if (var4 != null) {
-                        if (var10000 != 0) {
-                           var7 = -0.0991;
-                           break label122;
-                        }
-
-                        var10000 = a.dtm.dnp();
-                     }
-
-                     var7 = (var10000 == 0 ? chi.field_1724.method_18798().field_1351 : 0.0) + 0.026;
+            if (var10000 < var11) {
+               label122: {
+                  var10000 = chi.field_1724.field_6012 % 3;
+                  if (var10000 != 0) {
+                     var7 = -0.0991;
+                     break label122;
                   }
 
-                  bav.fym(var7);
+                  var10000 = a.dtm.dnp();
+
+                  var7 = (var10000 == 0 ? chi.field_1724.method_18798().field_1351 : 0.0) + 0.026;
                }
+
+               bav.fym(var7);
             }
          }
-
-         var10000 = a.bbc;
       }
 
-      if (var4 != null) {
-         if (var10000 != 0) {
-            a.dad(true);
-         }
+      var10000 = a.bbc;
 
-         var10000 = chi.field_1724.method_24828();
+      if (var10000 != 0) {
+         a.dad(true);
       }
 
-      if (var4 != null) {
-         if (var10000 != 0) {
-            chi.field_1724.method_6043();
-            evd.dek(evd.fzm() * crg.gj(1.2F, 1.5F));
-         }
+      var10000 = chi.field_1724.method_24828();
 
-         var10000 = a.avs.dnp();
+      if (var10000 != 0) {
+         chi.field_1724.method_6043();
+         evd.dek(evd.fzm() * crg.gj(1.2F, 1.5F));
       }
+
+      var10000 = a.avs.dnp();
 
       if (var10000 != 0) {
          class_304 var8 = chi.field_1690.field_1903;
          short var14 = a.bow.fsc(500L);
-         if (var4 != null) {
-            var14 = !var14;
-         }
+         var14 = !var14;
 
          var8.method_23481((boolean)var14);
          cbm var9 = a.bow;
-         if (var4 != null) {
-            var14 = 339;
-            if (!a.bow.fsc(1000L)) {
-               return;
-            }
-
-            var9 = a.bow;
+         var14 = 339;
+         if (!a.bow.fsc(1000L)) {
+            return;
          }
+
+         var9 = a.bow;
 
          var9.glr();
       }
@@ -379,89 +356,6 @@ public class SpeedVulcanStrafe extends hcr {
             var36 = var28.substring(++var35, var35 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 22193;
-      if (e[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])f.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               f.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/SpeedVulcanStrafe", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = d[var5].getBytes("ISO-8859-1");
-         e[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return e[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/SpeedVulcanStrafe" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

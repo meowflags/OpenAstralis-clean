@@ -38,7 +38,7 @@ public class ClickGuiWindow extends class_437 implements dlc {
    private static final long a = 15556751632921L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -67,66 +67,52 @@ public class ClickGuiWindow extends class_437 implements dlc {
                   ImVec2 axxx = ImGui.getWindowPos();
                   ImVec2 axxxx = ImGui.getWindowSize();
                   boolean var47 = ImGui.beginTabBar("Categories");
-                  if (axx != null) {
-                     if (var47) {
-                        bfm[] var10 = bfm.values();
-                        int axxxxx = var10.length;
-                        int axxxxxx = 0;
+                  if (var47) {
+                     bfm[] var10 = bfm.values();
+                     int axxxxx = var10.length;
+                     int axxxxxx = 0;
 
-                        while (true) {
-                           if (axxxxxx < axxxxx) {
-                              bfm axxxxxxx = var10[axxxxxx];
-                              if (axx != null) {
-                                 String var48 = axxxxxxx.eai();
-                                 var49 = ImGui.beginTabItem(var48 + "##tab");
-                                 if (axx == null) {
-                                    break;
-                                 }
+                     while (true) {
+                        if (axxxxxx < axxxxx) {
+                           bfm axxxxxxx = var10[axxxxxx];
+                           String var48 = axxxxxxx.eai();
+                           var49 = ImGui.beginTabItem(var48 + "##tab");
 
-                                 if (var49) {
-                                    a.fxh = axxxxxxx.eai();
-                                    a.ckc = axxxxxxx;
-                                    ImGui.endTabItem();
-                                 }
-
-                                 axxxxxx++;
-                              }
-
-                              if (axx != null) {
-                                 continue;
-                              }
+                           if (var49) {
+                              a.fxh = axxxxxxx.eai();
+                              a.ckc = axxxxxxx;
+                              ImGui.endTabItem();
                            }
 
-                           var49 = ImGui.beginTabItem("Configs");
-                           break;
+                           axxxxxx++;
+
+                           continue;
                         }
 
-                        label541: {
-                           if (axx != null) {
-                              if (!var49) {
-                                 break label541;
-                              }
+                        var49 = ImGui.beginTabItem("Configs");
+                        break;
+                     }
 
-                              a.fxh = "Configs";
-                              a.ckc = null;
-                              var49 = false;
-                           }
-
-                           azx.bfn(var49, 3.0F, a.ejf.dnp().intValue());
-                           CloudConfigurations.fpp().emf(a, a);
-                           ImGui.endTabItem();
+                     label541: {
+                        if (!var49) {
+                           break label541;
                         }
 
-                        ImGui.endTabBar();
+                        a.fxh = "Configs";
+                        a.ckc = null;
+                        var49 = false;
+
+                        azx.bfn(var49, 3.0F, a.ejf.dnp().intValue());
+                        CloudConfigurations.fpp().emf(a, a);
+                        ImGui.endTabItem();
                      }
 
-                     var51 = a;
-                     if (axx == null) {
-                        break label562;
-                     }
-
-                     var47 = a.fxh.equals("Configs");
+                     ImGui.endTabBar();
                   }
+
+                  var51 = a;
+
+                  var47 = a.fxh.equals("Configs");
 
                   if (var47) {
                      break label561;
@@ -144,13 +130,11 @@ public class ClickGuiWindow extends class_437 implements dlc {
                               ImGui.columns(2);
                               ImGui.setColumnWidth(0, 175.0F);
                               boolean var53 = ImGui.beginChild("ModulesList", 0.0F, 0.0F, false, 128);
-                              if (axx != null) {
-                                 if (!var53) {
-                                    break label568;
-                                 }
-
-                                 var53 = false;
+                              if (!var53) {
+                                 break label568;
                               }
+
+                              var53 = false;
 
                               azx.bfn(var53, 6.0F, a.ejf.dnp().intValue());
 
@@ -158,27 +142,19 @@ public class ClickGuiWindow extends class_437 implements dlc {
                                  ImGui.pushID(axxxxx.clp());
                                  var54 = a.czb;
                                  var86 = axxxxx;
-                                 if (axx == null) {
-                                    break label567;
-                                 }
 
                                  label570: {
                                     boolean axxxxxx = a.czb == axxxxx;
                                     ImGui.beginDisabled(axxxxxx);
                                     float axxxxxxxx = ImGui.getContentRegionAvail().x;
                                     boolean var55 = ImGui.button(axxxxx.clp(), axxxxxxxx, 25.0F);
-                                    if (axx != null) {
-                                       if (var55) {
-                                          a.czb = axxxxx;
-                                       }
-
-                                       ImGui.endDisabled();
-                                       if (axx == null) {
-                                          break label570;
-                                       }
-
-                                       var55 = ImGui.isItemHovered();
+                                    if (var55) {
+                                       a.czb = axxxxx;
                                     }
+
+                                    ImGui.endDisabled();
+
+                                    var55 = ImGui.isItemHovered();
 
                                     if (var55) {
                                        ImGui.setTooltip(axxxxx.epz());
@@ -187,9 +163,6 @@ public class ClickGuiWindow extends class_437 implements dlc {
                                     ImGui.popID();
                                  }
 
-                                 if (axx == null) {
-                                    break;
-                                 }
                               }
 
                               ImGui.endChild();
@@ -201,27 +174,20 @@ public class ClickGuiWindow extends class_437 implements dlc {
 
                            ImGui.nextColumn();
                            var57 = ImGui.beginChild("ModuleOptions", 0.0F, 0.0F, true, 128);
-                           if (axx != null) {
-                              if (var57 == 0) {
-                                 break label350;
-                              }
-
-                              azx.bfn(false, 3.0F, a.ejf.dnp().intValue());
-                              var57 = ImGui.checkbox("Toggle", a.czb.dsv());
+                           if (var57 == 0) {
+                              break label350;
                            }
 
-                           if (axx != null) {
-                              if (var57 != 0) {
-                                 a.czb.gxo();
-                              }
+                           azx.bfn(false, 3.0F, a.ejf.dnp().intValue());
+                           var57 = ImGui.checkbox("Toggle", a.czb.dsv());
 
-                              ImGui.sameLine();
-                              var57 = ImGui.checkbox("Hidden", a.czb.aov());
+                           if (var57 != 0) {
+                              a.czb.gxo();
                            }
 
-                           if (axx == null) {
-                              break label528;
-                           }
+                           ImGui.sameLine();
+                           var57 = ImGui.checkbox("Hidden", a.czb.aov());
+
 
                            if (var57 == 0) {
                               break label566;
@@ -232,9 +198,7 @@ public class ClickGuiWindow extends class_437 implements dlc {
                         }
 
                         boolean var90 = var86.aov();
-                        if (axx != null) {
-                           var90 = !var90;
-                        }
+                        var90 = !var90;
 
                         var54.atd(var90);
                      }
@@ -246,353 +210,266 @@ public class ClickGuiWindow extends class_437 implements dlc {
                   }
 
                   label490: {
-                     if (axx != null) {
-                        if (var57 == 0) {
-                           for (ffn<?> axxxxx : a.czb.cbf()) {
-                              if (axx == null) {
-                                 break label490;
+                     if (var57 == 0) {
+                        for (ffn<?> axxxxx : a.czb.cbf()) {
+
+                           boolean var60 = axxxxx.ajf().get();
+                           if (!var60) {
+                              continue;
+                           }
+
+                           ImGui.pushID(axxxxx.fah());
+                           var60 = axxxxx instanceof gbp;
+
+                           label482:
+                           if (var60) {
+                              gbp axxxxxxxxx = (gbp)axxxxx;
+                              var60 = ImGui.checkbox(axxxxx.fah(), axxxxxxxxx.dnp());
+
+                              if (var60) {
+                                 boolean var91 = axxxxxxxxx.dnp();
+                                 var91 = !var91;
+
+                                 axxxxxxxxx.gbf(var91);
+                              }
+                           }
+
+                           var60 = axxxxx instanceof bes;
+
+                           if (var60) {
+                              bes axxxxxxxxxx = (bes)axxxxx;
+                              float[] axxxxxxxxxxx = axxxxxxxxxx.dnp().getData();
+                              String var61 = axxxxxxxxxx.fah();
+                              String axxxxxxxxxxxx = "##" + var61;
+                              String var62 = axxxxxxxxxx.fah();
+                              String axxxxxxxxxxxxx = var62 + " %.3f";
+                              boolean var63 = ImGui.sliderFloat(axxxxxxxxxxxx, axxxxxxxxxxx, axxxxxxxxxx.cpl(), axxxxxxxxxx.hgz(), axxxxxxxxxxxxx);
+                              if (var63) {
+                                 axxxxxxxxxx.agb(axxxxxxxxxxx[0], true);
                               }
 
-                              boolean var60 = axxxxx.ajf().get();
-                              if (axx != null) {
-                                 if (!var60) {
-                                    continue;
-                                 }
+                              var63 = ImGui.isItemEdited();
 
-                                 ImGui.pushID(axxxxx.fah());
-                                 var60 = axxxxx instanceof gbp;
+                              if (var63) {
+                                 axxxxxxxxxx.agb(axxxxxxxxxxx[0], false);
                               }
 
-                              label482:
-                              if (axx != null) {
-                                 if (var60) {
-                                    gbp axxxxxxxxx = (gbp)axxxxx;
-                                    var60 = ImGui.checkbox(axxxxx.fah(), axxxxxxxxx.dnp());
-                                    if (axx == null) {
-                                       break label482;
-                                    }
+                              axxxxxxxxxx.dnp().getData()[0] = axxxxxxxxxx.dnp().floatValue();
+                           }
 
-                                    if (var60) {
-                                       boolean var91 = axxxxxxxxx.dnp();
-                                       if (axx != null) {
-                                          var91 = !var91;
-                                       }
+                           var60 = axxxxx instanceof ejm;
 
-                                       axxxxxxxxx.gbf(var91);
-                                    }
-                                 }
+                           if (var60) {
+                              ejm axxxxxxxxxxxxxx = (ejm)axxxxx;
+                              ImGui.text(axxxxxxxxxxxxxx.dnp());
+                           }
 
-                                 var60 = axxxxx instanceof bes;
+                           var60 = axxxxx instanceof acn;
+
+                           label472:
+                           if (var60) {
+                              acn axxxxxxxxxxxxxx = (acn)axxxxx;
+                              float[] axxxxxxxxxxxxxxx = dec.eul(axxxxxxxxxxxxxx.dnp().getRGB());
+                              String var64 = axxxxx.fah();
+                              var60 = ImGui.colorEdit4(var64, axxxxxxxxxxxxxxx, 65536);
+
+                              if (var60) {
+                                 axxxxxxxxxxxxxx.gbf(dec.gry(axxxxxxxxxxxxxxx));
                               }
+                           }
 
-                              if (axx != null) {
-                                 if (var60) {
-                                    bes axxxxxxxxxx = (bes)axxxxx;
-                                    float[] axxxxxxxxxxx = axxxxxxxxxx.dnp().getData();
-                                    String var61 = axxxxxxxxxx.fah();
-                                    String axxxxxxxxxxxx = "##" + var61;
-                                    String var62 = axxxxxxxxxx.fah();
-                                    String axxxxxxxxxxxxx = var62 + " %.3f";
-                                    boolean var63 = ImGui.sliderFloat(axxxxxxxxxxxx, axxxxxxxxxxx, axxxxxxxxxx.cpl(), axxxxxxxxxx.hgz(), axxxxxxxxxxxxx);
-                                    if (axx != null) {
-                                       if (var63) {
-                                          axxxxxxxxxx.agb(axxxxxxxxxxx[0], true);
-                                       }
+                           var60 = axxxxx instanceof dxl;
 
-                                       var63 = ImGui.isItemEdited();
-                                    }
+                           label465:
+                           if (var60) {
+                              dxl axxxxxxxxxxxxxxxx = (dxl)axxxxx;
+                              String var65 = axxxxx.fah();
+                              var60 = ImGui.inputTextWithHint(var65, "You May Type Whatever You Wish Here <3", axxxxxxxxxxxxxxxx.gbs(), 0);
 
-                                    if (var63) {
-                                       axxxxxxxxxx.agb(axxxxxxxxxxx[0], false);
-                                    }
-
-                                    axxxxxxxxxx.dnp().getData()[0] = axxxxxxxxxx.dnp().floatValue();
-                                 }
-
-                                 var60 = axxxxx instanceof ejm;
+                              if (var60) {
+                                 axxxxxxxxxxxxxxxx.gbf(axxxxxxxxxxxxxxxx.gbs().get());
                               }
+                           }
 
-                              if (axx != null) {
-                                 if (var60) {
-                                    ejm axxxxxxxxxxxxxx = (ejm)axxxxx;
-                                    ImGui.text(axxxxxxxxxxxxxx.dnp());
-                                 }
+                           var60 = axxxxx instanceof adu;
 
-                                 var60 = axxxxx instanceof acn;
-                              }
+                           label458:
+                           if (var60) {
+                              adu axxxxxxxxxxxxxxxxx = (adu)axxxxx;
+                              var60 = ImGui.beginCombo(axxxxxxxxxxxxxxxxx.fah(), axxxxxxxxxxxxxxxxx.dnp());
 
-                              label472:
-                              if (axx != null) {
-                                 if (var60) {
-                                    acn axxxxxxxxxxxxxx = (acn)axxxxx;
-                                    float[] axxxxxxxxxxxxxxx = dec.eul(axxxxxxxxxxxxxx.dnp().getRGB());
-                                    String var64 = axxxxx.fah();
-                                    var60 = ImGui.colorEdit4(var64, axxxxxxxxxxxxxxx, 65536);
-                                    if (axx == null) {
-                                       break label472;
-                                    }
+                              if (var60) {
+                                 String var66 = axxxxxxxxxxxxxxxxx.dnp();
+                                 String var67 = "##" + var66;
+                                 ImGui.inputTextWithHint(var67, "Search For Modes.", a.eam, 0);
+                                 String axxxxxxxxxxxxxxxxxx = a.eam.get().toLowerCase();
 
-                                    if (var60) {
-                                       axxxxxxxxxxxxxx.gbf(dec.gry(axxxxxxxxxxxxxxx));
-                                    }
-                                 }
+                                 for (String axxxxxxxxxxxxxxxxxxx : axxxxxxxxxxxxxxxxx.ape()) {
+                                    var60 = axxxxxxxxxxxxxxxxxx.isEmpty();
 
-                                 var60 = axxxxx instanceof dxl;
-                              }
+                                    label448: {
+                                       label447:
+                                       if (!var60) {
+                                          var60 = axxxxxxxxxxxxxxxxxxx.toLowerCase().contains(axxxxxxxxxxxxxxxxxx);
 
-                              label465:
-                              if (axx != null) {
-                                 if (var60) {
-                                    dxl axxxxxxxxxxxxxxxx = (dxl)axxxxx;
-                                    String var65 = axxxxx.fah();
-                                    var60 = ImGui.inputTextWithHint(var65, "You May Type Whatever You Wish Here <3", axxxxxxxxxxxxxxxx.gbs(), 0);
-                                    if (axx == null) {
-                                       break label465;
-                                    }
-
-                                    if (var60) {
-                                       axxxxxxxxxxxxxxxx.gbf(axxxxxxxxxxxxxxxx.gbs().get());
-                                    }
-                                 }
-
-                                 var60 = axxxxx instanceof adu;
-                              }
-
-                              label458:
-                              if (axx != null) {
-                                 if (var60) {
-                                    adu axxxxxxxxxxxxxxxxx = (adu)axxxxx;
-                                    var60 = ImGui.beginCombo(axxxxxxxxxxxxxxxxx.fah(), axxxxxxxxxxxxxxxxx.dnp());
-                                    if (axx == null) {
-                                       break label458;
-                                    }
-
-                                    if (var60) {
-                                       String var66 = axxxxxxxxxxxxxxxxx.dnp();
-                                       String var67 = "##" + var66;
-                                       ImGui.inputTextWithHint(var67, "Search For Modes.", a.eam, 0);
-                                       String axxxxxxxxxxxxxxxxxx = a.eam.get().toLowerCase();
-
-                                       for (String axxxxxxxxxxxxxxxxxxx : axxxxxxxxxxxxxxxxx.ape()) {
-                                          var60 = axxxxxxxxxxxxxxxxxx.isEmpty();
-                                          if (axx == null) {
-                                             break label458;
-                                          }
-
-                                          label448: {
-                                             label447:
-                                             if (axx != null) {
-                                                if (!var60) {
-                                                   var60 = axxxxxxxxxxxxxxxxxxx.toLowerCase().contains(axxxxxxxxxxxxxxxxxx);
-                                                   if (axx == null) {
-                                                      break label447;
-                                                   }
-
-                                                   if (!var60) {
-                                                      break label448;
-                                                   }
-                                                }
-
-                                                var60 = ImGui.selectable(axxxxxxxxxxxxxxxxxxx);
-                                             }
-
-                                             if (var60) {
-                                                axxxxxxxxxxxxxxxxx.gbf(axxxxxxxxxxxxxxxxxxx);
-                                                a.eam.set(new ImString(500));
-                                             }
-                                          }
-
-                                          if (axx == null) {
-                                             break;
+                                          if (!var60) {
+                                             break label448;
                                           }
                                        }
 
-                                       ImGui.endCombo();
-                                    }
-                                 }
+                                       var60 = ImGui.selectable(axxxxxxxxxxxxxxxxxxx);
 
-                                 var60 = axxxxx instanceof cyx;
-                              }
-
-                              label430:
-                              if (axx != null) {
-                                 if (var60) {
-                                    cyx axxxxxxxxxxxxxxxxxx;
-                                    hcr axxxxxxxxxxxxxxxxxxx;
-                                    label426: {
-                                       axxxxxxxxxxxxxxxxxx = (cyx)axxxxx;
-                                       axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxx.dnp();
-                                       hcr var68 = axxxxxxxxxxxxxxxxxxx;
-                                       if (axx != null) {
-                                          if (axxxxxxxxxxxxxxxxxxx == null) {
-                                             var69 = "None";
-                                             break label426;
-                                          }
-
-                                          var68 = axxxxxxxxxxxxxxxxxxx;
-                                       }
-
-                                       var69 = var68.akm();
-                                    }
-
-                                    String axxxxxxxxxxxxxxxxxxxx = var69;
-                                    var60 = ImGui.beginCombo(axxxxxxxxxxxxxxxxxx.fah(), axxxxxxxxxxxxxxxxxxxx);
-                                    if (axx == null) {
-                                       break label430;
-                                    }
-
-                                    if (var60) {
-                                       ImGui.inputTextWithHint("##search", "Search modes...", a.eam);
-                                       String axxxxxxxxxxxxxxxxxxxxx = a.eam.get().toLowerCase();
-
-                                       for (hcr axxxxxxxxxxxxxxxxxxxxxx : axxxxxxxxxxxxxxxxxx.ajs().values()) {
-                                          String axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx.akm();
-                                          var60 = axxxxxxxxxxxxxxxxxxxxx.isEmpty();
-                                          if (axx == null) {
-                                             break label430;
-                                          }
-
-                                          label580: {
-                                             label413: {
-                                                if (axx != null) {
-                                                   if (var60) {
-                                                      break label413;
-                                                   }
-
-                                                   var60 = axxxxxxxxxxxxxxxxxxxxxxx.toLowerCase().contains(axxxxxxxxxxxxxxxxxxxxx);
-                                                }
-
-                                                if (!var60) {
-                                                   break label580;
-                                                }
-                                             }
-
-                                             boolean axxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxxxx;
-                                             boolean var72 = ImGui.selectable(axxxxxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxxx);
-                                             if (axx != null) {
-                                                if (!var72) {
-                                                   break label580;
-                                                }
-
-                                                var72 = axxxxxxxxxxxxxxxxxxxxxxxx;
-                                             }
-
-                                             if (!var72) {
-                                                axxxxxxxxxxxxxxxxxx.biz(axxxxxxxxxxxxxxxxxxxxxx);
-                                                hcr var73 = axxxxxxxxxxxxxxxxxxx;
-                                                if (axx != null) {
-                                                   if (axxxxxxxxxxxxxxxxxxx != null) {
-                                                      axxxxxxxxxxxxxxxxxxx.frr(false);
-                                                   }
-
-                                                   var73 = axxxxxxxxxxxxxxxxxxxxxx;
-                                                }
-
-                                                var73.frr(true);
-                                                a.eam.set("");
-                                             }
-                                          }
-
-                                          if (axx == null) {
-                                             break;
-                                          }
-                                       }
-
-                                       ImGui.endCombo();
-                                    }
-                                 }
-
-                                 var60 = axxxxx instanceof epo;
-                              }
-
-                              label391: {
-                                 label581: {
-                                    label389:
-                                    if (axx != null) {
-                                       label387:
                                        if (var60) {
-                                          epo axxxxxxxxxxxxxxxxxxxxx = (epo)axxxxx;
-                                          var60 = a.bst;
-                                          if (axx != null) {
-                                             if (!a.bst) {
-                                                String var74 = axxxxxxxxxxxxxxxxxxxxx.dnp();
-                                                ImGui.text("Current Path: " + var74);
-                                                var60 = ImGui.button("Choose Path");
-                                                if (axx == null) {
-                                                   break label389;
-                                                }
-
-                                                if (!var60) {
-                                                   break label387;
-                                                }
-
-                                                a.bst = true;
-                                                a.bwg = new FileExplorer(System.getProperty("user.home"), axxxxxxxxxxxxxxxxxxxxx.cof());
-                                                if (axx != null) {
-                                                   break label387;
-                                                }
-                                             }
-
-                                             var60 = ImGui.button("Cancel Selection");
-                                          }
-
-                                          if (axx != null) {
-                                             if (var60) {
-                                                a.bst = false;
-                                                a.bwg.bla();
-                                             }
-
-                                             a.bwg.dut();
-                                             var60 = a.bwg.abc();
-                                          }
-
-                                          if (axx == null) {
-                                             break label389;
-                                          }
-
-                                          if (var60) {
-                                             axxxxxxxxxxxxxxxxxxxxx.gbf(a.bwg.aes());
-                                             a.bst = false;
-                                             a.bwg.bla();
-                                          }
+                                          axxxxxxxxxxxxxxxxx.gbf(axxxxxxxxxxxxxxxxxxx);
+                                          a.eam.set(new ImString(500));
                                        }
-
-                                       var77 = axxxxx;
-                                       if (axx == null) {
-                                          break label581;
-                                       }
-
-                                       var60 = axxxxx instanceof ale;
                                     }
 
-                                    if (!var60) {
-                                       break label391;
-                                    }
-
-                                    var77 = axxxxx;
                                  }
 
-                                 ale axxxxxxxxxxxxxxxxxxxxxx = (ale)var77;
-                                 String var78 = ek.bzp(axxxxxxxxxxxxxxxxxxxxxx.dnp().toString());
-                                 ImGui.text("Currently Aiming For The " + var78);
-                                 a.bqb = true;
-                                 a.geq = axxxxxxxxxxxxxxxxxxxxxx;
-                              }
-
-                              ImGui.popID();
-                              ImGui.spacing();
-                              if (axx == null) {
-                                 break;
+                                 ImGui.endCombo();
                               }
                            }
 
-                           if (axx != null) {
-                              break label490;
+                           var60 = axxxxx instanceof cyx;
+
+                           label430:
+                           if (var60) {
+                              cyx axxxxxxxxxxxxxxxxxx;
+                              hcr axxxxxxxxxxxxxxxxxxx;
+                              label426: {
+                                 axxxxxxxxxxxxxxxxxx = (cyx)axxxxx;
+                                 axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxx.dnp();
+                                 hcr var68 = axxxxxxxxxxxxxxxxxxx;
+                                 if (axxxxxxxxxxxxxxxxxxx == null) {
+                                    var69 = "None";
+                                    break label426;
+                                 }
+
+                                 var68 = axxxxxxxxxxxxxxxxxxx;
+
+                                 var69 = var68.akm();
+                              }
+
+                              String axxxxxxxxxxxxxxxxxxxx = var69;
+                              var60 = ImGui.beginCombo(axxxxxxxxxxxxxxxxxx.fah(), axxxxxxxxxxxxxxxxxxxx);
+
+                              if (var60) {
+                                 ImGui.inputTextWithHint("##search", "Search modes...", a.eam);
+                                 String axxxxxxxxxxxxxxxxxxxxx = a.eam.get().toLowerCase();
+
+                                 for (hcr axxxxxxxxxxxxxxxxxxxxxx : axxxxxxxxxxxxxxxxxx.ajs().values()) {
+                                    String axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx.akm();
+                                    var60 = axxxxxxxxxxxxxxxxxxxxx.isEmpty();
+
+                                    label580: {
+                                       label413: {
+                                          if (var60) {
+                                             break label413;
+                                          }
+
+                                          var60 = axxxxxxxxxxxxxxxxxxxxxxx.toLowerCase().contains(axxxxxxxxxxxxxxxxxxxxx);
+
+                                          if (!var60) {
+                                             break label580;
+                                          }
+                                       }
+
+                                       boolean axxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxx == axxxxxxxxxxxxxxxxxxx;
+                                       boolean var72 = ImGui.selectable(axxxxxxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxxx);
+                                       if (!var72) {
+                                          break label580;
+                                       }
+
+                                       var72 = axxxxxxxxxxxxxxxxxxxxxxxx;
+
+                                       if (!var72) {
+                                          axxxxxxxxxxxxxxxxxx.biz(axxxxxxxxxxxxxxxxxxxxxx);
+                                          hcr var73 = axxxxxxxxxxxxxxxxxxx;
+                                          if (axxxxxxxxxxxxxxxxxxx != null) {
+                                             axxxxxxxxxxxxxxxxxxx.frr(false);
+                                          }
+
+                                          var73 = axxxxxxxxxxxxxxxxxxxxxx;
+
+                                          var73.frr(true);
+                                          a.eam.set("");
+                                       }
+                                    }
+
+                                 }
+
+                                 ImGui.endCombo();
+                              }
                            }
+
+                           var60 = axxxxx instanceof epo;
+
+                           label391: {
+                              label581: {
+                                 label389:
+                                 label387:
+                                 if (var60) {
+                                    epo axxxxxxxxxxxxxxxxxxxxx = (epo)axxxxx;
+                                    var60 = a.bst;
+                                    if (!a.bst) {
+                                       String var74 = axxxxxxxxxxxxxxxxxxxxx.dnp();
+                                       ImGui.text("Current Path: " + var74);
+                                       var60 = ImGui.button("Choose Path");
+
+                                       if (!var60) {
+                                          break label387;
+                                       }
+
+                                       a.bst = true;
+                                       a.bwg = new FileExplorer(System.getProperty("user.home"), axxxxxxxxxxxxxxxxxxxxx.cof());
+                                       break label387;
+                                    }
+
+                                    var60 = ImGui.button("Cancel Selection");
+
+                                    if (var60) {
+                                       a.bst = false;
+                                       a.bwg.bla();
+                                    }
+
+                                    a.bwg.dut();
+                                    var60 = a.bwg.abc();
+
+
+                                    if (var60) {
+                                       axxxxxxxxxxxxxxxxxxxxx.gbf(a.bwg.aes());
+                                       a.bst = false;
+                                       a.bwg.bla();
+                                    }
+                                 }
+
+                                 var77 = axxxxx;
+
+                                 var60 = axxxxx instanceof ale;
+
+                                 if (!var60) {
+                                    break label391;
+                                 }
+
+                                 var77 = axxxxx;
+                              }
+
+                              ale axxxxxxxxxxxxxxxxxxxxxx = (ale)var77;
+                              String var78 = ek.bzp(axxxxxxxxxxxxxxxxxxxxxx.dnp().toString());
+                              ImGui.text("Currently Aiming For The " + var78);
+                              a.bqb = true;
+                              a.geq = axxxxxxxxxxxxxxxxxxxxxx;
+                           }
+
+                           ImGui.popID();
+                           ImGui.spacing();
                         }
 
-                        var57 = 255;
+                        break label490;
                      }
+
+                     var57 = 255;
 
                      ImGui.textColored(var57, 165, 0, 255, "This module has no settings");
                   }
@@ -611,13 +488,11 @@ public class ClickGuiWindow extends class_437 implements dlc {
       long ax = ClickGuiWindow.a ^ 125300886010768L;
       int[] var5 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().gkk(a, a);
-      if (var5 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25402(a, a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25402(a, a);
 
       return var10000;
    }
@@ -626,13 +501,11 @@ public class ClickGuiWindow extends class_437 implements dlc {
       long ax = ClickGuiWindow.a ^ 1018221509601L;
       int[] var8 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().fgn(a, a, a);
-      if (var8 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25403(a, a, a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25403(a, a, a);
 
       return var10000;
    }
@@ -641,13 +514,11 @@ public class ClickGuiWindow extends class_437 implements dlc {
       long ax = ClickGuiWindow.a ^ 60312397469979L;
       int[] var11 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().dmj(a, a, a, a);
-      if (var11 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25401(a, a, a, a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25401(a, a, a, a);
 
       return var10000;
    }
@@ -656,55 +527,44 @@ public class ClickGuiWindow extends class_437 implements dlc {
       long ax = ClickGuiWindow.a ^ 85937761655127L;
       int[] var4 = ClientSetup.abu();
       int var10000 = CloudConfigurations.fpp().chz(a);
-      if (var4 != null) {
-         if (var10000 != 0) {
-            return true;
-         }
-
-         var10000 = a.method_74228();
+      if (var10000 != 0) {
+         return true;
       }
+
+      var10000 = a.method_74228();
 
       label62:
-      if (var4 != null) {
-         if (var10000 == 256) {
-            var10000 = a.dx;
-            if (var4 == null) {
-               break label62;
-            }
-
-            if (!a.dx) {
-               chi.method_1507(null);
-            }
-         }
-
+      if (var10000 == 256) {
          var10000 = a.dx;
+
+         if (!a.dx) {
+            chi.method_1507(null);
+         }
       }
 
-      if (var4 != null) {
-         if (var10000 != 0) {
-            int var8;
-            label51: {
-               var5 = a.czb;
-               class_11908 var6 = a;
-               if (var4 != null) {
-                  var8 = a.method_74228();
-                  if (var8 == 256) {
-                     var8 = 0;
-                     break label51;
-                  }
+      var10000 = a.dx;
 
-                  var6 = a;
-               }
-
-               var8 = var6.method_74228();
+      if (var10000 != 0) {
+         int var8;
+         label51: {
+            var5 = a.czb;
+            class_11908 var6 = a;
+            var8 = a.method_74228();
+            if (var8 == 256) {
+               var8 = 0;
+               break label51;
             }
 
-            var5.hge(var8);
-            a.dx = false;
+            var6 = a;
+
+            var8 = var6.method_74228();
          }
 
-         var10000 = 1;
+         var5.hge(var8);
+         a.dx = false;
       }
+
+      var10000 = 1;
 
       return (boolean)var10000;
    }
@@ -713,13 +573,11 @@ public class ClickGuiWindow extends class_437 implements dlc {
       long ax = ClickGuiWindow.a ^ 38125706985611L;
       int[] var4 = ClientSetup.abu();
       boolean var10000 = CloudConfigurations.fpp().flf(a);
-      if (var4 != null) {
-         if (var10000) {
-            return true;
-         }
-
-         var10000 = super.method_25400(a);
+      if (var10000) {
+         return true;
       }
+
+      var10000 = super.method_25400(a);
 
       return var10000;
    }
@@ -879,89 +737,6 @@ public class ClickGuiWindow extends class_437 implements dlc {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 30902;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ClickGuiWindow", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ClickGuiWindow" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

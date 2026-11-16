@@ -61,23 +61,19 @@ public class dsk extends brc {
       var10002[1] = System.currentTimeMillis();
       var10002[2] = var8[0];
       String var10005 = a.hfi;
-      if (axxx != null) {
-         var10005 = a.hfi != null ? a.hfi : "";
-      }
+      var10005 = a.hfi != null ? a.hfi : "";
 
       var10002[3] = var10005;
       a.eqw(axx, var10002);
       String var10 = axx.toString();
       var8 = b;
       String var10001 = var8[4];
-      if (axxx != null) {
-         var10 = fz.dvr(var10, Base64Util.fsi(var10001), Base64Util.fsi(var8[2]));
-         if (cdr.haa() != null) {
-            return var10;
-         }
-
-         var10001 = "ijDdV";
+      var10 = fz.dvr(var10, Base64Util.fsi(var10001), Base64Util.fsi(var8[2]));
+      if (cdr.haa() != null) {
+         return var10;
       }
+
+      var10001 = "ijDdV";
 
       dve.hby(var10001);
       return var10;
@@ -442,30 +438,6 @@ public class dsk extends brc {
       }
 
       return h[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/dsk" + " : " + var1 + " : " + var2.toString(), var5);
-      }
    }
 
    private static int d(int var0, long var1) {

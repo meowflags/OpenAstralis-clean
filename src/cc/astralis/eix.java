@@ -24,7 +24,7 @@ class eix {
    private static final long a = 90788453701476L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -43,290 +43,201 @@ class eix {
       long ax = eix.a ^ 135648585550375L;
       int[] axx = ClientSetup.abu();
       int var10000 = a.fde;
-      if (axx != null) {
-         if (!a.fde) {
-            byte var6 = -1;
-            var10000 = a.hashCode();
-            label235:
-            if (axx != null) {
-               switch (var10000) {
-                  case 111145:
-                     var10000 = a.equals("png");
-                     if (axx == null) {
-                        break label235;
-                     }
+      if (!a.fde) {
+         byte var6 = -1;
+         var10000 = a.hashCode();
+         label235:
+         switch (var10000) {
+            case 111145:
+               var10000 = a.equals("png");
 
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 0;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 105441:
-                     var10000 = a.equals("jpg");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 1;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 3268712:
-                     var10000 = a.equals("jpeg");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 2;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 102340:
-                     var10000 = a.equals("gif");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 3;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 115312:
-                     var10000 = a.equals("txt");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 4;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 110834:
-                     var10000 = a.equals("pdf");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 5;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 99640:
-                     var10000 = a.equals("doc");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 6;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 3088960:
-                     var10000 = a.equals("docx");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 7;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 108272:
-                     var10000 = a.equals("mp3");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 8;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 117484:
-                     var10000 = a.equals("wav");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 9;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 109967:
-                     var10000 = a.equals("ogg");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 10;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 108273:
-                     var10000 = a.equals("mp4");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 11;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 108308:
-                     var10000 = a.equals("mov");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 12;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 96980:
-                     var10000 = a.equals("avi");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 13;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 120609:
-                     var10000 = a.equals("zip");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 14;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 112675:
-                     var10000 = a.equals("rar");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 == 0) {
-                        break;
-                     }
-
-                     var6 = 15;
-                     if (axx != null) {
-                        break;
-                     }
-                  case 1827:
-                     var10000 = a.equals("7z");
-                     if (axx == null) {
-                        break label235;
-                     }
-
-                     if (var10000 != 0) {
-                        var6 = 16;
-                     }
+               if (var10000 == 0) {
+                  break;
                }
 
-               var10000 = var6;
-            }
+               var6 = 0;
+               break;
+            case 105441:
+               var10000 = a.equals("jpg");
 
-            if (axx != null) {
-               switch (var10000) {
-                  case 0:
-                  case 1:
-                  case 2:
-                  case 3:
-                     var10000 = 61893;
-                     break;
-                  case 4:
-                  case 5:
-                  case 6:
-                  case 7:
-                     var10000 = 61897;
-                     break;
-                  case 8:
-                  case 9:
-                  case 10:
-                     var10000 = 61895;
-                     break;
-                  case 11:
-                  case 12:
-                  case 13:
-                     var10000 = 61896;
-                     break;
-                  case 14:
-                  case 15:
-                  case 16:
-                     var10000 = 61894;
-                     break;
-                  default:
-                     var10000 = 61787;
+               if (var10000 == 0) {
+                  break;
                }
-            }
 
-            return (char)var10000;
+               var6 = 1;
+               break;
+            case 3268712:
+               var10000 = a.equals("jpeg");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 2;
+               break;
+            case 102340:
+               var10000 = a.equals("gif");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 3;
+               break;
+            case 115312:
+               var10000 = a.equals("txt");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 4;
+               break;
+            case 110834:
+               var10000 = a.equals("pdf");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 5;
+               break;
+            case 99640:
+               var10000 = a.equals("doc");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 6;
+               break;
+            case 3088960:
+               var10000 = a.equals("docx");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 7;
+               break;
+            case 108272:
+               var10000 = a.equals("mp3");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 8;
+               break;
+            case 117484:
+               var10000 = a.equals("wav");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 9;
+               break;
+            case 109967:
+               var10000 = a.equals("ogg");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 10;
+               break;
+            case 108273:
+               var10000 = a.equals("mp4");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 11;
+               break;
+            case 108308:
+               var10000 = a.equals("mov");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 12;
+               break;
+            case 96980:
+               var10000 = a.equals("avi");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 13;
+               break;
+            case 120609:
+               var10000 = a.equals("zip");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 14;
+               break;
+            case 112675:
+               var10000 = a.equals("rar");
+
+               if (var10000 == 0) {
+                  break;
+               }
+
+               var6 = 15;
+               break;
+            case 1827:
+               var10000 = a.equals("7z");
+
+               if (var10000 != 0) {
+                  var6 = 16;
+               }
          }
 
-         var10000 = 61563;
+         var10000 = var6;
+
+         switch (var10000) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+               var10000 = 61893;
+               break;
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+               var10000 = 61897;
+               break;
+            case 8:
+            case 9:
+            case 10:
+               var10000 = 61895;
+               break;
+            case 11:
+            case 12:
+            case 13:
+               var10000 = 61896;
+               break;
+            case 14:
+            case 15:
+            case 16:
+               var10000 = 61894;
+               break;
+            default:
+               var10000 = 61787;
+         }
+
+         return (char)var10000;
       }
+
+      var10000 = 61563;
 
       return (char)var10000;
    }
@@ -478,89 +389,6 @@ class eix {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 4840;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/eix", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/eix" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

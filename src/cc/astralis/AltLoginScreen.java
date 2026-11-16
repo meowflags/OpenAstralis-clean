@@ -37,7 +37,7 @@ public class AltLoginScreen extends class_437 implements dlc, cds {
    private static final long a = 79310009907682L;
    private static final String[] b;
    private static final String[] c;
-   private static final Map d = new HashMap(13);
+
    private static final long[] e;
    private static final Integer[] f;
    private static final Map g;
@@ -83,7 +83,7 @@ public class AltLoginScreen extends class_437 implements dlc, cds {
                int[] var10000x = ClientSetup.abu();
                afc axx = hhl.cwa(a, a.hbv.cxy());
                int[] axxx = var10000x;
-               if (axxx != null && a.gbd) {
+               if (a.gbd) {
                   AltManager.emo().add(new gfv(axx.av, axx.aqg, axx.acp, true));
                }
             }).start();
@@ -95,7 +95,7 @@ public class AltLoginScreen extends class_437 implements dlc, cds {
          int[] var10000x = ClientSetup.abu();
          SessionHelper.ckh(new gfv(a.axb.method_1882(), "", ""));
          int[] var4x = var10000x;
-         if (var4x != null && a.gbd) {
+         if (a.gbd) {
             AltManager.emo().add(new gfv(chi.method_1548().method_1676(), "", "", false));
          }
       });
@@ -108,39 +108,33 @@ public class AltLoginScreen extends class_437 implements dlc, cds {
 
          try {
             String axxxx = chi.field_1774.method_1460();
-            if (axxx != null) {
-               label46:
-               if (axxxx != null) {
-                  String var12x = axxxx;
-                  if (axxx != null) {
-                     if (axxxx.isEmpty()) {
-                        break label46;
-                     }
-
-                     short var13x = 9183;
-                     long var15x = 406157482244997440L ^ ax;
-                     var12x = axxxx.replaceAll("[^A-Za-z0-9\\-_.]", "");
-                  }
-
-                  String axxxxx = var12x;
-                  String[] axxxxxx = SessionHelper.evy(axxxxx);
-                  UUID axxxxxxx = SessionHelper.duo(axxxxxx[1]);
-                  class_320 axxxxxxxx = new class_320(axxxxxx[0], axxxxxxx, axxxxx, Optional.empty(), Optional.empty());
-                  if (axxx != null) {
-                     if (a.gbd) {
-                        AltManager.emo().add(new gfv(axxxxxx[0], axxxxx, axxxxxx[1], true));
-                     }
-
-                     axx.setSession(axxxxxxxx);
-                  }
-
-                  return;
+            label46:
+            if (axxxx != null) {
+               String var12x = axxxx;
+               if (axxxx.isEmpty()) {
+                  break label46;
                }
 
-               short var14x = 28506;
-               long var16x = 3785414276768517575L ^ ax;
-               ClientSetup.ecj.error("Clipboard is empty");
+               short var13x = 9183;
+               long var15x = 406157482244997440L ^ ax;
+               var12x = axxxx.replaceAll("[^A-Za-z0-9\\-_.]", "");
+
+               String axxxxx = var12x;
+               String[] axxxxxx = SessionHelper.evy(axxxxx);
+               UUID axxxxxxx = SessionHelper.duo(axxxxxx[1]);
+               class_320 axxxxxxxx = new class_320(axxxxxx[0], axxxxxxx, axxxxx, Optional.empty(), Optional.empty());
+               if (a.gbd) {
+                  AltManager.emo().add(new gfv(axxxxxx[0], axxxxx, axxxxxx[1], true));
+               }
+
+               axx.setSession(axxxxxxxx);
+
+               return;
             }
+
+            short var14x = 28506;
+            long var16x = 3785414276768517575L ^ ax;
+            ClientSetup.ecj.error("Clipboard is empty");
          } catch (Exception var11x) {
             short var10001x = 25656;
             long var10002x = 7823018177984382624L ^ ax;
@@ -191,73 +185,60 @@ public class AltLoginScreen extends class_437 implements dlc, cds {
       int[] var7 = var10000;
       var8 = a;
       label42:
-      if (var7 != null) {
-         if (a.ebz != null) {
-            var8 = a;
-            if (var7 == null) {
-               break label42;
-            }
+      if (a.ebz != null) {
+         var8 = a;
 
-            if (a.gmy) {
-               eu.alu(axx -> {
-                  long ax = AltLoginScreen.a ^ 103622112932679L;
-                  int[] var4 = ClientSetup.abu();
-                  short var10000x = 28348;
-                  long var10001x = 7509785487302560101L ^ ax;
-                  boolean var5x = ImGui.begin("File Explorer");
-                  if (var4 != null) {
-                     if (!var5x) {
-                        return;
-                     }
-
-                     var5x = false;
-                  }
-
-                  azx.gab(var5x, 3.0F);
-                  a.ebz.dut();
-                  ImGui.end();
-               });
-               var8 = a;
-               if (var7 == null) {
-                  break label42;
+         if (a.gmy) {
+            eu.alu(axx -> {
+               long ax = AltLoginScreen.a ^ 103622112932679L;
+               int[] var4 = ClientSetup.abu();
+               short var10000x = 28348;
+               long var10001x = 7509785487302560101L ^ ax;
+               boolean var5x = ImGui.begin("File Explorer");
+               if (!var5x) {
+                  return;
                }
 
-               if (a.ebz.aes() != null) {
-                  var8 = a;
-                  if (var7 == null) {
-                     break label42;
-                  }
+               var5x = false;
 
-                  if (a.ebz.abc()) {
-                     a.gmy = false;
-                     Runnable var10002 = () -> {
-                        long axx = AltLoginScreen.a ^ 75135116124190L;
+               azx.gab(var5x, 3.0F);
+               a.ebz.dut();
+               ImGui.end();
+            });
+            var8 = a;
 
-                        try {
-                           File ax = new File(a.ebz.aes());
-                           SessionHelper.crq(ax, a.gbd);
-                           a.ebz.bla();
-                        } catch (Exception var4) {
-                           short var10001x = 7049;
-                           long var10002x = 490164217383563014L ^ axx;
-                           ClientSetup.ecj.error("Cookie login failed", var4);
-                        }
-                     };
-                     new Thread(var10002, "Cookie Login Thread").start();
-                  }
+            if (a.ebz.aes() != null) {
+               var8 = a;
+
+               if (a.ebz.abc()) {
+                  a.gmy = false;
+                  Runnable var10002 = () -> {
+                     long axx = AltLoginScreen.a ^ 75135116124190L;
+
+                     try {
+                        File ax = new File(a.ebz.aes());
+                        SessionHelper.crq(ax, a.gbd);
+                        a.ebz.bla();
+                     } catch (Exception var4) {
+                        short var10001x = 7049;
+                        long var10002x = 490164217383563014L ^ axx;
+                        ClientSetup.ecj.error("Cookie login failed", var4);
+                     }
+                  };
+                  new Thread(var10002, "Cookie Login Thread").start();
                }
             }
          }
-
-         class_327 var10001 = chi.field_1772;
-         class_2561 var10 = a.method_25440();
-         int var12 = a.field_22789 / 2;
-         a.method_27534(var10001, var10, var12, 10, -1);
-         var10001 = chi.field_1772;
-         String var11 = chi.method_1548().method_1676();
-         a.method_51433(var10001, "Logged In With " + var11, 3, 3, Color.white.getRGB(), true);
-         var8 = a;
       }
+
+      class_327 var10001 = chi.field_1772;
+      class_2561 var10 = a.method_25440();
+      int var12 = a.field_22789 / 2;
+      a.method_27534(var10001, var10, var12, 10, -1);
+      var10001 = chi.field_1772;
+      String var11 = chi.method_1548().method_1676();
+      a.method_51433(var10001, "Logged In With " + var11, 3, 3, Color.white.getRGB(), true);
+      var8 = a;
 
       var8.axb.method_25394(a, a, a, a);
    }
@@ -437,62 +418,6 @@ public class AltLoginScreen extends class_437 implements dlc, cds {
       }
 
       return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 11637;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/AltLoginScreen", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = b(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/AltLoginScreen" + " : " + var1 + " : " + var2.toString(), var5);
-      }
    }
 
    private static int b(int var0, long var1) {

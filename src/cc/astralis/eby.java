@@ -44,77 +44,62 @@ public class eby {
       String var17 = System.getProperty("os.name").toLowerCase();
       var18 = var17.startsWith("win");
       label63:
-      if (ax != null) {
+      if (var18) {
+         File axx = new File("C:\\Windows\\System32\\drivers\\etc", "hosts");
+         var18 = axx.exists();
+
          if (var18) {
-            File axx = new File("C:\\Windows\\System32\\drivers\\etc", "hosts");
-            var18 = axx.exists();
-            if (ax == null) {
-               break label63;
-            }
+            Scanner axxx = new Scanner(axx);
 
-            if (var18) {
-               Scanner axxx = new Scanner(axx);
+            while (axxx.hasNextLine()) {
+               String axxxx = axxx.nextLine().toLowerCase();
+               var18 = axxxx.contains("wss://ws.serenityutils.club");
 
-               while (axxx.hasNextLine()) {
-                  String axxxx = axxx.nextLine().toLowerCase();
-                  if (ax != null) {
-                     var18 = axxxx.contains("wss://ws.serenityutils.club");
-                     if (ax == null) {
-                        break label63;
+               if (!var18) {
+                  if (!axxxx.contains("45.144.55.184")) {
+                     continue;
+                     break;
+                  }
+               }
+
+               ClientSetup.ecj.error("Runtime Standard Failed 0x02");
+
+               try {
+                  Field axxxxx = Unsafe.class.getDeclaredField("theUnsafe");
+                  axxxxx.setAccessible(true);
+                  Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
+                  long axxxxxxx = ThreadLocalRandom.current().nextLong();
+                  ThreadLocalRandom var20 = ThreadLocalRandom.current();
+                  long axxxxxxxx = var20.nextLong(1L, Long.MAX_VALUE);
+                  ThreadLocalRandom var21 = ThreadLocalRandom.current();
+                  int axxxxxxxxx = var21.nextInt(1, 256);
+                  Thread var29 = Thread.currentThread();
+                  axxxxxx.putLong(var29, 8L, axxxxxxx);
+                  axxxxxx.putAddress(axxxxxxxx, 0L);
+                  Runtime.getRuntime().halt(axxxxxxxxx);
+               } catch (Throwable var13) {
+                  var18 = 4110;
+                  long axxxxxxxxxx = Long.MIN_VALUE;
+
+                  do {
+                     if (axxxxxxxxxx >= Long.MAX_VALUE) {
+                        break;
                      }
 
-                     if (!var18) {
-                        if (!axxxx.contains("45.144.55.184")) {
-                           if (ax != null) {
-                              continue;
-                           }
-                           break;
-                        }
-                     }
-
-                     ClientSetup.ecj.error("Runtime Standard Failed 0x02");
-                  }
-
-                  try {
-                     Field axxxxx = Unsafe.class.getDeclaredField("theUnsafe");
-                     axxxxx.setAccessible(true);
-                     Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
-                     long axxxxxxx = ThreadLocalRandom.current().nextLong();
-                     ThreadLocalRandom var20 = ThreadLocalRandom.current();
-                     long axxxxxxxx = var20.nextLong(1L, Long.MAX_VALUE);
-                     ThreadLocalRandom var21 = ThreadLocalRandom.current();
-                     int axxxxxxxxx = var21.nextInt(1, 256);
-                     Thread var29 = Thread.currentThread();
-                     axxxxxx.putLong(var29, 8L, axxxxxxx);
-                     axxxxxx.putAddress(axxxxxxxx, 0L);
-                     Runtime.getRuntime().halt(axxxxxxxxx);
-                  } catch (Throwable var13) {
-                     var18 = 4110;
-                     long axxxxxxxxxx = Long.MIN_VALUE;
-
-                     do {
-                        if (axxxxxxxxxx >= Long.MAX_VALUE) {
-                           break;
-                        }
-
-                        axxxxxxxxxx--;
-                        axxxxxxxxxx++;
-                        if (ax == null) {
-                           return;
-                        }
-                     } while (ax != null);
-                  }
-
-                  axxx.close();
-                  return;
+                     axxxxxxxxxx--;
+                     axxxxxxxxxx++;
+                  } while (ax != null);
                }
 
                axxx.close();
+               return;
             }
-         }
 
-         var18 = djg;
+            axxx.close();
+         }
       }
+
+      var18 = djg;
 
       if (!var18) {
          ClientSetup.gqy().gp().cat();
@@ -154,41 +139,30 @@ public class eby {
          label109:
          if (axxxxxxxxxx < axxxxxxxxx) {
             String axxxxxxxxxxxx = axxxxxxxx[axxxxxxxxxx];
-            if (axxxxxxxxxxx != null) {
-               var25 = axxxxxxxxxxxx.contains("-");
-               if (axxxxxxxxxxx == null) {
-                  break;
-               }
+            var25 = axxxxxxxxxxxx.contains("-");
 
-               if (var25 == 0) {
-                  axxxx = false;
-                  if (axxxxxxxxxxx != null) {
-                     break label109;
-                  }
-               }
-
-               axxxxxxx++;
-               axxxxxxxxxx++;
+            if (var25 == 0) {
+               axxxx = false;
+               break label109;
             }
 
-            if (axxxxxxxxxxx != null) {
-               continue;
-            }
+            axxxxxxx++;
+            axxxxxxxxxx++;
+
+            continue;
          }
 
          var25 = axxxxxxx;
          break;
       }
 
-      if (axxxxxxxxxxx != null) {
-         if (var25 != 13) {
-            axxxxx = false;
-         }
-
-         axxxxxxxx = ax;
-         axxxxxxxxx = ax.length;
-         var25 = 0;
+      if (var25 != 13) {
+         axxxxx = false;
       }
+
+      axxxxxxxx = ax;
+      axxxxxxxxx = ax.length;
+      var25 = 0;
 
       axxxxxxxxxx = var25;
 
@@ -196,25 +170,16 @@ public class eby {
          label94:
          if (axxxxxxxxxx < axxxxxxxxx) {
             String axxxxxxxxxxxxx = axxxxxxxx[axxxxxxxxxx];
-            if (axxxxxxxxxxx != null) {
-               var26 = axxx.contains(axxxxxxxxxxxxx);
-               if (axxxxxxxxxxx == null) {
-                  break;
-               }
+            var26 = axxx.contains(axxxxxxxxxxxxx);
 
-               if (var26) {
-                  axxxxxx = true;
-                  if (axxxxxxxxxxx != null) {
-                     break label94;
-                  }
-               }
-
-               axxxxxxxxxx++;
+            if (var26) {
+               axxxxxx = true;
+               break label94;
             }
 
-            if (axxxxxxxxxxx != null) {
-               continue;
-            }
+            axxxxxxxxxx++;
+
+            continue;
          }
 
          var26 = axxxx;
@@ -222,21 +187,16 @@ public class eby {
       }
 
       label81:
-      if (axxxxxxxxxxx != null) {
-         if (var26) {
-            var26 = axxxxx;
-            if (axxxxxxxxxxx == null) {
-               break label81;
-            }
+      if (var26) {
+         var26 = axxxxx;
 
-            if (axxxxx && !axxxxxx) {
-               return;
-            }
+         if (axxxxx && !axxxxxx) {
+            return;
          }
-
-         ClientSetup.ecj.error("Runtime Standards Failed 0x01");
-         var26 = true;
       }
+
+      ClientSetup.ecj.error("Runtime Standards Failed 0x01");
+      var26 = true;
 
       djg = var26;
 
@@ -507,89 +467,6 @@ public class eby {
             var37 = var28.substring(++var36, var36 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 8876;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/eby", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/eby" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

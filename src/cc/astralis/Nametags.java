@@ -36,7 +36,7 @@ public class Nametags extends guu {
    private static final long a = 68363239688307L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long[] p;
    private static final Integer[] q;
    private static final Map r;
@@ -73,29 +73,23 @@ public class Nametags extends guu {
       long ax = Nametags.a ^ 78224763792940L;
       int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (axx != null) {
-         if (chi.method_1561().field_4686 == null) {
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.method_1561().field_4686 == null) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000.field_1687 == null) {
-            return;
-         }
+      var10000 = chi;
 
-         var10000 = chi;
+      if (var10000.field_1687 == null) {
+         return;
       }
 
-      if (axx != null) {
-         if (var10000.field_1724 == null) {
-            return;
-         }
+      var10000 = chi;
 
-         var10000 = chi;
+      if (var10000.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi;
 
       Iterator var5 = var10000.field_1687.method_18112().iterator();
 
@@ -114,18 +108,13 @@ public class Nametags extends guu {
             label218: {
                axxx = (class_1297)var5.next();
                boolean var43 = axxx instanceof class_1309;
-               if (axx != null) {
-                  if (!var43 && axx != null) {
-                     continue label198;
-                  }
-
-                  var44 = axxx;
-                  if (axx == null) {
-                     break label218;
-                  }
-
-                  var43 = axxx instanceof class_1657;
+               if (!var43) {
+                  continue label198;
                }
+
+               var44 = axxx;
+
+               var43 = axxx instanceof class_1657;
 
                if (!var43) {
                   continue label198;
@@ -135,46 +124,33 @@ public class Nametags extends guu {
             }
 
             label171: {
-               if (axx != null) {
-                  if (var44 == chi.field_1724) {
-                     var45 = chi.field_1690.method_31044().method_31034();
-                     if (axx == null) {
-                        break label171;
-                     }
+               if (var44 == chi.field_1724) {
+                  var45 = chi.field_1690.method_31044().method_31034();
 
-                     if (var45 != 0 && axx != null) {
-                        continue label198;
-                     }
+                  if (var45 != 0) {
+                     continue label198;
                   }
-
-                  var44 = axxx;
                }
+
+               var44 = axxx;
 
                var45 = var44 instanceof class_1657;
             }
 
             label220: {
                label181:
-               if (axx != null) {
-                  if (var45 != 0) {
-                     class_1657 axxxxx = (class_1657)axxx;
-                     var45 = axxxxx.method_5628();
-                     if (axx == null) {
-                        break label181;
-                     }
+               if (var45 != 0) {
+                  class_1657 axxxxx = (class_1657)axxx;
+                  var45 = axxxxx.method_5628();
 
-                     if (var45 == chi.field_1724.method_5628() && axx != null) {
-                        continue label198;
-                     }
+                  if (var45 == chi.field_1724.method_5628()) {
+                     continue label198;
                   }
-
-                  var46 = (class_1657)axxx;
-                  if (axx == null) {
-                     break label220;
-                  }
-
-                  var45 = AntiBot.cnv((class_1657)var46);
                }
+
+               var46 = (class_1657)axxx;
+
+               var45 = AntiBot.cnv((class_1657)var46);
 
                if (var45 != 0) {
                   return;
@@ -220,47 +196,35 @@ public class Nametags extends guu {
 
                class_243 axxxxxxxxxxxxxx = axxxxxxxxxxx[axxxxxxxxxxxxx];
                class_243 axxxxxxxxxxxxxxx = guf.at(axxxxxxxxxxxxxx);
-               if (axx != null) {
-                  double var62;
-                  var42 = (var62 = axxxxxxxxxxxxxxx.field_1350 - 0.0) == 0.0 ? 0 : (var62 < 0.0 ? -1 : 1);
-                  if (axx == null) {
-                     break;
+               double var62;
+               var42 = (var62 = axxxxxxxxxxxxxxx.field_1350 - 0.0) == 0.0 ? 0 : (var62 < 0.0 ? -1 : 1);
+
+               if (var42 > 0 && axxxxxxxxxxxxxxx.field_1350 < 1.0) {
+                  Vector4d var49 = axxxx;
+                  if (axxxx == null) {
+                     axxxx = new Vector4d(axxxxxxxxxxxxxxx.field_1352, axxxxxxxxxxxxxxx.field_1351, axxxxxxxxxxxxxxx.field_1350, 0.0);
                   }
 
-                  if (var42 > 0 && axxxxxxxxxxxxxxx.field_1350 < 1.0) {
-                     Vector4d var49 = axxxx;
-                     if (axx != null) {
-                        if (axxxx == null) {
-                           axxxx = new Vector4d(axxxxxxxxxxxxxxx.field_1352, axxxxxxxxxxxxxxx.field_1351, axxxxxxxxxxxxxxx.field_1350, 0.0);
-                        }
+                  axxxx.x = Math.min(axxxxxxxxxxxxxxx.field_1352, axxxx.x);
+                  axxxx.y = Math.min(axxxxxxxxxxxxxxx.field_1351, axxxx.y);
+                  axxxx.z = Math.max(axxxxxxxxxxxxxxx.field_1352, axxxx.z);
+                  var49 = axxxx;
 
-                        axxxx.x = Math.min(axxxxxxxxxxxxxxx.field_1352, axxxx.x);
-                        axxxx.y = Math.min(axxxxxxxxxxxxxxx.field_1351, axxxx.y);
-                        axxxx.z = Math.max(axxxxxxxxxxxxxxx.field_1352, axxxx.z);
-                        var49 = axxxx;
-                     }
-
-                     var49.w = Math.max(axxxxxxxxxxxxxxx.field_1351, axxxx.w);
-                  }
-
-                  axxxxxxxxxxxxx++;
+                  var49.w = Math.max(axxxxxxxxxxxxxxx.field_1351, axxxx.w);
                }
 
-               if (axx == null) {
-                  break label195;
-               }
+               axxxxxxxxxxxxx++;
+
             }
          }
 
          label224: {
             Vector4d var50 = axxxx;
-            if (axx != null) {
-               if (axxxx == null) {
-                  break label224;
-               }
-
-               var50 = axxxx;
+            if (axxxx == null) {
+               break label224;
             }
+
+            var50 = axxxx;
 
             float axxxxxx = (float)var50.x;
             float axxxxxxx = (float)axxxx.y;
@@ -288,13 +252,11 @@ public class Nametags extends guu {
                float axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx + a.ait.dnp().intValue() * 4;
                float axxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxx + a.ait.dnp().intValue() * 2;
                var10000 = a;
-               if (axx != null) {
-                  if (!a.fua.dnp()) {
-                     break label149;
-                  }
-
-                  var10000 = ClientSetup.gqy().aws().diy(Glow.class);
+               if (!a.fua.dnp()) {
+                  break label149;
                }
+
+               var10000 = ClientSetup.gqy().aws().diy(Glow.class);
 
                Glow axxxxxxxxxxxxxxxxxxxxx = (Glow)var10000;
                Color axxxxxxxxxxxxxxxxxxxxxx = dec.ceu(a.eok.dnp(), axxxxxxxxxxxxxxxxxxxxx.fug.dnp().intValue());
@@ -311,25 +273,18 @@ public class Nametags extends guu {
             float axxxxxxxxxxxxxxxxxxx;
             label143: {
                axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxx - axxxxxxxxxxxxxxxxxx / 3.2F;
-               if (axx != null) {
-                  if (a.dk.dnp()) {
-                     break label143;
-                  }
-
-                  axxxxxxxxxx.ebb(axxxxxxxxxxxxxxxx.toString(), axxxxxxxxxxx - axxxxxxxxxxxxxxxxx / 2.0F, axxxxxxxxxxxxxxxxxxx, a.chs.dnp());
+               if (a.dk.dnp()) {
+                  break label143;
                }
 
-               if (axx != null) {
-                  break label224;
-               }
+               axxxxxxxxxx.ebb(axxxxxxxxxxxxxxxx.toString(), axxxxxxxxxxx - axxxxxxxxxxxxxxxxx / 2.0F, axxxxxxxxxxxxxxxxxxx, a.chs.dnp());
+
+               break label224;
             }
 
             axxxxxxxxxx.aof(axxxxxxxxxxxxxxxx.toString(), axxxxxxxxxxx - axxxxxxxxxxxxxxxxx / 2.0F, axxxxxxxxxxxxxxxxxxx, a.chs.dnp());
          }
 
-         if (axx == null) {
-            return;
-         }
       }
    }
 
@@ -338,14 +293,12 @@ public class Nametags extends guu {
       int[] var4 = ClientSetup.abu();
       float var5;
       int var10000 = (var5 = a - 0.6F) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
-      if (var4 != null) {
-         if (var10000 > 0) {
-            return class_124.field_1060;
-         }
-
-         float var6;
-         var10000 = (var6 = a - 0.3F) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
+      if (var10000 > 0) {
+         return class_124.field_1060;
       }
+
+      float var6;
+      var10000 = (var6 = a - 0.3F) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
 
       return var10000 > 0 ? class_124.field_1054 : class_124.field_1061;
    }
@@ -497,89 +450,6 @@ public class Nametags extends guu {
             var25 = var17.substring(++var24, var24 + var16);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 7011;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/der", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/der" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

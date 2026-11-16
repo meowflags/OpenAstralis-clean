@@ -19,22 +19,18 @@ public final class KeybindNames {
    public static void ejm(int key) {
       long ax = KeybindNames.a ^ 88668490559198L;
       int[] var3 = ClientSetup.abu();
-      if (var3 != null) {
-         if (a == -1) {
-            return;
-         }
-
-         ClientSetup.gqy().aws().czl().stream().filter(axxx -> {
-            long ax = KeybindNames.a ^ 7510879833191L;
-            int[] var4 = ClientSetup.abu();
-            int var10000 = axxx.glr();
-            if (var4 != null) {
-               var10000 = var10000 == a ? 1 : 0;
-            }
-
-            return (boolean)var10000;
-         }).forEach(guu::gxo);
+      if (a == -1) {
+         return;
       }
+
+      ClientSetup.gqy().aws().czl().stream().filter(axxx -> {
+         long ax = KeybindNames.a ^ 7510879833191L;
+         int[] var4 = ClientSetup.abu();
+         int var10000 = axxx.glr();
+         var10000 = var10000 == a ? 1 : 0;
+
+         return (boolean)var10000;
+      }).forEach(guu::gxo);
    }
 
    public static String fhh(int key) {
@@ -45,23 +41,19 @@ public final class KeybindNames {
       long ax = KeybindNames.a ^ 16763382072056L;
       int[] axx = ClientSetup.abu();
       Object var10000 = a;
-      if (axx != null) {
-         if (a == null) {
-            return -1;
-         }
-
-         var10000 = dgm.get(a.toUpperCase(Locale.ROOT));
+      if (a == null) {
+         return -1;
       }
+
+      var10000 = dgm.get(a.toUpperCase(Locale.ROOT));
 
       Integer axxx = (Integer)var10000;
       var10000 = axxx;
-      if (axx != null) {
-         if (axxx == null) {
-            return -1;
-         }
-
-         var10000 = axxx;
+      if (axxx == null) {
+         return -1;
       }
+
+      var10000 = axxx;
 
       return var10000;
    }
@@ -96,30 +88,4 @@ public final class KeybindNames {
       }
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }

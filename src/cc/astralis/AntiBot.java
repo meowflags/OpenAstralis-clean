@@ -1,16 +1,13 @@
 package cc.astralis;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
+
 import java.lang.invoke.MethodHandles;
-import java.lang.invoke.MethodType;
-import java.lang.invoke.MutableCallSite;
-import java.lang.invoke.MethodHandles.Lookup;
-import java.util.HashMap;
+
+
 import java.util.Iterator;
-import java.util.Map;
+
 import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
+
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
@@ -29,7 +26,7 @@ public class AntiBot extends guu {
    private static final long a = 51241945858063L;
    private static final String[] g;
    private static final String[] h;
-   private static final Map i = new HashMap(13);
+
    private static final long p;
 
    public AntiBot() {
@@ -43,147 +40,10 @@ public class AntiBot extends guu {
       AntiBot axx = ClientSetup.gqy().aws().diy(AntiBot.class);
       int[] axxx = var10000;
       AntiBot var7 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return false;
-         }
 
-         var7 = axx;
-      }
+      var7 = axx;
 
       boolean var8 = var7.dsv();
-      if (axxx == null) {
-         return var8;
-      } else if (!var8) {
-         return false;
-      } else if (a == null) {
-         return true;
-      } else {
-         class_640 axxxx;
-         axxxx = chi.method_1562().method_2871(a.method_5667());
-         var9 = dly.dnp();
-         label176:
-         if (axxx != null) {
-            if (var9 != 0) {
-               var9 = a.field_6012;
-               if (axxx == null) {
-                  break label176;
-               }
-
-               if (a.field_6012 < (int)p) {
-                  return true;
-               }
-            }
-
-            var9 = emm.dnp();
-         }
-
-         label167:
-         if (axxx != null) {
-            if (var9 != 0) {
-               class_640 var10 = axxxx;
-               if (axxx != null) {
-                  if (axxxx == null) {
-                     return true;
-                  }
-
-                  var10 = axxxx;
-               }
-
-               var9 = dst(var10);
-               if (axxx == null) {
-                  break label167;
-               }
-
-               if (var9 == 0) {
-                  return true;
-               }
-            }
-
-            var9 = epc.dnp();
-         }
-
-         label153: {
-            if (var9 != 0) {
-               var11 = axxxx;
-               if (axxx == null) {
-                  break label153;
-               }
-
-               if (axxxx != null) {
-                  var11 = axxxx;
-                  if (axxx == null) {
-                     break label153;
-                  }
-
-                  if (axxxx.method_2959() == 0) {
-                     return true;
-                  }
-               }
-            }
-
-            var11 = axxxx;
-         }
-
-         label144: {
-            if (axxx != null) {
-               if (var11 == null) {
-                  var12 = null;
-                  break label144;
-               }
-
-               var11 = axxxx;
-            }
-
-            var12 = var11.method_2966().name();
-         }
-
-         String axxxxx = var12;
-         if (bim.dnp()) {
-            String var13 = axxxxx;
-            if (axxx != null) {
-               if (axxxxx == null) {
-                  return true;
-               }
-
-               var13 = axxxxx;
-            }
-
-            boolean var14 = var13.matches("^[a-zA-Z0-9_]{1,16}+$");
-            if (axxx == null) {
-               return var14;
-            } else {
-               if (var14) {
-                  boolean var17 = axxxxx.contains(" ");
-                  if (axxx == null) {
-                     return var17;
-                  }
-
-                  if (!var17) {
-                     boolean var18 = axxxxx.startsWith("§");
-                     if (axxx == null) {
-                        return var18;
-                     }
-
-                     if (!var18) {
-                        boolean var19 = axxxxx.contains("NPC");
-                        if (axxx == null) {
-                           return var19;
-                        }
-
-                        if (!var19) {
-                           return axxxx == null;
-                        }
-                     }
-                  }
-               }
-
-               return true;
-            }
-         } else {
-            return axxxx == null;
-         }
-      }
    }
 
    public static boolean dtl(class_640 playerInfo) {
@@ -192,73 +52,10 @@ public class AntiBot extends guu {
       AntiBot axx = ClientSetup.gqy().aws().diy(AntiBot.class);
       int[] axxx = var10000;
       AntiBot var5 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return false;
-         }
 
-         var5 = axx;
-      }
+      var5 = axx;
 
       boolean var6 = var5.dsv();
-      if (axxx == null) {
-         return var6;
-      } else if (var6) {
-         var10000 = (int[])a;
-         if (axxx != null) {
-            if (a == null) {
-               return true;
-            }
-
-            var10000 = (int[])emm.dnp();
-         }
-
-         var8 = (Boolean)var10000;
-         label90:
-         if (axxx != null) {
-            if (var8) {
-               var8 = dst(a);
-               if (axxx == null) {
-                  break label90;
-               }
-
-               if (!var8) {
-                  return true;
-               }
-            }
-
-            var8 = cih.dnp();
-         }
-
-         label83:
-         if (axxx != null) {
-            if (var8) {
-               var8 = dcu(a, "[NPC] ");
-               if (axxx == null) {
-                  break label83;
-               }
-
-               if (var8) {
-                  return true;
-               }
-            }
-
-            var8 = bim.dnp();
-         }
-
-         if (axxx != null) {
-            if (!var8) {
-               return false;
-            }
-
-            String var9 = a.method_2966().name();
-            var8 = var9.matches("^[a-zA-Z0-9_]{1,16}+$");
-         }
-
-         return axxx == null ? var8 : !var8;
-      } else {
-         return false;
-      }
    }
 
    private static boolean dst(class_640 a) {
@@ -271,21 +68,13 @@ public class AntiBot extends guu {
          if (var4.hasNext()) {
             class_640 axxx = (class_640)var4.next();
             var6 = axxx.method_2966().id().compareTo(a.method_2966().id());
-            if (axx == null) {
-               break;
-            }
 
-            if (axx == null) {
-               return (boolean)var6;
-            }
 
             if (var6 == 0) {
                return (boolean)1;
             }
 
-            if (axx != null) {
-               continue;
-            }
+            continue;
          }
 
          var6 = 0;
@@ -299,13 +88,8 @@ public class AntiBot extends guu {
       long ax = AntiBot.a ^ 8946743455655L;
       int[] var4 = ClientSetup.abu();
       class_2561 var10000 = a.method_2971();
-      if (var4 != null) {
-         if (var10000 == null) {
-            return false;
-         }
 
-         var10000 = a.method_2971();
-      }
+      var10000 = a.method_2971();
 
       boolean var5 = class_124.method_539(var10000.getString()).startsWith(a);
       return var4 == null ? var5 : var5;
@@ -409,86 +193,4 @@ public class AntiBot extends guu {
       }
    }
 
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String b(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 31581;
-      if (h[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])i.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               i.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/ejt", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = g[var5].getBytes("ISO-8859-1");
-         h[var5] = d(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return h[var5];
-   }
-
-   private static Object b(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = b(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite b(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("b".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/ejt" + " : " + var1 + " : " + var2.toString(), var5);
-      }
-   }
 }

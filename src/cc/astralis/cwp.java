@@ -63,85 +63,66 @@ public class cwp implements dlc {
       class_9424 axxx = (class_9424)a.method_58694(class_9334.field_50077);
       int[] axxxx = var10000;
       class_9424 var8 = axxx;
-      if (axxxx != null) {
-         if (axxx == null) {
-            return null;
-         }
 
-         var8 = axxx;
-      }
+      var8 = axxx;
 
       var10000 = (int[])var8.comp_2498().stream();
-      if (axxxx != null) {
-         if (var10000.noneMatch(axxxxx -> {
-            long axxxxxx = cwp.a ^ 1726914224685L;
-            int[] var3x = ClientSetup.abu();
-            boolean var10000x = axxxxx.comp_2503().isPresent();
-            if (var3x != null) {
-               if (!var10000x) {
-                  return false;
-               }
-
-               var10000x = (Boolean)axxxxx.comp_2503().get();
-            }
-
-            return var3x == null ? var10000x : var10000x;
-         })) {
-            return null;
+      if (var10000.noneMatch(axxxxx -> {
+         long axxxxxx = cwp.a ^ 1726914224685L;
+         int[] var3x = ClientSetup.abu();
+         boolean var10000x = axxxxx.comp_2503().isPresent();
+         if (!var10000x) {
+            return false;
          }
 
-         var10000 = (int[])a.method_58694(class_9334.field_55878);
+         var10000x = (Boolean)axxxxx.comp_2503().get();
+
+         return var3x == null ? var10000x : var10000x;
+      })) {
+         return null;
       }
+
+      var10000 = (int[])a.method_58694(class_9334.field_55878);
 
       class_10590 axxxxx = (class_10590)var10000;
       boolean var10 = axx instanceof class_1743;
-      if (axxxx != null) {
-         if (var10) {
-            return hcp.Axe;
-         }
-
-         var10 = axx instanceof class_1794;
+      if (var10) {
+         return hcp.Axe;
       }
 
-      if (axxxx != null) {
-         if (var10) {
-            return hcp.Hoe;
-         }
+      var10 = axx instanceof class_1794;
 
-         var10 = axx instanceof class_1821;
+      if (var10) {
+         return hcp.Hoe;
       }
 
-      if (axxxx != null) {
-         if (var10) {
-            return hcp.Shovel;
-         }
+      var10 = axx instanceof class_1821;
 
-         var10 = axx instanceof class_1820;
+      if (var10) {
+         return hcp.Shovel;
       }
+
+      var10 = axx instanceof class_1820;
 
       if (var10) {
          return hcp.Shears;
       } else {
          class_10590 var11 = axxxxx;
-         if (axxxx != null) {
-            if (axxxxx == null) {
-               return null;
-            }
-
-            var11 = axxxxx;
+         if (axxxxx == null) {
+            return null;
          }
+
+         var11 = axxxxx;
 
          int axxxxxx = var11.comp_3481();
          int var12 = axxxxxx;
          byte var10001 = 2;
-         if (axxxx != null) {
-            if (axxxxxx == 2) {
-               return hcp.Pickaxe;
-            }
-
-            var12 = axxxxxx;
-            var10001 = 1;
+         if (axxxxxx == 2) {
+            return hcp.Pickaxe;
          }
+
+         var12 = axxxxxx;
+         var10001 = 1;
 
          return var12 == var10001 ? hcp.Sword : null;
       }
@@ -153,13 +134,11 @@ public class cwp implements dlc {
       class_10192 axx = (class_10192)a.method_58694(class_9334.field_54196);
       int[] axxx = var10000;
       class_10192 var5 = axx;
-      if (axxx != null) {
-         if (axx == null) {
-            return false;
-         }
-
-         var5 = axx;
+      if (axx == null) {
+         return false;
       }
+
+      var5 = axx;
 
       return var5.comp_3174().method_5925() == class_1305.field_6178;
    }
@@ -175,25 +154,18 @@ public class cwp implements dlc {
          label27: {
             class_9287 axxxx = (class_9287)var5.next();
             class_9287 var7 = axxxx;
-            if (axxx != null) {
-               if (axxxx.comp_2395() != class_5134.field_23724) {
-                  break label27;
-               }
-
-               var7 = axxxx;
+            if (axxxx.comp_2395() != class_5134.field_23724) {
+               break label27;
             }
+
+            var7 = axxxx;
 
             if (var7.comp_2396().comp_2450() == class_1323.field_6328) {
                axx += (int)axxxx.comp_2396().comp_2449();
-               if (axxx != null) {
-                  break;
-               }
+               break;
             }
          }
 
-         if (axxx == null) {
-            break;
-         }
       }
 
       return axx;
@@ -211,38 +183,29 @@ public class cwp implements dlc {
          if (var6.hasNext()) {
             Entry<class_6880<class_1887>> axxxxx = (Entry<class_6880<class_1887>>)var6.next();
             var11 = ((class_6880)axxxxx.getKey()).method_40225(class_1893.field_9111);
-            if (axxxx == null) {
-               break;
-            }
 
             label75: {
-               if (axxxx != null) {
-                  if (var11 == 0) {
-                     break label75;
-                  }
-
-                  var11 = axxxxx.getIntValue();
+               if (var11 == 0) {
+                  break label75;
                }
+
+               var11 = axxxxx.getIntValue();
 
                int axxxxxx = var11;
                float axxxxxxx = (6 + axxxxxx * axxxxxx) / 3.0F * 0.75F;
                int axxxxxxxx = (int)axxxxxxx;
                float var21;
                int var13 = (var21 = axxxxxxx - axxxxxxxx) == 0.0F ? 0 : (var21 < 0.0F ? -1 : 1);
-               if (axxxx != null) {
-                  if (var13 < 0) {
-                     axxxxxxxx--;
-                  }
-
-                  var13 = axxx + axxxxxxxx;
+               if (var13 < 0) {
+                  axxxxxxxx--;
                }
+
+               var13 = axxx + axxxxxxxx;
 
                axxx = var13;
             }
 
-            if (axxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          var11 = axxx;
@@ -251,20 +214,13 @@ public class cwp implements dlc {
 
       label56: {
          label76: {
-            if (axxxx != null) {
-               if (var11 > 25) {
-                  axxx = 25;
-                  if (axxxx != null) {
-                     break label76;
-                  }
-               }
-
-               var11 = axxx;
+            if (var11 > 25) {
+               axxx = 25;
+               break label76;
             }
 
-            if (axxxx == null) {
-               break label56;
-            }
+            var11 = axxx;
+
 
             if (var11 < 0) {
                axxx = 0;
@@ -289,41 +245,35 @@ public class cwp implements dlc {
          long axxxxx = cwp.a ^ 126770399731966L;
          int[] var3x = ClientSetup.abu();
          boolean var10000x = axxxx.comp_2503().isPresent();
-         if (var3x != null) {
-            if (!var10000x) {
-               return false;
-            }
-
-            var10000x = (Boolean)axxxx.comp_2503().get();
+         if (!var10000x) {
+            return false;
          }
 
-         if (var3x != null) {
-            if (!var10000x) {
-               return false;
-            }
+         var10000x = (Boolean)axxxx.comp_2503().get();
 
-            var10000x = axxxx.comp_2502().isPresent();
+         if (!var10000x) {
+            return false;
          }
+
+         var10000x = axxxx.comp_2502().isPresent();
 
          return var3x == null ? var10000x : var10000x;
       }).map(axxxx -> (Float)axxxx.comp_2502().get()).findAny().orElse(0.0F)).orElse(0.0F);
       int[] axxx = var10000;
       float var6 = axx;
-      if (axxx != null) {
-         if (axx > 1.0F) {
-            Optional<Integer> axxxx = a.method_58657()
-               .method_57539()
-               .stream()
-               .filter(axxxxx -> ((class_6880)axxxxx.getKey()).method_40225(class_1893.field_9131))
-               .<Integer>map(Entry::getIntValue)
-               .max(Comparator.comparingInt(axxxxx -> axxxxx));
-            if (axxxx.isPresent()) {
-               axx += class_3532.method_34954(axxxx.get()) + 1;
-            }
+      if (axx > 1.0F) {
+         Optional<Integer> axxxx = a.method_58657()
+            .method_57539()
+            .stream()
+            .filter(axxxxx -> ((class_6880)axxxxx.getKey()).method_40225(class_1893.field_9131))
+            .<Integer>map(Entry::getIntValue)
+            .max(Comparator.comparingInt(axxxxx -> axxxxx));
+         if (axxxx.isPresent()) {
+            axx += class_3532.method_34954(axxxx.get()) + 1;
          }
-
-         var6 = axx;
       }
+
+      var6 = axx;
 
       return var6;
    }
@@ -339,48 +289,35 @@ public class cwp implements dlc {
          label92: {
             class_9287 axxxxx = (class_9287)axxx.next();
             class_9287 var10 = axxxxx;
-            if (axxxx != null) {
-               if (axxxxx.comp_2395() != class_5134.field_23721) {
-                  break label92;
-               }
-
-               var10 = axxxxx;
+            if (axxxxx.comp_2395() != class_5134.field_23721) {
+               break label92;
             }
 
-            if (axxxx != null) {
-               if (var10.comp_2397() != class_9274.field_49217) {
-                  break label92;
-               }
+            var10 = axxxxx;
 
-               var10 = axxxxx;
+            if (var10.comp_2397() != class_9274.field_49217) {
+               break label92;
             }
+
+            var10 = axxxxx;
 
             class_1322 var11 = var10.comp_2396();
-            if (axxxx != null) {
-               if (var11.comp_2447() != class_1792.field_8006) {
-                  break label92;
-               }
-
-               var11 = axxxxx.comp_2396();
+            if (var11.comp_2447() != class_1792.field_8006) {
+               break label92;
             }
 
-            if (axxxx != null) {
-               if (var11.comp_2450() != class_1323.field_6328) {
-                  break label92;
-               }
+            var11 = axxxxx.comp_2396();
 
-               var11 = axxxxx.comp_2396();
+            if (var11.comp_2450() != class_1323.field_6328) {
+               break label92;
             }
+
+            var11 = axxxxx.comp_2396();
 
             axx = (float)var11.comp_2449();
-            if (axxxx != null) {
-               break;
-            }
-         }
-
-         if (axxxx == null) {
             break;
          }
+
       }
 
       float axxxxxx = 0.0F;
@@ -388,23 +325,16 @@ public class cwp implements dlc {
       for (Entry<class_6880<class_1887>> axxxxxxx : a.method_58657().method_57539()) {
          label55: {
             int var12 = ((class_6880)axxxxxxx.getKey()).method_40225(class_1893.field_9118);
-            if (axxxx != null) {
-               if (var12 == 0) {
-                  break label55;
-               }
-
-               var12 = axxxxxxx.getIntValue();
+            if (var12 == 0) {
+               break label55;
             }
+
+            var12 = axxxxxxx.getIntValue();
 
             axxxxxx = var12 * 1.25F;
-            if (axxxx != null) {
-               break;
-            }
-         }
-
-         if (axxxx == null) {
             break;
          }
+
       }
 
       return axx + axxxxxx;
@@ -419,9 +349,7 @@ public class cwp implements dlc {
       int axxxxx = axx.method_7919();
       int axxxxxx = axxxx.method_7919();
       int var15 = axxxxx;
-      if (axxx != null) {
-         var15 = axxxxx == axxxxxx ? 1 : 0;
-      }
+      var15 = axxxxx == axxxxxx ? 1 : 0;
 
       boolean axxxxxxx;
       hcp axxxxxxxx;
@@ -433,42 +361,30 @@ public class cwp implements dlc {
             axxxxxxxxx = bos(axxxx);
             hcp var16 = axxxxxxxx;
             hcp var10001 = hcp.Sword;
-            if (axxx != null) {
-               if (axxxxxxxx != hcp.Sword) {
-                  break label229;
-               }
-
-               var16 = axxxxxxxxx;
-               var10001 = hcp.Sword;
+            if (axxxxxxxx != hcp.Sword) {
+               break label229;
             }
+
+            var16 = axxxxxxxxx;
+            var10001 = hcp.Sword;
 
             if (var16 == var10001) {
                double[] axxxxxxxxxx = new double[]{dw(axx), dw(axxxx)};
                double var31;
                var17 = (var31 = axxxxxxxxxx[0] - axxxxxxxxxx[1]) == 0.0 ? 0 : (var31 < 0.0 ? -1 : 1);
-               if (axxx != null) {
-                  if (var17 != 0) {
-                     double var32;
-                     int var18 = (var32 = axxxxxxxxxx[0] - axxxxxxxxxx[1]) == 0.0 ? 0 : (var32 < 0.0 ? -1 : 1);
-                     if (axxx != null) {
-                        var18 = var18 > 0 ? 1 : 0;
-                     }
+               if (var17 != 0) {
+                  double var32;
+                  int var18 = (var32 = axxxxxxxxxx[0] - axxxxxxxxxx[1]) == 0.0 ? 0 : (var32 < 0.0 ? -1 : 1);
+                  var18 = var18 > 0 ? 1 : 0;
 
-                     return (boolean)var18;
-                  }
-
-                  var17 = axxxxxxx;
+                  return (boolean)var18;
                }
 
-               if (axxx == null) {
-                  break label230;
-               }
+               var17 = axxxxxxx;
+
 
                if (var17 != 0) {
                   var17 = a.field_7874;
-                  if (axxx == null) {
-                     break label230;
-                  }
 
                   if (a.field_7874 == 36) {
                      return true;
@@ -481,21 +397,17 @@ public class cwp implements dlc {
       }
 
       label236: {
-         if (axxx != null) {
-            if (var17 == 0) {
-               break label236;
-            }
-
-            var17 = gvl(axxxx);
+         if (var17 == 0) {
+            break label236;
          }
 
-         if (axxx != null) {
-            if (var17 == 0) {
-               break label236;
-            }
+         var17 = gvl(axxxx);
 
-            var17 = 2;
+         if (var17 == 0) {
+            break label236;
          }
+
+         var17 = 2;
 
          double[] var19 = new double[var17];
          var19[0] = fsw(axx);
@@ -503,31 +415,22 @@ public class cwp implements dlc {
          double[] axxxxxxxxxxx = var19;
          double var33;
          int var20 = (var33 = axxxxxxxxxxx[0] - axxxxxxxxxxx[1]) == 0.0 ? 0 : (var33 < 0.0 ? -1 : 1);
-         if (axxx != null) {
-            if (var20 != 0) {
-               double var34;
-               int var21 = (var34 = axxxxxxxxxxx[0] - axxxxxxxxxxx[1]) == 0.0 ? 0 : (var34 < 0.0 ? -1 : 1);
-               if (axxx != null) {
-                  var21 = var21 < 0 ? 1 : 0;
-               }
+         if (var20 != 0) {
+            double var34;
+            int var21 = (var34 = axxxxxxxxxxx[0] - axxxxxxxxxxx[1]) == 0.0 ? 0 : (var34 < 0.0 ? -1 : 1);
+            var21 = var21 < 0 ? 1 : 0;
 
-               return (boolean)var21;
-            }
-
-            var20 = axxxxxxx;
+            return (boolean)var21;
          }
 
-         if (axxx != null) {
-            if (var20 == 0) {
-               break label236;
-            }
+         var20 = axxxxxxx;
 
-            var20 = a.field_7874;
+         if (var20 == 0) {
+            break label236;
          }
 
-         if (axxx == null) {
-            return (boolean)var20;
-         }
+         var20 = a.field_7874;
+
 
          if (var20 < 9) {
             return (boolean)1;
@@ -537,62 +440,42 @@ public class cwp implements dlc {
       label192: {
          label238: {
             hcp var22 = axxxxxxxx;
-            if (axxx != null) {
-               if (axxxxxxxx == null) {
-                  break label238;
-               }
-
-               var22 = axxxxxxxxx;
+            if (axxxxxxxx == null) {
+               break label238;
             }
 
-            if (axxx != null) {
-               if (var22 == null) {
-                  break label238;
-               }
+            var22 = axxxxxxxxx;
 
-               var22 = axxxxxxxx;
+            if (var22 == null) {
+               break label238;
             }
+
+            var22 = axxxxxxxx;
 
             var23 = var22.gnc();
-            if (axxx == null) {
-               break label192;
-            }
 
             if (var23 != 0) {
                var23 = axxxxxxxxx.gnc();
-               if (axxx == null) {
-                  break label192;
-               }
 
                if (var23 != 0) {
                   double[] axxxxxxxxxxxx = new double[]{ept(axx), ept(axxxx)};
                   double var35;
                   var23 = (var35 = axxxxxxxxxxxx[0] - axxxxxxxxxxxx[1]) == 0.0 ? 0 : (var35 < 0.0 ? -1 : 1);
-                  if (axxx != null) {
-                     if (var23 != 0) {
-                        double var36;
-                        int var24 = (var36 = axxxxxxxxxxxx[0] - axxxxxxxxxxxx[1]) == 0.0 ? 0 : (var36 < 0.0 ? -1 : 1);
-                        if (axxx != null) {
-                           var24 = var24 > 0 ? 1 : 0;
-                        }
+                  if (var23 != 0) {
+                     double var36;
+                     int var24 = (var36 = axxxxxxxxxxxx[0] - axxxxxxxxxxxx[1]) == 0.0 ? 0 : (var36 < 0.0 ? -1 : 1);
+                     var24 = var24 > 0 ? 1 : 0;
 
-                        return (boolean)var24;
-                     }
-
-                     var23 = axxxxxxx;
+                     return (boolean)var24;
                   }
 
-                  if (axxx == null) {
-                     break label192;
-                  }
+                  var23 = axxxxxxx;
+
 
                   if (var23 != 0) {
                      int var37 = a.field_7874;
                      int var27 = 9557;
                      var27 = 37 + axxxxxxxx.ckz();
-                     if (axxx == null) {
-                        return (boolean)(var37 < var27 ? 1 : 0);
-                     }
 
                      if (var37 == var27) {
                         return true;
@@ -605,11 +488,6 @@ public class cwp implements dlc {
          var23 = axxxxx;
       }
 
-      if (axxx == null) {
-         return (boolean)var23;
-      } else {
-         return (boolean)(var23 < axxxxxx ? 1 : 0);
-      }
    }
 
    public static cxs dwm(List<class_1735> slots) {
@@ -736,9 +614,6 @@ public class cwp implements dlc {
                   label240: {
                      hcp var24 = axxxx;
                      if (ax != null) {
-                        if (axxxx == null) {
-                           break label240;
-                        }
 
                         var24 = axxxx;
                      }
@@ -826,21 +701,17 @@ public class cwp implements dlc {
       long ax = cwp.a ^ 18548511318529L;
       int[] var5 = ClientSetup.abu();
       class_310 var10000 = chi;
-      if (var5 != null) {
-         if (chi.field_1761 == null) {
-            return;
-         }
-
-         var10000 = chi;
+      if (chi.field_1761 == null) {
+         return;
       }
 
-      if (var5 != null) {
-         if (var10000.field_1724 == null) {
-            return;
-         }
+      var10000 = chi;
 
-         var10000 = chi;
+      if (var10000.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi;
 
       var10000.field_1761.method_2906(chi.field_1724.field_7512.field_7763, a, a, a, chi.field_1724);
    }

@@ -58,13 +58,11 @@ public class CloudConfigurations {
    public static CloudConfigurations fpp() {
       int[] var2 = ClientSetup.abu();
       CloudConfigurations var10000 = hcn;
-      if (var2 != null) {
-         if (hcn == null) {
-            hcn = new CloudConfigurations();
-         }
-
-         var10000 = hcn;
+      if (hcn == null) {
+         hcn = new CloudConfigurations();
       }
+
+      var10000 = hcn;
 
       return var10000;
    }
@@ -123,36 +121,27 @@ public class CloudConfigurations {
             axxxxx = var26 - 15;
             float var79;
             var26 = (var79 = a - axxxx) == 0.0F ? 0 : (var79 < 0.0F ? -1 : 1);
-            if (axx != null) {
-               if (var26 < 0) {
-                  break label123;
-               }
-
-               float var80;
-               var26 = (var80 = a - axxxxx) == 0.0F ? 0 : (var80 < 0.0F ? -1 : 1);
+            if (var26 < 0) {
+               break label123;
             }
 
-            if (axx != null) {
-               if (var26 < 0) {
-                  break label123;
-               }
+            float var80;
+            var26 = (var80 = a - axxxxx) == 0.0F ? 0 : (var80 < 0.0F ? -1 : 1);
 
-               float var81;
-               var26 = (var81 = a - (axxxx + 30.0F)) == 0.0F ? 0 : (var81 < 0.0F ? -1 : 1);
+            if (var26 < 0) {
+               break label123;
             }
 
-            if (axx != null) {
-               if (var26 > 0) {
-                  break label123;
-               }
+            float var81;
+            var26 = (var81 = a - (axxxx + 30.0F)) == 0.0F ? 0 : (var81 < 0.0F ? -1 : 1);
 
-               float var82;
-               var26 = (var82 = a - (axxxxx + 30.0F)) == 0.0F ? 0 : (var82 < 0.0F ? -1 : 1);
+            if (var26 > 0) {
+               break label123;
             }
 
-            if (axx == null) {
-               break label119;
-            }
+            float var82;
+            var26 = (var82 = a - (axxxxx + 30.0F)) == 0.0F ? 0 : (var82 < 0.0F ? -1 : 1);
+
 
             if (var26 <= 0) {
                var26 = 1;
@@ -179,49 +168,40 @@ public class CloudConfigurations {
          float var51 = axxxxx + 15.0F;
          float var10004 = 2.0F;
          var10005 = Color.WHITE;
-         if (axx != null) {
-            dmp.ezk(var27, var36, var47, var51, 2.0F, Color.WHITE);
-            if (a.hid) {
-               dmp.ezk(axxxx + 15.0F, axxxxx + 10.0F, axxxx + 15.0F, axxxxx + 20.0F, 2.0F, Color.WHITE);
-               if (axx != null) {
-                  break label97;
-               }
-            }
-
-            var27 = axxxx + 15.0F;
-            var36 = axxxxx + 10.0F;
-            var47 = axxxx + 15.0F;
-            var51 = axxxxx + 20.0F;
-            var10004 = 2.0F;
-            var10005 = Color.WHITE;
+         dmp.ezk(var27, var36, var47, var51, 2.0F, Color.WHITE);
+         if (a.hid) {
+            dmp.ezk(axxxx + 15.0F, axxxxx + 10.0F, axxxx + 15.0F, axxxxx + 20.0F, 2.0F, Color.WHITE);
+            break label97;
          }
+
+         var27 = axxxx + 15.0F;
+         var36 = axxxxx + 10.0F;
+         var47 = axxxx + 15.0F;
+         var51 = axxxxx + 20.0F;
+         var10004 = 2.0F;
+         var10005 = Color.WHITE;
 
          dmp.ezk(var27, var36, var47, var51, var10004, var10005);
       }
 
       float var28 = axxx;
       float var37 = 0.01F;
-      if (axx != null) {
-         label87: {
-            if (!(axxx > 0.01F)) {
-               var29 = a;
-               if (axx == null) {
-                  break label87;
-               }
-
-               if (a.dtn.flo()) {
-                  return;
-               }
-            }
-
-            dmp.cpp(a.gfo, a.dwq, 700.0F, 400.0F, 8.0F, new Color(18, 18, 18, 250));
-            dmp.cdw(a.gfo, a.dwq, 700.0F, 12.0F, 8.0F, 8.0F, 0.0F, 0.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
+      label87: {
+         if (!(axxx > 0.01F)) {
             var29 = a;
+
+            if (a.dtn.flo()) {
+               return;
+            }
          }
 
-         var28 = var29.gfo;
-         var37 = 20.0F;
+         dmp.cpp(a.gfo, a.dwq, 700.0F, 400.0F, 8.0F, new Color(18, 18, 18, 250));
+         dmp.cdw(a.gfo, a.dwq, 700.0F, 12.0F, 8.0F, 8.0F, 0.0F, 0.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
+         var29 = a;
       }
+
+      var28 = var29.gfo;
+      var37 = 20.0F;
 
       float axxxxxxxx = var28 + var37;
       float axxxxxxxxx = a.dwq + 25.0F;
@@ -256,19 +236,14 @@ public class CloudConfigurations {
             float axxxxxx = a + axx / 2 * 100.0F - a.gya;
             a.hit(axxxx, axxxxx, axxxxxx, 320.0F, 90.0F);
             axx++;
-            if (axxx == null) {
-               break;
-            }
          }
       });
       CloudConfigurations var30 = a;
-      if (axx != null) {
-         if (!(a.gnm.hjo() > 0.01)) {
-            return;
-         }
-
-         var30 = a;
+      if (!(a.gnm.hjo() > 0.01)) {
+         return;
       }
+
+      var30 = a;
 
       var30.bcw();
    }
@@ -375,24 +350,20 @@ public class CloudConfigurations {
       axxx += 14.0F;
       var25 = a.chb();
       label29:
-      if (axxxx != null) {
-         label26:
-         if (!var25.isEmpty()) {
-            ago var26 = a;
-            if (axxxx != null) {
-               if (a.chb().isBlank()) {
-                  break label26;
-               }
-
-               var26 = a;
-            }
-
-            var25 = var26.chb();
-            break label29;
+      label26:
+      if (!var25.isEmpty()) {
+         ago var26 = a;
+         if (a.chb().isBlank()) {
+            break label26;
          }
 
-         var25 = "No Description Provided";
+         var26 = a;
+
+         var25 = var26.chb();
+         break label29;
       }
+
+      var25 = "No Description Provided";
 
       a.bve(var25, axx, axxx, a - 24.0F, 10.0F, Color.LIGHT_GRAY);
       float axxxxxxx = a + a - 20.0F;
@@ -430,19 +401,14 @@ public class CloudConfigurations {
             label105: {
                axxxxxxx = var14[var16];
                StringBuilder var20 = axxx;
-               if (axxxxxx != null) {
-                  var21 = axxx.length();
-                  if (axxxxxx == null) {
-                     break;
-                  }
+               var21 = axxx.length();
 
-                  if (var21 <= 0) {
-                     var22 = axxxxxxx;
-                     break label105;
-                  }
-
-                  var20 = axxx;
+               if (var21 <= 0) {
+                  var22 = axxxxxxx;
+                  break label105;
                }
+
+               var20 = axxx;
 
                var22 = var20 + " " + axxxxxxx;
             }
@@ -452,50 +418,37 @@ public class CloudConfigurations {
                   String axxxxxxxx = var22;
                   float var28;
                   int var23 = (var28 = amh.ety.eq(axxxxxxxx) - a) == 0.0F ? 0 : (var28 < 0.0F ? -1 : 1);
-                  if (axxxxxx != null) {
-                     if (var23 <= 0) {
-                        break label96;
-                     }
-
-                     if (axxxxxx == null) {
-                        break label97;
-                     }
-
-                     var23 = axxx.length();
+                  if (var23 <= 0) {
+                     break label96;
                   }
+
+
+                  var23 = axxx.length();
 
                   if (var23 > 0) {
                      label116: {
                         String axxxxxxxxx = axxx.toString();
                         int var24 = axxxxx;
                         short var10001 = 1;
-                        if (axxxxxx != null) {
-                           label117: {
-                              if (axxxxx == 1) {
-                                 var24 = axx[axx.length - 1].equals(axxxxxxx);
-                                 if (axxxxxx == null) {
-                                    break label117;
-                                 }
+                        label117: {
+                           if (axxxxx == 1) {
+                              var24 = axx[axx.length - 1].equals(axxxxxxx);
 
-                                 if (var24 == 0) {
-                                    int var10002 = axxxxxxxxx.length();
-                                    String var25 = axxxxxxxxx.substring(0, Math.min(var10002, 30));
-                                    var10001 = 31906;
-                                    axxxxxxxxx = var25 + "...";
-                                 }
+                              if (var24 == 0) {
+                                 int var10002 = axxxxxxxxx.length();
+                                 String var25 = axxxxxxxxx.substring(0, Math.min(var10002, 30));
+                                 var10001 = 31906;
+                                 axxxxxxxxx = var25 + "...";
                               }
-
-                              amh.ety.ebb(axxxxxxxxx, a, axxxx, a);
-                              axxxxx++;
-                              if (axxxxxx == null) {
-                                 break label116;
-                              }
-
-                              var24 = axxxxx;
                            }
 
-                           var10001 = 2;
+                           amh.ety.ebb(axxxxxxxxx, a, axxxx, a);
+                           axxxxx++;
+
+                           var24 = axxxxx;
                         }
+
+                        var10001 = 2;
 
                         if (var24 >= var10001) {
                            break label107;
@@ -505,9 +458,7 @@ public class CloudConfigurations {
                         axxxx += a;
                      }
 
-                     if (axxxxxx != null) {
-                        break label97;
-                     }
+                     break label97;
                   }
                }
 
@@ -515,22 +466,18 @@ public class CloudConfigurations {
             }
 
             var16++;
-            if (axxxxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          var21 = axxxxx;
          break;
       }
 
-      if (axxxxxx != null) {
-         if (var21 >= 2) {
-            return;
-         }
-
-         var21 = axxx.length();
+      if (var21 >= 2) {
+         return;
       }
+
+      var21 = axxx.length();
 
       if (var21 > 0) {
          amh.ety.ebb(axxx.toString().trim(), a, axxxx, a);
@@ -556,19 +503,14 @@ public class CloudConfigurations {
             label85: {
                axxxxxxx = var14[var16];
                StringBuilder var19 = axxx;
-               if (axxxxx != null) {
-                  var20 = axxx.isEmpty();
-                  if (axxxxx == null) {
-                     break;
-                  }
+               var20 = axxx.isEmpty();
 
-                  if (var20 != 0) {
-                     var21 = axxxxxxx;
-                     break label85;
-                  }
-
-                  var19 = axxx;
+               if (var20 != 0) {
+                  var21 = axxxxxxx;
+                  break label85;
                }
+
+               var19 = axxx;
 
                var21 = var19 + " " + axxxxxxx;
             }
@@ -578,33 +520,24 @@ public class CloudConfigurations {
                   String axxxxxxxx = var21;
                   float var23;
                   int var22 = (var23 = amh.grb.eq(axxxxxxxx) - a) == 0.0F ? 0 : (var23 < 0.0F ? -1 : 1);
-                  if (axxxxx != null) {
-                     if (var22 <= 0) {
-                        break label76;
-                     }
-
-                     if (axxxxx == null) {
-                        break label77;
-                     }
-
-                     var22 = axxx.length();
+                  if (var22 <= 0) {
+                     break label76;
                   }
+
+
+                  var22 = axxx.length();
 
                   if (var22 > 0) {
                      amh.grb.ebb(axxx.toString(), a, axxxx, a);
                      axxxxxx++;
-                     if (axxxxx != null) {
-                        if (axxxxxx >= 4) {
-                           break label87;
-                        }
-
-                        axxx = new StringBuilder(axxxxxxx);
-                        axxxx += a;
+                     if (axxxxxx >= 4) {
+                        break label87;
                      }
 
-                     if (axxxxx != null) {
-                        break label77;
-                     }
+                     axxx = new StringBuilder(axxxxxxx);
+                     axxxx += a;
+
+                     break label77;
                   }
                }
 
@@ -612,22 +545,18 @@ public class CloudConfigurations {
             }
 
             var16++;
-            if (axxxxx != null) {
-               continue;
-            }
+            continue;
          }
 
          var20 = axxxxxx;
          break;
       }
 
-      if (axxxxx != null) {
-         if (var20 >= 4) {
-            return;
-         }
-
-         var20 = axxx.isEmpty();
+      if (var20 >= 4) {
+         return;
       }
+
+      var20 = axxx.isEmpty();
 
       if (var20 == 0) {
          amh.grb.ebb(axxx.toString().trim(), a, axxxx, a);
@@ -642,250 +571,187 @@ public class CloudConfigurations {
       int axxxx = a.method_74245();
       int[] axxxxx = var10000;
       int var30 = axxxx;
-      if (axxxxx != null) {
-         if (axxxx == 0) {
-            int var31 = a.aku.method_22683().method_4486();
-            int var32 = var31 - 30;
-            float axxxxxx = var32 - 15;
-            int var33 = a.aku.method_22683().method_4502();
-            int var34 = var33 - 30;
-            float axxxxxxx = var34 - 15;
-            double var53;
-            var35 = (var53 = axx - axxxxxx) == 0.0 ? 0 : (var53 < 0.0 ? -1 : 1);
-            label252:
-            if (axxxxx != null) {
-               if (var35 >= 0) {
-                  double var54;
-                  var35 = (var54 = axxx - axxxxxxx) == 0.0 ? 0 : (var54 < 0.0 ? -1 : 1);
-                  if (axxxxx == null) {
-                     break label252;
-                  }
+      if (axxxx == 0) {
+         int var31 = a.aku.method_22683().method_4486();
+         int var32 = var31 - 30;
+         float axxxxxx = var32 - 15;
+         int var33 = a.aku.method_22683().method_4502();
+         int var34 = var33 - 30;
+         float axxxxxxx = var34 - 15;
+         double var53;
+         var35 = (var53 = axx - axxxxxx) == 0.0 ? 0 : (var53 < 0.0 ? -1 : 1);
+         label252:
+         if (var35 >= 0) {
+            double var54;
+            var35 = (var54 = axxx - axxxxxxx) == 0.0 ? 0 : (var54 < 0.0 ? -1 : 1);
 
-                  if (var35 >= 0) {
-                     double var55;
-                     var35 = (var55 = axx - (axxxxxx + 30.0F)) == 0.0 ? 0 : (var55 < 0.0 ? -1 : 1);
-                     if (axxxxx == null) {
-                        break label252;
+            if (var35 >= 0) {
+               double var55;
+               var35 = (var55 = axx - (axxxxxx + 30.0F)) == 0.0 ? 0 : (var55 < 0.0 ? -1 : 1);
+
+               if (var35 <= 0) {
+                  double var56;
+                  var35 = (var56 = axxx - (axxxxxxx + 30.0F)) == 0.0 ? 0 : (var56 < 0.0 ? -1 : 1);
+
+                  if (var35 <= 0) {
+                     boolean var43 = a.hid;
+                     var43 = !a.hid;
+
+                     a.hid = var43;
+                     CloudConfigurations var36 = a;
+                     if (a.hid) {
+                        new fxc().dak(ClientSetup.gqy().gp());
+                        return true;
                      }
 
-                     if (var35 <= 0) {
-                        double var56;
-                        var35 = (var56 = axxx - (axxxxxxx + 30.0F)) == 0.0 ? 0 : (var56 < 0.0 ? -1 : 1);
-                        if (axxxxx == null) {
-                           break label252;
-                        }
+                     var36 = a;
 
-                        if (var35 <= 0) {
-                           boolean var43 = a.hid;
-                           if (axxxxx != null) {
-                              var43 = !a.hid;
-                           }
-
-                           a.hid = var43;
-                           CloudConfigurations var36 = a;
-                           if (axxxxx != null) {
-                              if (a.hid) {
-                                 new fxc().dak(ClientSetup.gqy().gp());
-                                 if (axxxxx != null) {
-                                    return true;
-                                 }
-                              }
-
-                              var36 = a;
-                           }
-
-                           var36.gxr = false;
-                           return true;
-                        }
-                     }
+                     var36.gxr = false;
+                     return true;
                   }
-               }
-
-               var35 = a.hid;
-            }
-
-            if (axxxxx == null) {
-               return (boolean)var35;
-            }
-
-            if (var35 == 0) {
-               return (boolean)0;
-            }
-
-            float axxxxxxxx = 70.0F;
-            float axxxxxxxxx = 20.0F;
-            float axxxxxxxxxx = a.gfo + 700.0F - 70.0F - 20.0F;
-            float axxxxxxxxxxx = a.dwq + 23.0F;
-            double var57;
-            var37 = (var57 = axx - axxxxxxxxxx) == 0.0 ? 0 : (var57 < 0.0 ? -1 : 1);
-            label237:
-            if (axxxxx != null) {
-               if (var37 >= 0) {
-                  double var58;
-                  var37 = (var58 = axx - (axxxxxxxxxx + 70.0F)) == 0.0 ? 0 : (var58 < 0.0 ? -1 : 1);
-                  if (axxxxx == null) {
-                     break label237;
-                  }
-
-                  if (var37 <= 0) {
-                     double var59;
-                     var37 = (var59 = axxx - axxxxxxxxxxx) == 0.0 ? 0 : (var59 < 0.0 ? -1 : 1);
-                     if (axxxxx == null) {
-                        break label237;
-                     }
-
-                     if (var37 >= 0) {
-                        double var60;
-                        var37 = (var60 = axxx - (axxxxxxxxxxx + 20.0F)) == 0.0 ? 0 : (var60 < 0.0 ? -1 : 1);
-                        if (axxxxx == null) {
-                           break label237;
-                        }
-
-                        if (var37 <= 0) {
-                           a.gxr = true;
-                           a.dyv = "";
-                           a.avw = "";
-                           a.gqe = 0;
-                           return true;
-                        }
-                     }
-                  }
-               }
-
-               double var61;
-               var37 = (var61 = axx - a.gfo) == 0.0 ? 0 : (var61 < 0.0 ? -1 : 1);
-            }
-
-            label267: {
-               if (axxxxx != null) {
-                  if (var37 < 0) {
-                     break label267;
-                  }
-
-                  double var62;
-                  var37 = (var62 = axx - (a.gfo + 700.0F)) == 0.0 ? 0 : (var62 < 0.0 ? -1 : 1);
-               }
-
-               if (axxxxx != null) {
-                  if (var37 > 0) {
-                     break label267;
-                  }
-
-                  double var63;
-                  var37 = (var63 = axxx - a.dwq) == 0.0 ? 0 : (var63 < 0.0 ? -1 : 1);
-               }
-
-               if (axxxxx != null) {
-                  if (var37 < 0) {
-                     break label267;
-                  }
-
-                  double var64;
-                  var37 = (var64 = axxx - (a.dwq + 40.0F)) == 0.0 ? 0 : (var64 < 0.0 ? -1 : 1);
-               }
-
-               if (axxxxx == null) {
-                  return (boolean)var37;
-               }
-
-               if (var37 <= 0) {
-                  a.byr = true;
-                  a.chy = (int)axx - (int)a.gfo;
-                  a.dpb = (int)axxx - (int)a.dwq;
-                  return (boolean)1;
-               }
-            }
-
-            float axxxxxxxxxxxx = a.gfo + 25.0F;
-            float axxxxxxxxxxxxx = a.dwq + 70.0F;
-            float axxxxxxxxxxxxxx = 320.0F;
-            float axxxxxxxxxxxxxxx = 90.0F;
-            float axxxxxxxxxxxxxxxx = 10.0F;
-            int axxxxxxxxxxxxxxxxx = 0;
-
-            label209: {
-               while (axxxxxxxxxxxxxxxxx < aml.cic.size()) {
-                  ago axxxxxxxxxxxxxxxxxx = aml.cic.get(axxxxxxxxxxxxxxxxx);
-                  float axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxx + axxxxxxxxxxxxxxxxx % 2 * 330.0F;
-                  float axxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxx + axxxxxxxxxxxxxxxxx / 2 * 100.0F - a.gya;
-                  float axxxxxxxxxxxxxxxxxxxxx = 60.0F;
-                  float axxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxx + 320.0F - 60.0F - 12.0F;
-                  float axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxx + 90.0F - 20.0F - 4.0F;
-                  File var48 = class_310.method_1551().field_1697;
-                  String var50 = "Astralis".toLowerCase();
-                  File axxxxxxxxxxxxxxxxxxxxxxxx = new File(var48, "/" + var50 + "/Configs");
-                  if (axxxxx != null) {
-                     double var65;
-                     var70 = (var65 = axx - axxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var65 < 0.0 ? -1 : 1);
-                     if (axxxxx == null) {
-                        break label209;
-                     }
-
-                     label201:
-                     if (var70 >= 0) {
-                        double var66;
-                        int var38 = (var66 = axx - (axxxxxxxxxxxxxxxxxxxxxx + 60.0F)) == 0.0 ? 0 : (var66 < 0.0 ? -1 : 1);
-                        if (axxxxx != null) {
-                           if (var38 > 0) {
-                              break label201;
-                           }
-
-                           double var67;
-                           var38 = (var67 = axxx - axxxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var67 < 0.0 ? -1 : 1);
-                        }
-
-                        if (axxxxx != null) {
-                           if (var38 < 0) {
-                              break label201;
-                           }
-
-                           double var68;
-                           var38 = (var68 = axxx - (axxxxxxxxxxxxxxxxxxxxxxx + 16.0F)) == 0.0 ? 0 : (var68 < 0.0 ? -1 : 1);
-                        }
-
-                        if (axxxxx == null) {
-                           return (boolean)var38;
-                        }
-
-                        if (var38 <= 0) {
-                           JsonObject var39 = axxxxxxxxxxxxxxxxxx.dvu();
-                           String var44 = axxxxxxxxxxxxxxxxxxxxxxxx.getAbsolutePath();
-                           String var49 = axxxxxxxxxxxxxxxxxx.amx();
-                           dvt.exy(var39, var44 + "/" + var49 + ".astralis");
-                           return (boolean)1;
-                        }
-                     }
-
-                     axxxxxxxxxxxxxxxxx++;
-                  }
-
-                  if (axxxxx == null) {
-                     break;
-                  }
-               }
-
-               var70 = a.gxr;
-            }
-
-            if (axxxxx == null) {
-               return (boolean)var70;
-            }
-
-            if (var70 != 0) {
-               double var69;
-               int var71 = (var69 = a.gnm.hjo() - 0.01) == 0.0 ? 0 : (var69 < 0.0 ? -1 : 1);
-               if (axxxxx == null) {
-                  return (boolean)var71;
-               }
-
-               if (var71 > 0) {
-                  return a.cj(axx, axxx);
                }
             }
          }
 
-         var30 = 0;
+         var35 = a.hid;
+
+
+         if (var35 == 0) {
+            return (boolean)0;
+         }
+
+         float axxxxxxxx = 70.0F;
+         float axxxxxxxxx = 20.0F;
+         float axxxxxxxxxx = a.gfo + 700.0F - 70.0F - 20.0F;
+         float axxxxxxxxxxx = a.dwq + 23.0F;
+         double var57;
+         var37 = (var57 = axx - axxxxxxxxxx) == 0.0 ? 0 : (var57 < 0.0 ? -1 : 1);
+         label237:
+         if (var37 >= 0) {
+            double var58;
+            var37 = (var58 = axx - (axxxxxxxxxx + 70.0F)) == 0.0 ? 0 : (var58 < 0.0 ? -1 : 1);
+
+            if (var37 <= 0) {
+               double var59;
+               var37 = (var59 = axxx - axxxxxxxxxxx) == 0.0 ? 0 : (var59 < 0.0 ? -1 : 1);
+
+               if (var37 >= 0) {
+                  double var60;
+                  var37 = (var60 = axxx - (axxxxxxxxxxx + 20.0F)) == 0.0 ? 0 : (var60 < 0.0 ? -1 : 1);
+
+                  if (var37 <= 0) {
+                     a.gxr = true;
+                     a.dyv = "";
+                     a.avw = "";
+                     a.gqe = 0;
+                     return true;
+                  }
+               }
+            }
+         }
+
+         double var61;
+         var37 = (var61 = axx - a.gfo) == 0.0 ? 0 : (var61 < 0.0 ? -1 : 1);
+
+         label267: {
+            if (var37 < 0) {
+               break label267;
+            }
+
+            double var62;
+            var37 = (var62 = axx - (a.gfo + 700.0F)) == 0.0 ? 0 : (var62 < 0.0 ? -1 : 1);
+
+            if (var37 > 0) {
+               break label267;
+            }
+
+            double var63;
+            var37 = (var63 = axxx - a.dwq) == 0.0 ? 0 : (var63 < 0.0 ? -1 : 1);
+
+            if (var37 < 0) {
+               break label267;
+            }
+
+            double var64;
+            var37 = (var64 = axxx - (a.dwq + 40.0F)) == 0.0 ? 0 : (var64 < 0.0 ? -1 : 1);
+
+
+            if (var37 <= 0) {
+               a.byr = true;
+               a.chy = (int)axx - (int)a.gfo;
+               a.dpb = (int)axxx - (int)a.dwq;
+               return (boolean)1;
+            }
+         }
+
+         float axxxxxxxxxxxx = a.gfo + 25.0F;
+         float axxxxxxxxxxxxx = a.dwq + 70.0F;
+         float axxxxxxxxxxxxxx = 320.0F;
+         float axxxxxxxxxxxxxxx = 90.0F;
+         float axxxxxxxxxxxxxxxx = 10.0F;
+         int axxxxxxxxxxxxxxxxx = 0;
+
+         label209: {
+            while (axxxxxxxxxxxxxxxxx < aml.cic.size()) {
+               ago axxxxxxxxxxxxxxxxxx = aml.cic.get(axxxxxxxxxxxxxxxxx);
+               float axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxx + axxxxxxxxxxxxxxxxx % 2 * 330.0F;
+               float axxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxx + axxxxxxxxxxxxxxxxx / 2 * 100.0F - a.gya;
+               float axxxxxxxxxxxxxxxxxxxxx = 60.0F;
+               float axxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxx + 320.0F - 60.0F - 12.0F;
+               float axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxx + 90.0F - 20.0F - 4.0F;
+               File var48 = class_310.method_1551().field_1697;
+               String var50 = "Astralis".toLowerCase();
+               File axxxxxxxxxxxxxxxxxxxxxxxx = new File(var48, "/" + var50 + "/Configs");
+               double var65;
+               var70 = (var65 = axx - axxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var65 < 0.0 ? -1 : 1);
+
+               label201:
+               if (var70 >= 0) {
+                  double var66;
+                  int var38 = (var66 = axx - (axxxxxxxxxxxxxxxxxxxxxx + 60.0F)) == 0.0 ? 0 : (var66 < 0.0 ? -1 : 1);
+                  if (var38 > 0) {
+                     break label201;
+                  }
+
+                  double var67;
+                  var38 = (var67 = axxx - axxxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var67 < 0.0 ? -1 : 1);
+
+                  if (var38 < 0) {
+                     break label201;
+                  }
+
+                  double var68;
+                  var38 = (var68 = axxx - (axxxxxxxxxxxxxxxxxxxxxxx + 16.0F)) == 0.0 ? 0 : (var68 < 0.0 ? -1 : 1);
+
+
+                  if (var38 <= 0) {
+                     JsonObject var39 = axxxxxxxxxxxxxxxxxx.dvu();
+                     String var44 = axxxxxxxxxxxxxxxxxxxxxxxx.getAbsolutePath();
+                     String var49 = axxxxxxxxxxxxxxxxxx.amx();
+                     dvt.exy(var39, var44 + "/" + var49 + ".astralis");
+                     return (boolean)1;
+                  }
+               }
+
+               axxxxxxxxxxxxxxxxx++;
+
+            }
+
+            var70 = a.gxr;
+         }
+
+
+         if (var70 != 0) {
+            double var69;
+            int var71 = (var69 = a.gnm.hjo() - 0.01) == 0.0 ? 0 : (var69 < 0.0 ? -1 : 1);
+
+            if (var71 > 0) {
+               return a.cj(axx, axxx);
+            }
+         }
       }
+
+      var30 = 0;
 
       return (boolean)var30;
    }
@@ -905,268 +771,202 @@ public class CloudConfigurations {
       float axxxxxxxxxxx = axxxxx + (axxx - axxxxxxxxx) / 2.0F;
       double var41;
       int var34 = (var41 = a - axxxxxxxxxx) == 0.0 ? 0 : (var41 < 0.0 ? -1 : 1);
-      if (axxxxxxx != null) {
-         if (var34 >= 0) {
-            double var42;
-            int var65 = (var42 = a - (axxxxxxxxxx + axxxxxxxx)) == 0.0 ? 0 : (var42 < 0.0 ? -1 : 1);
-            if (axxxxxxx == null) {
-               return (boolean)var65;
-            }
+      if (var34 >= 0) {
+         double var42;
+         int var65 = (var42 = a - (axxxxxxxxxx + axxxxxxxx)) == 0.0 ? 0 : (var42 < 0.0 ? -1 : 1);
 
-            if (var65 <= 0) {
-               double var43;
-               int var66 = (var43 = a - axxxxxxxxxxx) == 0.0 ? 0 : (var43 < 0.0 ? -1 : 1);
-               if (axxxxxxx == null) {
-                  return (boolean)var66;
-               }
+         if (var65 <= 0) {
+            double var43;
+            int var66 = (var43 = a - axxxxxxxxxxx) == 0.0 ? 0 : (var43 < 0.0 ? -1 : 1);
 
-               if (var66 >= 0) {
-                  double var44;
-                  int var67 = (var44 = a - (axxxxxxxxxxx + axxxxxxxxx)) == 0.0 ? 0 : (var44 < 0.0 ? -1 : 1);
-                  if (axxxxxxx == null) {
-                     return (boolean)var67;
-                  }
+            if (var66 >= 0) {
+               double var44;
+               int var67 = (var44 = a - (axxxxxxxxxxx + axxxxxxxxx)) == 0.0 ? 0 : (var44 < 0.0 ? -1 : 1);
 
-                  if (var67 <= 0) {
-                     float axxxxxxxxxxxx;
-                     label280: {
-                        axxxxxxxxxxxx = axxxxxxxxxxx + 80.0F * axxxxxx;
-                        double var45;
-                        var35 = (var45 = a - (axxxxxxxxxx + 20.0F * axxxxxx)) == 0.0 ? 0 : (var45 < 0.0 ? -1 : 1);
-                        label261:
-                        if (axxxxxxx != null) {
+               if (var67 <= 0) {
+                  float axxxxxxxxxxxx;
+                  label280: {
+                     axxxxxxxxxxxx = axxxxxxxxxxx + 80.0F * axxxxxx;
+                     double var45;
+                     var35 = (var45 = a - (axxxxxxxxxx + 20.0F * axxxxxx)) == 0.0 ? 0 : (var45 < 0.0 ? -1 : 1);
+                     label261:
+                     if (var35 >= 0) {
+                        double var46;
+                        var35 = (var46 = a - (axxxxxxxxxx + (axx - 20.0F) * axxxxxx)) == 0.0 ? 0 : (var46 < 0.0 ? -1 : 1);
+
+                        if (var35 <= 0) {
+                           double var47;
+                           var35 = (var47 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var47 < 0.0 ? -1 : 1);
+
                            if (var35 >= 0) {
-                              double var46;
-                              var35 = (var46 = a - (axxxxxxxxxx + (axx - 20.0F) * axxxxxx)) == 0.0 ? 0 : (var46 < 0.0 ? -1 : 1);
-                              if (axxxxxxx == null) {
-                                 break label261;
-                              }
+                              double var48;
+                              var35 = (var48 = a - (axxxxxxxxxxxx + 25.0F * axxxxxx)) == 0.0 ? 0 : (var48 < 0.0 ? -1 : 1);
 
                               if (var35 <= 0) {
-                                 double var47;
-                                 var35 = (var47 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var47 < 0.0 ? -1 : 1);
-                                 if (axxxxxxx == null) {
-                                    break label261;
-                                 }
-
-                                 if (var35 >= 0) {
-                                    double var48;
-                                    var35 = (var48 = a - (axxxxxxxxxxxx + 25.0F * axxxxxx)) == 0.0 ? 0 : (var48 < 0.0 ? -1 : 1);
-                                    if (axxxxxxx == null) {
-                                       break label261;
-                                    }
-
-                                    if (var35 <= 0) {
-                                       a.gqe = 0;
-                                       return true;
-                                    }
-                                 }
+                                 a.gqe = 0;
+                                 return true;
                               }
-                           }
-
-                           axxxxxxxxxxxx += 60.0F * axxxxxx;
-                           if (axxxxxxx == null) {
-                              break label280;
-                           }
-
-                           double var49;
-                           var35 = (var49 = a - (axxxxxxxxxx + 20.0F * axxxxxx)) == 0.0 ? 0 : (var49 < 0.0 ? -1 : 1);
-                        }
-
-                        label248:
-                        if (var35 >= 0) {
-                           double var50;
-                           int var36 = (var50 = a - (axxxxxxxxxx + (axx - 20.0F) * axxxxxx)) == 0.0 ? 0 : (var50 < 0.0 ? -1 : 1);
-                           if (axxxxxxx != null) {
-                              if (var36 > 0) {
-                                 break label248;
-                              }
-
-                              double var51;
-                              var36 = (var51 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var51 < 0.0 ? -1 : 1);
-                           }
-
-                           if (axxxxxxx != null) {
-                              if (var36 < 0) {
-                                 break label248;
-                              }
-
-                              double var52;
-                              var36 = (var52 = a - (axxxxxxxxxxxx + 60.0F * axxxxxx)) == 0.0 ? 0 : (var52 < 0.0 ? -1 : 1);
-                           }
-
-                           if (axxxxxxx == null) {
-                              return (boolean)var36;
-                           }
-
-                           if (var36 <= 0) {
-                              a.gqe = 1;
-                              return (boolean)1;
                            }
                         }
-
-                        axxxxxxxxxxxx += 80.0F * axxxxxx;
                      }
 
-                     float axxxxxxxxxxxxx;
-                     float axxxxxxxxxxxxxx;
-                     label284: {
-                        float axxxxxxxxxxxxxxx = axxxxxxxxxx + axxxxxxxx - 180.0F * axxxxxx;
-                        axxxxxxxxxxxxx = axxxxxxxxxx + axxxxxxxx - 90.0F * axxxxxx;
-                        axxxxxxxxxxxxxx = 25.0F * axxxxxx;
-                        double var53;
-                        int var37 = (var53 = a - axxxxxxxxxxxxxxx) == 0.0 ? 0 : (var53 < 0.0 ? -1 : 1);
-                        if (axxxxxxx != null) {
-                           if (var37 < 0) {
-                              break label284;
-                           }
+                     axxxxxxxxxxxx += 60.0F * axxxxxx;
 
-                           double var54;
-                           var37 = (var54 = a - (axxxxxxxxxxxxxxx + 80.0F * axxxxxx)) == 0.0 ? 0 : (var54 < 0.0 ? -1 : 1);
+                     double var49;
+                     var35 = (var49 = a - (axxxxxxxxxx + 20.0F * axxxxxx)) == 0.0 ? 0 : (var49 < 0.0 ? -1 : 1);
+
+                     label248:
+                     if (var35 >= 0) {
+                        double var50;
+                        int var36 = (var50 = a - (axxxxxxxxxx + (axx - 20.0F) * axxxxxx)) == 0.0 ? 0 : (var50 < 0.0 ? -1 : 1);
+                        if (var36 > 0) {
+                           break label248;
                         }
 
-                        if (axxxxxxx != null) {
-                           if (var37 > 0) {
-                              break label284;
-                           }
+                        double var51;
+                        var36 = (var51 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var51 < 0.0 ? -1 : 1);
 
-                           double var55;
-                           var37 = (var55 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var55 < 0.0 ? -1 : 1);
+                        if (var36 < 0) {
+                           break label248;
                         }
 
-                        if (axxxxxxx != null) {
-                           if (var37 < 0) {
-                              break label284;
-                           }
+                        double var52;
+                        var36 = (var52 = a - (axxxxxxxxxxxx + 60.0F * axxxxxx)) == 0.0 ? 0 : (var52 < 0.0 ? -1 : 1);
 
-                           double var56;
-                           var37 = (var56 = a - (axxxxxxxxxxxx + axxxxxxxxxxxxxx)) == 0.0 ? 0 : (var56 < 0.0 ? -1 : 1);
-                        }
 
-                        if (axxxxxxx == null) {
-                           return (boolean)var37;
-                        }
-
-                        if (var37 <= 0) {
-                           a.gxr = false;
+                        if (var36 <= 0) {
+                           a.gqe = 1;
                            return (boolean)1;
                         }
                      }
 
-                     float axxxxxxxxxxxxxxxx = a.gfo + 25.0F;
-                     float axxxxxxxxxxxxxxxxx = a.dwq + 70.0F;
-                     float axxxxxxxxxxxxxxxxxx = 320.0F;
-                     float axxxxxxxxxxxxxxxxxxx = 90.0F;
-                     float axxxxxxxxxxxxxxxxxxxx = 10.0F;
-                     int axxxxxxxxxxxxxxxxxxxxx = 0;
-
-                     while (true) {
-                        if (axxxxxxxxxxxxxxxxxxxxx < aml.cic.size()) {
-                           ago axxxxxxxxxxxxxxxxxxxxxx = aml.cic.get(axxxxxxxxxxxxxxxxxxxxx);
-                           float axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxx + axxxxxxxxxxxxxxxxxxxxx % 2 * 330.0F;
-                           float axxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx + axxxxxxxxxxxxxxxxxxxxx / 2 * 100.0F - a.gya;
-                           float axxxxxxxxxxxxxxxxxxxxxxxxx = 60.0F;
-                           float axxxxxxxxxxxxxxxxxxxxxxxxxx = 16.0F;
-                           float axxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxxx + 320.0F - 60.0F - 12.0F;
-                           float axxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxxxx + 90.0F - 20.0F - 4.0F;
-                           if (axxxxxxx != null) {
-                              double var57;
-                              var38 = (var57 = a - axxxxxxxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var57 < 0.0 ? -1 : 1);
-                              if (axxxxxxx == null) {
-                                 break;
-                              }
-
-                              label199:
-                              if (var38 >= 0) {
-                                 double var58;
-                                 int var39 = (var58 = a - (axxxxxxxxxxxxxxxxxxxxxxxxxxx + 60.0F)) == 0.0 ? 0 : (var58 < 0.0 ? -1 : 1);
-                                 if (axxxxxxx != null) {
-                                    if (var39 > 0) {
-                                       break label199;
-                                    }
-
-                                    double var59;
-                                    var39 = (var59 = a - axxxxxxxxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var59 < 0.0 ? -1 : 1);
-                                 }
-
-                                 if (axxxxxxx != null) {
-                                    if (var39 < 0) {
-                                       break label199;
-                                    }
-
-                                    double var60;
-                                    var39 = (var60 = a - (axxxxxxxxxxxxxxxxxxxxxxxxxxxx + 16.0F)) == 0.0 ? 0 : (var60 < 0.0 ? -1 : 1);
-                                 }
-
-                                 if (axxxxxxx == null) {
-                                    return (boolean)var39;
-                                 }
-
-                                 if (var39 <= 0) {
-                                    PrintStream var40 = System.out;
-                                    String var10001 = axxxxxxxxxxxxxxxxxxxxxx.amx();
-                                    var40.println("Download clicked for config: " + var10001);
-                                    return (boolean)1;
-                                 }
-                              }
-
-                              axxxxxxxxxxxxxxxxxxxxx++;
-                           }
-
-                           if (axxxxxxx != null) {
-                              continue;
-                           }
-                        }
-
-                        double var61;
-                        var38 = (var61 = a - axxxxxxxxxxxxx) == 0.0 ? 0 : (var61 < 0.0 ? -1 : 1);
-                        break;
-                     }
-
-                     if (axxxxxxx != null) {
-                        if (var38 >= 0) {
-                           double var62;
-                           int var68 = (var62 = a - (axxxxxxxxxxxxx + 80.0F * axxxxxx)) == 0.0 ? 0 : (var62 < 0.0 ? -1 : 1);
-                           if (axxxxxxx == null) {
-                              return (boolean)var68;
-                           }
-
-                           if (var68 <= 0) {
-                              double var63;
-                              int var69 = (var63 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var63 < 0.0 ? -1 : 1);
-                              if (axxxxxxx == null) {
-                                 return (boolean)var69;
-                              }
-
-                              if (var69 >= 0) {
-                                 double var64;
-                                 int var70 = (var64 = a - (axxxxxxxxxxxx + axxxxxxxxxxxxxx)) == 0.0 ? 0 : (var64 < 0.0 ? -1 : 1);
-                                 if (axxxxxxx == null) {
-                                    return (boolean)var70;
-                                 }
-
-                                 if (var70 <= 0) {
-                                    new hhm(new hbo(a.dyv, a.avw, aml.hjr.cfs(), aml.hjr.eus(), gco.bbm())).dak(ClientSetup.gqy().gp());
-                                    new fxc().dak(ClientSetup.gqy().gp());
-                                    a.gxr = false;
-                                    return true;
-                                 }
-                              }
-                           }
-                        }
-
-                        var38 = 1;
-                     }
-
-                     return (boolean)var38;
+                     axxxxxxxxxxxx += 80.0F * axxxxxx;
                   }
+
+                  float axxxxxxxxxxxxx;
+                  float axxxxxxxxxxxxxx;
+                  label284: {
+                     float axxxxxxxxxxxxxxx = axxxxxxxxxx + axxxxxxxx - 180.0F * axxxxxx;
+                     axxxxxxxxxxxxx = axxxxxxxxxx + axxxxxxxx - 90.0F * axxxxxx;
+                     axxxxxxxxxxxxxx = 25.0F * axxxxxx;
+                     double var53;
+                     int var37 = (var53 = a - axxxxxxxxxxxxxxx) == 0.0 ? 0 : (var53 < 0.0 ? -1 : 1);
+                     if (var37 < 0) {
+                        break label284;
+                     }
+
+                     double var54;
+                     var37 = (var54 = a - (axxxxxxxxxxxxxxx + 80.0F * axxxxxx)) == 0.0 ? 0 : (var54 < 0.0 ? -1 : 1);
+
+                     if (var37 > 0) {
+                        break label284;
+                     }
+
+                     double var55;
+                     var37 = (var55 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var55 < 0.0 ? -1 : 1);
+
+                     if (var37 < 0) {
+                        break label284;
+                     }
+
+                     double var56;
+                     var37 = (var56 = a - (axxxxxxxxxxxx + axxxxxxxxxxxxxx)) == 0.0 ? 0 : (var56 < 0.0 ? -1 : 1);
+
+
+                     if (var37 <= 0) {
+                        a.gxr = false;
+                        return (boolean)1;
+                     }
+                  }
+
+                  float axxxxxxxxxxxxxxxx = a.gfo + 25.0F;
+                  float axxxxxxxxxxxxxxxxx = a.dwq + 70.0F;
+                  float axxxxxxxxxxxxxxxxxx = 320.0F;
+                  float axxxxxxxxxxxxxxxxxxx = 90.0F;
+                  float axxxxxxxxxxxxxxxxxxxx = 10.0F;
+                  int axxxxxxxxxxxxxxxxxxxxx = 0;
+
+                  while (true) {
+                     if (axxxxxxxxxxxxxxxxxxxxx < aml.cic.size()) {
+                        ago axxxxxxxxxxxxxxxxxxxxxx = aml.cic.get(axxxxxxxxxxxxxxxxxxxxx);
+                        float axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxx + axxxxxxxxxxxxxxxxxxxxx % 2 * 330.0F;
+                        float axxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx + axxxxxxxxxxxxxxxxxxxxx / 2 * 100.0F - a.gya;
+                        float axxxxxxxxxxxxxxxxxxxxxxxxx = 60.0F;
+                        float axxxxxxxxxxxxxxxxxxxxxxxxxx = 16.0F;
+                        float axxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxxx + 320.0F - 60.0F - 12.0F;
+                        float axxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxxxxxx + 90.0F - 20.0F - 4.0F;
+                        double var57;
+                        var38 = (var57 = a - axxxxxxxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var57 < 0.0 ? -1 : 1);
+
+                        label199:
+                        if (var38 >= 0) {
+                           double var58;
+                           int var39 = (var58 = a - (axxxxxxxxxxxxxxxxxxxxxxxxxxx + 60.0F)) == 0.0 ? 0 : (var58 < 0.0 ? -1 : 1);
+                           if (var39 > 0) {
+                              break label199;
+                           }
+
+                           double var59;
+                           var39 = (var59 = a - axxxxxxxxxxxxxxxxxxxxxxxxxxxx) == 0.0 ? 0 : (var59 < 0.0 ? -1 : 1);
+
+                           if (var39 < 0) {
+                              break label199;
+                           }
+
+                           double var60;
+                           var39 = (var60 = a - (axxxxxxxxxxxxxxxxxxxxxxxxxxxx + 16.0F)) == 0.0 ? 0 : (var60 < 0.0 ? -1 : 1);
+
+
+                           if (var39 <= 0) {
+                              PrintStream var40 = System.out;
+                              String var10001 = axxxxxxxxxxxxxxxxxxxxxx.amx();
+                              var40.println("Download clicked for config: " + var10001);
+                              return (boolean)1;
+                           }
+                        }
+
+                        axxxxxxxxxxxxxxxxxxxxx++;
+
+                        continue;
+                     }
+
+                     double var61;
+                     var38 = (var61 = a - axxxxxxxxxxxxx) == 0.0 ? 0 : (var61 < 0.0 ? -1 : 1);
+                     break;
+                  }
+
+                  if (var38 >= 0) {
+                     double var62;
+                     int var68 = (var62 = a - (axxxxxxxxxxxxx + 80.0F * axxxxxx)) == 0.0 ? 0 : (var62 < 0.0 ? -1 : 1);
+
+                     if (var68 <= 0) {
+                        double var63;
+                        int var69 = (var63 = a - axxxxxxxxxxxx) == 0.0 ? 0 : (var63 < 0.0 ? -1 : 1);
+
+                        if (var69 >= 0) {
+                           double var64;
+                           int var70 = (var64 = a - (axxxxxxxxxxxx + axxxxxxxxxxxxxx)) == 0.0 ? 0 : (var64 < 0.0 ? -1 : 1);
+
+                           if (var70 <= 0) {
+                              new hhm(new hbo(a.dyv, a.avw, aml.hjr.cfs(), aml.hjr.eus(), gco.bbm())).dak(ClientSetup.gqy().gp());
+                              new fxc().dak(ClientSetup.gqy().gp());
+                              a.gxr = false;
+                              return true;
+                           }
+                        }
+                     }
+                  }
+
+                  var38 = 1;
+
+                  return (boolean)var38;
                }
             }
          }
-
-         a.gxr = false;
-         var34 = 1;
       }
+
+      a.gxr = false;
+      var34 = 1;
 
       return (boolean)var34;
    }
@@ -1177,97 +977,71 @@ public class CloudConfigurations {
       int axx = a.comp_4795();
       int[] axxx = var10000;
       boolean var6 = a.gxr;
-      if (axxx != null) {
-         if (a.gxr) {
-            int var7 = axx;
-            int var10001 = 24503;
-            var10001 = (short)256;
-            if (axxx != null) {
-               if (axx == 256) {
-                  a.gxr = false;
-                  return true;
-               }
+      if (a.gxr) {
+         int var7 = axx;
+         int var10001 = 24503;
+         var10001 = (short)256;
+         if (axx == 256) {
+            a.gxr = false;
+            return true;
+         }
 
-               var7 = axx;
-               var10001 = (short)6171;
-               var10001 = (short)258;
+         var7 = axx;
+         var10001 = (short)6171;
+         var10001 = (short)258;
+
+         if (var7 == var10001) {
+            var10001 = a.gqe;
+            var10001 = a.gqe == 0 ? 1 : 0;
+
+            a.gqe = var10001;
+            return true;
+         }
+
+         var7 = axx;
+         var10001 = (short)257;
+
+         if (var7 == var10001) {
+            new hhm(new hbo(a.dyv, a.avw, aml.hjr.cfs(), aml.hjr.eus(), gco.bbm())).dak(ClientSetup.gqy().gp());
+            new fxc().dak(ClientSetup.gqy().gp());
+            a.gxr = false;
+            return true;
+         }
+
+         var7 = axx;
+
+         var10001 = (short)259;
+
+         if (var7 == var10001) {
+            var8 = a.gqe;
+            label101:
+            if (a.gqe == 0) {
+               var8 = a.dyv.isEmpty();
+
+               if (var8 == 0) {
+                  a.dyv = a.dyv.substring(0, a.dyv.length() - 1);
+                  return (boolean)1;
+               }
             }
 
-            if (axxx != null) {
-               if (var7 == var10001) {
-                  var10001 = a.gqe;
-                  if (axxx != null) {
-                     var10001 = a.gqe == 0 ? 1 : 0;
-                  }
+            var8 = a.gqe;
 
-                  a.gqe = var10001;
-                  return true;
+
+            if (var8 == 1) {
+               boolean var17 = a.avw.isEmpty();
+
+               if (!var17) {
+                  a.avw = a.avw.substring(0, a.avw.length() - 1);
                }
-
-               var7 = axx;
-               var10001 = (short)257;
-            }
-
-            if (axxx != null) {
-               if (var7 == var10001) {
-                  new hhm(new hbo(a.dyv, a.avw, aml.hjr.cfs(), aml.hjr.eus(), gco.bbm())).dak(ClientSetup.gqy().gp());
-                  new fxc().dak(ClientSetup.gqy().gp());
-                  a.gxr = false;
-                  return true;
-               }
-
-               var7 = axx;
-               if (axxx == null) {
-                  return (boolean)axx;
-               }
-
-               var10001 = (short)259;
-            }
-
-            if (var7 == var10001) {
-               var8 = a.gqe;
-               label101:
-               if (axxx != null) {
-                  if (a.gqe == 0) {
-                     var8 = a.dyv.isEmpty();
-                     if (axxx == null) {
-                        break label101;
-                     }
-
-                     if (var8 == 0) {
-                        a.dyv = a.dyv.substring(0, a.dyv.length() - 1);
-                        if (axxx != null) {
-                           return (boolean)1;
-                        }
-                     }
-                  }
-
-                  var8 = a.gqe;
-               }
-
-               if (axxx == null) {
-                  return (boolean)var8;
-               }
-
-               if (var8 == 1) {
-                  boolean var17 = a.avw.isEmpty();
-                  if (axxx == null) {
-                     return var17;
-                  }
-
-                  if (!var17) {
-                     a.avw = a.avw.substring(0, a.avw.length() - 1);
-                  }
-               }
-
-               return (boolean)1;
             }
 
             return (boolean)1;
          }
 
-         var6 = false;
+         return (boolean)1;
       }
+
+      var6 = false;
 
       return var6;
    }
@@ -1276,64 +1050,46 @@ public class CloudConfigurations {
       long ax = CloudConfigurations.a ^ 38851765601281L;
       int[] axx = ClientSetup.abu();
       int var10000 = a.gxr;
-      if (axx != null) {
-         if (a.gxr) {
-            var10000 = a.method_74227();
-            if (axx == null) {
-               return var10000;
-            }
+      if (a.gxr) {
+         var10000 = a.method_74227();
 
-            if (var10000) {
-               String axxx;
-               short var7;
-               label73: {
-                  axxx = a.method_74226();
-                  var10000 = a.gqe;
-                  if (axx != null) {
-                     if (a.gqe == 0) {
-                        var10000 = a.dyv.length();
-                        var7 = 8169;
-                        var7 = 50;
-                        if (axx == null) {
-                           break label73;
-                        }
+         if (var10000) {
+            String axxx;
+            short var7;
+            label73: {
+               axxx = a.method_74226();
+               var10000 = a.gqe;
+               if (a.gqe == 0) {
+                  var10000 = a.dyv.length();
+                  var7 = 8169;
+                  var7 = 50;
 
-                        if (var10000 < 50) {
-                           a.dyv = a.dyv + axxx;
-                           if (axx != null) {
-                              return (boolean)1;
-                           }
-                        }
-                     }
-
-                     var10000 = a.gqe;
-                  }
-
-                  if (axx == null) {
-                     return (boolean)var10000;
-                  }
-
-                  var7 = 1;
-               }
-
-               if (var10000 == var7) {
-                  var10000 = a.avw.length();
-                  if (axx == null) {
-                     return (boolean)var10000;
-                  }
-
-                  var7 = 21251;
-                  if (var10000 < 500) {
-                     a.avw = a.avw + axxx;
+                  if (var10000 < 50) {
+                     a.dyv = a.dyv + axxx;
+                     return (boolean)1;
                   }
                }
 
-               return (boolean)1;
+               var10000 = a.gqe;
+
+
+               var7 = 1;
             }
+
+            if (var10000 == var7) {
+               var10000 = a.avw.length();
+
+               var7 = 21251;
+               if (var10000 < 500) {
+                  a.avw = a.avw + axxx;
+               }
+            }
+
+            return (boolean)1;
          }
-
-         var10000 = 0;
       }
+
+      var10000 = 0;
 
       return (boolean)var10000;
    }
@@ -1342,27 +1098,19 @@ public class CloudConfigurations {
       long ax = CloudConfigurations.a ^ 122259425424312L;
       int[] var8 = ClientSetup.abu();
       boolean var10000 = a.byr;
-      if (var8 != null) {
-         if (a.byr) {
-            if (var8 == null) {
-               return a.hid;
-            }
+      if (a.byr) {
 
-            if (a.hid) {
-               if (var8 == null) {
-                  return a.gxr;
-               }
+         if (a.hid) {
 
-               if (!a.gxr) {
-                  a.gfo = (float)(a.comp_4798() - a.chy);
-                  a.dwq = (float)(a.comp_4799() - a.dpb);
-                  return true;
-               }
+            if (!a.gxr) {
+               a.gfo = (float)(a.comp_4798() - a.chy);
+               a.dwq = (float)(a.comp_4799() - a.dpb);
+               return true;
             }
          }
-
-         var10000 = false;
       }
+
+      var10000 = false;
 
       return var10000;
    }
@@ -1371,53 +1119,36 @@ public class CloudConfigurations {
       long ax = CloudConfigurations.a ^ 102366904801722L;
       int[] var11 = ClientSetup.abu();
       int var10000 = a.hid;
-      if (var11 != null) {
-         if (a.hid) {
-            if (var11 == null) {
-               return a.gxr;
-            }
+      if (a.hid) {
 
-            if (!a.gxr) {
-               double var12;
-               var10000 = (var12 = a - a.gfo) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
-               if (var11 == null) {
-                  return (boolean)var10000;
-               }
+         if (!a.gxr) {
+            double var12;
+            var10000 = (var12 = a - a.gfo) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
 
-               if (var10000 >= 0) {
-                  double var13;
-                  var10000 = (var13 = a - (a.gfo + 700.0F)) == 0.0 ? 0 : (var13 < 0.0 ? -1 : 1);
-                  if (var11 == null) {
-                     return (boolean)var10000;
-                  }
+            if (var10000 >= 0) {
+               double var13;
+               var10000 = (var13 = a - (a.gfo + 700.0F)) == 0.0 ? 0 : (var13 < 0.0 ? -1 : 1);
 
-                  if (var10000 <= 0) {
-                     double var14;
-                     var10000 = (var14 = a - (a.dwq + 70.0F)) == 0.0 ? 0 : (var14 < 0.0 ? -1 : 1);
-                     if (var11 == null) {
-                        return (boolean)var10000;
-                     }
+               if (var10000 <= 0) {
+                  double var14;
+                  var10000 = (var14 = a - (a.dwq + 70.0F)) == 0.0 ? 0 : (var14 < 0.0 ? -1 : 1);
 
-                     if (var10000 >= 0) {
-                        double var15;
-                        var10000 = (var15 = a - (a.dwq + 400.0F)) == 0.0 ? 0 : (var15 < 0.0 ? -1 : 1);
-                        if (var11 == null) {
-                           return (boolean)var10000;
-                        }
+                  if (var10000 >= 0) {
+                     double var15;
+                     var10000 = (var15 = a - (a.dwq + 400.0F)) == 0.0 ? 0 : (var15 < 0.0 ? -1 : 1);
 
-                        if (var10000 <= 0) {
-                           a.gya -= (int)(a * 20.0);
-                           a.gya = Math.max(0, a.gya);
-                           return true;
-                        }
+                     if (var10000 <= 0) {
+                        a.gya -= (int)(a * 20.0);
+                        a.gya = Math.max(0, a.gya);
+                        return true;
                      }
                   }
                }
             }
          }
-
-         var10000 = 0;
       }
+
+      var10000 = 0;
 
       return (boolean)var10000;
    }
@@ -1426,22 +1157,16 @@ public class CloudConfigurations {
       long a = CloudConfigurations.a ^ 16812327808761L;
       int[] var3 = ClientSetup.abu();
       boolean var10001 = a.hid;
-      if (var3 != null) {
-         var10001 = !a.hid;
-      }
+      var10001 = !a.hid;
 
       a.hid = var10001;
       CloudConfigurations var10000 = a;
-      if (var3 != null) {
-         if (a.hid) {
-            new fxc().dak(ClientSetup.gqy().gp());
-            if (var3 != null) {
-               return;
-            }
-         }
-
-         var10000 = a;
+      if (a.hid) {
+         new fxc().dak(ClientSetup.gqy().gp());
+         return;
       }
+
+      var10000 = a;
 
       var10000.gxr = false;
    }
@@ -1652,89 +1377,6 @@ public class CloudConfigurations {
             var36 = var28.substring(++var35, var35 + var27);
             var10001 = 0;
          }
-      }
-   }
-
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
-
-   private static String a(int var0, long var1) {
-      int var5 = var0 ^ (int)(var1 & 32767L) ^ 28550;
-      if (c[var5] == null) {
-         Object[] var4;
-         try {
-            Long var3 = Thread.currentThread().threadId();
-            var4 = (Object[])d.get(var3);
-            if (var4 == null) {
-               var4 = new Object[]{Cipher.getInstance("DES/CBC/PKCS5Padding"), SecretKeyFactory.getInstance("DES"), new IvParameterSpec(new byte[8])};
-               d.put(var3, var4);
-            }
-         } catch (Exception var10) {
-            throw new RuntimeException("cc/astralis/CloudConfigurations", var10);
-         }
-
-         byte[] var6 = new byte[8];
-         var6[0] = (byte)(var1 >>> 56);
-
-         for (int var7 = 1; var7 < 8; var7++) {
-            var6[var7] = (byte)(var1 << var7 * 8 >>> 56);
-         }
-
-         DESKeySpec var11 = new DESKeySpec(var6);
-         SecretKey var8 = ((SecretKeyFactory)var4[1]).generateSecret(var11);
-         ((Cipher)var4[0]).init(2, var8, (IvParameterSpec)var4[2]);
-         byte[] var9 = b[var5].getBytes("ISO-8859-1");
-         c[var5] = a(((Cipher)var4[0]).doFinal(var9));
-      }
-
-      return c[var5];
-   }
-
-   private static Object a(Lookup var0, MutableCallSite var1, String var2, Object[] var3) {
-      int var4 = (Integer)var3[0];
-      long var5 = (Long)var3[1];
-      String var7 = a(var4, var5);
-      MethodHandle var8 = MethodHandles.constant(String.class, var7);
-      var1.setTarget(MethodHandles.dropArguments(var8, 0, int.class, long.class));
-      return var7;
-   }
-
-   private static CallSite a(Lookup var0, String var1, MethodType var2) {
-      MutableCallSite var3 = new MutableCallSite(var2);
-
-      try {
-         var3.setTarget(
-            MethodHandles.explicitCastArguments(
-               MethodHandles.insertArguments("a".asCollector(Object[].class, var2.parameterCount()), 0, var0, var3, var1), var2
-            )
-         );
-         return var3;
-      } catch (Exception var5) {
-         throw new RuntimeException("cc/astralis/CloudConfigurations" + " : " + var1 + " : " + var2.toString(), var5);
       }
    }
 

@@ -75,9 +75,6 @@ public class BedAura extends guu {
                   label89:
                   while (var21 <= axxxxxxxxx) {
                      var20 = axxxxx;
-                     if (axxxxxxx == null) {
-                        continue label94;
-                     }
 
                      int axxxxxxxxxxxx = axxxxx;
 
@@ -85,81 +82,59 @@ public class BedAura extends guu {
                         class_2680 axxxxxxxxxxxxx = chi.field_1687.method_8320(new class_2338(axxxxxxxxxx, axxxxxxxxxxxx, axxxxxxxxxxx));
                         class_2248 axxxxxxxxxxxxxx = axxxxxxxxxxxxx.method_26204();
                         label83:
-                        if (axxxxxxx != null) {
-                           var21 = axxxxxxxxxxxxxx instanceof class_2484;
-                           if (axxxxxxx == null) {
-                              continue label89;
-                           }
+                        var21 = axxxxxxxxxxxxxx instanceof class_2484;
 
-                           if (var21 != 0) {
-                              class_2484 axxxxxxxxxxxxxxx = (class_2484)axxxxxxxxxxxxxx;
-                              if (axxxxxxx == null) {
-                                 break label83;
-                              }
+                        if (var21 != 0) {
+                           class_2484 axxxxxxxxxxxxxxx = (class_2484)axxxxxxxxxxxxxx;
 
-                              if (axxxxxxxxxxxxxxx.method_9327() == class_2486.field_11510) {
-                                 label106: {
-                                    a.dfv = new class_2338(axxxxxxxxxx, axxxxxxxxxxxx, axxxxxxxxxxx);
-                                    int var22 = a.foy;
-                                    if (axxxxxxx != null) {
-                                       if (a.foy == 0) {
-                                          a.bdp = true;
-                                          chi.field_1724.method_6104(class_1268.field_5808);
-                                          gix.dsd(new class_2846(class_2847.field_12968, a.dfv, class_2350.field_11033));
-                                          a.bdp = false;
-                                          if (axxxxxxx != null) {
-                                             break label106;
-                                          }
-                                       }
-
-                                       var23 = a;
-                                       if (axxxxxxx == null) {
-                                          break label95;
-                                       }
-
-                                       float var25;
-                                       var22 = (var25 = a.foy - bav.faa(a.dfv, chi.field_1724.method_6047())) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
-                                    }
-
-                                    if (var22 >= 0) {
-                                       a.bdp = true;
-                                       chi.field_1724.method_6104(class_1268.field_5808);
-                                       gix.dsd(new class_2846(class_2847.field_12973, a.dfv, class_2350.field_11033));
-                                       chi.method_1577().method_4907(chi.field_1687, a.dfv, axxxxxxxxxxxxx, 1.0F);
-                                       var23 = a;
-                                       break label95;
-                                    }
-
+                           if (axxxxxxxxxxxxxxx.method_9327() == class_2486.field_11510) {
+                              label106: {
+                                 a.dfv = new class_2338(axxxxxxxxxx, axxxxxxxxxxxx, axxxxxxxxxxx);
+                                 int var22 = a.foy;
+                                 if (a.foy == 0) {
+                                    a.bdp = true;
                                     chi.field_1724.method_6104(class_1268.field_5808);
+                                    gix.dsd(new class_2846(class_2847.field_12968, a.dfv, class_2350.field_11033));
+                                    a.bdp = false;
+                                    break label106;
                                  }
 
-                                 a.foy++;
-                                 int axxxxxxxxxxxxxxxx = (int)((double)a.foy / bav.faa(a.dfv, chi.field_1724.method_6047()) * 100.0);
-                                 class_638 var24 = chi.field_1687;
-                                 int var10001 = chi.field_1724.method_5628();
-                                 var24.method_8517(var10001, a.dfv, axxxxxxxxxxxxxxxx / 10);
+                                 var23 = a;
+
+                                 float var25;
+                                 var22 = (var25 = a.foy - bav.faa(a.dfv, chi.field_1724.method_6047())) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
+
+                                 if (var22 >= 0) {
+                                    a.bdp = true;
+                                    chi.field_1724.method_6104(class_1268.field_5808);
+                                    gix.dsd(new class_2846(class_2847.field_12973, a.dfv, class_2350.field_11033));
+                                    chi.method_1577().method_4907(chi.field_1687, a.dfv, axxxxxxxxxxxxx, 1.0F);
+                                    var23 = a;
+                                    break label95;
+                                 }
+
+                                 chi.field_1724.method_6104(class_1268.field_5808);
                               }
+
+                              a.foy++;
+                              int axxxxxxxxxxxxxxxx = (int)((double)a.foy / bav.faa(a.dfv, chi.field_1724.method_6047()) * 100.0);
+                              class_638 var24 = chi.field_1687;
+                              int var10001 = chi.field_1724.method_5628();
+                              var24.method_8517(var10001, a.dfv, axxxxxxxxxxxxxxxx / 10);
                            }
-
-                           axxxxxxxxxxxx++;
                         }
 
-                        if (axxxxxxx == null) {
-                           break;
-                        }
+                        axxxxxxxxxxxx++;
+
                      }
 
                      axxxxxxxxxxx++;
-                     if (axxxxxxx != null) {
-                        continue label92;
-                     }
+                     continue label92;
                      break;
                   }
 
                   axxxxxxxxxx++;
-                  if (axxxxxxx != null) {
-                     continue label98;
-                  }
+                  continue label98;
 
                   return;
                }
@@ -177,16 +152,14 @@ public class BedAura extends guu {
       long a = BedAura.a ^ 104214961579215L;
       int[] var3 = ClientSetup.abu();
       BedAura var10000 = a;
-      if (var3 != null) {
-         if (a.dfv != null) {
-            chi.field_1687.method_8517(chi.field_1724.method_5628(), a.dfv, -1);
-            gix.dsd(new class_2846(class_2847.field_12971, a.dfv, class_2350.field_11033));
-         }
-
-         a.foy = 0;
-         a.dfv = null;
-         var10000 = a;
+      if (a.dfv != null) {
+         chi.field_1687.method_8517(chi.field_1724.method_5628(), a.dfv, -1);
+         gix.dsd(new class_2846(class_2847.field_12971, a.dfv, class_2350.field_11033));
       }
+
+      a.foy = 0;
+      a.dfv = null;
+      var10000 = a;
 
       var10000.bdp = false;
    }
@@ -204,12 +177,10 @@ public class BedAura extends guu {
          label44: {
             class_2680 axxxxx = chi.field_1687.method_8320(axxxx);
             class_2248 axxxxxx = axxxxx.method_26204();
-            if (axxx != null) {
-               if (!(axxxxxx instanceof class_2484)) {
-                  break label44;
-               }
-
+            if (!(axxxxxx instanceof class_2484)) {
+               break label44;
             }
+
 
             class_4587 var14 = a.bus();
             class_238 var17 = new class_238(axxxx);
@@ -217,9 +188,6 @@ public class BedAura extends guu {
             bqf.hjf(var14, var17, var21, 150);
          }
 
-         if (axxx == null) {
-            break;
-         }
       }
    }
 
@@ -331,33 +299,6 @@ public class BedAura extends guu {
             var27 = 0;
          }
       }
-   }
-
-   private static String d(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
    }
 
    private static int b(int var0, long var1) {

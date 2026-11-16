@@ -53,9 +53,6 @@ public class hdc {
                }
 
                var15 = --axxxxxxx + 1L;
-               if (ax == null) {
-                  break label35;
-               }
 
                axxxxxxx = var15;
             } while (ax != null);

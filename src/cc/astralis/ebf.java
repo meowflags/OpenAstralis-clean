@@ -39,20 +39,15 @@ class ebf {
          int[] axxx = var10000;
          var10 = a.length;
          short var12 = 32;
-         if (axxx != null) {
-            if (var10 != 32) {
-               String[] var9 = ebf.a;
-               throw new IllegalArgumentException(var9[0]);
-            }
-
-            var10 = a.length;
-            if (axxx == null) {
-               break label35;
-            }
-
-            var12 = 4979;
-            var12 = 12;
+         if (var10 != 32) {
+            String[] var9 = ebf.a;
+            throw new IllegalArgumentException(var9[0]);
          }
+
+         var10 = a.length;
+
+         var12 = 4979;
+         var12 = 12;
 
          if (var10 != var12) {
             throw new IllegalArgumentException(ebf.a[1]);
@@ -120,13 +115,11 @@ class ebf {
 
             do {
                cdr[] var12 = axxxxx;
-               if (axxx != null) {
-                  if (axxxxx != null) {
-                     break label31;
-                  }
-
-                  var12 = axxxxx;
+               if (axxxxx != null) {
+                  break label31;
                }
+
+               var12 = axxxxx;
 
                if (var12 == null) {
                   continue label31;
@@ -196,9 +189,6 @@ class ebf {
 
             label41:
             while (axxxxxxxxxxxx < a.length) {
-               if (axxxxxxx == null) {
-                  return axxxxxxxxxx;
-               }
 
                axxxxxxxxxx[axxxxxxxxxxxx] = (byte)(a[axxxxxxxxxxxx] ^ axxxxxxxxxxx[axxxxxxxxxxxx]);
                axxxxxxxxxxxx++;
@@ -234,16 +224,14 @@ class ebf {
          if (axxxxxx < a.length) {
             byte[] axxxxxxxx = Arrays.copyOfRange(a, axxxxxx, Math.min(axxxxxx + 64, a.length));
             byte[] axxxxxxxxx = a.ggl(axxxxxxxx);
-            if (axxxxxxx != null) {
-               var13 = axxxxxxxxx;
-               if (axxxx != null) {
-                  break;
-               }
-
-               System.arraycopy(axxxxxxxxx, 0, axxx, axxxxx, axxxxxxxxx.length);
-               axxxxx += axxxxxxxxx.length;
-               axxxxxx += 64;
+            var13 = axxxxxxxxx;
+            if (axxxx != null) {
+               break;
             }
+
+            System.arraycopy(axxxxxxxxx, 0, axxx, axxxxx, axxxxxxxxx.length);
+            axxxxx += axxxxxxxxx.length;
+            axxxxxx += 64;
 
             if (axxxx == null) {
                continue;

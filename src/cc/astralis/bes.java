@@ -21,7 +21,6 @@ public class bes extends ffn<ImFloat> {
    }
 
    public void agb(double value, boolean limit) {
-      long ax = bes.a ^ 97349471677301L;
       double axx = 1.0 / (!a ? a.ezs.floatValue() : 0.01);
       a.gbf(new ImFloat((float)(Math.round(Math.max((double)a.aqj.floatValue(), Math.min(a ? a.dfg.floatValue() : a.dfg + 9999.0F, a)) * axx) / axx)));
    }

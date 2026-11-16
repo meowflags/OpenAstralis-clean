@@ -15,13 +15,11 @@ public class ahg implements dlc {
       int[] var10000 = ClientSetup.abu();
       ImGui.setNextWindowPos(1301.0F, 354.0F, 2);
       int[] var3 = var10000;
-      if (var3 != null) {
-         if (!ImGui.begin(a.fzr.fah(), 2)) {
-            return;
-         }
-
-         ImGui.setCursorPos(76.0F, 73.0F);
+      if (!ImGui.begin(a.fzr.fah(), 2)) {
+         return;
       }
+
+      ImGui.setCursorPos(76.0F, 73.0F);
 
       ImGui.end();
    }

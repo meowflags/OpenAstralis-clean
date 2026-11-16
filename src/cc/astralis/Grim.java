@@ -36,37 +36,27 @@ public class Grim extends hcr {
          int var10000;
          var10000 = a.bqn;
          label51:
-         if (var4 != null) {
-            if (!a.bqn) {
-               double var6;
-               var10000 = (var6 = chi.field_1724.field_6017 - 0.0) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
-               if (var4 == null) {
-                  break label51;
-               }
+         if (!a.bqn) {
+            double var6;
+            var10000 = (var6 = chi.field_1724.field_6017 - 0.0) == 0.0 ? 0 : (var6 < 0.0 ? -1 : 1);
 
-               if (var10000 > 0) {
-                  gix.eex(new class_5911(true, false));
-                  chi.field_1724.field_6017 = 0.0;
-                  a.bqn = true;
-               }
+            if (var10000 > 0) {
+               gix.eex(new class_5911(true, false));
+               chi.field_1724.field_6017 = 0.0;
+               a.bqn = true;
             }
-
-            var10000 = a.bqn;
          }
 
+         var10000 = a.bqn;
+
          label58: {
-            if (var4 != null) {
-               if (var10000 != 0) {
-                  byb(class_243.field_1353);
-               }
-
-               var5 = a;
-               if (var4 == null) {
-                  break label58;
-               }
-
-               var10000 = a.fuu;
+            if (var10000 != 0) {
+               byb(class_243.field_1353);
             }
+
+            var5 = a;
+
+            var10000 = a.fuu;
 
             if (var10000 == 0) {
                return;
@@ -96,23 +86,19 @@ public class Grim extends hcr {
       class_2596 var6 = a.bed();
       int[] axx = var10000;
       class_2596 var7 = var6;
-      if (axx != null) {
-         if (!(var6 instanceof class_2743)) {
-            return;
-         }
-
-         var7 = var6;
+      if (!(var6 instanceof class_2743)) {
+         return;
       }
+
+      var7 = var6;
 
       class_2743 axxx = (class_2743)var7;
-      if (axx != null) {
-         if (axxx.method_11818() != chi.field_1724.method_5628()) {
-            return;
-         }
-
-         a.bqn = false;
-         a.gmm(true);
+      if (axxx.method_11818() != chi.field_1724.method_5628()) {
+         return;
       }
+
+      a.bqn = false;
+      a.gmm(true);
 
       a.fuu = true;
    }
@@ -121,13 +107,11 @@ public class Grim extends hcr {
       long ax = Grim.a ^ 80982274021373L;
       int[] var3 = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
-      if (var3 != null) {
-         if (chi.field_1724 == null) {
-            return;
-         }
-
-         var10000 = chi.field_1724;
+      if (chi.field_1724 == null) {
+         return;
       }
+
+      var10000 = chi.field_1724;
 
       var10000.method_18799(a);
    }
@@ -149,30 +133,4 @@ public class Grim extends hcr {
       d = var5;
    }
 
-   private static String a(byte[] var0) {
-      int var1 = 0;
-      int var2;
-      char[] var3 = new char[var2 = var0.length];
-
-      for (int var4 = 0; var4 < var2; var4++) {
-         int var5;
-         if ((var5 = 255 & var0[var4]) < 192) {
-            var3[var1++] = (char)var5;
-         } else if (var5 < 224) {
-            char var6 = (char)((char)(var5 & 31) << 6);
-            byte var8 = var0[++var4];
-            var6 = (char)(var6 | (char)(var8 & 63));
-            var3[var1++] = var6;
-         } else if (var4 < var2 - 2) {
-            char var12 = (char)((char)(var5 & 15) << '\f');
-            byte var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63) << 6);
-            var9 = var0[++var4];
-            var12 = (char)(var12 | (char)(var9 & 63));
-            var3[var1++] = var12;
-         }
-      }
-
-      return new String(var3, 0, var1);
-   }
 }
