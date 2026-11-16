@@ -283,6 +283,46 @@ la evidencia registrada en `mapping/inferred.tsv` y el mapa ProGuard en
 `mapping/inferred.proguard.txt`. Quedan **275 ficheros con nombre corto**: no
 llevan ningún literal identificativo propio (utilidades internas, mixins,
 helpers de render) y nombrarlos sería inventar. La columna `evidence` de
-`inferred.tsv` permite revisar cada decisión.
+`inferred.tsv` permite revisar cada decisin.
 
 
+## 13. Pasada del zkm-deobfuscator externo y pasada nativa
+
+**zkm-deobfuscator (DarkCreative1, v1.0.0).** Compilado desde fuente con su
+propio wrapper de Gradle 8.14.5 sobre JDK 25 (`gradlew build fatJar`,
+BUILD SUCCESSFUL). Ejecutado sobre el jar original `client26.jar` en dos
+modos, siempre con `--no-dyn` (la recuperación dinámica ejecuta clases
+ofuscadas, y el cliente no se ejecuta en esta máquina):
+
+```
+str_patched=0  int_patched=0  handlers_removed=0  flow_folded=231
+dead_removed=14337  ref_inlined=0  param_calls=0  renamed=793 (0 con --no-rename)
+str_skipped=217   verify: OK 518 class parse+frame OK
+```
+
+Su descifrador de cadenas no reconoce esta variante: apunta a los esquemas de
+llamada directa de ZKM 13/27, y aquí las cadenas van mediadas por
+`invokedynamic (IJ)` con bootstraps `MutableCallSite` que se autoreemplazan
+(ZKM 26-era). La adopción de su salida se rechaza con números: literales
+idénticos en el resultado descompilado (7/7 en `cv`), splices 709→696 y el
+plegado de Vineflower se rompe con sus pases (basura `var1000x`
+7.519→11.449 líneas). El `src/` actual sigue siendo el artefacto más legible;
+el jar construido de la herramienta queda fuera del repositorio
+(gitignored), reconstruible con `gradlew fatJar`.
+
+**Pasada nativa de las 275 clases sin nombre** (`mapping/native_pass.tsv`,
+`tools/native_pass.py`). Para cada clase corta: presencia en la lista de
+tipos de la imagen, métodos `native` registrados, hooks de mixin y rutas de
+recursos. Resultado cerrado: **0/275** en cualquiera de las cuatro columnas
+— la lista de tipos de la imagen sólo contiene `com/astralis/scripting/*` y
+`pub/astralis/client/cc`, el corpus `.text` no lleva ninguna cadena de nombre
+de clase `cc.astralis`, y `member_names.tsv`/`descriptors.tsv` no tienen
+enlace clase-miembro. La capa nativa no puede nombrarlas.
+
+**Por qué los splices de `abu()` no se pliegan.** `ClientSetup.abu()`
+devuelve `bko`, escrito sólo por `aow(new int[5])`, que se llama bajo
+`if (!ffn.gsn())` — y `ffn.gsn()` pasa de `false` a `true` en el inicializador
+estático de `ffn`. La verdad de cada guarda `if (v != null)` depende del orden
+de inicialización de clases en tiempo de ejecución, que no es demostrable
+estáticamente: plegarla por suposición corrompería el artefacto. Los 709
+splices se quedan, documentados aquí como indecidibles sin ejecución.

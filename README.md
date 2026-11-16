@@ -367,7 +367,14 @@ Beyond the 74 proven modules, `tools/infer_names.py` + `tools/apply_names.py`
 rename 103 more classes from their own folded strings and structural family
 (23 high + 80 medium confidence, every decision logged in
 `mapping/inferred.tsv`); the remaining 275 carry no self-identifying evidence
-and stay short-named (§12).
+and stay short-named (§12). The external
+[zkm-deobfuscator](https://github.com/DarkCreative1/zkm-deobfuscator) (v1.0.0,
+built from source) was also run on the original jar and its output rejected on
+measured grounds: its string decryptor does not cover this ZKM-26 indy
+variant (`str_patched=0`) and its pipeline breaks the Vineflower fold — §13
+has the numbers. The native pass for the 275 closes empty
+(`mapping/native_pass.tsv`: no image types, no hooks, no resources, no
+class-name strings — §13).
 The 55 sites that stay unfolded are all `(IJ)J` in `cc/astralis/brc`/`cvn`; their
 bootstrap method builds the call site at runtime from a bytewise-composed
 `long[]` that has no static table in the class file, so there is nothing to fold
@@ -420,6 +427,7 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `tools/fingerprint_obfuscator.py` | class-file fingerprint: DES runtimes, indy sites, native methods, vendor markers |
 | `tools/strip_zkm_residue.py` | delete the dead operand stores the folded `invokedynamic` sites left behind |
 | `tools/infer_names.py`, `tools/apply_names.py` | infer names for the remaining obfuscated classes from their own constants, then apply them |
+| `tools/native_pass.py` | per-class native-image evidence ledger for the unnamed classes |
 | `tools/jarscan.py`, `tools/rebuild_jar.py` | archive-level inventory and rebuild |
 | `tools/Sanitize.java` | neutralise hardcoded endpoints and `halt` calls |
 | `tools/devirt_dump.py` | turn IDA output into annotated C bodies |
@@ -806,7 +814,14 @@ Además de los 74 módulos probados, `tools/infer_names.py` +
 `tools/apply_names.py` renombran 103 clases más a partir de sus propias
 cadenas plegadas y su familia estructural (23 high + 80 medium, cada decisión
 registrada en `mapping/inferred.tsv`); las 275 restantes no llevan evidencia
-identificativa propia y conservan el nombre corto (§12).
+identificativa propia y conservan el nombre corto (§12). El
+[zkm-deobfuscator](https://github.com/DarkCreative1/zkm-deobfuscator)
+externo (v1.0.0, compilado desde fuente) también se ejecutó sobre el jar
+original y su salida se rechaza con números medidos: su descifrador de
+cadenas no cubre esta variante indy de ZKM 26 (`str_patched=0`) y su
+pipeline rompe el plegado de Vineflower — §13 tiene las cifras. La pasada
+nativa de las 275 cierra vacía (`mapping/native_pass.tsv`: sin tipos en la
+imagen, sin hooks, sin recursos, sin cadenas de nombre de clase — §13).
 Los 55 sitios sin plegar son todos `(IJ)J` en `cc/astralis/brc`/`cvn`: su
 bootstrap construye el call site en ejecución desde un `long[]` compuesto byte a
 byte que no existe como tabla estática en el class file.
@@ -851,6 +866,7 @@ sale como `<redacted:discord-bot-token>`.
 | `tools/fingerprint_obfuscator.py` | huella de los `.class`: runtimes DES, sitios indy, métodos `native`, marcadores de fabricante |
 | `tools/strip_zkm_residue.py` | borra las tiendas muertas que dejaron los sitios `invokedynamic` plegados |
 | `tools/infer_names.py`, `tools/apply_names.py` | infiere nombres para las clases ofuscadas restantes desde sus propias constantes y los aplica |
+| `tools/native_pass.py` | libro de evidencia nativa por clase para las clases sin nombre |
 | `mapping/offsets.json` | 3.897 constantes plegadas |
 | `mapping/modules.tsv` | 91 clases de módulo: categoría, ajustes, función inferida |
 | `mapping/modules.proguard.txt` | los 74 renombrados identificados, importables en Recaf |
