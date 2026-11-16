@@ -27,11 +27,7 @@ public class ReloadShader extends guu {
    public ReloadShader() {
       long a = ReloadShader.a ^ 135685088738024L;
       super(bfm.VISUAL);
-      short var10003 = 20418;
-      long var10004 = 7537065718212156791L ^ a;
       a.cgf = new gbp("Reload Shader", false);
-      var10003 = 6844;
-      var10004 = 6937433281012795400L ^ a;
       a.fkq = new acn("Color", Color.RED);
       a.gne = false;
       a.bfi(new ffn[]{a.fkq, a.cgf});
@@ -107,7 +103,6 @@ public class ReloadShader extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

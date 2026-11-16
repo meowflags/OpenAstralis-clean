@@ -44,8 +44,6 @@ public class crb extends bmd {
       int[] var10000 = dar.abu();
       a.fji(a);
       a.axc(a);
-      short var10002 = 25381;
-      long var10003 = 8171062741799019034L ^ ax;
       fll axx = bxc.emc(b, 10);
       axx.aof(a.goq.fah(), a + 6.0F, a + 4.0F, cbc.fgl);
       float axxx = super.ajg() - 6.0F;
@@ -56,14 +54,6 @@ public class crb extends bmd {
       elz(axxxx, axxxxx, 80.0F, 80.0F, a.csw);
       float var14 = axxxx + a.csp - 4.0F;
       float var10001 = axxxxx + a.byo - 4.0F;
-      short var10007 = 4748;
-      long var10008 = 5228943657491747767L ^ ax;
-      byte var16 = 4;
-      long var10009 = 4201407861938241848L ^ ax;
-      byte var17 = 4;
-      long var10010 = 4201407861938241848L ^ ax;
-      short var18 = 10044;
-      long var10011 = 6906433462177621510L ^ ax;
       dmp.cpp(var14, var10001, 8.0F, 8.0F, 4.0F, new Color(255, 255, 255, 200));
       float axxxxxxx = axxxxx + 80.0F + 4.0F;
       dxy(axxxx, axxxxxxx, 80.0F, 10.0F);
@@ -292,14 +282,8 @@ public class crb extends bmd {
                   if (var2 >= var5) {
                      c = var6;
                      d = new Integer[7];
-                     short var19 = 937;
-                     long var25 = var11 ^ 5009026131473406966L;
                      arq = 10;
-                     short var20 = 31932;
-                     long var26 = var11 ^ 7117201529858974948L;
                      ex = 3;
-                     short var21 = 30657;
-                     long var27 = var11 ^ 881515052834746266L;
                      esx = 80;
                      return;
                   }

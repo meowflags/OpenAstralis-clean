@@ -40,8 +40,6 @@ public class hgh extends cec {
       long ax = hgh.a ^ 25380268758732L;
       int[] axx = dar.abu();
       if (axx != null) {
-         short var10001 = 22781;
-         long var10002 = 4587209555392056260L ^ ax;
          if (chi.field_1724.field_6012 >= 200 && !chi.method_1542()) {
             if (a.cud() == gpy.RECEIVE) {
                long axxx = System.currentTimeMillis();
@@ -49,8 +47,6 @@ public class hgh extends cec {
                hgh var10000 = a;
                if (axx != null) {
                   int var7 = a.dps.size();
-                  var10001 = 32385;
-                  var10002 = 7637135135553121723L ^ ax;
                   if (var7 > 300) {
                      a.dps.poll();
                   }
@@ -86,8 +82,6 @@ public class hgh extends cec {
          if (var4 != null) {
             if (var10000 == 0) {
                long var5 = System.currentTimeMillis() - a.gfp;
-               short var10001 = 3827;
-               long var10002 = 8755198205106298395L ^ ax;
                long var11;
                var10000 = (var11 = var5 - 2500L) == 0L ? 0 : (var11 < 0L ? -1 : 1);
                if (var4 == null) {
@@ -97,8 +91,6 @@ public class hgh extends cec {
                if (var10000 > 0) {
                   a.fqw = true;
                   a.drh = 1.0;
-                  var10001 = 28014;
-                  var10002 = 3966002451150372224L ^ ax;
                   a.eyj = 2500L;
                   if (var4 != null) {
                      return;
@@ -121,8 +113,6 @@ public class hgh extends cec {
                break label58;
             }
 
-            short var8 = 19311;
-            long var10 = 2756281504492018563L ^ ax;
             if (a.eyj >= 300L) {
                a.fqw = true;
                if (var4 != null) {
@@ -142,9 +132,6 @@ public class hgh extends cec {
       long ax = hgh.a ^ 98460380774377L;
       if (a.fqw) {
          class_1041 axx = chi.method_22683();
-         short var10000 = 21573;
-         long var10001 = 4613261448549412443L ^ ax;
-         int axxx = 40;
       }
    }
 
@@ -163,9 +150,7 @@ public class hgh extends cec {
       }
 
       Long[] axx = var10000.toArray(new Long[0]);
-      short var13 = 19747;
       int axxx = 0;
-      long var10001 = 5788112081103286275L ^ a;
       int axxxx = 0;
       long axxxxx = 50L;
       a.eyj = 0L;
@@ -284,8 +269,6 @@ public class hgh extends cec {
                   if (var15 >= var18) {
                      c = var19;
                      d = new Integer[4];
-                     short var27 = 21701;
-                     long var34 = var11 ^ 3488922340937031054L;
                      ayy = 300;
                      h = new HashMap(13);
                      Cipher var0;
@@ -349,11 +332,7 @@ public class hgh extends cec {
                                  if (var2 >= var5) {
                                     f = var6;
                                     g = new Long[6];
-                                    short var30 = 15184;
-                                    long var38 = var11 ^ 2106590616443193287L;
                                     gtl = 2500L;
-                                    short var31 = 27924;
-                                    long var39 = var11 ^ 3895778642241376645L;
                                     eha = 300L;
                                     return;
                                  }

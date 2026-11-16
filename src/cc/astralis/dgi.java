@@ -43,12 +43,6 @@ public class dgi extends fig {
          var9 = axxx;
          float var10001 = ax;
          if (axxxx != null) {
-            short var10007 = 10164;
-            long var10008 = 1076010379563703728L ^ axx;
-            short var10 = 14263;
-            long var10009 = 5112989930072575410L ^ axx;
-            short var11 = 14263;
-            long var10010 = 5112989930072575410L ^ axx;
             dmp.cpp(axxx, ax, 25.0F, 12.0F, 5.0F, new Color(50, 50, 50));
             if (!a.byy.dnp()) {
                var9 = axxx;
@@ -134,7 +128,6 @@ public class dgi extends fig {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

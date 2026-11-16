@@ -36,32 +36,14 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
       super();
       int[] var10000 = dar.abu();
       brc.ahk();
-      short var10003 = 18886;
-      long var10004 = 5045541070615934282L ^ a;
       Class[] var7 = new Class[]{gjp.class, dve.class, dsk.class, aki.class, gqi.class, cse.class, null, null, null, null, null, null, null, null};
-      short var10005 = 2632;
-      long var10006 = 856296222820546262L ^ a;
       var7[6] = fvh.class;
-      var10005 = 29378;
-      var10006 = 8360773472745967170L ^ a;
       var7[7] = gyn.class;
-      var10005 = 12845;
-      var10006 = 425121692908424874L ^ a;
       var7[8] = bcy.class;
-      var10005 = 7783;
-      var10006 = 1747089717480563429L ^ a;
       var7[9] = fxc.class;
-      var10005 = 23961;
-      var10006 = 4443211161536815383L ^ a;
       var7[10] = dnu.class;
-      var10005 = 15853;
-      var10006 = 4144016421779276132L ^ a;
       var7[11] = hhm.class;
-      var10005 = 8536;
-      var10006 = 2514920763072454090L ^ a;
       var7[12] = egf.class;
-      var10005 = 30771;
-      var10006 = 6022125863011435687L ^ a;
       var7[13] = dfg.class;
       a.afa(var7);
       int[] axx = var10000;
@@ -101,28 +83,18 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
                      Unsafe axxxxxxxxx = (Unsafe)axxxxxxxx.get(null);
                      long axxxxxxxxxx = ThreadLocalRandom.current().nextLong();
                      ThreadLocalRandom var29 = ThreadLocalRandom.current();
-                     short var33 = 20666;
-                     long var10003 = 1246658676031060548L ^ ax;
                      long axxxxxxxxxxx = var29.nextLong(1L, a(10167, c<"v">(15712, 6524898370152778051L ^ ax) ^ axx));
                      ThreadLocalRandom var30 = ThreadLocalRandom.current();
-                     var33 = 10776;
-                     var10003 = 2036899811895541969L ^ ax;
                      int axxxxxxxxxxxx = var30.nextInt(1, 256);
                      Thread var32 = Thread.currentThread();
-                     var33 = 24919;
-                     var10003 = 237418433026968452L ^ ax;
                      axxxxxxxxx.putLong(var32, a(26982, c<"v">(5966, 8091259915459617647L ^ ax) ^ axx), axxxxxxxxxx);
                      axxxxxxxxx.putAddress(axxxxxxxxxxx, 0L);
                      Runtime.getRuntime().halt(axxxxxxxxxxxx);
                   } catch (Throwable var21) {
-                     short var27 = 20513;
-                     long var10001 = 6372527568497048299L ^ ax;
                      long axxxxxxxxxxxxx = a(7784, c<"v">(1279, 6396469923412603099L ^ ax) ^ axx);
 
                      label49:
                      while (true) {
-                        short var31 = 7070;
-                        long var10002 = 2040743337652269383L ^ ax;
                         if (axxxxxxxxxxxxx >= a(12343, c<"v">(1786, 2085895383827411664L ^ ax) ^ axx)) {
                            break;
                         }
@@ -354,15 +326,11 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
                                                    int[] var59 = new int[2];
                                                    String var43;
                                                    int var45 = (var43 = var22[0]).length();
-                                                   short var71 = 3974;
-                                                   long var88 = 8550886017966101402L ^ var31;
                                                    char var42 = '\t';
                                                    ckk(var59);
                                                    int var41 = -1;
 
                                                    while (true) {
-                                                      short var60 = 27851;
-                                                      long var72 = 7868724325696745704L ^ var31;
                                                       String var89 = a(54, a(var43.substring(++var41, var41 + var42)));
                                                       int var73 = -1;
                                                       var46[var44++] = var89;
@@ -383,37 +351,20 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
                                                             long[] var61 = var39;
                                                             var73 = var36++;
                                                             long var91 = var40[0] & c<"v">(19480, 8301110658697023207L ^ var31);
-                                                            short var115 = 10720;
                                                             var131 = 11288223745996228L ^ var31;
                                                             long var92 = var91 << 56;
                                                             long var116 = var40[1] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                            short var135 = 8390;
-                                                            long var10005 = 4308253920793853138L ^ var31;
                                                             long var93 = var92 | var116 << 48;
                                                             long var117 = var40[2] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                            short var136 = 5334;
-                                                            var10005 = 7320764958426155209L ^ var31;
                                                             long var94 = var93 | var117 << 40;
                                                             long var118 = var40[3] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                            short var137 = 3373;
-                                                            var10005 = 6607511760424849727L ^ var31;
                                                             long var95 = var94 | var118 << 32;
                                                             long var119 = var40[4] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                            short var138 = 18967;
-                                                            var10005 = 8358976018472080909L ^ var31;
                                                             long var96 = var95 | var119 << 24;
                                                             long var120 = var40[5] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                            short var139 = 28636;
-                                                            var10005 = 5631158503894987717L ^ var31;
                                                             long var97 = var96 | var120 << 16;
-                                                            short var140 = 6026;
-                                                            var10005 = 153305361542630314L ^ var31;
                                                             long var121 = var40[6] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                            short var141 = 27282;
-                                                            var10005 = 2720503368733374105L ^ var31;
                                                             long var98 = var97 | var121 << 8;
-                                                            short var142 = 32669;
-                                                            var10005 = 454746296358380419L ^ var31;
                                                             long var99 = var98 | var40[7] & c<"v">(4884, 4314415640531341801L ^ var31);
                                                             byte var122 = -1;
 
@@ -444,37 +395,20 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
                                                                var61 = var39;
                                                                var73 = var36++;
                                                                long var101 = var40[0] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var124 = 1146;
                                                                var131 = 54795116827793505L ^ var31;
                                                                long var102 = var101 << 56;
                                                                long var125 = var40[1] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var146 = 32295;
-                                                               var10005 = 3350872338824962606L ^ var31;
                                                                long var103 = var102 | var125 << 48;
                                                                long var126 = var40[2] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var147 = 29329;
-                                                               var10005 = 4679027979386859145L ^ var31;
                                                                long var104 = var103 | var126 << 40;
                                                                long var127 = var40[3] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var148 = 32101;
-                                                               var10005 = 5315847112129716551L ^ var31;
                                                                long var105 = var104 | var127 << 32;
                                                                long var128 = var40[4] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var149 = 24672;
-                                                               var10005 = 5512226934768614498L ^ var31;
                                                                long var106 = var105 | var128 << 24;
                                                                long var129 = var40[5] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var150 = 28636;
-                                                               var10005 = 5631158503894987717L ^ var31;
                                                                long var107 = var106 | var129 << 16;
-                                                               short var151 = 6026;
-                                                               var10005 = 153305361542630314L ^ var31;
                                                                long var130 = var40[6] & c<"v">(4884, 4314415640531341801L ^ var31);
-                                                               short var152 = 27282;
-                                                               var10005 = 2720503368733374105L ^ var31;
                                                                long var108 = var107 | var130 << 8;
-                                                               short var153 = 32669;
-                                                               var10005 = 454746296358380419L ^ var31;
                                                                var99 = var108 | var40[7] & c<"v">(4884, 4314415640531341801L ^ var31);
                                                                var122 = 0;
                                                             }
@@ -565,12 +499,9 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    }
 
    private static char[] a(String var0) {
-      long var1 = d ^ 3545485541356L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 17747;
-         long var10005 = 6811325712973755608L ^ var1;
          var10000[0] = (char)(var10003 ^ '`');
       }
 
@@ -578,7 +509,6 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = d ^ 96847925202799L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -586,34 +516,22 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 32669;
-         long var10009 = 454733954986868379L ^ var2;
          var10001[var4] = (char)(var10005 ^ var10002 ^ switch (var4 % 7) {
             case 0 -> {
-               short var14 = 26708;
-               long var19 = 1264450743194741068L ^ var2;
                yield 20;
             }
             case 1 -> {
-               short var13 = 25992;
-               long var18 = 2010128226914493589L ^ var2;
                yield 10;
             }
             case 2 -> {
-               short var12 = 5858;
-               long var17 = 5137937325464590322L ^ var2;
                yield 62;
             }
             case 3 -> 2;
             case 4 -> {
-               short var11 = 25086;
-               long var16 = 2232105125660156149L ^ var2;
                yield 16;
             }
             case 5 -> 5;
             default -> {
-               short var10007 = 27498;
-               long var15 = 8839307957012556412L ^ var2;
                yield 96;
             }
          });
@@ -623,14 +541,9 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    }
 
    private static long a(int var0, long var1) {
-      long var3 = d ^ 114226300751305L;
       int[] var5 = dar.abu();
       int var10000 = var0 ^ (int)var1;
-      short var10001 = 24467;
-      long var10002 = 2840623097537600520L ^ var3;
       var10000 ^= 4197;
-      var10001 = 5208;
-      var10002 = 8090345040341129185L ^ var3;
       int var6 = var10000 & 32767;
       Long var8 = c[var6];
       if (var5 != null) {

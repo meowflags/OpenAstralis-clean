@@ -58,7 +58,6 @@ public class dxl extends ffn<String> {
          | (var6[5] & 255L) << 16
          | (var6[6] & 255L) << 8
          | var6[7] & 255L;
-      byte var10001 = -1;
       b = var7;
    }
 }

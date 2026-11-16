@@ -49,7 +49,6 @@ public final class dc extends glv<fso> {
       AtomicBoolean axxxxx = new AtomicBoolean(false);
 
       try {
-         String axxxxxx = axx;
          a.czl().stream().filter(axxxxxxx -> Arrays.stream(axxxxxxx.ax()).anyMatch(axxxxxxxx -> axxxxxxxx.equalsIgnoreCase(a[0]))).forEach(axxxxxxx -> {
             a.set(true);
             axxxxxxx.aov(a, a);
@@ -67,23 +66,11 @@ public final class dc extends glv<fso> {
 
    public void cog() {
       long a = dc.a ^ 13645335721396L;
-      short var10001 = 23565;
-      long var10002 = 453062776694991486L ^ a;
       fso[] var3 = new fso[]{new hbi(), new bkv(), new glr(), new gjr(), new dpr(), new bjw(), null, null, null, null, null};
-      short var10003 = 11944;
-      long var10004 = 3690509988294498526L ^ a;
       var3[6] = new ghz();
-      var10003 = 28682;
-      var10004 = 8716941718297659003L ^ a;
       var3[7] = new gff();
-      var10003 = 29144;
-      var10004 = 6117093464785405866L ^ a;
       var3[8] = new fq();
-      var10003 = 15472;
-      var10004 = 8990021340842887687L ^ a;
       var3[9] = new atf();
-      var10003 = 27226;
-      var10004 = 7146750152497749034L ^ a;
       var3[10] = new fcc();
       a.bpq(var3);
    }

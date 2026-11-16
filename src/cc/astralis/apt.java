@@ -35,11 +35,7 @@ public class apt extends hcr {
 
    public apt(guu parentClass) {
       long ax = apt.a ^ 73884371062733L;
-      short var10002 = 16520;
-      long var10003 = 536406135794612936L ^ ax;
       super(a, "Watchdog Air");
-      short var4 = 29731;
-      long var10004 = 5146032032142364257L ^ ax;
       a.fjl = new gbp("Breaker", true);
       a.ejj = new ArrayList<>();
       a.bjz = 0;
@@ -136,8 +132,6 @@ public class apt extends hcr {
          }
 
          if (var8) {
-            short var10001 = 25549;
-            long var10002 = 4561243480554657741L ^ ax;
             a.bjz = 2;
          }
 
@@ -184,8 +178,6 @@ public class apt extends hcr {
             }
 
             a.gmm(true);
-            short var11 = 25418;
-            long var13 = 3446567388579500902L ^ ax;
             bpa.bez("add");
             a.ejj.add(a.bed());
             var12 = a;
@@ -265,8 +257,6 @@ public class apt extends hcr {
          var5 = a;
       }
 
-      short var6 = 25636;
-      long var10002 = 1993418919339658659L ^ ax;
       var5.bjz = 2;
    }
 
@@ -347,7 +337,6 @@ public class apt extends hcr {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

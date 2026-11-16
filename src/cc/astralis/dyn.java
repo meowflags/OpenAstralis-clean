@@ -28,13 +28,9 @@ class dyn implements ThreadFactory {
    public Thread newThread(@NonNull Runnable r) {
       long ax = dyn.a ^ 60504321173358L;
       if (a == null) {
-         short var10002 = 22789;
-         long var4 = 7341023698396370538L ^ ax;
          throw new NullPointerException("r is marked non-null but is null");
       } else {
          int var10003 = a.cgv.incrementAndGet();
-         short var10004 = 5656;
-         long var10005 = 8176507614620752246L ^ ax;
          return new Thread(a, "Multithreading Thread " + var10003);
       }
    }
@@ -62,7 +58,6 @@ class dyn implements ThreadFactory {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

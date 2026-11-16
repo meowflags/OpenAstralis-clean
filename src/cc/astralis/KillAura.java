@@ -112,95 +112,35 @@ public class KillAura extends guu {
    public KillAura() {
       long a = KillAura.a ^ 57519750087815L;
       super(bfm.COMBAT);
-      short var10003 = 25365;
-      long var10004 = 4652226120011216875L ^ a;
-      short var57 = 30800;
-      long var10005 = 2258949485895576714L ^ a;
       String[] var128 = new String[2];
-      short var10008 = 12938;
-      long var10009 = 9005550021069612637L ^ a;
       var128[0] = "Single";
-      var10008 = 22779;
-      var10009 = 3770980025177230388L ^ a;
       var128[1] = "Switch";
       a.asa = new adu("Aura Mode", "Single", var128);
-      var10003 = 26501;
-      var10004 = 5088547177930781515L ^ a;
       a.bt = new gbp("Ray Cast", false);
-      var10003 = 22225;
-      var10004 = 2895727058876776963L ^ a;
       a.ezs = new bes("Switch Delay", 200.0F, 0.0F, 5000.0F, 1.0F);
-      var10003 = 16610;
-      var10004 = 3048947493778904084L ^ a;
       a.flh = new bes("Scout Range", 3.0F, 0.0F, 6.0F, 0.1F);
-      var10003 = 16426;
-      var10004 = 6320906664041075938L ^ a;
       a.ejq = new bes("Attack Range", 3.0F, 0.0F, 6.0F, 0.1F);
       dar.abu();
-      short var62 = 5618;
-      var10005 = 5404390794833232149L ^ a;
       a.boi = new gbp("Auto Block", false);
-      short var63 = 2730;
-      var10005 = 1727639222781943364L ^ a;
       a.bjd = new bes("Block Range", 3.0F, 0.0F, 6.0F, 0.1F);
-      short var64 = 27197;
-      var10005 = 1332895692805406414L ^ a;
-      short var132 = 6312;
-      long var10006 = 4578261339189808223L ^ a;
-      short var150 = 25424;
-      long var10007 = 5999558878932895298L ^ a;
       String[] var151 = new String[6];
-      short var159 = 15871;
-      long var10010 = 2257836482564172092L ^ a;
       var151[0] = "Vanilla";
-      short var160 = 23548;
-      var10010 = 7926161528625418005L ^ a;
       var151[1] = "None";
-      short var161 = 23894;
-      var10010 = 8491481706981214607L ^ a;
       var151[2] = "Blink";
-      short var162 = 21404;
-      var10010 = 6416859919247427418L ^ a;
       var151[3] = "Modern Watchdog";
-      short var163 = 1666;
-      var10010 = 2311008395379970631L ^ a;
       var151[4] = "Modern Watchdog Post";
-      short var164 = 14755;
-      var10010 = 1621947160891075959L ^ a;
       var151[5] = "Old Watchdog";
       a.dhq = new adu("Auto Block Mode", "Vanilla", var151);
-      short var65 = 32538;
-      var10005 = 5681337048352812010L ^ a;
       a.djf = new gbp("Blink", false);
-      short var66 = 30944;
-      var10005 = 827455539398896676L ^ a;
       a.esi = new gbp("Packet Auto Block", false);
-      short var67 = 17598;
-      var10005 = 5525274859486007379L ^ a;
       a.can = new gbp("Interact When Blocking", false);
-      short var68 = 17505;
-      var10005 = 3868445741157109891L ^ a;
       a.cel = new gbp("Force Block Hit Animation", false);
-      short var69 = 23180;
-      var10005 = 9036381496512532046L ^ a;
       a.bdd = new gbp("Rotations", true);
-      short var70 = 26704;
-      var10005 = 3589517832581840005L ^ a;
-      short var139 = 30266;
-      var10006 = 1374079942142845693L ^ a;
       String[] var153 = new String[3];
-      short var165 = 8776;
-      var10010 = 8048591478283974332L ^ a;
       var153[0] = "Off";
-      short var166 = 4213;
-      var10010 = 8431903297889076392L ^ a;
       var153[1] = "Snap";
-      short var167 = 23048;
-      var10010 = 2247997639380618964L ^ a;
       var153[2] = "MouseSim";
       a.bcj = (adu)new adu("Noise Mode", "Off", var153).bih(a.bdd::dnp);
-      short var71 = 12263;
-      var10005 = 615368200922774332L ^ a;
       a.gfr = (bes)new bes("Noise Yaw Multiplier", 0.08F, 0.01F, 0.5F, 0.01F).bih(() -> {
          long ax = KillAura.a ^ 2236471153753L;
          int[] var3 = dar.abu();
@@ -226,8 +166,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      short var72 = 18435;
-      var10005 = 4918784399747439753L ^ a;
       a.cbe = (bes)new bes("Noise Pitch Multiplier", 0.02F, 0.01F, 0.3F, 0.01F).bih(() -> {
          long ax = KillAura.a ^ 22961665098100L;
          int[] var3 = dar.abu();
@@ -253,8 +191,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      short var73 = 18226;
-      var10005 = 6811129819030442989L ^ a;
       a.dbv = (bes)new bes("Max Yaw Noise", 1.2F, 0.1F, 5.0F, 0.1F).bih(() -> {
          long ax = KillAura.a ^ 104919077273976L;
          int[] var3 = dar.abu();
@@ -280,8 +216,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      short var74 = 13345;
-      var10005 = 8114773129526616288L ^ a;
       a.aud = (bes)new bes("Max Pitch Noise", 0.75F, 0.1F, 5.0F, 0.1F).bih(() -> {
          long ax = KillAura.a ^ 122487083565523L;
          int[] var3 = dar.abu();
@@ -307,77 +241,29 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      short var75 = 2213;
-      var10005 = 463750085469674580L ^ a;
       a.bsp = new gbp("GCD Fix", false);
-      short var76 = 24137;
-      var10005 = 7837494242079296170L ^ a;
       a.gbw = new ale("Rotation Target", bgi.HEAD);
-      short var77 = 28681;
-      var10005 = 6381813968257279206L ^ a;
       a.esx = new bes("Rotation Range", 3.0F, 0.0F, 6.0F, 0.1F);
-      short var78 = 5300;
-      var10005 = 6812972072036728952L ^ a;
       a.fuf = new bes("Min Yaw Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 15468;
-      var10004 = 5219294021911947411L ^ a;
       a.bgu = new bes("Max Yaw Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 245;
-      var10004 = 648036180733236239L ^ a;
       a.ghi = new bes("Min Pitch Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 16319;
-      var10004 = 7015007756312324932L ^ a;
       a.ffp = new bes("Max Pitch Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 25207;
-      var10004 = 9149647864583550597L ^ a;
       a.dnl = new gbp("1.9+ CPS", false);
-      var10003 = 21081;
-      var10004 = 5778870194741364413L ^ a;
       a.cbu = new gbp("1.8 Swing Order", false);
-      var10003 = 6891;
-      var10004 = 2558398426147196448L ^ a;
       a.ecs = new bes("Min CPS", 10.0F, 0.0F, 20.0F, 1.0F);
-      var10003 = 6735;
-      var10004 = 4854893744295874207L ^ a;
       a.cun = new bes("Max CPS", 20.0F, 0.0F, 20.0F, 1.0F);
-      var10003 = 21073;
-      var10004 = 5172106939856307868L ^ a;
-      short var87 = 8776;
-      var10005 = 8048591478283974332L ^ a;
       String[] var149 = new String[3];
-      var10008 = 8776;
-      var10009 = 8048591478283974332L ^ a;
       var149[0] = "Off";
-      var10008 = 24324;
-      var10009 = 6812718354373561316L ^ a;
       var149[1] = "Normal";
-      var10008 = 8881;
-      var10009 = 7343145208807765602L ^ a;
       var149[2] = "Force";
       a.cdm = new adu("Wait for Crit", "Off", var149);
-      var10003 = 6967;
-      var10004 = 7466616952640245714L ^ a;
       a.exp = new gbp("Critical Sprint", false);
-      var10003 = 14765;
-      var10004 = 1197878455995739476L ^ a;
       a.fjt = new gbp("Through Walls", true);
-      var10003 = 11412;
-      var10004 = 6499590900719204469L ^ a;
       a.dv = new gbp("Ignore Teammates", true);
-      var10003 = 8262;
-      var10004 = 8761904378432402602L ^ a;
       a.fzp = new gbp("Monsters", true);
-      short var21 = 111;
-      var10004 = 6988904990229501082L ^ a;
       a.aps = new gbp("Animals", false);
-      var21 = 21785;
-      var10004 = 878323906321596865L ^ a;
       a.gln = new gbp("Invisible", false);
-      var21 = 19334;
-      var10004 = 6297799193176301420L ^ a;
       a.fwx = new gbp("ESP", false);
-      var21 = 28460;
-      var10004 = 3932214543222897638L ^ a;
       a.dfg = new bes("Esp Width", 0.8F, 0.0F, 10.0F, 0.1F);
       a.bfx = new ArrayList<>();
       a.auf = new cbm();
@@ -396,8 +282,6 @@ public class KillAura extends guu {
       a.eqv = 0.0F;
       a.arn = 0.0F;
       a.gha = 0.0F;
-      short var10001 = 30352;
-      long var10002 = 2672347950934856588L ^ a;
       ffn[] var4 = new ffn[]{
          a.asa,
          a.bt,
@@ -443,14 +327,8 @@ public class KillAura extends guu {
          null,
          null
       };
-      var21 = 23918;
-      var10004 = 389072126747129966L ^ a;
       var4[6] = a.bjd.bih(a.boi::dnp);
-      var21 = 20544;
-      var10004 = 1492655248843715934L ^ a;
       var4[7] = a.dhq.bih(a.boi::dnp);
-      var21 = 24922;
-      var10004 = 7160138382089880642L ^ a;
       var4[8] = a.djf.bih(() -> {
          long ax = KillAura.a ^ 132229609419692L;
          int[] var3 = dar.abu();
@@ -471,32 +349,14 @@ public class KillAura extends guu {
             return var10000 ? true : false;
          }
       });
-      var21 = 17982;
-      var10004 = 5199729424430637874L ^ a;
       var4[9] = a.esi.bih(a.boi::dnp);
-      var21 = 16017;
-      var10004 = 4603877253517499269L ^ a;
       var4[10] = a.can.bih(a.boi::dnp);
-      var21 = 7702;
-      var10004 = 8695962118922992384L ^ a;
       var4[11] = a.cel.bih(a.boi::dnp);
-      var21 = 4398;
-      var10004 = 7398818802488243235L ^ a;
       var4[12] = a.bdd;
-      var21 = 28161;
-      var10004 = 9167343362656668416L ^ a;
       var4[13] = a.bsp.bih(a.bdd::dnp);
-      var21 = 22376;
-      var10004 = 1648876643597365874L ^ a;
       var4[14] = a.gbw.bih(a.bdd::dnp);
-      var21 = 4072;
-      var10004 = 617515323776559852L ^ a;
       var4[15] = a.esx.bih(a.bdd::dnp);
-      var21 = 26671;
-      var10004 = 8370672247831891254L ^ a;
       var4[16] = a.bcj;
-      var21 = 14064;
-      var10004 = 8257179477929677764L ^ a;
       var4[17] = a.gfr.bih(() -> {
          long ax = KillAura.a ^ 37627143629101L;
          int[] var3 = dar.abu();
@@ -522,8 +382,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      var21 = 23533;
-      var10004 = 2713845485752598270L ^ a;
       var4[18] = a.cbe.bih(() -> {
          long ax = KillAura.a ^ 63732934945894L;
          int[] var3 = dar.abu();
@@ -549,8 +407,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      var21 = 8041;
-      var10004 = 8102734198901766763L ^ a;
       var4[19] = a.dbv.bih(() -> {
          long ax = KillAura.a ^ 89312239616164L;
          int[] var3 = dar.abu();
@@ -576,8 +432,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      var21 = 17739;
-      var10004 = 6240451477255692414L ^ a;
       var4[20] = a.aud.bih(() -> {
          long ax = KillAura.a ^ 10215587474665L;
          int[] var3 = dar.abu();
@@ -603,32 +457,14 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      var21 = 22352;
-      var10004 = 3740964033088303704L ^ a;
       var4[21] = a.fuf.bih(a.bdd::dnp);
-      var21 = 32609;
-      var10004 = 8245255592289606248L ^ a;
       var4[22] = a.bgu.bih(a.bdd::dnp);
-      var21 = 26443;
-      var10004 = 5704700054887891533L ^ a;
       var4[23] = a.ghi.bih(a.bdd::dnp);
-      var21 = 3125;
-      var10004 = 801187845230225700L ^ a;
       var4[24] = a.ffp.bih(a.bdd::dnp);
-      var21 = 12701;
-      var10004 = 7939269895068603546L ^ a;
       var4[25] = a.dnl;
-      var21 = 26526;
-      var10004 = 7564019096876778121L ^ a;
       var4[26] = a.cbu;
-      var21 = 26498;
-      var10004 = 8224927408624075415L ^ a;
       var4[27] = a.cdm;
-      var21 = 5703;
-      var10004 = 2076359248143151962L ^ a;
       var4[28] = a.exp;
-      var21 = 18517;
-      var10004 = 2828219615374421326L ^ a;
       var4[29] = a.ecs.bih(() -> {
          long ax = KillAura.a ^ 90531660610396L;
          int[] var3 = dar.abu();
@@ -639,8 +475,6 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      var21 = 15859;
-      var10004 = 5640458554369628408L ^ a;
       var4[30] = a.cun.bih(() -> {
          long ax = KillAura.a ^ 98979080666413L;
          int[] var3 = dar.abu();
@@ -651,26 +485,12 @@ public class KillAura extends guu {
 
          return var10000;
       });
-      var21 = 831;
-      var10004 = 6578682993112704570L ^ a;
       var4[31] = a.fjt;
-      var21 = 17215;
-      var10004 = 9005640626043561481L ^ a;
       var4[32] = a.fzp;
-      var21 = 29583;
-      var10004 = 376269544556271237L ^ a;
       var4[33] = a.dv;
-      var21 = 4836;
-      var10004 = 2245036405572990964L ^ a;
       var4[34] = a.aps;
-      var21 = 2067;
-      var10004 = 5728994261999906077L ^ a;
       var4[35] = a.gln;
-      var21 = 27918;
-      var10004 = 7309988060905703441L ^ a;
       var4[36] = a.fwx;
-      var21 = 6142;
-      var10004 = 2197031402323931849L ^ a;
       var4[37] = a.dfg.bih(a.fwx::dnp);
       a.bfi(var4);
       if (!ffn.gsn()) {
@@ -720,8 +540,6 @@ public class KillAura extends guu {
                      break label132;
                   }
 
-                  short var10001 = 31820;
-                  long var10002 = 8388466432408669660L ^ ax;
                   var10000 = a.asa.emb("Switch");
                }
 
@@ -763,8 +581,6 @@ public class KillAura extends guu {
                return;
             }
 
-            short var10 = 12938;
-            long var12 = 9005623697657660164L ^ ax;
             var10000 = a.asa.emb("Single");
          }
 
@@ -792,8 +608,6 @@ public class KillAura extends guu {
                      break label135;
                   }
 
-                  short var11 = 7059;
-                  long var13 = 4456349392173625312L ^ ax;
                   var10000 = a.acr.fsc(200L);
                }
 
@@ -885,8 +699,6 @@ public class KillAura extends guu {
                         break label496;
                      }
 
-                     short var10001 = 7374;
-                     long var10002 = 585562561062061483L ^ a;
                      var23 = a.atx.fsc(150L);
                   }
 
@@ -907,8 +719,6 @@ public class KillAura extends guu {
                if (ax != null) {
                   switch (var23) {
                      case 2581482:
-                        short var41 = 4213;
-                        long var52 = 8431925581969657061L ^ a;
                         var23 = var14.equals("Snap");
                         if (ax == null) {
                            break label466;
@@ -923,8 +733,6 @@ public class KillAura extends guu {
                            break;
                         }
                      case -54989294:
-                        short var42 = 23048;
-                        long var53 = 2247974840935499417L ^ a;
                         var23 = var14.equals("MouseSim");
                         if (ax == null) {
                            break label466;
@@ -981,8 +789,6 @@ public class KillAura extends guu {
 
                      KillAura var28 = a;
                      if (ax != null) {
-                        short var43 = 25547;
-                        long var54 = 8549296403068500648L ^ a;
                         if (a.aap.fsc(350L)) {
                            a.arn = a.gfi();
                            a.gha = a.hgc();
@@ -1110,8 +916,6 @@ public class KillAura extends guu {
                   }
 
                   String var33 = a.cdm.dnp();
-                  short var44 = 10196;
-                  long var55 = 2066482092537002823L ^ a;
                   var32 = var33.equals("Normal");
                }
 
@@ -1129,16 +933,12 @@ public class KillAura extends guu {
                   }
 
                   String var34 = a.cdm.dnp();
-                  short var45 = 10196;
-                  long var56 = 2066482092537002823L ^ a;
                   var32 = var34.equals("Normal");
                }
 
                if (ax != null) {
                   if (var32 == 0) {
                      String var35 = a.cdm.dnp();
-                     short var46 = 17297;
-                     long var57 = 2048681594821828385L ^ a;
                      var32 = var35.equals("Force");
                      if (ax == null) {
                         break label413;
@@ -1178,7 +978,6 @@ public class KillAura extends guu {
                a.exv = (boolean)var47;
                if (axxxxxxxx != 0) {
                   var47 = 24240;
-                  long var58 = 2551410835741622827L ^ a;
                   var23 = a.dhq.emb("Modern Watchdog");
                   if (ax == null) {
                      break label376;
@@ -1213,8 +1012,6 @@ public class KillAura extends guu {
             }
 
             if (axxxxxxxx != 0) {
-               short var49 = 24240;
-               long var59 = 2551410835741622827L ^ a;
                var23 = a.dhq.emb("Modern Watchdog");
                if (ax == null) {
                   break label363;
@@ -1255,16 +1052,12 @@ public class KillAura extends guu {
       if (ax != null) {
          if (var23 != 0) {
             String var39 = a.dhq.dnp().toLowerCase();
-            short var50 = 2344;
-            long var60 = 710829668127184269L ^ a;
             var23 = var39.contains("watchdog");
             if (ax == null) {
                break label343;
             }
 
             if (var23 != 0) {
-               var50 = 28323;
-               var60 = 6536745780389081646L ^ a;
                var23 = a.dhq.emb("Modern Watchdog Post");
                if (ax == null) {
                   break label343;
@@ -1444,8 +1237,6 @@ public class KillAura extends guu {
       if (axx != null) {
          switch (var10) {
             case 1897755483:
-               short var10001 = 15871;
-               long var10002 = 2257801865483517000L ^ ax;
                var10 = var5.equals("Vanilla");
                if (axx == null) {
                   break label202;
@@ -1460,8 +1251,6 @@ public class KillAura extends guu {
                   break;
                }
             case 64274236:
-               short var16 = 32538;
-               long var22 = 5681301331754204830L ^ ax;
                var10 = var5.equals("Blink");
                if (axx == null) {
                   break label202;
@@ -1476,8 +1265,6 @@ public class KillAura extends guu {
                   break;
                }
             case 430277554:
-               short var17 = 28323;
-               long var23 = 6536724063248232215L ^ ax;
                var10 = var5.equals("Modern Watchdog Post");
                if (axx == null) {
                   break label202;
@@ -1492,8 +1279,6 @@ public class KillAura extends guu {
                   break;
                }
             case 1239695398:
-               short var18 = 21989;
-               long var24 = 4436319072658068599L ^ ax;
                var10 = var5.equals("Old Watchdog");
                if (axx == null) {
                   break label202;
@@ -1508,8 +1293,6 @@ public class KillAura extends guu {
                   break;
                }
             case 482016750:
-               short var19 = 24240;
-               long var25 = 2551389121650171666L ^ ax;
                var10 = var5.equals("Modern Watchdog");
                if (axx == null) {
                   break label202;
@@ -1561,8 +1344,6 @@ public class KillAura extends guu {
                int axxxx = 0;
 
                while (true) {
-                  short var20 = 6219;
-                  long var26 = 6989926880719841328L ^ ax;
                   label164:
                   if (axxxx < 9) {
                      var11 = ((KeyBindingAccessor)chi.field_1690.field_1852[axxxx]).getTimesPressed();
@@ -1605,8 +1386,6 @@ public class KillAura extends guu {
 
                axxxx = var11;
                int var27 = axxxx + 1;
-               short var10003 = 6219;
-               long var10004 = 6989926880719841328L ^ ax;
                gix.dsd(new class_2868(var27 % 9));
                chi.field_1724.method_6075();
                gix.dsd(new class_2868(axxxx));
@@ -1705,8 +1484,6 @@ public class KillAura extends guu {
                      break label136;
                   }
 
-                  short var10001 = 28323;
-                  long var10002 = 6536710356519137568L ^ ax;
                   var10000 = a.dhq.emb("Modern Watchdog Post");
                }
 
@@ -1740,8 +1517,6 @@ public class KillAura extends guu {
                                  }
                               }
 
-                              short var11 = 22655;
-                              long var16 = 5209693486405289965L ^ ax;
                               bpa.bez("Stopped Keep sprint");
                            }
 
@@ -1800,8 +1575,6 @@ public class KillAura extends guu {
             return;
          }
 
-         short var17 = 21989;
-         long var18 = 4436305364719962688L ^ ax;
          var15 = a.dhq.emb("Old Watchdog");
       }
 
@@ -1935,8 +1708,6 @@ public class KillAura extends guu {
       }
 
       boolean axxx = var10000;
-      short var10001 = 21989;
-      long var10002 = 4436324140091114957L ^ ax;
       var10000 = a.dhq.emb("Old Watchdog");
       label57:
       if (axx != null) {
@@ -1948,8 +1719,6 @@ public class KillAura extends guu {
 
             if (a.heb) {
                int axxxx = chi.field_1724.method_31548().method_67532();
-               short var10003 = 16746;
-               long var10004 = 4826445569647075495L ^ ax;
                gix.dsd(new class_2868(axxxx % 8 + 1));
                gix.dsd(new class_2868(axxxx));
                a.heb = false;
@@ -2015,8 +1784,6 @@ public class KillAura extends guu {
       long a = KillAura.a ^ 65975195564891L;
       double var10000 = crg.gj(-a.dbv.dnp().floatValue(), a.dbv.dnp().floatValue());
       long var10001 = System.currentTimeMillis();
-      short var10002 = 27358;
-      long var10003 = 1844852272521036843L ^ a;
       return (float)(var10000 + Math.sin(var10001 % 2000L / 200.0) * 0.5);
    }
 
@@ -2024,8 +1791,6 @@ public class KillAura extends guu {
       long a = KillAura.a ^ 116180376116719L;
       double var10000 = crg.gj(-a.aud.dnp().floatValue(), a.aud.dnp().floatValue());
       long var10001 = System.currentTimeMillis();
-      short var10002 = 23910;
-      long var10003 = 1430922943298983205L ^ a;
       return (float)(var10000 + Math.cos(var10001 % 1750L / 150.0) * 0.3F);
    }
 

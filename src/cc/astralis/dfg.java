@@ -26,15 +26,10 @@ public class dfg extends brc {
 
    public dfg() {
       long a = c ^ 113410352141651L;
-      short var10001 = 19390;
-      long var10002 = 4359463895358576808L ^ a;
       super(13);
    }
 
    public dfg(String message) {
-      long ax = c ^ 123179699645242L;
-      short var10001 = 937;
-      long var10002 = 1458463832947437276L ^ ax;
       super(13);
       a.bwv = a;
    }
@@ -159,16 +154,12 @@ public class dfg extends brc {
                            String var24;
                            int var26 = (var24 = var11[2]).length();
                            String var34 = var11[1];
-                           short var44 = 28549;
-                           long var54 = 7447582599453281879L ^ var20;
                            char var23 = ',';
                            abv(var34);
                            int var31 = -1;
 
                            label44:
                            while (true) {
-                              short var35 = 14012;
-                              long var45 = 3113170231752054630L ^ var20;
                               byte var36 = 89;
                               String var46 = var24.substring(++var31, var31 + var23);
                               byte var55 = -1;
@@ -193,14 +184,10 @@ public class dfg extends brc {
                                        }
 
                                        var26 = (var24 = var11[0]).length();
-                                       short var38 = 3889;
-                                       long var47 = 4756830132088303335L ^ var20;
                                        var23 = '`';
                                        var31 = -1;
                                  }
 
-                                 short var39 = 24555;
-                                 long var48 = 6378485113450511935L ^ var20;
                                  var36 = 52;
                                  var46 = var24.substring(++var31, var31 + var23);
                                  var55 = 0;
@@ -242,12 +229,9 @@ public class dfg extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 137422171975523L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 7688;
-         long var10005 = 1922831802259912493L ^ var1;
          var10000[0] = (char)(var10003 ^ 16);
       }
 
@@ -255,7 +239,6 @@ public class dfg extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 16528230084704L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -263,43 +246,34 @@ public class dfg extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 26012;
-         long var10009 = 299463221591118781L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 488;
-               long var23 = 1740463656303425475L ^ var2;
                var10 = 116;
                break;
             case 1:
                var10 = 2039;
-               long var22 = 2645867319613977047L ^ var2;
                var10 = 108;
                break;
             case 2:
                var10 = 10272;
-               long var21 = 9028971946286734855L ^ var2;
                var10 = 33;
                break;
             case 3:
                var10 = 29851;
-               long var20 = 2899429517746307768L ^ var2;
                var10 = 24;
                break;
             case 4:
                var10 = 23253;
-               long var19 = 657252635843800316L ^ var2;
                var10 = 54;
                break;
             case 5:
                var10 = 18614;
-               long var18 = 5924115656563932827L ^ var2;
                var10 = 87;
                break;
             default:
                var10 = 27216;
-               long var17 = 4468014430268497016L ^ var2;
                var10 = 16;
          }
 

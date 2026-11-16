@@ -45,126 +45,44 @@ public class NoSlow extends guu {
    public NoSlow() {
       long a = NoSlow.a ^ 138637625847497L;
       super(bfm.MOVEMENT);
-      short var10003 = 3803;
-      long var10004 = 6267486136414697718L ^ a;
       a.cyb = new bes("Sword Slow Down", 1.0F, 0.0F, 1.0F, 0.1F);
-      var10003 = 12524;
-      var10004 = 8215632664320558813L ^ a;
       a.dqr = new bes("Food Slow Down", 1.0F, 0.0F, 1.0F, 0.1F);
-      var10003 = 21499;
-      var10004 = 2782855184870876615L ^ a;
       a.bot = new bes("Potion Slow Down", 1.0F, 0.0F, 1.0F, 0.1F);
-      var10003 = 30661;
-      var10004 = 644654896559161842L ^ a;
       a.hhp = new bes("Bow Slow Down", 1.0F, 0.0F, 1.0F, 0.1F);
-      var10003 = 19724;
-      var10004 = 2818260313785645877L ^ a;
-      short var17 = 21622;
-      long var10005 = 2403615018414285401L ^ a;
-      short var26 = 31879;
-      long var10006 = 380465023115508883L ^ a;
       String[] var27 = new String[6];
-      short var10008 = 17610;
-      long var10009 = 7814069474392290046L ^ a;
       var27[0] = "Vanilla";
-      var10008 = 22616;
-      var10009 = 1230789603910168160L ^ a;
       var27[1] = "Watchdog";
-      var10008 = 31490;
-      var10009 = 1910881018891537721L ^ a;
       var27[2] = "Old Watchdog";
-      var10008 = 16775;
-      var10009 = 2453581343718913976L ^ a;
       var27[3] = "No Cheat Plus";
-      var10008 = 32711;
-      var10009 = 3263373070103022073L ^ a;
       var27[4] = "Old Intave";
-      var10008 = 9044;
-      var10009 = 108810655704208750L ^ a;
       var27[5] = "Intave";
       a.cna = new adu("Sword Method", "Vanilla", var27);
-      var10003 = 22568;
-      var10004 = 7771874118648278552L ^ a;
-      short var19 = 17610;
-      var10005 = 7814069474392290046L ^ a;
-      short var29 = 6144;
-      var10006 = 4561190852717795345L ^ a;
       String[] var30 = new String[6];
-      var10008 = 17610;
-      var10009 = 7814069474392290046L ^ a;
       var30[0] = "Vanilla";
-      var10008 = 22616;
-      var10009 = 1230789603910168160L ^ a;
       var30[1] = "Watchdog";
-      var10008 = 31490;
-      var10009 = 1910881018891537721L ^ a;
       var30[2] = "Old Watchdog";
-      var10008 = 3788;
-      var10009 = 5935845792980236537L ^ a;
       var30[3] = "No Cheat Plus";
-      var10008 = 22327;
-      var10009 = 6195165464779039003L ^ a;
       var30[4] = "Old Intave";
-      var10008 = 9044;
-      var10009 = 108810655704208750L ^ a;
       var30[5] = "Intave";
       a.cdx = new adu("Food Method", "Vanilla", var30);
-      var10003 = 21953;
-      var10004 = 6547438826432570359L ^ a;
-      short var21 = 17610;
-      var10005 = 7814069474392290046L ^ a;
       String[] var32 = new String[5];
-      var10008 = 17610;
-      var10009 = 7814069474392290046L ^ a;
       var32[0] = "Vanilla";
-      var10008 = 22616;
-      var10009 = 1230789603910168160L ^ a;
       var32[1] = "Watchdog";
-      var10008 = 31490;
-      var10009 = 1910881018891537721L ^ a;
       var32[2] = "Old Watchdog";
-      var10008 = 3788;
-      var10009 = 5935845792980236537L ^ a;
       var32[3] = "No Cheat Plus";
-      var10008 = 22327;
-      var10009 = 6195165464779039003L ^ a;
       var32[4] = "Old Intave";
       a.cfs = new adu("Potion Method", "Vanilla", var32);
-      var10003 = 21221;
-      var10004 = 410947605026022616L ^ a;
-      short var23 = 17610;
-      var10005 = 7814069474392290046L ^ a;
-      short var34 = 6144;
-      var10006 = 4561190852717795345L ^ a;
       String[] var35 = new String[6];
-      var10008 = 17610;
-      var10009 = 7814069474392290046L ^ a;
       var35[0] = "Vanilla";
-      var10008 = 22616;
-      var10009 = 1230789603910168160L ^ a;
       var35[1] = "Watchdog";
-      var10008 = 31490;
-      var10009 = 1910881018891537721L ^ a;
       var35[2] = "Old Watchdog";
-      var10008 = 3788;
-      var10009 = 5935845792980236537L ^ a;
       var35[3] = "No Cheat Plus";
-      var10008 = 22327;
-      var10009 = 6195165464779039003L ^ a;
       var35[4] = "Old Intave";
-      var10008 = 9044;
-      var10009 = 108810655704208750L ^ a;
       var35[5] = "Intave";
       a.djx = new adu("Bow Method", "Vanilla", var35);
       a.cbc = false;
-      short var10001 = 15372;
-      long var10002 = 8888174062860172316L ^ a;
       ffn[] var3 = new ffn[]{a.cyb, a.dqr, a.bot, a.hhp, a.cna, a.cdx, null, null};
-      var10003 = 6144;
-      var10004 = 4561190852717795345L ^ a;
       var3[6] = a.cfs;
-      var10003 = 6753;
-      var10004 = 2893631398828235379L ^ a;
       var3[7] = a.djx;
       a.bfi(var3);
    }
@@ -178,8 +96,6 @@ public class NoSlow extends guu {
       int var8 = chi.field_1724.method_6115();
       if (axxx != null) {
          if (var8 == 0) {
-            short var10003 = 31391;
-            long var10004 = 698752042421067500L ^ ax;
             a.axl = new dgz("none", 1.0F);
             a.bb = 0;
             if (axxx != null) {
@@ -188,8 +104,6 @@ public class NoSlow extends guu {
                   a.cbc = true;
                }
 
-               short var15 = 13049;
-               long var22 = 8255025353184040587L ^ ax;
                gxk.dfh("use");
             }
 
@@ -247,8 +161,6 @@ public class NoSlow extends guu {
       if (axxx != null) {
          switch (var9) {
             case 609795629:
-               short var10001 = 9939;
-               long var10002 = 3477962412118033058L ^ ax;
                var9 = var6.equals("Watchdog");
                if (axxx == null) {
                   break label180;
@@ -263,8 +175,6 @@ public class NoSlow extends guu {
                   break;
                }
             case 1239695398:
-               short var16 = 7159;
-               long var23 = 8934748476034678686L ^ ax;
                var9 = var6.equals("Old Watchdog");
                if (axxx == null) {
                   break label180;
@@ -279,8 +189,6 @@ public class NoSlow extends guu {
                   break;
                }
             case -2099899231:
-               short var17 = 16402;
-               long var24 = 6159235864915747962L ^ ax;
                var9 = var6.equals("Intave");
                if (axxx == null) {
                   break label180;
@@ -311,8 +219,6 @@ public class NoSlow extends guu {
             }
 
             if (axxx != null) {
-               short var18 = 30873;
-               long var25 = 6456385151241464534L ^ ax;
                label149:
                if (var9 > 12) {
                   label147: {
@@ -326,8 +232,6 @@ public class NoSlow extends guu {
                      }
 
                      var10.ckv();
-                     short var11 = 10440;
-                     long var19 = 4836100097701104824L ^ ax;
                      gxk.fcv("use");
                      a.cbc = false;
                      if (axxx != null) {
@@ -335,8 +239,6 @@ public class NoSlow extends guu {
                      }
                   }
 
-                  short var12 = 10440;
-                  long var20 = 4836100097701104824L ^ ax;
                   gxk.gbu("use", a.bb / 30.0F);
                }
 
@@ -373,8 +275,6 @@ public class NoSlow extends guu {
             }
 
             var13.fxn();
-            short var14 = 10440;
-            long var21 = 4836100097701104824L ^ ax;
             gxk.dfh("use");
             a.cbc = true;
             if (axxx != null) {
@@ -407,8 +307,6 @@ public class NoSlow extends guu {
       long ax = NoSlow.a ^ 135973568216283L;
       if (a.cud() != gpy.POST) {
          String var10000 = a.axl.fnn();
-         short var10001 = 22616;
-         long var10002 = 1230785767325088882L ^ ax;
          if (var10000.equals("Watchdog")) {
             return;
          }
@@ -424,8 +322,6 @@ public class NoSlow extends guu {
       long ax = NoSlow.a ^ 91579069438112L;
       int[] var4 = dar.abu();
       String var10000 = a.cdx.dnp();
-      short var10001 = 22616;
-      long var10002 = 1230760068016297993L ^ ax;
       int var5 = var10000.equals("Watchdog");
       if (var4 != null) {
          if (var5 == 0) {
@@ -436,8 +332,6 @@ public class NoSlow extends guu {
       }
 
       if (var4 != null) {
-         var10001 = 12728;
-         var10002 = 1851194449450928066L ^ ax;
          if (var5 <= 12) {
             return;
          }

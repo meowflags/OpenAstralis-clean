@@ -65,8 +65,6 @@ public class coc extends class_437 {
             gnp axxxx;
             label25: {
                axxx = var5[var7];
-               short var10003 = 26710;
-               long var10004 = 2983158060980685240L ^ a;
                axxxx = new gnp(axxx, 21);
                coc var11 = a;
                if (axx != null) {
@@ -105,11 +103,7 @@ public class coc extends class_437 {
    public void method_25394(class_332 context, int mouseX, int mouseY, float deltaTicks) {
       dfr.bmt(() -> {
          long ax = coc.a ^ 72439465396748L;
-         short var10001 = 3850;
-         long var10002 = 6330476676907582552L ^ ax;
          float axx = (a.field_22789 - 360) * 0.5F;
-         var10001 = 10825;
-         var10002 = 8600600644738703644L ^ ax;
          float axxx = (a.field_22790 - 218) * 0.5F;
          float axxxx = 6.0F;
          RRect axxxxx = RRect.makeXYWH(dmp.dxk(axx), dmp.dxk(axxx), dmp.dxk(366.0F), dmp.dxk(224.0F), dmp.dxk(8.0F));
@@ -125,12 +119,8 @@ public class coc extends class_437 {
    private void fzv(float a, float a) {
       long ax = coc.a ^ 28586073454582L;
       int[] var10000 = dar.abu();
-      short var10002 = 8309;
-      long var10003 = 8923465933053482718L ^ ax;
       float axx = (a.field_22789 - 360) * 0.5F;
       int[] axxx = var10000;
-      short var10001 = 6809;
-      long var18 = 867974516226976819L ^ ax;
       float axxxx = (a.field_22790 - 218) * 0.5F;
       dmp.cpp(axx, axxxx, 360.0F, 218.0F, 8.0F, bbw);
       dmp.caz(axx, axxxx, 35.0F, 218.0F, 8.0F, 0.0F, 0.0F, 8.0F, egi);
@@ -141,8 +131,6 @@ public class coc extends class_437 {
          axxxxxxx.ckn(axxxxx, axxxxxx, a, a);
          if (axxx != null) {
             if (a.bal == axxxxxxx) {
-               short var15 = 8440;
-               long var16 = 4688289572783314517L ^ ax;
                int axxxxxxxx = 6;
                dmp.caz(axxxxx + 6.0F, axxxxxx + axxxxxxx.ajg(), axxxxxxx.arq() - 12.0F, 1.5F, 0.0F, 0.0F, 1.0F, 1.0F, Color.white);
             }
@@ -155,8 +143,6 @@ public class coc extends class_437 {
          }
       }
 
-      var10001 = 29158;
-      long var19 = 5580513273170200392L ^ ax;
       fll axxxxxxx = bxc.emc(b, 21);
       ezv axxxxxxxx = dar.gqy().aws().diy(ezv.class);
       axxxxxxx.aof("A", axxxxx + 3.5F, axxxx + 7.0F, axxxxxxxx.ehf.dnp());
@@ -364,37 +350,15 @@ public class coc extends class_437 {
                   if (var2 >= var5) {
                      c = var6;
                      d = new Integer[17];
-                     short var19 = 27460;
-                     long var28 = var14 ^ 8144178352657287143L;
                      ejc = 5;
-                     short var20 = 20435;
-                     long var29 = var14 ^ 6738575292218205033L;
                      fgr = 35;
-                     short var21 = 25727;
-                     long var30 = var14 ^ 3870467266380974294L;
                      ciq = 21;
-                     short var22 = 27552;
-                     long var31 = var14 ^ 4238762823526467340L;
                      fzw = 218;
-                     short var23 = 16084;
-                     long var32 = var14 ^ 5618140980324569715L;
                      bpx = 7;
-                     short var24 = 11664;
-                     long var33 = var14 ^ 2534670748621701429L;
                      gsj = 360;
-                     short var38 = 11392;
-                     long var43 = 4658603601223188518L ^ var14;
-                     short var44 = 17041;
                      var47 = 4975100582038990389L ^ var14;
-                     short var49 = 17041;
-                     long var10005 = 4975100582038990389L ^ var14;
                      bbw = new Color(25, 25, 25);
-                     short var39 = 26839;
-                     long var45 = 6991707214490059893L ^ var14;
-                     short var46 = 17977;
                      var47 = 4125661018832267929L ^ var14;
-                     short var51 = 17977;
-                     var10005 = 4125661018832267929L ^ var14;
                      egi = new Color(30, 30, 30);
                      csi = axb.afp(() -> {
                         Paint a = new Paint();

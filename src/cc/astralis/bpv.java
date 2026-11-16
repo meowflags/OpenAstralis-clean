@@ -28,13 +28,9 @@ class bpv implements ThreadFactory {
    public Thread newThread(@NonNull Runnable r) {
       long ax = bpv.a ^ 132814691141656L;
       if (a == null) {
-         short var10002 = 27287;
-         long var4 = 2100858866244537143L ^ ax;
          throw new NullPointerException("r is marked non-null but is null");
       } else {
          int var10003 = a.dwa.incrementAndGet();
-         short var10004 = 17830;
-         long var10005 = 3714488192228647943L ^ ax;
          return new Thread(a, "Multithreading Thread " + var10003);
       }
    }
@@ -62,7 +58,6 @@ class bpv implements ThreadFactory {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

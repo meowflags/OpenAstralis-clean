@@ -97,7 +97,6 @@ public class dmp {
    }
 
    private static void bzp() {
-      long var0 = a ^ 3326783196086L;
       int[] var2 = dar.abu();
       Path var10000 = bqh;
       if (var2 != null) {
@@ -324,14 +323,8 @@ public class dmp {
 
    public static void caz(float x, float y, float w, float h, float tl, float tr, float br, float bl, Color color) {
       long ax = dmp.a ^ 83765468085614L;
-      short var10000 = 1111;
-      long var10001 = 228152265225545627L ^ ax;
       float[] var12 = new float[]{a, a, a, a, a, a, 0.0F, 0.0F};
-      short var10002 = 5905;
-      long var10003 = 8632231305801250003L ^ ax;
       var12[6] = a;
-      var10002 = 2682;
-      var10003 = 6405146246352382391L ^ ax;
       var12[7] = a;
       float[] axx = adt(var12);
       flb.reset().setAntiAlias(true).setColor(a.getRGB());
@@ -348,14 +341,8 @@ public class dmp {
    public static void dwy(float x, float y, float w, float h, float tl, float tr, float br, float bl, Color fillColor, float thickness, Color outlineColor) {
       long ax = dmp.a ^ 87780662646383L;
       caz(a, a, a, a, a, a, a, a, a);
-      short var10000 = 12431;
-      long var10001 = 2017813069444364358L ^ ax;
       float[] var15 = new float[]{a, a, a, a, a, a, 0.0F, 0.0F};
-      short var10002 = 26674;
-      long var10003 = 94612710223503613L ^ ax;
       var15[6] = a;
-      var10002 = 9924;
-      var10003 = 8473817378112876047L ^ ax;
       var15[7] = a;
       float[] axx = adt(var15);
       RRect axxx = RRect.makeComplexXYWH(dxk(a), dxk(a), dxk(a), dxk(a), axx);
@@ -380,14 +367,8 @@ public class dmp {
 
    public static void cdw(float x, float y, float w, float h, float tl, float tr, float br, float bl, Color c1, Color c2, boolean vertical) {
       long ax = dmp.a ^ 87565853405474L;
-      short var10000 = 1111;
-      long var10001 = 228149547159137239L ^ ax;
       float[] var15 = new float[]{a, a, a, a, a, a, 0.0F, 0.0F};
-      short var10002 = 5905;
-      long var10003 = 8632234076438542495L ^ ax;
       var15[6] = a;
-      var10002 = 2682;
-      var10003 = 6405144617904023035L ^ ax;
       var15[7] = a;
       float[] axx = adt(var15);
       Paint axxx = new Paint().setAntiAlias(true).setShader(gkg(a, a, a, a, a.getRGB(), a.getRGB(), a));
@@ -407,14 +388,8 @@ public class dmp {
    ) {
       long ax = dmp.a ^ 25275640050743L;
       caz(a, a, a, a, a, a, a, a, a);
-      short var10000 = 1111;
-      long var10001 = 228229567465909954L ^ ax;
       float[] var18 = new float[]{a, a, a, a, a, a, 0.0F, 0.0F};
-      short var10002 = 5905;
-      long var10003 = 8632136531592215946L ^ ax;
       var18[6] = a;
-      var10002 = 2682;
-      var10003 = 6405240450737856750L ^ ax;
       var18[7] = a;
       float[] axx = adt(var18);
       RRect axxx = RRect.makeComplexXYWH(dxk(a), dxk(a), dxk(a), dxk(a), axx);
@@ -583,18 +558,12 @@ public class dmp {
       int[] ax = new int[1];
       int[] axx = new int[1];
       int var10000 = 20692;
-      long var10001 = 7291002405971203326L ^ a;
       GL30.glGetIntegerv(33307, ax);
       var10000 = (short)11945;
-      var10001 = 7957702268429724297L ^ a;
       GL30.glGetIntegerv(33308, axx);
       var10000 = ax[0];
-      short var8 = 9145;
-      long var10002 = 7522420841151227807L ^ a;
       var10000 *= 100;
       int var9 = axx[0];
-      short var10 = 23475;
-      long var10003 = 1446809344614277009L ^ a;
       return var10000 + var9 * 10;
    }
 
@@ -681,9 +650,7 @@ public class dmp {
                         short var3x = 5554;
                         long var10003x = 4139833035977564119L ^ a;
                         short var4x = 5554;
-                        long var10004 = 4139833035977564119L ^ a;
                         short var5x = 5554;
-                        long var10005 = 4139833035977564119L ^ a;
                         ax.setColor(io.github.humbleui.skija.Color.makeARGB(255, 255, 255, 255));
                         return ax;
                      });

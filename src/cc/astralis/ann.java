@@ -31,7 +31,6 @@ public class ann {
    }
 
    public static boolean aqv() {
-      long var0 = a ^ 2475613841317L;
       boolean var2 = fvz();
       return !var2;
    }

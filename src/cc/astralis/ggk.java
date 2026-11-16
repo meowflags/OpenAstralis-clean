@@ -28,15 +28,10 @@ public class ggk extends brc {
 
    public ggk() {
       long a = c ^ 28486729011941L;
-      short var10001 = 12947;
-      long var10002 = 8200238724322789685L ^ a;
       super(108);
    }
 
    public ggk(String moduleName, String moduleDescription) {
-      long ax = c ^ 137470388218019L;
-      short var10001 = 16551;
-      long var10002 = 1951684291614163269L ^ ax;
       super(108);
       a.cvd = a;
       a.fpc = a;
@@ -54,7 +49,6 @@ public class ggk extends brc {
    public String cql() {
       long a = c ^ 129956773087986L;
       int[] var10000 = dar.abu();
-      long ax = m;
       JsonObject axx = a.fdo();
       String[] var10001 = bcy.drn();
       Object[] var10004 = new Object[4];
@@ -216,10 +210,7 @@ public class ggk extends brc {
                               | (var4[5] & 255L) << 16
                               | (var4[6] & 255L) << 8
                               | var4[7] & 255L;
-                           byte var50 = -1;
                            m = var61;
-                           short var40 = 1506;
-                           long var51 = 8182360652130763542L ^ var25;
                            String[] var32 = new String[6];
                            int var30 = 0;
                            String var29;
@@ -231,8 +222,6 @@ public class ggk extends brc {
 
                            label50:
                            while (true) {
-                              short var42 = 10989;
-                              long var52 = 2151079907272977439L ^ var25;
                               byte var43 = 115;
                               String var53 = var29.substring(++var36, var36 + var28);
                               byte var62 = -1;
@@ -261,8 +250,6 @@ public class ggk extends brc {
                                        var36 = -1;
                                  }
 
-                                 short var45 = 2768;
-                                 long var54 = 108853082890849319L ^ var25;
                                  var43 = 95;
                                  var53 = var29.substring(++var36, var36 + var28);
                                  var62 = 0;
@@ -304,12 +291,9 @@ public class ggk extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 90577511724390L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 25993;
-         long var10005 = 8383708738507209122L ^ var1;
          var10000[0] = (char)(var10003 ^ 'P');
       }
 
@@ -317,7 +301,6 @@ public class ggk extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 100690459442898L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -325,43 +308,34 @@ public class ggk extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 24000;
-         long var10009 = 5161822245232855643L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 10284;
-               long var23 = 7220429789199810492L ^ var2;
                var10 = 91;
                break;
             case 1:
                var10 = 14830;
-               long var22 = 3580024649520787063L ^ var2;
                var10 = 87;
                break;
             case 2:
                var10 = 31168;
-               long var21 = 4360990553152745047L ^ var2;
                var10 = 103;
                break;
             case 3:
                var10 = 32608;
-               long var20 = 2767144846474701050L ^ var2;
                var10 = 35;
                break;
             case 4:
                var10 = 8735;
-               long var19 = 8120887529406576009L ^ var2;
                var10 = 88;
                break;
             case 5:
                var10 = 17808;
-               long var18 = 8863162335382983170L ^ var2;
                var10 = 113;
                break;
             default:
                var10 = 22582;
-               long var17 = 8020478521932599210L ^ var2;
                var10 = 80;
          }
 

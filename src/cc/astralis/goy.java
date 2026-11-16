@@ -42,11 +42,7 @@ public class goy extends class_437 implements dlc {
 
    public goy() {
       long a = goy.a ^ 54749214688840L;
-      short var10001 = 25794;
-      long var10002 = 6088978139408288774L ^ a;
       super(class_2561.method_43470("Authentication"));
-      var10001 = 25591;
-      var10002 = 7732223915355090452L ^ a;
       a.epg = 1237867;
    }
 
@@ -56,42 +52,18 @@ public class goy extends class_437 implements dlc {
       int ax = a.field_22789 / 2;
       int axx = a.field_22790 / 2;
       int var10005 = 2072;
-      long var10006 = 3110594050006437835L ^ a;
       int var10004 = ax - 100;
-      short var25 = 8907;
-      long var10007 = 4133414082476991767L ^ a;
       var10005 = axx - 10;
-      short var26 = 12094;
-      var10007 = 3137800110755080431L ^ a;
-      short var34 = 9001;
-      long var10008 = 367769030470034671L ^ a;
-      short var37 = 22455;
-      long var10009 = 3832907705766573380L ^ a;
       a.apj = new class_342(a.field_22793, var10004, var10005, 200, 20, class_2561.method_43470("UID"));
-      short var10001 = 31548;
-      long var10002 = 2996347977660579049L ^ a;
       a.apj.method_1880(64);
-      var10001 = 3188;
-      var10002 = 3832492881375669889L ^ a;
       a.apj.method_47404(class_2561.method_43470("Enter UID"));
       a.method_37063(a.apj);
       a.method_48265(a.apj);
-      short var7 = 8557;
-      long var10003 = 6543144968024130459L ^ a;
       class_7840 var8 = class_4185.method_46430(class_2561.method_43470("Authenticate"), axxx -> a.fzm());
       int var14 = 6077;
-      long var19 = 6717595897362665575L ^ a;
       int var11 = ax - 100;
-      short var20 = 5072;
-      var10006 = 1777981370519475202L ^ a;
       var14 = axx + 25;
-      var20 = 2136;
-      var10006 = 1985195981394956168L ^ a;
-      short var29 = 15887;
-      var10007 = 7166377219584489928L ^ a;
       a.hhx = (class_4185)a.method_37063(var8.method_46434(var11, var14, 200, 20).method_46431());
-      short var9 = 3740;
-      var10003 = 3964922449786317922L ^ a;
       class_7840 var10 = class_4185.method_46430(class_2561.method_43470("Copy HWID"), axxx -> {
          long ax = goy.a ^ 9042436811401L;
          int[] var10000 = dar.abu();
@@ -111,15 +83,8 @@ public class goy extends class_437 implements dlc {
          }
       });
       int var16 = 6077;
-      long var22 = 6717595897362665575L ^ a;
       int var13 = ax - 100;
-      var20 = 30723;
-      var10006 = 2542896921711853527L ^ a;
       var16 = axx + 50;
-      var20 = 2136;
-      var10006 = 1985195981394956168L ^ a;
-      short var32 = 15887;
-      var10007 = 7166377219584489928L ^ a;
       a.ebr = (class_4185)a.method_37063(var10.method_46434(var13, var16, 200, 20).method_46431());
    }
 
@@ -144,8 +109,6 @@ public class goy extends class_437 implements dlc {
             a.auq = true;
             new Thread(() -> {
                long axx = goy.a ^ 30524670335830L;
-               short var10001 = 9602;
-               long var10002 = 6959102402436337750L ^ axx;
                a.fno = "Authenticating...";
 
                try {
@@ -155,8 +118,6 @@ public class goy extends class_437 implements dlc {
                }
 
                if (aml.gkg) {
-                  var10001 = 15798;
-                  var10002 = 1784583906916862057L ^ axx;
                   a.fno = "Failed to authenticate";
                }
             }).start();
@@ -178,8 +139,6 @@ public class goy extends class_437 implements dlc {
             return;
          }
 
-         short var10001 = 5122;
-         long var10002 = 7184264070776873797L ^ a;
          var10000 = Objects.equals(aml.eyu, "gud boy");
       }
 
@@ -193,14 +152,10 @@ public class goy extends class_437 implements dlc {
       int[] var4 = dar.abu();
       int var10000 = a.method_74228();
       if (var4 != null) {
-         short var10001 = 30244;
-         long var10002 = 7402174382390367771L ^ ax;
          label27:
          if (var10000 != 257) {
             var10000 = a.method_74228();
             if (var4 != null) {
-               var10001 = 32492;
-               var10002 = 5002925501510377183L ^ ax;
                if (var10000 == 335) {
                   break label27;
                }
@@ -227,32 +182,14 @@ public class goy extends class_437 implements dlc {
             int axx = a.field_22789 / 2;
             int[] axxx = var10000;
             int axxxx = a.field_22790 / 2;
-            short var10002 = 27329;
-            long var10003 = 7070735063694824899L ^ ax;
-            short var10005 = 11729;
-            long var10006 = 5418035609192069089L ^ ax;
             int var10004 = axxxx - 40;
-            var10005 = 7006;
-            var10006 = 5848051368253571439L ^ ax;
             a.method_25300(a.field_22793, "Authentication Required", axx, var10004, 16777215);
-            var10002 = 30528;
-            var10003 = 5109924778825992265L ^ ax;
-            var10005 = 25135;
-            var10006 = 1200944790453303303L ^ ax;
             var10004 = axxxx - 26;
-            var10005 = 19846;
-            var10006 = 2142066665969391533L ^ ax;
             a.method_25300(a.field_22793, "Please enter your UID to continue", axx, var10004, 11184810);
             var10 = a;
             if (axxx != null) {
                if (a.auq && aml.gkg) {
-                  var10002 = 28629;
-                  var10003 = 4926904695811789008L ^ ax;
-                  var10005 = 1154;
-                  var10006 = 2939368242597355191L ^ ax;
                   var10004 = axxxx + 80;
-                  var10005 = 21459;
-                  var10006 = 4549564630635710975L ^ ax;
                   a.method_25300(a.field_22793, "Invalid UID / Could not verify. Please try again.", axx, var10004, 16729413);
                   break label43;
                }
@@ -270,14 +207,8 @@ public class goy extends class_437 implements dlc {
                   break label41;
                }
 
-               short var10001 = 7026;
-               long var12 = 1985972408472282234L ^ ax;
                if (a.fno.equals("Authenticating...")) {
-                  var10005 = 3614;
-                  var10006 = 2211076234360902708L ^ ax;
                   var10004 = axxxx + 80;
-                  var10005 = 2758;
-                  var10006 = 3081830567991562475L ^ ax;
                   a.method_25300(a.field_22793, a.fno, axx, var10004, 16777215);
                }
             }
@@ -417,7 +348,6 @@ public class goy extends class_437 implements dlc {
                                        | (var4[5] & 255L) << 16
                                        | (var4[6] & 255L) << 8
                                        | var4[7] & 255L;
-                                    byte var41 = -1;
                                     h = var50;
                                     return;
                                  }

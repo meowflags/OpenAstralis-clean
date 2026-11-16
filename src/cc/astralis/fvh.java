@@ -161,12 +161,8 @@ public class fvh extends brc {
                         if (var2 >= var5) {
                            g = var6;
                            h = new Integer[14];
-                           short var34 = 8435;
-                           long var46 = 1348846798297481500L ^ var20;
                            String[] var27 = new String[6];
-                           short var35 = 17221;
                            int var25 = 0;
-                           long var47 = 5755532835662176941L ^ var20;
                            String var24;
                            int var26 = (var24 = var11[1]).length();
                            char var23 = 7;
@@ -176,8 +172,6 @@ public class fvh extends brc {
 
                            label44:
                            while (true) {
-                              short var37 = 21633;
-                              long var48 = 5151019575038621039L ^ var20;
                               byte var38 = 48;
                               String var49 = var24.substring(++var31, var31 + var23);
                               byte var57 = -1;
@@ -202,14 +196,10 @@ public class fvh extends brc {
                                        }
 
                                        var26 = (var24 = var11[0]).length();
-                                       short var40 = 16320;
-                                       long var50 = 637938748824968737L ^ var20;
                                        var23 = ',';
                                        var31 = -1;
                                  }
 
-                                 short var41 = 8724;
-                                 long var51 = 1693093009722098681L ^ var20;
                                  var38 = 75;
                                  var49 = var24.substring(++var31, var31 + var23);
                                  var57 = 0;
@@ -251,12 +241,9 @@ public class fvh extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = b ^ 129527921828322L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 27371;
-         long var10005 = 7282483434329560713L ^ var1;
          var10000[0] = (char)(var10003 ^ 'p');
       }
 
@@ -264,7 +251,6 @@ public class fvh extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = b ^ 15776600342754L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -272,43 +258,34 @@ public class fvh extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 14292;
-         long var10009 = 2328994004230974142L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 12148;
-               long var23 = 8015609686248174106L ^ var2;
                var10 = 54;
                break;
             case 1:
                var10 = 27131;
-               long var22 = 39158387528266904L ^ var2;
                var10 = 16;
                break;
             case 2:
                var10 = 21444;
-               long var21 = 7332702329268915885L ^ var2;
                var10 = 85;
                break;
             case 3:
                var10 = 18639;
-               long var20 = 7016307288698738095L ^ var2;
                var10 = 56;
                break;
             case 4:
                var10 = 13791;
-               long var19 = 7994316622752393396L ^ var2;
                var10 = 41;
                break;
             case 5:
                var10 = 15887;
-               long var18 = 4209821047818953578L ^ var2;
                var10 = 109;
                break;
             default:
                var10 = 17462;
-               long var17 = 8734071210628241753L ^ var2;
                var10 = 112;
          }
 

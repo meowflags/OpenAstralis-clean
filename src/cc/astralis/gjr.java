@@ -24,12 +24,8 @@ public class gjr extends fso {
    public gjr() {
       long a = gjr.a ^ 5162268546907L;
       String[] var10001 = new String[2];
-      short var10004 = 15196;
-      long var10005 = 512088540700085860L ^ a;
       var10001[0] = "help";
       var10001[1] = "h";
-      short var10002 = 8544;
-      long var10003 = 1000739582203696219L ^ a;
       super(var10001, "Shows Information And Usages About Other Commands");
    }
 
@@ -43,12 +39,8 @@ public class gjr extends fso {
       while (var6.hasNext()) {
          fso axxx = (fso)var6.next();
          String var8 = axxx.ax()[0];
-         short var10001 = 10894;
-         long var10002 = 8708600255141041636L ^ ax;
          bpa.dhu("Expresion: " + var8);
          String var9 = axxx.et();
-         var10001 = 30172;
-         var10002 = 2156369106484333237L ^ ax;
          bpa.dhu("Description: " + var9);
          if (axx == null) {
             break;

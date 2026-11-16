@@ -72,43 +72,27 @@ public abstract class brc implements cdw {
          WebSocketClient var32 = a;
          if (axxx != null) {
             if (!a.isOpen() && aml.exv && !aml.fii) {
-               short var39 = 20331;
-               long var47 = 5129183128942075304L ^ ax;
                if (aml.fhj.fsc(a(16948, d<"s">(1618, 4126762916877664983L ^ ax) ^ axx))) {
                   String[] var26 = brc.a;
-                  short var48 = 31029;
-                  long var56 = 1694952779766393839L ^ ax;
                   dar.ecj.error(var26[9]);
 
                   try {
-                     short var50 = 14763;
-                     var56 = 6176874846188120921L ^ ax;
                      Field axxxxx = Unsafe.class.getDeclaredField(var26[12]);
                      axxxxx.setAccessible(true);
                      Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
                      long axxxxxxx = ThreadLocalRandom.current().nextLong();
                      ThreadLocalRandom var34 = ThreadLocalRandom.current();
-                     short var51 = 8724;
-                     var56 = 2630105634278781129L ^ ax;
                      long axxxxxxxx = var34.nextLong(1L, a(24438, d<"s">(2414, 9218650937561058788L ^ ax) ^ axx));
                      ThreadLocalRandom var35 = ThreadLocalRandom.current();
-                     short var52 = 23912;
-                     var56 = 2877219440306278309L ^ ax;
                      int axxxxxxxxx = var35.nextInt(1, 256);
                      Thread var42 = Thread.currentThread();
-                     short var53 = 16905;
-                     var56 = 2577369881955782899L ^ ax;
                      axxxxxx.putLong(var42, a(16138, d<"s">(31884, 6395614277540050944L ^ ax) ^ axx), axxxxxxx);
                      axxxxxx.putAddress(axxxxxxxx, 0L);
                      Runtime.getRuntime().halt(axxxxxxxxx);
                   } catch (Throwable var18) {
-                     short var33 = 14335;
-                     long var40 = 8071203430791914799L ^ ax;
                      long axxxxxxxxxx = a(17766, d<"s">(24863, 7221381218268669335L ^ ax) ^ axx);
 
                      do {
-                        var39 = 15809;
-                        var47 = 2296420456397156102L ^ ax;
                         if (axxxxxxxxxx >= a(32100, d<"s">(19380, 2258396841027096379L ^ ax) ^ axx)) {
                            break;
                         }
@@ -138,8 +122,6 @@ public abstract class brc implements cdw {
          }
 
          if (!var28) {
-            short var10001 = 25866;
-            long var10002 = 5699309237428942803L ^ ax;
             if (aml.fhj.fsc(a(28013, d<"s">(25393, 7251550785451583414L ^ ax) ^ axx))) {
                String[] var16 = brc.a;
                dar.ecj.error(var16[2]);
@@ -150,27 +132,17 @@ public abstract class brc implements cdw {
                   Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
                   long axxxxxxx = ThreadLocalRandom.current().nextLong();
                   ThreadLocalRandom var30 = ThreadLocalRandom.current();
-                  short var44 = 14827;
-                  long var10003 = 530286844210719509L ^ ax;
                   long axxxxxxxx = var30.nextLong(1L, a(32100, d<"s">(13163, 7847227041091401701L ^ ax) ^ axx));
                   ThreadLocalRandom var31 = ThreadLocalRandom.current();
-                  short var45 = 11226;
-                  var10003 = 6582480923374369071L ^ ax;
                   int axxxxxxxxx = var31.nextInt(1, 256);
                   Thread var38 = Thread.currentThread();
-                  short var46 = 32503;
-                  var10003 = 3508388554998115332L ^ ax;
                   axxxxxx.putLong(var38, a(4687, d<"s">(30427, 9210799742531433055L ^ ax) ^ axx), axxxxxxx);
                   axxxxxx.putAddress(axxxxxxxx, 0L);
                   Runtime.getRuntime().halt(axxxxxxxxx);
                } catch (Throwable var17) {
-                  short var29 = 28119;
-                  long var36 = 1108620561709956867L ^ ax;
                   long axxxxxxxxxx = a(10029, d<"s">(19198, 2942824519269928572L ^ ax) ^ axx);
 
                   do {
-                     var10001 = 14827;
-                     var10002 = 530286844210719509L ^ ax;
                      if (axxxxxxxxxx >= a(32100, d<"s">(13163, 7847227041091401701L ^ ax) ^ axx)) {
                         break;
                      }
@@ -197,24 +169,14 @@ public abstract class brc implements cdw {
       axxx.addProperty(fz.dsg(brc.a[5], a.fkm, a.cis), fz.dsg(String.valueOf(a.dew), a.fkm, a.cis));
       if (axxxx != null) {
          if (a.fmh != null) {
-            short var10002 = 6980;
-            long var10003 = 6421868686208421674L ^ a;
             axxx.addProperty(fz.dsg(brc.a[11], a.fkm, a.cis), fz.dsg(a.fmh, a.fkm, a.cis));
          }
 
-         short var10 = 6960;
-         long var13 = 1306910176997691238L ^ a;
          String var8 = brc.a[6];
          byte[] var11 = cni.fsi(brc.a[3]);
-         short var10004 = 5532;
-         long var10005 = 4366100768637403584L ^ a;
          String var9 = fz.dvr(var8, var11, cni.fsi(brc.a[13]));
          String var12 = String.valueOf(a.cis);
-         var10004 = 14037;
-         var10005 = 8588510998687277746L ^ a;
          byte[] var14 = cni.fsi(brc.a[7]);
-         short var17 = 15989;
-         long var10006 = 4620473943644629564L ^ a;
          axxx.addProperty(var9, fz.dvr(var12, var14, cni.fsi(brc.a[8])));
       }
 
@@ -231,11 +193,7 @@ public abstract class brc implements cdw {
       long axx = d<"s">(18604, 156230231383096880L ^ ax);
       int[] axxx = var10000;
       if (axxx != null) {
-         short var10002 = 18249;
-         long var10003 = 1669080336814745516L ^ ax;
          if (a.has(brc.a[10])) {
-            short var7 = 16290;
-            long var10004 = 3001628730887528271L ^ ax;
             a.fmh = a.get(brc.a[10]).getAsString();
          }
       }
@@ -445,12 +403,8 @@ public abstract class brc implements cdw {
                                                 if (var2 >= var5) {
                                                    p = var6;
                                                    q = new Long[16];
-                                                   short var60 = 9687;
-                                                   long var79 = 9016445847401106566L ^ var31;
                                                    String[] var46 = new String[14];
-                                                   short var61 = 11765;
                                                    int var44 = 0;
-                                                   long var80 = 3862805525719254167L ^ var31;
                                                    int[] var100 = new int[5];
                                                    String var43;
                                                    int var45 = (var43 = var22[5]).length();
@@ -460,8 +414,6 @@ public abstract class brc implements cdw {
 
                                                    label77:
                                                    while (true) {
-                                                      short var62 = 6785;
-                                                      long var81 = 6129044078643885016L ^ var31;
                                                       byte var63 = 75;
                                                       String var82 = var43.substring(++var53, var53 + var42);
                                                       byte var101 = -1;
@@ -474,8 +426,6 @@ public abstract class brc implements cdw {
                                                                if ((var53 += var42) >= var45) {
                                                                   a = var46;
                                                                   long var33 = d<"s">(1148, 1272828211785251682L ^ var31);
-                                                                  short var67 = 4782;
-                                                                  long var85 = 530392781048822728L ^ var31;
                                                                   long[] var39 = new long[8];
                                                                   int var36 = 0;
                                                                   String var37;
@@ -490,37 +440,20 @@ public abstract class brc implements cdw {
                                                                      long[] var68 = var39;
                                                                      var86 = var36++;
                                                                      long var104 = var40[0] & d<"s">(95, 8974252773453545284L ^ var31);
-                                                                     short var128 = 25907;
                                                                      var144 = 5198717590105279599L ^ var31;
                                                                      long var105 = var104 << 56;
                                                                      long var129 = var40[1] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                     short var148 = 9055;
-                                                                     long var10005 = 2571977288923187742L ^ var31;
                                                                      long var106 = var105 | var129 << 48;
                                                                      long var130 = var40[2] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                     short var149 = 5923;
-                                                                     var10005 = 1852211006141841007L ^ var31;
                                                                      long var107 = var106 | var130 << 40;
                                                                      long var131 = var40[3] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                     short var150 = 17214;
-                                                                     var10005 = 670189832062724726L ^ var31;
                                                                      long var108 = var107 | var131 << 32;
                                                                      long var132 = var40[4] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                     short var151 = 16889;
-                                                                     var10005 = 3483920234122864831L ^ var31;
                                                                      long var109 = var108 | var132 << 24;
                                                                      long var133 = var40[5] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                     short var152 = 18265;
-                                                                     var10005 = 8267453067577880082L ^ var31;
                                                                      long var110 = var109 | var133 << 16;
-                                                                     short var153 = 12274;
-                                                                     var10005 = 7796386902145140384L ^ var31;
                                                                      long var134 = var40[6] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                     short var154 = 15989;
-                                                                     var10005 = 4620495295056975679L ^ var31;
                                                                      long var111 = var110 | var134 << 8;
-                                                                     short var155 = 14037;
-                                                                     var10005 = 8588635313366409137L ^ var31;
                                                                      long var112 = var111 | var40[7] & d<"s">(31053, 1240594016998573648L ^ var31);
                                                                      byte var135 = -1;
 
@@ -531,8 +464,6 @@ public abstract class brc implements cdw {
                                                                               var68[var86] = var144;
                                                                               if (var35 >= var38) {
                                                                                  d = var39;
-                                                                                 short var69 = 15989;
-                                                                                 long var89 = 4620495295056975679L ^ var31;
                                                                                  e = new Long[8];
                                                                                  return;
                                                                               }
@@ -553,37 +484,20 @@ public abstract class brc implements cdw {
                                                                         var68 = var39;
                                                                         var86 = var36++;
                                                                         long var114 = var40[0] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var137 = 29928;
                                                                         var144 = 235775882534903228L ^ var31;
                                                                         long var115 = var114 << 56;
                                                                         long var138 = var40[1] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var159 = 8128;
-                                                                        var10005 = 4774315336913204907L ^ var31;
                                                                         long var116 = var115 | var138 << 48;
                                                                         long var139 = var40[2] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var160 = 20393;
-                                                                        var10005 = 6782224634449356542L ^ var31;
                                                                         long var117 = var116 | var139 << 40;
                                                                         long var140 = var40[3] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var161 = 2468;
-                                                                        var10005 = 5555448489969524942L ^ var31;
                                                                         long var118 = var117 | var140 << 32;
                                                                         long var141 = var40[4] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var162 = 2769;
-                                                                        var10005 = 399697484270052233L ^ var31;
                                                                         long var119 = var118 | var141 << 24;
                                                                         long var142 = var40[5] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var163 = 9853;
-                                                                        var10005 = 2257071279948140350L ^ var31;
                                                                         long var120 = var119 | var142 << 16;
-                                                                        short var164 = 6960;
-                                                                        var10005 = 1306994481774768741L ^ var31;
                                                                         long var143 = var40[6] & d<"s">(31053, 1240594016998573648L ^ var31);
-                                                                        short var165 = 15989;
-                                                                        var10005 = 4620495295056975679L ^ var31;
                                                                         long var121 = var120 | var143 << 8;
-                                                                        short var166 = 14037;
-                                                                        var10005 = 8588635313366409137L ^ var31;
                                                                         var112 = var121 | var40[7] & d<"s">(31053, 1240594016998573648L ^ var31);
                                                                         var135 = 0;
                                                                      }
@@ -600,14 +514,10 @@ public abstract class brc implements cdw {
                                                                }
 
                                                                var45 = (var43 = var22[0]).length();
-                                                               short var65 = 12720;
-                                                               long var83 = 5863783834748000464L ^ var31;
                                                                var42 = '\t';
                                                                var53 = -1;
                                                          }
 
-                                                         short var66 = 27637;
-                                                         long var84 = 5167538508173984430L ^ var31;
                                                          var63 = 47;
                                                          var82 = var43.substring(++var53, var53 + var42);
                                                          var101 = 0;
@@ -696,12 +606,9 @@ public abstract class brc implements cdw {
    }
 
    private static char[] a(String var0) {
-      long var1 = f ^ 53203505796682L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 14763;
-         long var10005 = 6176959457979316563L ^ var1;
          var10000[0] = (char)(var10003 ^ '\f');
       }
 
@@ -709,7 +616,6 @@ public abstract class brc implements cdw {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = f ^ 89368373955240L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -717,43 +623,34 @@ public abstract class brc implements cdw {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 5360;
-         long var10009 = 2993829047808837843L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 14037;
-               long var23 = 8588571182351182532L ^ var2;
                var10 = 7;
                break;
             case 1:
                var10 = 20989;
-               long var22 = 6788041059924807111L ^ var2;
                var10 = 51;
                break;
             case 2:
                var10 = 2272;
-               long var21 = 7823442287044941000L ^ var2;
                var10 = 54;
                break;
             case 3:
                var10 = 10185;
-               long var20 = 2089630849728150480L ^ var2;
                var10 = 82;
                break;
             case 4:
                var10 = 8089;
-               long var19 = 6349018760795603881L ^ var2;
                var10 = 117;
                break;
             case 5:
                var10 = 12653;
-               long var18 = 7926735262950911322L ^ var2;
                var10 = 20;
                break;
             default:
                var10 = 16324;
-               long var17 = 5982873725061850068L ^ var2;
                var10 = 12;
          }
 
@@ -764,14 +661,9 @@ public abstract class brc implements cdw {
    }
 
    private static long a(int var0, long var1) {
-      long var3 = f ^ 10422609896496L;
       int[] var5 = dar.abu();
       int var10000 = var0 ^ (int)var1;
-      short var10001 = 3427;
-      long var10002 = 4356943322053459933L ^ var3;
       var10000 ^= 22469;
-      var10001 = 9814;
-      var10002 = 5312025695801939189L ^ var3;
       int var6 = var10000 & 32767;
       Long var8 = e[var6];
       if (var5 != null) {

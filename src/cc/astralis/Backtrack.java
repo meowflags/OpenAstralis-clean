@@ -66,58 +66,26 @@ public class Backtrack extends guu {
    public Backtrack() {
       long a = Backtrack.a ^ 47236581293266L;
       super(bfm.COMBAT);
-      short var10003 = 30767;
-      long var10004 = 6942780692385419415L ^ a;
       a.dte = new bes("Range", 3.0F, 1.0F, 10.0F, 0.1F);
-      var10003 = 20489;
-      var10004 = 3608312732076243130L ^ a;
       a.dtq = new bes("MS Min", 100.0F, 0.0F, 1000.0F, 1.0F);
-      var10003 = 14482;
-      var10004 = 5765494626885898274L ^ a;
       a.elu = new bes("MS Max", 150.0F, 0.0F, 1000.0F, 1.0F);
-      var10003 = 9340;
-      var10004 = 1082985510731123909L ^ a;
       a.gsk = new bes("Tracking Timing", 500.0F, 0.0F, 2000.0F, 1.0F);
-      var10003 = 26401;
-      var10004 = 5738668850338680733L ^ a;
       a.bne = new bes("Chance", 50.0F, 0.0F, 100.0F, 1.0F);
-      var10003 = 7755;
-      var10004 = 1808793310876022521L ^ a;
       a.evs = new gbp("Pause On HurtTime", false);
-      var10003 = 9502;
-      var10004 = 7331616505326046633L ^ a;
       a.gvk = (bes)new bes("Hurt Time", 3.0F, 0.0F, 10.0F, 1.0F).bih(a.evs::dnp);
-      var10003 = 3374;
-      var10004 = 915413963067631002L ^ a;
-      short var22 = 24152;
-      long var10005 = 234751330115909347L ^ a;
       String[] var27 = new String[2];
-      short var10008 = 13131;
-      long var10009 = 308655421078608893L ^ a;
       var27[0] = "Attack";
-      var10008 = 2146;
-      var10009 = 757076453640544471L ^ a;
       var27[1] = "Range";
       a.hba = new adu("Target Mode", "Attack", var27);
-      var10003 = 31281;
-      var10004 = 4891329552010072715L ^ a;
       a.gwc = new bes("Last Attack Time To Work", 1000.0F, 0.0F, 5000.0F, 1.0F);
       a.etp = new ConcurrentLinkedQueue<>();
       a.awx = new ConcurrentLinkedQueue<>();
       a.cd = null;
       a.enf = false;
       a.fhx = new Random();
-      short var10001 = 27875;
-      long var10002 = 6409084966218020448L ^ a;
       ffn[] var3 = new ffn[]{a.dte, a.dtq, a.elu, a.gsk, a.bne, a.evs, null, null, null};
-      var10003 = 13522;
-      var10004 = 1414130962133249616L ^ a;
       var3[6] = a.gvk;
-      var10003 = 9874;
-      var10004 = 7487265650974948373L ^ a;
       var3[7] = a.hba;
-      var10003 = 10614;
-      var10004 = 9079956307845510128L ^ a;
       var3[8] = a.gwc;
       a.bfi(var3);
    }
@@ -387,15 +355,11 @@ public class Backtrack extends guu {
          }
 
          a.hhe = System.currentTimeMillis();
-         short var10002 = 699;
-         long var10003 = 559259110792310285L ^ ax;
          a.exx = a.fhx.nextInt(101);
       }
 
       Backtrack var6 = a;
       if (axxx != null) {
-         short var10001 = 13131;
-         long var7 = 308671681357704654L ^ ax;
          if (!a.hba.emb("Attack")) {
             return;
          }
@@ -415,16 +379,12 @@ public class Backtrack extends guu {
             return;
          }
 
-         short var10002 = 22066;
-         long var10003 = 4661494798838896823L ^ ax;
          a.efe(a.aoz + "ms");
       }
 
       label71: {
          Backtrack var6;
          label75: {
-            short var10001 = 2146;
-            long var8 = 757125915708245743L ^ ax;
             boolean var10000 = a.hba.emb("Range");
             if (axx != null) {
                label60:
@@ -514,8 +474,6 @@ public class Backtrack extends guu {
          class_4587 var11 = a.bus();
          class_238 var10001 = axxxxx.method_997(axxxxxx);
          Color var10002 = dar.gqy().deo();
-         short var10003 = 17081;
-         long var10004 = 9034094441510854985L ^ ax;
          bqf.hjf(var11, var10001, var10002, 200);
       }
    }
@@ -813,8 +771,6 @@ public class Backtrack extends guu {
    public void auj() {
       long a = Backtrack.a ^ 129474306589149L;
       a.aoz = a.fe();
-      short var10002 = 18899;
-      long var10003 = 1542669927549972060L ^ a;
       a.exx = a.fhx.nextInt(101);
       a.enu(false);
       super.auj();

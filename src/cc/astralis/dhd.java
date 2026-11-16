@@ -35,20 +35,10 @@ public class dhd extends hcr {
 
    public dhd(guu parentClass) {
       long ax = dhd.a ^ 55451413427978L;
-      short var10002 = 24595;
-      long var10003 = 3082485911714446301L ^ ax;
       super(a, "Vulcan Strafe");
-      short var4 = 30985;
-      long var10004 = 434567827047424705L ^ ax;
       a.aob = new gbp("Boost", true);
-      short var5 = 12228;
-      var10004 = 2352859617410806793L ^ ax;
       a.avs = new gbp("Glitch Boost", false);
-      short var6 = 4482;
-      var10004 = 8857211682947779150L ^ ax;
       a.gtd = new gbp("Glide", false);
-      short var7 = 27289;
-      var10004 = 8004078807003083088L ^ ax;
       a.dtm = new gbp("Dev Glide", false);
       a.bow = new cbm();
       a.dxe(new ffn[]{a.aob, a.avs, a.gtd, a.dtm});
@@ -83,8 +73,6 @@ public class dhd extends hcr {
 
       int var10001 = hjr;
       if (var4 != null) {
-         short var10002 = 8973;
-         long var10003 = 7598812032408291724L ^ ax;
          var10001 = hjr > 6 ? 1 : 0;
       }
 
@@ -99,8 +87,6 @@ public class dhd extends hcr {
       int var10000 = (var21 = chi.field_1724.field_6017 - 2.0) == 0.0 ? 0 : (var21 < 0.0 ? -1 : 1);
       if (var4 != null) {
          if (var10000 > 0) {
-            short var10 = 9602;
-            long var16 = 2509324787992222630L ^ ax;
             bpa.bez("returning");
             a.bbc = false;
             return;
@@ -117,19 +103,15 @@ public class dhd extends hcr {
                break label118;
             }
 
-            short var10001 = 18064;
-            long var10002 = 7970135963408507945L ^ ax;
             if (hjr > 6) {
                var10000 = hjr;
                short var11 = a.dtm.dnp();
                if (var4 != null) {
                   if (var11 == 0) {
                      var11 = 7965;
-                     var10002 = 1156506804215971238L ^ ax;
                      var11 = 16;
                   } else {
                      var11 = 14958;
-                     var10002 = 7772505167693895892L ^ ax;
                      var11 = 20;
                   }
                }
@@ -176,8 +158,6 @@ public class dhd extends hcr {
 
       if (var10000 != 0) {
          class_304 var8 = chi.field_1690.field_1903;
-         short var19 = 12925;
-         long var10003 = 176474913801848730L ^ ax;
          short var14 = a.bow.fsc(500L);
          if (var4 != null) {
             var14 = !var14;
@@ -187,7 +167,6 @@ public class dhd extends hcr {
          cbm var9 = a.bow;
          if (var4 != null) {
             var14 = 339;
-            long var20 = 3280056923267200181L ^ ax;
             if (!a.bow.fsc(1000L)) {
                return;
             }
@@ -345,7 +324,6 @@ public class dhd extends hcr {
                                           | (var10[5] & 255L) << 16
                                           | (var10[6] & 255L) << 8
                                           | var10[7] & 255L;
-                                       byte var61 = -1;
                                        var6[var47] = var62;
                                     } while (var2 < var5);
 

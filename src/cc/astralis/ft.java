@@ -53,12 +53,6 @@ public class ft extends fig {
       float axxxx = var18.dtt() + 10.0F;
       float axxxxx = a.hjg() + 4.0F;
       float axxxxxx = a.av();
-      short var10007 = 4426;
-      long var10008 = 8512050522188184974L ^ ax;
-      short var19 = 21207;
-      long var10009 = 1382640993780907536L ^ ax;
-      short var20 = 21207;
-      long var10010 = 1382640993780907536L ^ ax;
       dmp.cpp(axxxxx, axxxx, axxxxxx, 4.0F, 2.0F, new Color(50, 50, 50));
       float axxxxxxx = a.av();
       dmp.abh(axxxxx, axxxx, axxxxxxx * axx, 4.0F, () -> dmp.aho(a, a, a, 4.0F, 2.0F, dar.gqy().deo(), dar.gqy().cxj(), false));
@@ -119,8 +113,6 @@ public class ft extends fig {
       }
 
       double var7 = var10000 * var10001;
-      short var8 = 7197;
-      long var10002 = 6958163316820203632L ^ ax;
       return ftb.hbp(var7, 6);
    }
 
@@ -183,7 +175,6 @@ public class ft extends fig {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

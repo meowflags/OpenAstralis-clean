@@ -61,7 +61,6 @@ public class anp extends hcr {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       byte[] var4 = var2.doFinal("Old Mush".getBytes("ISO-8859-1"));
       String var5 = a(var4).intern();
-      byte var10001 = -1;
       d = var5;
    }
 

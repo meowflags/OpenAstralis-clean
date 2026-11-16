@@ -52,11 +52,7 @@ public class eu {
       ImGui.createContext();
       ImPlot.createContext();
       ImGuiIO axx = ImGui.getIO();
-      short var10001 = 18490;
-      long var10002 = 2631163871316884357L ^ ax;
       axx.setIniFilename("astralis.ini");
-      var10001 = 5912;
-      var10002 = 8946247549978370534L ^ ax;
       axx.setConfigFlags(1088);
       axx.setFontGlobalScale(1.0F);
       grv(axx);
@@ -485,7 +481,6 @@ public class eu {
    }
 
    public static void ady() {
-      long var0 = a ^ 73721584807261L;
       int[] var2 = dar.abu();
       ImFont var10000 = dbl;
       if (var2 != null) {
@@ -500,7 +495,6 @@ public class eu {
    }
 
    public static void efl() {
-      long var0 = a ^ 133744743723178L;
       if (dbl != null) {
          ImGui.popFont();
       }
@@ -510,8 +504,6 @@ public class eu {
       long ax = eu.a ^ 116888107744878L;
       class_276 axx = class_310.method_1551().method_1522();
       int axxx = ((class_10868)axx.method_30277()).method_68426(((class_10865)RenderSystem.getDevice()).method_68401(), null);
-      short var10000 = 9278;
-      long var10001 = 8527509887210447141L ^ ax;
       GlStateManager._glBindFramebuffer(36160, axxx);
       GL11.glViewport(0, 0, axx.field_1482, axx.field_1481);
       dcx.newFrame();
@@ -519,12 +511,8 @@ public class eu {
       a.fqj(ImGui.getIO());
       ImGui.render();
       fxf.renderDrawData(ImGui.getDrawData());
-      var10000 = 18525;
-      var10001 = 592116332130798936L ^ ax;
       GlStateManager._glBindFramebuffer(36160, axxx);
       ImGuiIO var8 = ImGui.getIO();
-      short var10 = 13419;
-      long var10002 = 6723523933268668786L ^ ax;
       if (var8.hasConfigFlags(1024)) {
          long axxxx = GLFW.glfwGetCurrentContext();
          ImGui.updatePlatformWindows();
@@ -633,26 +621,12 @@ public class eu {
                                  if (var2 >= var5) {
                                     e = var6;
                                     f = new Integer[35];
-                                    short var29 = 1727;
-                                    long var42 = var11 ^ 7365522018522898688L;
                                     gft = '\uf1c6';
-                                    short var30 = 3316;
-                                    long var43 = var11 ^ 4456187824770952026L;
                                     cxh = '\uf1c7';
-                                    short var31 = 25994;
-                                    long var44 = var11 ^ 6088773017277153833L;
                                     hfo = '\uf15b';
-                                    short var32 = 15103;
-                                    long var45 = var11 ^ 1679287343772245330L;
                                     fzp = '\uf07b';
-                                    short var33 = 8116;
-                                    long var46 = var11 ^ 5557172828068362249L;
                                     asc = '\uf1c9';
-                                    short var34 = 22251;
-                                    long var47 = var11 ^ 4763378458352841024L;
                                     dlf = '\uf1c8';
-                                    short var35 = 4674;
-                                    long var48 = var11 ^ 6162144582555579897L;
                                     gkz = '\uf1c5';
                                     dcx = new ImGuiImplGlfw();
                                     fxf = new ImGuiImplGl3();

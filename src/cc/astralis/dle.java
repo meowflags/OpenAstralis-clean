@@ -36,33 +36,15 @@ public class dle {
    public static void gxa() {
       long a = dle.a ^ 80084598799787L;
       int[] var10000 = dar.abu();
-      short var10001 = 27970;
-      long var10002 = 3580083014314543230L ^ a;
       String ax = "<redacted:discord-bot-token>";
       int[] axx = var10000;
-      short var22 = 14845;
-      long var27 = 5314707247802227918L ^ a;
       String axxx = "1253949752119136312";
 
       try {
-         short var10003 = 12771;
-         long var10004 = 703158102457750739L ^ a;
-         short var59 = 320;
-         long var10005 = 1245004298323403903L ^ a;
          URL axxxx = new URL("https://discord.com/api/v10/channels/" + axxx + "/messages?limit=1");
          HttpURLConnection axxxxx = (HttpURLConnection)axxxx.openConnection();
-         var10001 = 27790;
-         var10002 = 7687099837902014899L ^ a;
          axxxxx.setRequestMethod("GET");
-         var10001 = 28073;
-         var10002 = 7894690797138757789L ^ a;
-         var10003 = 20573;
-         var10004 = 5914751803226649959L ^ a;
          axxxxx.setRequestProperty("Authorization", "Bot " + ax);
-         var10001 = 5228;
-         var10002 = 4373773844596437337L ^ a;
-         short var43 = 19768;
-         long var55 = 3650933184198207488L ^ a;
          axxxxx.setRequestProperty("Content-Type", "application/json");
          int axxxxxx = axxxxx.getResponseCode();
          if (axxxxxx == (int)e) {
@@ -93,20 +75,12 @@ public class dle {
 
                   StringBuilder axxxxxxxxxx;
                   JSONObject axxxxxxxxxxx = var23.getJSONObject(0);
-                  var10001 = 9872;
-                  var10002 = 2495791611768144821L ^ a;
                   String axxxxxxxxxxxx = axxxxxxxxxxx.getString("id");
-                  var10001 = 3477;
-                  var10002 = 2103711890287175854L ^ a;
                   String axxxxxxxxxxxxx = axxxxxxxxxxx.getString("content");
                   axxxxxxxxxx = new StringBuilder(axxxxxxxxxxxxx);
                   label71:
                   if (axx != null) {
-                     var10001 = 14758;
-                     var10002 = 3534306585137781912L ^ a;
                      if (axxxxxxxxxxx.has("embeds")) {
-                        var10001 = 6639;
-                        var10002 = 3873791700228553950L ^ a;
                         JSONArray axxxxxxxxxxxxxx = axxxxxxxxxxx.getJSONArray("embeds");
                         int axxxxxxxxxxxxxxx = 0;
 
@@ -117,12 +91,8 @@ public class dle {
                            }
 
                            if (axx != null) {
-                              var10001 = 570;
-                              var10002 = 1117613628099438364L ^ a;
                               if (axxxxxxxxxxxxxxxx.has("description")) {
                                  StringBuilder var24 = axxxxxxxxxx.append("\n");
-                                 short var49 = 1969;
-                                 long var56 = 6774501550258889366L ^ a;
                                  var24.append(axxxxxxxxxxxxxxxx.getString("description"));
                               }
 
@@ -135,14 +105,10 @@ public class dle {
                         }
                      }
 
-                     var10001 = 6683;
-                     var10002 = 3959309562500103981L ^ a;
                      dar.ecj.error("Fetching Commit ID");
                      dar.enk = axxxxxxxxxx.toString();
                   }
 
-                  short var25 = 24337;
-                  long var37 = 7365564396660095526L ^ a;
                   Pattern axxxxxxxxxxxxxx = Pattern.compile("`([a-f0-9]{7})`");
                   Matcher axxxxxxxxxxxxxxx = axxxxxxxxxxxxxx.matcher(axxxxxxxxxx.toString());
                   if (axx != null) {
@@ -152,8 +118,6 @@ public class dle {
 
                      Logger var26 = dar.ecj;
                      String var38 = axxxxxxxxxx.toString();
-                     short var51 = 28247;
-                     long var57 = 3177232035308817267L ^ a;
                      var26.error("Found Commit ID: " + var38);
                   }
 
@@ -162,8 +126,6 @@ public class dle {
                   }
                }
 
-               byte var39 = 51;
-               var10002 = 279583783573759233L ^ a;
                dar.ecj.error("No messages found in the channel.");
             }
 
@@ -172,8 +134,6 @@ public class dle {
             }
          }
 
-         short var53 = 15407;
-         long var58 = 2330130779818989846L ^ a;
          dar.ecj.error("Error: Received HTTP response code " + axxxxxx);
       } catch (Exception var19) {
          var19.printStackTrace();

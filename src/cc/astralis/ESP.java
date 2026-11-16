@@ -61,78 +61,30 @@ public class ESP extends guu {
    public ESP() {
       long a = ESP.a ^ 122964343070660L;
       super(bfm.VISUAL);
-      short var10003 = 4452;
-      long var10004 = 3796301793573970541L ^ a;
       a.gsw = new gbp("Main Box", true);
-      var10003 = 9679;
-      var10004 = 4174705373063288530L ^ a;
       a.ciu = new gbp("Main box Shadow", true);
-      var10003 = 1003;
-      var10004 = 2040787523849171187L ^ a;
       a.gtt = new acn("Left Box Top Color", Color.white);
-      var10003 = 24145;
-      var10004 = 2859762151053684050L ^ a;
       a.for = new acn("Left Box Bottom Color", Color.white);
-      var10003 = 8460;
-      var10004 = 6801781477025583620L ^ a;
       a.gr = new acn("Right Box Top Color", Color.white);
-      var10003 = 7815;
-      var10004 = 1765890592348024205L ^ a;
       a.cus = new acn("Right Box Bottom Color", Color.white);
-      var10003 = 27794;
-      var10004 = 1732930245600436118L ^ a;
       a.hhu = new acn("Top Box Left Color", Color.white);
-      var10003 = 31450;
-      var10004 = 5419685090452720090L ^ a;
       a.gaq = new acn("Top Box Right Color", Color.white);
-      var10003 = 18837;
-      var10004 = 2695495677469227673L ^ a;
       a.fvg = new acn("Bottom Box Left Color", Color.white);
-      var10003 = 25120;
-      var10004 = 5390187491479736614L ^ a;
       a.dzb = new acn("Bottom Box Right Color", Color.white);
-      var10003 = 28744;
-      var10004 = 8550975763771441993L ^ a;
       a.gmw = new gbp("Fill Image", false);
-      var10003 = 30803;
-      var10004 = 7368985817083366237L ^ a;
-      short var48 = 1816;
-      long var10005 = 668105688258229251L ^ a;
       a.bwb = new epo("Fill Image Path", "astralis/dancing-random.gif");
-      var10003 = 27822;
-      var10004 = 7016866415799525281L ^ a;
       a.dhj = new bes("Speed", 100.0F, 1.0F, 300.0F, 1.0F);
-      var10003 = 9116;
-      var10004 = 5700136400077295750L ^ a;
       a.baz = new gbp("Fill", true);
-      var10003 = 7462;
-      var10004 = 8897980371219918379L ^ a;
-      short var10009 = 11490;
-      long var10010 = 4467296228749565259L ^ a;
       a.evq = new acn("Fill In Color", new Color(0, 0, 0, 100));
-      var10003 = 24972;
-      var10004 = 2657969227655107211L ^ a;
-      var10009 = 25366;
-      var10010 = 1600775416845406900L ^ a;
       a.fjt = new acn("Fill In Bottom Color", new Color(0, 0, 0, 100));
-      var10003 = 10833;
-      var10004 = 186931532111485274L ^ a;
       a.gqe = new gbp("Health Bar", true);
-      var10003 = 26761;
-      var10004 = 5038353603568360336L ^ a;
       a.drb = new gbp("Health Bar Shadow", false);
-      var10003 = 8378;
-      var10004 = 9103492480154211256L ^ a;
       a.ba = new acn("Top Health Bar Color", Color.red);
-      var10003 = 24890;
-      var10004 = 5474440082249208383L ^ a;
       a.abb = new acn("Bottom Health Bar Color", Color.white);
       a.gcl = new cbm();
       a.ffi = new HashMap<>();
       a.goo = null;
       a.ccz = 0;
-      short var10001 = 20400;
-      long var10002 = 6546780238898249240L ^ a;
       ffn[] var3 = new ffn[]{
          a.gsw,
          a.ciu.bih(a.gsw::dnp),
@@ -155,47 +107,19 @@ public class ESP extends guu {
          null,
          null
       };
-      var10003 = 27055;
-      var10004 = 1189271623001675777L ^ a;
       var3[6] = a.hhu.bih(a.gsw::dnp);
-      var10003 = 2119;
-      var10004 = 4661292237662419453L ^ a;
       var3[7] = a.gaq.bih(a.gsw::dnp);
-      var10003 = 1266;
-      var10004 = 5392591739691595103L ^ a;
       var3[8] = a.fvg.bih(a.gsw::dnp);
-      var10003 = 19066;
-      var10004 = 7958010302297127897L ^ a;
       var3[9] = a.dzb.bih(a.gsw::dnp);
-      var10003 = 14640;
-      var10004 = 1396500468025149590L ^ a;
       var3[10] = a.baz;
-      var10003 = 29058;
-      var10004 = 1738967643630370875L ^ a;
       var3[11] = a.evq.bih(a.baz::dnp);
-      var10003 = 26504;
-      var10004 = 5045413594962138669L ^ a;
       var3[12] = a.fjt.bih(a.baz::dnp);
-      var10003 = 11046;
-      var10004 = 598114507694725790L ^ a;
       var3[13] = a.gmw;
-      var10003 = 3553;
-      var10004 = 2046679951244131402L ^ a;
       var3[14] = a.bwb.bih(a.gmw::dnp);
-      var10003 = 15986;
-      var10004 = 1062623949922455517L ^ a;
       var3[15] = a.dhj.bih(a.gmw::dnp);
-      var10003 = 8458;
-      var10004 = 7346505838881820843L ^ a;
       var3[16] = a.gqe;
-      var10003 = 16520;
-      var10004 = 6861479632535466274L ^ a;
       var3[17] = a.drb.bih(a.gqe::dnp);
-      var10003 = 4133;
-      var10004 = 9188877671246324105L ^ a;
       var3[18] = a.ba.bih(a.gqe::dnp);
-      var10003 = 11954;
-      var10004 = 7364300216477048598L ^ a;
       var3[19] = a.abb.bih(a.gqe::dnp);
       a.bfi(var3);
    }
@@ -310,9 +234,7 @@ public class ESP extends guu {
                }
 
                class_238 var25 = var39.method_5829();
-               short var40 = 1669;
                double axxxxxx = axxx.field_6014 + (axxx.method_23317() - axxx.field_6014) * chi.method_61966().method_60637(false);
-               long var10001 = 43838452914636857L ^ ax;
                double axxxxxxx = axxx.field_6036 + (axxx.method_23318() - axxx.field_6036) * chi.method_61966().method_60637(false);
                double axxxxxxxx = axxx.field_5969 + (axxx.method_23321() - axxx.field_5969) * chi.method_61966().method_60637(false);
                class_238 axxxxxxxxx = new class_238(
@@ -333,11 +255,7 @@ public class ESP extends guu {
                   null,
                   null
                };
-               short var10002 = 793;
-               long var10003 = 7253201396078628258L ^ ax;
                var41[6] = new class_243(axxxxxxxxx.field_1320, axxxxxxxxx.field_1322, axxxxxxxxx.field_1324);
-               var10002 = 24016;
-               var10003 = 6537317155599553399L ^ ax;
                var41[7] = new class_243(axxxxxxxxx.field_1320, axxxxxxxxx.field_1325, axxxxxxxxx.field_1324);
                class_243[] axxxxxxxxxx = var41;
                axxxx = null;

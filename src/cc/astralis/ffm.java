@@ -56,7 +56,6 @@ public class ffm {
    private static final Map j;
 
    public static ffm fpp() {
-      long var0 = a ^ 53247588357982L;
       int[] var2 = dar.abu();
       ffm var10000 = hcn;
       if (var2 != null) {
@@ -74,16 +73,12 @@ public class ffm {
       long a = ffm.a ^ 64426455088262L;
       super();
       int var10001 = 25;
-      long var10002 = 2464828684615244586L ^ a;
       a.awm = 700;
       var10001 = (short)15108;
-      var10002 = 7597388775349870604L ^ a;
       a.gt = 400;
       var10001 = (short)7971;
-      var10002 = 8507550924585649174L ^ a;
       a.abn = 30;
       var10001 = (short)21731;
-      var10002 = 6859791223979872238L ^ a;
       a.gwu = 15;
       a.byr = false;
       a.hid = false;
@@ -92,17 +87,11 @@ public class ffm {
       a.gqe = 0;
       a.dyv = "";
       a.avw = "";
-      short var10004 = 26543;
-      long var10005 = 2748837448778086515L ^ a;
       a.dtn = new erp(dtw.EASE_IN_OUT_SINE, 500L);
-      var10004 = 13980;
-      var10005 = 1918036290853218625L ^ a;
       a.gnm = new erp(dtw.EASE_IN_OUT_SINE, 300L);
       a.aku = class_310.method_1551();
       a.gfo = a.aku.method_22683().method_4486();
       var10001 = a.aku.method_22683().method_4502();
-      short var10 = 15108;
-      long var10003 = 7597388775349870604L ^ a;
       a.dwq = (var10001 - 400) / 2;
    }
 
@@ -122,26 +111,15 @@ public class ffm {
             axxx = (float)a.dtn.hjo();
             var26 = a.aku.method_22683().method_4486();
             int var10001 = 7285;
-            long var10002 = 109813945943190620L ^ ax;
             float axxxxxx = (var26 - 700) / 2;
             a.gfo = a.aku.method_22683().method_4486() + (axxxxxx - a.aku.method_22683().method_4486()) * axxx;
             var10001 = a.aku.method_22683().method_4502();
-            short var42 = 1033;
-            long var10003 = 7501577866067801146L ^ ax;
             a.dwq = (var10001 - 400) / 2;
             var26 = a.aku.method_22683().method_4486();
-            short var32 = 7971;
-            var10002 = 8507552152606273315L ^ ax;
             var26 -= 30;
-            var32 = 9214;
-            var10002 = 8014445726720709595L ^ ax;
             axxxx = var26 - 15;
             var26 = a.aku.method_22683().method_4502();
-            var32 = 7971;
-            var10002 = 8507552152606273315L ^ ax;
             var26 -= 30;
-            var32 = 21731;
-            var10002 = 6859789412245710043L ^ ax;
             axxxxx = var26 - 15;
             float var79;
             var26 = (var79 = a - axxxx) == 0.0F ? 0 : (var79 < 0.0F ? -1 : 1);
@@ -190,12 +168,6 @@ public class ffm {
       if (axxxxxxx != 0) {
          var10005 = dar.gqy().deo();
       } else {
-         short var10007 = 7971;
-         long var10008 = 8507552152606273315L ^ ax;
-         short var59 = 7971;
-         long var10009 = 8507552152606273315L ^ ax;
-         short var67 = 7971;
-         long var10010 = 8507552152606273315L ^ ax;
          var10005 = new Color(30, 30, 30);
       }
 
@@ -242,14 +214,6 @@ public class ffm {
                }
             }
 
-            short var54 = 16598;
-            long var60 = 2451204146908344552L ^ ax;
-            short var61 = 26337;
-            long var68 = 7275372104353191635L ^ ax;
-            short var69 = 26337;
-            long var74 = 7275372104353191635L ^ ax;
-            short var75 = 10553;
-            long var10011 = 3533474160695466240L ^ ax;
             dmp.cpp(a.gfo, a.dwq, 700.0F, 400.0F, 8.0F, new Color(18, 18, 18, 250));
             dmp.cdw(a.gfo, a.dwq, 700.0F, 12.0F, 8.0F, 8.0F, 0.0F, 0.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
             var29 = a;
@@ -261,18 +225,8 @@ public class ffm {
 
       float axxxxxxxx = var28 + var37;
       float axxxxxxxxx = a.dwq + 25.0F;
-      short var38 = 14695;
-      long var48 = 6062918273586771270L ^ ax;
       amh.dot.ebb("Cloud Configurations", axxxxxxxx, axxxxxxxxx, Color.WHITE);
-      short var39 = 28174;
-      var48 = 7821683376596017706L ^ ax;
       float var52 = axxxxxxxxx + 15.0F;
-      short var10006 = 3290;
-      long var55 = 8773684583468596466L ^ ax;
-      short var56 = 21321;
-      long var62 = 7963918853198095210L ^ ax;
-      short var63 = 21321;
-      long var70 = 7963918853198095210L ^ ax;
       amh.ety.ebb("Browse and download community configurations", axxxxxxxx, var52, new Color(160, 160, 160));
       float axxxxxxxxxx = 70.0F;
       float axxxxxxxxxxx = 20.0F;
@@ -281,19 +235,9 @@ public class ffm {
       int var57 = dar.gqy().deo().getRed();
       int var64 = dar.gqy().deo().getGreen();
       int var71 = dar.gqy().deo().getBlue();
-      short var76 = 12998;
-      long var78 = 2764161667322266342L ^ ax;
       dmp.cpp(axxxxxxxxxxxx, axxxxxxxxxxxxx, 70.0F, 20.0F, 4.0F, new Color(var57, var64, var71, 200));
-      short var40 = 21115;
-      var48 = 8563186886265495126L ^ ax;
       amh.grb.ebb("Upload", axxxxxxxxxxxx + 20.0F, axxxxxxxxxxxxx + 4.0F, Color.WHITE);
       var37 = axxxxxxxxx + 30.0F;
-      short var58 = 29886;
-      var62 = 2771328824697128079L ^ ax;
-      short var66 = 29886;
-      var70 = 2771328824697128079L ^ ax;
-      short var73 = 29886;
-      long var77 = 2771328824697128079L ^ ax;
       dmp.cpp(axxxxxxxx, var37, 660.0F, 1.0F, 0.5F, new Color(40, 40, 40));
       float axxxxxxxxxxxxxx = a.gfo + 25.0F;
       float axxxxxxxxxxxxxxx = a.dwq + 70.0F;
@@ -343,31 +287,16 @@ public class ffm {
       dmp.cpp(0.0F, 0.0F, a.aku.method_22683().method_4486(), a.aku.method_22683().method_4502(), 0.0F, new Color(0, 0, 0, (int)(100.0F * axxxxx)));
       float var10004 = 8.0F * axxxxx;
       int var10007 = 18086;
-      long var10008 = 1871010945034963991L ^ a;
-      short var59 = 6469;
-      long var10009 = 5685295632169735130L ^ a;
-      short var67 = 6469;
-      long var10010 = 5685295632169735130L ^ a;
       dmp.cpp(axxxxxxxx, axxxxxxxxx, axxxxxx, axxxxxxx, var10004, new Color(25, 25, 25));
       dmp.cdw(axxxxxxxx, axxxxxxxxx, axxxxxx, 12.0F * axxxxx, 8.0F * axxxxx, 8.0F * axxxxx, 0.0F, 0.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
-      short var10001 = 21675;
-      long var10002 = 7059570359977419294L ^ a;
       amh.dot.ebb("Upload Configuration", axxxxxxxx + 20.0F * axxxxx, axxxxxxxxx + 25.0F * axxxxx, Color.WHITE);
       float axxxxxxxxxx = axxxxxxxxx + 60.0F * axxxxx;
-      var10001 = 3791;
-      var10002 = 6085419677880744047L ^ a;
       amh.grb.ebb("Configuration Name:", axxxxxxxx + 20.0F * axxxxx, axxxxxxxxxx, Color.WHITE);
       axxxxxxxxxx += 20.0F * axxxxx;
       Color var10000;
       if (a.gqe == 0) {
          var10000 = dar.gqy().deo();
       } else {
-         short var34 = 31246;
-         long var10003 = 187571950230532263L ^ a;
-         short var41 = 8169;
-         long var46 = 3504127965568963906L ^ a;
-         short var47 = 8169;
-         long var10005 = 3504127965568963906L ^ a;
          var10000 = new Color(50, 50, 50);
       }
 
@@ -379,27 +308,14 @@ public class ffm {
       float var42 = 21.0F * axxxxx;
       var10004 = 3.0F * axxxxx;
       var10007 = (short)31486;
-      var10008 = 3966180290729340993L ^ a;
-      short var61 = 8322;
-      var10009 = 1828784695249709620L ^ a;
-      short var69 = 8322;
-      var10010 = 1828784695249709620L ^ a;
       dmp.cpp(var24, var28, var35, var42, var10004, new Color(35, 35, 35));
       amh.grb.ebb(a.dyv + (a.gqe == 0 ? "_" : ""), axxxxxxxx + 28.0F * axxxxx, axxxxxxxxxx + 8.0F * axxxxx, Color.WHITE);
       axxxxxxxxxx += 40.0F * axxxxx;
-      var10001 = 20426;
-      var10002 = 8793302464726776180L ^ a;
       amh.grb.ebb("Description:", axxxxxxxx + 20.0F * axxxxx, axxxxxxxxxx, Color.WHITE);
       axxxxxxxxxx += 20.0F * axxxxx;
       if (a.gqe == 1) {
          var10000 = dar.gqy().deo();
       } else {
-         short var37 = 8169;
-         long var43 = 3504127965568963906L ^ a;
-         short var44 = 8169;
-         long var49 = 3504127965568963906L ^ a;
-         short var50 = 8169;
-         long var54 = 3504127965568963906L ^ a;
          var10000 = new Color(50, 50, 50);
       }
 
@@ -411,11 +327,6 @@ public class ffm {
       var42 = 56.0F * axxxxx;
       var10004 = 3.0F * axxxxx;
       var10007 = (short)8322;
-      var10008 = 1828784695249709620L ^ a;
-      short var63 = 8322;
-      var10009 = 1828784695249709620L ^ a;
-      short var71 = 8322;
-      var10010 = 1828784695249709620L ^ a;
       dmp.cpp(var26, var30, var38, var42, var10004, new Color(35, 35, 35));
       a.evf(a.avw + (a.gqe == 1 ? "_" : ""), axxxxxxxx + 28.0F * axxxxx, axxxxxxxxxx + 8.0F * axxxxx, (ax - 56.0F) * axxxxx, 12.0F * axxxxx, Color.WHITE);
       axxxxxxxxxx += 80.0F * axxxxx;
@@ -425,24 +336,13 @@ public class ffm {
       float axxxxxxxxxxxxxxxx = axxxxxxxx + axxxxxx - 90.0F * axxxxx;
       var10004 = 4.0F * axxxxx;
       var10007 = (short)8195;
-      var10008 = 4677021129191107234L ^ a;
-      short var65 = 30664;
-      var10009 = 1232343389691805048L ^ a;
-      short var73 = 30664;
-      var10010 = 1232343389691805048L ^ a;
       dmp.cpp(axxxxxxxxxxxxxxx, axxxxxxxxxx, axxxxxxxxxxxxx, axxxxxxxxxxxxxx, var10004, new Color(60, 60, 60));
-      var10001 = 20481;
-      var10002 = 8809255817026152119L ^ a;
       amh.cbl.ebb("Cancel", axxxxxxxxxxxxxxx + 24.0F * axxxxx, axxxxxxxxxx + 7.0F * axxxxx, Color.WHITE);
       var10004 = 4.0F * axxxxx;
       var10007 = dar.gqy().deo().getRed();
       int var66 = dar.gqy().deo().getGreen();
       int var74 = dar.gqy().deo().getBlue();
-      short var78 = 32295;
-      long var10011 = 6646803881025893532L ^ a;
       dmp.cpp(axxxxxxxxxxxxxxxx, axxxxxxxxxx, axxxxxxxxxxxxx, axxxxxxxxxxxxxx, var10004, new Color(var10007, var66, var74, 200));
-      var10001 = 12442;
-      var10002 = 6360475891186681381L ^ a;
       amh.cbl.ebb("Upload", axxxxxxxxxxxxxxxx + 24.0F * axxxxx, axxxxxxxxxx + 7.0F * axxxxx, Color.WHITE);
    }
 
@@ -454,15 +354,8 @@ public class ffm {
       ax = ffm.a ^ 96945837073846L;
       float var10000 = a + 1.0F;
       float var10001 = a + 1.0F;
-      short var10010 = 30115;
-      long var10011 = 2607836974983149448L ^ ax;
       dmp.cpp(var10000, var10001, a, a, 6.0F, new Color(0, 0, 0, 40));
       int var10007 = 27711;
-      long var10008 = 4798883051123469839L ^ ax;
-      short var40 = 12328;
-      long var10009 = 3119124831989019148L ^ ax;
-      short var46 = 12328;
-      long var50 = 3119124831989019148L ^ ax;
       dmp.cpp(a, a, a, a, 6.0F, new Color(28, 28, 28));
       dmp.cpp(a, a, 3.0F, a, 6.0F, dar.gqy().deo());
       int[] var20 = dar.abu();
@@ -472,21 +365,12 @@ public class ffm {
       axxx += 16.0F;
       int[] axxxx = var20;
       amh.cbl.ebb(a.ayq().eus(), axx, axxx, dar.gqy().deo());
-      short var10002 = 4865;
-      long var10003 = 7449266515414936878L ^ ax;
       SimpleDateFormat axxxxx = new SimpleDateFormat("MMM dd, yyyy");
       String var21 = axxxxx.format(new Date(a.bsl()));
-      short var24 = 7539;
-      long var30 = 8029292065629463384L ^ ax;
       String axxxxxx = " • " + var21;
       fll var22 = amh.ety;
       float var31 = axx + amh.cbl.eq(a.ayq().eus());
-      short var10006 = 12797;
-      long var35 = 1002871196030841815L ^ ax;
       var10007 = (short)17030;
-      var10008 = 3284768532488831104L ^ ax;
-      short var42 = 17030;
-      var10009 = 3284768532488831104L ^ ax;
       var22.ebb(axxxxxx, var31, axxx, new Color(120, 120, 120));
       axxx += 14.0F;
       var25 = a.chb();
@@ -507,8 +391,6 @@ public class ffm {
             break label29;
          }
 
-         short var27 = 16337;
-         long var32 = 1523065064150385137L ^ ax;
          var25 = "No Description Provided";
       }
 
@@ -516,12 +398,7 @@ public class ffm {
       float axxxxxxx = a + a - 20.0F;
       fll var23 = amh.ety;
       var25 = "#" + a.cna();
-      var10006 = 23195;
-      long var37 = 6991759035719473321L ^ ax;
       var10007 = (short)26693;
-      var10008 = 5346689354708019812L ^ ax;
-      short var44 = 26693;
-      var10009 = 5346689354708019812L ^ ax;
       var23.ebb(var25, axx, axxxxxxx, new Color(100, 100, 100));
       float axxxxxxxx = 60.0F;
       float axxxxxxxxx = 16.0F;
@@ -530,11 +407,7 @@ public class ffm {
       var10007 = dar.gqy().deo().getRed();
       int var45 = dar.gqy().deo().getGreen();
       int var49 = dar.gqy().deo().getBlue();
-      var10010 = 3093;
-      var10011 = 6336055410853711392L ^ ax;
       dmp.cpp(axxxxxxxxxx, axxxxxxxxxxx, 60.0F, 16.0F, 3.0F, new Color(var10007, var45, var49, 180));
-      short var29 = 6581;
-      long var33 = 5377066659852314524L ^ ax;
       amh.ety.ebb("Download", axxxxxxxxxx + 11.5F, axxxxxxxxxxx + 3.0F, Color.WHITE);
    }
 
@@ -606,11 +479,8 @@ public class ffm {
 
                                  if (var24 == 0) {
                                     int var10002 = axxxxxxxxx.length();
-                                    short var10003 = 30898;
-                                    long var10004 = 8003161297943747343L ^ ax;
                                     String var25 = axxxxxxxxx.substring(0, Math.min(var10002, 30));
                                     var10001 = 31906;
-                                    long var27 = 2203240078759764798L ^ ax;
                                     axxxxxxxxx = var25 + "...";
                                  }
                               }
@@ -775,18 +645,10 @@ public class ffm {
       if (axxxxx != null) {
          if (axxxx == 0) {
             int var31 = a.aku.method_22683().method_4486();
-            short var10001 = 7971;
-            long var10002 = 8507517419964505326L ^ ax;
             int var32 = var31 - 30;
-            var10001 = 21731;
-            var10002 = 6859824181295339286L ^ ax;
             float axxxxxx = var32 - 15;
             int var33 = a.aku.method_22683().method_4502();
-            var10001 = 7971;
-            var10002 = 8507517419964505326L ^ ax;
             int var34 = var33 - 30;
-            var10001 = 21731;
-            var10002 = 6859824181295339286L ^ ax;
             float axxxxxxx = var34 - 15;
             double var53;
             var35 = (var53 = axx - axxxxxx) == 0.0 ? 0 : (var53 < 0.0 ? -1 : 1);
@@ -950,11 +812,7 @@ public class ffm {
                   float axxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxx + 320.0F - 60.0F - 12.0F;
                   float axxxxxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxxxx + 90.0F - 20.0F - 4.0F;
                   File var48 = class_310.method_1551().field_1697;
-                  short var10003 = 8619;
-                  long var10004 = 3708659453870497344L ^ ax;
                   String var50 = "Astralis".toLowerCase();
-                  short var10005 = 8499;
-                  long var10006 = 8794778569531547353L ^ ax;
                   File axxxxxxxxxxxxxxxxxxxxxxxx = new File(var48, "/" + var50 + "/Configs");
                   if (axxxxx != null) {
                      double var65;
@@ -993,8 +851,6 @@ public class ffm {
                            JsonObject var39 = axxxxxxxxxxxxxxxxxx.dvu();
                            String var44 = axxxxxxxxxxxxxxxxxxxxxxxx.getAbsolutePath();
                            String var49 = axxxxxxxxxxxxxxxxxx.amx();
-                           short var51 = 22342;
-                           long var52 = 1612388004995180706L ^ ax;
                            dvt.exy(var39, var44 + "/" + var49 + ".astralis");
                            return (boolean)1;
                         }
@@ -1249,8 +1105,6 @@ public class ffm {
                                  if (var39 <= 0) {
                                     PrintStream var40 = System.out;
                                     String var10001 = axxxxxxxxxxxxxxxxxxxxxx.amx();
-                                    short var10002 = 13817;
-                                    long var10003 = 5035865542863409269L ^ ax;
                                     var40.println("Download clicked for config: " + var10001);
                                     return (boolean)1;
                                  }
@@ -1327,7 +1181,6 @@ public class ffm {
          if (a.gxr) {
             int var7 = axx;
             int var10001 = 24503;
-            long var10002 = 3059544838565859574L ^ ax;
             var10001 = (short)256;
             if (axxx != null) {
                if (axx == 256) {
@@ -1337,7 +1190,6 @@ public class ffm {
 
                var7 = axx;
                var10001 = (short)6171;
-               var10002 = 1166127496897812290L ^ ax;
                var10001 = (short)258;
             }
 
@@ -1353,8 +1205,6 @@ public class ffm {
                }
 
                var7 = axx;
-               short var11 = 28822;
-               var10002 = 1310892831517458370L ^ ax;
                var10001 = (short)257;
             }
 
@@ -1371,8 +1221,6 @@ public class ffm {
                   return (boolean)axx;
                }
 
-               short var12 = 15734;
-               var10002 = 6267841007408050739L ^ ax;
                var10001 = (short)259;
             }
 
@@ -1445,7 +1293,6 @@ public class ffm {
                      if (a.gqe == 0) {
                         var10000 = a.dyv.length();
                         var7 = 8169;
-                        long var10002 = 3504187636227996781L ^ ax;
                         var7 = 50;
                         if (axx == null) {
                            break label73;
@@ -1476,7 +1323,6 @@ public class ffm {
                   }
 
                   var7 = 21251;
-                  long var9 = 2249752198017429643L ^ ax;
                   if (var10000 < 500) {
                      a.avw = a.avw + axxx;
                   }
@@ -1751,7 +1597,6 @@ public class ffm {
                                           | (var10[5] & 255L) << 16
                                           | (var10[6] & 255L) << 8
                                           | var10[7] & 255L;
-                                       byte var61 = -1;
                                        var6[var47] = var62;
                                     } while (var2 < var5);
 

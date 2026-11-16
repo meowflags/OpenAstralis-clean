@@ -40,8 +40,6 @@ public class ek {
    public static String bfz(String input) {
       long ax = ek.a ^ 23749658965488L;
       int[] var10000 = dar.abu();
-      short var10002 = 5531;
-      long var10003 = 8250135295982934878L ^ ax;
       String[] axx = a.split("\\s");
       int[] axxx = var10000;
       StringBuilder axxxx = new StringBuilder();
@@ -74,13 +72,9 @@ public class ek {
       long ax = ek.a ^ 35971280607347L;
 
       try {
-         short var10000 = 20070;
-         long var10001 = 6200420705016229166L ^ ax;
          MessageDigest axx = MessageDigest.getInstance("SHA-1");
          byte[] axxx = axx.digest(a.getBytes(StandardCharsets.UTF_8));
          String var6 = bpw(axxx);
-         short var10002 = 7270;
-         long var10003 = 5254911551954922809L ^ ax;
          return var6.substring(0, 8);
       } catch (NoSuchAlgorithmException var5) {
          throw new RuntimeException(var5);
@@ -99,8 +93,6 @@ public class ek {
       while (true) {
          if (var7 < var6) {
             byte axxxx = var5[var7];
-            short var10001 = 10613;
-            long var10002 = 2255213529833059475L ^ ax;
             var9 = axx.append(String.format("%02x", axxxx));
             if (axxx == null) {
                break;
@@ -127,29 +119,15 @@ public class ek {
       return IntStream.range(0, a).mapToObj(ax -> {
          long ax = ek.a ^ 49049287322482L;
          Random var10000 = new Random();
-         short var10001 = 2001;
-         long var10002 = 4657036571291043212L ^ ax;
-         short var3 = 4268;
-         long var10003 = 6444119795781817075L ^ ax;
          return String.valueOf((char)var10000.nextInt(97, 123));
       }).collect(Collectors.joining());
    }
 
    public static String chu(String input) {
       long ax = ek.a ^ 127559980405068L;
-      short var10001 = 32622;
-      long var10002 = 3964660352858346776L ^ ax;
-      short var9 = 4975;
-      long var10003 = 4017942809260210458L ^ ax;
       String axx = a.replaceAll("([a-z])([A-Z])", "$1 $2");
-      var10001 = 16627;
-      var10002 = 6047257373568887432L ^ ax;
       axx = axx.replaceAll("(?<=\\p{Lower})(?=\\d)", " ");
-      var10001 = 22490;
-      var10002 = 3138384803039313316L ^ ax;
       axx = axx.replaceAll("(?<=\\p{Upper})(?=\\d)", " ");
-      var10001 = 23952;
-      var10002 = 9139874997518006252L ^ ax;
       return axx.replaceAll("(?<=\\d)(?=[A-Z])", " ");
    }
 
@@ -167,8 +145,6 @@ public class ek {
       if (axxxxxx != null) {
          if (var14 > 0) {
             StringBuilder var15 = axxxxxxx.append(axxx);
-            short var10001 = 4221;
-            long var10002 = 6852852258887256277L ^ ax;
             var15.append("h ");
          }
 
@@ -193,13 +169,9 @@ public class ek {
          }
 
          StringBuilder var16 = axxxxxxx.append(axxxx);
-         short var17 = 28845;
-         long var19 = 4706815428793640962L ^ ax;
          var16.append("m ");
       }
 
-      short var18 = 2991;
-      long var20 = 5816884330382316293L ^ ax;
       axxxxxxx.append(String.format("%.1fs", axxxxx));
       return axxxxxxx.toString().trim();
    }
@@ -288,7 +260,6 @@ public class ek {
                            | (var15[5] & 255L) << 16
                            | (var15[6] & 255L) << 8
                            | var15[7] & 255L;
-                        byte var49 = -1;
                         var11[var10001] = var10004;
                      } while (var7 < var10);
 
@@ -325,10 +296,7 @@ public class ek {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var39 = -1;
                      h = var47;
-                     short var33 = 6512;
-                     long var40 = 2115347719904295737L ^ var25;
                      ffl = Pattern.compile("(?i)\\u00A7[0-9A-FK-OR]");
                      return;
                   }

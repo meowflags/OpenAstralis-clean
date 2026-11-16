@@ -41,14 +41,11 @@ class ayk {
       label42: {
          ax = b ^ 17336323711036L;
          int[] var10000 = dar.abu();
-         long axxxx = f;
          axx = var10000;
          cdr[] var13 = fz.dtf();
          super();
          axxx = var13;
          int var14 = a.length;
-         short var10001 = 4183;
-         long var10002 = 930635842633262498L ^ ax;
          short var18 = 32;
          if (axx != null) {
             if (var14 != 32) {
@@ -62,7 +59,6 @@ class ayk {
 
             var14 = a.length;
             var18 = 7937;
-            var10002 = 1956072786363345663L ^ ax;
             var18 = 12;
          }
 
@@ -74,18 +70,13 @@ class ayk {
          a.cjc = 0L;
          ebf var16 = new ebf(a, a, 0);
          var18 = 20725;
-         var10002 = 6774380405721244935L ^ ax;
          var15 = var16.atf(new byte[64]);
       }
 
       byte[] axxxxx = var15;
-      short var10004 = 25397;
-      long var10005 = 1692387400377079497L ^ ax;
       a.flt = new asz(Arrays.copyOf(axxxxx, 32));
       a.amc = new ebf(a, a, 1);
       int var17 = a.length;
-      short var21 = 24574;
-      long var24 = 8778794921109694990L ^ ax;
       byte[] axxxxxx = deo(var17, 16);
       byte[] axxxxxxx = new byte[a.length + axxxxxx.length];
       System.arraycopy(a, 0, axxxxxxx, 0, a.length);
@@ -102,11 +93,8 @@ class ayk {
    }
 
    public byte[] cjj(byte[] data) {
-      long ax = b ^ 129083647570781L;
       byte[] axx = a.amc.atf(a);
       int var10000 = axx.length;
-      short var10001 = 24574;
-      long var10002 = 8778907471606462831L ^ ax;
       byte[] axxx = deo(var10000, 16);
       byte[] axxxx = new byte[axx.length + axxx.length];
       System.arraycopy(axx, 0, axxxx, 0, axx.length);
@@ -117,10 +105,7 @@ class ayk {
    }
 
    public byte[] fcr(byte[] data) {
-      long ax = b ^ 77309716664076L;
       int var10000 = a.length;
-      short var10001 = 24574;
-      long var10002 = 8778855856078226750L ^ ax;
       byte[] axx = deo(var10000, 16);
       byte[] axxx = new byte[a.length + axx.length];
       System.arraycopy(a, 0, axxx, 0, a.length);
@@ -132,8 +117,6 @@ class ayk {
 
    public byte[] arj() {
       long a = b ^ 40493916534123L;
-      short var10000 = 14808;
-      long var10001 = 6379158502839769470L ^ a;
       ByteBuffer ax = ByteBuffer.allocate(16).order(ByteOrder.LITTLE_ENDIAN);
       ax.putLong(a.cgf.length);
       ax.putLong(a.cjc);
@@ -254,22 +237,16 @@ class ayk {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var38 = -1;
                      f = var48;
                      String[] var27 = new String[3];
-                     short var33 = 5088;
                      int var25 = 0;
-                     long var39 = 7965407987050567723L ^ var20;
                      String var24 = var16;
                      int var26 = var16.length();
                      char var23 = 20;
                      int var22 = -1;
 
                      while (true) {
-                        short var34 = 31205;
-                        long var40 = 228607871803077160L ^ var20;
                         String var49 = a(101, a(var24.substring(++var22, var22 + var23)));
-                        var38 = -1;
                         var27[var25++] = var49;
                         if ((var22 += var23) >= var26) {
                            a = var27;
@@ -310,7 +287,6 @@ class ayk {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 103179683709573L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          var10000[0] = (char)(var10000[0] ^ 2);
@@ -320,7 +296,6 @@ class ayk {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 124917259514581L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -328,37 +303,23 @@ class ayk {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 16158;
-         long var10009 = 6570847897074784269L ^ var2;
          var10001[var4] = (char)(var10005 ^ var10002 ^ switch (var4 % 7) {
             case 0 -> {
-               short var15 = 32403;
-               long var21 = 3205355929690839429L ^ var2;
                yield 89;
             }
             case 1 -> {
-               short var14 = 24407;
-               long var20 = 1726502303875643469L ^ var2;
                yield 60;
             }
             case 2 -> {
-               short var13 = 8058;
-               long var19 = 7068662042770929767L ^ var2;
                yield 94;
             }
             case 3 -> {
-               short var12 = 28508;
-               long var18 = 8512628439600171085L ^ var2;
                yield 34;
             }
             case 4 -> {
-               short var11 = 4607;
-               long var17 = 5258693382109624047L ^ var2;
                yield 41;
             }
             case 5 -> {
-               short var10 = 24574;
-               long var16 = 8778911155884439783L ^ var2;
                yield 16;
             }
             default -> 2;

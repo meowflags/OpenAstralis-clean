@@ -121,10 +121,7 @@ public class MixinShaderLoaderCache {
                   if (var2 >= var5) {
                      c = var6;
                      d = new Integer[10];
-                     short var20 = 12929;
-                     long var24 = 4376289666209741393L ^ var15;
                      String var30 = a(81, a(var11));
-                     byte var25 = -1;
                      a = var30;
                      return;
                   }
@@ -159,12 +156,9 @@ public class MixinShaderLoaderCache {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 105167813831062L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 7709;
-         long var10005 = 6848840270570010646L ^ var1;
          var10000[0] = (char)(var10003 ^ '0');
       }
 
@@ -172,7 +166,6 @@ public class MixinShaderLoaderCache {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 120968575268348L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -180,43 +173,33 @@ public class MixinShaderLoaderCache {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 3848;
-         long var10009 = 4674651202666493280L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 26246;
-               long var23 = 5572817235227221221L ^ var2;
                var10 = 105;
                break;
             case 1:
                var10 = 29995;
-               long var22 = 8715530568342572877L ^ var2;
                var10 = 61;
                break;
             case 2:
                var10 = 26474;
-               long var21 = 7172123572608867598L ^ var2;
                var10 = 19;
                break;
             case 3:
-               byte var13 = 125;
-               long var20 = 8890672964204722714L ^ var2;
                var10 = 31;
                break;
             case 4:
                var10 = 4787;
-               long var19 = 359958891144866001L ^ var2;
                var10 = 91;
                break;
             case 5:
                var10 = 31813;
-               long var18 = 1616085474672150048L ^ var2;
                var10 = 67;
                break;
             default:
                var10 = 26011;
-               long var17 = 5744823078809935867L ^ var2;
                var10 = 48;
          }
 

@@ -40,7 +40,6 @@ public class dtk implements bvc {
    }
 
    public static boolean fwm() {
-      long var0 = a ^ 80142906781029L;
       int[] var2 = dar.abu();
       boolean var3 = ctr();
       boolean var10000 = var3;

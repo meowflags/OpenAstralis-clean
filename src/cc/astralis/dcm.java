@@ -61,7 +61,6 @@ class dcm {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var22 = -1;
          var0[var10001] = var10004;
       } while (var3 < var6);
 

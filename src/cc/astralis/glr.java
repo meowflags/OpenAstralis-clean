@@ -23,12 +23,8 @@ public class glr extends fso {
    public glr() {
       long a = glr.a ^ 12088196285052L;
       String[] var10001 = new String[2];
-      short var10004 = 7380;
-      long var10005 = 6008974301153967196L ^ a;
       var10001[0] = "friend";
       var10001[1] = "f";
-      short var10002 = 13989;
-      long var10003 = 4130451193389389356L ^ a;
       super(var10001, "Whitelists ppl from certain modules (.friend <add or remove> <name>");
    }
 
@@ -42,8 +38,6 @@ public class glr extends fso {
       String[] var10 = axx;
       if (axxxx != null) {
          if (axx.length < 2) {
-            short var14 = 23854;
-            long var18 = 6780305658331202721L ^ ax;
             bpa.dhu("Wrong Usage .friend <add or remove> <name>");
             return;
          }
@@ -58,8 +52,6 @@ public class glr extends fso {
       if (axxxx != null) {
          switch (var11) {
             case 96417:
-               short var10001 = 16899;
-               long var10002 = 2619334338978487178L ^ ax;
                var11 = var8.equals("add");
                if (axxxx == null) {
                   break label57;
@@ -74,8 +66,6 @@ public class glr extends fso {
                   break;
                }
             case -934610812:
-               short var15 = 10989;
-               long var19 = 1289906935986320229L ^ ax;
                var11 = var8.equals("remove");
                if (axxxx == null) {
                   break label57;
@@ -93,10 +83,6 @@ public class glr extends fso {
          case 0:
             axxx.gxx(axx[2]);
             String var12 = axx[2];
-            short var16 = 12677;
-            long var20 = 1518962656344074244L ^ ax;
-            short var21 = 28292;
-            long var10003 = 2561441403244787464L ^ ax;
             bpa.dhu("Added " + var12 + " As a Friend");
             if (axxxx != null) {
                break;
@@ -104,10 +90,6 @@ public class glr extends fso {
          case 1:
             axxx.cnd(axx[2]);
             String var13 = axx[2];
-            short var17 = 32526;
-            long var22 = 7728981200989693568L ^ ax;
-            short var23 = 4758;
-            long var24 = 3579243285278903067L ^ ax;
             bpa.dhu("Removed " + var13 + " From Friends List");
       }
    }

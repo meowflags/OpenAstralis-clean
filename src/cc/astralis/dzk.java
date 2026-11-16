@@ -38,8 +38,6 @@ public class dzk extends cdr implements dlc, amh {
    public dzk(String subHeader, gge notificationType) {
       long ax = dzk.a ^ 83018585045034L;
       super();
-      short var10004 = 25648;
-      long var10005 = 7074834304535206248L ^ ax;
       a.heu = new erp(dtw.EASE_OUT_BACK, 1000L);
       a.fsb = false;
       a.ati = false;
@@ -111,11 +109,7 @@ public class dzk extends cdr implements dlc, amh {
       int[] var10000 = dar.abu();
       long axxx = Math.max(0L, a - a);
       String var10001 = a.dgr;
-      short var10002 = 16363;
-      long var10003 = 5565979717687087019L ^ ax;
       String var43 = String.format("%.1f", axxx / 1000.0);
-      short var48 = 25695;
-      long var10004 = 7386863600979432472L ^ ax;
       String axxxx = var10001 + " (" + var43 + ")";
       float axxxxx = dfk.eq(a.dgr) + 23.5F;
       int[] axxxxxx = var10000;
@@ -144,18 +138,10 @@ public class dzk extends cdr implements dlc, amh {
             axxxxxxxxxxxx = axxxxxxx * axxxxxxxxxxxxxx;
             axxxxxxxxxxxxx = dar.gqy().aws().diy(ezv.class);
             if (axxxxxx != null) {
-               short var37 = 32631;
-               long var44 = 3979993652507954995L ^ ax;
                if (!dar.gqy().aws().diy(dtc.class).bph.emb("Modern")) {
                   break label98;
                }
 
-               short var10007 = 10001;
-               long var10008 = 4390233368949310478L ^ ax;
-               short var51 = 10281;
-               long var10009 = 2159310605546277685L ^ ax;
-               short var54 = 2382;
-               long var10010 = 1312099216003131987L ^ ax;
                dmp.cpp(axxxxxxxxxx, axxxxxxxxxxx, axxxxxxx, axxxxxxxx, 5.0F, new Color(15, 15, 18, axxxxxxxxxxxxx.fug.dnp().intValue()));
             }
 
@@ -164,12 +150,6 @@ public class dzk extends cdr implements dlc, amh {
             }
          }
 
-         short var10006 = 10281;
-         long var49 = 2159310605546277685L ^ ax;
-         short var50 = 10281;
-         long var52 = 2159310605546277685L ^ ax;
-         short var53 = 25333;
-         long var55 = 7802381521432936939L ^ ax;
          dmp.euv(axxxxxxxxxx, axxxxxxxxxxx, axxxxxxx, axxxxxxxx, new Color(15, 15, 18, axxxxxxxxxxxxx.fug.dnp().intValue()));
       }
 
@@ -179,8 +159,6 @@ public class dzk extends cdr implements dlc, amh {
       if (axxxxxx != null) {
          switch (var31) {
             case -1656737386:
-               short var38 = 4266;
-               long var45 = 9056654662386065641L ^ ax;
                var31 = axxxxxxxxxxxxxxx.equals("Rainbow");
                if (axxxxxx == null) {
                   break;
@@ -195,8 +173,6 @@ public class dzk extends cdr implements dlc, amh {
       }
       Color axxxxxxxxxxxxxxxxx = switch (var31) {
          case 0 -> {
-            short var33 = 14582;
-            long var39 = 6294421922929235351L ^ ax;
             yield ezv.gbq(3000L, 0, 0.7F, 1.0F);
          }
          default -> dec.fbp(new class_5611(0.0F, 6.0F), axxxxxxxxxxxxx.ehf.dnp(), axxxxxxxxxxxxx.aoz.dnp());
@@ -207,8 +183,6 @@ public class dzk extends cdr implements dlc, amh {
       if (axxxxxx != null) {
          switch (var34) {
             case -1656737386:
-               short var40 = 9215;
-               long var46 = 7731900237655020474L ^ ax;
                var34 = var28.equals("Rainbow");
                if (axxxxxx == null) {
                   break;
@@ -223,15 +197,11 @@ public class dzk extends cdr implements dlc, amh {
       }
       Color axxxxxxxxxxxxxxxxxx = switch (var34) {
          case 0 -> {
-            short var36 = 27470;
-            long var41 = 2345135216729359916L ^ ax;
             yield ezv.gbq(4000L, 0, 1.0F, 1.0F);
          }
          default -> dec.fbp(new class_5611(0.0F, 6.0F), axxxxxxxxxxxxx.ehf.dnp(), axxxxxxxxxxxxx.aoz.dnp());
       };
       if (axxxxxx != null) {
-         short var42 = 32137;
-         long var47 = 7543534926847036872L ^ ax;
          if (dar.gqy().aws().diy(dtc.class).bph.emb("Legacy")) {
             dmp.dyl(axxxxxxxxxx, axxxxxxxxxxx + 33.0F, axxxxxxxxxxxx, 2.0F, axxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxx, false);
          }
@@ -270,8 +240,6 @@ public class dzk extends cdr implements dlc, amh {
          axxxxxxxx = var16 - axxxxxxx - axxxxx;
          axxxxxxxxx = axx.method_4502() - a - axxxxxx;
          if (axxxx != null) {
-            short var10001 = 5927;
-            long var10002 = 7547599959927737375L ^ ax;
             if (!dar.gqy().aws().diy(dtc.class).bph.emb("Modern")) {
                break label29;
             }
@@ -441,7 +409,6 @@ public class dzk extends cdr implements dlc, amh {
                                           | (var10[5] & 255L) << 16
                                           | (var10[6] & 255L) << 8
                                           | var10[7] & 255L;
-                                       byte var61 = -1;
                                        var6[var47] = var62;
                                     } while (var2 < var5);
 

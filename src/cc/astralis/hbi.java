@@ -24,15 +24,9 @@ public class hbi extends fso {
    public hbi() {
       long a = hbi.a ^ 124624865858924L;
       String[] var10001 = new String[3];
-      short var10004 = 26472;
-      long var10005 = 6628921519714998875L ^ a;
       var10001[0] = "bind";
       var10001[1] = "b";
-      var10004 = 30414;
-      var10005 = 1213964827203865590L ^ a;
       var10001[2] = "keyboard";
-      short var10002 = 4017;
-      long var10003 = 5770322223061103238L ^ a;
       super(var10001, "Binds Modules (.bind <module> <bind>)");
    }
 
@@ -45,8 +39,6 @@ public class hbi extends fso {
       String[] var14 = axx;
       if (axxx != null) {
          if (axx.length < 2) {
-            short var21 = 16969;
-            long var27 = 7817309040170164947L ^ ax;
             bpa.dhu("Wrong Usage .bind <module> <bind>");
             return;
          }
@@ -57,8 +49,6 @@ public class hbi extends fso {
       String axxxx;
       label85: {
          axxxx = var14[1].toLowerCase();
-         short var10001 = 30337;
-         long var10002 = 9144354741782828565L ^ ax;
          int var15 = axxxx.equalsIgnoreCase("list");
          if (axxx != null) {
             if (var15 != 0) {
@@ -73,8 +63,6 @@ public class hbi extends fso {
                            }
 
                            var20 = axxxxxx;
-                           var10001 = 370;
-                           var10002 = 4215142453344674281L ^ ax;
                            var26 = "Unknown";
                            if (axxx == null) {
                               break label89;
@@ -91,8 +79,6 @@ public class hbi extends fso {
                         var26 = axxxxxx;
                      }
 
-                     short var31 = 12846;
-                     long var33 = 7057078726599348918L ^ ax;
                      bpa.dhu(var20 + " is bound to " + var26);
                   }
 
@@ -113,8 +99,6 @@ public class hbi extends fso {
          }
 
          if (var15 < 3) {
-            short var17 = 29588;
-            long var22 = 7854700883126702856L ^ ax;
             bpa.dhu("Wrong Usage .bind <module> <bind>");
             return;
          }
@@ -130,16 +114,10 @@ public class hbi extends fso {
             axxxxxxx.hge(axxxxxxxx);
             String var18 = axxxxxxx.clp();
             String var24 = axxxxx.toUpperCase();
-            short var29 = 32067;
-            long var10003 = 7662762697216384477L ^ ax;
-            short var32 = 1552;
-            long var10004 = 6655003910435874447L ^ ax;
             bpa.dhu("Bound " + var18 + " to " + var24);
             return;
          }
 
-         short var23 = 20270;
-         long var28 = 678782074070724539L ^ ax;
          bpa.dhu("Non-Existing Module " + axxxx);
       }
    }

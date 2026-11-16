@@ -33,22 +33,14 @@ public class eyj {
    private static final Map h;
 
    public static byte[] ere(byte[] data, byte[] key, byte[] aad) {
-      long ax = b ^ 32817759257641L;
       int[] var10000 = dar.abu();
-      short var10001 = 26606;
-      long var10002 = 94864507093876089L ^ ax;
-      long axx = 39663199728497L;
       cdr[] axxx = fz.dtf();
       int[] axxxx = var10000;
       int var15 = a.length;
-      var10001 = 27690;
-      var10002 = 4445649265426780332L ^ ax;
       if (var15 != 32) {
          throw new IllegalArgumentException(eyj.a[2]);
       } else {
          SecureRandom axxxxx = new SecureRandom();
-         short var16 = 18958;
-         long var19 = 5478525291565053593L ^ ax;
          byte[] axxxxxx = new byte[12];
          axxxxx.nextBytes(axxxxxx);
          ayk axxxxxxx = new ayk(a, axxxxxx, a);
@@ -74,13 +66,8 @@ public class eyj {
       label43: {
          ax = b ^ 61017601237987L;
          int[] var10000 = dar.abu();
-         short var10001 = 19555;
-         long var10002 = 6272531962212233533L ^ ax;
-         long axxx = 103815411965598L;
          axx = var10000;
          int var14 = a.length;
-         var10001 = 27690;
-         var10002 = 4445673875143735142L ^ ax;
          short var18 = 32;
          if (axx != null) {
             if (var14 != 32) {
@@ -94,7 +81,6 @@ public class eyj {
 
             var14 = a.length;
             var18 = 5134;
-            var10002 = 5632226735327235905L ^ ax;
             var18 = 28;
          }
 
@@ -102,21 +88,14 @@ public class eyj {
             throw new IllegalArgumentException(eyj.a[0]);
          }
 
-         short var24 = 23782;
-         long var10003 = 2955801729960347582L ^ ax;
          var15 = Arrays.copyOfRange(a, 0, 12);
       }
 
       byte[] axxxx = var15;
       int var20 = 18958;
-      long var25 = 5478500440572825939L ^ ax;
       int var26 = a.length;
-      short var28 = 1922;
-      long var10004 = 529720263864638666L ^ ax;
       byte[] axxxxx = Arrays.copyOfRange(a, 12, var26 - 16);
       var20 = a.length;
-      short var27 = 1922;
-      long var29 = 529720263864638666L ^ ax;
       byte[] axxxxxx = Arrays.copyOfRange(a, var20 - 16, a.length);
       ayk axxxxxxx = new ayk(a, axxxx, a);
       byte[] axxxxxxxx = axxxxxxx.fcr(axxxxx);
@@ -142,14 +121,11 @@ public class eyj {
    }
 
    public static int cyq() {
-      long var0 = b ^ 67117233346639L;
       int[] var2 = dar.abu();
       int var3 = ceu();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 28029;
-            long var10001 = 8536017375575821718L ^ var0;
             return 43;
          }
 
@@ -317,21 +293,15 @@ public class eyj {
                                                    f = var6;
                                                    g = new Long[5];
                                                    String[] var46 = new String[4];
-                                                   short var60 = 23883;
                                                    int var44 = 0;
-                                                   long var77 = 187693645871639566L ^ var31;
                                                    String var43;
                                                    int var45 = (var43 = var22[3]).length();
-                                                   short var78 = 819;
-                                                   long var97 = 8270077634656383585L ^ var31;
                                                    char var42 = 14;
                                                    int var53 = -1;
                                                    btm(99);
 
                                                    label77:
                                                    while (true) {
-                                                      short var61 = 2196;
-                                                      long var79 = 759552652796049877L ^ var31;
                                                       byte var62 = 49;
                                                       String var80 = var43.substring(++var53, var53 + var42);
                                                       byte var98 = -1;
@@ -343,8 +313,6 @@ public class eyj {
                                                                var46[var44++] = var63;
                                                                if ((var53 += var42) >= var45) {
                                                                   a = var46;
-                                                                  short var66 = 1555;
-                                                                  long var83 = 8996788490322612575L ^ var31;
                                                                   long var34 = 83412247915482L;
                                                                   long[] var33 = new long[4];
                                                                   int var37 = 0;
@@ -360,61 +328,29 @@ public class eyj {
                                                                      long[] var67 = var33;
                                                                      var84 = var37++;
                                                                      long var101 = var40[0];
-                                                                     short var127 = 32465;
                                                                      var159 = 412039183104633240L ^ var31;
                                                                      long var102 = var101 & 255L;
-                                                                     short var128 = 32088;
                                                                      var159 = 2073061184486886411L ^ var31;
                                                                      long var103 = var102 << 56;
                                                                      long var129 = var40[1];
-                                                                     short var164 = 523;
-                                                                     long var10005 = 2123954221876548929L ^ var31;
                                                                      long var130 = var129 & 255L;
-                                                                     short var165 = 32455;
-                                                                     var10005 = 7487980780483596171L ^ var31;
                                                                      long var104 = var103 | var130 << 48;
                                                                      long var131 = var40[2];
-                                                                     short var166 = 523;
-                                                                     var10005 = 2123954221876548929L ^ var31;
                                                                      long var132 = var131 & 255L;
-                                                                     short var167 = 8696;
-                                                                     var10005 = 1946576384652480695L ^ var31;
                                                                      long var105 = var104 | var132 << 40;
                                                                      long var133 = var40[3];
-                                                                     short var168 = 523;
-                                                                     var10005 = 2123954221876548929L ^ var31;
                                                                      long var134 = var133 & 255L;
-                                                                     short var169 = 25318;
-                                                                     var10005 = 5917516071802753981L ^ var31;
                                                                      long var106 = var105 | var134 << 32;
                                                                      long var135 = var40[4];
-                                                                     short var170 = 523;
-                                                                     var10005 = 2123954221876548929L ^ var31;
                                                                      long var136 = var135 & 255L;
-                                                                     short var171 = 18218;
-                                                                     var10005 = 2497456839895250530L ^ var31;
                                                                      long var107 = var106 | var136 << 24;
                                                                      long var137 = var40[5];
-                                                                     short var172 = 523;
-                                                                     var10005 = 2123954221876548929L ^ var31;
                                                                      long var138 = var137 & 255L;
-                                                                     short var173 = 12657;
-                                                                     var10005 = 8566598667261116475L ^ var31;
                                                                      long var108 = var107 | var138 << 16;
-                                                                     short var174 = 24007;
-                                                                     var10005 = 4449466405632044186L ^ var31;
                                                                      long var139 = var40[6];
-                                                                     short var175 = 523;
-                                                                     var10005 = 2123954221876548929L ^ var31;
                                                                      long var140 = var139 & 255L;
-                                                                     short var176 = 6875;
-                                                                     var10005 = 340781299861597105L ^ var31;
                                                                      long var109 = var108 | var140 << 8;
-                                                                     short var177 = 29270;
-                                                                     var10005 = 468409036160779029L ^ var31;
                                                                      long var141 = var40[7];
-                                                                     short var178 = 523;
-                                                                     var10005 = 2123954221876548929L ^ var31;
                                                                      long var110 = var109 | var141 & 255L;
                                                                      byte var142 = -1;
 
@@ -447,61 +383,29 @@ public class eyj {
                                                                         var67 = var33;
                                                                         var84 = var37++;
                                                                         long var112 = var40[0];
-                                                                        short var144 = 523;
                                                                         var159 = 2123954221876548929L ^ var31;
                                                                         long var113 = var112 & 255L;
-                                                                        short var145 = 5088;
                                                                         var159 = 3717377508304691892L ^ var31;
                                                                         long var114 = var113 << 56;
                                                                         long var146 = var40[1];
-                                                                        short var183 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         long var147 = var146 & 255L;
-                                                                        short var184 = 32455;
-                                                                        var10005 = 7487980780483596171L ^ var31;
                                                                         long var115 = var114 | var147 << 48;
                                                                         long var148 = var40[2];
-                                                                        short var185 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         long var149 = var148 & 255L;
-                                                                        short var186 = 21110;
-                                                                        var10005 = 2382517511976837934L ^ var31;
                                                                         long var116 = var115 | var149 << 40;
                                                                         long var150 = var40[3];
-                                                                        short var187 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         long var151 = var150 & 255L;
-                                                                        short var188 = 27690;
-                                                                        var10005 = 4445641022204697968L ^ var31;
                                                                         long var117 = var116 | var151 << 32;
                                                                         long var152 = var40[4];
-                                                                        short var189 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         long var153 = var152 & 255L;
-                                                                        short var190 = 18218;
-                                                                        var10005 = 2497456839895250530L ^ var31;
                                                                         long var118 = var117 | var153 << 24;
                                                                         long var154 = var40[5];
-                                                                        short var191 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         long var155 = var154 & 255L;
-                                                                        short var192 = 1922;
-                                                                        var10005 = 529687409709627100L ^ var31;
                                                                         long var119 = var118 | var155 << 16;
-                                                                        short var193 = 18998;
-                                                                        var10005 = 2658505270407428978L ^ var31;
                                                                         long var156 = var40[6];
-                                                                        short var194 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         long var157 = var156 & 255L;
-                                                                        short var195 = 16625;
-                                                                        var10005 = 5122046421115597230L ^ var31;
                                                                         long var120 = var119 | var157 << 8;
-                                                                        short var196 = 29270;
-                                                                        var10005 = 468409036160779029L ^ var31;
                                                                         long var158 = var40[7];
-                                                                        short var197 = 523;
-                                                                        var10005 = 2123954221876548929L ^ var31;
                                                                         var110 = var120 | var158 & 255L;
                                                                         var142 = 0;
                                                                      }
@@ -518,14 +422,10 @@ public class eyj {
                                                                }
 
                                                                var45 = (var43 = var22[5]).length();
-                                                               short var64 = 28743;
-                                                               long var81 = 2889829350399361303L ^ var31;
                                                                var42 = 25;
                                                                var53 = -1;
                                                          }
 
-                                                         short var65 = 19017;
-                                                         long var82 = 2351748291599072000L ^ var31;
                                                          var62 = 24;
                                                          var80 = var43.substring(++var53, var53 + var42);
                                                          var98 = 0;
@@ -614,12 +514,9 @@ public class eyj {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 139595493684081L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 24742;
-         long var10005 = 4057344677327924079L ^ var1;
          var10000[0] = (char)(var10003 ^ 'W');
       }
 
@@ -627,7 +524,6 @@ public class eyj {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 115757907486244L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -635,43 +531,34 @@ public class eyj {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 20726;
-         long var10009 = 8080306047715102309L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 32255;
-               long var23 = 8210007303128048507L ^ var2;
                var10 = 82;
                break;
             case 1:
                var10 = 3364;
-               long var22 = 1868044255950771106L ^ var2;
                var10 = 70;
                break;
             case 2:
                var10 = 23340;
-               long var21 = 3398831615060559275L ^ var2;
                var10 = 48;
                break;
             case 3:
                var10 = 18543;
-               long var20 = 5580076419487946494L ^ var2;
                var10 = 33;
                break;
             case 4:
                var10 = 28618;
-               long var19 = 2402252901379338588L ^ var2;
                var10 = 110;
                break;
             case 5:
                var10 = 9710;
-               long var18 = 2814572074637638499L ^ var2;
                var10 = 47;
                break;
             default:
                var10 = 24028;
-               long var17 = 7211053002585981771L ^ var2;
                var10 = 87;
          }
 

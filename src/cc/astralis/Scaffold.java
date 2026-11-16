@@ -120,209 +120,73 @@ public class Scaffold extends guu {
       long a = Scaffold.a ^ 12973103487419L;
       super(bfm.MOVEMENT);
       int[] var10000 = dar.abu();
-      short var10004 = 29206;
-      long var10005 = 5118616045073169690L ^ a;
-      short var149 = 18618;
-      long var10006 = 3236698855878182787L ^ a;
       String[] var169 = new String[4];
-      short var10009 = 10726;
-      long var10010 = 4694935003934271119L ^ a;
       var169[0] = "Normal";
-      var10009 = 17758;
-      var10010 = 5268201454946208374L ^ a;
       var169[1] = "Modern Watchdog";
-      var10009 = 11744;
-      var10010 = 5663065953896505984L ^ a;
       var169[2] = "Telly";
-      var10009 = 20101;
-      var10010 = 2253099706860257677L ^ a;
       var169[3] = "Snap";
       a.aqg = new adu("Scaffold Mode", "Normal", var169);
-      var10004 = 10213;
-      var10005 = 6235973740084799703L ^ a;
-      short var151 = 1266;
-      var10006 = 7829588862803479518L ^ a;
       String[] var171 = new String[2];
-      var10009 = 17797;
-      var10010 = 5689842658287438522L ^ a;
       var171[0] = "Update";
-      var10009 = 32470;
-      var10010 = 6822322386814988724L ^ a;
       var171[1] = "Click";
       a.bqc = new adu("Place Mode", "Update", var171);
-      var10004 = 31371;
-      var10005 = 113799823361996188L ^ a;
       a.gju = new bes("Start Placing After", 5.0F, 0.0F, 9.0F, 1.0F);
-      var10004 = 9104;
-      var10005 = 3443995112378838201L ^ a;
       a.fqo = new gbp("Swing Hand", true);
-      var10004 = 19590;
-      var10005 = 8353640073426158488L ^ a;
       a.coa = new gbp("Alternated Scaffold Order", false);
-      var10004 = 20342;
-      var10005 = 1782600290718662749L ^ a;
       a.cgy = new gbp("SafeWalk", true);
-      var10004 = 17078;
-      var10005 = 2471675846310415793L ^ a;
       a.bdd = new gbp("Same Y", false);
-      var10004 = 20552;
-      var10005 = 2491147520874405748L ^ a;
       a.cdk = new gbp("Anal Boob", false);
-      var10004 = 30063;
-      var10005 = 7616806522190133767L ^ a;
       a.bn = new gbp("Don't place in same tick", true);
-      var10004 = 31354;
-      var10005 = 1235549740168344852L ^ a;
       a.euz = new gbp("Jump", false);
       int[] var3 = var10000;
-      short var10003 = 16949;
-      long var79 = 8994178587173997879L ^ a;
       a.hge = new gbp("Don't jump diagonally", false);
-      var10003 = 23955;
-      long var80 = 9094745706310062723L ^ a;
       a.bjk = new bes("Jump Every", 1.0F, 1.0F, 30.0F, 1.0F);
-      var10003 = 4049;
-      long var81 = 5318868268672876722L ^ a;
       a.exn = new bes("Place Delay", 0.0F, 0.0F, 10.0F, 1.0F);
-      var10003 = 19772;
-      long var82 = 2690326005127135763L ^ a;
       a.fpf = new gbp("Sprint On Jump", false);
-      var10003 = 20968;
-      long var83 = 1239938196215324297L ^ a;
       a.bza = new gbp("Sprint", false);
-      var10003 = 14916;
-      long var84 = 4371409955720115491L ^ a;
       a.epf = new gbp("Change FOV", false);
-      var10003 = 11396;
-      long var85 = 2570381698267947950L ^ a;
       a.gdh = new cyx("Sprint Mode", new ecs(a), new arx(a), new dkm(a));
-      var10003 = 17100;
-      long var86 = 2776524004880010697L ^ a;
       a.gez = new gbp("Tower", false);
-      var10003 = 11842;
-      long var87 = 1538464201380962640L ^ a;
       a.cuw = new cyx("Tower Mode", new cgw(a), new bgl(a));
-      var10003 = 13897;
-      long var88 = 5982643869323508034L ^ a;
       a.czw = new gbp("No Off Hand check", true);
-      var10003 = 20983;
-      long var89 = 5035522264662367946L ^ a;
       a.gso = new gbp("Block Counter", true);
-      var10003 = 18656;
-      long var90 = 2017380996828055501L ^ a;
-      var10004 = 10527;
-      var10005 = 1862297927488841278L ^ a;
       String[] var161 = new String[2];
-      short var10008 = 2388;
-      long var191 = 678744821673035363L ^ a;
       var161[0] = "Astralis";
-      var10008 = 16907;
-      long var192 = 9216871595052420378L ^ a;
       var161[1] = "Adjust";
       a.end = new adu("Block Counter Mode", "Astralis", var161);
-      var10003 = 24198;
-      long var92 = 2163235057141338511L ^ a;
       a.dhl = new gbp("Block ESP", true);
-      var10003 = 31573;
-      long var93 = 7966276003476272251L ^ a;
-      var10004 = 18462;
-      var10005 = 789059682154039045L ^ a;
       String[] var163 = new String[2];
-      var10008 = 18462;
-      long var193 = 789059682154039045L ^ a;
       var163[0] = "Accurate";
-      var10008 = 1017;
-      long var194 = 3575420179344133364L ^ a;
       var163[1] = "Prediction";
       a.fdv = new adu("Block ESP Mode", "Accurate", var163);
-      var10003 = 11212;
-      long var95 = 5602640085958501592L ^ a;
       a.euu = new gbp("Sneak", false);
-      var10003 = 2263;
-      long var96 = 8857177065079113659L ^ a;
       a.grx = new bes("Sneak Every", 1.0F, 1.0F, 30.0F, 1.0F);
-      var10003 = 27074;
-      long var97 = 6169403297980147446L ^ a;
       a.flo = new gbp("Autoswap to next stack", true);
-      var10003 = 15321;
-      long var98 = 6383712457065510085L ^ a;
       a.esl = new gbp("Rotations", true);
-      var10003 = 6318;
-      long var99 = 5490620219211814794L ^ a;
       a.ggy = new gbp("180 on jump key", false);
-      var10003 = 28575;
-      long var100 = 2786835437019455730L ^ a;
-      var10004 = 12497;
-      var10005 = 1971575053594247098L ^ a;
       String[] var165 = new String[4];
-      var10008 = 16548;
-      long var195 = 4268102371946942396L ^ a;
       var165[0] = "Off";
-      var10008 = 10726;
-      long var196 = 4694935003934271119L ^ a;
       var165[1] = "Normal";
-      var10008 = 31478;
-      long var197 = 3296986833227347440L ^ a;
       var165[2] = "Advanced";
-      var10008 = 16656;
-      long var198 = 3280760497962110515L ^ a;
       var165[3] = "MC";
       a.gkz = new adu("Ray Cast Mode", "Off", var165);
-      var10003 = 9942;
-      long var102 = 7034826567316548072L ^ a;
       a.ewl = new bes("Min Yaw Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 17053;
-      long var103 = 1453571114383494556L ^ a;
       a.dih = new bes("Max Yaw Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 3878;
-      long var104 = 676570180342186057L ^ a;
       a.ezy = new bes("Min Pitch Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 14265;
-      long var105 = 3646913518110914743L ^ a;
       a.ael = new bes("Max Pitch Speed", 120.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 2262;
-      long var106 = 8255421607588726732L ^ a;
-      var10004 = 28532;
-      var10005 = 7762890693807071344L ^ a;
-      short var167 = 12131;
-      var10006 = 1971085004764920462L ^ a;
       String[] var168 = new String[6];
-      var10008 = 28532;
-      long var199 = 7762890693807071344L ^ a;
       var168[0] = "Basic";
-      var10008 = 27994;
-      long var200 = 8254015602457862767L ^ a;
       var168[1] = "Edge";
-      var10008 = 17758;
-      long var201 = 5268201454946208374L ^ a;
       var168[2] = "Modern Watchdog";
-      var10008 = 17866;
-      long var202 = 123389735295437484L ^ a;
       var168[3] = "Modern Watchdog 2";
-      var10008 = 28529;
-      long var203 = 8109229975263633489L ^ a;
       var168[4] = "God Bridge";
-      var10008 = 18203;
-      long var204 = 8473884255235983366L ^ a;
       var168[5] = "Intave";
       a.hfi = new adu("Rotation Mode", "Basic", var168);
-      var10003 = 6950;
-      long var108 = 3606449650073342997L ^ a;
       a.aof = new gbp("Brute Force Yaw", true);
-      var10003 = 23952;
-      long var109 = 4915896766692053641L ^ a;
       a.dgy = new gbp("Brute Force Pitch", true);
-      var10003 = 21363;
-      long var110 = 2334544928923343897L ^ a;
       a.aba = new gbp("Spoof Ray Cast", false);
-      var10003 = 9569;
-      long var111 = 7073938492098980432L ^ a;
       a.cci = new gbp("Stable", false);
-      var10003 = 9668;
-      long var112 = 7692005801944754891L ^ a;
       a.bld = new bes("Yaw Value", 180.0F, 0.0F, 360.0F, 1.0F);
-      var10003 = 31226;
-      long var113 = 862428912575444684L ^ a;
       a.dgj = new bes("Pitch Value", 81.7F, -90.0F, 90.0F, 0.1F);
       a.ciu = -1;
       a.dsa = new cbm();
@@ -330,8 +194,6 @@ public class Scaffold extends guu {
       a.eat = new cbm();
       a.gpi = null;
       a.hek = 0;
-      short var10001 = 18414;
-      long var10002 = 705920773575397948L ^ a;
       ffn[] var4 = new ffn[]{
          a.aqg,
          a.coa,
@@ -380,80 +242,30 @@ public class Scaffold extends guu {
          null,
          null
       };
-      var10003 = 9144;
-      long var114 = 3950215343920264805L ^ a;
       var4[6] = a.bdd;
-      var10003 = 17921;
-      long var115 = 7308210642741154787L ^ a;
       var4[7] = a.epf;
-      var10003 = 30456;
-      long var116 = 7688202087667098424L ^ a;
       var4[8] = a.bn;
-      var10003 = 20329;
-      long var117 = 5658199239190338222L ^ a;
       var4[9] = a.cdk.bih(a.bdd::dnp);
-      var10003 = 3928;
-      long var118 = 6727412134240098986L ^ a;
       var4[10] = a.euz;
-      var10003 = 821;
-      long var119 = 766460450673530594L ^ a;
       var4[11] = a.hge.bih(a.euz::dnp);
-      var10003 = 27170;
-      long var120 = 4512930774983868357L ^ a;
       var4[12] = a.bjk.bih(a.euz::dnp);
-      var10003 = 15674;
-      long var121 = 2002686725485406431L ^ a;
       var4[13] = a.bza;
-      var10003 = 15704;
-      long var122 = 1829081115442784428L ^ a;
       var4[14] = a.fpf;
-      var10003 = 19891;
-      long var123 = 3884934975117416525L ^ a;
       var4[15] = a.gdh.bih(a.bza::dnp);
-      var10003 = 24460;
-      long var124 = 3045557632174574162L ^ a;
       var4[16] = a.gez;
-      var10003 = 2263;
-      long var125 = 89049025673501964L ^ a;
       var4[17] = a.cuw.bih(a.gez::dnp);
-      var10003 = 8250;
-      long var126 = 7320342079517767120L ^ a;
       var4[18] = a.czw;
-      var10003 = 17185;
-      long var127 = 7229821888262690528L ^ a;
       var4[19] = a.gso;
-      var10003 = 29717;
-      long var128 = 5041565561642508796L ^ a;
       var4[20] = a.end.bih(a.gso::dnp);
-      var10003 = 25894;
-      long var129 = 1380754287279272185L ^ a;
       var4[21] = a.dhl;
-      var10003 = 7162;
-      long var130 = 7172289930726542858L ^ a;
       var4[22] = a.fdv.bih(a.dhl::dnp);
-      var10003 = 12463;
-      long var131 = 166324328227808633L ^ a;
       var4[23] = a.euu;
-      var10003 = 32462;
-      long var132 = 6484521120444771125L ^ a;
       var4[24] = a.grx.bih(a.euu::dnp);
-      var10003 = 19024;
-      long var133 = 6143063010808127365L ^ a;
       var4[25] = a.gkz;
-      var10003 = 4112;
-      long var134 = 737335857102980581L ^ a;
       var4[26] = a.flo;
-      var10003 = 16911;
-      long var135 = 8795959866686429175L ^ a;
       var4[27] = a.esl;
-      var10003 = 17070;
-      long var136 = 5721771729870509912L ^ a;
       var4[28] = a.ggy.bih(a.esl::dnp);
-      var10003 = 27081;
-      long var137 = 3270207451699444778L ^ a;
       var4[29] = a.hfi.bih(a.esl::dnp);
-      var10003 = 23977;
-      long var138 = 2375428277816445007L ^ a;
       var4[30] = a.aof.bih(() -> {
          long ax = Scaffold.a ^ 13125369025572L;
          int[] var3x = dar.abu();
@@ -466,8 +278,6 @@ public class Scaffold extends guu {
 
          return var10000x;
       });
-      var10003 = 5060;
-      long var139 = 4109098445314721280L ^ a;
       var4[31] = a.dgy.bih(() -> {
          long ax = Scaffold.a ^ 88191224945843L;
          int[] var3x = dar.abu();
@@ -480,8 +290,6 @@ public class Scaffold extends guu {
 
          return var10000x;
       });
-      var10003 = 31817;
-      long var140 = 6807170411532511664L ^ a;
       var4[32] = a.aba.bih(() -> {
          long ax = Scaffold.a ^ 33248483775458L;
          int[] var3x = dar.abu();
@@ -502,8 +310,6 @@ public class Scaffold extends guu {
             return var10000x ? true : false;
          }
       });
-      var10003 = 24386;
-      long var141 = 6266468391071894145L ^ a;
       var4[33] = a.cci.bih(() -> {
          long ax = Scaffold.a ^ 57955359090107L;
          int[] var3x = dar.abu();
@@ -524,26 +330,12 @@ public class Scaffold extends guu {
             return var10000x ? true : false;
          }
       });
-      var10003 = 20328;
-      long var142 = 8352548059348196016L ^ a;
       var4[34] = a.ewl.bih(a.esl::dnp);
-      var10003 = 3475;
-      long var143 = 1133082573751097418L ^ a;
       var4[35] = a.dih.bih(a.esl::dnp);
-      var10003 = 12753;
-      long var144 = 3423689948347868160L ^ a;
       var4[36] = a.ezy.bih(a.esl::dnp);
-      var10003 = 31276;
-      long var145 = 6668853111776899049L ^ a;
       var4[37] = a.ael.bih(a.esl::dnp);
-      var10003 = 25429;
-      long var146 = 7552146136224298629L ^ a;
       var4[38] = a.bld.bih(a.esl::dnp);
-      var10003 = 1836;
-      long var147 = 2068851975314412228L ^ a;
       var4[39] = a.dgj.bih(a.esl::dnp);
-      var10003 = 14483;
-      long var148 = 2433678218440977778L ^ a;
       var4[40] = a.cgy;
       a.bfi(var4);
       if (var3 == null) {
@@ -703,8 +495,6 @@ public class Scaffold extends guu {
                   }
                }
 
-               short var10001 = 19035;
-               long var10002 = 2261492571706143934L ^ ax;
                var5 = a.bqc.emb("Click");
                if (var4 == null) {
                   break label108;
@@ -892,7 +682,6 @@ public class Scaffold extends guu {
                label170: {
                   var14 = a.fub;
                   int var10002 = 17758;
-                  long var10003 = 5268204539628168577L ^ ax;
                   int var10001 = a.hfi.emb("Modern Watchdog");
                   if (axx != null) {
                      if (var10001 == 0) {
@@ -910,15 +699,11 @@ public class Scaffold extends guu {
 
                   short var17;
                   if (var10001 < var10002) {
-                     short var16 = 10203;
-                     long var22 = 725995898830806495L ^ ax;
                      var17 = 180;
                   } else {
                      var17 = evd.bpi();
                      if (axx != null) {
                         if (var17 != 0) {
-                           short var18 = 18584;
-                           long var23 = 8425565133680882322L ^ ax;
                            var17 = 60;
                         } else {
                            var17 = 0;
@@ -937,8 +722,6 @@ public class Scaffold extends guu {
                break label167;
             }
 
-            short var20 = 17797;
-            long var24 = 5689845757741802829L ^ ax;
             var9 = a.bqc.emb("Update");
          }
 
@@ -997,8 +780,6 @@ public class Scaffold extends guu {
                         label104: {
                            float var5 = a.dfv();
                            float var10001 = chi.field_1724.method_36454() - 110.0F;
-                           short var10002 = 14044;
-                           long var10003 = 4321176786380273417L ^ ax;
                            bpa.bez(var5 + " expected: " + var10001);
                            var6 = chi.field_1724;
                            float var11;
@@ -1038,8 +819,6 @@ public class Scaffold extends guu {
          }
 
          if (var10000) {
-            short var9 = 21146;
-            long var10 = 1886959252846332319L ^ ax;
             if (hjr == 8) {
                a.fwx = false;
             }
@@ -1083,12 +862,8 @@ public class Scaffold extends guu {
       }
 
       class_4587 var5 = a.bus();
-      short var10004 = 14957;
-      long var10005 = 6169096759004370316L ^ ax;
       class_238 var10001 = new class_238(a.fdv.emb("Accurate") ? a.adx : (evd.dbj() ? a.adx.method_10093(chi.field_1724.method_5755()) : a.adx.method_10084()));
       Color var10002 = dar.gqy().deo();
-      short var10003 = 21300;
-      long var6 = 7021105694031210085L ^ ax;
       bqf.hjf(var5, var10001, var10002, 50);
    }
 
@@ -1112,8 +887,6 @@ public class Scaffold extends guu {
          if (axx != null) {
             switch (var10000) {
                case 1956520879:
-                  short var10001 = 12853;
-                  long var10002 = 8014017672132143488L ^ ax;
                   var10000 = var9.equals("Adjust");
                   if (axx == null) {
                      break label48;
@@ -1128,8 +901,6 @@ public class Scaffold extends guu {
                      break;
                   }
                case -268477211:
-                  short var20 = 2388;
-                  long var25 = 678646255555416813L ^ ax;
                   var10000 = var9.equals("Astralis");
                   if (axx == null) {
                      break label48;
@@ -1145,21 +916,15 @@ public class Scaffold extends guu {
 
          switch (var10000) {
             case 0:
-               short var21 = 24665;
-               long var26 = 6755091283637009346L ^ ax;
                float axxxxxxxxxxxx = acy.eq("Blocks");
                float axxxxxxxxxxxxx = ahh.eq(axxxxx);
                float axxxxxxxxxxxxxx = axxx - (axxxxxxxxxxxxx + 2.0F + axxxxxxxxxxxx) / 2.0F;
                ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, dar.gqy().deo());
-               var21 = 6050;
-               var26 = 258374945180388403L ^ ax;
                acy.aof("Blocks", axxxxxxxxxxxxxx + axxxxxxxxxxxxx + 2.0F, axxxx, Color.white);
                if (axx != null) {
                   break;
                }
             case 1:
-               short var23 = 6050;
-               long var28 = 258374945180388403L ^ ax;
                float axxxxxxx = ety.eq("Blocks");
                float axxxxxxxx = bsf.eq(axxxxx);
                float axxxxxxxxx = axxxxxxxx + 2.0F + axxxxxxx;
@@ -1167,12 +932,8 @@ public class Scaffold extends guu {
                float axxxxxxxxxxx = axxxx + 4.0F;
                float var19 = axxxxxxxxxx - 3.0F;
                float var29 = axxxxxxxxx + 6.0F;
-               short var10006 = 11442;
-               long var10007 = 8323158425215184326L ^ ax;
                dmp.cpp(var19, axxxx, var29, 15.0F, 3.0F, dec.ceu(Color.black, 150));
                bsf.aof(axxxxx, axxxxxxxxxx, axxxxxxxxxxx, dar.gqy().deo());
-               var23 = 6050;
-               var28 = 258374945180388403L ^ ax;
                ety.aof("Blocks", axxxxxxxxxx + axxxxxxxx + 2.0F, axxxxxxxxxxx, Color.white);
          }
       }
@@ -1347,8 +1108,6 @@ public class Scaffold extends guu {
                break label132;
             }
 
-            short var15 = 10593;
-            long var10002 = 5950953247571236633L ^ a;
             label138:
             if (a.cuw.cmt("Watchdog Vertical")) {
                class_310 var11 = chi;
@@ -1420,7 +1179,6 @@ public class Scaffold extends guu {
          if (ax != null) {
             if (var10001 != 0) {
                var10001 = (short)14237;
-               long var109 = 4610058168480697408L ^ a;
                var10001 = 45;
                break label985;
             }
@@ -1431,7 +1189,6 @@ public class Scaffold extends guu {
          if (ax != null) {
             if (var10001 != 0) {
                var10001 = (short)2257;
-               long var108 = 2520769002355405590L ^ a;
                var10001 = -45;
                break label985;
             }
@@ -1442,7 +1199,6 @@ public class Scaffold extends guu {
          if (ax != null) {
             if (var10001 != 0) {
                var10001 = (short)24245;
-               long var10002 = 6256740870304916824L ^ a;
                var10001 = 180;
             } else {
                var10001 = 0;
@@ -1467,7 +1223,6 @@ public class Scaffold extends guu {
       if (ax != null) {
          if (!var52) {
             var10001 = (short)17493;
-            long var110 = 8367579644308874606L ^ a;
             var52 = a.hfi.emb("Modern Watchdog");
             if (ax == null) {
                break label970;
@@ -1479,7 +1234,6 @@ public class Scaffold extends guu {
          }
 
          var10001 = (short)17758;
-         long var111 = 5268116525027779703L ^ a;
          var52 = a.hfi.emb("Modern Watchdog");
       }
 
@@ -1530,8 +1284,6 @@ public class Scaffold extends guu {
             var87 = chi.field_1690.field_1849.method_1434();
             if (ax != null) {
                if (var87 != 0) {
-                  short var90 = 20293;
-                  long var114 = 2731960675547313327L ^ a;
                   var87 = 45;
                   break label988;
                }
@@ -1541,8 +1293,6 @@ public class Scaffold extends guu {
 
             if (ax != null) {
                if (var87 != 0) {
-                  short var89 = 19241;
-                  long var113 = 2806683832130728153L ^ a;
                   var87 = -45;
                   break label988;
                }
@@ -1552,8 +1302,6 @@ public class Scaffold extends guu {
 
             if (ax != null) {
                if (var87 != 0) {
-                  short var88 = 10203;
-                  long var112 = 725978257269529641L ^ a;
                   var87 = 180;
                } else {
                   var87 = 0;
@@ -1592,8 +1340,6 @@ public class Scaffold extends guu {
                                  }
                               }
 
-                              short var91 = 31831;
-                              long var115 = 1685727535056411989L ^ a;
                               var57 = a.hfi.emb("Intave");
                            }
 
@@ -1645,11 +1391,9 @@ public class Scaffold extends guu {
                                           if (ax != null) {
                                              if (var116 != 0) {
                                                 var116 = 29868;
-                                                long var10003 = 7902739088776941389L ^ a;
                                                 var116 = 60;
                                              } else {
                                                 var116 = 17228;
-                                                long var134 = 4408724373406218398L ^ a;
                                                 var116 = 80;
                                              }
                                           }
@@ -1792,8 +1536,6 @@ public class Scaffold extends guu {
                   if (ax != null) {
                      switch (var62) {
                         case 63955982:
-                           short var92 = 3952;
-                           long var119 = 5313209609133043303L ^ a;
                            var62 = var32.equals("Basic");
                            if (ax == null) {
                               break label829;
@@ -1808,8 +1550,6 @@ public class Scaffold extends guu {
                               break;
                            }
                         case 482016750:
-                           short var93 = 17758;
-                           long var120 = 5268116525027779703L ^ a;
                            var62 = var32.equals("Modern Watchdog");
                            if (ax == null) {
                               break label829;
@@ -1824,8 +1564,6 @@ public class Scaffold extends guu {
                               break;
                            }
                         case -638370176:
-                           short var94 = 3342;
-                           long var121 = 4678491614261390351L ^ a;
                            var62 = var32.equals("Modern Watchdog 2");
                            if (ax == null) {
                               break label829;
@@ -1840,8 +1578,6 @@ public class Scaffold extends guu {
                               break;
                            }
                         case 2154973:
-                           short var95 = 20551;
-                           long var122 = 422302444792148323L ^ a;
                            var62 = var32.equals("Edge");
                            if (ax == null) {
                               break label829;
@@ -1856,8 +1592,6 @@ public class Scaffold extends guu {
                               break;
                            }
                         case -1310785555:
-                           short var96 = 2822;
-                           long var123 = 7774212677414627877L ^ a;
                            var62 = var32.equals("God Bridge");
                            if (ax == null) {
                               break label829;
@@ -1872,8 +1606,6 @@ public class Scaffold extends guu {
                               break;
                            }
                         case -2099899231:
-                           short var97 = 18203;
-                           long var124 = 8473871843768100359L ^ a;
                            var62 = var32.equals("Intave");
                            if (ax == null) {
                               break label829;
@@ -1962,12 +1694,8 @@ public class Scaffold extends guu {
 
                            if (ax != null) {
                               if (var10004 > 0) {
-                                 short var135 = 19437;
-                                 long var10005 = 8724396567992201270L ^ a;
                                  var10004 = -140;
                               } else {
-                                 short var136 = 9865;
-                                 long var138 = 5589048730744659316L ^ a;
                                  var10004 = 90;
                               }
                            }
@@ -2117,12 +1845,8 @@ public class Scaffold extends guu {
 
                                  if (ax != null) {
                                     if (var98 != 0) {
-                                       short var104 = 28280;
-                                       long var130 = 7573004262951015814L ^ a;
                                        var98 = -90;
                                     } else {
-                                       short var105 = 26747;
-                                       long var131 = 2748581162446214037L ^ a;
                                        var98 = 90;
                                     }
                                  }
@@ -2146,12 +1870,8 @@ public class Scaffold extends guu {
 
                                  if (ax != null) {
                                     if (var98 != 0) {
-                                       short var102 = 19241;
-                                       long var128 = 2806683832130728153L ^ a;
                                        var98 = -45;
                                     } else {
-                                       short var103 = 20293;
-                                       long var129 = 2731960675547313327L ^ a;
                                        var98 = 45;
                                     }
                                  }
@@ -2163,8 +1883,6 @@ public class Scaffold extends guu {
 
                            if (ax != null) {
                               if (var98 == axxxxxxxxxxxxxxxxxxx) {
-                                 short var101 = 10203;
-                                 long var127 = 725978257269529641L ^ a;
                                  var98 = 180;
                                  break label1005;
                               }
@@ -2174,12 +1892,8 @@ public class Scaffold extends guu {
 
                            if (ax != null) {
                               if (var98 != 0) {
-                                 short var99 = 12419;
-                                 long var125 = 2482577612975803244L ^ a;
                                  var98 = -135;
                               } else {
-                                 short var100 = 17228;
-                                 long var126 = 7946074926747121833L ^ a;
                                  var98 = 135;
                               }
                            }
@@ -2501,8 +2215,6 @@ public class Scaffold extends guu {
                   break label249;
                }
 
-               short var10001 = 28529;
-               long var10002 = 8109258016604428654L ^ ax;
                var8 = a.hfi.emb("God Bridge");
             }
 
@@ -2756,8 +2468,6 @@ public class Scaffold extends guu {
       if (a != null) {
          switch (var6) {
             case 80691912:
-               short var10001 = 11744;
-               long var10002 = 5663061629785666846L ^ ax;
                var6 = var4.equals("Telly");
                if (a == null) {
                   break label66;
@@ -2772,8 +2482,6 @@ public class Scaffold extends guu {
                   break;
                }
             case 482016750:
-               short var7 = 17758;
-               long var8 = 5268109548133752296L ^ ax;
                var6 = var4.equals("Modern Watchdog");
                if (a == null) {
                   break label66;
@@ -2819,8 +2527,6 @@ public class Scaffold extends guu {
          label126: {
             a = Scaffold.a ^ 47040505262308L;
             ax = dar.abu();
-            short var10001 = 17758;
-            long var10002 = 5268165152533996329L ^ a;
             var10000 = a.hfi.emb("Modern Watchdog");
             if (ax != null) {
                if (!var10000) {
@@ -2881,8 +2587,6 @@ public class Scaffold extends guu {
       if (ax != null) {
          switch (var10000) {
             case -654193598:
-               short var13 = 3797;
-               long var16 = 5818417678919968940L ^ a;
                var10000 = var9.equals("Advanced");
                if (ax == null) {
                   break label97;
@@ -2897,8 +2601,6 @@ public class Scaffold extends guu {
                   break;
                }
             case -1955878649:
-               short var14 = 10726;
-               long var17 = 4694971301501997008L ^ a;
                var10000 = var9.equals("Normal");
                if (ax == null) {
                   break label97;
@@ -2913,8 +2615,6 @@ public class Scaffold extends guu {
                   break;
                }
             case 2454:
-               short var15 = 10973;
-               long var18 = 3786568717233163409L ^ a;
                var10000 = var9.equals("MC");
                if (ax == null) {
                   break label97;
@@ -3261,7 +2961,6 @@ public class Scaffold extends guu {
                                        | (var4[5] & 255L) << 16
                                        | (var4[6] & 255L) << 8
                                        | var4[7] & 255L;
-                                    byte var41 = -1;
                                     v = var50;
                                     if (dao() != null) {
                                        arp(new int[3]);

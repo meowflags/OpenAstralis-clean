@@ -41,28 +41,14 @@ public class AutoCrystal extends guu {
    public AutoCrystal() {
       long a = AutoCrystal.a ^ 3050607420039L;
       super(bfm.COMBAT);
-      short var10003 = 19919;
-      long var10004 = 5296514707853170168L ^ a;
       a.fsf = new bes("Scout Range", 6.0F, 0.0F, 12.0F, 1.0F);
-      var10003 = 15977;
-      var10004 = 2541608116901881425L ^ a;
       a.abj = new bes("Min Range", 1.0F, 0.0F, 10.0F, 0.1F);
-      var10003 = 27482;
-      var10004 = 6065010442586420079L ^ a;
       a.ebx = new bes("Max Range", 1.0F, 0.0F, 10.0F, 0.1F);
-      var10003 = 7838;
-      var10004 = 6703776832139888296L ^ a;
       a.gmb = new bes("Duration", 1.0F, 0.0F, 10000.0F, 1.0F);
-      var10003 = 15866;
-      var10004 = 7671041104979666376L ^ a;
       a.fwk = new gbp("Ignore Teammates", false);
-      var10003 = 20388;
-      var10004 = 9071504607634020240L ^ a;
       a.dsp = new gbp("ESP", false);
       a.ese = new cbm();
       a.gqa = null;
-      short var10001 = 30689;
-      long var10002 = 4767600771092009284L ^ a;
       a.bfi(new ffn[]{a.fsf, a.abj, a.ebx, a.gmb, a.fwk, a.dsp});
    }
 
@@ -125,8 +111,6 @@ public class AutoCrystal extends guu {
       label155: {
          long ax = AutoCrystal.a ^ 3836798160443L;
          float var10001 = a.gmb.dnp().floatValue();
-         short var10002 = 30253;
-         long var10003 = 3542806165748023968L ^ ax;
          a.efe(var10001 + "ms");
          int[] var10000 = dar.abu();
          bhw axx = dar.gqy().ccv().gne(bhw.class);
@@ -188,8 +172,6 @@ public class AutoCrystal extends guu {
                   break label129;
                }
 
-               short var20 = 27540;
-               long var22 = 8628164469930630936L ^ ax;
                bpa.bez("dead");
                axx.fxn();
                a.gqa = null;
@@ -199,8 +181,6 @@ public class AutoCrystal extends guu {
 
             if (axxxx != null) {
                if (var14 == null) {
-                  short var19 = 27425;
-                  long var21 = 3445034840735457198L ^ ax;
                   bpa.bez("dead");
                   axx.fxn();
                   a.gqa = null;
@@ -346,8 +326,6 @@ public class AutoCrystal extends guu {
          var7 = a.bus();
          class_238 var10001 = axxxx.method_1014(0.08);
          Color var10002 = dar.gqy().deo();
-         short var10003 = 25983;
-         long var10004 = 1589169852964595900L ^ ax;
          bqf.hjf((class_4587)var7, var10001, var10002, 150);
       }
    }
@@ -436,7 +414,6 @@ public class AutoCrystal extends guu {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var38 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 

@@ -40,15 +40,11 @@ public class chx extends cec {
       class_7439 axxx = (class_7439)var7;
       String var8 = axxx.comp_763().getString();
       if (axx != null) {
-         short var10001 = 13400;
-         long var10002 = 8428692100059697602L ^ ax;
          if (!var8.equalsIgnoreCase("An exception occurred in your connection, so you have been routed to limbo!")) {
             return;
          }
 
          long var9 = System.currentTimeMillis();
-         var10001 = 25962;
-         var10002 = 4373542943987351793L ^ ax;
          var8 = "Limbo Detected at" + var9;
       }
 
@@ -78,7 +74,6 @@ public class chx extends cec {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = c(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             c = var9;

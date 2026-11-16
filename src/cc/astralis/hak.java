@@ -33,16 +33,13 @@ public class hak extends hcr {
       }
 
       class_2596 axxx = var10000.bed();
-      class_2596 var9 = axxx;
       if (axx != null) {
          if (!(axxx instanceof class_2743)) {
             return;
          }
 
-         var9 = axxx;
       }
 
-      class_2743 axxxx = (class_2743)var9;
       EntityVelocityUpdateS2CPacketAccessor axxxxx = (EntityVelocityUpdateS2CPacketAccessor)a.bed();
       int var10 = axxxxx.getEntityId();
       if (axx != null) {
@@ -78,7 +75,6 @@ public class hak extends hcr {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       byte[] var4 = var2.doFinal("Reduce Packet".getBytes("ISO-8859-1"));
       String var5 = a(var4).intern();
-      byte var10001 = -1;
       d = var5;
    }
 

@@ -29,34 +29,14 @@ public class AutoQueue extends guu {
    public AutoQueue() {
       long a = AutoQueue.a ^ 29811826906499L;
       super(bfm.PLAYER);
-      short var10003 = 8342;
-      long var10004 = 1879759394635827267L ^ a;
       a.ghu = new gbp("Auto Set Language", true);
-      var10003 = 26679;
-      var10004 = 5208706442982392061L ^ a;
       a.gov = new gbp("Auto Play", true);
-      var10003 = 26115;
-      var10004 = 6857659425592184528L ^ a;
-      short var7 = 14510;
-      long var10005 = 1145771178116599926L ^ a;
       String[] var8 = new String[(int)p];
-      short var10008 = 17201;
-      long var10009 = 6272146231159729148L ^ a;
       var8[0] = "Skywars Normal";
-      var10008 = 28643;
-      var10009 = 8530643827403130669L ^ a;
       var8[1] = "Skywars Insane";
-      var10008 = 6042;
-      var10009 = 7366141292558221132L ^ a;
       var8[2] = "Bedwars Solo";
-      var10008 = 200;
-      var10009 = 634056604677761031L ^ a;
       var8[3] = "Bedwars Duo";
-      var10008 = 9997;
-      var10009 = 4590480101564862413L ^ a;
       var8[4] = "Bedwars Trio";
-      var10008 = 1211;
-      var10009 = 8513982771103951987L ^ a;
       var8[5] = "Bedwars Squad";
       a.all = new adu("Auto Play Mode", "Skywars Normal", var8);
       a.bfi(new ffn[]{a.ghu, a.gov, a.all.bih(a.gov::dnp)});
@@ -71,11 +51,7 @@ public class AutoQueue extends guu {
             return;
          }
 
-         short var10000 = 15493;
-         long var10001 = 3203146698756751173L ^ ax;
          bpa.dhu("set language");
-         short var5 = 13394;
-         long var10002 = 566704466022922119L ^ ax;
          chi.field_1724.field_3944.method_45729("/language english");
       }
    }
@@ -99,16 +75,12 @@ public class AutoQueue extends guu {
          var10 = axxxx.comp_763().getString();
          label131:
          if (axx != null) {
-            short var10001 = 28436;
-            long var10002 = 6563433622507888261L ^ ax;
             if (!var10.equalsIgnoreCase("You have been eliminated!")) {
                var10 = axxxx.comp_763().getString();
                if (axx == null) {
                   break label131;
                }
 
-               var10001 = 15817;
-               var10002 = 7950796032007752791L ^ ax;
                if (!var10.equalsIgnoreCase("You died! Want to play again? Click here! ")) {
                   return;
                }
@@ -124,8 +96,6 @@ public class AutoQueue extends guu {
          if (axx != null) {
             switch (var11) {
                case 765058203:
-                  short var20 = 17201;
-                  long var33 = 6272177666003055268L ^ ax;
                   var11 = var7.equals("Skywars Normal");
                   if (axx == null) {
                      break label97;
@@ -140,8 +110,6 @@ public class AutoQueue extends guu {
                      break;
                   }
                case 621007582:
-                  short var21 = 32503;
-                  long var34 = 3882923139030585188L ^ ax;
                   var11 = var7.equals("Skywars Insane");
                   if (axx == null) {
                      break label97;
@@ -156,8 +124,6 @@ public class AutoQueue extends guu {
                      break;
                   }
                case -1014563277:
-                  short var22 = 12306;
-                  long var35 = 2960089861074010523L ^ ax;
                   var11 = var7.equals("Bedwars Solo");
                   if (axx == null) {
                      break label97;
@@ -172,8 +138,6 @@ public class AutoQueue extends guu {
                      break;
                   }
                case -864026070:
-                  short var23 = 8075;
-                  long var36 = 6354948683899301380L ^ ax;
                   var11 = var7.equals("Bedwars Duo");
                   if (axx == null) {
                      break label97;
@@ -188,8 +152,6 @@ public class AutoQueue extends guu {
                      break;
                   }
                case -1014530696:
-                  short var24 = 30407;
-                  long var37 = 4140262904050648923L ^ ax;
                   var11 = var7.equals("Bedwars Trio");
                   if (axx == null) {
                      break label97;
@@ -204,8 +166,6 @@ public class AutoQueue extends guu {
                      break;
                   }
                case -1386622618:
-                  short var25 = 23244;
-                  long var38 = 3030176198042004288L ^ ax;
                   var11 = var7.equals("Bedwars Squad");
                   if (axx == null) {
                      break label97;
@@ -220,33 +180,21 @@ public class AutoQueue extends guu {
          }
          String axxxxx = switch (var11) {
             case 0 -> {
-               short var18 = 10077;
-               long var31 = 2989430364647380679L ^ ax;
                yield "/play solo_normal";
             }
             case 1 -> {
-               short var17 = 18623;
-               long var30 = 5129200862239045920L ^ ax;
                yield "/play solo_insane";
             }
             case 2 -> {
-               short var16 = 4074;
-               long var29 = 5756186307879698035L ^ ax;
                yield "/play bedwars_eight_one";
             }
             case 3 -> {
-               short var15 = 30167;
-               long var28 = 3782430825427076189L ^ ax;
                yield "/play bedwars_eight_two";
             }
             case 4 -> {
-               short var14 = 1722;
-               long var27 = 808489018951038766L ^ ax;
                yield "/play bedwars_four_three";
             }
             case 5 -> {
-               short var13 = 26905;
-               long var26 = 8148263296439294082L ^ ax;
                yield "/play bedwars_four_four";
             }
             default -> null;

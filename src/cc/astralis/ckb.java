@@ -50,11 +50,7 @@ public class ckb implements dlc {
    public ckb() {
       long a = ckb.a ^ 131765600874432L;
       super();
-      short var10003 = 348;
-      long var10004 = 2197084243329895132L ^ a;
       a.ebg = new ImString(256);
-      var10003 = 32400;
-      var10004 = 8673657251804624137L ^ a;
       a.fhe = new ImString(512);
       a.efy = false;
       a.bba = true;
@@ -94,15 +90,8 @@ public class ckb implements dlc {
             }
          }
 
-         short var19 = 18963;
-         long var10001 = 3771002034601636581L ^ a;
-         short var20 = 1057;
       }
 
-      short var21 = 9540;
-      long var41 = 7305192894815226072L ^ a;
-      short var42 = 6619;
-      long var10002 = 757983650714345766L ^ a;
       boolean var22 = ImGui.begin("Cloud Configurations##main", 1057);
       if (ax != null) {
          label165:
@@ -210,23 +199,15 @@ public class ckb implements dlc {
 
             if (ax != null) {
                if (var28) {
-                  short var29 = 22235;
-                  var41 = 4278689733943278423L ^ a;
                   ImGui.text("Cloud Configurations");
                   ImGui.sameLine();
                   int var46 = aml.cic.size();
-                  short var55 = 12145;
-                  long var10003 = 6008520105782526709L ^ a;
                   ImGui.textDisabled("(" + var46 + " configs)");
                   ImGui.sameLine(ImGui.getWindowWidth() - (a.bba ? 210.0F : 110.0F));
                   String var31;
                   if (a.bba) {
-                     short var30 = 8439;
-                     var41 = 1963740242281319798L ^ a;
                      var31 = "Maximize";
                   } else {
-                     short var32 = 29546;
-                     var41 = 6693875795615194875L ^ a;
                      var31 = "Minimize";
                   }
 
@@ -246,8 +227,6 @@ public class ckb implements dlc {
                         }
 
                         ImGui.sameLine();
-                        short var34 = 2236;
-                        var41 = 7165112022488802617L ^ a;
                         var33 = ImGui.smallButton("Refresh");
                      }
 
@@ -262,8 +241,6 @@ public class ckb implements dlc {
                               break label254;
                            }
 
-                           short var35 = 10886;
-                           var41 = 2527718479529625353L ^ a;
                            var33 = ImGui.smallButton("Add");
                         }
 
@@ -288,9 +265,7 @@ public class ckb implements dlc {
                if (ax != null) {
                   if (var28) {
                      ImGui.pushStyleColor(0, 0.7F, 0.75F, 0.85F, 1.0F);
-                     short var36 = 30410;
                      ImGui.setCursorPosY(ImGui.getCursorPosY() + 6.0F);
-                     var41 = 4279831169416633173L ^ a;
                      ImGui.textDisabled("Mini mode — drag to move, click Restore to expand");
                      ImGui.popStyleColor();
                      if (ax != null) {
@@ -323,10 +298,6 @@ public class ckb implements dlc {
          }
 
          ImGui.end();
-         short var38 = 7840;
-         var41 = 8304237541993116457L ^ a;
-         short var53 = 24164;
-         var10002 = 6763342704861652608L ^ a;
          var22 = ImGui.beginPopupModal("Add New Config", 6);
       }
 
@@ -349,8 +320,6 @@ public class ckb implements dlc {
             return;
          }
 
-         short var40 = 13841;
-         var41 = 858710863213419419L ^ a;
          ImGui.openPopup("Add New Config");
          var39 = a;
       }
@@ -403,29 +372,15 @@ public class ckb implements dlc {
       float axx = 8.0F;
       int[] axxx = var10000;
       float axxxx = ax * 2.0F + axx;
-      short var7 = 8975;
-      long var10001 = 7413258574918416005L ^ a;
-      short var10002 = 16977;
-      long var10003 = 7511545356815532725L ^ a;
       byte var8 = ImGui.beginTable("cfg_header", 2, 2121728);
       if (axxx != null) {
          if (var8 == 0) {
             return;
          }
 
-         short var9 = 5791;
-         var10001 = 9160653874624086815L ^ a;
-         short var14 = 14072;
-         long var20 = 4933797853562926615L ^ a;
          ImGui.tableSetupColumn("left", 8);
-         short var10 = 29775;
-         var10001 = 5899100787747987904L ^ a;
-         short var16 = 14119;
-         long var21 = 2049652500848900032L ^ a;
          ImGui.tableSetupColumn("right", 16, axxxx);
-         short var11 = 24987;
          ImGui.tableNextRow();
-         var10001 = 8059277840117969922L ^ a;
          ImGui.tableSetColumnIndex(0);
          ImGui.tableSetColumnIndex(1);
          var8 = ImGui.button("Refresh", ax, 0.0F);
@@ -437,16 +392,8 @@ public class ckb implements dlc {
          }
 
          ImGui.sameLine(0.0F, axx);
-         short var12 = 11852;
-         short var18 = 28818;
-         long var22 = 2523517212450205810L ^ a;
          ImGui.pushStyleColor(21, 0.2F, 0.7F, 0.2F, 1.0F);
-         var10001 = 5995520233134980033L ^ a;
-         var10002 = 3223;
-         var10003 = 2326137316762242175L ^ a;
          ImGui.pushStyleColor(22, 0.3F, 0.8F, 0.3F, 1.0F);
-         var10002 = 22038;
-         var10003 = 7466711997441971959L ^ a;
          ImGui.pushStyleColor(23, 0.1F, 0.6F, 0.1F, 1.0F);
          var8 = ImGui.button("Add Config", ax, 0.0F);
       }
@@ -471,18 +418,10 @@ public class ckb implements dlc {
       float axx = ImGui.getContentRegionAvail().y;
       ImGui.setCursorPosX((ax - 300.0F) * 0.5F);
       ImGui.setCursorPosY((axx - 100.0F) * 0.5F);
-      short var10000 = 16856;
-      long var10001 = 2580801672026939578L ^ a;
-      short var10004 = 1638;
-      long var10005 = 4403331941189300847L ^ a;
       ImGui.beginChild("EmptyState", 300.0F, 100.0F, false, 8);
       ImGui.pushStyleColor(0, 0.6F, 0.6F, 0.6F, 1.0F);
-      var10000 = 24785;
-      var10001 = 2703091494135611834L ^ a;
       ImGui.text("No configurations found");
       ImGui.spacing();
-      var10000 = 7202;
-      var10001 = 7240412955691400525L ^ a;
       ImGui.text("Click 'Add Config' to create your first configuration");
       ImGui.popStyleColor();
       ImGui.endChild();
@@ -502,10 +441,6 @@ public class ckb implements dlc {
             axxx = Math.max(1, axxx - 1);
          }
 
-         short var10 = 17596;
-         long var10001 = 2871802238152103841L ^ ax;
-         short var10004 = 14072;
-         long var10005 = 4933770980338282679L ^ ax;
          ImGui.beginChild("ConfigGrid", 0.0F, 0.0F, false, 8);
          ImGui.setCursorPosY(ImGui.getCursorPosY() + 10.0F);
          var9 = 0;
@@ -539,37 +474,23 @@ public class ckb implements dlc {
       long ax = ckb.a ^ 79132061669324L;
       int[] var10000 = dar.abu();
       int var10001 = a.cna();
-      short var10002 = 7452;
-      long var10003 = 2992967464934554616L ^ ax;
       ImGui.pushID("card_" + var10001);
       ImGui.setCursorPosX(ImGui.getCursorPosX() + 10.0F);
       int[] axx = var10000;
-      short var11 = 3240;
-      long var26 = 5792873254082690856L ^ ax;
       ImGui.pushStyleVar(7, 8.0F);
-      short var12 = 14072;
-      long var27 = 4933744084305872241L ^ ax;
       ImGui.pushStyleVar(8, 1.0F);
       ImGui.pushStyleColor(3, 0.12F, 0.12F, 0.15F, 1.0F);
       ImGui.pushStyleColor(5, 0.3F, 0.3F, 0.4F, 0.5F);
-      short var28 = 7982;
-      long var38 = 3562819167261407732L ^ ax;
       String var13 = "ConfigCard##" + a;
-      short var10004 = 13915;
-      long var10005 = 5935978981564646863L ^ ax;
       byte var14 = ImGui.beginChild(var13, 280.0F, 180.0F, true, 24);
       if (axx != null) {
          if (var14 != 0) {
             label63: {
                String axxx;
                label62: {
-                  short var15 = 7179;
-                  long var29 = 3202796861745082254L ^ ax;
                   ImGui.pushStyleVar(14, 4.0F, 6.0F);
                   ImGui.pushStyleColor(0, 0.9F, 0.95F, 1.0F, 1.0F);
                   String var30 = a.amx();
-                  var10002 = 1364;
-                  var10003 = 5854046863530407644L ^ ax;
                   ImGui.text(a.fdn(var30, 28));
                   ImGui.popStyleColor();
                   ImGui.pushStyleColor(0, 0.7F, 0.7F, 0.8F, 1.0F);
@@ -587,20 +508,14 @@ public class ckb implements dlc {
                         }
                      }
 
-                     short var18 = 16564;
-                     long var31 = 4324731085161064014L ^ ax;
                      var16 = "No description provided";
                   }
 
                   axxx = var16;
                }
 
-               var10002 = 5276;
-               var10003 = 4437194233272477457L ^ ax;
                ImGui.textWrapped(a.fdn(axxx, 60));
-               short var19 = 30942;
                ImGui.popStyleColor();
-               long var32 = 8427028331351203375L ^ ax;
                ImGui.separator();
                ImGui.spacing();
                ImGui.pushStyleColor(0, 0.6F, 0.8F, 1.0F, 1.0F);
@@ -612,15 +527,9 @@ public class ckb implements dlc {
             ImGui.pushStyleColor(var17, 0.8F, 0.8F, 0.9F, 1.0F);
             ImGui.text(a.ayq().eus());
             ImGui.popStyleColor();
-            var10002 = 24813;
-            var10003 = 1386539672165303825L ^ ax;
             SimpleDateFormat axxx = new SimpleDateFormat("MMM dd, yyyy");
-            short var20 = 10781;
-            long var33 = 1187664902222384381L ^ ax;
             ImGui.text("Date: ");
-            short var21 = 20839;
             ImGui.sameLine();
-            long var34 = 1462092862481037214L ^ ax;
             ImGui.pushStyleColor(0, 0.8F, 0.8F, 0.9F, 1.0F);
             ImGui.text(axxx.format(new Date(a.bsl())));
             ImGui.popStyleColor(2);
@@ -633,16 +542,8 @@ public class ckb implements dlc {
             ImGui.spacing();
             ImGui.separator();
             float axxxx = 256.0F;
-            short var22 = 17187;
-            long var35 = 2065094630061600936L ^ ax;
             ImGui.pushStyleColor(21, 0.1F, 0.4F, 0.8F, 1.0F);
-            short var23 = 15037;
-            var28 = 28449;
-            long var42 = 8024556627124542646L ^ ax;
             ImGui.pushStyleColor(22, 0.2F, 0.5F, 0.9F, 1.0F);
-            long var37 = 829751540866653274L ^ ax;
-            var10002 = 32030;
-            var10003 = 3871583568860728980L ^ ax;
             ImGui.pushStyleColor(23, 0.05F, 0.3F, 0.7F, 1.0F);
             byte var24 = ImGui.button("Load Config", axxxx, 0.0F);
             if (axx != null) {
@@ -685,37 +586,23 @@ public class ckb implements dlc {
       int[] var10000 = dar.abu();
       float var10001 = ImGui.getMainViewport().getCenterX();
       float var10002 = ImGui.getMainViewport().getCenterY();
-      short var10003 = 14072;
-      long var10004 = 4933794415690147040L ^ a;
       ImGui.setNextWindowPos(var10001, var10002, 8, 0.5F, 0.5F);
-      var10003 = 14072;
-      var10004 = 4933794415690147040L ^ a;
       ImGui.setNextWindowSize(400.0F, 300.0F, 8);
-      short var18 = 25885;
-      long var27 = 2411996731870257788L ^ a;
       ImGui.text("Config Name:");
       int[] ax = var10000;
       ImGui.setNextItemWidth(-1.0F);
-      short var8 = 21627;
-      long var19 = 6923607767596667653L ^ a;
       ImGui.inputText("##name", a.ebg);
       boolean var9 = a.ebg.get().isEmpty();
       if (ax != null) {
          if (var9) {
             ImGui.pushStyleColor(0, 1.0F, 0.4F, 0.4F, 1.0F);
-            short var10 = 8088;
-            long var20 = 714209837269244157L ^ a;
             ImGui.text("Name is required");
             ImGui.popStyleColor();
          }
 
          ImGui.spacing();
-         short var11 = 10610;
-         long var21 = 5791898110529433097L ^ a;
          ImGui.text("Description (optional):");
-         short var12 = 18103;
          ImGui.setNextItemWidth(-1.0F);
-         long var22 = 8602164864674660804L ^ a;
          ImGui.inputTextMultiline("##desc", a.fhe, 0.0F, 80.0F);
       }
 
@@ -738,14 +625,8 @@ public class ckb implements dlc {
             ImGui.pushStyleVar(0, 0.5F);
          }
 
-         short var15 = 28818;
-         long var23 = 2523512674564317829L ^ a;
          ImGui.pushStyleColor(21, 0.2F, 0.7F, 0.2F, 1.0F);
-         short var16 = 25545;
-         short var24 = 3223;
-         long var28 = 2326141574969515656L ^ a;
          ImGui.pushStyleColor(22, 0.3F, 0.8F, 0.3F, 1.0F);
-         long var25 = 2763936203538900097L ^ a;
          var14 = ImGui.button("Create", axx, 0.0F);
       }
 
@@ -774,8 +655,6 @@ public class ckb implements dlc {
          }
 
          ImGui.sameLine();
-         short var17 = 6812;
-         long var26 = 6649234974760492536L ^ a;
          var14 = ImGui.button("Cancel", axx, 0.0F);
       }
 
@@ -796,8 +675,6 @@ public class ckb implements dlc {
 
             if (a.length() > a) {
                var10000 = a.substring(0, a - 3);
-               short var10001 = 5725;
-               long var10002 = 1355063363967405985L ^ ax;
                return var10000 + "...";
             }
          }

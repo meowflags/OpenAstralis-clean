@@ -42,79 +42,35 @@ public class hbc {
 
             try {
                String axx = bja(a);
-               short var6 = 22654;
-               long var10001 = 4853617845030836019L ^ ax;
                String[] var7 = new String[8];
                String var11 = dcp(axx);
-               short var22 = 13179;
-               long var39 = 1937966954650272654L ^ ax;
                var7[0] = "Wins: " + var11;
                var11 = bnx(axx);
-               var22 = 21199;
-               var39 = 6825205353822609967L ^ ax;
                var7[1] = "Loses: " + var11;
                var11 = aay(axx);
-               var22 = 1075;
-               var39 = 2993323807215596746L ^ ax;
                var7[2] = "GP: " + var11;
                var11 = bqa(axx);
-               var22 = 32142;
-               var39 = 5835103928910400873L ^ ax;
                var7[3] = "W/L: " + var11;
                var11 = fgu(axx);
-               var22 = 23109;
-               var39 = 8721047181668248225L ^ ax;
                var7[4] = "KDR: " + var11;
                var11 = deq(axx);
-               var22 = 4922;
-               var39 = 6026889307722490826L ^ ax;
                var7[5] = "FKDR: " + var11;
-               short var9 = 18801;
-               long var17 = 1001266152511194680L ^ ax;
                var11 = hfg(axx);
-               var22 = 23833;
-               var39 = 5871799421620186616L ^ ax;
                var7[6] = "BBLR: " + var11;
-               var9 = 12199;
-               long var19 = 5815761919543451880L ^ ax;
                var11 = dek(axx);
-               var22 = 10226;
-               var39 = 1774692908064085780L ^ ax;
                var7[7] = "WS: " + var11;
                String[] axxx = var7;
                bbb.put(a, axxx);
             } catch (Exception var5) {
                ConcurrentHashMap var10000 = bbb;
-               short var10002 = 12323;
-               long var10003 = 5916950017812086639L ^ ax;
                String[] var8 = new String[8];
-               short var10005 = 7940;
-               long var10006 = 8137570425328119791L ^ ax;
                var8[0] = "N/A";
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[1] = "N/A";
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[2] = "N/A";
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[3] = "N/A";
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[4] = "N/A";
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[5] = "N/A";
-               short var10004 = 15243;
-               long var35 = 4989353501248926915L ^ ax;
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[6] = "N/A";
-               var10004 = 30009;
-               long var37 = 2661459634036767351L ^ ax;
-               var10005 = 7940;
-               var10006 = 8137570425328119791L ^ ax;
                var8[7] = "N/A";
                var10000.put(a, var8);
             }
@@ -125,13 +81,9 @@ public class hbc {
    private static String bja(String a) throws Exception {
       long ax = hbc.a ^ 98795060949189L;
       String var10002 = ek.gkf(a);
-      short var10003 = 18298;
-      long var10004 = 497544371882279900L ^ ax;
       URL axx = new URL("https://bwstats.shivam.pro/user/" + var10002);
       HttpURLConnection axxx = (HttpURLConnection)axx.openConnection();
       int[] var10000 = dar.abu();
-      short var9 = 4079;
-      long var10 = 2753727920270019404L ^ ax;
       axxx.setRequestMethod("GET");
       BufferedReader axxxx = new BufferedReader(new InputStreamReader(axxx.getInputStream()));
       int[] axxxxx = var10000;
@@ -156,63 +108,41 @@ public class hbc {
 
    private static String dcp(String a) {
       long ax = hbc.a ^ 62146259332798L;
-      short var10001 = 29790;
-      long var10002 = 2683599314061438602L ^ ax;
       return djn(a, "Wins: ", ",");
    }
 
    private static String bnx(String a) {
       long ax = hbc.a ^ 108171970093533L;
-      short var10001 = 22845;
-      long var10002 = 8609067176738917515L ^ ax;
       return djn(a, "Losses: ", ",");
    }
 
    private static String aay(String a) {
       long ax = hbc.a ^ 52545578574393L;
-      short var10001 = 30190;
-      long var10002 = 4796575461769356208L ^ ax;
       return djn(a, "Games Played: ", ",");
    }
 
    private static String bqa(String a) {
       long ax = hbc.a ^ 92310006933642L;
-      short var10001 = 17878;
-      long var10002 = 9134394407823153459L ^ ax;
-      short var3 = 1078;
-      long var10003 = 5257249553354217675L ^ ax;
       return djn(a, "Win/Loss Ratio: ", " /");
    }
 
    private static String fgu(String a) {
       long ax = hbc.a ^ 115578074724808L;
-      short var10001 = 32291;
-      long var10002 = 1989232721191728009L ^ ax;
       return djn(a, "K/D Ratio (KDR): ", ",");
    }
 
    private static String deq(String a) {
       long ax = hbc.a ^ 68283268706563L;
-      short var10001 = 24341;
-      long var10002 = 6120567249511193203L ^ ax;
-      short var3 = 22964;
-      long var10003 = 4598143476816911558L ^ ax;
       return djn(a, "Final K/D Ratio (FKDR): ", " /");
    }
 
    private static String hfg(String a) {
       long ax = hbc.a ^ 140128063303329L;
-      short var10001 = 25606;
-      long var10002 = 6266969688721669839L ^ ax;
-      short var3 = 1078;
-      long var10003 = 5257297375629795040L ^ ax;
       return djn(a, "Beds B/L Ratio (BBLR): ", " /");
    }
 
    private static String dek(String a) {
       long ax = hbc.a ^ 122869543638042L;
-      short var10001 = 21151;
-      long var10002 = 6506634859605734117L ^ ax;
       return djn(a, "Winstreak: ", ",");
    }
 
@@ -225,8 +155,6 @@ public class hbc {
       int var10001 = -1;
       if (axxx != null) {
          if (axx == -1) {
-            short var13 = 2803;
-            long var16 = 5421338615863810999L ^ ax;
             return "N/A";
          }
 
@@ -247,14 +175,10 @@ public class hbc {
             return var11;
          }
 
-         short var14 = 7139;
-         long var10002 = 158117422365837989L ^ ax;
          var10 = var11.equals("Infinity");
       }
 
       if (var10 != 0) {
-         short var12 = 4683;
-         long var15 = 5278581231148499720L ^ ax;
          return "NA";
       } else {
          return a.substring(axx, axxxx).trim();
@@ -295,8 +219,6 @@ public class hbc {
                   if ((var24 += var16) >= var19) {
                      b = var20;
                      c = new String[25];
-                     short var27 = 5197;
-                     long var33 = 4305338764328221025L ^ var11;
                      eig = "https://bwstats.shivam.pro/user/";
                      g = new HashMap(13);
                      Cipher var0;

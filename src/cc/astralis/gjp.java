@@ -63,14 +63,11 @@ public class gjp extends brc {
    }
 
    public static int epr() {
-      long var0 = c ^ 32903265593993L;
       int[] var2 = dar.abu();
       int var3 = fzo();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 4148;
-            long var10001 = 4863650260271729561L ^ var0;
             return 24;
          }
 
@@ -170,21 +167,15 @@ public class gjp extends brc {
                            g = var6;
                            h = new Integer[12];
                            String[] var27 = new String[4];
-                           short var34 = 1658;
                            int var25 = 0;
-                           long var44 = 4735195827136246986L ^ var20;
                            String var24;
                            int var26 = (var24 = var11[0]).length();
-                           short var45 = 27269;
-                           long var55 = 3225371172348876855L ^ var20;
                            char var23 = ',';
                            fml(7);
                            int var31 = -1;
 
                            label44:
                            while (true) {
-                              short var35 = 19569;
-                              long var46 = 3746623174941146829L ^ var20;
                               byte var36 = 37;
                               String var47 = var24.substring(++var31, var31 + var23);
                               byte var56 = -1;
@@ -209,14 +200,10 @@ public class gjp extends brc {
                                        }
 
                                        var26 = (var24 = var11[1]).length();
-                                       short var38 = 9312;
-                                       long var48 = 1256547504662648543L ^ var20;
                                        var23 = '`';
                                        var31 = -1;
                                  }
 
-                                 short var39 = 1156;
-                                 long var49 = 4442451349904111167L ^ var20;
                                  var36 = 69;
                                  var47 = var24.substring(++var31, var31 + var23);
                                  var56 = 0;
@@ -258,12 +245,9 @@ public class gjp extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 28286319973065L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 8435;
-         long var10005 = 1297687109463458576L ^ var1;
          var10000[0] = (char)(var10003 ^ 7);
       }
 
@@ -271,7 +255,6 @@ public class gjp extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 65298742759346L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -279,38 +262,24 @@ public class gjp extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 8435;
-         long var10009 = 1297719861278695019L ^ var2;
          var10001[var4] = (char)(var10005 ^ var10002 ^ switch (var4 % 7) {
             case 0 -> {
-               short var15 = 24516;
-               long var21 = 3416558613871862104L ^ var2;
                yield 86;
             }
             case 1 -> 4;
             case 2 -> {
-               short var14 = 23279;
-               long var20 = 3391837693973832816L ^ var2;
                yield 67;
             }
             case 3 -> {
-               short var13 = 14269;
-               long var19 = 5185468358465308960L ^ var2;
                yield 111;
             }
             case 4 -> {
-               short var12 = 20229;
-               long var18 = 8963648104230957457L ^ var2;
                yield 28;
             }
             case 5 -> {
-               short var11 = 3318;
-               long var17 = 2153927497381671533L ^ var2;
                yield 55;
             }
             default -> {
-               short var10007 = 8435;
-               long var16 = 1297719861278695019L ^ var2;
                yield 7;
             }
          });

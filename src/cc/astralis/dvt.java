@@ -138,8 +138,6 @@ public class dvt implements dlc {
 
       try {
          InputStream axx = ((class_3298)chi.method_1478().method_14486(a).get()).method_14482();
-         short var10000 = 23020;
-         long var10001 = 608887265851555545L ^ ax;
          Path axxx = Paths.get(System.getProperty("java.io.tmpdir"), a.method_12832());
          Files.createDirectories(axxx.getParent());
          Files.copy(axx, axxx, StandardCopyOption.REPLACE_EXISTING);
@@ -161,21 +159,12 @@ public class dvt implements dlc {
       String var10000 = ek.bf(axx);
       int axxx = (int)a;
       String var11 = var10000;
-      short var12 = 15154;
-      long var10001 = 3894375339852672365L ^ ax;
       String axxxx = "glyphs/" + var11 + "/" + a + "-" + a + "-" + axxx;
-      short var13 = 5895;
-      var10001 = 6658812285306503515L ^ ax;
       return class_2960.method_60655("renderer", axxxx);
    }
 
    public static List<fv> bru() {
-      long var0 = a ^ 73273937238151L;
-      short var10000 = 1394;
-      long var10001 = 2860602135422211084L ^ var0;
       String var2 = System.getProperty("os.name").toLowerCase();
-      short var3 = 28461;
-      long var10002 = 8066582536253996624L ^ var0;
       return var2.contains("win") ? gtk() : bvb();
    }
 
@@ -188,8 +177,6 @@ public class dvt implements dlc {
       try {
          Runtime var14 = Runtime.getRuntime();
          String[] var10001 = new String[1];
-         short var10004 = 23101;
-         long var10005 = 3288335917278970161L ^ a;
          var10001[0] = "fc-list";
          Process axxx = var14.exec(var10001);
 
@@ -224,11 +211,7 @@ public class dvt implements dlc {
    private static List<fv> gtk() {
       long a = dvt.a ^ 26671864036589L;
       List<fv> ax = new ArrayList<>();
-      short var10002 = 32438;
-      long var10003 = 1130987494155733930L ^ a;
       String var4 = System.getenv("WINDIR");
-      short var5 = 24619;
-      long var10004 = 4221120678731076921L ^ a;
       File axx = new File(var4 + "\\Fonts");
       ekv(axx, ax);
       return ax;
@@ -268,13 +251,9 @@ public class dvt implements dlc {
             }
 
             String axxxxx = var15.getName().toLowerCase();
-            short var10001 = 10887;
-            long var10002 = 7159344865714402951L ^ ax;
             byte var16 = axxxxx.endsWith(".ttf");
             if (axxx != null) {
                if (var16 == 0) {
-                  var10001 = 24373;
-                  var10002 = 529753187983557437L ^ ax;
                   if (!axxxxx.endsWith(".otf")) {
                      break label66;
                   }

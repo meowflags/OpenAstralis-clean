@@ -37,11 +37,7 @@ public class Animations extends guu {
    public Animations() {
       long a = Animations.a ^ 126636098097616L;
       super(bfm.VISUAL);
-      short var10003 = 6088;
-      long var10004 = 1593938290657454033L ^ a;
       a.fql = new bes("Speed", 1.0F, 0.0F, 1.0F, 0.1F);
-      short var10001 = 13859;
-      long var10002 = 4579499584643953819L ^ a;
       a.bfi(new ffn[]{diq, a.fql, agv, hez, ant, fga});
    }
 
@@ -73,8 +69,6 @@ public class Animations extends guu {
       if (axx != null) {
          switch (var10000) {
             case 48570:
-               short var10001 = 28155;
-               long var10002 = 7459980192876143967L ^ ax;
                var10000 = var13.equals("1.7");
                if (axx == null) {
                   break label281;
@@ -89,8 +83,6 @@ public class Animations extends guu {
                   break;
                }
             case -352259601:
-               short var29 = 1730;
-               long var54 = 79936194172669553L ^ ax;
                var10000 = var13.equals("Exhibition");
                if (axx == null) {
                   break label281;
@@ -105,8 +97,6 @@ public class Animations extends guu {
                   break;
                }
             case 79973777:
-               short var30 = 31341;
-               long var55 = 329466545457935062L ^ ax;
                var10000 = var13.equals("Slide");
                if (axx == null) {
                   break label281;
@@ -121,8 +111,6 @@ public class Animations extends guu {
                   break;
                }
             case -268477211:
-               short var31 = 1468;
-               long var56 = 5455145538739752204L ^ ax;
                var10000 = var13.equals("Astralis");
                if (axx == null) {
                   break label281;
@@ -137,8 +125,6 @@ public class Animations extends guu {
                   break;
                }
             case 80294106:
-               short var32 = 17281;
-               long var57 = 3964073909956741921L ^ ax;
                var10000 = var13.equals("Swank");
                if (axx == null) {
                   break label281;
@@ -153,8 +139,6 @@ public class Animations extends guu {
                   break;
                }
             case 79367:
-               short var33 = 11640;
-               long var58 = 4858483462677161435L ^ ax;
                var10000 = var13.equals("Old");
                if (axx == null) {
                   break label281;
@@ -169,8 +153,6 @@ public class Animations extends guu {
                   break;
                }
             case 2603186:
-               short var34 = 32593;
-               long var59 = 1748555395362863096L ^ ax;
                var10000 = var13.equals("Test");
                if (axx == null) {
                   break label281;
@@ -180,15 +162,11 @@ public class Animations extends guu {
                   break;
                }
 
-               short var19 = 2530;
-               long var35 = 6151006302461621217L ^ ax;
                var14 = 6;
                if (axx != null) {
                   break;
                }
             case -454610589:
-               short var36 = 14406;
-               long var60 = 7672866125231157491L ^ ax;
                var10000 = var13.equals("Slide 2");
                if (axx == null) {
                   break label281;
@@ -198,15 +176,11 @@ public class Animations extends guu {
                   break;
                }
 
-               short var20 = 8104;
-               long var37 = 196738153540085154L ^ ax;
                var14 = 7;
                if (axx != null) {
                   break;
                }
             case 2109902691:
-               short var38 = 13241;
-               long var61 = 710626579242973975L ^ ax;
                var10000 = var13.equals("Fomica");
                if (axx == null) {
                   break label281;
@@ -216,15 +190,11 @@ public class Animations extends guu {
                   break;
                }
 
-               short var21 = 30501;
-               long var39 = 2778794356752092475L ^ ax;
                var14 = 8;
                if (axx != null) {
                   break;
                }
             case 83843:
-               short var40 = 6206;
-               long var62 = 5261360939438461063L ^ ax;
                var10000 = var13.equals("Tap");
                if (axx == null) {
                   break label281;
@@ -234,15 +204,11 @@ public class Animations extends guu {
                   break;
                }
 
-               short var22 = 2166;
-               long var41 = 4700555670660051583L ^ ax;
                var14 = 9;
                if (axx != null) {
                   break;
                }
             case 749954596:
-               short var42 = 9762;
-               long var63 = 4919859571088158346L ^ ax;
                var10000 = var13.equals("Zero Day");
                if (axx == null) {
                   break label281;
@@ -252,23 +218,17 @@ public class Animations extends guu {
                   break;
                }
 
-               short var23 = 13052;
-               long var43 = 1447858585706121458L ^ ax;
                var14 = 10;
                if (axx != null) {
                   break;
                }
             case 87941:
-               short var44 = 3997;
-               long var64 = 4976983774292657975L ^ ax;
                var10000 = var13.equals("Xiv");
                if (axx == null) {
                   break label281;
                }
 
                if (var10000 != 0) {
-                  short var24 = 18293;
-                  long var45 = 608277217067253114L ^ ax;
                   var14 = 11;
                }
          }
@@ -303,8 +263,6 @@ public class Animations extends guu {
 
             var25.method_22907(var46.rotationDegrees(axxx * -51.635F));
             var46 = a == class_1306.field_6183 ? class_7833.field_40718 : class_7833.field_40717;
-            short var10003 = 20267;
-            long var10004 = 8841083606960747817L ^ ax;
             a.method_22907(var46.rotationDegrees(axxx * 110));
             a.method_22907(class_7833.field_40714.rotationDegrees(axxxxx * 20.0F * 1.5F));
             if (axx != null) {
@@ -321,8 +279,6 @@ public class Animations extends guu {
 
             var26.method_22907(var48.rotationDegrees(axxx * -40.0F));
             var48 = a == class_1306.field_6183 ? class_7833.field_40718 : class_7833.field_40717;
-            short var65 = 7481;
-            long var68 = 4681433991110387519L ^ ax;
             a.method_22907(var48.rotationDegrees(axxx * 140));
             a.method_22907(class_7833.field_40714.rotationDegrees(axxxxx * 30.0F));
             a.method_22907(class_7833.field_40718.rotationDegrees(axxxxx * 45.0F));
@@ -374,8 +330,6 @@ public class Animations extends guu {
 
             var27.method_22907(var50.rotationDegrees(axxx * -51.635F));
             var50 = a == class_1306.field_6183 ? class_7833.field_40718 : class_7833.field_40717;
-            short var66 = 14083;
-            long var69 = 5408205450328067342L ^ ax;
             a.method_22907(var50.rotationDegrees(axxx * 120));
             a.method_22907(class_7833.field_40714.rotationDegrees(axxxxx * 20.0F * 1.5F));
             if (axx != null) {
@@ -392,8 +346,6 @@ public class Animations extends guu {
 
             var28.method_22907(var52.rotationDegrees(axxx * -51.635F));
             var52 = a == class_1306.field_6183 ? class_7833.field_40718 : class_7833.field_40717;
-            short var67 = 7303;
-            long var70 = 1871593424296371842L ^ ax;
             a.method_22907(var52.rotationDegrees(axxx * 110));
             a.method_22907(class_7833.field_40714.rotationDegrees(axxxxx * 360.0F * 1.5F));
             if (axx != null) {
@@ -544,73 +496,24 @@ public class Animations extends guu {
                                  if (var2 >= var5) {
                                     p = var6;
                                     q = new Integer[17];
-                                    short var42 = 24083;
-                                    long var50 = 7666884256584501676L ^ var20;
-                                    short var51 = 20138;
                                     var56 = 4923559595926853910L ^ var20;
-                                    short var58 = 9051;
-                                    long var10005 = 1187495134079632978L ^ var20;
                                     String[] var59 = new String[12];
-                                    short var10007 = 28155;
-                                    long var10008 = 7459976475538733655L ^ var20;
                                     var59[0] = "1.7";
-                                    var10007 = 31894;
-                                    var10008 = 1179046371324537660L ^ var20;
                                     var59[1] = "Old";
-                                    var10007 = 17225;
-                                    var10008 = 7657481943970616554L ^ var20;
                                     var59[2] = "Swank";
-                                    var10007 = 15259;
-                                    var10008 = 4985011944038624299L ^ var20;
                                     var59[3] = "Test";
-                                    var10007 = 10869;
-                                    var10008 = 8940328977467473361L ^ var20;
                                     var59[4] = "Astralis";
-                                    var10007 = 24661;
-                                    var10008 = 2711688230883669985L ^ var20;
                                     var59[5] = "Fomica";
-                                    short var10006 = 2530;
-                                    long var70 = 6151009740626160873L ^ var20;
-                                    var10007 = 6864;
-                                    var10008 = 7799303174089559413L ^ var20;
                                     var59[6] = "Exhibition";
-                                    var10006 = 14814;
-                                    long var72 = 6661257299201252574L ^ var20;
-                                    var10007 = 24824;
-                                    var10008 = 7767874379821004618L ^ var20;
                                     var59[7] = "Slide";
-                                    var10006 = 25202;
-                                    long var74 = 5711963374840186749L ^ var20;
-                                    var10007 = 9781;
-                                    var10008 = 5291489978272477568L ^ var20;
                                     var59[8] = "Slide 2";
-                                    var10006 = 20347;
-                                    long var76 = 792139827620227711L ^ var20;
-                                    var10007 = 22543;
-                                    var10008 = 2547450359692693408L ^ var20;
                                     var59[9] = "Tap";
-                                    var10006 = 18835;
-                                    long var78 = 4757853242272984223L ^ var20;
-                                    var10007 = 1557;
-                                    var10008 = 7879324157896741295L ^ var20;
                                     var59[10] = "Zero Day";
-                                    var10006 = 30342;
-                                    long var80 = 4449142774441022341L ^ var20;
-                                    var10007 = 2798;
-                                    var10008 = 7089861497615277399L ^ var20;
                                     var59[11] = "Xiv";
                                     diq = new adu("Animation Mode", "1.7", var59);
-                                    short var43 = 11006;
-                                    long var52 = 985577932311919955L ^ var20;
                                     agv = new bes("Block X", 0.0F, -2.0F, 2.0F, 0.01F);
-                                    short var44 = 7462;
-                                    long var53 = 2231069764234693272L ^ var20;
                                     hez = new bes("Block Y", 0.0F, -2.0F, 2.0F, 0.01F);
-                                    short var45 = 23460;
-                                    long var54 = 6356244754583620611L ^ var20;
                                     ant = new bes("Block Z", 0.0F, -2.0F, 2.0F, 0.01F);
-                                    short var46 = 811;
-                                    long var55 = 8880330582968128645L ^ var20;
                                     fga = new gbp("Disable Item Swing Offset", false);
                                     return;
                                  }

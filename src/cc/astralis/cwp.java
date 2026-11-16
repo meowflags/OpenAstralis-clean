@@ -201,8 +201,6 @@ public class cwp implements dlc {
 
    public static float fsw(class_1799 itemStack) {
       long ax = cwp.a ^ 39912462180996L;
-      short var10001 = 6706;
-      long var10002 = 5881014513754064343L ^ ax;
       float axx = 20.0F * (25 - bzt(a)) / 25.0F;
       int[] var10000 = dar.abu();
       int axxx = 0;
@@ -227,8 +225,6 @@ public class cwp implements dlc {
                }
 
                int axxxxxx = var11;
-               short var12 = 367;
-               long var15 = 5404457736760385160L ^ ax;
                float axxxxxxx = (6 + axxxxxx * axxxxxx) / 3.0F * 0.75F;
                int axxxxxxxx = (int)axxxxxxx;
                float var21;
@@ -256,11 +252,7 @@ public class cwp implements dlc {
       label56: {
          label76: {
             if (axxxx != null) {
-               var10001 = 12169;
-               var10002 = 5545812246706286699L ^ ax;
                if (var11 > 25) {
-                  short var14 = 12169;
-                  long var17 = 5545812246706286699L ^ ax;
                   axxx = 25;
                   if (axxxx != null) {
                      break label76;
@@ -284,8 +276,6 @@ public class cwp implements dlc {
       }
 
       if (var11 > 0) {
-         var10001 = 12169;
-         var10002 = 5545812246706286699L ^ ax;
          axx = axx * (25 - axxx) / 25.0F;
       }
 
@@ -480,8 +470,6 @@ public class cwp implements dlc {
                      break label230;
                   }
 
-                  short var25 = 5421;
-                  long var10002 = 7002312950616500464L ^ ax;
                   if (a.field_7874 == 36) {
                      return true;
                   }
@@ -541,8 +529,6 @@ public class cwp implements dlc {
             return (boolean)var20;
          }
 
-         short var26 = 22621;
-         long var29 = 532514951895246210L ^ ax;
          if (var20 < 9) {
             return (boolean)1;
          }
@@ -603,7 +589,6 @@ public class cwp implements dlc {
                   if (var23 != 0) {
                      int var37 = a.field_7874;
                      int var27 = 9557;
-                     long var30 = 9105485325104748685L ^ ax;
                      var27 = 37 + axxxxxxxx.ckz();
                      if (axxx == null) {
                         return (boolean)(var37 < var27 ? 1 : 0);

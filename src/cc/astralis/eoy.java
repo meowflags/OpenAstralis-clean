@@ -85,12 +85,6 @@ public class eoy extends fig {
          float var10001 = a.dtt();
          float var10002 = a.av() - 1.0F;
          float var10003 = a.gqc();
-         short var10010 = 4003;
-         long var10011 = 1567353453927050979L ^ ax;
-         short var15 = 21477;
-         long var10012 = 8865069608911172260L ^ ax;
-         short var16 = 21477;
-         long var10013 = 8865069608911172260L ^ ax;
          dmp.caz(var13, var10001, var10002, var10003, 5.0F, 5.0F, 0.0F, 0.0F, new Color(35, 35, 35));
          cbl.ebb(a.gzi.eai(), a.hjg() + (a.av() - cbl.eq(a.gzi.eai())) / 2.0F, a.dtt() + (a.gqc() - cbl.biu(a.gzi.eai())) / 2.0F, Color.white);
          break;
@@ -227,7 +221,6 @@ public class eoy extends fig {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var23 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 

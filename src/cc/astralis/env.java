@@ -85,7 +85,6 @@ public class env {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       byte[] var3 = var1.doFinal("\u0088\u0019¦\u0098\u0007ÐÅØ".getBytes("ISO-8859-1"));
       String var6 = a(var3).intern();
-      byte var10001 = -1;
       String var0 = var6;
       if (fnf() == null) {
          fbv(var0);

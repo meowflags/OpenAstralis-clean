@@ -49,8 +49,6 @@ public class fuv extends cdr implements dlc {
       if (axxx != null) {
          switch (var15) {
             case -1656737386:
-               short var10001 = 20122;
-               long var10002 = 3460019570379604850L ^ ax;
                var15 = var13.equals("Rainbow");
                if (axxx == null) {
                   break;
@@ -94,31 +92,14 @@ public class fuv extends cdr implements dlc {
    }
 
    public static void bjb() {
-      long var0 = a ^ 63373729875053L;
       float var10002 = chi.method_22683().method_4486();
       float var10003 = chi.method_22683().method_4502();
-      short var10006 = 18706;
-      long var10007 = 8784380675666299127L ^ var0;
-      short var2 = 16714;
-      long var10008 = 4893122930469519533L ^ var0;
-      short var4 = 16714;
-      long var10009 = 4893122930469519533L ^ var0;
       Color var10004 = new Color(20, 20, 20);
-      short var3 = 22316;
-      var10008 = 3744988011433809610L ^ var0;
-      short var6 = 10661;
-      var10009 = 6198190784085567558L ^ var0;
-      short var8 = 10661;
-      long var10010 = 6198190784085567558L ^ var0;
       dmp.dyl(0.0F, 0.0F, var10002, var10003, var10004, new Color(50, 50, 50), false);
    }
 
    public static int awv(HKEYByReference hKey) {
       long ax = fuv.a ^ 99564293824809L;
-      short var10002 = 17700;
-      long var10003 = 8065731846701860054L ^ ax;
-      short var10004 = 17285;
-      long var10005 = 2213599364454491941L ^ ax;
       return Advapi32.INSTANCE.RegOpenKeyEx(WinReg.HKEY_CURRENT_USER, "Control Panel\\Desktop", 0, 131097, a);
    }
 
@@ -130,11 +111,6 @@ public class fuv extends cdr implements dlc {
    }
 
    public static String cv() {
-      long var0 = a ^ 60460546743530L;
-      short var10001 = 18830;
-      long var10002 = 5360178432264811964L ^ var0;
-      short var2 = 22659;
-      long var10003 = 931582210116035766L ^ var0;
       return Advapi32Util.registryGetStringValue(WinReg.HKEY_CURRENT_USER, "Control Panel\\Desktop", "WallPaper");
    }
 
@@ -172,11 +148,7 @@ public class fuv extends cdr implements dlc {
                   if ((var29 += var21) >= var24) {
                      c = var25;
                      d = new String[6];
-                     short var32 = 5684;
-                     long var40 = 4428726658944606127L ^ var16;
                      arh = "Control Panel\\Desktop";
-                     short var33 = 605;
-                     long var41 = 5174007519589764034L ^ var16;
                      gah = "WallPaper";
                      h = new HashMap(13);
                      Cipher var5;
@@ -271,7 +243,6 @@ public class fuv extends cdr implements dlc {
                                        | (var4[5] & 255L) << 16
                                        | (var4[6] & 255L) << 8
                                        | var4[7] & 255L;
-                                    byte var45 = -1;
                                     i = var54;
                                     return;
                                  }

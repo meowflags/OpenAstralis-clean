@@ -38,19 +38,9 @@ public class ChestStealer extends guu {
    public ChestStealer() {
       long a = ChestStealer.a ^ 119405682871492L;
       super(bfm.PLAYER);
-      short var10003 = 1846;
-      long var10004 = 768658066698653175L ^ a;
       a.auy = new bes("Delay", 100.0F, 0.0F, 500.0F, 1.0F);
-      short var3 = 101;
-      var10004 = 2143970710884108965L ^ a;
       a.avy = new gbp("Auto Close", true);
-      var3 = 24323;
-      var10004 = 8929555761156789700L ^ a;
       a.eh = new gbp("Check title", true);
-      var3 = 16091;
-      var10004 = 7012683392751596568L ^ a;
-      short var9 = 2926;
-      long var10005 = 7459371068532343212L ^ a;
       a.cam = (dxl)new dxl("Title to check for", "Chest").bih(a.eh::dnp);
       a.bfi(new ffn[]{a.auy, a.avy, a.eh, a.cam});
    }

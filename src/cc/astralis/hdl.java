@@ -72,7 +72,6 @@ public class hdl extends WebSocketClient {
    public native void onMessage(String encryptedJsonData);
 
    public void onOpen(ServerHandshake handshake) {
-      long ax = 73537990359678L;
       aml.fii = true;
       boolean var10000 = guk();
       aml.exv = false;

@@ -391,8 +391,6 @@ public final class bad {
          return Collections.emptyList();
       } else {
          ArrayList axxx = new ArrayList();
-         short var10000 = 21498;
-         long var10001 = 9066163424558032985L ^ ax;
          Pattern axxxx = Pattern.compile("§([0-9a-fklmnor])");
          Matcher axxxxx = axxxx.matcher(a);
          Paint axxxxxx = a.makeClone();
@@ -473,8 +471,6 @@ public final class bad {
       long ax = bad.a ^ 99729440478594L;
       Paint axx = a.makeClone();
       axx.setShader(null);
-      short var10002 = 25074;
-      long var10003 = 4782366622734744662L ^ ax;
       axx.setColor(a | 0xFF000000);
       return axx;
    }
@@ -482,19 +478,12 @@ public final class bad {
    private static int ear(Color a) {
       long ax = bad.a ^ 33549236036713L;
       int var10000 = 20257;
-      long var10001 = 6020920461175235435L ^ ax;
       int axx = 153;
       int axxx = (int)(a.getRed() * 0.3F);
       int axxxx = (int)(a.getGreen() * 0.3F);
       int axxxxx = (int)(a.getBlue() * 0.3F);
-      short var9 = 4080;
-      long var10002 = 1313957748429644728L ^ ax;
       var10000 = axx << 24;
-      short var10 = 29337;
-      long var10003 = 803594739366731472L ^ ax;
       var10000 |= axxx << 16;
-      short var11 = 30524;
-      var10003 = 1268579292747701111L ^ ax;
       return var10000 | axxxx << 8 | axxxxx;
    }
 
@@ -594,8 +583,6 @@ public final class bad {
                                  if (var2 >= var5) {
                                     e = var6;
                                     f = new Integer[6];
-                                    short var46 = 21067;
-                                    long var10005 = 7711825137536956735L ^ var20;
                                     cwr = ImageFilter.makeDropShadow(1.0F, 1.0F, 0.5F, 0.5F, -16777216, null, null);
                                     return;
                                  }

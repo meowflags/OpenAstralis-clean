@@ -46,22 +46,13 @@ public abstract class MultiplayerScreenMixin extends class_437 {
       at = {@At("TAIL")}
    )
    private void onInit(CallbackInfo a) {
-      long ax = b ^ 108809105996107L;
       if (class_310.method_1551().field_1755 instanceof class_500 axx) {
          class_7840 var10000 = class_4185.method_46430(
             class_2561.method_43470(MultiplayerScreenMixin.a[1]), axxx -> class_310.method_1551().method_1507(new crv())
          );
-         short var10001 = 18684;
-         long var10002 = 8422949729019369663L ^ ax;
-         short var8 = 17039;
-         long var10003 = 1758456856165913287L ^ ax;
          class_7840 axxx = var10000.method_46437(100, 20);
          ScreenAccessor var7 = (ScreenAccessor)axx;
-         short var10 = 31614;
-         long var10004 = 6147691510815206196L ^ ax;
          int var9 = axx.field_22789 - 105;
-         short var11 = 30886;
-         long var10005 = 5479877632935373024L ^ ax;
          var7.invokeAddDrawableChild(axxx.method_46433(var9, axx.field_22790 - 35).method_46431());
       }
    }
@@ -158,19 +149,14 @@ public abstract class MultiplayerScreenMixin extends class_437 {
                      c = var6;
                      d = new Integer[15];
                      String[] var22 = new String[2];
-                     short var27 = 9758;
                      int var20 = 0;
-                     long var32 = 5211283750756148616L ^ var15;
                      String var19 = var11;
                      int var21 = var11.length();
                      char var18 = 7;
                      int var17 = -1;
 
                      while (true) {
-                        short var28 = 8685;
-                        long var33 = 5170696069786198644L ^ var15;
                         String var40 = a(102, a(var19.substring(++var17, var17 + var18)));
-                        byte var34 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            a = var22;
@@ -211,12 +197,9 @@ public abstract class MultiplayerScreenMixin extends class_437 {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 58845593961336L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 19130;
-         long var10005 = 430965311709667527L ^ var1;
          var10000[0] = (char)(var10003 ^ 'k');
       }
 
@@ -224,7 +207,6 @@ public abstract class MultiplayerScreenMixin extends class_437 {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 111651421058581L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -232,43 +214,34 @@ public abstract class MultiplayerScreenMixin extends class_437 {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 16142;
-         long var10009 = 4109483011735642135L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 24044;
-               long var23 = 1449994098807898873L ^ var2;
                var10 = 19;
                break;
             case 1:
                var10 = 1157;
-               long var22 = 3283194311515462559L ^ var2;
                var10 = 25;
                break;
             case 2:
                var10 = 15387;
-               long var21 = 3977071433139970823L ^ var2;
                var10 = 64;
                break;
             case 3:
                var10 = 25657;
-               long var20 = 2788248577136343851L ^ var2;
                var10 = 117;
                break;
             case 4:
                var10 = 30228;
-               long var19 = 2502915071730854147L ^ var2;
                var10 = 26;
                break;
             case 5:
                var10 = 16283;
-               long var18 = 5695280048900268164L ^ var2;
                var10 = 96;
                break;
             default:
                var10 = 27811;
-               long var17 = 5080508450642932656L ^ var2;
                var10 = 107;
          }
 

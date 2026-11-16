@@ -39,14 +39,8 @@ public class AutoShield extends guu {
       long a = AutoShield.a ^ 68112702316805L;
       super(bfm.PLAYER);
       a.ghw = -1;
-      short var10003 = 1364;
-      long var10004 = 8701468209688988056L ^ a;
       a.eps = new gbp("Counter Shield with Axe", true);
-      var10003 = 29570;
-      var10004 = 3882559383405870924L ^ a;
       a.dwd = new gbp("Only While Sneaking", false);
-      var10003 = 4415;
-      var10004 = 5141264999096180210L ^ a;
       a.ald = new gbp("Switch Back", true);
       a.bfi(new ffn[]{a.eps, a.dwd, a.ald});
    }
@@ -312,7 +306,6 @@ public class AutoShield extends guu {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var20 = d(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var20;
          if ((var9 += var10) >= var13) {
             g = var14;
@@ -348,7 +341,6 @@ public class AutoShield extends guu {
                | (var4[5] & 255L) << 16
                | (var4[6] & 255L) << 8
                | var4[7] & 255L;
-            var10001 = -1;
             p = var23;
             return;
          }

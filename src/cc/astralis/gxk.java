@@ -170,12 +170,6 @@ public class gxk extends cec implements dlc {
                dmp.gpu(axxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxx);
                dmp.fle(axxxxxxxxxxxxx, axxxxxxxxxxxxx);
                dmp.gpu(-axxxxxxxxxxxxxxxxxx, -axxxxxxxxxxxxxxxxxxx);
-               short var10007 = 23726;
-               long var10008 = 1754910620952346381L ^ ax;
-               short var29 = 12014;
-               long var10009 = 2987962235928530252L ^ ax;
-               short var30 = 12014;
-               long var10010 = 2987962235928530252L ^ ax;
                dmp.cpp(axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxx, 200.0F, 8.0F, 4.0F, new Color(25, 25, 25));
                float axxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxx.hbi() * 200.0F;
                float var28 = axxxxxxxxxxxxxxxxxxxx;
@@ -327,7 +321,6 @@ public class gxk extends cec implements dlc {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

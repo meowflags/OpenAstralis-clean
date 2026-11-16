@@ -28,8 +28,6 @@ public class crw {
       int[] axx = dar.abu();
 
       try {
-         short var10000 = 17644;
-         long var10001 = 4165898109959082609L ^ ax;
          MessageDigest axxx = MessageDigest.getInstance("SHA-512");
          byte[] axxxx = axxx.digest(a.getBytes(StandardCharsets.UTF_8));
          StringBuilder axxxxx = new StringBuilder();
@@ -40,8 +38,6 @@ public class crw {
          while (true) {
             if (var9 < var8) {
                byte axxxxxx = var7[var9];
-               short var13 = 17018;
-               long var14 = 1772234974459565285L ^ ax;
                var12 = axxxxx.append(String.format("%02x", axxxxxx));
                if (axx == null) {
                   break;
@@ -59,8 +55,6 @@ public class crw {
 
          return var12.toString();
       } catch (NoSuchAlgorithmException var11) {
-         short var10002 = 2630;
-         long var10003 = 4326732882041560282L ^ ax;
          throw new RuntimeException("SHA-512 not supported", var11);
       }
    }
@@ -92,7 +86,6 @@ public class crw {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

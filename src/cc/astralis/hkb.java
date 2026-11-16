@@ -31,16 +31,13 @@ public class hkb extends hcr {
       }
 
       class_2596 axxx = var10000.bed();
-      class_2596 var8 = axxx;
       if (axx != null) {
          if (!(axxx instanceof class_2743)) {
             return;
          }
 
-         var8 = axxx;
       }
 
-      class_2743 axxxx = (class_2743)var8;
       EntityVelocityUpdateS2CPacketAccessor axxxxx = (EntityVelocityUpdateS2CPacketAccessor)a.bed();
       if (axxxxx.getEntityId() == chi.field_1724.method_5628()) {
          a.gmm(true);
@@ -61,7 +58,6 @@ public class hkb extends hcr {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       byte[] var4 = var2.doFinal("Cancel".getBytes("ISO-8859-1"));
       String var5 = a(var4).intern();
-      byte var10001 = -1;
       d = var5;
    }
 

@@ -149,8 +149,6 @@ public class AntiBot extends guu {
                var13 = axxxxx;
             }
 
-            short var10001 = 26689;
-            long var10002 = 5827507264661338143L ^ ax;
             boolean var14 = var13.matches("^[a-zA-Z0-9_]{1,16}+$");
             if (axxx == null) {
                return var14;
@@ -168,8 +166,6 @@ public class AntiBot extends guu {
                      }
 
                      if (!var18) {
-                        var10001 = 10585;
-                        var10002 = 3825618323374438656L ^ ax;
                         boolean var19 = axxxxx.contains("NPC");
                         if (axxx == null) {
                            return var19;
@@ -237,8 +233,6 @@ public class AntiBot extends guu {
          label83:
          if (axxx != null) {
             if (var8) {
-               short var10001 = 11478;
-               long var10002 = 2159591559372840746L ^ ax;
                var8 = dcu(a, "[NPC] ");
                if (axxx == null) {
                   break label83;
@@ -258,8 +252,6 @@ public class AntiBot extends guu {
             }
 
             String var9 = a.method_2966().name();
-            short var10 = 18019;
-            long var11 = 4939064493432927644L ^ ax;
             var8 = var9.matches("^[a-zA-Z0-9_]{1,16}+$");
          }
 
@@ -353,8 +345,6 @@ public class AntiBot extends guu {
                   if ((var17 += var8) >= var11) {
                      g = var12;
                      h = new String[10];
-                     short var20 = 16937;
-                     long var25 = 6116523479614965537L ^ var14;
                      ewr = "^[a-zA-Z0-9_]{1,16}+$";
                      Cipher var0;
                      var10000 = var0 = Cipher.getInstance("DES/CBC/NoPadding");
@@ -389,20 +379,10 @@ public class AntiBot extends guu {
                         | var4[7] & 255L;
                      var10001 = -1;
                      p = var32;
-                     short var33 = 19729;
-                     long var39 = 2620087375076870165L ^ var14;
                      emm = new gbp("Is In Tablist", true);
-                     short var34 = 17008;
-                     long var40 = 2278501836810962814L ^ var14;
                      bim = new gbp("Valid Name", true);
-                     short var35 = 13167;
-                     long var41 = 5915192580595889764L ^ var14;
                      cih = new gbp("Name Starts With", true);
-                     short var36 = 16216;
-                     long var42 = 1855627448400362077L ^ var14;
                      dly = new gbp("Age", true);
-                     short var37 = 4326;
-                     long var43 = 6004747749489251823L ^ var14;
                      epc = new gbp("Latency", true);
                      return;
                   }

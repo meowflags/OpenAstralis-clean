@@ -44,12 +44,7 @@ public class guu extends cdr implements dlc, amh {
    private static final Map u;
 
    protected guu(bfm category) {
-      long ax = c ^ 105536572939058L;
       super();
-      short var10003 = 3769;
-      long var10004 = 1015060344084328275L ^ ax;
-      short var4 = 14273;
-      long var10005 = 8115126434718504494L ^ ax;
       a.bdg = new fse("none", "none");
       a.ckj = new ArrayList<>();
       a.cdu = a;
@@ -57,12 +52,7 @@ public class guu extends cdr implements dlc, amh {
    }
 
    protected guu(bfm category, int keyCode) {
-      long ax = c ^ 33898405298430L;
       super();
-      short var10003 = 14273;
-      long var10004 = 8115197733098196450L ^ ax;
-      short var5 = 14273;
-      long var10005 = 8115197733098196450L ^ ax;
       a.bdg = new fse("none", "none");
       a.ckj = new ArrayList<>();
       a.cdu = a;
@@ -94,19 +84,13 @@ public class guu extends cdr implements dlc, amh {
                            break label154;
                         }
 
-                        short var15 = 28611;
-                        long var10001 = 194181875491341210L ^ ax;
                         var10000 = "gud boy".equals(aml.eyu);
                      }
 
                      if (var10000 && aml.aod) {
                         int var16 = aml.hjr.cfs();
-                        short var28 = 22643;
-                        long var10002 = 8431446302845927774L ^ ax;
                         if (var16 != 512383) {
                            String var17 = aml.hjr.eus();
-                           var28 = 16527;
-                           var10002 = 2051696065074113751L ^ ax;
                            if (!var17.equalsIgnoreCase("fag") && aml.dxk && aml.grg && aml.fyy) {
                               var18 = aml.exv;
                               if (axx == null) {
@@ -126,8 +110,6 @@ public class guu extends cdr implements dlc, amh {
                                  break label155;
                               }
 
-                              var28 = 18376;
-                              var10002 = 4778509687737276170L ^ ax;
                               var18 = aml.fhj.fsc(10000L);
                               if (axx == null) {
                                  break label163;
@@ -142,34 +124,22 @@ public class guu extends cdr implements dlc, amh {
                   }
 
                   try {
-                     short var33 = 19256;
-                     long var42 = 5727297543097460580L ^ ax;
                      Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
                      axxx.setAccessible(true);
                      Unsafe axxxx = (Unsafe)axxx.get(null);
                      long axxxxx = ThreadLocalRandom.current().nextLong();
                      ThreadLocalRandom var20 = ThreadLocalRandom.current();
-                     short var43 = 2257;
-                     long var10003 = 2561586070634469398L ^ ax;
                      long axxxxxx = var20.nextLong(1L, Long.MAX_VALUE);
                      var20 = ThreadLocalRandom.current();
-                     short var44 = 363;
-                     var10003 = 8871136179863803975L ^ ax;
                      int axxxxxxx = var20.nextInt(1, 256);
                      Thread var34 = Thread.currentThread();
-                     short var45 = 16051;
-                     var10003 = 956550703495687795L ^ ax;
                      axxxx.putLong(var34, 8L, axxxxx);
                      axxxx.putAddress(axxxxxx, 0L);
                      Runtime.getRuntime().halt(axxxxxxx);
                   } catch (Throwable var12) {
-                     short var19 = 3789;
-                     long var31 = 2538872981237734924L ^ ax;
                      long axxxxxxxx = Long.MIN_VALUE;
 
                      do {
-                        short var32 = 27124;
-                        long var41 = 5615134270759270711L ^ ax;
                         if (axxxxxxxx >= Long.MAX_VALUE) {
                            break;
                         }
@@ -208,11 +178,7 @@ public class guu extends cdr implements dlc, amh {
                   if (((dtc)var22).bnr.dnp()) {
                      fnb var24 = fnb.hcp();
                      String var35 = a.clp();
-                     short var46 = 23514;
-                     long var52 = 3969339815731574661L ^ ax;
                      var24 = var24.ael("Enabled " + var35, gge.INFO);
-                     short var36 = 31851;
-                     long var47 = 5159126237458801989L ^ ax;
                      var24.bvw(1000).evs();
                   }
                }
@@ -240,11 +206,7 @@ public class guu extends cdr implements dlc, amh {
             if (((dtc)var22).bnr.dnp()) {
                fnb var26 = fnb.hcp();
                String var37 = a.clp();
-               short var48 = 5293;
-               long var53 = 4920103310705719543L ^ ax;
                var26 = var26.ael("Disabled " + var37, gge.INFO);
-               short var38 = 17165;
-               long var49 = 8049593940312463906L ^ ax;
                var26.bvw(1000).evs();
             }
          }
@@ -256,7 +218,6 @@ public class guu extends cdr implements dlc, amh {
    }
 
    private void hib(boolean a) {
-      long ax = c ^ 126516471034617L;
       int[] var10000 = dar.abu();
       Iterator var5 = a.ckj.iterator();
       int[] axx = var10000;
@@ -331,7 +292,6 @@ public class guu extends cdr implements dlc, amh {
    }
 
    public String dtp(boolean doesHaveSuffix) {
-      long ax = c ^ 119893759782679L;
       int[] var10000 = dar.abu();
       String axx = a.clp();
       int[] axxx = var10000;
@@ -360,7 +320,6 @@ public class guu extends cdr implements dlc, amh {
          label41: {
             int[] var4;
             String var10000;
-            long ax = c ^ 139050697405370L;
             var4 = dar.abu();
             var10000 = a;
             label37:

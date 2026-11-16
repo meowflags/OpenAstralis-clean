@@ -41,11 +41,7 @@ public class dmr extends class_437 implements dlc {
       a.coj = new ArrayList<>();
       int[] ax = var10000;
       a.ecf = new ArrayList<>();
-      short var10 = 10904;
-      long var10001 = 7307432587451576531L ^ a;
       int axx = 50;
-      short var11 = 14288;
-      var10001 = 4683098237730074010L ^ a;
       int axxx = 50;
 
       for (bfm axxxx : bfm.values()) {
@@ -56,8 +52,6 @@ public class dmr extends class_437 implements dlc {
                      break label26;
                   }
 
-                  short var10005 = 2271;
-                  long var10006 = 632148724053152407L ^ a;
                   a.coj.add(new eoy(axxxx, axx - 140, 250.0F, 129.0F, 20.0F));
                }
 
@@ -86,8 +80,6 @@ public class dmr extends class_437 implements dlc {
       int[] var7 = var10000;
       if (var7 != null) {
          int var8 = a.ecf.size();
-         short var10001 = 21432;
-         long var10002 = 4244326635282809118L ^ ax;
          if (var8 > 8) {
             a.ecf.removeFirst();
          }
@@ -336,7 +328,6 @@ public class dmr extends class_437 implements dlc {
                         | (var6[5] & 255L) << 16
                         | (var6[6] & 255L) << 8
                         | var6[7] & 255L;
-                     byte var30 = -1;
                      long var0 = var36;
                      bmm = var0;
                      return;

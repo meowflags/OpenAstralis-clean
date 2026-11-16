@@ -37,7 +37,6 @@ public class cqp {
             .getBytes("ISO-8859-1")
       );
       String var5 = a(var4).intern();
-      byte var10001 = -1;
       b = var5;
    }
 

@@ -72,11 +72,8 @@ public abstract class glv<T> {
    }
 
    public static int fpx() {
-      long var0 = b ^ 78195939408546L;
       int var2 = bje();
       if (var2 == 0) {
-         short var10000 = 17685;
-         long var10001 = 432954715943345789L ^ var0;
          return 13;
       } else {
          return 0;
@@ -135,15 +132,12 @@ public abstract class glv<T> {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var16 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 
       f = var6;
       g = new Integer[2];
       if (fpx() != 0) {
-         short var13 = 22581;
-         long var15 = 491684232673435668L ^ var11;
          gvy(53);
       }
    }

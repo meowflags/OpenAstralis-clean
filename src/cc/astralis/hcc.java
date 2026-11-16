@@ -34,11 +34,7 @@ public class hcc extends hcr {
 
    public hcc(guu parentClass) {
       long ax = hcc.a ^ 132709139024888L;
-      short var10002 = 569;
-      long var10003 = 6248053564749632644L ^ ax;
       super(a, "Grim");
-      short var4 = 16114;
-      long var10004 = 1280576442727917646L ^ ax;
       a.cxn = new bes("Grim Value", 3.0F, 1.0F, 10.0F, 1.0F);
       a.ebu(a.cxn);
    }
@@ -148,7 +144,6 @@ public class hcc extends hcr {
    }
 
    private static class_243 cqc() {
-      long var0 = a ^ 104670554184646L;
       int[] var2 = dar.abu();
       class_746 var10000 = chi.field_1724;
       if (var2 != null) {
@@ -199,7 +194,6 @@ public class hcc extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

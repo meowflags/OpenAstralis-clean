@@ -75,8 +75,6 @@ public class ag implements dlc {
       }
 
       ara var7 = duz.eqv(var10000, a).avs(1);
-      short var10001 = 22790;
-      long var10002 = 7644233253482342917L ^ ax;
       duz axxx = var7.fld(8).ern(0).bys(fua.RGBA8).cpb();
       a.enu = gbl.gri(axxx);
       a.byk = Surface.wrapBackendRenderTarget(a.gnz, a.enu, SurfaceOrigin.BOTTOM_LEFT, SurfaceColorFormat.RGBA_8888, ColorSpace.getSRGB());
@@ -114,9 +112,7 @@ public class ag implements dlc {
 
       if (var10000.enu != null) {
          class_1041 axx = chi.method_22683();
-         short var6 = 3416;
          dmp.gsc(axx.method_4495());
-         long var10001 = 8656909542936412152L ^ a;
          bfj.chb();
          a.gnz.resetGL(ezu);
          GL11.glDisable(2884);
@@ -192,7 +188,6 @@ public class ag implements dlc {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

@@ -182,3 +182,71 @@ coincide — `ekb` declara 70 campos y 21 métodos reales, su candidato en ese �
 declara 59 y 20. Emparejar por estructura sobre ese árbol acierta 10 de 74
 nombres ya conocidos, así que no se usa para nombrar: preferimos 74 nombres
 probados a 449 inventados.
+
+---
+
+## 10. Qué obfuscador es
+
+**Veredicto: Zelix Klassmaster para la capa Java, con una capa de thinning
+nativo propio (`opalV2`) encima. No es JNIC.**
+
+La firma de ZKM es estructural — ZKM no deja cadenas que lo nombren — y las
+cuatro evidencias concuerdan:
+
+| evidencia | medida | por qué es ZKM |
+|---|---|---|
+| cifrado de cadenas | DES/CBC/PKCS5 en 284 clases, DES/CBC/NoPadding en 202, IV = 8 ceros, clave por clase `A ^ K` guardada en un campo `static long` | el esquema de ZKM (`stringencryptionlevel` con DES, clave derivada de dos `long` en `<clinit>`) |
+| despacho de cadenas y enteros | 3.897 sitios `invokedynamic (IJ)` en 143 clases con `BootstrapMethods`; el bootstrap construye un `MutableCallSite` y se auto-reemplaza por `MethodHandles.constant` tras la primera llamada | ZKM ≥ 5 usa `invokedynamic` + `MutableCallSite` para su cifrado de cadenas |
+| renombrado | 449 de 518 clases con nombre de 2-3 letras (17 de 2, 430 de 3) | la longitud de nombre por defecto de ZKM |
+| ofuscación de flujo | esplices de chequeo de nulo alrededor de regiones, pares `var1000x` muertos que sobreviven en la salida descompilada | la ofuscación de flujo de ZKM inserta predicados opacos que CFR no puede limpiar del todo |
+
+Un escáner de constant pool sobre los 518 `.class` no encuentra `ZKM`, `zelix`
+ni `SourceDebug` en ninguno — ZKM no firma su salida, así que la identificación
+es por estructura, que es como se identifica ZKM siempre.
+
+**Por qué no JNIC**, con el changelog y la documentación de jnic.dev como
+referencia:
+
+1. JNIC 3.1.1+ genera el nombre del loader al azar "para prevenir
+   conflictos". Aquí el loader es fijo: `dev/opalV2/Loader`.
+2. JNIC 3.5+ cifra cadenas en nativo con ChaCha20. Aquí el cifrado de cadenas
+   es Java puro con DES de `javax.crypto` (ChaCha no aparece en ninguno de los
+   518 ficheros).
+3. JNIC traduce métodos enteros y "no queda rastro del método original en el
+   `.class`". Aquí 514 de 518 clases son Java puro con todo su bytecode; solo
+   11 métodos en 4 clases son `native`.
+4. Ningún marcador `jnic`/`JNIC` en ningún fichero.
+
+La capa `native` que sí existe es `opalV2` y ya estaba inventariada en
+`ASTRALIS_MALWARE_ANALYSIS.md`: `dev/opalV2/Loader` extrae
+`/Loader/<plataforma>/windows.dll` a `%TEMP%`, la carga con `System.load`, y
+cada clase protegida llama a `Loader.registerNativesForClass(int, Class)` en su
+`<clinit>` (4 clases, 11 métodos: `dqq.ahf`, `evd.dnu`, `fz` con 6 natives de
+cripto, `hdl` con los callbacks del socket). La DLL lleva una VM de bytecode y
+define una clase oculta `dev/opalV2/hidden/Hidden0` por JNI. Es un protector de
+métodos nativos del mismo estilo que JNIC, pero el propio binario dice
+llamarse `opalV2`.
+
+---
+
+## 11. Limpieza del residuo de ZKM en `src/`
+
+Con las 3.897 llamadas plegadas, los operandos que el ofuscador apilaba para
+el `invokedynamic` quedaron como tiendas muertas que CFR imprime alrededor del
+código vivo (`short var10001 = 9026; long var10002 = 5589…L ^ ax;`).
+`tools/strip_zkm_residue.py` las borra bajo dos condiciones que la hacen segura
+sin AST: la variable no se lee nunca dentro de su método (comprobación por
+ámbito, porque CFR recicla `var10001` entre métodos) y todo su lado derecho es
+sin efectos (solo literales, identificadores simples, casts y operadores
+aritméticos: sin puntos, sin llamadas, sin `new`, sin cadenas). Corre hasta
+punto fijo porque quitar una tienda que leía otra muerta libera a ésta:
+
+```
+python tools/strip_zkm_residue.py src   # repetir hasta que quite 0
+```
+
+Resultado: **7.474 líneas muertas** en 319 de los 518 ficheros. Los splices de
+`dar.abu()`, el runtime de descifrado de cadenas y las 55 llamadas sin plegar
+quedan intactos — el pase solo toca tiendas puras a locales no leídas.
+
+

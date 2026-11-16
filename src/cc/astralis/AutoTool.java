@@ -32,17 +32,9 @@ public class AutoTool extends guu {
    public AutoTool() {
       long a = AutoTool.a ^ 28665590207063L;
       super(bfm.PLAYER);
-      short var10003 = 31585;
-      long var10004 = 7082915664191015264L ^ a;
       a.egk = new bes("Delay", 1.0F, 0.0F, 4.0F, 1.0F);
-      var10003 = 4967;
-      var10004 = 7493342376518558052L ^ a;
       a.gbv = new gbp("Blocks only", true);
-      var10003 = 22862;
-      var10004 = 8526454772598926158L ^ a;
       a.edg = new gbp("Auto Swap", true);
-      var10003 = 29094;
-      var10004 = 1958400054804923300L ^ a;
       a.ddq = new bes("Swap Amount", 1.0F, 1.0F, 64.0F, 1.0F);
       a.bfi(new ffn[]{a.egk, a.gbv, a.edg, a.ddq});
    }

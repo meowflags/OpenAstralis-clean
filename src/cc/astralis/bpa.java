@@ -48,12 +48,8 @@ public class bpa implements dlc {
       }
 
       class_746 var4 = var10000.field_1724;
-      short var10001 = 8900;
-      long var10002 = 1647453986783078679L ^ ax;
       class_5250 var5 = alb("Astralis", dar.gqy().deo().getRGB(), dar.gqy().cxj().getRGB());
       String var6 = String.valueOf(a);
-      short var10003 = 23818;
-      long var10004 = 243547890222290648L ^ ax;
       var4.method_7353(var5.method_27693(" » " + var6), false);
    }
 
@@ -132,7 +128,6 @@ public class bpa implements dlc {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

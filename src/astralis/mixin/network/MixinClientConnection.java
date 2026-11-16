@@ -200,9 +200,7 @@ public abstract class MixinClientConnection implements dmt {
                            c = var6;
                            d = new Integer[13];
                            String[] var27 = new String[4];
-                           byte var34 = 107;
                            int var25 = 0;
-                           long var44 = 2401961034291660913L ^ var20;
                            String var24;
                            int var26 = (var24 = var11[0]).length();
                            char var23 = '%';
@@ -210,8 +208,6 @@ public abstract class MixinClientConnection implements dmt {
 
                            label44:
                            while (true) {
-                              short var35 = 27853;
-                              long var45 = 5234051828728505554L ^ var20;
                               byte var36 = 72;
                               String var46 = var24.substring(++var31, var31 + var23);
                               byte var54 = -1;
@@ -236,14 +232,10 @@ public abstract class MixinClientConnection implements dmt {
                                        }
 
                                        var26 = (var24 = var11[1]).length();
-                                       short var38 = 10831;
-                                       long var47 = 8853145265888158292L ^ var20;
                                        var23 = '&';
                                        var31 = -1;
                                  }
 
-                                 short var39 = 21312;
-                                 long var48 = 2388163094169328464L ^ var20;
                                  var36 = 63;
                                  var46 = var24.substring(++var31, var31 + var23);
                                  var54 = 0;
@@ -285,12 +277,9 @@ public abstract class MixinClientConnection implements dmt {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 59951016402544L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 22802;
-         long var10005 = 7823233100739112665L ^ var1;
          var10000[0] = (char)(var10003 ^ '2');
       }
 
@@ -298,7 +287,6 @@ public abstract class MixinClientConnection implements dmt {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 100607715909389L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -306,43 +294,34 @@ public abstract class MixinClientConnection implements dmt {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 16528;
-         long var10009 = 4311651254726047273L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 32463;
-               long var23 = 4784352667672971389L ^ var2;
                var10 = 39;
                break;
             case 1:
                var10 = 478;
-               long var22 = 1692334221742896993L ^ var2;
                var10 = 21;
                break;
             case 2:
                var10 = 1533;
-               long var21 = 4228000394471371594L ^ var2;
                var10 = 15;
                break;
             case 3:
                var10 = 29815;
-               long var20 = 2217270265616794308L ^ var2;
                var10 = 85;
                break;
             case 4:
                var10 = 4294;
-               long var19 = 6361026080502638206L ^ var2;
                var10 = 40;
                break;
             case 5:
                var10 = 21100;
-               long var18 = 7058742510416995545L ^ var2;
                var10 = 22;
                break;
             default:
                var10 = 31310;
-               long var17 = 2201171742754082036L ^ var2;
                var10 = 50;
          }
 

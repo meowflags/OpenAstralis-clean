@@ -38,8 +38,6 @@ public class ffz extends bmd {
       long ax = ffz.a ^ 54392747049461L;
       a.fji(a);
       a.axc(a);
-      short var10001 = 21419;
-      long var10002 = 4629143144448681979L ^ ax;
       fll axx = bxc.emc(b, 10);
       int[] var10000 = dar.abu();
       axx.aof(a.aeb.fah(), a + 6.0F, a + 4.0F, cbc.fgl);
@@ -94,8 +92,6 @@ public class ffz extends bmd {
       }
 
       double var7 = var10000 * var10001;
-      short var8 = 8323;
-      long var10002 = 2715962307039229407L ^ ax;
       return ftb.hbp(var7, 6);
    }
 
@@ -177,15 +173,8 @@ public class ffz extends bmd {
                   if (var2 >= var5) {
                      c = var6;
                      d = new Integer[5];
-                     short var19 = 7653;
-                     long var23 = var14 ^ 7489852931418744177L;
                      dkt = 7;
-                     short var28 = 21826;
-                     long var32 = 6452618031911710162L ^ var14;
-                     short var33 = 4117;
                      var34 = 5452484351073839232L ^ var14;
-                     short var36 = 4117;
-                     long var10005 = 5452484351073839232L ^ var14;
                      aot = new Color(40, 40, 40);
                      return;
                   }

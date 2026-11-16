@@ -42,8 +42,6 @@ public class fno extends guu {
    public fno() {
       long a = fno.a ^ 83615123284411L;
       super(bfm.EXPLOIT);
-      short var10003 = 10089;
-      long var10004 = 98703816258245991L ^ a;
       a.bav = new bes("Delay In Between Checks", 2000.0F, 0.0F, 10000.0F, 1.0F);
       a.bmk = new cbm();
       a.fea = new cbm();
@@ -99,10 +97,8 @@ public class fno extends guu {
       JSONObject ax = a.fwt();
       int[] axx = var10000;
       int var10001 = 32392;
-      long var10002 = 6537227079242183686L ^ a;
       int axxx = ax.getInt("watchdog_total");
       var10001 = (short)32406;
-      var10002 = 6032828368978736150L ^ a;
       int axxxx = ax.getInt("staff_total");
       fno var9 = a;
       if (axx != null) {
@@ -171,15 +167,7 @@ public class fno extends guu {
             int axx = a.dqb;
             String axxx = var10002;
             int axxxx = a.ecp;
-            short var10001 = 23118;
-            long var17 = 7623283973639562532L ^ a;
-            short var10003 = 9117;
-            long var10004 = 9098169026649726203L ^ a;
-            short var10005 = 26537;
-            long var10006 = 2186047997018134733L ^ a;
             fnb var11 = var10.ael("Watchdog Banned " + axxxx + " player" + axxx + " in the past 15 seconds , total " + axx, gge.WARNING);
-            var10001 = 15843;
-            long var18 = 9149787464410439944L ^ a;
             var11.bvw(4000).evs();
             a.ecp = 0;
          }
@@ -193,15 +181,7 @@ public class fno extends guu {
          int axx = a.fvo;
          String axxx = var19;
          int var9 = a.fbj;
-         short var15 = 15821;
-         long var20 = 7264895354786611878L ^ a;
-         short var22 = 30946;
-         long var23 = 4153397346987493258L ^ a;
-         short var24 = 22241;
-         long var25 = 914574339066653059L ^ a;
          fnb var13 = var12.ael("Staff Banned " + var9 + " player" + axxx + " in the past 15 seconds , total " + axx, gge.WARNING);
-         var15 = 27800;
-         long var21 = 8472981014656020594L ^ a;
          var13.bvw(4000).evs();
          a.fbj = 0;
       }
@@ -210,17 +190,9 @@ public class fno extends guu {
    private JSONObject fwt() throws Exception {
       long a = fno.a ^ 25646731020055L;
       int[] var10000 = dar.abu();
-      short var10003 = 1269;
-      long var10004 = 4981963544153919579L ^ a;
       URL ax = new URL("https://api.plancke.io/hypixel/v1/punishmentStats");
       HttpURLConnection axx = (HttpURLConnection)ax.openConnection();
-      short var10002 = 3035;
-      long var12 = 1692242152538414966L ^ a;
       axx.setRequestMethod("GET");
-      var10002 = 25879;
-      long var13 = 8108173564591698364L ^ a;
-      var10003 = 27889;
-      var10004 = 4764643256927778902L ^ a;
       axx.setRequestProperty("User-Agent", "kwayservices.top");
       int[] axxx = var10000;
       BufferedReader axxxx = new BufferedReader(new InputStreamReader(axx.getInputStream()));
@@ -242,8 +214,6 @@ public class fno extends guu {
       }
 
       JSONObject axxxxxx = new JSONObject(axxxxx.toString());
-      byte var10001 = 104;
-      long var11 = 5094626355071128776L ^ a;
       return axxxxxx.getJSONObject("record");
    }
 
@@ -281,8 +251,6 @@ public class fno extends guu {
                   if ((var28 += var21) >= var24) {
                      g = var25;
                      h = new String[15];
-                     short var31 = 6867;
-                     long var37 = 680935480088316400L ^ var16;
                      bxf = "https://api.plancke.io/hypixel/v1/punishmentStats";
                      r = new HashMap(13);
                      Cipher var5;
@@ -334,7 +302,6 @@ public class fno extends guu {
                            | (var15[5] & 255L) << 16
                            | (var15[6] & 255L) << 8
                            | var15[7] & 255L;
-                        byte var49 = -1;
                         var11[var10001] = var10004;
                      } while (var7 < var10);
 
@@ -371,7 +338,6 @@ public class fno extends guu {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var40 = -1;
                      v = var47;
                      return;
                   }

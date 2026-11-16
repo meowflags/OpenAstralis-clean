@@ -165,7 +165,6 @@ public class evd implements dlc {
    }
 
    public static boolean bpi() {
-      long var0 = a ^ 16964411562637L;
       int[] var2 = dar.abu();
       double var3;
       int var10000 = (var3 = Math.abs(chi.field_1724.method_18798().field_1352) - 0.05) == 0.0 ? 0 : (var3 < 0.0 ? -1 : 1);

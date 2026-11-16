@@ -28,11 +28,7 @@ public class cyx extends ffn<hcr> {
       super(a, a.length > 0 ? a[0] : null);
       a.aqo = new HashMap<>();
       HashMap var10000 = a.aqo;
-      short var10001 = 359;
-      long var10002 = 6447907438698330606L ^ ax;
       guu var10004 = a.dnp().clv();
-      short var10005 = 25294;
-      long var10006 = 7995192767999875653L ^ ax;
       var10000.put("None", new hcr(var10004, "None"));
       hcr[] var6 = a;
       int var7 = a.length;
@@ -180,14 +176,11 @@ public class cyx extends ffn<hcr> {
       while (true) {
          byte[] var8 = var0.doFinal(var4.substring(++var2, var2 + var3).getBytes("ISO-8859-1"));
          String var15 = a(var8).intern();
-         byte var10001 = -1;
          var7[var5++] = var15;
          if ((var2 += var3) >= var6) {
             b = var7;
             c = new String[3];
             if (fig() != null) {
-               short var12 = 18814;
-               long var14 = 3007871539377521651L ^ var9;
                aev("nScQCc");
             }
 

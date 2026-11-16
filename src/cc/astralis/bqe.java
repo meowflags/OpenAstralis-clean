@@ -96,41 +96,17 @@ public class bqe extends hcr {
 
    public bqe(guu parent) {
       long ax = bqe.a ^ 134708080273423L;
-      short var10002 = 17572;
-      long var10003 = 6347594424973216887L ^ ax;
       super(a, "Modern Watchdog");
-      short var6 = 19267;
-      long var10004 = 5319824071587414942L ^ ax;
       a.azb = new bes("Delay Ticks", 1.0F, 0.0F, 100.0F, 1.0F);
-      short var7 = 31819;
-      var10004 = 5537627487230751903L ^ ax;
       a.bvl = new bes("World Change Timeout", 5000.0F, 0.0F, 10000.0F, 1.0F);
-      short var8 = 24217;
-      var10004 = 3513077652880479813L ^ ax;
       a.gsh = new gbp("Delay All Packets", true);
-      short var9 = 9837;
-      var10004 = 975876127515520703L ^ ax;
       a.bln = new gbp("Cancel Explosion", false);
-      short var10 = 26439;
-      var10004 = 5651936754466647958L ^ ax;
       a.bqr = new gbp("Ignore Explosion", false);
-      short var11 = 10866;
-      var10004 = 1275548412140135079L ^ ax;
       a.bul = new gbp("Jump Reset", false);
-      short var12 = 8983;
-      var10004 = 9059419098454174664L ^ ax;
       a.ebg = new gbp("Air Velocity", false);
-      short var13 = 19183;
-      var10004 = 3880792624929423929L ^ ax;
       a.bir = new gbp("Blink", false);
-      short var14 = 10560;
-      var10004 = 9049567728891240848L ^ ax;
       a.hjg = new gbp("Remove Attack Delay (experimental)", false);
-      short var15 = 10755;
-      var10004 = 1762820320232448733L ^ ax;
       a.bka = new gbp("Attack Reduce (experimental)", false);
-      short var16 = 12852;
-      var10004 = 2754124083981007587L ^ ax;
       a.cir = new gbp("Switch Attack (experimental)", false);
       a.gmz = new cbm();
       a.ffc = false;
@@ -140,23 +116,11 @@ public class bqe extends hcr {
       a.edp = false;
       a.hdd = false;
       a.chj = new LinkedBlockingQueue<>();
-      short var10001 = 12570;
-      long var5 = 8180840887195902914L ^ ax;
       ffn[] var4 = new ffn[]{a.azb, a.bvl, a.gsh, a.bln, a.bqr, a.bul, null, null, null, null, null};
-      short var17 = 21140;
-      var10004 = 4651164549748473933L ^ ax;
       var4[6] = a.ebg;
-      short var18 = 26391;
-      var10004 = 9045739438918825416L ^ ax;
       var4[7] = a.bir;
-      short var19 = 22264;
-      var10004 = 6768929782740698149L ^ ax;
       var4[8] = a.hjg;
-      short var20 = 12645;
-      var10004 = 7088163015709074361L ^ ax;
       var4[9] = a.bka;
-      short var21 = 11494;
-      var10004 = 2049622811185626685L ^ ax;
       var4[10] = a.cir;
       a.dxe(var4);
    }
@@ -429,8 +393,6 @@ public class bqe extends hcr {
                      if (var10) {
                         class_634 var15 = chi.method_1562();
                         int var10003 = chi.field_1724.method_31548().method_67532() + 1;
-                        short var10004 = 597;
-                        long var10005 = 1220324703165440081L ^ ax;
                         var15.method_52787(new class_2868(var10003 % 9));
                         chi.method_1562().method_52787(new class_2868(chi.field_1724.method_31548().method_67532()));
                      }
@@ -989,8 +951,6 @@ public class bqe extends hcr {
                      if (axx != null) {
                         if (var17 != 0) {
                            a.ffc = true;
-                           short var22 = 3979;
-                           long var10002 = 641402933381684577L ^ ax;
                            a.gyt = 2;
                         }
 

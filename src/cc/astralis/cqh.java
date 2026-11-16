@@ -30,11 +30,7 @@ public class cqh extends hcr {
 
    public cqh(guu parentClass) {
       long ax = cqh.a ^ 74002622494629L;
-      short var10002 = 31317;
-      long var10003 = 8366084208346777610L ^ ax;
       super(a, "Cube Craft");
-      short var4 = 10570;
-      long var10004 = 7962607981983210262L ^ ax;
       a.ahg = new bes("Speed", 1.0F, 0.0F, 10.0F, 0.1F);
       a.amw = new cbm();
       a.grb = new cbm();
@@ -62,12 +58,7 @@ public class cqh extends hcr {
 
       long axxx;
       int var11;
-      short var10000 = 16270;
-      long var10001 = 4631530608790685457L ^ ax;
       axxx = 1000L;
-      var10000 = 18891;
-      var10001 = 8521970728362488149L ^ ax;
-      long axxxx = 100L;
       float axxxxx = 1.0F;
       var11 = chi.field_1724.field_6235;
       label93:
@@ -88,10 +79,6 @@ public class cqh extends hcr {
 
                      a.dhc = true;
                      a.grb.glr();
-                     short var15 = 17236;
-                     long var10002 = 659449135008699947L ^ ax;
-                     short var17 = 24942;
-                     long var10003 = 8806725647716971542L ^ ax;
                      bpa.bez("Took damage, waiting " + axxx + "ms...");
                      var12 = a;
                   }
@@ -99,8 +86,6 @@ public class cqh extends hcr {
                   var12.cfp++;
                }
 
-               var10000 = 20285;
-               var10001 = 9062784463150307905L ^ ax;
                bpa.bez("boost");
                evd.dek(0.5);
                bav.fym(0.5);
@@ -238,7 +223,6 @@ public class cqh extends hcr {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var38 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 

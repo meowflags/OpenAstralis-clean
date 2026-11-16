@@ -32,23 +32,11 @@ public class Scoreboard extends guu {
    public Scoreboard() {
       long a = Scoreboard.a ^ 109933033485574L;
       super(bfm.VISUAL);
-      short var10003 = 25724;
-      long var10004 = 2578900222552021332L ^ a;
       a.hex = new gbp("No Score Board", false);
-      var10003 = 22816;
-      var10004 = 4018155900930302986L ^ a;
       a.grq = new gbp("No Score", true);
-      var10003 = 19603;
-      var10004 = 6153885259631866296L ^ a;
       a.fkl = new gbp("Change Color", false);
-      var10003 = 6577;
-      var10004 = 7602985318440002712L ^ a;
       a.bpn = (acn)new acn("Head Color", Color.white).bih(a.fkl::dnp);
-      var10003 = 28481;
-      var10004 = 7563008660172608109L ^ a;
       a.bxw = (acn)new acn("Body Color", Color.white).bih(a.fkl::dnp);
-      var10003 = 28522;
-      var10004 = 7484672953785782855L ^ a;
       a.ghl = (acn)new acn("Score Color", Color.red).bih(a.fkl::dnp);
       ffn[] var10001 = new ffn[(int)p];
       var10001[0] = a.hex;

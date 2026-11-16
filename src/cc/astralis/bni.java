@@ -28,17 +28,9 @@ public class bni extends guu {
    public bni() {
       long a = cc.astralis.bni.a ^ 36869029189369L;
       super(bfm.MOVEMENT);
-      short var10003 = 24237;
-      long var10004 = 8954912065594497602L ^ a;
-      short var4 = 29667;
-      long var10005 = 4961062692480909286L ^ a;
       hcr[] var5 = new hcr[]{new adm(a), new duc(a), new cea(a), new anp(a), new cqh(a), new ent(a), null};
-      short var10006 = 3226;
-      long var10007 = 9064793529022939294L ^ a;
       var5[6] = new azc(a);
       a.bbh = new cyx("Mode", var5);
-      var10003 = 26278;
-      var10004 = 8887431330333336136L ^ a;
       a.cns = new gbp("Stop on Disable", true);
       a.bfi(new ffn[]{a.bbh, a.cns});
    }
@@ -146,7 +138,6 @@ public class bni extends guu {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

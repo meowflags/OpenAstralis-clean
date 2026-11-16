@@ -41,8 +41,6 @@ public class crv extends class_437 implements dlc {
 
    public crv() {
       long a = crv.a ^ 37356789429789L;
-      short var10001 = 23722;
-      long var10002 = 171321251806398838L ^ a;
       super(class_2561.method_30163("Alt Manager"));
       dar.gqy().fyf().glu(a);
    }
@@ -75,27 +73,13 @@ public class crv extends class_437 implements dlc {
          }
       });
       GLFW.glfwSetDropCallback(ax, a.gxh);
-      short var10000 = 29191;
-      long var10001 = 5517023955399761079L ^ a;
       class_7840 var11 = class_4185.method_46430(class_2561.method_43470("Add Alt"), axx -> chi.method_1507(new cv(true)));
-      short var19 = 5638;
-      long var10002 = 4732033751139656758L ^ a;
-      short var26 = 19698;
-      long var10003 = 8828073084797845194L ^ a;
       class_7840 axx = var11.method_46437(100, 20);
-      var10000 = 15382;
-      var10001 = 6829653294662685344L ^ a;
       class_7840 var13 = class_4185.method_46430(class_2561.method_43470("Direct Login"), axxx -> chi.method_1507(new cv(false)));
-      short var21 = 9722;
-      var10002 = 6941599454504916934L ^ a;
-      short var28 = 15029;
-      var10003 = 7381789636264790146L ^ a;
       class_7840 axxx = var13.method_46437(100, 20);
       String var14 = String.valueOf(dkz() ? class_124.field_1060 : class_124.field_1061);
       int axxxx = dkz();
       String var10 = var14;
-      var10000 = 17626;
-      var10001 = 6179152490770590317L ^ a;
       class_7840 var16 = class_4185.method_46430(class_2561.method_43470("Encryption " + var10 + axxxx), axxxxx -> {
          long ax = crv.a ^ 118650718670398L;
          int[] var3x = dar.abu();
@@ -106,13 +90,7 @@ public class crv extends class_437 implements dlc {
 
          cqb = var10000x;
       });
-      short var23 = 9722;
-      var10002 = 6941599454504916934L ^ a;
-      short var30 = 15029;
-      var10003 = 7381789636264790146L ^ a;
       class_7840 axxxxx = var16.method_46437(100, 20);
-      var10000 = 13530;
-      var10001 = 538968943327418990L ^ a;
       class_7840 var18 = class_4185.method_46430(class_2561.method_43470("YYY Alts (Best Alt Shop)"), axxxxxx -> {
          long ax = crv.a ^ 136883112796767L;
 
@@ -124,30 +102,10 @@ public class crv extends class_437 implements dlc {
             var4.printStackTrace();
          }
       });
-      short var25 = 9722;
-      var10002 = 6941599454504916934L ^ a;
-      short var32 = 15029;
-      var10003 = 7381789636264790146L ^ a;
       class_7840 axxxxxx = var18.method_46437(100, 20);
-      short var33 = 29962;
-      var10003 = 2401550847430051639L ^ a;
-      short var41 = 2893;
-      long var10004 = 2151810141508876658L ^ a;
       a.method_37063(axxxxxx.method_46433(10, 115).method_46431());
-      short var34 = 9658;
-      var10003 = 5875241241177298827L ^ a;
-      short var43 = 11856;
-      var10004 = 732884475186191470L ^ a;
       a.method_37063(axx.method_46433(10, 40).method_46431());
-      short var35 = 9658;
-      var10003 = 5875241241177298827L ^ a;
-      short var45 = 5446;
-      var10004 = 4216118327542425460L ^ a;
       a.method_37063(axxx.method_46433(10, 65).method_46431());
-      short var36 = 9658;
-      var10003 = 5875241241177298827L ^ a;
-      short var47 = 2833;
-      var10004 = 3590572336919197992L ^ a;
       a.method_37063(axxxxx.method_46433(10, 90).method_46431());
    }
 
@@ -165,19 +123,7 @@ public class crv extends class_437 implements dlc {
             var10002x = 11856;
             var10003x = 732948930011014760L ^ ax;
             float axxxxx = a.field_22790 - 40;
-            short var10008 = 19671;
-            long var10009 = 6016872477733897442L ^ ax;
-            short var23 = 11686;
-            long var10010 = 4109043965796984213L ^ ax;
-            short var24 = 17353;
-            long var10011 = 5566710258423483385L ^ ax;
             Color var10006 = new Color(60, 60, 67);
-            short var25 = 9722;
-            var10011 = 6941679026610089408L ^ ax;
-            short var27 = 9722;
-            long var10012 = 6941679026610089408L ^ ax;
-            short var28 = 10884;
-            long var10013 = 3224632020238279350L ^ ax;
             dmp.dnc(axx, axxx, axxxx, axxxxx, 8.0F, var10006, 2.0F, new Color(100, 100, 110));
             float axxxxxx = 135.0F;
             float axxxxxxx = 30.0F;
@@ -208,8 +154,6 @@ public class crv extends class_437 implements dlc {
       super.method_25394(a, a, a, a);
       class_327 var10001 = chi.field_1772;
       String var10002 = chi.method_1548().method_1676();
-      short var10003 = 8558;
-      long var10004 = 6860845407642786217L ^ ax;
       a.method_51433(var10001, "Logged In With " + var10002, 3, 3, Color.white.getRGB(), true);
    }
 
@@ -237,11 +181,7 @@ public class crv extends class_437 implements dlc {
    public boolean method_25402(class_11909 click, boolean doubled) {
       long ax = crv.a ^ 28624144029180L;
       float axx = 120.0F;
-      short var10001 = 29219;
-      long var10002 = 7802769860491991190L ^ ax;
       float axxx = a.field_22789 - 140;
-      var10001 = 12094;
-      var10002 = 2845563394047542682L ^ ax;
       float axxxx = a.field_22790 - 40;
       float axxxxx = 135.0F;
       int[] var10000 = dar.abu();

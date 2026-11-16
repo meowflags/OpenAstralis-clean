@@ -23,11 +23,7 @@ public class aqx extends hcr {
 
    public aqx(guu parentClass) {
       long ax = aqx.a ^ 103396683638443L;
-      short var10002 = 9977;
-      long var10003 = 8555280148405312906L ^ ax;
       super(a, "Cubecraft");
-      short var4 = 7796;
-      long var10004 = 7345941328973686022L ^ ax;
       a.bu = new bes("Speed", 1.0F, 0.0F, 10.0F, 0.05F);
       a.ebu(a.bu);
    }
@@ -111,7 +107,6 @@ public class aqx extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

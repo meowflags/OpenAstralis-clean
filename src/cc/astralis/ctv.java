@@ -83,7 +83,6 @@ public final class ctv {
             .getBytes("ISO-8859-1")
       );
       String var13 = a(axx).intern();
-      byte var10001 = -1;
       String axxx = var13;
       acz = new HashMap<>();
       dgm = new HashMap<>();

@@ -47,11 +47,8 @@ public abstract class fso {
    }
 
    public static int fxw() {
-      long var0 = b ^ 82945944799777L;
       int var2 = ah();
       if (var2 == 0) {
-         short var10000 = 14206;
-         long var10001 = 5722509132056740224L ^ var0;
          return 109;
       } else {
          return 0;
@@ -109,15 +106,12 @@ public abstract class fso {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var16 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 
       f = var6;
       g = new Integer[2];
       if (fxw() != 0) {
-         short var13 = 6942;
-         long var15 = 3873071314527901255L ^ var11;
          byv(116);
       }
    }

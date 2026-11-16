@@ -41,8 +41,6 @@ public class flh extends blz {
    public void apo() {
       long a = b ^ 121666337963048L;
       JsonObject var10000 = gco.bbm();
-      short var10005 = 14767;
-      long var10006 = 8486359464600203736L ^ a;
       dvt.exy(var10000, new File(a.evx, a.eee + ".astralis").getAbsolutePath());
    }
 
@@ -50,8 +48,6 @@ public class flh extends blz {
    public void fme() {
       long a = b ^ 10590000864692L;
       int[] var10000 = dar.abu();
-      short var10005 = 4722;
-      long var10006 = 5103131200851868566L ^ a;
       File ax = new File(a.evx, a.eee + ".astralis");
       int[] axx = var10000;
       if (axx != null) {
@@ -86,8 +82,6 @@ public class flh extends blz {
                               break label113;
                            }
 
-                           short var26 = 27390;
-                           long var32 = 4843911849552741145L ^ a;
                            dar.ecj.error("Config {} is not a JSON object. Skipping.", ax.getName());
                            break label119;
                         }
@@ -114,42 +108,26 @@ public class flh extends blz {
 
                try {
                   String var29 = ax.getAbsolutePath();
-                  short var10003 = 11087;
-                  long var10004 = 6805561719609377445L ^ a;
                   File axxxx = new File(var29 + ".corrupt");
-                  short var21 = 24390;
                   Files.copy(ax.toPath(), axxxx.toPath(), StandardCopyOption.REPLACE_EXISTING);
-                  long var25 = 8608469340927112873L ^ a;
                   var29 = a.eee;
                   String var33 = axxx.getMessage();
                   String axxxxxx = axxxx.getName();
                   String axxxxxxx = var33;
                   String var11 = var29;
-                  short var31 = 28612;
-                  long var34 = 5208834812878652962L ^ a;
-                  short var35 = 3332;
-                  long var36 = 6786813595354817770L ^ a;
-                  short var37 = 25172;
-                  long var10007 = 3543200972539005885L ^ a;
                   bpa.dhu("§cConfig '" + var11 + "' is corrupted (" + axxxxxxx + "). A backup was saved as '" + axxxxxx + "'. Loading defaults.");
                } catch (IOException var12) {
-                  short var24 = 330;
-                  long var28 = 1014031380662118567L ^ a;
                   dar.ecj.error("Failed to backup corrupt config: {}", var12.getMessage());
                }
 
                a.apo();
             } catch (IOException var18) {
-               short var23 = 2675;
-               long var27 = 3480254912185787295L ^ a;
                dar.ecj.error("Failed to load config '{}': {}", ax.getName(), var18.getMessage());
             }
 
             return;
          }
 
-         short var10001 = 14421;
-         long var10002 = 6060134679806431677L ^ a;
          dar.ecj.warn("Config file {} not found, skipping load.", ax.getAbsolutePath());
       }
    }

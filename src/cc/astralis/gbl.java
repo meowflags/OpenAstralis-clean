@@ -60,18 +60,6 @@ public final class gbl extends BackendRenderTarget {
       int axxxxx = var10002;
       int axxxxxx = var10001;
       int var9 = var10000;
-      short var10 = 12211;
-      long var11 = 7387848985714903186L ^ a;
-      short var12 = 31969;
-      long var13 = 4647290611729603521L ^ a;
-      short var10006 = 15922;
-      long var10007 = 4389493273020553493L ^ a;
-      short var10008 = 28132;
-      long var10009 = 783479373163465410L ^ a;
-      short var10010 = 21825;
-      long var10011 = 5697619961700004450L ^ a;
-      short var10012 = 19210;
-      long var10013 = 7310025904538037288L ^ a;
       return "GLBackendTarget{size="
          + var9
          + "x"

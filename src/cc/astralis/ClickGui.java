@@ -43,62 +43,24 @@ public class ClickGui extends guu {
    public ClickGui() {
       long a = ClickGui.a ^ 103723734994120L;
       super(bfm.VISUAL);
-      short var10003 = 1727;
-      long var10004 = 5916052458290283312L ^ a;
       a.dfs = new bes("Font Size", 10.0F, 0.0F, 50.0F, 1.0F);
-      var10003 = 26342;
-      var10004 = 6662700792435106656L ^ a;
-      short var12 = 10773;
-      long var10005 = 2506539247681384341L ^ a;
-      short var19 = 16268;
-      long var10006 = 8804169274727817939L ^ a;
       String[] var20 = new String[7];
-      short var10008 = 947;
-      long var10009 = 489055679218353713L ^ a;
       var20[0] = "Combat";
-      var10008 = 26594;
-      var10009 = 4801346280945214057L ^ a;
       var20[1] = "Exploit";
-      var10008 = 14680;
-      var10009 = 6665687915004443857L ^ a;
       var20[2] = "Movement";
-      var10008 = 26612;
-      var10009 = 2033515980141879929L ^ a;
       var20[3] = "Player";
-      var10008 = 26816;
-      var10009 = 3528989739215678788L ^ a;
       var20[4] = "Visual";
-      var10008 = 11574;
-      var10009 = 2546269677780314293L ^ a;
       var20[5] = "World";
-      short var10007 = 2146;
-      long var26 = 2216202577384559932L ^ a;
-      var10008 = 8053;
-      var10009 = 3708766559394798329L ^ a;
       var20[6] = "None";
       a.dwz = new adu("Hidden Categories", "None", var20);
-      var10003 = 17111;
-      var10004 = 1327792458032498512L ^ a;
       a.fkz = new bes("Animation Speed", 300.0F, 1.0F, 2000.0F, 1.0F);
-      var10003 = 21917;
-      var10004 = 1357550287185858583L ^ a;
       a.gfw = new bes("Color Speed", 10.0F, 1.0F, 50.0F, 1.0F);
-      var10003 = 20343;
-      var10004 = 7526488381679651577L ^ a;
       a.afu = new gbp("Back Ground", true);
-      var10003 = 19197;
-      var10004 = 8206248862692200309L ^ a;
       a.clm = new gbp("Side Line", true);
-      var10003 = 7923;
-      var10004 = 7791744975415876470L ^ a;
       a.egk = new gbp("Full Outline", false);
       a.flm = new ArrayList<>();
       a.byg = new ArrayList<>();
-      short var10001 = 5503;
-      long var10002 = 8360989731034155043L ^ a;
       ffn[] var3 = new ffn[]{a.dfs, a.fkz, a.gfw, a.afu, a.clm, a.egk, null};
-      var10003 = 11384;
-      var10004 = 6890233304918159661L ^ a;
       var3[6] = a.dwz;
       a.bfi(var3);
    }
@@ -600,7 +562,6 @@ public class ClickGui extends guu {
                                        | (var4[5] & 255L) << 16
                                        | (var4[6] & 255L) << 8
                                        | var4[7] & 255L;
-                                    byte var41 = -1;
                                     v = var50;
                                     return;
                                  }

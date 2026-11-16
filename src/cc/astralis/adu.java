@@ -48,11 +48,8 @@ public class adu extends ffn<String> {
    }
 
    public static int fjk() {
-      long var0 = a ^ 114253129423340L;
       int var2 = ctl();
       if (var2 == 0) {
-         short var10000 = 20320;
-         long var10001 = 3447389247273904256L ^ var0;
          return 122;
       } else {
          return 0;
@@ -110,15 +107,12 @@ public class adu extends ffn<String> {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var16 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 
       b = var6;
       c = new Integer[2];
       if (fjk() == 0) {
-         short var13 = 4849;
-         long var15 = 8849700309503207234L ^ var11;
          fhv(99);
       }
    }

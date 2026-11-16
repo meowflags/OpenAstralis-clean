@@ -32,7 +32,6 @@ public class fsq {
       a = fsq.a ^ 77706811313535L;
       ax = dar.abu();
       var10 = 12703;
-      long var10001 = 8604352959202894198L ^ a;
       var10 = ImGui.beginChild("ConfigFilesChild", 200.0F, 200.0F, true);
       label110:
       if (ax != null) {
@@ -77,8 +76,6 @@ public class fsq {
                      label92:
                      if (var10) {
                         String var13 = axxx.toString();
-                        short var18 = 20414;
-                        long var10002 = 5371550862686445402L ^ a;
                         String var19 = ".astralis";
                         if (ax != null) {
                            if (!var13.endsWith(".astralis")) {
@@ -86,14 +83,10 @@ public class fsq {
                            }
 
                            var13 = axxx.getName();
-                           short var20 = 30984;
-                           var10002 = 5900396633846442473L ^ a;
                            var19 = ".astralis";
                         }
 
                         String axxxx = var13.replace(var19, "");
-                        short var27 = 20902;
-                        long var10003 = 5590400694350659909L ^ a;
                         boolean var14 = ImGui.button(axxxx + "##" + axxxx);
                         if (ax != null) {
                            if (var14) {
@@ -105,8 +98,6 @@ public class fsq {
                               break label95;
                            }
 
-                           short var21 = 10545;
-                           var10002 = 4488698029325793751L ^ a;
                            var14 = ImGui.button("Delete##" + axxxx);
                         }
 
@@ -128,13 +119,9 @@ public class fsq {
          }
 
          var10 = 16136;
-         var10001 = 915769361631064045L ^ a;
-         short var23 = 32000;
-         long var29 = 8158801995588726240L ^ a;
          ImGui.inputTextWithHint("##ConfigName", "Config Name", a.eqo, 0);
          var10 = 3560;
          ImGui.sameLine();
-         var10001 = 5099271495099096335L ^ a;
          var10 = ImGui.button("Save");
       }
 
@@ -146,7 +133,6 @@ public class fsq {
 
          ImGui.sameLine();
          var10 = 19276;
-         var10001 = 620432401471069102L ^ a;
          var10 = ImGui.button("Load");
       }
 

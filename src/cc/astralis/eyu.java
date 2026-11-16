@@ -35,73 +35,26 @@ public class eyu extends class_437 implements dlc {
 
    public eyu(gfv alt) {
       long ax = eyu.a ^ 86777755353591L;
-      short var10001 = 32506;
-      long var10002 = 6355128505346287767L ^ ax;
       super(class_2561.method_30163("Account Settings"));
       a.gyi = a;
    }
 
    public void method_25426() {
       long a = eyu.a ^ 53610841385306L;
-      short var10000 = 3118;
-      long var10001 = 7708146520668196282L ^ a;
-      int ax = 200;
-      var10000 = 22842;
-      var10001 = 1331787285798557869L ^ a;
-      int axx = 20;
       int var10005 = 27239;
-      long var10006 = 5101916039578233841L ^ a;
       int var10004 = (a.field_22789 - 200) / 2;
-      short var42 = 7261;
-      long var10007 = 2960227982845468108L ^ a;
       var10005 = (a.field_22790 - 20) / 2;
-      short var43 = 14725;
-      var10007 = 3262899880088467477L ^ a;
       var10005 -= 25;
-      short var44 = 27239;
-      var10007 = 5101916039578233841L ^ a;
-      short var47 = 7261;
-      long var10008 = 2960227982845468108L ^ a;
-      short var48 = 27018;
-      long var10009 = 7156156816515536713L ^ a;
       a.dlu = new class_342(a.field_22793, var10004, var10005, 200, 20, class_2561.method_43470("Name"));
-      var10000 = 27239;
-      var10001 = 5101916039578233841L ^ a;
-      int axxx = 200;
-      var10000 = 7261;
-      var10001 = 2960227982845468108L ^ a;
-      int axxxx = 20;
-      var10000 = 27364;
-      var10001 = 896978421311083557L ^ a;
       class_7840 var13 = class_4185.method_46430(class_2561.method_43470("Change Skin"), axxxxx -> {});
-      short var20 = 27239;
-      long var10002 = 5101916039578233841L ^ a;
-      short var23 = 7261;
-      long var10003 = 2960227982845468108L ^ a;
       class_7840 axxxxx = var13.method_46437(200, 20);
-      var10000 = 1862;
-      var10001 = 6961575208250079620L ^ a;
       class_7840 var15 = class_4185.method_46430(class_2561.method_43470("Change Name"), axxxxxx -> {});
-      short var22 = 27239;
-      var10002 = 5101916039578233841L ^ a;
-      short var25 = 7261;
-      var10003 = 2960227982845468108L ^ a;
       class_7840 axxxxxx = var15.method_46437(200, 20);
       a.method_25429(a.dlu);
-      short var29 = 27239;
-      long var32 = 5101916039578233841L ^ a;
       int var26 = (a.field_22789 - 200) / 2;
-      short var33 = 7261;
-      long var39 = 2960227982845468108L ^ a;
       a.method_37063(axxxxxx.method_46433(var26, (a.field_22790 - 20) / 2).method_46431());
-      short var30 = 27239;
-      long var34 = 5101916039578233841L ^ a;
       int var27 = (a.field_22789 - 200) / 2;
-      var33 = 7261;
-      long var40 = 2960227982845468108L ^ a;
       int var31 = (a.field_22790 - 20) / 2;
-      var33 = 7261;
-      long var41 = 2960227982845468108L ^ a;
       a.method_37063(axxxxx.method_46433(var27, var31 + 20 + 5).method_46431());
    }
 
@@ -111,13 +64,9 @@ public class eyu extends class_437 implements dlc {
       class_327 var10001 = chi.field_1772;
       class_2561 var10002 = a.method_25440();
       int var10003 = a.field_22789 / 2;
-      short var10004 = 26983;
-      long var10005 = 3119437391460253803L ^ ax;
       a.method_27534(var10001, var10002, var10003, 10, -1);
       var10001 = chi.field_1772;
       String var8 = chi.method_1548().method_1676();
-      short var9 = 31917;
-      long var10 = 4078684012015315697L ^ ax;
       a.method_51433(var10001, "Logged In With " + var8, 3, 3, Color.white.getRGB(), true);
       a.dlu.method_25394(a, a, a, a);
    }

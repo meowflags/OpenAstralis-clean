@@ -30,8 +30,6 @@ public class PotionStatus extends guu {
    public PotionStatus() {
       long a = PotionStatus.a ^ 73035754367783L;
       super(bfm.VISUAL);
-      short var10003 = 14920;
-      long var10004 = 7591804132217979527L ^ a;
       a.enk = new env("Potion Indicator", 4.0F, 50.0F, 100.0F, 100.0F);
       fjk.bfv.add(a.enk);
    }
@@ -48,17 +46,9 @@ public class PotionStatus extends guu {
       int axxxxxxx = (int)(axxx + 15.0F);
       int axxxxxxxx = 0;
       int axxxxxxxxx = fey.epm().size();
-      short var10002 = 17374;
-      long var10003 = 8297806235342848318L ^ ax;
-      short var19 = 4452;
-      long var10004 = 44215967688037253L ^ ax;
-      short var20 = 4452;
-      long var10005 = 44215967688037253L ^ ax;
       Color axxxxxxxxxx = new Color(30, 30, 30);
       float axxxxxxxxxxx = !chi.field_1724.method_6026().isEmpty() ? 0.0F : 3.0F;
       dmp.caz(axx, axxx, 100.0F, 15.0F, 3.0F, 3.0F, axxxxxxxxxxx, axxxxxxxxxxx, dar.gqy().deo());
-      short var10001 = 26661;
-      long var18 = 3665357341656769154L ^ ax;
       ety.hbb("Active Potion Effects", axx, axxx, 100.0F, 15.0F, Color.white);
 
       for (class_1293 axxxxxxxxxxxx : chi.field_1724.method_6026()) {
@@ -169,7 +159,6 @@ public class PotionStatus extends guu {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

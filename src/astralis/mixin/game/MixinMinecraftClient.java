@@ -183,7 +183,6 @@ public class MixinMinecraftClient implements dlc {
    )
    private boolean hookKillAuraAutoBlock(class_304 a) {
       ekb ax = dar.gqy().aws().diy(ekb.class);
-      class_310 axx = (class_310)a;
       if (!a.method_1434()) {
          if (ax.dsv() && ax.gvw != null) {
             String[] var4 = MixinMinecraftClient.a;
@@ -349,19 +348,14 @@ public class MixinMinecraftClient implements dlc {
                      c = var6;
                      d = new Integer[11];
                      String[] var22 = new String[3];
-                     short var27 = 2572;
                      int var20 = 0;
-                     long var32 = 8567582312742115005L ^ var15;
                      String var19 = var11;
                      int var21 = var11.length();
                      char var18 = 20;
                      int var17 = -1;
 
                      while (true) {
-                        short var28 = 17175;
-                        long var33 = 5422982059636924325L ^ var15;
                         String var40 = a(30, a(var19.substring(++var17, var17 + var18)));
-                        byte var34 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            a = var22;
@@ -402,12 +396,9 @@ public class MixinMinecraftClient implements dlc {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 124624095474897L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 10861;
-         long var10005 = 4873099594159038820L ^ var1;
          var10000[0] = (char)(var10003 ^ 'N');
       }
 
@@ -415,7 +406,6 @@ public class MixinMinecraftClient implements dlc {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 8819445693742L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -423,43 +413,34 @@ public class MixinMinecraftClient implements dlc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 23422;
-         long var10009 = 4854242228639816079L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 31517;
-               long var23 = 6156418384615766499L ^ var2;
                var10 = 56;
                break;
             case 1:
                var10 = 7983;
-               long var22 = 774448056870051293L ^ var2;
                var10 = 91;
                break;
             case 2:
                var10 = 11842;
-               long var21 = 4483751090282802358L ^ var2;
                var10 = 107;
                break;
             case 3:
                var10 = 22103;
-               long var20 = 6445612879106495652L ^ var2;
                var10 = 14;
                break;
             case 4:
                var10 = 9412;
-               long var19 = 5831988916384671283L ^ var2;
                var10 = 82;
                break;
             case 5:
                var10 = 22328;
-               long var18 = 3633077934430705096L ^ var2;
                var10 = 72;
                break;
             default:
                var10 = 3229;
-               long var17 = 4117806273565986408L ^ var2;
                var10 = 78;
          }
 

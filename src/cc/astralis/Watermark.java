@@ -41,24 +41,12 @@ public class Watermark extends guu {
    public Watermark() {
       long a = Watermark.a ^ 102173411428757L;
       super(bfm.VISUAL);
-      short var10003 = 4697;
-      long var10004 = 4342964267911453580L ^ a;
-      short var4 = 22965;
-      long var10005 = 6938082009414848614L ^ a;
       String[] var7 = new String[2];
-      short var10008 = 1735;
-      long var10009 = 3942180976558083865L ^ a;
       var7[0] = "Modern";
-      var10008 = 23722;
-      var10009 = 1749587334375593341L ^ a;
       var7[1] = "Legacy";
       a.doa = new adu("Mode", "Modern", var7);
-      short var5 = 31041;
-      var10005 = 5114791768259936705L ^ a;
       a.gqt = new erp(dtw.EASE_IN_OUT_QUAD, 500L);
       a.dkr = 0.0;
-      var10003 = 4461;
-      var10004 = 5544255725526849724L ^ a;
       a.gss = new env("Media Info", 50.0F, 50.0F, 200.0F, 60.0F);
       fjk.bfv.add(a.gss);
       a.bfi(new ffn[]{a.doa});
@@ -154,31 +142,18 @@ public class Watermark extends guu {
       String axxxxxxxxx = chh(gkn(axxx.getArtist()));
       String var31 = a.avy(axxx.getPosition());
       String var10001 = a.avy(axxx.getDuration());
-      short var10002 = 31656;
-      long var10003 = 8853867087293319828L ^ ax;
       String axxxxxxxxxx = var31 + " / " + var10001;
       double axxxxxxxxxxx = a.gqt.hjo();
-      short var32 = 1735;
-      long var43 = 3942181610216257521L ^ ax;
       short var33 = "Modern".equals(a.doa.dnp());
       if (axx != null) {
          if (var33 != 0) {
-            short var34 = 18872;
-            long var44 = 5792804843215374746L ^ ax;
             var33 = 250;
          } else {
-            short var35 = 23584;
-            long var45 = 4602496022265846833L ^ ax;
             var33 = 210;
          }
       }
 
       short axxxxxxxxxxxx = var33;
-      short var36 = 5060;
-      short var46 = 17294;
-      long var54 = 6938389948908356495L ^ ax;
-      byte axxxxxxxxxxxxx = 60;
-      long var47 = 7822711033009529589L ^ ax;
       if ("Legacy".equals(a.doa.dnp())) {
          Glow axxxxxxxxxxxxxx = dar.gqy().aws().diy(Glow.class);
          String var21 = axxxxxxxxxxxxxx.eqi.dnp();
@@ -187,8 +162,6 @@ public class Watermark extends guu {
          if (axx != null) {
             switch (var37) {
                case -1656737386:
-                  short var48 = 26518;
-                  long var55 = 4389798253377099428L ^ ax;
                   var37 = var21.equals("Rainbow");
                   if (axx == null) {
                      break;
@@ -203,8 +176,6 @@ public class Watermark extends guu {
          }
          Color axxxxxxxxxxxxxxx = switch (var37) {
             case 0 -> {
-               short var39 = 23834;
-               long var49 = 2522506938334977397L ^ ax;
                yield Glow.gbq(3000L, 0, 0.7F, 1.0F);
             }
             default -> dec.fbp(new class_5611(0.0F, 6.0F), axxxxxxxxxxxxxx.ehf.dnp(), axxxxxxxxxxxxxx.aoz.dnp());
@@ -215,8 +186,6 @@ public class Watermark extends guu {
          if (axx != null) {
             switch (var40) {
                case -1656737386:
-                  short var50 = 19781;
-                  long var56 = 2040654305681980543L ^ ax;
                   var40 = var21.equals("Rainbow");
                   if (axx == null) {
                      break;
@@ -231,16 +200,12 @@ public class Watermark extends guu {
          }
          Color axxxxxxxxxxxxxxxx = switch (var40) {
             case 0 -> {
-               short var42 = 22465;
-               long var51 = 5293894031803652008L ^ ax;
                yield Glow.gbq(4000L, 0, 1.0F, 1.0F);
             }
             default -> dec.fbp(new class_5611(0.0F, 6.0F), axxxxxxxxxxxxxx.ehf.dnp(), axxxxxxxxxxxxxx.aoz.dnp());
          };
          float var52 = axxxxx;
          float var57 = axxxxxx;
-         short var10004 = 17294;
-         long var10005 = 6938389948908356495L ^ ax;
          a.edh(var52, var57, axxxxxxxxxxxx, 60, axxxxxxxx, axxxxxxxxx, axxxxxxxxxx, axxxxxxxxxxx, axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxx);
          if (axx != null) {
             return;
@@ -249,8 +214,6 @@ public class Watermark extends guu {
 
       float var53 = axxxxx;
       float var58 = axxxxxx;
-      short var59 = 17294;
-      long var60 = 6938389948908356495L ^ ax;
       a.cwt(var53, var58, axxxxxxxxxxxx, 60, axxxxxxxx, axxxxxxxxx, axxxxxxxxxxx);
    }
 
@@ -279,26 +242,17 @@ public class Watermark extends guu {
       if (axxx != null) {
          int axxxx = (int)a.gss.grp();
          int axxxxx = (int)a.gss.azb();
-         short var14 = 1735;
-         long var10001 = 3942178387249682198L ^ ax;
          short var15 = "Modern".equals(a.doa.dnp());
          if (axx != null) {
             if (var15 != 0) {
-               short var16 = 4673;
-               var10001 = 479378471433515701L ^ ax;
                var15 = 250;
             } else {
-               short var17 = 9180;
-               var10001 = 8322625115554284333L ^ ax;
                var15 = 210;
             }
          }
 
          short axxxxxx;
          axxxxxx = var15;
-         short var18 = 17294;
-         var10001 = 6938362536415454056L ^ ax;
-         int axxxxxxx = 60;
          String var10 = a.doa.dnp();
          byte var11 = -1;
          var19 = var10.hashCode();
@@ -306,8 +260,6 @@ public class Watermark extends guu {
          if (axx != null) {
             switch (var19) {
                case -1984932033:
-                  short var23 = 1735;
-                  long var10002 = 3942178387249682198L ^ ax;
                   var19 = var10.equals("Modern");
                   if (axx == null) {
                      break label64;
@@ -322,8 +274,6 @@ public class Watermark extends guu {
                      break;
                   }
                case -2022711319:
-                  short var24 = 5060;
-                  long var25 = 7822687879514472978L ^ ax;
                   var19 = var10.equals("Legacy");
                   if (axx == null) {
                      break label64;
@@ -357,38 +307,18 @@ public class Watermark extends guu {
       label41: {
          ax = Watermark.a ^ 41639638567801L;
          int[] var10000 = dar.abu();
-         int axxxx = 3;
-         short var10002 = 9506;
-         long var10003 = 2275935086671896377L ^ ax;
          int axxxxx = a - 6;
          axxx = a + axxxxx + 6.0F;
          Glow axxxxxx = dar.gqy().aws().diy(Glow.class);
          float var60 = a + a;
          float var10004 = a + a;
-         short var10007 = 20242;
-         long var10008 = 6659093815943263551L ^ ax;
-         short var81 = 22740;
-         long var10009 = 7663412697240429253L ^ ax;
-         short var91 = 22740;
-         long var10010 = 7663412697240429253L ^ ax;
          dmp.gst(a, a, var60, var10004, new Color(30, 30, 30, axxxxxx.fug.dnp().intValue()));
          axx = var10000;
          float axxxxxxx = a - (axxx - a + 6.0F) + 4.0F;
          float axxxxxxxx = (float)(axxxxxxx * a);
-         short var22 = 4742;
-         long var10001 = 4267819222256527499L ^ ax;
-         int axxxxxxxxx = 8;
          float var34 = a + a - 11.0F;
          float var48 = axxx + axxxxxxx;
          float var61 = a + a - 3.0F;
-         short var10006 = 16656;
-         long var72 = 4181852783665117999L ^ ax;
-         var10007 = 22219;
-         var10008 = 6819343933191974113L ^ ax;
-         short var83 = 22219;
-         var10009 = 6819343933191974113L ^ ax;
-         short var93 = 9263;
-         var10010 = 4595720569667132964L ^ ax;
          dmp.gst(axxx, var34, var48, var61, new Color(25, 25, 25, 220));
          float var23 = axxx;
          float var35 = a + a - 11.0F;
@@ -402,8 +332,6 @@ public class Watermark extends guu {
                float var36 = a + 3.0F;
                float var50 = axxxxx;
                float var63 = axxxxx;
-               var10007 = 9262;
-               var10008 = 6412840048656031238L ^ ax;
                dmp.gnj(var24, var36, var50, var63, 3.0F, a.fms, dec.ceu(Color.white, 255));
                if (axx != null) {
                   break label41;
@@ -414,14 +342,6 @@ public class Watermark extends guu {
             var35 = a + 3.0F;
             var49 = a + 3.0F + axxxxx;
             var62 = a + 3.0F + axxxxx;
-            var10006 = 18120;
-            long var75 = 5810035118230535378L ^ ax;
-            var10007 = 17294;
-            var10008 = 6938468306443827595L ^ ax;
-            short var86 = 17294;
-            var10009 = 6938468306443827595L ^ ax;
-            short var95 = 16253;
-            var10010 = 7902973729734788477L ^ ax;
             var68 = new Color(60, 60, 60, 200);
          }
 
@@ -431,23 +351,15 @@ public class Watermark extends guu {
       String var28;
       label44: {
          int var25 = a.length();
-         short var37 = 22219;
-         long var51 = 6819343933191974113L ^ ax;
          short var38 = 25;
          if (axx != null) {
             if (var25 > 25) {
-               short var52 = 22219;
-               long var64 = 6819343933191974113L ^ ax;
                var28 = a.substring(0, 25);
                var38 = 5655;
-               var51 = 7589641028346961184L ^ ax;
                a = var28 + "...";
             }
 
-            short var27 = 2272;
-            long var40 = 470832097992688602L ^ ax;
             var38 = 32285;
-            var51 = 5421446782185686079L ^ ax;
             bxc.emc("Sf-Ui", 12).ebb(a, axxx, a + 3.0F, Color.white);
             var28 = a;
             if (axx == null) {
@@ -456,47 +368,24 @@ public class Watermark extends guu {
 
             var25 = a.length();
             var38 = 22740;
-            var51 = 7663412697240429253L ^ ax;
             var38 = 30;
          }
 
          if (var25 > var38) {
-            short var56 = 22740;
-            long var65 = 7663412697240429253L ^ ax;
             var28 = a.substring(0, 30);
             var38 = 24924;
-            var51 = 3531588014444849775L ^ ax;
             a = var28 + "...";
          }
 
-         short var30 = 21051;
-         long var44 = 2356906087039703307L ^ ax;
          var38 = 15116;
-         var51 = 1546335191269376309L ^ ax;
          fll var31 = bxc.emc("Sf-Ui", 10);
          float var66 = a + 3.0F + 14.0F;
-         short var70 = 31699;
-         long var77 = 3929944897166459388L ^ ax;
-         short var78 = 30044;
-         long var87 = 5428025183081287536L ^ ax;
-         short var88 = 30044;
-         long var96 = 5428025183081287536L ^ ax;
          var31.ebb(a, axxx, var66, new Color(180, 180, 180));
-         short var32 = 21051;
-         long var46 = 2356906087039703307L ^ ax;
          var28 = "Sf-Ui";
       }
 
-      short var47 = 7672;
-      long var59 = 4715283480448673731L ^ ax;
       fll var33 = bxc.emc(var28, 9);
       float var67 = a + 3.0F + 28.0F;
-      short var71 = 3891;
-      long var79 = 6577117724069410096L ^ ax;
-      short var80 = 9991;
-      long var89 = 4900494520871329032L ^ ax;
-      short var90 = 9991;
-      long var97 = 4900494520871329032L ^ ax;
       var33.ebb(a, axxx, var67, new Color(160, 160, 160));
    }
 
@@ -632,17 +521,9 @@ public class Watermark extends guu {
 
    private String avy(long a) {
       long ax = Watermark.a ^ 108697402372317L;
-      short var10001 = 9305;
-      long var10002 = 3125463274534708629L ^ ax;
       long axx = a / 1000L;
-      var10001 = 2052;
-      var10002 = 539357034819586505L ^ ax;
       long axxx = axx / 60L;
-      var10001 = 27222;
-      var10002 = 613413260234582936L ^ ax;
       axx %= 60L;
-      short var10000 = 24747;
-      long var12 = 7002159461007511614L ^ ax;
       return String.format("%d:%02d", axxx, axx);
    }
 
@@ -676,14 +557,12 @@ public class Watermark extends guu {
                                  axxxxx = a.charAt(axxxx);
                                  var8 = axxxxx;
                                  var9 = 5848;
-                                 long var10002 = 8509494324416800859L ^ ax;
                                  var9 = 65;
                                  label214:
                                  if (axx != null) {
                                     if (axxxxx >= 'A') {
                                        var8 = axxxxx;
                                        var9 = 20967;
-                                       var10002 = 4246900217117159253L ^ ax;
                                        var9 = 90;
                                        if (axx == null) {
                                           break label214;
@@ -696,7 +575,6 @@ public class Watermark extends guu {
 
                                     var8 = axxxxx;
                                     var9 = 3121;
-                                    var10002 = 5505855111797666454L ^ ax;
                                     var9 = 97;
                                  }
 
@@ -705,7 +583,6 @@ public class Watermark extends guu {
                                     if (var8 >= var9) {
                                        var8 = axxxxx;
                                        var9 = 5742;
-                                       var10002 = 4239274856470014201L ^ ax;
                                        var9 = 122;
                                        if (axx == null) {
                                           break label205;
@@ -718,7 +595,6 @@ public class Watermark extends guu {
 
                                     var8 = axxxxx;
                                     var9 = 13480;
-                                    var10002 = 5175898573643827757L ^ ax;
                                     var9 = 48;
                                  }
 
@@ -727,7 +603,6 @@ public class Watermark extends guu {
                                     if (var8 >= var9) {
                                        var8 = axxxxx;
                                        var9 = 31289;
-                                       var10002 = 125572470127199366L ^ ax;
                                        var9 = 57;
                                        if (axx == null) {
                                           break label196;
@@ -740,7 +615,6 @@ public class Watermark extends guu {
 
                                     var8 = axxxxx;
                                     var9 = 9854;
-                                    var10002 = 214295698167814358L ^ ax;
                                     var9 = 32;
                                  }
 
@@ -749,7 +623,6 @@ public class Watermark extends guu {
                                     if (var8 >= var9) {
                                        var8 = axxxxx;
                                        var9 = 22139;
-                                       var10002 = 148040975449303232L ^ ax;
                                        var9 = 47;
                                        if (axx == null) {
                                           break label187;
@@ -762,7 +635,6 @@ public class Watermark extends guu {
 
                                     var8 = axxxxx;
                                     var9 = 26677;
-                                    var10002 = 4218074181693249167L ^ ax;
                                     var9 = 58;
                                  }
 
@@ -771,7 +643,6 @@ public class Watermark extends guu {
                                     if (var8 >= var9) {
                                        var8 = axxxxx;
                                        var9 = 11427;
-                                       var10002 = 5533472869341090305L ^ ax;
                                        var9 = 64;
                                        if (axx == null) {
                                           break label178;
@@ -784,7 +655,6 @@ public class Watermark extends guu {
 
                                     var8 = axxxxx;
                                     var9 = 16032;
-                                    var10002 = 6196853349954994192L ^ ax;
                                     var9 = 91;
                                  }
 
@@ -793,7 +663,6 @@ public class Watermark extends guu {
                                     if (var8 >= var9) {
                                        var8 = axxxxx;
                                        var9 = 16510;
-                                       var10002 = 6035242704645111542L ^ ax;
                                        var9 = 96;
                                        if (axx == null) {
                                           break label169;
@@ -806,7 +675,6 @@ public class Watermark extends guu {
 
                                     var8 = axxxxx;
                                     var9 = 2613;
-                                    var10002 = 5207329925968721069L ^ ax;
                                     var9 = 123;
                                  }
 
@@ -820,7 +688,6 @@ public class Watermark extends guu {
 
                                  var8 = axxxxx;
                                  var9 = 12815;
-                                 var10002 = 2227518755782151333L ^ ax;
                                  var9 = 126;
                                  if (axx == null) {
                                     break label217;
@@ -839,7 +706,6 @@ public class Watermark extends guu {
 
                            var8 = axxxxx;
                            var9 = 17367;
-                           long var40 = 5284569410273983824L ^ ax;
                            var9 = 169;
                         }
 
@@ -851,7 +717,6 @@ public class Watermark extends guu {
 
                               var8 = axxxxx;
                               var9 = 20765;
-                              long var41 = 3380007559180693377L ^ ax;
                               var9 = 174;
                            }
 
@@ -862,7 +727,6 @@ public class Watermark extends guu {
 
                               var8 = axxxxx;
                               var9 = 24355;
-                              long var42 = 8162688735664284059L ^ ax;
                               var9 = 8482;
                            }
 
@@ -873,7 +737,6 @@ public class Watermark extends guu {
 
                               var8 = axxxxx;
                               var9 = 7542;
-                              long var43 = 6786307920832652249L ^ ax;
                               var9 = 176;
                            }
 
@@ -954,8 +817,6 @@ public class Watermark extends guu {
 
                   try {
                      byte[] var12 = a.getBytes(StandardCharsets.ISO_8859_1);
-                     short var10003 = 5561;
-                     long var10004 = 6014256061409882071L ^ ax;
                      axxx = new String(var12, "Windows-1252");
                      var10000 = axxx;
                      if (axx == null) {

@@ -34,9 +34,7 @@ public class elw implements fgh {
 
    @Override
    public boolean fvo(elw other) {
-      long ax = b ^ 18978658724578L;
       int[] var10000 = dar.abu();
-      long axx = f;
       int[] axxx = var10000;
       elw var7 = a;
       if (axxx != null) {
@@ -212,16 +210,12 @@ public class elw implements fgh {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var30 = -1;
                      f = var38;
                      if (hit() == null) {
                         azb(new String[2]);
                      }
 
-                     short var26 = 8233;
-                     long var31 = 1015148107494917210L ^ var20;
                      String var39 = a(18, a(var16));
-                     var30 = -1;
                      a = var39;
                      return;
                   }
@@ -256,12 +250,9 @@ public class elw implements fgh {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 88422268919610L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 7307;
-         long var10005 = 1693011804541138330L ^ var1;
          var10000[0] = (char)(var10003 ^ 'M');
       }
 
@@ -269,7 +260,6 @@ public class elw implements fgh {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 68760722993364L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -277,43 +267,34 @@ public class elw implements fgh {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 17362;
-         long var10009 = 6465315773144876331L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 3509;
-               long var23 = 1162981201546061L ^ var2;
                var10 = 26;
                break;
             case 1:
                var10 = 13761;
-               long var22 = 9130358018166469434L ^ var2;
                var10 = 18;
                break;
             case 2:
                var10 = 29530;
-               long var21 = 3516429486645507492L ^ var2;
                var10 = 85;
                break;
             case 3:
                var10 = 28050;
-               long var20 = 7375806199827786600L ^ var2;
                var10 = 104;
                break;
             case 4:
                var10 = 2047;
-               long var19 = 4070501898561552642L ^ var2;
                var10 = 121;
                break;
             case 5:
                var10 = 19799;
-               long var18 = 8625208819494308771L ^ var2;
                var10 = 14;
                break;
             default:
                var10 = 18946;
-               long var17 = 8283346560408669431L ^ var2;
                var10 = 77;
          }
 

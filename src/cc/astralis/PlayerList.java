@@ -118,11 +118,7 @@ public class PlayerList extends guu {
          axxx = axxxx;
       }
 
-      short var10001 = 31516;
-      long var10002 = 7580693767144908645L ^ ax;
       String var11 = axxx.replaceAll("§[0-9a-fk-or]", "");
-      var10001 = 11156;
-      var10002 = 7227364561625675758L ^ ax;
       axxx = var11.replaceAll("(?<=\\s|^)[RBGYAWPS](?=\\s|$)", "");
       return axxx.trim();
    }
@@ -142,77 +138,35 @@ public class PlayerList extends guu {
 
       if (!var10000.method_1542()) {
          CopyOnWriteArrayList axxx = a.drj();
-         short var25 = 10273;
          int axxxx = (int)a.cqc.grp();
-         long var10001 = 2525214255992993135L ^ ax;
          int axxxxx = (int)a.cqc.azb();
-         byte axxxxxx = 16;
-         short var26 = 1479;
-         var10001 = 6585732651650570383L ^ ax;
-         int axxxxxxx = 14;
          float axxxxxxxx = !axxx.isEmpty() ? 0.0F : 4.0F;
          dmp.cdw(axxxx, axxxxx, a.cxg, 16.0F, 4.0F, 4.0F, axxxxxxxx, axxxxxxxx, dar.gqy().deo(), dar.gqy().cxj(), false);
-         short var34 = 20272;
-         long var10002 = 1718594227093532480L ^ ax;
          float var39 = axxxx + a.cxg / 2.0F;
          int var10004 = 23220;
-         long var10005 = 7057990570960586742L ^ ax;
          cbl.fau("Player List", var39, axxxxx + 8, Color.white);
          int axxxxxxxxx = 0;
-         short var35 = 15399;
-         var10002 = 6493424605422281064L ^ ax;
          int axxxxxxxxxx = axxxxx + 16;
-         short var41 = 18812;
-         long var10003 = 7817701897261913146L ^ ax;
-         short var49 = 29341;
-         long var60 = 3659303743490437082L ^ ax;
          var10004 = (short)6182;
-         var10005 = 7251501269994685795L ^ ax;
-         short var74 = 31510;
-         long var10006 = 1481225835179746911L ^ ax;
          Color axxxxxxxxxxx = new Color(20, 20, 30, 200);
          float var27 = axxxx;
-         short var42 = 15399;
-         var10003 = 6493424605422281064L ^ ax;
          float var36 = axxxxx + 16;
          float var43 = a.cxg;
-         short var51 = 15399;
-         long var62 = 6493424605422281064L ^ ax;
          var10004 = axxx.size();
-         short var75 = 8773;
-         var10006 = 1747425755470987032L ^ ax;
          dmp.caz(var27, var36, var43, 16 + var10004 * 14, 0.0F, 0.0F, 4.0F, 4.0F, axxxxxxxxxxx);
 
          for (class_640 axxxxxxxxxxxx : axxx) {
             Color var28;
             if (axxxxxxxxx % 2 == 0) {
-               short var44 = 9861;
-               var10003 = 2425495590748617672L ^ ax;
-               short var53 = 9861;
-               long var64 = 2425495590748617672L ^ ax;
-               short var65 = 25313;
-               var10005 = 7987175015740686250L ^ ax;
-               short var77 = 26383;
-               var10006 = 5871838397451156044L ^ ax;
                var28 = new Color(30, 30, 40, 200);
             } else {
-               short var45 = 25120;
-               var10003 = 1917375843065872254L ^ ax;
-               short var55 = 17076;
-               long var66 = 3597060678373056496L ^ ax;
-               short var67 = 12866;
-               var10005 = 1063303717227261704L ^ ax;
-               short var79 = 26383;
-               var10006 = 5871838397451156044L ^ ax;
                var28 = new Color(25, 25, 35, 200);
             }
 
             String[] axxxxxxxxxxxxx;
             label74: {
                Color axxxxxxxxxxxxxx = var28;
-               short var29 = 3317;
                dmp.euv(axxxx, axxxxxxxxxx, a.cxg, 14.0F, axxxxxxxxxxxxxx);
-               var10001 = 8086787995189662137L ^ ax;
                String axxxxxxxxxxxxxxx = a.gal(axxxxxxxxxxxx);
                axxxxxxxxxxxxx = new String[9];
                axxxxxxxxxxxxx[0] = axxxxxxxxxxxxxxx;
@@ -221,8 +175,6 @@ public class PlayerList extends guu {
                if (axx != null) {
                   if (axxxxxxxxxxxxxxxx != null) {
                      var10004 = axxxxxxxxxxxxxxxx.length;
-                     short var80 = 29160;
-                     var10006 = 2258057138106248372L ^ ax;
                      System.arraycopy(axxxxxxxxxxxxxxxx, 0, axxxxxxxxxxxxx, 1, Math.min(var10004, 8));
                      if (axx != null) {
                         break label74;
@@ -232,10 +184,6 @@ public class PlayerList extends guu {
                   var30 = axxxxxxxxxxxxx;
                }
 
-               short var46 = 1868;
-               var10003 = 2757597912358771213L ^ ax;
-               short var57 = 1232;
-               long var69 = 8097550380903933091L ^ ax;
                Arrays.fill(var30, 1, 9, "Loading");
                hbc.bfk(axxxxxxxxxxxxxxx);
             }
@@ -255,12 +203,6 @@ public class PlayerList extends guu {
                   if (axxxxxxxxxxxxxxxx == 0) {
                      var32 = Color.WHITE;
                   } else {
-                     short var47 = 26591;
-                     var10003 = 860499297971649159L ^ ax;
-                     short var59 = 32697;
-                     long var70 = 8089459117452632825L ^ ax;
-                     short var71 = 32697;
-                     var10005 = 8089459117452632825L ^ ax;
                      var32 = new Color(180, 180, 180);
                   }
 
@@ -269,8 +211,6 @@ public class PlayerList extends guu {
                   axxxxxxxxxxxxxxx += axxxxxxxxxxxxxxxxxx + 12.0F;
                   String var38 = axxxxxxxxxxxxx[axxxxxxxxxxxxxxxx];
                   float var48 = axxxxxxxxxxxxxx;
-                  short var72 = 27877;
-                  var10005 = 4666177605936460218L ^ ax;
                   cbl.ebb(var38, var48, axxxxxxxxxx + 7 - 5, axxxxxxxxxxxxxxxxx);
                   axxxxxxxxxxxxxx += (int)(axxxxxxxxxxxxxxxxxx + 12.0F);
                   axxxxxxxxxxxxxxxx++;

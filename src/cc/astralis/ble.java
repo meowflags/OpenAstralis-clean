@@ -33,30 +33,16 @@ public class ble extends hcr {
 
    public ble(guu parentClass) {
       long ax = ble.a ^ 42158442428908L;
-      short var10002 = 10629;
-      long var10003 = 8872405426394427322L ^ ax;
       super(a, "Watchdog");
       a.ftw = (efx)a.clv();
-      short var7 = 855;
-      long var10004 = 6210375185528702314L ^ ax;
-      short var8 = 28558;
-      long var10005 = 6000472842251315637L ^ ax;
       String[] var9 = new String[2];
-      short var10008 = 28558;
-      long var10009 = 6000472842251315637L ^ ax;
       var9[0] = "Jump";
-      var10008 = 32419;
-      var10009 = 4303097045069510813L ^ ax;
       var9[1] = "Bypass";
       a.fob = new adu("Watchdog Sprint Mode", "Jump", var9);
       a.cce = new cbm();
       a.bzg = 0;
-      short var10001 = 18672;
-      long var5 = 8424798808615980287L ^ ax;
       a.dgm = -10000000000000000L;
       a.gip = 1.0E18;
-      var10001 = 8001;
-      long var6 = 2276793660206111567L ^ ax;
       a.ccb = 111111111111111111L;
       a.ebu(a.fob);
    }
@@ -98,8 +84,6 @@ public class ble extends hcr {
             if (ax != null) {
                switch (var7) {
                   case 2320462:
-                     short var10001 = 9430;
-                     long var10002 = 3961098849009168165L ^ a;
                      var7 = var4.equals("Jump");
                      if (ax == null) {
                         break label65;
@@ -114,8 +98,6 @@ public class ble extends hcr {
                         break;
                      }
                   case 2004703496:
-                     short var8 = 6839;
-                     long var9 = 8682833187815641408L ^ a;
                      var7 = var4.equals("Bypass");
                      if (ax == null) {
                         break label65;
@@ -210,8 +192,6 @@ public class ble extends hcr {
             return;
          }
 
-         short var10001 = 6773;
-         long var10002 = 8582267627961906793L ^ ax;
          bpa.bez("opffset " + chi.field_1724.field_6012);
          var10000 = chi.field_1724.method_24828();
       }
@@ -325,7 +305,6 @@ public class ble extends hcr {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var38 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 

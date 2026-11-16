@@ -191,8 +191,6 @@ public class Session extends guu {
 
       URL ax;
       try {
-         short var10002 = 2732;
-         long var10003 = 284904512698710459L ^ a;
          ax = new URL("https://sessionserver.mojang.com/session/minecraft/join");
       } catch (MalformedURLException var8) {
          throw new RuntimeException(var8);
@@ -206,22 +204,12 @@ public class Session extends guu {
       }
 
       try {
-         short var10001 = 24095;
-         long var11 = 1834585636391890185L ^ a;
          axx.setRequestMethod("POST");
       } catch (ProtocolException var6) {
          throw new RuntimeException(var6);
       }
 
-      short var9 = 28421;
-      long var12 = 8040259123095804950L ^ a;
-      short var13 = 26054;
-      long var16 = 2158622265367336660L ^ a;
       axx.setRequestProperty("Content-type", "application/json");
-      var9 = 17149;
-      var12 = 8284796970143298024L ^ a;
-      short var15 = 10569;
-      var16 = 3402265628208683608L ^ a;
       axx.setRequestProperty("Accept", "application/json");
       axx.setDoOutput(true);
       return axx;

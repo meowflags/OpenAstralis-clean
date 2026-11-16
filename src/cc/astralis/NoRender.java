@@ -30,23 +30,11 @@ public class NoRender extends guu {
    public NoRender() {
       long a = NoRender.a ^ 70642997569342L;
       super(bfm.VISUAL);
-      short var10003 = 10632;
-      long var10004 = 2872618057149220641L ^ a;
       a.eyg = new gbp("No Fire", true);
-      var10003 = 27378;
-      var10004 = 470631868344255583L ^ a;
       a.gpx = new gbp("No Water", true);
-      var10003 = 31347;
-      var10004 = 3756236326758700252L ^ a;
       a.aac = new gbp("No Blindness", true);
-      var10003 = 22302;
-      var10004 = 681413194523179442L ^ a;
       a.hdp = new gbp("No Fog", false);
-      var10003 = 7836;
-      var10004 = 5119370726326120500L ^ a;
       a.clg = new gbp("No Weather", false);
-      var10003 = 8686;
-      var10004 = 1503459836035108672L ^ a;
       a.fub = new gbp("No Clouds", false);
       ffn[] var10001 = new ffn[(int)p];
       var10001[0] = a.eyg;

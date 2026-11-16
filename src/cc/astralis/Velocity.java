@@ -33,31 +33,15 @@ public class Velocity extends guu {
    public Velocity() {
       long a = Velocity.a ^ 90487867948822L;
       super(bfm.COMBAT);
-      short var10003 = 23415;
-      long var10004 = 3908225119537099050L ^ a;
-      short var5 = 16209;
-      long var10005 = 9096016147769693455L ^ a;
       String[] var8 = new String[3];
-      short var10008 = 16209;
-      long var10009 = 9096016147769693455L ^ a;
       var8[0] = "W-Tap";
-      var10008 = 13750;
-      var10009 = 4919897966801035247L ^ a;
       var8[1] = "S-Tap";
-      var10008 = 24268;
-      var10009 = 2668477629523260564L ^ a;
       var8[2] = "Packet";
       a.cnd = new adu("Mode", "W-Tap", var8);
-      var10003 = 21377;
-      var10004 = 5403763523543759323L ^ a;
       a.cyl = (bes)new bes("Packets", 2.0F, 2.0F, 10.0F, 1.0F).bih(() -> {
          long ax = Velocity.a ^ 89174231249996L;
-         short var10001 = 24268;
-         long var10002 = 2668476315712536526L ^ ax;
          return a.cnd.emb("Packet");
       });
-      var10003 = 27261;
-      var10004 = 295775842987130913L ^ a;
       a.evs = new bes("Max Hurt Time", 1.0F, 1.0F, 10.0F, 1.0F);
       a.hdk = false;
       a.bfi(new ffn[]{a.cnd, a.cyl, a.evs});
@@ -331,8 +315,6 @@ public class Velocity extends guu {
       if (axx != null) {
          switch (var7) {
             case 81770765:
-               short var10001 = 21727;
-               long var10002 = 3474723481049136211L ^ ax;
                var7 = var5.equals("W-Tap");
                if (axx == null) {
                   break label57;
@@ -347,8 +329,6 @@ public class Velocity extends guu {
                   break;
                }
             case 78076681:
-               short var8 = 14334;
-               long var9 = 7674222688626450294L ^ ax;
                var7 = var5.equals("S-Tap");
                if (axx == null) {
                   break label57;

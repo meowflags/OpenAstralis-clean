@@ -27,11 +27,7 @@ public class FastPlace extends guu {
    public FastPlace() {
       long a = FastPlace.a ^ 77959408160932L;
       super(bfm.PLAYER);
-      short var10003 = 27104;
-      long var10004 = 1512875608500952278L ^ a;
       a.bse = new bes("Delay", 0.0F, 0.0F, 4.0F, 1.0F);
-      var10003 = 11743;
-      var10004 = 3879296369961441512L ^ a;
       a.hhp = new gbp("Not while Scaffold", true);
       a.bfi(new ffn[]{a.bse, a.hhp});
    }
@@ -98,7 +94,6 @@ public class FastPlace extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

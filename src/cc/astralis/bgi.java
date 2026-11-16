@@ -124,7 +124,6 @@ public enum bgi {
    }
 
    public static boolean cfg() {
-      long var0 = a ^ 5097523826278L;
       int[] var2 = dar.abu();
       boolean var3 = bfz();
       boolean var10000 = var3;

@@ -25,16 +25,12 @@ public class dqe {
    public dqe() {
       long a = dqe.a ^ 73018070386802L;
       super();
-      short var10001 = 3936;
-      long var10002 = 9040346611337246418L ^ a;
       a.her = "None";
    }
 
    public void dcv() {
       long a = dqe.a ^ 44573939815911L;
       int[] ax = dar.abu();
-      short var10000 = 26852;
-      long var10001 = 9125576357098704066L ^ a;
       if (ImGui.beginPopup("Font Picker")) {
          for (fv axx : dvt.bru()) {
             if (ax == null) {
@@ -88,7 +84,6 @@ public class dqe {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

@@ -27,22 +27,10 @@ public class Speed extends guu {
    public Speed() {
       long a = Speed.a ^ 134991279254843L;
       super(bfm.MOVEMENT);
-      short var10003 = 17891;
-      long var10004 = 4625855612194319890L ^ a;
-      short var3 = 30187;
-      long var10005 = 9211161036316331066L ^ a;
       hcr[] var4 = new hcr[]{new azv(a), new ewc(a), new eze(a), new aqx(a), new fqj(a), new hil(a), null, null, null, null};
-      short var10006 = 2098;
-      long var10007 = 4531843532077380065L ^ a;
       var4[6] = new dhd(a);
-      var10006 = 24398;
-      var10007 = 3075401857978984094L ^ a;
       var4[7] = new hfu(a);
-      var10006 = 6859;
-      var10007 = 5872707328932881177L ^ a;
       var4[8] = new dnf(a);
-      var10006 = 10952;
-      var10007 = 8790195160150577951L ^ a;
       var4[9] = new chp(a);
       a.fyl = new cyx("Speed Modes", var4);
       a.beb(a.fyl);
@@ -61,8 +49,6 @@ public class Speed extends guu {
       int[] var3 = var10000;
       Speed var4 = a;
       if (var3 != null) {
-         short var10001 = 8624;
-         long var10002 = 4409586713788263442L ^ a;
          if (a.fyl.cmt("Watchdog")) {
             return;
          }
@@ -79,8 +65,6 @@ public class Speed extends guu {
       int[] var10000 = dar.abu();
       a.efe(a.fyl.dnp().akm());
       int[] var4 = var10000;
-      short var10001 = 8253;
-      long var10002 = 1723516339326016004L ^ ax;
       int var5 = a.fyl.cmt("Watchdog");
       if (var4 != null) {
          if (var5 == 0) {
@@ -107,8 +91,6 @@ public class Speed extends guu {
             var5 = hjr;
          }
 
-         var10001 = 2504;
-         var10002 = 1603983739535876564L ^ ax;
          if (var5 <= 9) {
             return;
          }
@@ -120,8 +102,6 @@ public class Speed extends guu {
    @gdz
    public void bcp(fxx event) {
       long ax = Speed.a ^ 140177559590091L;
-      short var10001 = 4520;
-      long var10002 = 7799009251495494568L ^ ax;
       if (!a.fyl.cmt("Vulcan Low")) {
          chi.field_1690.field_1903.method_23481(false);
       }

@@ -28,40 +28,20 @@ public class Fly extends guu {
    public Fly() {
       long a = Fly.a ^ 100848309671885L;
       super(bfm.PLAYER);
-      short var10003 = 14769;
-      long var10004 = 731341828148842728L ^ a;
-      short var6 = 15357;
-      long var10005 = 5047431053232001697L ^ a;
       String[] var10 = new String[2];
-      short var10008 = 9937;
-      long var10009 = 4955387714601963404L ^ a;
       var10[0] = "Normal";
-      var10008 = 15357;
-      var10009 = 5047431053232001697L ^ a;
       var10[1] = "Custom";
       a.ata = new adu("Mode", "Custom", var10);
-      var10003 = 3100;
-      var10004 = 6093516823251019074L ^ a;
       a.dik = (bes)new bes("Timer", 1.0F, 0.0F, 10.0F, 0.1F).bih(() -> {
          long ax = Fly.a ^ 18332299192978L;
-         short var10001 = 14725;
-         long var10002 = 3977884306649525633L ^ ax;
          return a.ata.emb("Normal");
       });
-      var10003 = 31785;
-      var10004 = 5561814258362848630L ^ a;
       a.gas = (bes)new bes("Ground Timer", 1.0F, 0.0F, 10.0F, 0.1F).bih(() -> {
          long ax = Fly.a ^ 42340444702608L;
-         short var10001 = 26883;
-         long var10002 = 7649197302096367622L ^ ax;
          return a.ata.emb("Custom");
       });
-      var10003 = 18656;
-      var10004 = 1699189821271581114L ^ a;
       a.asq = (bes)new bes("Air Timer", 1.0F, 0.0F, 10.0F, 0.1F).bih(() -> {
          long ax = Fly.a ^ 20627071595557L;
-         short var10001 = 15357;
-         long var10002 = 5047509023910375753L ^ ax;
          return a.ata.emb("Custom");
       });
       a.bfi(new ffn[]{a.ata, a.dik, a.gas, a.asq});
@@ -87,8 +67,6 @@ public class Fly extends guu {
       if (ax != null) {
          switch (var7) {
             case -1955878649:
-               short var10001 = 9937;
-               long var10002 = 4955445762010504194L ^ axx;
                var7 = var5.equals("Normal");
                if (ax == null) {
                   break label63;
@@ -103,8 +81,6 @@ public class Fly extends guu {
                   break;
                }
             case 2029746065:
-               short var9 = 15357;
-               long var10 = 5047487045264326959L ^ axx;
                var7 = var5.equals("Custom");
                if (ax == null) {
                   break label63;

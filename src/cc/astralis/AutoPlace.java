@@ -39,14 +39,8 @@ public class AutoPlace extends guu {
       long a = AutoPlace.a ^ 79203954915332L;
       super(bfm.WORLD);
       a.foa = new ArrayList<>();
-      short var10003 = 27717;
-      long var10004 = 5480241717692088878L ^ a;
       a.ccs = new bes("Place Delay", 2.0F, 1.0F, 10.0F, 1.0F);
-      var10003 = 17528;
-      var10004 = 1910594437162953232L ^ a;
       a.gie = new gbp("Swing Hand", true);
-      var10003 = 12827;
-      var10004 = 9000112343862058097L ^ a;
       a.eo = new gbp("Rotations", true);
       a.fzr = 0;
       a.fuo = 0;
@@ -304,7 +298,6 @@ public class AutoPlace extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

@@ -40,7 +40,6 @@ public class hfu extends hcr {
    public void hhf(eih event) {
       long ax = hfu.a ^ 136378547623433L;
       int[] var10000 = dar.abu();
-      int axx = (int)e;
       int[] axxx = var10000;
       int var7 = evd.dbj();
       if (axxx != null) {
@@ -58,8 +57,6 @@ public class hfu extends hcr {
             bav.fym(axxxx);
             a.ewz(a.eil() + axxxx);
             double var8 = evd.fzm();
-            short var10004 = 14819;
-            long var10005 = 2757350697246216679L ^ ax;
             evd.dek(var8 * evd.cqz(1.712F, 1.712F, !a.ena.fsc(100L) ? 1.46F : 1.8F));
             if (axxx != null) {
                return;
@@ -71,8 +68,6 @@ public class hfu extends hcr {
 
       if (var7 == 1) {
          double var9 = evd.fzm();
-         short var10 = 18625;
-         long var11 = 4616339703488716996L ^ ax;
          evd.dek(var9 * evd.cqz(1.0407F, 1.0407F, !a.ena.fsc(100L) ? 1.11F : 1.45F));
       }
    }
@@ -176,7 +171,6 @@ public class hfu extends hcr {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var32 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 

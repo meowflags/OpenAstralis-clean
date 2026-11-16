@@ -34,16 +34,11 @@ public class bcy extends brc {
 
    public bcy() {
       long a = b ^ 46552296641512L;
-      short var10001 = 26424;
-      long var10002 = 3615323189061145505L ^ a;
       super(8);
       a.ftv = new ArrayList<>();
    }
 
    public bcy(List<fse> modules) {
-      long ax = b ^ 133254497690741L;
-      short var10001 = 15802;
-      long var10002 = 4060507853564788406L ^ ax;
       super(8);
       a.ftv = new ArrayList<>();
       a.ftv = a;
@@ -51,11 +46,7 @@ public class bcy extends brc {
 
    @Override
    public void etg(JsonObject json) {
-      long ax = b ^ 110965370690911L;
       int[] var10000 = dar.abu();
-      short var10001 = 3869;
-      long var10002 = 3207665762407189255L ^ ax;
-      long axx = 32630151548704L;
       String[] var18 = drn();
       a.cps(a);
       String[] axxx = var18;
@@ -88,8 +79,6 @@ public class bcy extends brc {
          List var17 = a.ftv;
          var12 = c;
          String var10003 = axxxxxxx.get(var12[1]).getAsString();
-         short var10006 = 12023;
-         long var10007 = 8497755015582635224L ^ ax;
          var17.add(new fse(var10003, axxxxxxx.get(var12[6]).getAsString()));
          if (axxx == null) {
             break;
@@ -101,9 +90,6 @@ public class bcy extends brc {
    @Override
    public String cql() {
       long a = b ^ 24001319222129L;
-      short var10000 = 4732;
-      long var10001 = 9009245970698940489L ^ a;
-      long ax = 30288795586497L;
       int[] var16 = dar.abu();
       String[] var21 = drn();
       JsonObject axx = a.fdo();
@@ -132,8 +118,6 @@ public class bcy extends brc {
             JsonObject axxxxxxx = new JsonObject();
             Object[] var10002 = new Object[4];
             var14 = c;
-            short var10006 = 326;
-            long var10007 = 7057153481987054914L ^ a;
             var10002[0] = var14[7];
             var10002[1] = axxxxxx.ctg();
             var10002[2] = var14[3];
@@ -328,29 +312,22 @@ public class bcy extends brc {
                                  | (var10[5] & 255L) << 16
                                  | (var10[6] & 255L) << 8
                                  | var10[7] & 255L;
-                              byte var79 = -1;
                               var6[var57] = var80;
                            } while (var2 < var5);
 
                            m = var6;
                            n = new Long[2];
-                           short var46 = 15802;
-                           long var59 = 4060471230854505999L ^ var31;
                            String[] var38 = new String[8];
                            String[] var47 = new String[2];
                            int var36 = 0;
                            String var35;
                            int var37 = (var35 = var22[0]).length();
-                           short var60 = 24238;
-                           long var71 = 1187098678573155595L ^ var31;
                            char var34 = '`';
                            int var42 = -1;
                            ebr(var47);
 
                            label52:
                            while (true) {
-                              short var48 = 18408;
-                              long var61 = 8585371194049027167L ^ var31;
                               byte var49 = 106;
                               String var62 = var35.substring(++var42, var42 + var34);
                               byte var72 = -1;
@@ -375,14 +352,10 @@ public class bcy extends brc {
                                        }
 
                                        var37 = (var35 = var22[1]).length();
-                                       short var51 = 3848;
-                                       long var63 = 3556154868536284347L ^ var31;
                                        var34 = 11;
                                        var42 = -1;
                                  }
 
-                                 short var52 = 12290;
-                                 long var64 = 8151299133805898681L ^ var31;
                                  var49 = 69;
                                  var62 = var35.substring(++var42, var42 + var34);
                                  var72 = 0;
@@ -424,12 +397,9 @@ public class bcy extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = b ^ 18663564227802L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 10868;
-         long var10005 = 754125889104706004L ^ var1;
          var10000[0] = (char)(var10003 ^ 'Z');
       }
 
@@ -437,7 +407,6 @@ public class bcy extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = b ^ 41583664584967L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -445,43 +414,34 @@ public class bcy extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 10473;
-         long var10009 = 2688455813244262040L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 13548;
-               long var23 = 4786104930593147542L ^ var2;
                var10 = 93;
                break;
             case 1:
                var10 = 17886;
-               long var22 = 4360236686207679397L ^ var2;
                var10 = 12;
                break;
             case 2:
                var10 = 28098;
-               long var21 = 5862883726025675702L ^ var2;
                var10 = 55;
                break;
             case 3:
                var10 = 7420;
-               long var20 = 3975596160968204931L ^ var2;
                var10 = 40;
                break;
             case 4:
                var10 = 6418;
-               long var19 = 1873032786956953441L ^ var2;
                var10 = 26;
                break;
             case 5:
                var10 = 1241;
-               long var18 = 5789342409583278752L ^ var2;
                var10 = 112;
                break;
             default:
                var10 = 15178;
-               long var17 = 2800710407101351231L ^ var2;
                var10 = 90;
          }
 

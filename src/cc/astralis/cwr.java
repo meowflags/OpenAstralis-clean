@@ -31,10 +31,7 @@ public class cwr extends blz {
    private static final Map h = new HashMap(13);
 
    public cwr(boolean encryption) {
-      long ax = b ^ 56516710639459L;
       super();
-      short var10004 = 1752;
-      long var10005 = 8612507555200828002L ^ ax;
       a.acu = new File(a.bf, "alts.json");
       a.ggp = a;
    }
@@ -45,14 +42,8 @@ public class cwr extends blz {
       crv.emo().forEach(ax -> {
          long ax = b ^ 65553175828308L;
          JsonObject axx = new JsonObject();
-         short var10001 = 18465;
-         long var10002 = 321103447597759656L ^ ax;
          axx.addProperty("token", ax.gpj());
-         var10001 = 16609;
-         var10002 = 1700701466379465839L ^ ax;
          axx.addProperty("uuid", ax.hal());
-         var10001 = 6460;
-         var10002 = 9144243220897754548L ^ ax;
          axx.addProperty("encryption", a.ggp);
          a.add(ax.gwo(), axx);
       });
@@ -80,14 +71,8 @@ public class cwr extends blz {
                   return;
                }
 
-               short var10004 = 4525;
-               long var10005 = 6637561768706573945L ^ a;
                String var10003 = axxxxxxx.get("token").getAsString();
-               short var16 = 30628;
-               long var10006 = 7856314742019186803L ^ a;
                String var15 = axxxxxxx.get("uuid").getAsString();
-               short var17 = 4525;
-               long var10007 = 6637561768706573945L ^ a;
                gfv axxxxxxxx = new gfv(axxxxxx, var10003, var15, !axxxxxxx.get("token").getAsString().isEmpty());
                crv.emo().add(axxxxxxxx);
                if (ax == null) {

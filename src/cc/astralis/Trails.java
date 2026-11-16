@@ -40,11 +40,7 @@ public class Trails extends guu {
    public Trails() {
       long a = Trails.a ^ 20948015613427L;
       super(bfm.VISUAL);
-      short var10003 = 19295;
-      long var10004 = 7967526347593515287L ^ a;
       a.dpe = new bes("Min Distance", 0.1F, 0.1F, 2.0F, 0.1F);
-      var10003 = 2107;
-      var10004 = 7484522343339213424L ^ a;
       a.aui = new bes("Curve Resolution", 10.0F, 5.0F, 50.0F, 1.0F);
       a.bwl = new ArrayList<>();
       a.bfi(new ffn[]{a.dpe, a.aui});
@@ -90,8 +86,6 @@ public class Trails extends guu {
             long ax = Trails.a ^ 63755914774281L;
             int[] var3 = dar.abu();
             long var10000x = System.currentTimeMillis() - axxxxxxxx.caz;
-            short var10001 = 12398;
-            long var10002 = 6611098324501515448L ^ ax;
             long var5x;
             int var4x = (var5x = var10000x - 3000L) == 0L ? 0 : (var5x < 0L ? -1 : 1);
             if (var3 != null) {
@@ -226,8 +220,6 @@ public class Trails extends guu {
             if (axx != null) {
                switch (var10000) {
                   case -1656737386:
-                     short var10001 = 9857;
-                     long var10002 = 2791047418275902920L ^ ax;
                      var10000 = axxxxxxxxx.equals("Rainbow");
                      if (axx == null) {
                         break;
@@ -242,8 +234,6 @@ public class Trails extends guu {
             }
             Color axxxxxxxxxx = switch (var10000) {
                case 0 -> {
-                  short var18 = 27426;
-                  long var19 = 5675533014831385615L ^ ax;
                   yield Glow.gbq(3000L, (int)(axxxxxxx * 100.0F), 0.7F, 1.0F);
                }
                default -> dec.fbp(new class_5611(0.0F, 6.0F), axxx.ehf.dnp(), axxx.aoz.dnp());
@@ -349,7 +339,6 @@ public class Trails extends guu {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

@@ -48,7 +48,6 @@ public final class bxc {
       long a = bxc.a ^ 9061006786480L;
       int[] var10000 = dar.abu();
       int var10001 = 4613;
-      long var10002 = 1226208110189948350L ^ a;
       dip("Reinitializing all fonts...");
       int[] ax = var10000;
       Set<String> axx = new HashSet<>();
@@ -68,7 +67,6 @@ public final class bxc {
             if (ax != null) {
                if (axxxx == null) {
                   var10001 = (short)8376;
-                  var10002 = 3110254344651841281L ^ a;
                   byp("Invalid key: " + axxx);
                   continue;
                }
@@ -84,14 +82,9 @@ public final class bxc {
                gfp.put(axxx, axxxxxx);
                cmr.put(axxx, new fll(axxxxxx, axxxx.ary));
                var10001 = (short)12646;
-               var10002 = 4937674200554409688L ^ a;
                dip("Reinitialized: " + axxx);
             } catch (Exception var9) {
                String var12 = String.valueOf(var9);
-               short var16 = 28623;
-               long var10003 = 8790463493984964706L ^ a;
-               short var20 = 23263;
-               long var10004 = 5541692871221962089L ^ a;
                byp("Failed to reinit " + axxx + ": " + var12);
             }
 
@@ -102,10 +95,6 @@ public final class bxc {
 
          int var11 = gfp.size();
          var10001 = cmr.size();
-         short var18 = 25891;
-         long var21 = 6487926244524219020L ^ a;
-         short var22 = 6931;
-         long var23 = 5238912875477378222L ^ a;
          dip("Reinit complete. NVG=" + var11 + " UI=" + var10001);
          break;
       }
@@ -114,8 +103,6 @@ public final class bxc {
    public static synchronized void ehl() {
       long a = bxc.a ^ 60812971733567L;
       int[] var10000 = dar.abu();
-      short var10001 = 5221;
-      long var10002 = 2573699309412181593L ^ a;
       dip("Disposing all fonts...");
       Iterator var3 = gfp.values().iterator();
       int[] ax = var10000;
@@ -134,9 +121,7 @@ public final class bxc {
          }
 
          gfp.clear();
-         short var5 = 11970;
          cmr.clear();
-         long var6 = 3358684157863386367L ^ a;
          dip("Disposed.");
          break;
       }
@@ -163,15 +148,11 @@ public final class bxc {
          }
 
          if (var8 == null) {
-            short var10001 = 29629;
-            long var10002 = 1414035288290287809L ^ ax;
             dip("disposeFont: nothing to dispose for " + axx);
             return;
          }
       }
 
-      short var9 = 20367;
-      long var10 = 6896504505925426411L ^ ax;
       dip("Disposed font: " + axx);
    }
 
@@ -214,8 +195,6 @@ public final class bxc {
             var10000.bq();
          } catch (Throwable var5) {
             String var8 = String.valueOf(var5);
-            short var9 = 247;
-            long var10 = 771814955165732141L ^ ax;
             byp("Dispose error: " + var8);
          }
       } else if (a != null) {
@@ -225,8 +204,6 @@ public final class bxc {
             break label22;
          } catch (Throwable var6) {
             String var7 = String.valueOf(var6);
-            short var10001 = 247;
-            long var10002 = 771814955165732141L ^ ax;
             byp("Dispose error: " + var7);
          }
       }
@@ -236,44 +213,29 @@ public final class bxc {
       long ax = bxc.a ^ 18501531606771L;
       int[] var3 = dar.abu();
       if (var3 != null && bcf) {
-         short var10002 = 14195;
-         long var10003 = 5227946699453835655L ^ ax;
          dar.ecj.info("[FontManager] " + a);
       }
    }
 
    private static void byp(String a) {
       long ax = bxc.a ^ 11836207459434L;
-      short var10002 = 23746;
-      long var10003 = 3250691014119010472L ^ ax;
       System.err.println("[FontManager ERROR] " + a);
    }
 
    public static void cxt() {
       gfp.keySet().forEach(a -> {
          long ax = bxc.a ^ 91816338877926L;
-         short var10002 = 20441;
-         long var10003 = 7848172661469618739L ^ ax;
          dar.ecj.error(" - " + a);
       });
       cmr.keySet().forEach(a -> {
          long ax = bxc.a ^ 77861493046570L;
-         short var10002 = 6206;
-         long var10003 = 6236447266652349723L ^ ax;
          dar.ecj.error(" - " + a);
       });
    }
 
    public static void fzb() {
-      long var0 = a ^ 10327423354306L;
       int var10000 = cmr.size();
       int var10001 = gfp.size();
-      short var10002 = 21333;
-      long var10003 = 1145773908675745437L ^ var0;
-      short var2 = 6407;
-      long var10004 = 5680702914273025229L ^ var0;
-      short var3 = 4259;
-      long var10005 = 2249626759069439328L ^ var0;
       dip("Clearing font cache (" + var10000 + " fonts, " + var10001 + " NVG fonts)");
       cmr.clear();
       gfp.clear();

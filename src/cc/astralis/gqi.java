@@ -42,43 +42,29 @@ public class gqi extends brc {
 
    @Override
    public void etg(JsonObject json) {
-      long ax = c ^ 97485917878469L;
       a.cps(a);
       String[] var4 = b;
       a.dsg = a.get(var4[4]).getAsString();
       a.agk = a.get(var4[3]).getAsString();
       a.acv = a.get(var4[2]).getAsDouble();
-      short var10003 = 9929;
-      long var10004 = 3229030423147356822L ^ ax;
       a.eyj = a.get(var4[7]).getAsString();
    }
 
    @Override
    public String cql() {
       long a = c ^ 45705567330027L;
-      long ax = m;
       int[] var10000 = dar.abu();
       JsonObject axx = a.fdo();
       String var10001 = dve.bvt();
-      short var10004 = 15109;
-      long var10005 = 4204834332572588384L ^ a;
       Object[] var11 = new Object[8];
       String[] var8 = b;
-      short var10008 = 22238;
-      long var10009 = 9171832980323923110L ^ a;
       var11[0] = var8[9];
       var11[1] = a.dsg;
       var11[2] = var8[1];
       var11[3] = a.agk;
-      var10008 = 7382;
-      var10009 = 8634972646862700209L ^ a;
       var11[4] = var8[6];
       var11[5] = String.valueOf(a.acv);
-      short var10006 = 1357;
-      long var10007 = 5863596817538099001L ^ a;
       var11[6] = var8[0];
-      var10006 = 18089;
-      var10007 = 2825670087809066207L ^ a;
       var11[7] = a.eyj;
       a.eqw(axx, var11);
       String axxx = var10001;
@@ -86,8 +72,6 @@ public class gqi extends brc {
       String var9 = axx.toString();
       String[] var10 = var8;
       if (axxxx != null) {
-         short var10002 = 3210;
-         long var10003 = 1183972553122688759L ^ a;
          var9 = fz.dvr(var9, cni.fsi(var8[8]), cni.fsi(var8[5]));
          if (axxx != null) {
             return var9;
@@ -125,14 +109,11 @@ public class gqi extends brc {
    }
 
    public static int cuv() {
-      long var0 = c ^ 17093096052433L;
       int[] var2 = dar.abu();
       int var3 = bdb();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 27920;
-            long var10001 = 6199770210951464788L ^ var0;
             return 57;
          }
 
@@ -262,14 +243,9 @@ public class gqi extends brc {
                               | (var4[5] & 255L) << 16
                               | (var4[6] & 255L) << 8
                               | var4[7] & 255L;
-                           byte var51 = -1;
                            m = var64;
-                           short var40 = 12216;
-                           long var52 = 3900526843075411576L ^ var25;
                            String[] var32 = new String[10];
-                           short var41 = 31042;
                            int var30 = 0;
-                           long var53 = 292245359504451723L ^ var25;
                            String var29;
                            int var31 = (var29 = var16[1]).length();
                            char var28 = 4;
@@ -278,8 +254,6 @@ public class gqi extends brc {
 
                            label50:
                            while (true) {
-                              short var42 = 4021;
-                              long var54 = 3195598781410647668L ^ var25;
                               byte var43 = 124;
                               String var55 = var29.substring(++var36, var36 + var28);
                               byte var65 = -1;
@@ -304,14 +278,10 @@ public class gqi extends brc {
                                        }
 
                                        var31 = (var29 = var16[0]).length();
-                                       short var45 = 11688;
-                                       long var56 = 8286527734154673262L ^ var25;
                                        var28 = ',';
                                        var36 = -1;
                                  }
 
-                                 short var46 = 15678;
-                                 long var57 = 3642025467535797499L ^ var25;
                                  var43 = 12;
                                  var55 = var29.substring(++var36, var36 + var28);
                                  var65 = 0;
@@ -353,12 +323,9 @@ public class gqi extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 4579996030725L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 13171;
-         long var10005 = 5830107710806661369L ^ var1;
          var10000[0] = (char)(var10003 ^ 'i');
       }
 
@@ -366,7 +333,6 @@ public class gqi extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 23053637289370L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -374,43 +340,34 @@ public class gqi extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 18089;
-         long var10009 = 2825716980920106926L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 593;
-               long var23 = 9153406339077045081L ^ var2;
                var10 = 73;
                break;
             case 1:
                var10 = 27018;
-               long var22 = 3663967933246017675L ^ var2;
                var10 = 116;
                break;
             case 2:
                var10 = 25694;
-               long var21 = 5950993263371918665L ^ var2;
                var10 = 30;
                break;
             case 3:
                var10 = 14937;
-               long var20 = 2833509821990519642L ^ var2;
                var10 = 74;
                break;
             case 4:
                var10 = 18089;
-               long var19 = 2825716980920106926L ^ var2;
                var10 = 7;
                break;
             case 5:
                var10 = 22911;
-               long var18 = 8271324242943680635L ^ var2;
                var10 = 14;
                break;
             default:
                var10 = 25850;
-               long var17 = 7272405050716364284L ^ var2;
                var10 = 105;
          }
 

@@ -95,142 +95,50 @@ public class GodBridge extends guu {
    public GodBridge() {
       long a = GodBridge.a ^ 114574656566678L;
       super(bfm.MOVEMENT);
-      short var10003 = 16814;
-      long var10004 = 8165796278267792484L ^ a;
       a.bij = new gbp("Modern Watchdog", false);
-      var10003 = 15202;
-      var10004 = 1542614827079448221L ^ a;
       a.bab = new bes("Search Range", 4.0F, 1.0F, 10.0F, 1.0F);
-      var10003 = 7214;
-      var10004 = 3476077691192349123L ^ a;
-      short var43 = 12068;
-      long var10005 = 67533697694376653L ^ a;
-      short var83 = 13509;
-      long var10006 = 2263476125006212619L ^ a;
       String[] var84 = new String[6];
-      short var10008 = 12068;
-      long var10009 = 67533697694376653L ^ a;
       var84[0] = "Basic";
-      var10008 = 24994;
-      var10009 = 8500649358709419119L ^ a;
       var84[1] = "Brute Force";
-      var10008 = 16814;
-      var10009 = 8165796278267792484L ^ a;
       var84[2] = "Modern Watchdog";
-      var10008 = 28313;
-      var10009 = 726938680843428708L ^ a;
       var84[3] = "Snap";
-      var10008 = 20608;
-      var10009 = 6351902828450766153L ^ a;
       var84[4] = "Edge";
-      var10008 = 24767;
-      var10009 = 118106763067780432L ^ a;
       var84[5] = "None";
       a.cmi = new adu("Rotation Mode", "Basic", var84);
-      var10003 = 30370;
-      var10004 = 1702486333272390476L ^ a;
-      short var45 = 24767;
-      var10005 = 118106763067780432L ^ a;
       String[] var86 = new String[4];
-      var10008 = 26160;
-      var10009 = 568479819861715966L ^ a;
       var86[0] = "Minecraft";
-      var10008 = 7820;
-      var10009 = 6395244250584585031L ^ a;
       var86[1] = "Astralis";
-      var10008 = 8458;
-      var10009 = 6449535923046591694L ^ a;
       var86[2] = "Normal";
-      var10008 = 24767;
-      var10009 = 118106763067780432L ^ a;
       var86[3] = "None";
       a.fdy = new adu("Raycast Mode", "None", var86);
-      var10003 = 170;
-      var10004 = 6167228782042484057L ^ a;
       a.gf = new gbp("God Bridge Yaw", false);
-      var10003 = 21969;
-      var10004 = 231285195616933905L ^ a;
-      short var48 = 32210;
-      var10005 = 7426925040069046289L ^ a;
       String[] var88 = new String[3];
-      var10008 = 32210;
-      var10009 = 7426925040069046289L ^ a;
       var88[0] = "Fast";
-      var10008 = 8458;
-      var10009 = 6449535923046591694L ^ a;
       var88[1] = "Normal";
-      var10008 = 21881;
-      var10009 = 4227567122700195969L ^ a;
       var88[2] = "Slow";
       a.dee = new adu("Rotation Speed", "Fast", var88);
-      var10003 = 24839;
-      var10004 = 7941258665665064190L ^ a;
-      short var50 = 23731;
-      var10005 = 6269506426697142642L ^ a;
       String[] var90 = new String[3];
-      var10008 = 23731;
-      var10009 = 6269506426697142642L ^ a;
       var90[0] = "Telly";
-      var10008 = 18893;
-      var10009 = 1924509469612983336L ^ a;
       var90[1] = "Telly Slow";
-      var10008 = 7820;
-      var10009 = 6395244250584585031L ^ a;
       var90[2] = "Astralis";
       a.hio = new adu("Bypass Mode", "Telly", var90);
-      var10003 = 17585;
-      var10004 = 3736633222081759614L ^ a;
       a.erv = new bes("Tower Jump Timing", 1.0F, 0.0F, 10.0F, 1.0F);
-      var10003 = 1952;
-      var10004 = 250048589958285914L ^ a;
       a.ftz = new gbp("Spin", false);
-      var10003 = 9512;
-      var10004 = 6542884691255142650L ^ a;
       a.caw = new bes("Spin Speed", 30.0F, 0.0F, 100.0F, 1.0F);
-      var10003 = 11587;
-      var10004 = 4587836779433795744L ^ a;
       a.bax = new bes("Rotation Speed Yaw", 180.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 19318;
-      var10004 = 2073910761380103856L ^ a;
       a.aco = new bes("Rotation Speed Pitch", 180.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 11126;
-      var10004 = 5379600733873120902L ^ a;
       a.ady = new gbp("KeepY", false);
-      var10003 = 13485;
-      var10004 = 3492943072068548970L ^ a;
       a.dds = new gbp("Jump", false);
-      var10003 = 6097;
-      var10004 = 7759089585296513571L ^ a;
       a.fgh = new gbp("Don't jump diagonally", false);
-      var10003 = 20067;
-      var10004 = 2526328545114506135L ^ a;
       a.ait = new bes("Jump Every", 1.0F, 1.0F, 30.0F, 1.0F);
-      var10003 = 584;
-      var10004 = 7641009734520868793L ^ a;
       a.bnq = new gbp("Block Counter", true);
-      var10003 = 7041;
-      var10004 = 6082026483747198571L ^ a;
-      short var62 = 7820;
-      var10005 = 6395244250584585031L ^ a;
       String[] var92 = new String[2];
-      var10008 = 7820;
-      var10009 = 6395244250584585031L ^ a;
       var92[0] = "Astralis";
-      var10008 = 28945;
-      var10009 = 8586692579782261971L ^ a;
       var92[1] = "Adjust";
       a.esi = new adu("Block Counter Mode", "Astralis", var92);
-      var10003 = 23737;
-      var10004 = 5575072586726953298L ^ a;
       a.ckt = new gbp("Block ESP", true);
-      var10003 = 22463;
-      var10004 = 3853366769113815646L ^ a;
       a.csq = new bes("Block ESP Alpha", 200.0F, 1.0F, 255.0F, 5.0F);
-      var10003 = 9160;
-      var10004 = 4346609966664068635L ^ a;
       a.euy = new gbp("Spoof Item", false);
-      var10003 = 25136;
-      var10004 = 7386566117981810629L ^ a;
       a.ecl = new gbp("Swing", true);
       a.bme = new cbm();
       a.aeb = null;
@@ -238,8 +146,6 @@ public class GodBridge extends guu {
       a.fmi = new ArrayList<>();
       a.eru = -1;
       a.awh = 0.0F;
-      short var10001 = 19040;
-      long var10002 = 5993033652576440498L ^ a;
       ffn[] var3 = new ffn[]{a.bij, a.bab, a.cmi, a.fdy, a.gf.bih(() -> {
          long ax = GodBridge.a ^ 10124754603256L;
          short var10001x = 16814;
@@ -251,58 +157,26 @@ public class GodBridge extends guu {
          long var10002x = 8165842903044748859L ^ ax;
          return a.cmi.emb("Modern Watchdog");
       }), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null};
-      var10003 = 31247;
-      var10004 = 6772800527575802064L ^ a;
       var3[6] = a.hio.bih(() -> {
          long ax = GodBridge.a ^ 102663632148769L;
          short var10001x = 16814;
          long var10002x = 8165739811265372371L ^ ax;
          return a.cmi.emb("Modern Watchdog");
       });
-      var10003 = 24918;
-      var10004 = 6104326545412324251L ^ a;
       var3[7] = a.erv;
-      var10003 = 27323;
-      var10004 = 8387994622357434475L ^ a;
       var3[8] = a.ftz;
-      var10003 = 20741;
-      var10004 = 8555040613146348498L ^ a;
       var3[9] = a.caw;
-      var10003 = 11743;
-      var10004 = 2708462870811719452L ^ a;
       var3[10] = a.bax;
-      var10003 = 10243;
-      var10004 = 13139611803464388L ^ a;
       var3[11] = a.aco;
-      var10003 = 2669;
-      var10004 = 1668630493037858992L ^ a;
       var3[12] = a.ady;
-      var10003 = 26830;
-      var10004 = 1767880840720871959L ^ a;
       var3[13] = a.dds;
-      var10003 = 14516;
-      var10004 = 6222994159152865916L ^ a;
       var3[14] = a.fgh.bih(a.dds::dnp);
-      var10003 = 641;
-      var10004 = 7893854074953701463L ^ a;
       var3[15] = a.ait.bih(a.dds::dnp);
-      var10003 = 28981;
-      var10004 = 3594837860807076846L ^ a;
       var3[16] = a.bnq;
-      var10003 = 23348;
-      var10004 = 8166325213207118314L ^ a;
       var3[17] = a.esi.bih(a.bnq::dnp);
-      var10003 = 25022;
-      var10004 = 1245285367485987708L ^ a;
       var3[18] = a.ckt;
-      var10003 = 180;
-      var10004 = 300278127040141927L ^ a;
       var3[19] = a.csq.bih(a.ckt::dnp);
-      var10003 = 1776;
-      var10004 = 8989187029245434937L ^ a;
       var3[20] = a.euy;
-      var10003 = 6336;
-      var10004 = 1098168900325343745L ^ a;
       var3[21] = a.ecl;
       a.bfi(var3);
    }
@@ -370,14 +244,10 @@ public class GodBridge extends guu {
       long ax = GodBridge.a ^ 12118531113921L;
       int[] var10000 = dar.abu();
       class_1041 var10001 = chi.method_22683();
-      short var10002 = 20878;
-      long var10003 = 6348499108853726465L ^ ax;
       boolean axx = class_3675.method_15987(var10001, 32);
       int[] axxx = var10000;
       GodBridge var6 = a;
       if (axxx != null) {
-         short var7 = 21286;
-         long var9 = 7790081972052011169L ^ ax;
          if (a.cmi.emb("Modern Watchdog") && axx) {
             var8 = a.aen();
             label43:
@@ -445,8 +315,6 @@ public class GodBridge extends guu {
    public void cwy(fxx event) {
       long ax = GodBridge.a ^ 72736847706790L;
       int[] var10000 = dar.abu();
-      short var10002 = 8458;
-      long var10003 = 6449560193366516734L ^ ax;
       a.efe("Normal");
       int[] axx = var10000;
       GodBridge var15 = a;
@@ -494,8 +362,6 @@ public class GodBridge extends guu {
          a.asn();
          axxxx = dqq.ev();
          axxxxx = dqq.czi();
-         short var10001 = 16814;
-         long var30 = 8165754414680212308L ^ ax;
          boolean var18 = a.cmi.emb("Modern Watchdog");
          if (axx != null) {
             if (var18) {
@@ -541,8 +407,6 @@ public class GodBridge extends guu {
       if (axx != null) {
          switch (var21) {
             case -1595926131:
-               short var25 = 9035;
-               long var31 = 5997150985746866622L ^ ax;
                var21 = axxxxxxxx.equals("Minecraft");
                if (axx == null) {
                   break label200;
@@ -557,8 +421,6 @@ public class GodBridge extends guu {
                   break;
                }
             case -1955878649:
-               short var26 = 8458;
-               long var32 = 6449560193366516734L ^ ax;
                var21 = axxxxxxxx.equals("Normal");
                if (axx == null) {
                   break label200;
@@ -573,8 +435,6 @@ public class GodBridge extends guu {
                   break;
                }
             case -268477211:
-               short var27 = 7820;
-               long var33 = 6395202524436520055L ^ ax;
                var21 = axxxxxxxx.equals("Astralis");
                if (axx == null) {
                   break label200;
@@ -589,8 +449,6 @@ public class GodBridge extends guu {
                   break;
                }
             case 2433880:
-               short var28 = 28054;
-               long var34 = 2455477989204012864L ^ ax;
                var21 = axxxxxxxx.equals("None");
                if (axx == null) {
                   break label200;
@@ -715,8 +573,6 @@ public class GodBridge extends guu {
          var10001 = a.bda;
          Object var10002 = a.cmi;
          if (ax != null) {
-            short var10003 = 16814;
-            long var10004 = 8165857888138920032L ^ a;
             if (a.cmi.emb("Modern Watchdog")) {
                var9 = axx;
                break label25;
@@ -884,8 +740,6 @@ public class GodBridge extends guu {
                   break label225;
                }
 
-               short var10001 = 8548;
-               long var10002 = 8547733362598502991L ^ ax;
                var8 = a.cmi.emb("God Bridge");
             }
 
@@ -1090,8 +944,6 @@ public class GodBridge extends guu {
          class_4587 var5 = a.bus();
          class_238 var10001 = new class_238(a.aeb.ddn);
          Color var10002 = dar.gqy().deo();
-         short var10003 = 21270;
-         long var10004 = 4244077891437926787L ^ ax;
          bqf.hjf(var5, var10001, var10002, 50);
       }
    }
@@ -1116,8 +968,6 @@ public class GodBridge extends guu {
          if (axx != null) {
             switch (var10000) {
                case 1956520879:
-                  short var10001 = 29641;
-                  long var10002 = 7562085409215745396L ^ ax;
                   var10000 = var9.equals("Adjust");
                   if (axx == null) {
                      break label48;
@@ -1132,8 +982,6 @@ public class GodBridge extends guu {
                      break;
                   }
                case -268477211:
-                  short var20 = 7820;
-                  long var25 = 6395224588072116236L ^ ax;
                   var10000 = var9.equals("Astralis");
                   if (axx == null) {
                      break label48;
@@ -1149,21 +997,15 @@ public class GodBridge extends guu {
 
          switch (var10000) {
             case 0:
-               short var21 = 29105;
-               long var26 = 6773842207986880280L ^ ax;
                float axxxxxxxxxxxx = acy.eq("Blocks");
                float axxxxxxxxxxxxx = ahh.eq(axxxxx);
                float axxxxxxxxxxxxxx = axxx - (axxxxxxxxxxxxx + 2.0F + axxxxxxxxxxxx) / 2.0F;
                ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, dar.gqy().deo());
-               var21 = 11675;
-               var26 = 6164161005039113006L ^ ax;
                acy.aof("Blocks", axxxxxxxxxxxxxx + axxxxxxxxxxxxx + 2.0F, axxxx, Color.white);
                if (axx != null) {
                   break;
                }
             case 1:
-               short var23 = 11675;
-               long var28 = 6164161005039113006L ^ ax;
                float axxxxxxx = ety.eq("Blocks");
                float axxxxxxxx = bsf.eq(axxxxx);
                float axxxxxxxxx = axxxxxxxx + 2.0F + axxxxxxx;
@@ -1171,16 +1013,8 @@ public class GodBridge extends guu {
                float axxxxxxxxxxx = axxxx + 2.5F;
                float var19 = axxxxxxxxxx - 3.0F;
                float var29 = axxxxxxxxx + 6.0F;
-               short var10007 = 3630;
-               long var10008 = 8538805727756838833L ^ ax;
-               short var31 = 641;
-               long var10009 = 7893829756732795676L ^ ax;
-               short var32 = 30656;
-               long var10010 = 6116061737246563930L ^ ax;
                dmp.cpp(var19, axxxx, var29, 15.0F, 3.0F, new Color(15, 15, 18, a.csq.dnp().intValue()));
                bsf.aof(axxxxx, axxxxxxxxxx, axxxxxxxxxxx, dar.gqy().deo());
-               var23 = 11675;
-               var28 = 6164161005039113006L ^ ax;
                ety.aof("Blocks", axxxxxxxxxx + axxxxxxxx + 2.0F, axxxxxxxxxxx, Color.white);
          }
       }
@@ -1191,11 +1025,7 @@ public class GodBridge extends guu {
       long ax = GodBridge.a ^ 119383045602676L;
       if (a.bnq.dnp()) {
          class_1041 axx = chi.method_22683();
-         short var10001 = 7820;
-         long var10002 = 6395248237024254885L ^ ax;
          if (a.esi.emb("Astralis")) {
-            var10001 = 11675;
-            var10002 = 6164131858239727751L ^ ax;
             float axxx = ety.eq("Blocks");
             float axxxx = bsf.eq(String.valueOf(a.aaq()));
             float axxxxx = axxxx + 2.0F + axxx;
@@ -1285,8 +1115,6 @@ public class GodBridge extends guu {
                if (axx != null) {
                   switch (var21) {
                      case 2581482:
-                        short var10001 = 14946;
-                        long var10002 = 3568197132293087818L ^ ax;
                         var21 = var6.equals("Snap");
                         if (axx == null) {
                            break label224;
@@ -1301,8 +1129,6 @@ public class GodBridge extends guu {
                            break;
                         }
                      case 444110177:
-                        short var25 = 10732;
-                        long var30 = 1726327049901388235L ^ ax;
                         var21 = var6.equals("Brute Force");
                         if (axx == null) {
                            break label224;
@@ -1317,8 +1143,6 @@ public class GodBridge extends guu {
                            break;
                         }
                      case 482016750:
-                        short var26 = 16814;
-                        long var31 = 8165834367109028267L ^ ax;
                         var21 = var6.equals("Modern Watchdog");
                         if (axx == null) {
                            break label224;
@@ -1333,8 +1157,6 @@ public class GodBridge extends guu {
                            break;
                         }
                      case 63955982:
-                        short var27 = 2489;
-                        long var32 = 3522680914403365261L ^ ax;
                         var21 = var6.equals("Basic");
                         if (axx == null) {
                            break label224;
@@ -1431,7 +1253,6 @@ public class GodBridge extends guu {
 
                      label166: {
                         float axxxxx = var17 - (float)Math.toDegrees(Math.atan2(var29, var34));
-                        float axxxxxx = awo(axxxxx);
                         axxx = axxxxx - 180.0F;
                         efy var18 = a.aeb;
                         if (axx != null) {
@@ -1584,8 +1405,6 @@ public class GodBridge extends guu {
       if (ax != null) {
          switch (var7) {
             case 80691912:
-               short var10001 = 14512;
-               long var10002 = 5276681812700343L ^ axx;
                var7 = var5.equals("Telly");
                if (ax == null) {
                   break label78;
@@ -1600,8 +1419,6 @@ public class GodBridge extends guu {
                   break;
                }
             case -1684174727:
-               short var8 = 19258;
-               long var10 = 6249436431461588793L ^ axx;
                var7 = var5.equals("Telly Slow");
                if (ax == null) {
                   break label78;
@@ -1616,8 +1433,6 @@ public class GodBridge extends guu {
                   break;
                }
             case -268477211:
-               short var9 = 5245;
-               long var11 = 8144786918167855218L ^ axx;
                var7 = var5.equals("Astralis");
                if (ax == null) {
                   break label78;
@@ -1748,8 +1563,6 @@ public class GodBridge extends guu {
                            int axxxxxxx = 1;
 
                            while (true) {
-                              short var10001 = 2451;
-                              long var10002 = 4226583816160000211L ^ a;
                               if (axxxxxxx <= -3) {
                                  break label152;
                               }
@@ -1869,8 +1682,6 @@ public class GodBridge extends guu {
       int axxxx = 0;
 
       while (true) {
-         short var10001 = 17284;
-         long var10002 = 1999170418732279678L ^ a;
          if (axxxx < 9) {
             class_1799 axxxxx = chi.field_1724.method_31548().method_5438(axxxx);
             if (axx != null) {
@@ -2144,35 +1955,15 @@ public class GodBridge extends guu {
                                     p = var6;
                                     q = new Integer[30];
                                     aud = !GodBridge.class.desiredAssertionStatus();
-                                    short var29 = 19463;
-                                    long var36 = 6976786972977168554L ^ var20;
                                     int[] var37 = new int[3];
-                                    short var52 = 16115;
-                                    long var10005 = 4628544389427520879L ^ var20;
                                     var37[0] = 180;
-                                    short var53 = 6405;
-                                    var10005 = 7674020367450981023L ^ var20;
                                     var37[1] = 180;
-                                    short var54 = 25355;
-                                    var10005 = 888097967500605598L ^ var20;
                                     var37[2] = 80;
-                                    short var45 = 28535;
-                                    long var49 = 8798339598275453905L ^ var20;
                                     int[] var50 = new int[2];
-                                    short var10006 = 6405;
-                                    long var10007 = 7674020367450981023L ^ var20;
                                     var50[0] = 180;
-                                    var10006 = 11534;
-                                    var10007 = 3784556848917771928L ^ var20;
                                     var50[1] = 125;
-                                    short var55 = 11003;
-                                    var10005 = 8293008654303880813L ^ var20;
                                     int[] var59 = new int[2];
-                                    short var10008 = 3610;
-                                    long var10009 = 674659453891466628L ^ var20;
                                     var59[0] = 140;
-                                    var10008 = 729;
-                                    var10009 = 9198844466602563935L ^ var20;
                                     var59[1] = 120;
                                     aac = Map.of("Fast", var37, "Normal", var50, "Slow", var59);
                                     return;

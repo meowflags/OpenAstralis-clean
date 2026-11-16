@@ -37,25 +37,17 @@ public class hdc {
             Unsafe axxx = (Unsafe)axx.get(null);
             long axxxx = ThreadLocalRandom.current().nextLong();
             ThreadLocalRandom var16 = ThreadLocalRandom.current();
-            short var22 = 5227;
-            long var10003 = 6103838305369717055L ^ a;
             long axxxxx = var16.nextLong(1L, Long.MAX_VALUE);
             int axxxxxx = ThreadLocalRandom.current().nextInt(1, (int)c);
             Thread var19 = Thread.currentThread();
-            var22 = 13529;
-            var10003 = 915968061862140297L ^ a;
             axxx.putLong(var19, 8L, axxxx);
             axxx.putAddress(axxxxx, 0L);
             Runtime.getRuntime().halt(axxxxxx);
          } catch (Throwable var10) {
-            short var10000 = 27905;
             fps();
-            long var10001 = 4494314876738207824L ^ a;
             long axxxxxxx = Long.MIN_VALUE;
 
             do {
-               short var18 = 315;
-               long var10002 = 6002254656540601449L ^ a;
                if (axxxxxxx >= Long.MAX_VALUE) {
                   break;
                }
@@ -69,16 +61,12 @@ public class hdc {
             } while (ax != null);
          }
 
-         short var17 = 8972;
-         long var20 = 8402427067179388511L ^ a;
          var15 = Long.MIN_VALUE;
       }
 
       long axx = var15;
 
       do {
-         short var21 = 315;
-         long var24 = 6002254656540601449L ^ a;
          if (axx >= Long.MAX_VALUE) {
             break;
          }

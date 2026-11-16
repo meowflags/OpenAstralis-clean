@@ -50,10 +50,6 @@ public class GlTextureMixin implements ctu {
 
    @Override
    public Image astralis$getOrCreateSkikoImage(DirectContext context, class_276 framebuffer, boolean hasAlpha) {
-      long ax = b ^ 19511085270140L;
-      short var10000 = 1880;
-      long var10001 = 1625760935152590915L ^ ax;
-      long axx = 40660301793870L;
       if (a.image != null) {
          return a.image;
       } else {
@@ -172,19 +168,13 @@ public class GlTextureMixin implements ctu {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var32 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 
       d = var6;
       e = new Long[3];
-      short var21 = 26130;
-      long var25 = 6035732866364100380L ^ var16;
       long var18 = 1106788954990L;
-      short var22 = 24362;
-      long var26 = 2278334144243889703L ^ var16;
       long var30 = -4569943185345498314L ^ var18;
-      byte var27 = -1;
       a = var30;
    }
 

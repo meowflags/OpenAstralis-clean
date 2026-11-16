@@ -30,8 +30,6 @@ public final class chz {
 
    public static chz clj(String filePath) {
       long ax = chz.a ^ 110303245805239L;
-      short var10003 = 30460;
-      long var10004 = 2372716941524069374L ^ ax;
       return new chz("/assets/astralis/" + a);
    }
 
@@ -46,8 +44,6 @@ public final class chz {
 
          return var4;
       } catch (IOException var8) {
-         short var10003 = 2533;
-         long var10004 = 5332040684938821205L ^ ax;
          throw new RuntimeException("Failed to load image from: " + a, var8);
       }
    }
@@ -86,7 +82,6 @@ public final class chz {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

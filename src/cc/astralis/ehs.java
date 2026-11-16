@@ -26,11 +26,7 @@ public class ehs extends hcr {
 
    public ehs(guu parentClass) {
       long ax = ehs.a ^ 46537812667857L;
-      short var10002 = 28543;
-      long var10003 = 363781433668153096L ^ ax;
       super(a, "Watchdog");
-      short var4 = 1302;
-      long var10004 = 2332424468659684704L ^ ax;
       a.hdp = new gbp("Timer", false);
       a.ebu(a.hdp);
    }
@@ -119,7 +115,6 @@ public class ehs extends hcr {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var20 = a(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var20;
          if ((var9 += var10) >= var13) {
             d = var14;
@@ -155,7 +150,6 @@ public class ehs extends hcr {
                | (var4[5] & 255L) << 16
                | (var4[6] & 255L) << 8
                | var4[7] & 255L;
-            var10001 = -1;
             g = var23;
             return;
          }

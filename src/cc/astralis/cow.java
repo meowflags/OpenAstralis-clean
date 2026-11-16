@@ -35,7 +35,6 @@ public interface cow {
       while (true) {
          byte[] var8 = var1.doFinal(var5.substring(++var3, var3 + var4).getBytes("ISO-8859-1"));
          String var13 = a(var8).intern();
-         byte var10001 = -1;
          var0[var6++] = var13;
          if ((var3 += var4) >= var7) {
             eqs = new File(class_310.method_1551().field_1697, "/" + var0[2].toLowerCase() + var0[0]);

@@ -40,38 +40,16 @@ public class HitSelect extends guu {
    public HitSelect() {
       long a = HitSelect.a ^ 2043033759863L;
       super(bfm.COMBAT);
-      short var10003 = 9076;
-      long var10004 = 5356549808580439478L ^ a;
-      short var9 = 6642;
-      long var10005 = 6446341466144216884L ^ a;
       String[] var15 = new String[3];
-      short var10008 = 6642;
-      long var10009 = 6446341466144216884L ^ a;
       var15[0] = "Off";
-      var10008 = 628;
-      var10009 = 7791546791348636861L ^ a;
       var15[1] = "Normal";
-      var10008 = 28690;
-      var10009 = 6350117597079535315L ^ a;
       var15[2] = "Force";
       a.efl = new adu("Wait for Crit", "Off", var15);
-      var10003 = 22458;
-      var10004 = 8532009439681370481L ^ a;
       a.hex = new bes("Percentage", 0.95F, 0.1F, 1.0F, 0.01F);
-      var10003 = 31624;
-      var10004 = 8977105846861460813L ^ a;
       a.coh = new bes("Reaction Time", 0.0F, 0.0F, 500.0F, 10.0F);
-      var10003 = 29576;
-      var10004 = 1534976261945589058L ^ a;
       a.hiy = new bes("Miss Chance", 0.0F, 0.0F, 1.0F, 0.01F);
-      var10003 = 2032;
-      var10004 = 1448528257776879923L ^ a;
       a.cri = new gbp("Weapon Only", true);
-      var10003 = 12211;
-      var10004 = 7407302441493930355L ^ a;
       a.glx = new gbp("Ignore Teammates", false);
-      short var10001 = 3134;
-      long var10002 = 4021388828736521324L ^ a;
       a.ezv = -1L;
       ffn[] var3 = new ffn[(int)p];
       var3[0] = a.efl;
@@ -111,8 +89,6 @@ public class HitSelect extends guu {
 
             if (a.cdw(axxxx)) {
                long axxxxx = System.currentTimeMillis();
-               short var10001 = 21220;
-               long var10002 = 6586477740099184087L ^ ax;
                long var19;
                int var11 = (var19 = a.ezv - -1L) == 0L ? 0 : (var19 < 0L ? -1 : 1);
                if (axxx != null) {
@@ -154,8 +130,6 @@ public class HitSelect extends guu {
                   if (axxx != null) {
                      if (var11 < 0) {
                         chi.field_1724.method_6104(class_1268.field_5808);
-                        var10001 = 3134;
-                        var10002 = 4021358633315203852L ^ ax;
                         a.ezv = -1L;
                         return;
                      }
@@ -178,8 +152,6 @@ public class HitSelect extends guu {
                   var10 = a;
                }
 
-               var10001 = 3134;
-               var10002 = 4021358633315203852L ^ ax;
                var10.ezv = -1L;
                return;
             }
@@ -188,8 +160,6 @@ public class HitSelect extends guu {
          var10 = a;
       }
 
-      short var15 = 3134;
-      long var18 = 4021358633315203852L ^ ax;
       var10.ezv = -1L;
    }
 
@@ -272,8 +242,6 @@ public class HitSelect extends guu {
       if (a != null) {
          switch (var6) {
             case 79183:
-               short var10001 = 24310;
-               long var10002 = 5493645326630345873L ^ ax;
                var6 = var4.equals("Off");
                if (a == null) {
                   break label88;
@@ -288,8 +256,6 @@ public class HitSelect extends guu {
                   break;
                }
             case -1955878649:
-               short var7 = 32471;
-               long var9 = 4757825016235982015L ^ ax;
                var6 = var4.equals("Normal");
                if (a == null) {
                   break label88;
@@ -304,8 +270,6 @@ public class HitSelect extends guu {
                   break;
                }
             case 68065995:
-               short var8 = 19470;
-               long var10 = 3585388668287209061L ^ ax;
                var6 = var4.equals("Force");
                if (a == null) {
                   break label88;
@@ -532,7 +496,6 @@ public class HitSelect extends guu {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var48 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 

@@ -55,27 +55,16 @@ public class hbo implements ago {
    @Override
    public JsonObject dpp() {
       long a = b ^ 133664549034906L;
-      short var10000 = 17879;
-      long var10001 = 4231808444612171347L ^ a;
-      long ax = 40343903085086L;
       int[] var9 = dar.abu();
       int[] var11 = gfb();
       JsonObject axx = new JsonObject();
       int[] axxx = var11;
       String[] var8 = hbo.a;
-      short var10003 = 2131;
-      long var10004 = 947603908344708799L ^ a;
       axx.addProperty(var8[12], a.gtr);
       axx.addProperty(var8[3], a.emq);
-      var10003 = 27368;
-      var10004 = 204769060249377798L ^ a;
       axx.addProperty(var8[9], a.fun.cfs());
       int[] axxxx = var9;
-      short var10002 = 4740;
-      long var15 = 1473157769758925935L ^ a;
       axx.addProperty(var8[7], a.fun.eus());
-      var10002 = 5189;
-      long var16 = 5336278411202814636L ^ a;
       axx.addProperty(var8[10], a.fzx);
       axx.addProperty(var8[4], a.djp);
       JsonObject var10 = axx;
@@ -100,9 +89,6 @@ public class hbo implements ago {
       label67: {
          ax = b ^ 71618489369922L;
          int[] var10000 = dar.abu();
-         short var10001 = 21312;
-         long var10002 = 5570404258585599517L ^ ax;
-         long axxx = 107215070774941L;
          int[] axxxx = var10000;
          var10000 = gfb();
          axx = new JsonObject();
@@ -152,22 +138,14 @@ public class hbo implements ago {
 
       hbo var17 = new hbo;
       int var10004 = 28691;
-      long var10005 = 1002758090568407080L ^ ax;
       String var19 = a.get(hbo.a[6]).getAsString();
       String var10003 = a.has(hbo.a[2]) ? a.get(hbo.a[2]).getAsString() : "";
       String[] var12 = hbo.a;
-      short var10006 = 17215;
-      long var10007 = 8227478947638455058L ^ ax;
       var10004 = a.get(var12[11]).getAsInt();
       String var21 = a.get(var12[1]).getAsString();
       int var10008 = 2757;
-      long var10009 = 1387088706498290413L ^ ax;
       long var22 = a.get(var12[13]).getAsLong();
-      short var10010 = 10511;
-      long var10011 = 8540865520194502968L ^ ax;
       if (a.has(var12[8])) {
-         var10010 = 23765;
-         var10011 = 2316025335216747749L ^ ax;
          var10008 = a.get(var12[8]).getAsInt();
       } else {
          var10008 = -1;
@@ -386,19 +364,14 @@ public class hbo implements ago {
                                  | (var10[5] & 255L) << 16
                                  | (var10[6] & 255L) << 8
                                  | var10[7] & 255L;
-                              byte var76 = -1;
                               var6[var56] = var77;
                            } while (var2 < var5);
 
                            f = var6;
                            g = new Long[2];
-                           short var46 = 21276;
-                           long var58 = 7131078218415366870L ^ var31;
                            String[] var38 = new String[14];
-                           short var47 = 32740;
                            int var36 = 0;
                            aui(null);
-                           long var59 = 8084038930845093421L ^ var31;
                            String var35;
                            int var37 = (var35 = var22[0]).length();
                            char var34 = '\n';
@@ -406,8 +379,6 @@ public class hbo implements ago {
 
                            label52:
                            while (true) {
-                              short var48 = 9581;
-                              long var60 = 4723721711661618357L ^ var31;
                               byte var49 = 27;
                               String var61 = var35.substring(++var42, var42 + var34);
                               byte var69 = -1;
@@ -436,8 +407,6 @@ public class hbo implements ago {
                                        var42 = -1;
                                  }
 
-                                 short var51 = 22254;
-                                 long var62 = 1289457728986113842L ^ var31;
                                  var49 = 124;
                                  var61 = var35.substring(++var42, var42 + var34);
                                  var69 = 0;
@@ -479,12 +448,9 @@ public class hbo implements ago {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 84892593056877L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 17987;
-         long var10005 = 7427963694540523348L ^ var1;
          var10000[0] = (char)(var10003 ^ 'K');
       }
 
@@ -492,7 +458,6 @@ public class hbo implements ago {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 55158575537826L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -500,43 +465,34 @@ public class hbo implements ago {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 1080;
-         long var10009 = 1211827958379984868L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 13145;
-               long var23 = 2167527503867936919L ^ var2;
                var10 = 120;
                break;
             case 1:
                var10 = 14018;
-               long var22 = 3569790838778365213L ^ var2;
                var10 = 84;
                break;
             case 2:
                var10 = 2351;
-               long var21 = 825670173231758066L ^ var2;
                var10 = 121;
                break;
             case 3:
                var10 = 2135;
-               long var20 = 810477674781686661L ^ var2;
                var10 = 42;
                break;
             case 4:
                var10 = 28875;
-               long var19 = 497867256335123202L ^ var2;
                var10 = 101;
                break;
             case 5:
                var10 = 17654;
-               long var18 = 1434292684646709027L ^ var2;
                var10 = 34;
                break;
             default:
                var10 = 23688;
-               long var17 = 3733088916422258513L ^ var2;
                var10 = 75;
          }
 

@@ -37,26 +37,16 @@ public class gsu extends fig {
    public void bfi(float mouseX, float mouseY) {
       long ax = gsu.a ^ 111440798141673L;
       int[] var10000 = dar.abu();
-      short var10001 = 11193;
-      long var10002 = 8545314566134551824L ^ ax;
-      short var17 = 6550;
-      long var10003 = 7975950707875932897L ^ ax;
       fll axx = bxc.emc("Product Sans Regular", 8);
       String var14 = a.chz.fah();
       String var18 = a.chz.dnp();
-      short var19 = 31630;
-      long var10004 = 5684032594033968422L ^ ax;
       String axxx = var14 + ": " + var18;
       int[] axxxx = var10000;
-      short var10 = 17553;
-      long var15 = 2056687322433239015L ^ ax;
       int axxxxx = 8;
 
       while (true) {
          label43:
          if (axxxxx >= 1) {
-            short var11 = 13931;
-            long var16 = 2604474330739165377L ^ ax;
             fll axxxxxx = bxc.emc("Product Sans Regular", axxxxx);
             if (axxxx != null) {
                var12 = axxxxxx;
@@ -101,8 +91,6 @@ public class gsu extends fig {
       long ax = gsu.a ^ 20947152562205L;
       String var10000 = a.chz.fah();
       String var10001 = a.chz.dnp();
-      short var10002 = 2302;
-      long var10003 = 226867950576128673L ^ ax;
       String axx = var10000 + ": " + var10001;
       if (fuv.bfm(a, a, a.hjg() + 4.0F, a.dtt() + 2.0F, ety.eq(axx), ety.biu(axx))) {
          String[] axxx = a.chz.ape();
@@ -196,7 +184,6 @@ public class gsu extends fig {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var38 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 

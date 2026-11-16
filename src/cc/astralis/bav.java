@@ -110,8 +110,6 @@ public class bav implements dlc {
          int axxxxx = 0;
 
          while (true) {
-            short var10001 = 9385;
-            long var10002 = 8108147752403257210L ^ ax;
             if (axxxxx < 9) {
                float var8;
                var7 = (
@@ -163,12 +161,8 @@ public class bav implements dlc {
          class_2338 axxx = new class_2338((int)chi.field_1724.method_23317(), ax, (int)chi.field_1724.method_23321());
          String axxxx = chi.field_1687.method_8320(axxx).method_26204().method_63499();
          if (axx != null) {
-            short var10001 = 904;
-            long var10002 = 3004616784619253316L ^ a;
             label45:
             if (!axxxx.contains("short_grass")) {
-               var10001 = 6206;
-               var10002 = 524736470290707955L ^ a;
                boolean var6 = axxxx.contains("tall_grass");
                if (axx != null) {
                   if (var6 && axx != null) {
@@ -276,8 +270,6 @@ public class bav implements dlc {
 
       while (true) {
          int var10001 = ax.method_10264();
-         short var10002 = 24571;
-         long var10003 = 8811632007546023555L ^ a;
          if (axxx >= var10001 - 10) {
             class_2338 axxxx = new class_2338(ax.method_10263(), axxx, ax.method_10260());
             if (axx != null) {
@@ -576,7 +568,6 @@ public class bav implements dlc {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

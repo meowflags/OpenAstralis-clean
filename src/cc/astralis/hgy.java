@@ -51,7 +51,6 @@ class hgy extends CopyOnWriteArrayList<fdg> {
          | (var8[5] & 255L) << 16
          | (var8[6] & 255L) << 8
          | var8[7] & 255L;
-      byte var10001 = -1;
       long var0 = var9;
       serialVersionUID = var0;
    }

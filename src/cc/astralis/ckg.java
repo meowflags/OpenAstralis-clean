@@ -62,12 +62,6 @@ public class ckg extends fig {
       label139: {
          ax = ckg.a ^ 6065496822340L;
          int[] var10000 = dar.abu();
-         short var10003 = 2263;
-         long var10004 = 7806804752648392750L ^ ax;
-         short var23 = 3891;
-         long var10005 = 4554303629488347087L ^ ax;
-         short var26 = 3891;
-         long var10006 = 4554303629488347087L ^ ax;
          Color axxx = new Color(30, 30, 30);
          axx = var10000;
          ckg var14 = a;
@@ -85,12 +79,6 @@ public class ckg extends fig {
          dmp.dyl(var14.hjg(), a.dtt(), a.av(), a.gqc(), dar.gqy().deo(), dar.gqy().cxj(), false);
       }
 
-      short var10002 = 8076;
-      long var21 = 8637173186845329270L ^ ax;
-      short var22 = 14906;
-      long var24 = 6485026104294007490L ^ ax;
-      short var25 = 14906;
-      long var27 = 6485026104294007490L ^ ax;
       Color axxx = new Color(245, 245, 245);
       cbl.ebb(a.dty.clp(), a.hjg() + (a.av() - cbl.eq(a.dty.clp())) / 2.0F, a.dtt() + (a.gqc() - cbl.biu(a.dty.clp())) / 2.0F, axxx);
       if (!a.ais.isEmpty()) {
@@ -235,12 +223,8 @@ public class ckg extends fig {
          float var10001x = a.hjg();
          float var10002x = a[0];
          float var10003x = a.av();
-         short var10007 = 7695;
-         long var10008 = 3962857612058950332L ^ ax;
          short var11x = 6941;
-         long var10009 = 8545986183571013547L ^ ax;
          short var12x = 6475;
-         long var10010 = 1775387758041431547L ^ ax;
          dmp.euv(var10001x, var10002x, var10003x, a, new Color(32, 32, 36));
          Iterator var8x = a.ais.iterator();
          int[] axx = var10000x;
@@ -520,7 +504,6 @@ public class ckg extends fig {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var28 = -1;
                      f = var34;
                      return;
                   }

@@ -23,12 +23,8 @@ public class bkv extends fso {
    public bkv() {
       long a = bkv.a ^ 6307343864627L;
       String[] var10001 = new String[2];
-      short var10004 = 30413;
-      long var10005 = 6754153330523631018L ^ a;
       var10001[0] = "toggle";
       var10001[1] = "t";
-      short var10002 = 21557;
-      long var10003 = 1375346014989733713L ^ a;
       super(var10001, "Toggles Modules (.toggle <module>)");
    }
 
@@ -53,24 +49,16 @@ public class bkv extends fso {
                }
 
                String var10 = var9.clp();
-               short var12 = 27708;
-               long var10002 = 8106100169109039451L ^ ax;
-               short var14 = 14320;
-               long var10003 = 3924426372445778577L ^ ax;
                bpa.dhu("Toggled " + var10 + " module.");
                if (axxx != null) {
                   return;
                }
             }
 
-            short var11 = 15058;
-            long var13 = 6594875412712439734L ^ ax;
             bpa.dhu("Module not found.");
             return;
          }
 
-         short var8 = 28936;
-         long var10001 = 7525028445100274792L ^ ax;
          bpa.dhu("Wrong Usage .t <Module>");
       }
    }

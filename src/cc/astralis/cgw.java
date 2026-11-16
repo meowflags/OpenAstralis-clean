@@ -31,11 +31,7 @@ public class cgw extends hcr {
 
    public cgw(guu parentClass) {
       long ax = cgw.a ^ 100857754893693L;
-      short var10002 = 6029;
-      long var10003 = 6322584545989670957L ^ ax;
       super(a, "Watchdog Vanilla");
-      short var4 = 5204;
-      long var10004 = 5863254418052692981L ^ ax;
       a.adp = new gbp("Edge", true);
       a.epz = false;
       a.ghi = false;
@@ -174,11 +170,8 @@ public class cgw extends hcr {
    }
 
    public static int epy() {
-      long var0 = a ^ 6980715698542L;
       int var2 = cbv();
       if (var2 == 0) {
-         short var10000 = 10242;
-         long var10001 = 3444717447237784236L ^ var0;
          return 122;
       } else {
          return 0;
@@ -263,15 +256,12 @@ public class cgw extends hcr {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var33 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 
             g = var6;
             h = new Integer[2];
             if (epy() == 0) {
-               short var24 = 10856;
-               long var28 = 6221939967558002089L ^ var20;
                ftb(121);
             }
 

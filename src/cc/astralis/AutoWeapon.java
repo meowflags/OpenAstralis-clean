@@ -38,14 +38,8 @@ public class AutoWeapon extends guu {
    public AutoWeapon() {
       long a = AutoWeapon.a ^ 42677255140842L;
       super(bfm.PLAYER);
-      short var10003 = 11413;
-      long var10004 = 4711892131625746565L ^ a;
       a.ftz = new bes("Action Delay (ticks)", 2.0F, 0.0F, 20.0F, 1.0F);
-      var10003 = 23763;
-      var10004 = 4093328055058706625L ^ a;
       a.cxi = new bes("Sword Slot", 0.0F, 0.0F, 8.0F, 1.0F);
-      var10003 = 13786;
-      var10004 = 8620445937722022345L ^ a;
       a.ehm = new bes("First Tool Slot", 1.0F, 0.0F, 8.0F, 1.0F);
       a.bxp = 0;
       a.bfi(new ffn[]{a.ftz, a.cxi, a.ehm});
@@ -129,7 +123,6 @@ public class AutoWeapon extends guu {
                   return (boolean)var10000x.field_7874;
                } else {
                   short var10001x = 27344;
-                  long var10002 = 3550641827769337710L ^ ax;
                   return (boolean)(var10000x.field_7874 > 8 ? 1 : 0);
                }
             }).toList());
@@ -159,8 +152,6 @@ public class AutoWeapon extends guu {
                   return;
                }
 
-               short var20 = 5429;
-               long var10001 = 2781065808883583739L ^ ax;
                var19 = 36 + a.cxi.dnp().intValue();
             }
 
@@ -196,8 +187,6 @@ public class AutoWeapon extends guu {
             while (true) {
                if (axxxxxxxxxxx < 3) {
                   class_1735 axxxxxxxxxxxx = axxxxxxx[axxxxxxxxxxx];
-                  short var23 = 16215;
-                  long var25 = 4673478408025022616L ^ ax;
                   int axxxxxxxxxxxxx = 36 + a.ehm.dnp().intValue() + axxxxxxxxxxx;
                   if (axx != null) {
                      if (axxxxxxxxxxxx != null) {
@@ -312,7 +301,6 @@ public class AutoWeapon extends guu {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

@@ -27,15 +27,10 @@ public class hhm extends brc {
 
    public hhm() {
       long a = b ^ 101514945219836L;
-      short var10001 = 19539;
-      long var10002 = 1317063441052354666L ^ a;
       super(11);
    }
 
    public hhm(ago cloudConfig) {
-      long ax = b ^ 45273524609001L;
-      short var10001 = 2540;
-      long var10002 = 3461204636810632917L ^ ax;
       super(11);
       a.fxt = a;
    }
@@ -50,12 +45,9 @@ public class hhm extends brc {
    public String cql() {
       long a = b ^ 39217580348302L;
       int[] var10000 = dar.abu();
-      long ax = m;
       int[] axx = var10000;
       JsonObject axxx = a.fdo();
       var10000 = fxc.gty();
-      short var10003 = 28334;
-      long var10004 = 5864924312071681504L ^ a;
       Object[] var12 = new Object[14];
       String[] var8 = c;
       var12[0] = var8[0];
@@ -64,33 +56,13 @@ public class hhm extends brc {
       var12[3] = a.fxt.chb();
       var12[4] = var8[4];
       var12[5] = a.fxt.ayq().cfs();
-      short var10005 = 28219;
-      long var10006 = 6153832401776850279L ^ a;
       var12[6] = var8[3];
-      var10005 = 18331;
-      var10006 = 7652797158611590359L ^ a;
       var12[7] = a.fxt.ayq().eus();
-      var10005 = 23536;
-      var10006 = 1269474455927750838L ^ a;
-      short var10007 = 22477;
-      long var10008 = 978421058410318988L ^ a;
       var12[8] = var8[6];
-      var10005 = 17605;
-      var10006 = 1459668393748471710L ^ a;
       var12[9] = a.fxt.bsl();
-      var10005 = 7495;
-      var10006 = 1657667260348417540L ^ a;
       var12[10] = var8[5];
-      var10005 = 2540;
-      var10006 = 3461194165908427442L ^ a;
       var12[11] = a.fxt.cna();
-      var10005 = 5986;
-      var10006 = 1062228305958390842L ^ a;
-      var10007 = 30302;
-      var10008 = 777112952374996241L ^ a;
       var12[12] = var8[8];
-      var10005 = 7085;
-      var10006 = 5751501757916594418L ^ a;
       var12[13] = a.fxt.dvu().toString();
       a.eqw(axxx, var12);
       int[] axxxx = var10000;
@@ -98,8 +70,6 @@ public class hhm extends brc {
       String[] var10001 = var8;
       if (axx != null) {
          byte[] var11 = cni.fsi(var8[1]);
-         var10003 = 18331;
-         var10004 = 7652797158611590359L ^ a;
          var10 = fz.dvr(var10, var11, cni.fsi(var8[7]));
          if (axxxx == null) {
             return var10;
@@ -244,10 +214,7 @@ public class hhm extends brc {
                               | (var4[5] & 255L) << 16
                               | (var4[6] & 255L) << 8
                               | var4[7] & 255L;
-                           byte var50 = -1;
                            m = var62;
-                           short var40 = 24194;
-                           long var51 = 3869172886596370590L ^ var25;
                            String[] var32 = new String[9];
                            int var30 = 0;
                            String var29;
@@ -258,8 +225,6 @@ public class hhm extends brc {
 
                            label50:
                            while (true) {
-                              short var41 = 3093;
-                              long var52 = 5019591219822793216L ^ var25;
                               byte var42 = 125;
                               String var53 = var29.substring(++var36, var36 + var28);
                               byte var63 = -1;
@@ -284,14 +249,10 @@ public class hhm extends brc {
                                        }
 
                                        var31 = (var29 = var16[0]).length();
-                                       short var44 = 18371;
-                                       long var54 = 720896131896039874L ^ var25;
                                        var28 = '`';
                                        var36 = -1;
                                  }
 
-                                 short var45 = 7938;
-                                 long var55 = 703046185069084935L ^ var25;
                                  var42 = 82;
                                  var53 = var29.substring(++var36, var36 + var28);
                                  var63 = 0;
@@ -333,12 +294,9 @@ public class hhm extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = b ^ 109301114022425L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 1352;
-         long var10005 = 3758113059531057048L ^ var1;
          var10000[0] = (char)(var10003 ^ ',');
       }
 
@@ -346,7 +304,6 @@ public class hhm extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = b ^ 94206035305220L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -354,38 +311,24 @@ public class hhm extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 6985;
-         long var10009 = 2321050720990818457L ^ var2;
          var10001[var4] = (char)(var10005 ^ var10002 ^ switch (var4 % 7) {
             case 0 -> {
-               short var15 = 13947;
-               long var21 = 725997364666391996L ^ var2;
                yield 106;
             }
             case 1 -> {
-               short var14 = 20313;
-               long var20 = 6525462161704395929L ^ var2;
                yield 95;
             }
             case 2 -> {
-               short var13 = 2110;
-               long var19 = 554854143618671601L ^ var2;
                yield 105;
             }
             case 3 -> {
-               short var12 = 10441;
-               long var18 = 326571531759993601L ^ var2;
                yield 110;
             }
             case 4 -> 2;
             case 5 -> {
-               short var11 = 24082;
-               long var17 = 4597877569967338972L ^ var2;
                yield 48;
             }
             default -> {
-               short var10007 = 10672;
-               long var16 = 2720342697306505842L ^ var2;
                yield 44;
             }
          });

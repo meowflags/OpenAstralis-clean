@@ -46,95 +46,43 @@ public class dec implements dlc {
 
    public static Color bst(int color) {
       long ax = dec.a ^ 28512707379716L;
-      short var10001 = 13244;
-      long var10002 = 6798015806536338471L ^ ax;
       int var10000 = a >> 24;
-      var10001 = 6446;
-      var10002 = 3082034638576281268L ^ ax;
       int axx = var10000 & 0xFF;
-      var10001 = 12613;
-      var10002 = 1865965446156570320L ^ ax;
       var10000 = a >> 16;
-      var10001 = 4375;
-      var10002 = 10999400189259406L ^ ax;
       int axxx = var10000 & 0xFF;
-      var10001 = 2287;
-      var10002 = 8468044953026164603L ^ ax;
       var10000 = a >> 8;
-      var10001 = 4375;
-      var10002 = 10999400189259406L ^ ax;
       int axxxx = var10000 & 0xFF;
-      var10001 = 4375;
-      var10002 = 10999400189259406L ^ ax;
       int axxxxx = a & 0xFF;
       return new Color(axxx, axxxx, axxxxx, axx);
    }
 
    public static int bw(int color1, int color2, float fraction) {
       long ax = dec.a ^ 57822165781578L;
-      short var10001 = 16427;
-      long var10002 = 1554234641087853053L ^ ax;
       int var10000 = a >> 16;
-      var10001 = 4375;
-      var10002 = 11046368280355008L ^ ax;
       int axx = var10000 & 0xFF;
-      var10001 = 8609;
-      var10002 = 7336349673761542258L ^ ax;
       var10000 = a >> 8;
-      var10001 = 4375;
-      var10002 = 11046368280355008L ^ ax;
       int axxx = var10000 & 0xFF;
-      var10001 = 4375;
-      var10002 = 11046368280355008L ^ ax;
       int axxxx = a & 0xFF;
-      var10001 = 16427;
-      var10002 = 1554234641087853053L ^ ax;
       var10000 = a >> 16;
-      var10001 = 4375;
-      var10002 = 11046368280355008L ^ ax;
       int axxxxx = var10000 & 0xFF;
-      var10001 = 8609;
-      var10002 = 7336349673761542258L ^ ax;
       var10000 = a >> 8;
-      var10001 = 4375;
-      var10002 = 11046368280355008L ^ ax;
       int axxxxxx = var10000 & 0xFF;
-      var10001 = 4375;
-      var10002 = 11046368280355008L ^ ax;
       int axxxxxxx = a & 0xFF;
       int axxxxxxxx = (int)(axx + a * (axxxxx - axx));
       int axxxxxxxxx = (int)(axxx + a * (axxxxxx - axxx));
       int axxxxxxxxxx = (int)(axxxx + a * (axxxxxxx - axxxx));
-      var10001 = 16427;
-      var10002 = 1554234641087853053L ^ ax;
       var10000 = axxxxxxxx << 16;
-      short var38 = 8609;
-      long var10003 = 7336349673761542258L ^ ax;
       return var10000 | axxxxxxxxx << 8 | axxxxxxxxxx;
    }
 
    public static float[] eul(int color) {
       long ax = dec.a ^ 121585411596116L;
-      short var10001 = 16427;
-      long var10002 = 1554192850882110179L ^ ax;
       int var10000 = a >> 16;
-      var10001 = 4375;
-      var10002 = 11088158213731294L ^ ax;
       float axx = (var10000 & 0xFF) / 255.0F;
-      var10001 = 8609;
-      var10002 = 7336268318388405100L ^ ax;
       var10000 = a >> 8;
-      var10001 = 4375;
-      var10002 = 11088158213731294L ^ ax;
       float axxx = (var10000 & 0xFF) / 255.0F;
-      var10001 = 4375;
-      var10002 = 11088158213731294L ^ ax;
       float axxxx = (a & 0xFF) / 255.0F;
-      var10001 = 12500;
-      var10002 = 118040632395059738L ^ ax;
       var10000 = a >> 24;
-      var10001 = 4375;
-      var10002 = 11088158213731294L ^ ax;
       float axxxxx = (var10000 & 0xFF) / 255.0F;
       return new float[]{axx, axxx, axxxx, axxxxx};
    }
@@ -152,7 +100,6 @@ public class dec implements dlc {
          int[] axxx = var10000;
          var12 = axx;
          int var10001 = 2146;
-         long var10002 = 2476897337468659301L ^ ax;
          var10001 = 180;
          if (axxx != null) {
             if (axx < 180) {
@@ -160,8 +107,6 @@ public class dec implements dlc {
                break label23;
             }
 
-            short var11 = 7352;
-            long var14 = 1328319530785092284L ^ ax;
             var12 = 360;
             var10001 = axx;
          }
@@ -196,20 +141,10 @@ public class dec implements dlc {
 
    public static int[] ghd(int in) {
       long ax = dec.a ^ 17594146400110L;
-      short var10001 = 16427;
-      long var10002 = 1554274848679369433L ^ ax;
       int var10000 = a >> 16;
-      var10001 = 4375;
-      var10002 = 11006161727179748L ^ ax;
       int axx = var10000 & 0xFF;
-      var10001 = 8609;
-      var10002 = 7336319529823402838L ^ ax;
       var10000 = a >> 8;
-      var10001 = 4375;
-      var10002 = 11006161727179748L ^ ax;
       int axxx = var10000 & 0xFF;
-      var10001 = 4375;
-      var10002 = 11006161727179748L ^ ax;
       int axxxx = a & 0xFF;
       return new int[]{axx, axxx, axxxx};
    }
@@ -341,7 +276,6 @@ public class dec implements dlc {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var23 = -1;
                      e = var27;
                      if (fi() == null) {
                         cjx(new cdr[1]);

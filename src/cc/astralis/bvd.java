@@ -26,11 +26,7 @@ public class bvd extends hcr {
 
    public bvd(guu parentClass) {
       long ax = bvd.a ^ 17591423717958L;
-      short var10002 = 16322;
-      long var10003 = 2470893567990709152L ^ ax;
       super(a, "Reverse");
-      short var4 = 13575;
-      long var10004 = 2885340438277632356L ^ ax;
       a.eef = new bes("Horizontal Velocity", 0.0F, 0.0F, 100.0F, 1.0F);
       a.ebu(a.eef);
    }
@@ -49,16 +45,13 @@ public class bvd extends hcr {
       }
 
       class_2596 axxx = var10000.bed();
-      class_2596 var8 = axxx;
       if (axx != null) {
          if (!(axxx instanceof class_2743)) {
             return;
          }
 
-         var8 = axxx;
       }
 
-      class_2743 axxxx = (class_2743)var8;
       EntityVelocityUpdateS2CPacketAccessor axxxxx = (EntityVelocityUpdateS2CPacketAccessor)a.bed();
       EntityVelocityUpdateS2CPacketAccessor var9 = axxxxx;
       if (axx != null) {
@@ -99,7 +92,6 @@ public class bvd extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

@@ -29,14 +29,8 @@ public abstract class blz {
       long a = blz.a ^ 136851768448758L;
       super();
       File var10003 = class_310.method_1551().field_1697;
-      short var10004 = 15206;
-      long var10005 = 1087660118053908501L ^ a;
       String var4 = "Astralis".toLowerCase();
-      short var10006 = 20537;
-      long var10007 = 349070656364026697L ^ a;
       a.evx = new File(var10003, "/" + var4 + "/Configs");
-      var10004 = 19017;
-      var10005 = 6061994440578236728L ^ a;
       a.bf = new File(class_310.method_1551().field_1697, "/" + "Astralis".toLowerCase());
    }
 
@@ -53,7 +47,6 @@ public abstract class blz {
    }
 
    public static int emn() {
-      long var0 = a ^ 139665036672778L;
       int[] var2 = dar.abu();
       int var3 = dcm();
       int var10000 = var3;
@@ -91,7 +84,6 @@ public abstract class blz {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var22 = a(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var22;
          if ((var9 += var10) >= var13) {
             c = var14;
@@ -127,7 +119,6 @@ public abstract class blz {
                | (var6[5] & 255L) << 16
                | (var6[6] & 255L) << 8
                | var6[7] & 255L;
-            var10001 = -1;
             long var0 = var25;
             if (dcm() == 0) {
                fvm((int)var0);

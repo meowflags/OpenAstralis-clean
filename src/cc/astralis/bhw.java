@@ -34,8 +34,6 @@ public class bhw extends cec {
             return;
          }
 
-         short var4 = 16816;
-         long var10001 = 5156746215276286734L ^ a;
          bpa.bez("§b[blink] started");
          a.cos.clear();
          a.ezs = true;
@@ -54,8 +52,6 @@ public class bhw extends cec {
             return;
          }
 
-         short var4 = 31418;
-         long var10001 = 6230287824429014416L ^ a;
          bpa.bez("§b[blink] stopped");
          a.ezs = false;
          var10000 = a;
@@ -131,7 +127,6 @@ public class bhw extends cec {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = c(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             c = var9;

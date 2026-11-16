@@ -28,20 +28,10 @@ public class OldCombat extends guu {
    public OldCombat() {
       long a = OldCombat.a ^ 19765308796088L;
       super(bfm.COMBAT);
-      short var10003 = 29418;
-      long var10004 = 3789135051131045465L ^ a;
       a.dpg = new gbp("Removes Attack Cooldown", true);
-      var10003 = 1410;
-      var10004 = 5749440688687132983L ^ a;
       a.gav = new gbp("Removes your attack on miss", true);
-      var10003 = 15977;
-      var10004 = 2875015269633166041L ^ a;
       a.ccp = new gbp("Weapon Only", true);
-      var10003 = 21528;
-      var10004 = 2186356839651795114L ^ a;
       a.dzj = new gbp("Allow Block Hit", false);
-      var10003 = 21856;
-      var10004 = 4703010386198389201L ^ a;
       a.czi = new gbp("Allow Air Hit", false);
       a.bfi(new ffn[]{a.dpg, a.gav, a.ccp, a.dzj, a.czi});
    }

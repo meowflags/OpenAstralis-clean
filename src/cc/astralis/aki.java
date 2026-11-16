@@ -27,8 +27,6 @@ public class aki extends brc {
 
    public aki() {
       long a = c ^ 108849259470249L;
-      short var10001 = 6201;
-      long var10002 = 8099823419335375995L ^ a;
       super(7);
    }
 
@@ -146,20 +144,15 @@ public class aki extends brc {
                      g = var6;
                      h = new Integer[12];
                      String[] var22 = new String[3];
-                     short var27 = 8193;
                      int var20 = 0;
                      fmu(null);
-                     long var32 = 8008626376571269614L ^ var15;
                      String var19 = var11;
                      int var21 = var11.length();
                      char var18 = '\b';
                      int var17 = -1;
 
                      while (true) {
-                        short var28 = 29158;
-                        long var33 = 1351018473954926594L ^ var15;
                         String var40 = b(71, b(var19.substring(++var17, var17 + var18)));
-                        byte var34 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            b = var22;
@@ -200,12 +193,9 @@ public class aki extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 90823167843605L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 3796;
-         long var10005 = 6987949299007662639L ^ var1;
          var10000[0] = (char)(var10003 ^ 'e');
       }
 
@@ -213,7 +203,6 @@ public class aki extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 71447112478577L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -221,43 +210,34 @@ public class aki extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 6461;
-         long var10009 = 7854306356061425569L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 26081;
-               long var23 = 1247966005410116464L ^ var2;
                var10 = 112;
                break;
             case 1:
                var10 = 24029;
-               long var22 = 7552536586335587136L ^ var2;
                var10 = 38;
                break;
             case 2:
                var10 = 9953;
-               long var21 = 1638906764320534650L ^ var2;
                var10 = 14;
                break;
             case 3:
                var10 = 29271;
-               long var20 = 6280533140855694537L ^ var2;
                var10 = 30;
                break;
             case 4:
                var10 = 3030;
-               long var19 = 52916266936425806L ^ var2;
                var10 = 112;
                break;
             case 5:
                var10 = 22322;
-               long var18 = 8496864053578498466L ^ var2;
                var10 = 44;
                break;
             default:
                var10 = 9831;
-               long var17 = 7522656690192740596L ^ var2;
                var10 = 101;
          }
 

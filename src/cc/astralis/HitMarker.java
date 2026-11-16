@@ -30,11 +30,7 @@ public class HitMarker extends guu {
    public HitMarker() {
       long a = HitMarker.a ^ 99362707610927L;
       super(bfm.VISUAL);
-      short var10003 = 14388;
-      long var10004 = 7915451378124553841L ^ a;
       a.cff = new bes("Circle Duration", 500.0F, 0.0F, 10000.0F, 1.0F);
-      var10003 = 32070;
-      var10004 = 2312897168833690370L ^ a;
       a.dxe = new bes("Max Radius", 3.0F, 0.0F, 10.0F, 0.1F);
       a.eoa = new ArrayList<>();
       a.hec = false;
@@ -158,7 +154,6 @@ public class HitMarker extends guu {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var20 = d(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var20;
          if ((var9 += var10) >= var13) {
             g = var14;
@@ -194,7 +189,6 @@ public class HitMarker extends guu {
                | (var4[5] & 255L) << 16
                | (var4[6] & 255L) << 8
                | var4[7] & 255L;
-            var10001 = -1;
             p = var23;
             return;
          }

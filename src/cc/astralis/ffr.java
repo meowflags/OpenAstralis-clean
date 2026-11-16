@@ -25,11 +25,7 @@ public class ffr extends hcr {
 
    public ffr(guu parentClass) {
       long ax = ffr.a ^ 55474295404597L;
-      short var10002 = 5165;
-      long var10003 = 1610261281735232457L ^ ax;
       super(a, "Vulcan");
-      short var4 = 22111;
-      long var10004 = 805249440405555642L ^ ax;
       a.ffd = new bes("Motion", 10.0F, 0.0F, 10.0F, 1.0F);
       a.ebu(a.ffd);
    }
@@ -119,7 +115,6 @@ public class ffr extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

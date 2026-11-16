@@ -61,19 +61,9 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
       method = {"addNormalWidgets(II)I"}
    )
    private void addNormalWidgets(int a, int a, CallbackInfoReturnable<Integer> a) {
-      long ax = b ^ 92205784689205L;
-      class_442 axx = (class_442)a;
       class_7840 var10000 = class_4185.method_46430(class_2561.method_43470(MixinTitleScreen.a[1]), axxx -> chi.method_1507(new crv()));
-      short var10001 = 3111;
-      long var10002 = 6288586837356079630L ^ ax;
-      short var8 = 9485;
-      long var10003 = 7643781810904974114L ^ ax;
       class_7840 axxx = var10000.method_46437(60, 20);
-      short var10 = 6512;
-      long var10004 = 2417161613509689178L ^ ax;
       int var9 = a.field_22789 - 65;
-      short var11 = 12573;
-      long var10005 = 4252760805894018873L ^ ax;
       a.method_37063(axxx.method_46433(var9, a.field_22790 - 25).method_46431());
    }
 
@@ -165,19 +155,14 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
                      c = var6;
                      d = new Integer[15];
                      String[] var22 = new String[2];
-                     short var27 = 29462;
                      int var20 = 0;
-                     long var32 = 2754025907168664823L ^ var15;
                      String var19 = var11;
                      int var21 = var11.length();
                      char var18 = 7;
                      int var17 = -1;
 
                      while (true) {
-                        short var28 = 16248;
-                        long var33 = 1521860385647759505L ^ var15;
                         String var40 = a(55, a(var19.substring(++var17, var17 + var18)));
-                        byte var34 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            a = var22;
@@ -218,12 +203,9 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 84942619963326L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 28230;
-         long var10005 = 4726650803078991341L ^ var1;
          var10000[0] = (char)(var10003 ^ '(');
       }
 
@@ -231,7 +213,6 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 9394564712260L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -239,43 +220,34 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 1504;
-         long var10009 = 4577240049388965556L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 10006;
-               long var23 = 6541035813832453184L ^ var2;
                var10 = 28;
                break;
             case 1:
                var10 = 6227;
-               long var22 = 3485496733663810307L ^ var2;
                var10 = 65;
                break;
             case 2:
                var10 = 24642;
-               long var21 = 4582219046813707035L ^ var2;
                var10 = 9;
                break;
             case 3:
                var10 = 13351;
-               long var20 = 7886710137162334069L ^ var2;
                var10 = 23;
                break;
             case 4:
                var10 = 29865;
-               long var19 = 7712493575535837178L ^ var2;
                var10 = 103;
                break;
             case 5:
                var10 = 25098;
-               long var18 = 7514795553013508432L ^ var2;
                var10 = 22;
                break;
             default:
                var10 = 14731;
-               long var17 = 5099272905308140246L ^ var2;
                var10 = 40;
          }
 

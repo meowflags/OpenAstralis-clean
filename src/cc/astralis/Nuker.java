@@ -53,17 +53,9 @@ public class Nuker extends guu {
    public Nuker() {
       long a = Nuker.a ^ 82241625146415L;
       super(bfm.WORLD);
-      short var10003 = 9896;
-      long var10004 = 4334275524495057927L ^ a;
       a.asm = new bes("Break Range", 5.5F, 1.0F, 6.0F, 0.5F);
-      var10003 = 20527;
-      var10004 = 341002767938376327L ^ a;
       a.ghd = new gbp("Rotate", true);
-      var10003 = 6192;
-      var10004 = 5067548009474497181L ^ a;
       a.ej = new gbp("Break Block surrounding", true);
-      var10003 = 1497;
-      var10004 = 7169687091015190389L ^ a;
       a.amp = new gbp("Keep Rotation", false);
       a.asx = false;
       a.gdd = new gcs();
@@ -508,27 +500,17 @@ public class Nuker extends guu {
          boolean axxx = var11;
          String var13;
          if (a) {
-            short var12 = 14006;
-            long var10001 = 6678002971635488440L ^ ax;
             var13 = "Support";
          } else {
-            short var14 = 8984;
-            long var19 = 8900979591655686929L ^ ax;
             var13 = "Bed";
          }
 
-         short var20 = 19720;
-         long var10002 = 2228289552209898766L ^ ax;
          String axxxx = "Breaking: " + var13;
          if (axx != null) {
             if (!axxx) {
                a.gdd.agx = bav.faa(a, chi.field_1724.method_6047());
                a.gdd.ddc = 0;
                String var15 = String.valueOf(a);
-               short var21 = 8631;
-               long var10003 = 6692314996161872314L ^ ax;
-               short var22 = 25710;
-               long var10004 = 885972144065430626L ^ ax;
                bpa.bez("Starting break: " + var15 + " | Max ticks: " + a.gdd.agx);
             }
 
@@ -920,8 +902,6 @@ public class Nuker extends guu {
          int axxxxx = 0;
 
          while (true) {
-            short var10001 = 10841;
-            long var10002 = 4218699521653630580L ^ ax;
             if (axxxxx < 9) {
                float var11;
                var8 = (

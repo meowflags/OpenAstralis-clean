@@ -119,8 +119,6 @@ public class bqf implements dlc {
       if (axxx != null) {
          switch (var32) {
             case -1656737386:
-               short var10001 = 20943;
-               long var10002 = 6468317318610869779L ^ ax;
                var32 = axxxx.equals("Rainbow");
                if (axxx == null) {
                   break;
@@ -135,8 +133,6 @@ public class bqf implements dlc {
       }
       Color axxxxxx = switch (var32) {
          case 0 -> {
-            short var34 = 23380;
-            long var39 = 912165839743806562L ^ ax;
             yield ezv.gbq(3000L, 0, 0.7F, 1.0F);
          }
          default -> dec.fbp(new class_5611(0.0F, 6.0F), axx.ehf.dnp(), axx.aoz.dnp());
@@ -147,8 +143,6 @@ public class bqf implements dlc {
       if (axxx != null) {
          switch (var35) {
             case -1656737386:
-               short var40 = 14613;
-               long var46 = 6938821246708299467L ^ ax;
                var35 = var29.equals("Rainbow");
                if (axxx == null) {
                   break;
@@ -163,24 +157,14 @@ public class bqf implements dlc {
       }
       Color axxxxxxxx = switch (var35) {
          case 0 -> {
-            short var37 = 5070;
-            long var41 = 4051667039465809146L ^ ax;
             yield ezv.gbq(4000L, 0, 1.0F, 1.0F);
          }
          default -> dec.fbp(new class_5611(0.0F, 6.0F), axx.ehf.dnp(), axx.aoz.dnp());
       };
-      short var42 = 13158;
-      long var47 = 3199015070355320018L ^ ax;
       Color axxxxxxxxx = dec.ceu(axxxxxx, 200);
-      var42 = 29115;
-      var47 = 8511707684391038478L ^ ax;
       Color var31 = dec.ceu(axxxxxxxx, 200);
-      short var38 = 4815;
       long var44 = System.currentTimeMillis();
-      short var49 = 10693;
-      long var10003 = 791296897400413936L ^ ax;
       float axxxxxxxxxx = (float)(var44 % 3000L) / 3000.0F;
-      long var45 = 4790519215233846655L ^ ax;
       float axxxxxxxxxxx = 0.15F;
       a.method_61958(a.method_30950(chi.method_61966().method_60637(true)).method_1020(chi.field_1773.method_19418().method_19326()));
       Matrix4f axxxxxxxxxxxx = a.method_23760().method_23761();
@@ -230,14 +214,10 @@ public class bqf implements dlc {
       Matrix4f axxxx = a.method_23760().method_23761();
       class_4598 axxxxx = ((BufferBuilderStorageAccessor)chi.method_22940()).getEntityVertexConsumers();
       class_4588 axxxxxx = axxxxx.method_73477(class_1921.method_49043(1.0));
-      short var21 = 28835;
-      long var10001 = 3790110190128059244L ^ ax;
       GL11.glEnable(2848);
       int axxxxxxx = 0;
 
       while (true) {
-         byte var26 = 99;
-         long var10002 = 4347237011424027567L ^ ax;
          if (axxxxxxx <= 360) {
             double axxxxxxxx = Math.toRadians(axxxxxxx);
             float axxxxxxxxx = (float)Math.sin(axxxxxxxx) * a;
@@ -253,8 +233,6 @@ public class bqf implements dlc {
             if (axxx != null) {
                switch (var22) {
                   case -1656737386:
-                     short var27 = 14613;
-                     var10002 = 6938791057983949493L ^ ax;
                      var22 = axxxxxxxxxxxx.equals("Rainbow");
                      if (axxx == null) {
                         break;
@@ -269,8 +247,6 @@ public class bqf implements dlc {
             }
             Color axxxxxxxxxxxxx = switch (var22) {
                case 0 -> {
-                  short var24 = 10693;
-                  var10001 = 791345769362416270L ^ ax;
                   yield ezv.gbq(3000L, 0, 0.7F, 1.0F);
                }
                default -> dec.fbp(new class_5611(0.0F, 6.0F), axxxxxxxxxxx.ehf.dnp(), axxxxxxxxxxx.aoz.dnp());
@@ -285,8 +261,6 @@ public class bqf implements dlc {
          }
 
          axxxxx.method_37104();
-         short var25 = 25324;
-         var10001 = 5981950142919786789L ^ ax;
          var22 = 2848;
          break;
       }
@@ -487,15 +461,12 @@ public class bqf implements dlc {
                                           | (var10[5] & 255L) << 16
                                           | (var10[6] & 255L) << 8
                                           | var10[7] & 255L;
-                                       byte var75 = -1;
                                        var6[var51] = var76;
                                     } while (var2 < var5);
 
                                     h = var6;
                                     i = new Long[3];
                                     Builder var41 = RenderPipeline.builder(new Snippet[]{class_10799.field_56860});
-                                    short var53 = 16029;
-                                    long var67 = 3619738108258550753L ^ var31;
                                     dzt = class_10799.method_67887(
                                        var41.withLocation("pipeline/debug_filled_box")
                                           .withCull(false)
@@ -505,8 +476,6 @@ public class bqf implements dlc {
                                           .build()
                                     );
                                     Builder var42 = RenderPipeline.builder(new Snippet[]{class_10799.field_56860});
-                                    var53 = 8463;
-                                    long var68 = 2908156834246597751L ^ var31;
                                     fak = class_10799.method_67887(
                                        var42.withLocation("pipeline/debug_filled_box")
                                           .withCull(false)
@@ -515,17 +484,9 @@ public class bqf implements dlc {
                                           .withVertexFormat(class_290.field_1576, class_5596.field_27382)
                                           .build()
                                     );
-                                    short var43 = 15679;
-                                    long var55 = 5708056364104515653L ^ var31;
-                                    var53 = 32744;
-                                    long var69 = 8688287788638704379L ^ var31;
                                     fgg = class_1921.method_24049(
                                        "test", 1536, false, true, dzt, class_4688.method_23598().method_23607(class_4668.field_22241).method_23617(false)
                                     );
-                                    short var44 = 18752;
-                                    long var57 = 6932847216880907325L ^ var31;
-                                    var53 = 27299;
-                                    long var70 = 5647419312575711157L ^ var31;
                                     gpm = class_1921.method_24049(
                                        "test2", 1536, false, true, fak, class_4688.method_23598().method_23607(class_4668.field_22241).method_23617(false)
                                     );

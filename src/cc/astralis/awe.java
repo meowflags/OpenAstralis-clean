@@ -31,8 +31,6 @@ public class awe extends hcr {
 
    public awe(guu module) {
       long ax = awe.a ^ 139910953420163L;
-      short var10002 = 2982;
-      long var10003 = 1416685846781002457L ^ ax;
       super(a, "Watchdog");
    }
 
@@ -64,8 +62,6 @@ public class awe extends hcr {
             }
 
             String var9 = var8.field_3761.toLowerCase();
-            short var10001 = 29529;
-            long var10002 = 7275153385265453984L ^ ax;
             var10 = var9.contains("anticheat");
             if (axx == null) {
                break label139;
@@ -106,8 +102,6 @@ public class awe extends hcr {
                   break label144;
                }
 
-               short var16 = 17427;
-               long var19 = 1629584268406820393L ^ ax;
                if (chi.field_1724.field_6012 <= 200) {
                   var10 = axxx;
                   if (axx == null) {
@@ -130,11 +124,7 @@ public class awe extends hcr {
                      if (axx != null) {
                         if (var10 == 0) {
                            fnb var13 = fnb.hcp();
-                           var16 = 17137;
-                           var19 = 1558599713513892363L ^ ax;
                            fnb var14 = var13.ael("Disabling, Please Stay Still!", gge.INFO);
-                           var16 = 10376;
-                           var19 = 8806097277501760179L ^ ax;
                            var14.bvw(5000).evs();
                            a.gqw = true;
                         }
@@ -263,7 +253,6 @@ public class awe extends hcr {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var31 = -1;
                var6[var10001] = var10004;
             } while (var2 < var5);
 

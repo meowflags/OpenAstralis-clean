@@ -47,8 +47,6 @@ public class amg implements dlc {
       if (axx != null) {
          if (a == 0) {
             class_1661 var15 = chi.field_1724.method_31548();
-            short var10001 = 25538;
-            long var10002 = 7491535500215213857L ^ ax;
             class_1799 axxxx = var15.method_5438(40);
             class_1792 axxxxx = axxxx.method_7909();
             var14 = axxxxx instanceof class_1747;
@@ -76,8 +74,6 @@ public class amg implements dlc {
       int axxxxxxxx = var14;
 
       do {
-         short var16 = 12348;
-         long var17 = 7879215430212947164L ^ ax;
          if (axxxxxxxx >= 9) {
             break;
          }
@@ -116,8 +112,6 @@ public class amg implements dlc {
       if (var3 != null) {
          if (var10000 == class_1268.field_5810) {
             var10000 = chi.field_1724.method_31548();
-            short var10001 = 19022;
-            long var10002 = 1019408584055482426L ^ ax;
             return var10000.method_5438(40).method_7947();
          }
 
@@ -820,7 +814,6 @@ public class amg implements dlc {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var22 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 

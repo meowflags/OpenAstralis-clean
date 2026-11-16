@@ -23,12 +23,8 @@ public class fcc extends fso {
    public fcc() {
       long a = fcc.a ^ 133351423437701L;
       String[] var10001 = new String[2];
-      short var10004 = 15966;
-      long var10005 = 8214458016402256837L ^ a;
       var10001[0] = "hide";
       var10001[1] = "h";
-      short var10002 = 10117;
-      long var10003 = 7197521098603309597L ^ a;
       super(var10001, "Hide Modules (.hide <module>)");
    }
 
@@ -65,33 +61,23 @@ public class fcc extends fso {
                   axxx.atd(axxxx);
                   String var11;
                   if (axxxx != 0) {
-                     short var10 = 21570;
-                     long var14 = 2813763128974495111L ^ ax;
                      var11 = "Hid ";
                   } else {
-                     short var12 = 12821;
-                     long var15 = 8909720006624947157L ^ ax;
                      var11 = "Unhid ";
                   }
 
                   String var16 = axxx.clp();
-                  short var17 = 6707;
-                  long var10003 = 5310723181293241329L ^ ax;
                   bpa.dhu(var11 + var16 + " module.");
                   return;
                }
 
                String var8 = a[1];
-               short var13 = 2939;
-               long var10002 = 4452516233748615864L ^ ax;
                bpa.dhu("Module not found: " + var8);
             }
 
             return;
          }
 
-         short var10000 = 3508;
-         long var10001 = 2716407474982229106L ^ ax;
          bpa.dhu("Wrong Usage: .hide <module>");
       }
    }

@@ -28,14 +28,8 @@ public class gbc extends hcr {
 
    public gbc(guu parentClass) {
       long ax = gbc.a ^ 5718948125966L;
-      short var10002 = 5053;
-      long var10003 = 3888049831130352210L ^ ax;
       super(a, "Normal");
-      short var4 = 9385;
-      long var10004 = 1444561690583924037L ^ ax;
       a.djc = new bes("Horizontal Velocity", 0.0F, 0.0F, 100.0F, 1.0F);
-      short var5 = 6643;
-      var10004 = 8712471146130456606L ^ ax;
       a.cs = new bes("Vertical Velocity", 0.0F, 0.0F, 100.0F, 1.0F);
       a.dxe(new ffn[]{a.djc, a.cs});
    }
@@ -54,16 +48,13 @@ public class gbc extends hcr {
       }
 
       class_2596 axxx = var10000.bed();
-      class_2596 var9 = axxx;
       if (axx != null) {
          if (!(axxx instanceof class_2743)) {
             return;
          }
 
-         var9 = axxx;
       }
 
-      class_2743 axxxx = (class_2743)var9;
       EntityVelocityUpdateS2CPacketAccessor axxxxx = (EntityVelocityUpdateS2CPacketAccessor)a.bed();
       EntityVelocityUpdateS2CPacketAccessor var10 = axxxxx;
       if (axx != null) {
@@ -107,7 +98,6 @@ public class gbc extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

@@ -50,7 +50,6 @@ public class get extends fwu {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       byte[] var9 = var7.doFinal("Auto Block".getBytes("ISO-8859-1"));
       String var12 = b(var9).intern();
-      byte var10001 = -1;
       f = var12;
       Cipher var0;
       var10000 = var0 = Cipher.getInstance("DES/CBC/NoPadding");
@@ -83,7 +82,6 @@ public class get extends fwu {
          | (var4[5] & 255L) << 16
          | (var4[6] & 255L) << 8
          | var4[7] & 255L;
-      var10001 = -1;
       g = var14;
    }
 

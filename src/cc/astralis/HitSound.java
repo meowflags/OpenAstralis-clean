@@ -31,19 +31,9 @@ public class HitSound extends guu {
    public HitSound() {
       long a = HitSound.a ^ 72392632810428L;
       super(bfm.VISUAL);
-      short var10003 = 6494;
-      long var10004 = 5185726529625701891L ^ a;
-      short var3 = 15360;
-      long var10005 = 2519458506714618709L ^ a;
       String[] var4 = new String[3];
-      short var10008 = 12269;
-      long var10009 = 523875040060410036L ^ a;
       var4[0] = "Skeet";
-      var10008 = 25542;
-      var10009 = 3931451828202456221L ^ a;
       var4[1] = "Never Lose";
-      var10008 = 30272;
-      var10009 = 1084860117712818455L ^ a;
       var4[2] = "Dark loves them";
       a.bjz = new adu("Hit Sound", "Skeet", var4);
       a.beb(a.bjz);
@@ -58,8 +48,6 @@ public class HitSound extends guu {
       class_3414 var7 = axx;
       if (axxx != null) {
          if (axx == null) {
-            short var10001 = 11848;
-            long var10002 = 8993025369223984840L ^ ax;
             System.out.println("Sound Event is null.");
             return;
          }
@@ -84,8 +72,6 @@ public class HitSound extends guu {
       if (ax != null) {
          switch (var6) {
             case 79940188:
-               short var10001 = 12269;
-               long var10002 = 523931986951310357L ^ a;
                var6 = var4.equals("Skeet");
                if (ax == null) {
                   break label59;
@@ -100,8 +86,6 @@ public class HitSound extends guu {
                   break;
                }
             case 1919939689:
-               short var11 = 30864;
-               long var19 = 4366202651409865583L ^ a;
                var6 = var4.equals("Never Lose");
                if (ax == null) {
                   break label59;
@@ -116,8 +100,6 @@ public class HitSound extends guu {
                   break;
                }
             case 1560244837:
-               short var12 = 3023;
-               long var20 = 592413705146542130L ^ a;
                var6 = var4.equals("Dark loves them");
                if (ax == null) {
                   break label59;
@@ -134,30 +116,16 @@ public class HitSound extends guu {
       class_2960 var8;
       switch (var6) {
          case 0:
-            short var10 = 8091;
-            long var17 = 5306279200361856098L ^ a;
-            short var18 = 15034;
-            long var24 = 6781058299394103631L ^ a;
             var8 = IdentifierAccessor.createIdentifier("astralis", "effects.skeet");
             break;
          case 1:
-            short var9 = 7125;
-            long var15 = 3490749196669073454L ^ a;
-            short var16 = 6114;
-            long var23 = 1016160835100554259L ^ a;
             var8 = IdentifierAccessor.createIdentifier("astralis", "effects.neverlose");
             break;
          case 2:
-            short var7 = 7125;
-            long var13 = 3490749196669073454L ^ a;
-            short var14 = 20876;
-            long var22 = 5743831444235580027L ^ a;
             var8 = IdentifierAccessor.createIdentifier("astralis", "effects.dark");
             break;
          default:
             String var21 = a.bjz.dnp();
-            short var10003 = 16698;
-            long var10004 = 3769124419073237706L ^ a;
             throw new IllegalStateException("Unexpected value: " + var21);
       }
 

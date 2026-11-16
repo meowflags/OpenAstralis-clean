@@ -23,15 +23,9 @@ public class fq extends fso {
    public fq() {
       long a = fq.a ^ 97405649313660L;
       String[] var10001 = new String[3];
-      short var10004 = 8094;
-      long var10005 = 4588032124191278531L ^ a;
       var10001[0] = "ign";
-      var10004 = 22663;
-      var10005 = 3709508675311944411L ^ a;
       var10001[1] = "name";
       var10001[2] = "n";
-      short var10002 = 13841;
-      long var10003 = 5126942123791854671L ^ a;
       super(var10001, "Shows you your current name and copies it to youre clip board (.ign)");
    }
 
@@ -40,8 +34,6 @@ public class fq extends fso {
       long ax = fq.a ^ 42368858617379L;
       dlc.chi.field_1774.method_1455(dlc.chi.method_1548().method_1676());
       String var10000 = dlc.chi.method_1548().method_1676();
-      short var10001 = 5034;
-      long var10002 = 7729960818191933610L ^ ax;
       bpa.dhu("Your name is: " + var10000);
    }
 

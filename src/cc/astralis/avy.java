@@ -25,16 +25,8 @@ public class avy extends guu {
    public avy() {
       long a = avy.a ^ 18020828179469L;
       super(bfm.PLAYER);
-      short var10003 = 8152;
-      long var10004 = 6663471321025399731L ^ a;
-      short var3 = 19158;
-      long var10005 = 8237072490287308476L ^ a;
       String[] var4 = new String[2];
-      short var10008 = 19158;
-      long var10009 = 8237072490287308476L ^ a;
       var4[0] = "Cancel";
-      var10008 = 31330;
-      var10009 = 7517629188460129805L ^ a;
       var4[1] = "Adjust";
       a.dpp = new adu("Mode", "Cancel", var4);
       a.bfi(new ffn[]{a.dpp});
@@ -74,8 +66,6 @@ public class avy extends guu {
       if (axx != null) {
          switch (var8) {
             case 2011110042:
-               short var10001 = 22013;
-               long var10002 = 5237854772570487275L ^ ax;
                var8 = var5.equals("Cancel");
                if (axx == null) {
                   break label45;
@@ -90,8 +80,6 @@ public class avy extends guu {
                   break;
                }
             case 1956520879:
-               short var9 = 12152;
-               long var10 = 4661545536975635311L ^ ax;
                var8 = var5.equals("Adjust");
                if (axx == null) {
                   break label45;

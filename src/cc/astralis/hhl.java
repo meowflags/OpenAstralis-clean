@@ -291,26 +291,12 @@ public class hhl implements dlc {
 
       try {
          HttpsURLConnection axxx = (HttpsURLConnection)new URL(a).openConnection();
-         short var10001 = 4612;
-         long var10002 = 3190762943882636575L ^ ax;
-         short var18 = 19047;
-         long var10003 = 875302926328460654L ^ ax;
          axxx.addRequestProperty(
             "User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
          );
-         var10001 = 27791;
-         var10002 = 1334975452970701727L ^ ax;
-         short var20 = 12266;
-         var10003 = 5451810806390395132L ^ ax;
          axxx.addRequestProperty("Accept", "application/json");
-         var10001 = 29674;
-         var10002 = 467967808252562677L ^ ax;
-         short var24 = 3253;
-         long var10004 = 4595152015580705721L ^ ax;
          axxx.addRequestProperty("Authorization", "Bearer " + a);
          int var10000 = axxx.getResponseCode();
-         var10001 = 3473;
-         var10002 = 324095536592429099L ^ ax;
          if (var10000 == 200) {
             BufferedReader axxxx = new BufferedReader(new InputStreamReader(axxx.getInputStream()));
             StringBuilder axxxxx = new StringBuilder();
@@ -363,49 +349,33 @@ public class hhl implements dlc {
       try {
          String var10000 = a;
          if (axx != null) {
-            short var10001 = 6194;
-            long var10002 = 713700588347235688L ^ ax;
             if (a.startsWith("hhttps")) {
                a = a.substring(1);
-               var10001 = 13303;
-               var10002 = 5626971882013275838L ^ ax;
                a = a + "BBqLuWGf3ZE";
             }
 
-            short var7 = 8786;
-            long var13 = 8180520768655140624L ^ ax;
             var10000 = System.getProperty("os.name").toLowerCase();
          }
 
          String axxx = var10000;
-         short var14 = 17080;
-         long var19 = 247300219816036341L ^ ax;
          boolean var8 = axxx.contains("win");
          if (axx != null) {
             if (var8) {
                Runtime var11 = Runtime.getRuntime();
-               short var25 = 22433;
-               long var27 = 8458933385495630570L ^ ax;
                var11.exec("rundll32 url.dll,FileProtocolHandler " + a);
                return;
             }
 
-            var14 = 13326;
-            var19 = 1626682574716580183L ^ ax;
             var8 = axxx.contains("mac");
          }
 
          if (axx != null) {
             if (var8) {
                Runtime var10 = Runtime.getRuntime();
-               short var24 = 24747;
-               long var26 = 2830789169074136548L ^ ax;
                var10.exec("open " + a);
                return;
             }
 
-            var14 = 19140;
-            var19 = 3663635988657721244L ^ ax;
             var8 = axxx.contains("nix");
          }
 
@@ -415,8 +385,6 @@ public class hhl implements dlc {
                   break label51;
                }
 
-               var14 = 19729;
-               var19 = 6550689890211678299L ^ ax;
                var8 = axxx.contains("nux");
             }
 
@@ -426,8 +394,6 @@ public class hhl implements dlc {
          }
 
          Runtime var9 = Runtime.getRuntime();
-         short var23 = 12312;
-         long var10003 = 5904699770280195422L ^ ax;
          var9.exec("xdg-open " + a);
       } catch (IOException var5) {
          var5.printStackTrace();
@@ -518,7 +484,6 @@ public class hhl implements dlc {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var38 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 

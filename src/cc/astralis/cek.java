@@ -26,11 +26,7 @@ public class cek extends hcr {
 
    public cek(guu parentClass) {
       long ax = cek.a ^ 46348342486263L;
-      short var10002 = 13481;
-      long var10003 = 5326143707369573145L ^ ax;
       super(a, "Air 2");
-      short var4 = 7328;
-      long var10004 = 5455386959445697297L ^ ax;
       a.fab = new bes("Horizontal Velocity", 0.0F, 0.0F, 100.0F, 1.0F);
       a.ebu(a.fab);
    }
@@ -49,16 +45,13 @@ public class cek extends hcr {
       }
 
       class_2596 axxx = var10000.bed();
-      class_2596 var8 = axxx;
       if (axx != null) {
          if (!(axxx instanceof class_2743)) {
             return;
          }
 
-         var8 = axxx;
       }
 
-      class_2743 axxxx = (class_2743)var8;
       EntityVelocityUpdateS2CPacketAccessor axxxxx = (EntityVelocityUpdateS2CPacketAccessor)a.bed();
       int var9 = axxxxx.getEntityId();
       if (axx != null) {
@@ -146,7 +139,6 @@ public class cek extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

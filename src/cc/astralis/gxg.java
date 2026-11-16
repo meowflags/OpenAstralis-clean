@@ -43,10 +43,6 @@ public class gxg implements cds {
       long ax = gxg.a ^ 38121891001888L;
       evv = a;
       dqe(a);
-      short var10001 = 128;
-      long var10002 = 5424017728243974396L ^ ax;
-      short var4 = 14943;
-      long var10003 = 6419173560684411438L ^ ax;
       aar(
          "https://login.live.com/oauth20_authorize.srf?client_id="
             + a
@@ -57,14 +53,6 @@ public class gxg implements cds {
    public static afc ar(String refreshToken, String clientID) {
       long ax = gxg.a ^ 140318556806502L;
       int[] var10000 = dar.abu();
-      short var10002 = 1878;
-      long var10003 = 862103739667704941L ^ ax;
-      short var10005 = 20246;
-      long var10006 = 7085560927993472041L ^ ax;
-      short var32 = 10018;
-      long var10007 = 3775789489686760464L ^ ax;
-      short var34 = 31973;
-      long var10008 = 6068863071981377500L ^ ax;
       fhm axx = (fhm)djb.fromJson(
          hhl.grf(
             "https://login.live.com/oauth20_token.srf",
@@ -85,12 +73,6 @@ public class gxg implements cds {
 
       String axxxx = var12.hdm;
       a = axx.fot;
-      short var10001 = 13155;
-      long var19 = 4037019536189904978L ^ ax;
-      short var23 = 142;
-      long var10004 = 5178791941661060010L ^ ax;
-      short var25 = 17939;
-      long var29 = 8533222658118266147L ^ ax;
       hgq axxxxx = (hgq)djb.fromJson(
          hhl.grf(
             "https://user.auth.xboxlive.com/user/authenticate",
@@ -107,12 +89,6 @@ public class gxg implements cds {
             return new afc();
          }
 
-         var10001 = 4799;
-         long var20 = 6300585953573534090L ^ ax;
-         short var24 = 22750;
-         var10004 = 6007907726201893864L ^ ax;
-         short var27 = 1935;
-         long var30 = 4703966948649626812L ^ ax;
          var13 = (hgq)djb.fromJson(
             hhl.grf(
                "https://xsts.auth.xboxlive.com/xsts/authorize",
@@ -132,12 +108,6 @@ public class gxg implements cds {
             return new afc();
          }
 
-         var10001 = 23078;
-         long var21 = 8642188113130533150L ^ ax;
-         short var28 = 27365;
-         long var31 = 8418433594899399131L ^ ax;
-         short var33 = 10873;
-         var10007 = 1081605702488113485L ^ ax;
          var10000 = (int[])djb.fromJson(
             hhl.grf(
                "https://api.minecraftservices.com/authentication/login_with_xbox",
@@ -155,8 +125,6 @@ public class gxg implements cds {
             return new afc();
          }
 
-         var10001 = 17217;
-         long var22 = 6859803953963051133L ^ ax;
          var10000 = (int[])djb.fromJson(hhl.bvs("https://api.minecraftservices.com/minecraft/profile", axxxxxxx.dzg), dlk.class);
       }
 
@@ -179,10 +147,6 @@ public class gxg implements cds {
       } else if (ai == null) {
          label22:
          try {
-            short var10002 = 21026;
-            long var10003 = 2173881591705724980L ^ ax;
-            short var7 = 20298;
-            long var10004 = 2625259000675813555L ^ ax;
             ai = HttpServer.create(new InetSocketAddress("localhost", 8247), 0);
             ai.createContext("/", new eax(a));
             ai.setExecutor(ful);
@@ -195,7 +159,6 @@ public class gxg implements cds {
    }
 
    private static void fug() {
-      long var0 = a ^ 109443735120650L;
       int[] var2 = dar.abu();
       HttpServer var10000 = ai;
       if (var2 != null) {
@@ -295,14 +258,11 @@ public class gxg implements cds {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var40 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 
                      e = var6;
                      f = new Integer[2];
-                     short var27 = 19188;
-                     long var33 = var11 ^ 6957080074988193146L;
                      hfa = 8247;
                      ful = Executors.newSingleThreadExecutor();
                      djb = new Gson();

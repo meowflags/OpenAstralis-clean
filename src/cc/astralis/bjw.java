@@ -25,14 +25,8 @@ public class bjw extends fso {
    public bjw() {
       long a = bjw.a ^ 116151994332183L;
       String[] var10001 = new String[2];
-      short var10004 = 1278;
-      long var10005 = 2921197932119241556L ^ a;
       var10001[0] = "hclip";
-      var10004 = 21726;
-      var10005 = 37941560520729463L ^ a;
       var10001[1] = "hc";
-      short var10002 = 1860;
-      long var10003 = 2783413238019371243L ^ a;
       super(var10001, "Teleports you horizontally forward/backward.");
    }
 
@@ -45,8 +39,6 @@ public class bjw extends fso {
       String[] var17 = axx;
       if (axxx != null) {
          if (axx.length < 2) {
-            short var21 = 1073;
-            long var25 = 3387845798669691922L ^ ax;
             bpa.dhu("Wrong Usage .hclip <amount>");
             return;
          }
@@ -60,23 +52,17 @@ public class bjw extends fso {
       try {
          axxxxx = Double.parseDouble(axxxx);
       } catch (NumberFormatException var16) {
-         short var10001 = 20370;
-         long var10002 = 2389665104045270967L ^ ax;
          bpa.dhu("Invalid number: " + axxxx);
          return;
       }
 
       if (Math.abs(axxxxx) > 10.0) {
-         short var20 = 31762;
-         long var24 = 7647240224697799730L ^ ax;
          bpa.dhu("§cAmount too large. Max ±10 blocks.");
       } else {
          class_746 axxxxxx = class_310.method_1551().field_1724;
          class_746 var18 = axxxxxx;
          if (axxx != null) {
             if (axxxxxx == null) {
-               short var19 = 1883;
-               long var23 = 8289172396125171569L ^ ax;
                bpa.dhu("§cPlayer not found.");
                return;
             }
@@ -88,10 +74,6 @@ public class bjw extends fso {
          double axxxxxxxx = -Math.sin(axxxxxxx) * axxxxx;
          double axxxxxxxxx = Math.cos(axxxxxxx) * axxxxx;
          axxxxxx.method_30634(axxxxxx.method_23317() + axxxxxxxx, axxxxxx.method_23318(), axxxxxx.method_23321() + axxxxxxxxx);
-         short var22 = 3477;
-         long var26 = 5733421704566580657L ^ ax;
-         short var27 = 24709;
-         long var10003 = 8774623950540884131L ^ ax;
          bpa.dhu("§aHclipped " + axxxxx + " blocks.");
       }
    }

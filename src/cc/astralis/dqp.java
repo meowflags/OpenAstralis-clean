@@ -186,7 +186,6 @@ public class dqp extends bmd {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var0[var10001] = var10004;
       } while (var5 < var8);
 

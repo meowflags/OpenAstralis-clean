@@ -50,10 +50,6 @@ public class NoteBlock extends guu {
 
             int axxxxxxx = (Integer)var11.method_11654(class_2428.field_11324);
             String var12 = axxxxx.method_23854();
-            short var10002 = 18469;
-            long var10003 = 8737794438074922389L ^ ax;
-            short var13 = 2741;
-            long var10004 = 755552152946358020L ^ ax;
             bpa.bez("Note block at " + var12 + " has note value: " + axxxxxxx);
          }
 
@@ -86,7 +82,6 @@ public class NoteBlock extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

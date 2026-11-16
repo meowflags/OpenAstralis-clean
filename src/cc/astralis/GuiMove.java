@@ -36,32 +36,14 @@ public class GuiMove extends guu {
    public GuiMove() {
       long a = GuiMove.a ^ 74059892849784L;
       super(bfm.PLAYER);
-      short var10003 = 9765;
-      long var10004 = 3934310852022072201L ^ a;
       a.eda = new cyx("Mode", new del(a), new bu(a), new eno(a));
-      var10003 = 20683;
-      var10004 = 2011454395460191585L ^ a;
       a.aig = new gbp("Inventory", true);
-      var10003 = 2246;
-      var10004 = 4912515391632956783L ^ a;
       a.cnd = new gbp("Chest", true);
-      var10003 = 10275;
-      var10004 = 7032069324388400525L ^ a;
       a.gms = new gbp("ClickGui", true);
-      var10003 = 3197;
-      var10004 = 4049963929200712150L ^ a;
       a.gfw = new gbp("Allow Jumping", true);
-      var10003 = 10564;
-      var10004 = 8558165221640305897L ^ a;
       a.dfl = new gbp("Allow Sneaking", false);
-      var10003 = 22823;
-      var10004 = 809064306127899791L ^ a;
       a.fvw = new gbp("Allow Sprinting", true);
-      short var10001 = 27709;
-      long var10002 = 8998530603610957802L ^ a;
       ffn[] var3 = new ffn[]{a.aig, a.cnd, a.eda, a.gfw, a.dfl, a.fvw, null};
-      var10003 = 12880;
-      var10004 = 2627710720614676870L ^ a;
       var3[6] = a.gms;
       a.bfi(var3);
    }
@@ -208,15 +190,12 @@ public class GuiMove extends guu {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var40 = -1;
                         var6[var10001] = var10004;
                      } while (var2 < var5);
 
                      p = var6;
                      q = new Integer[2];
                      if (dgo() != null) {
-                        short var27 = 17666;
-                        long var33 = 5051800950307346282L ^ var20;
                         aqa("WpN5yc");
                      }
 

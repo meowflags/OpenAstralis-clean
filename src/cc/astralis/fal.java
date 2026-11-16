@@ -36,8 +36,6 @@ public class fal extends bmd {
       long ax = fal.a ^ 89707573487305L;
       a.fji(a);
       a.axc(a);
-      short var10001 = 12478;
-      long var10002 = 1388936440100908208L ^ ax;
       fll axx = bxc.emc(b, 10);
       axx.aof(a.gvd.fah(), a + 6.0F, a + 4.0F - 1.5F, cbc.fgl);
       float axxx = super.ajg() - 6.0F;
@@ -141,15 +139,8 @@ public class fal extends bmd {
                   if (var2 >= var5) {
                      c = var6;
                      d = new Integer[4];
-                     short var19 = 15731;
-                     long var23 = var14 ^ 919015584603544467L;
                      dlm = 3;
-                     short var28 = 20470;
-                     long var32 = 6706729428529408277L ^ var14;
-                     short var33 = 20084;
                      var34 = 2965660239773493398L ^ var14;
-                     short var36 = 20084;
-                     long var10005 = 2965660239773493398L ^ var14;
                      bcr = new Color(40, 40, 40);
                      return;
                   }

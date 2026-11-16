@@ -44,7 +44,6 @@ class fto {
          | (var6[5] & 255L) << 16
          | (var6[6] & 255L) << 8
          | var6[7] & 255L;
-      byte var10001 = -1;
       long var0 = var16;
       gwb = new int[class_2350.values().length];
 

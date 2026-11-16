@@ -36,32 +36,14 @@ public class Camera extends guu {
    public Camera() {
       long a = Camera.a ^ 80133711302750L;
       super(bfm.VISUAL);
-      short var10003 = 19507;
-      long var10004 = 4794871602822335358L ^ a;
       a.cmt = new gbp("Change Aspect Ratio", true);
-      var10003 = 5309;
-      var10004 = 6487330328637838335L ^ a;
       a.dtl = (bes)new bes("Zoom", 1.0F, 0.5F, 5.0F, 0.01F).bih(a.cmt::dnp);
-      var10003 = 21099;
-      var10004 = 5721840809139885352L ^ a;
       a.gff = new gbp("Modify Third Person", true);
-      var10003 = 8063;
-      var10004 = 4216524766536833075L ^ a;
       a.ahi = new gbp("Camera No Clip", true);
-      short var10001 = 22833;
-      long var10002 = 518156587203033562L ^ a;
       ffn[] var3 = new ffn[]{a.gff, a.ahi.bih(a.gff::dnp), a.cmt, a.dtl, don, boo, null, null, null, null};
-      var10003 = 21933;
-      var10004 = 3056104894110692674L ^ a;
       var3[6] = djx;
-      var10003 = 16784;
-      var10004 = 4084916608355918204L ^ a;
       var3[7] = aqe;
-      var10003 = 24746;
-      var10004 = 1851768015283372103L ^ a;
       var3[8] = afc;
-      var10003 = 32235;
-      var10004 = 3836409372684508421L ^ a;
       var3[9] = bak;
       a.bfi(var3);
    }
@@ -162,23 +144,11 @@ public class Camera extends guu {
                                  if (var2 >= var5) {
                                     p = var6;
                                     q = new Integer[5];
-                                    short var42 = 1325;
-                                    long var51 = 240395787483249479L ^ var20;
                                     don = new bes("X Item", 1.0F, -10.0F, 10.0F, 0.1F);
-                                    short var43 = 4019;
-                                    long var52 = 1987221480135717343L ^ var20;
                                     boo = new bes("Y Item", 1.0F, -10.0F, 10.0F, 0.1F);
-                                    short var44 = 21990;
-                                    long var53 = 140165374081248141L ^ var20;
                                     djx = new bes("Z Item", 1.0F, -10.0F, 10.0F, 0.1F);
-                                    short var45 = 2816;
-                                    long var54 = 8254655039519094126L ^ var20;
                                     aqe = new bes("Rot X", 0.0F, -180.0F, 180.0F, 1.0F);
-                                    short var46 = 28831;
-                                    long var55 = 7704118001324297970L ^ var20;
                                     afc = new bes("Rot Y", 0.0F, -180.0F, 180.0F, 1.0F);
-                                    short var47 = 15339;
-                                    long var56 = 5346198131752387972L ^ var20;
                                     bak = new bes("Rot Z", 0.0F, -180.0F, 180.0F, 1.0F);
                                     return;
                                  }

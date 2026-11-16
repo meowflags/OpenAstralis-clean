@@ -36,8 +36,6 @@ public class cni {
       }
 
       if (var10000.length != 0) {
-         short var25 = 16009;
-         long var10001 = 7344966756849182710L ^ ax;
          char[] axxx = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".toCharArray();
          int axxxx = (a.length + 2) / 3 * 4;
          char[] axxxxx = new char[axxxx];
@@ -49,47 +47,23 @@ public class cni {
          while (true) {
             if (axxxxxxxxx < axxxxxxxx) {
                byte var26 = a[axxxxxx++];
-               short var36 = 17784;
-               long var10002 = 2426835039441621035L ^ ax;
                int var27 = var26 & 255;
-               short var37 = 30909;
-               var10002 = 1594674663491120609L ^ ax;
                int var28 = var27 << 16;
                byte var38 = a[axxxxxx++];
-               short var61 = 15140;
-               long var10003 = 5721342868325723766L ^ ax;
                int var39 = var38 & 255;
-               short var62 = 8911;
-               var10003 = 4437280008756000670L ^ ax;
                int var29 = var28 | var39 << 8;
                byte var40 = a[axxxxxx++];
-               short var64 = 15140;
-               var10003 = 5721342868325723766L ^ ax;
                int axxxxxxxxxx = var29 | var40 & 255;
                int var41 = axxxxxxx++;
-               short var10004 = 26037;
-               long var10005 = 2587118354015891695L ^ ax;
                int var76 = axxxxxxxxxx >>> 18;
-               var10004 = 8336;
-               var10005 = 8190335096457557453L ^ ax;
                axxxxx[var41] = axxx[var76 & 63];
                int var42 = axxxxxxx++;
-               var10004 = 26323;
-               var10005 = 1587794694602863494L ^ ax;
                int var77 = axxxxxxxxxx >>> 12;
-               var10004 = 26516;
-               var10005 = 2188537449220551373L ^ ax;
                axxxxx[var42] = axxx[var77 & 63];
                int var43 = axxxxxxx++;
-               var10004 = 30245;
-               var10005 = 3666171489820025713L ^ ax;
                int var78 = axxxxxxxxxx >>> 6;
-               var10004 = 26516;
-               var10005 = 2188537449220551373L ^ ax;
                axxxxx[var43] = axxx[var78 & 63];
                int var44 = axxxxxxx++;
-               var10004 = 26516;
-               var10005 = 2188537449220551373L ^ ax;
                axxxxx[var44] = axxx[axxxxxxxxxx & 63];
                axxxxxxxxx++;
                if (axx == null) {
@@ -110,32 +84,16 @@ public class cni {
          if (axx != null) {
             if (axxxxxxxxx == 1) {
                byte var31 = a[axxxxxx];
-               short var46 = 15140;
-               long var65 = 5721342868325723766L ^ ax;
                int var32 = var31 & 255;
-               short var47 = 22862;
-               var65 = 2582961514440133649L ^ ax;
                int axxxxxxxxxxx = var32 << 16;
                int var48 = axxxxxxx++;
-               short var95 = 29467;
-               long var111 = 8973148763454776915L ^ ax;
                int var79 = axxxxxxxxxxx >>> 18;
-               var95 = 26516;
-               var111 = 2188537449220551373L ^ ax;
                axxxxx[var48] = axxx[var79 & 63];
                int var49 = axxxxxxx++;
-               var95 = 25735;
-               var111 = 984979974781514204L ^ ax;
                var79 = axxxxxxxxxxx >>> 12;
-               var95 = 26516;
-               var111 = 2188537449220551373L ^ ax;
                axxxxx[var49] = axxx[var79 & 63];
                int var50 = axxxxxxx++;
-               short var67 = 2751;
-               long var81 = 7384973899082948583L ^ ax;
                axxxxx[var50] = '=';
-               short var68 = 2355;
-               long var82 = 1682564752022527098L ^ ax;
                axxxxx[axxxxxxx] = '=';
                if (axx != null) {
                   return new String(axxxxx);
@@ -152,45 +110,23 @@ public class cni {
             }
 
             byte var33 = a[axxxxxx++];
-            short var52 = 15140;
-            long var69 = 5721342868325723766L ^ ax;
             int var34 = var33 & 255;
-            short var53 = 22862;
-            var69 = 2582961514440133649L ^ ax;
             var30 = var34 << 16;
             byte var54 = a[axxxxxx];
-            short var71 = 15140;
-            long var83 = 5721342868325723766L ^ ax;
             int var55 = var54 & 255;
-            short var72 = 14946;
-            var83 = 1288033907858370354L ^ ax;
             var45 = var55 << 8;
          }
 
          int axxxxxxxxxxx = var30 | var45;
          int var56 = axxxxxxx++;
-         short var99 = 29467;
-         long var115 = 8973148763454776915L ^ ax;
          int var85 = axxxxxxxxxxx >>> 18;
-         var99 = 26516;
-         var115 = 2188537449220551373L ^ ax;
          axxxxx[var56] = axxx[var85 & 63];
          int var57 = axxxxxxx++;
-         var99 = 25735;
-         var115 = 984979974781514204L ^ ax;
          var85 = axxxxxxxxxxx >>> 12;
-         var99 = 26516;
-         var115 = 2188537449220551373L ^ ax;
          axxxxx[var57] = axxx[var85 & 63];
          int var58 = axxxxxxx++;
-         var99 = 18860;
-         var115 = 5392428626633792754L ^ ax;
          var85 = axxxxxxxxxxx >>> 6;
-         var99 = 26516;
-         var115 = 2188537449220551373L ^ ax;
          axxxxx[var58] = axxx[var85 & 63];
-         short var73 = 2355;
-         long var88 = 1682564752022527098L ^ ax;
          axxxxx[axxxxxxx] = '=';
          return new String(axxxxx);
       } else {
@@ -211,24 +147,16 @@ public class cni {
          }
 
          if (axx % 4 != 0) {
-            short var57 = 3106;
-            long var65 = 8265652289542908300L ^ ax;
             throw new IllegalArgumentException("Invalid Base64!");
          } else {
             int var10000 = 17303;
-            long var10001 = 6544987420145624634L ^ ax;
             String var17 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
             var10000 = (short)14907;
-            var10001 = 7866746240636474303L ^ ax;
             int[] axxxx = new int[256];
             int axxxxx = 0;
 
             while (true) {
-               short var29 = 17303;
-               long var10002 = 6544987420145624634L ^ ax;
                if (axxxxx >= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".length()) {
-                  short var31 = 2355;
-                  var10002 = 1682628523088011433L ^ ax;
                   axxxx[61] = 0;
                   axxxxx = 0;
                   int axxxxxx = a.length() - 1;
@@ -239,14 +167,10 @@ public class cni {
 
                   if (axxxxxx >= 0) {
                      char var22 = a.charAt(axxxxxx);
-                     short var32 = 2355;
-                     var10002 = 1682628523088011433L ^ ax;
                      if (var22 == '=') {
                         axxxxx++;
                         if (--axxxxxx >= 0) {
                            var22 = a.charAt(axxxxxx);
-                           short var33 = 2355;
-                           var10002 = 1682628523088011433L ^ ax;
                            if (var22 == '=') {
                               axxxxx++;
                            }
@@ -254,11 +178,7 @@ public class cni {
                      }
                   }
 
-                  short var34 = 18860;
-                  var10002 = 5392373650049146913L ^ ax;
                   var10000 = axx * 6;
-                  short var35 = 14946;
-                  var10002 = 1288110874148656097L ^ ax;
                   int axxxxxxx = var10000 / 8 - axxxxx;
                   byte[] axxxxxxxx = new byte[axxxxxxx];
                   int[] axxxxxxxxx = new int[4];
@@ -268,11 +188,7 @@ public class cni {
                   for (int axxxxxxxxxxxx = 0; axxxxxxxxxxxx < a.length(); axxxxxxxxxxxx++) {
                      char axxxxxxxxxxxxx = a.charAt(axxxxxxxxxxxx);
                      if (!Character.isWhitespace(axxxxxxxxxxxxx)) {
-                        short var36 = 6360;
-                        var10002 = 593649965193392477L ^ ax;
                         if (axxxxxxxxxxxxx >= 256) {
-                           short var56 = 19407;
-                           long var64 = 8788414097033866848L ^ ax;
                            throw new IllegalArgumentException("Invalid Base64 character");
                         }
 
@@ -280,41 +196,25 @@ public class cni {
                         axxxxxxxxx[axxxxxxxxxxx++] = axxxxxxxxxxxxxx;
                         if (axxxxxxxxxxx == 4) {
                            var10000 = axxxxxxxxx[0];
-                           short var38 = 29467;
-                           var10002 = 8973221330611182208L ^ ax;
                            var10000 <<= 18;
                            int var39 = axxxxxxxxx[1];
-                           short var52 = 25735;
-                           long var10003 = 984903009974947087L ^ ax;
                            var10000 |= var39 << 12;
                            int var40 = axxxxxxxxx[2];
-                           short var53 = 18860;
-                           var10003 = 5392373650049146913L ^ ax;
                            int axxxxxxxxxxxxxxx = var10000 | var40 << 6 | axxxxxxxxx[3];
                            if (axxxxxxxxxx < axxxxxxx) {
                               int var41 = axxxxxxxxxx++;
-                              short var59 = 22862;
-                              long var10004 = 2583038479651385538L ^ ax;
                               int var54 = axxxxxxxxxxxxxxx >>> 16;
-                              short var60 = 15140;
-                              var10004 = 5721265902712279717L ^ ax;
                               axxxxxxxx[var41] = (byte)(var54 & 0xFF);
                            }
 
                            if (axxxxxxxxxx < axxxxxxx) {
                               int var42 = axxxxxxxxxx++;
-                              short var61 = 14946;
-                              long var67 = 1288110874148656097L ^ ax;
                               int var55 = axxxxxxxxxxxxxxx >>> 8;
-                              short var62 = 15140;
-                              var67 = 5721265902712279717L ^ ax;
                               axxxxxxxx[var42] = (byte)(var55 & 0xFF);
                            }
 
                            if (axxxxxxxxxx < axxxxxxx) {
                               int var43 = axxxxxxxxxx++;
-                              short var63 = 15140;
-                              long var69 = 5721265902712279717L ^ ax;
                               axxxxxxxx[var43] = (byte)(axxxxxxxxxxxxxxx & 0xFF);
                            }
 
@@ -326,8 +226,6 @@ public class cni {
                   return axxxxxxxx;
                }
 
-               short var30 = 17303;
-               var10002 = 6544987420145624634L ^ ax;
                axxxx["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(axxxxx)] = axxxxx++;
             }
          }

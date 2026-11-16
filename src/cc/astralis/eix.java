@@ -35,8 +35,6 @@ class eix {
       a.cnk = a;
       a.fde = a;
       a.fcf = a;
-      short var10003 = 29522;
-      long var10004 = 8537269858867758135L ^ ax;
       a.ewu = a.substring(a.lastIndexOf(46) + 1).toLowerCase();
       a.aof = a.dch(a.ewu);
    }
@@ -53,8 +51,6 @@ class eix {
             if (axx != null) {
                switch (var10000) {
                   case 111145:
-                     short var26 = 8775;
-                     long var10002 = 3633275468652047852L ^ ax;
                      var10000 = a.equals("png");
                      if (axx == null) {
                         break label235;
@@ -69,8 +65,6 @@ class eix {
                         break;
                      }
                   case 105441:
-                     short var27 = 19632;
-                     long var60 = 2344456372454916889L ^ ax;
                      var10000 = a.equals("jpg");
                      if (axx == null) {
                         break label235;
@@ -85,8 +79,6 @@ class eix {
                         break;
                      }
                   case 3268712:
-                     short var28 = 4798;
-                     long var61 = 2520540147046440219L ^ ax;
                      var10000 = a.equals("jpeg");
                      if (axx == null) {
                         break label235;
@@ -101,8 +93,6 @@ class eix {
                         break;
                      }
                   case 102340:
-                     short var29 = 22686;
-                     long var62 = 1072576003968374586L ^ ax;
                      var10000 = a.equals("gif");
                      if (axx == null) {
                         break label235;
@@ -117,8 +107,6 @@ class eix {
                         break;
                      }
                   case 115312:
-                     short var30 = 687;
-                     long var63 = 378980311802596608L ^ ax;
                      var10000 = a.equals("txt");
                      if (axx == null) {
                         break label235;
@@ -133,8 +121,6 @@ class eix {
                         break;
                      }
                   case 110834:
-                     short var31 = 28998;
-                     long var64 = 3378200234704322286L ^ ax;
                      var10000 = a.equals("pdf");
                      if (axx == null) {
                         break label235;
@@ -149,8 +135,6 @@ class eix {
                         break;
                      }
                   case 99640:
-                     short var32 = 31621;
-                     long var65 = 555433404368925734L ^ ax;
                      var10000 = a.equals("doc");
                      if (axx == null) {
                         break label235;
@@ -160,15 +144,11 @@ class eix {
                         break;
                      }
 
-                     short var9 = 4425;
-                     long var33 = 3393199556181167798L ^ ax;
                      var6 = 6;
                      if (axx != null) {
                         break;
                      }
                   case 3088960:
-                     short var34 = 1868;
-                     long var66 = 5249341773272860908L ^ ax;
                      var10000 = a.equals("docx");
                      if (axx == null) {
                         break label235;
@@ -178,15 +158,11 @@ class eix {
                         break;
                      }
 
-                     short var10 = 24028;
-                     long var35 = 4348461621965242924L ^ ax;
                      var6 = 7;
                      if (axx != null) {
                         break;
                      }
                   case 108272:
-                     short var36 = 16585;
-                     long var67 = 3552561947448315751L ^ ax;
                      var10000 = a.equals("mp3");
                      if (axx == null) {
                         break label235;
@@ -196,15 +172,11 @@ class eix {
                         break;
                      }
 
-                     short var11 = 7322;
-                     long var37 = 8917801791690310500L ^ ax;
                      var6 = 8;
                      if (axx != null) {
                         break;
                      }
                   case 117484:
-                     short var38 = 14891;
-                     long var68 = 648098655627867527L ^ ax;
                      var10000 = a.equals("wav");
                      if (axx == null) {
                         break label235;
@@ -214,15 +186,11 @@ class eix {
                         break;
                      }
 
-                     short var12 = 30803;
-                     long var39 = 1162420689773881248L ^ ax;
                      var6 = 9;
                      if (axx != null) {
                         break;
                      }
                   case 109967:
-                     short var40 = 24272;
-                     long var69 = 1100953719707472247L ^ ax;
                      var10000 = a.equals("ogg");
                      if (axx == null) {
                         break label235;
@@ -232,15 +200,11 @@ class eix {
                         break;
                      }
 
-                     short var13 = 30829;
-                     long var41 = 1177195536722651013L ^ ax;
                      var6 = 10;
                      if (axx != null) {
                         break;
                      }
                   case 108273:
-                     short var42 = 14102;
-                     long var70 = 2583138282399955127L ^ ax;
                      var10000 = a.equals("mp4");
                      if (axx == null) {
                         break label235;
@@ -250,15 +214,11 @@ class eix {
                         break;
                      }
 
-                     short var14 = 8107;
-                     long var43 = 8929929638015533149L ^ ax;
                      var6 = 11;
                      if (axx != null) {
                         break;
                      }
                   case 108308:
-                     short var44 = 10432;
-                     long var71 = 6388317527681001318L ^ ax;
                      var10000 = a.equals("mov");
                      if (axx == null) {
                         break label235;
@@ -268,15 +228,11 @@ class eix {
                         break;
                      }
 
-                     short var15 = 9227;
-                     long var45 = 1591762715950234608L ^ ax;
                      var6 = 12;
                      if (axx != null) {
                         break;
                      }
                   case 96980:
-                     short var46 = 3288;
-                     long var72 = 1844626459427488629L ^ ax;
                      var10000 = a.equals("avi");
                      if (axx == null) {
                         break label235;
@@ -286,15 +242,11 @@ class eix {
                         break;
                      }
 
-                     short var16 = 30002;
-                     long var47 = 772337298435566282L ^ ax;
                      var6 = 13;
                      if (axx != null) {
                         break;
                      }
                   case 120609:
-                     short var48 = 16292;
-                     long var73 = 7077936643310972934L ^ ax;
                      var10000 = a.equals("zip");
                      if (axx == null) {
                         break label235;
@@ -304,15 +256,11 @@ class eix {
                         break;
                      }
 
-                     short var17 = 14557;
-                     long var49 = 3118209063781312292L ^ ax;
                      var6 = 14;
                      if (axx != null) {
                         break;
                      }
                   case 112675:
-                     short var50 = 8780;
-                     long var74 = 7748462555183050231L ^ ax;
                      var10000 = a.equals("rar");
                      if (axx == null) {
                         break label235;
@@ -322,23 +270,17 @@ class eix {
                         break;
                      }
 
-                     short var18 = 32609;
-                     long var51 = 794271239406149787L ^ ax;
                      var6 = 15;
                      if (axx != null) {
                         break;
                      }
                   case 1827:
-                     short var52 = 16482;
-                     long var75 = 195841116168720328L ^ ax;
                      var10000 = a.equals("7z");
                      if (axx == null) {
                         break label235;
                      }
 
                      if (var10000 != 0) {
-                        short var19 = 30927;
-                        long var53 = 3214871298347820858L ^ ax;
                         var6 = 16;
                      }
                }
@@ -352,42 +294,30 @@ class eix {
                   case 1:
                   case 2:
                   case 3:
-                     short var25 = 25566;
-                     long var59 = 1362603960259640364L ^ ax;
                      var10000 = 61893;
                      break;
                   case 4:
                   case 5:
                   case 6:
                   case 7:
-                     short var24 = 7764;
-                     long var58 = 341763653969052072L ^ ax;
                      var10000 = 61897;
                      break;
                   case 8:
                   case 9:
                   case 10:
-                     short var23 = 26200;
-                     long var57 = 2715921617528682929L ^ ax;
                      var10000 = 61895;
                      break;
                   case 11:
                   case 12:
                   case 13:
-                     short var22 = 19173;
-                     long var56 = 8460899882559493394L ^ ax;
                      var10000 = 61896;
                      break;
                   case 14:
                   case 15:
                   case 16:
-                     short var21 = 32031;
-                     long var55 = 4509506179949126388L ^ ax;
                      var10000 = 61894;
                      break;
                   default:
-                     short var20 = 14126;
-                     long var54 = 6460001774187948250L ^ ax;
                      var10000 = 61787;
                }
             }
@@ -395,8 +325,6 @@ class eix {
             return (char)var10000;
          }
 
-         short var7 = 14332;
-         long var10001 = 2756939705664481281L ^ ax;
          var10000 = 61563;
       }
 

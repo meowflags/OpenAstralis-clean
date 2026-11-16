@@ -26,17 +26,9 @@ public class Disabler extends guu {
       long a = Disabler.a ^ 22322584483985L;
       super(bfm.EXPLOIT);
       String var10003 = g;
-      short var10004 = 29113;
-      long var10005 = 5542798435304387725L ^ a;
       hcr[] var3 = new hcr[]{new awe(a), new frr(a), new aoy(a), new guc(a), new fii(a), new bey(a), null, null, null};
-      short var10006 = 20617;
-      long var10007 = 8524632426966193598L ^ a;
       var3[6] = new abn(a);
-      var10006 = 8071;
-      var10007 = 4840734307414497970L ^ a;
       var3[7] = new dxa(a);
-      var10006 = 30175;
-      var10007 = 5909663410986070249L ^ a;
       var3[8] = new dlg(a);
       a.epd = new cyx(var10003, var3);
       a.beb(a.epd);

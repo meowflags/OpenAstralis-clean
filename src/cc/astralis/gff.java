@@ -27,12 +27,8 @@ public class gff extends fso {
    public gff() {
       long a = gff.a ^ 38744700719775L;
       String[] var10001 = new String[2];
-      short var10004 = 4316;
-      long var10005 = 7237026483239792523L ^ a;
       var10001[0] = "config";
       var10001[1] = "c";
-      short var10002 = 13480;
-      long var10003 = 5178008016899247097L ^ a;
       super(var10001, "Manages configurations: .config <save|relod|load|delete> <name>");
    }
 
@@ -45,8 +41,6 @@ public class gff extends fso {
       String[] var15 = axx;
       if (axxx != null) {
          if (axx.length < 2) {
-            byte var30 = 87;
-            long var45 = 6629974957502866150L ^ ax;
             bpa.dhu("Usage: #config <save|load|delete|reload|folder|list> <name>");
             return;
          }
@@ -64,8 +58,6 @@ public class gff extends fso {
       if (axxx != null) {
          switch (var16) {
             case -1268966290:
-               short var10001 = 6203;
-               long var10002 = 5218928349400316548L ^ ax;
                var16 = axxxxx.equals("folder");
                if (axxx == null) {
                   break label212;
@@ -80,8 +72,6 @@ public class gff extends fso {
                   break;
                }
             case 3322014:
-               short var31 = 3387;
-               long var46 = 4972604608414953366L ^ ax;
                var16 = axxxxx.equals("list");
                if (axxx == null) {
                   break label212;
@@ -96,8 +86,6 @@ public class gff extends fso {
                   break;
                }
             case 3522941:
-               short var32 = 26838;
-               long var47 = 3028612015508998766L ^ ax;
                var16 = axxxxx.equals("save");
                if (axxx == null) {
                   break label212;
@@ -112,8 +100,6 @@ public class gff extends fso {
                   break;
                }
             case 3327206:
-               short var33 = 27384;
-               long var48 = 6653493794660304965L ^ ax;
                var16 = axxxxx.equals("load");
                if (axxx == null) {
                   break label212;
@@ -128,8 +114,6 @@ public class gff extends fso {
                   break;
                }
             case -1335458389:
-               short var34 = 2832;
-               long var49 = 7485278084647430591L ^ ax;
                var16 = axxxxx.equals("delete");
                if (axxx == null) {
                   break label212;
@@ -151,24 +135,16 @@ public class gff extends fso {
                      case 0:
                         if (bam.eta() == fxm.WIN) {
                            File var50 = class_310.method_1551().field_1697;
-                           short var10003 = 16886;
-                           long var10004 = 6371118911065842502L ^ ax;
                            String var57 = "Astralis".toLowerCase();
-                           short var10005 = 18317;
-                           long var10006 = 2956026333063111988L ^ ax;
                            File axxxxxx = new File(var50, "/" + var57 + "/Configs");
 
                            try {
                               Runtime var18 = Runtime.getRuntime();
                               String var36 = axxxxxx.getAbsolutePath();
-                              short var52 = 19410;
-                              long var56 = 2616925448406133089L ^ ax;
                               var18.exec("explorer.exe  /select," + var36);
                            } catch (Exception var13) {
                               PrintStream var17 = System.out;
                               String var35 = String.valueOf(var13);
-                              short var51 = 8156;
-                              long var55 = 6391698234486537586L ^ ax;
                               var17.println("Error - " + var35);
                            }
 
@@ -177,15 +153,11 @@ public class gff extends fso {
                            }
                         }
 
-                        short var19 = 27322;
-                        long var37 = 2796145351794903052L ^ ax;
                         bpa.dhu("This command is only available for windows users.");
                         if (axxx != null) {
                            return;
                         }
                      case 1:
-                        short var20 = 8155;
-                        long var38 = 5827808602945305953L ^ ax;
                         bpa.dhu("available configs: ");
                         Iterator var14 = dar.gqy().dy().ddp.keySet().iterator();
 
@@ -224,8 +196,6 @@ public class gff extends fso {
                            }
 
                            dar.gqy().dy().flb(axxxx);
-                           short var39 = 676;
-                           long var53 = 5302275016287821832L ^ ax;
                            var22 = "Saved config: " + axxxx;
                         }
 
@@ -240,8 +210,6 @@ public class gff extends fso {
                         }
 
                         if (axxxx == null || axxxx.isEmpty()) {
-                           short var28 = 23858;
-                           long var43 = 2514845573192056711L ^ ax;
                            var23 = "Usage: #config load <name>";
                            break label238;
                         }
@@ -267,8 +235,6 @@ public class gff extends fso {
                            }
 
                            dar.gqy().dy().bgb(axxxx);
-                           short var40 = 31643;
-                           long var54 = 6500870510009866540L ^ ax;
                            var25 = "Deleted config: " + axxxx;
                         }
 
@@ -277,20 +243,14 @@ public class gff extends fso {
                            return;
                         }
                      default:
-                        short var26 = 8839;
-                        long var41 = 4460061637204639804L ^ ax;
                         bpa.dhu("Invalid action. Use save, load, delete, folder, or list");
                         return;
                   }
 
-                  short var27 = 4497;
-                  long var42 = 4172305524207629103L ^ ax;
                   var24 = "Usage: #config delete <name>";
                   break label228;
                }
 
-               short var29 = 10775;
-               long var44 = 2254543061898594475L ^ ax;
                var21 = "Usage: #config save <name>";
                break label183;
             }

@@ -26,20 +26,10 @@ public class bam {
    }
 
    public static String aeb() {
-      long var0 = a ^ 23824308007983L;
-      short var10000 = 4351;
-      long var10001 = 6089988196863010849L ^ var0;
-      short var2 = 23870;
-      long var10002 = 7065520277129897447L ^ var0;
       return System.getProperty("os.arch", "unknown");
    }
 
    public static String gzo() {
-      long var0 = a ^ 34445384367260L;
-      short var10000 = 471;
-      long var10001 = 8123427758929260990L ^ var0;
-      short var2 = 13002;
-      long var10002 = 210834575314584225L ^ var0;
       return System.getProperty("os.version", "unknown");
    }
 
@@ -48,11 +38,6 @@ public class bam {
    }
 
    public static String dvt() {
-      long var0 = a ^ 11605368731074L;
-      short var10000 = 10905;
-      long var10001 = 6195216438724449191L ^ var0;
-      short var2 = 29398;
-      long var10002 = 2575587421017967593L ^ var0;
       return System.getProperty("user.language", "en");
    }
 
@@ -71,27 +56,15 @@ public class bam {
 
    public static fxm eta() {
       long a = bam.a ^ 66399396095811L;
-      short var10000 = 10633;
-      long var10001 = 2058080369554244152L ^ a;
       String ax = System.getProperty("os.name", "").toLowerCase();
-      short var3 = 8954;
-      long var10002 = 622210307559704903L ^ a;
       if (ax.contains("win")) {
          return fxm.WIN;
       } else {
-         short var4 = 29765;
-         var10002 = 8524591600682901494L ^ a;
          if (ax.contains("mac")) {
             return fxm.MAC;
          } else {
-            short var5 = 13406;
-            var10002 = 5660592022499876841L ^ a;
             if (!ax.contains("nux")) {
-               short var6 = 9574;
-               var10002 = 8256284140443389654L ^ a;
                if (!ax.contains("nix")) {
-                  short var7 = 29771;
-                  var10002 = 3306278641067073527L ^ a;
                   if (!ax.contains("aix")) {
                      return fxm.UNK;
                   }

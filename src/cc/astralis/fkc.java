@@ -46,14 +46,10 @@ public class fkc {
    public void dut() {
       long a = fkc.a ^ 21986926510196L;
       int[] var10000 = dar.abu();
-      short var10002 = 32473;
-      long var10003 = 3212377921903654942L ^ a;
       ImGui.text("Current Path: " + a.gcd);
       int[] ax = var10000;
       ImGui.separator();
       ImGui.beginDisabled(a.equ.isEmpty());
-      short var7 = 26064;
-      long var10001 = 9003453280101032731L ^ a;
       boolean var8 = ImGui.button("Back");
       if (ax != null) {
          if (var8) {
@@ -61,9 +57,7 @@ public class fkc {
          }
 
          ImGui.endDisabled();
-         short var9 = 6798;
          ImGui.sameLine();
-         var10001 = 2080679810883787846L ^ a;
          ImGui.beginDisabled(a.cod.isEmpty());
          var8 = ImGui.button("Forward");
       }
@@ -74,9 +68,7 @@ public class fkc {
          }
 
          ImGui.endDisabled();
-         short var10 = 14854;
          ImGui.sameLine();
-         var10001 = 2668466015368395979L ^ a;
          var8 = ImGui.button("Up");
       }
 
@@ -94,8 +86,6 @@ public class fkc {
          }
 
          ImGui.sameLine();
-         short var11 = 12130;
-         var10001 = 5992011543584450983L ^ a;
          var8 = ImGui.button("Refresh");
       }
 
@@ -105,8 +95,6 @@ public class fkc {
          }
 
          ImGui.separator();
-         short var12 = 28608;
-         var10001 = 219671248133351692L ^ a;
          var8 = ImGui.beginChild("Directory Contents", 0.0F, 300.0F, true);
       }
 
@@ -184,12 +172,8 @@ public class fkc {
             return;
          }
 
-         short var13 = 5518;
-         var10001 = 4215718464471962432L ^ a;
          ImGui.openPopup("Confirm Selection");
-         short var14 = 16097;
          ImGui.setNextWindowSize(400.0F, 140.0F);
-         var10001 = 2886831284377008167L ^ a;
          var8 = ImGui.beginPopupModal("Confirm Selection", 2);
       }
 
@@ -198,12 +182,8 @@ public class fkc {
             return;
          }
 
-         short var15 = 21661;
-         var10001 = 1999263471998554708L ^ a;
          ImGui.text("Confirm selection of:");
-         short var16 = 28241;
          ImGui.textWrapped(a.awl);
-         var10001 = 6180644424099129502L ^ a;
          ImGui.dummy(0.0F, 5.0F);
          ImGui.separator();
          ImGui.dummy(0.0F, 5.0F);
@@ -225,8 +205,6 @@ public class fkc {
                   break label196;
                }
 
-               short var17 = 25066;
-               var10001 = 2030890861579331360L ^ a;
                var8 = ImGui.button("Cancel", 120.0F, 0.0F);
             }
 

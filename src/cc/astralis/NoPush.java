@@ -25,11 +25,7 @@ public class NoPush extends guu {
    public NoPush() {
       long a = NoPush.a ^ 100372708457391L;
       super(bfm.PLAYER);
-      short var10003 = 1834;
-      long var10004 = 838444343527822002L ^ a;
       a.fup = new gbp("Player No Push", true);
-      var10003 = 6071;
-      var10004 = 3468221218205745710L ^ a;
       a.gvb = new gbp("Water No Push", false);
       a.bfi(new ffn[]{a.fup, a.gvb});
    }
@@ -56,7 +52,6 @@ public class NoPush extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

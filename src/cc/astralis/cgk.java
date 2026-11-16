@@ -78,7 +78,6 @@ public class cgk extends fwu {
                      if (var10 != 0) {
                         var10 = a.bv().djk;
                         var13 = 17426;
-                        long var10002 = 7369398860343329682L ^ ax;
                         var13 = 20;
                         if (axxx == null) {
                            break label132;
@@ -87,7 +86,6 @@ public class cgk extends fwu {
                         if (var10 >= 20) {
                            var10 = axx.field_6012 - a.bv().gab;
                            var13 = 17734;
-                           var10002 = 8773297530687996615L ^ ax;
                            var13 = 30;
                            if (axxx == null) {
                               break label132;
@@ -96,7 +94,6 @@ public class cgk extends fwu {
                            if (var10 >= 30) {
                               var10 = axx.field_6012 - a.bv().dfw;
                               var13 = 22600;
-                              var10002 = 3664928059452284875L ^ ax;
                               var13 = 20;
                               if (axxx == null) {
                                  break label132;
@@ -240,7 +237,6 @@ public class cgk extends fwu {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var22 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 

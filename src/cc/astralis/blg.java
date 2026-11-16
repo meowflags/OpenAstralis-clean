@@ -36,53 +36,19 @@ public class blg extends class_437 implements dlc, amh {
       int axx = (int)a;
       int[] axxx = var10000;
       int axxxx = (int)a;
-      short var16 = 14628;
-      long var10001 = 7278643406914366584L ^ ax;
-      int axxxxx = 150;
-      short var17 = 23652;
-      var10001 = 8066923446275819822L ^ ax;
-      int axxxxxx = 50;
       float axxxxxxx = 8.0F;
       Color var18;
       if (a) {
-         short var10002 = 22662;
-         long var10003 = 123405628793015761L ^ ax;
-         short var45 = 4273;
-         long var10004 = 6131844326064850429L ^ ax;
-         short var57 = 2096;
-         long var10005 = 5194976979183017336L ^ ax;
-         short var68 = 8468;
-         long var10006 = 4469534060271678538L ^ ax;
          var18 = new Color(40, 40, 45, 220);
       } else {
-         short var35 = 8074;
-         long var46 = 3846230416765717185L ^ ax;
-         short var47 = 23663;
-         long var58 = 790598763161700640L ^ ax;
-         short var59 = 26769;
-         long var69 = 2649692199334772188L ^ ax;
-         short var70 = 11351;
-         long var76 = 6148027917504985361L ^ ax;
          var18 = new Color(30, 30, 35, 200);
       }
 
       Color axxxxxxxx = var18;
       Color var19;
       if (a) {
-         short var36 = 20834;
-         long var48 = 2639841980736160800L ^ ax;
-         short var49 = 19697;
-         long var60 = 3966180301221484972L ^ ax;
-         short var61 = 32509;
-         long var71 = 487204193975921575L ^ ax;
          var19 = new Color(80, 80, 90);
       } else {
-         short var37 = 19731;
-         long var50 = 8268777125021800518L ^ ax;
-         short var51 = 7706;
-         long var62 = 1776256140969118529L ^ ax;
-         short var63 = 11783;
-         long var72 = 8092961372356918083L ^ ax;
          var19 = new Color(60, 60, 70);
       }
 
@@ -90,21 +56,9 @@ public class blg extends class_437 implements dlc, amh {
          Color axxxxxxxxx = var19;
          dmp.cpp(a, a, 150.0F, 50.0F, 8.0F, axxxxxxxx);
          dmp.dnc(a, a, 150.0F, 50.0F, 8.0F, axxxxxxxx, a ? 1.8F : 1.2F, axxxxxxxxx);
-         short var28 = 23663;
-         long var38 = 790598763161700640L ^ ax;
          float var20 = axx + 30;
-         short var39 = 461;
-         long var52 = 1728173458716595332L ^ ax;
          float var29 = axxxx + 25;
-         short var73 = 11416;
-         long var77 = 1234179947585944025L ^ ax;
-         short var78 = 11416;
-         long var10007 = 1234179947585944025L ^ ax;
-         short var80 = 17425;
-         long var10008 = 6451715785384481096L ^ ax;
          dmp.baq(var20, var29, 20.0F, new Color(50, 50, 55));
-         short var30 = 6303;
-         var38 = 7181671161111317963L ^ ax;
          dmp.gnj(axx + 10, axxxx + 5, 40.0F, 40.0F, 20.0F, hcu.amw(a.hal()), null);
          int var21 = a.cit();
          if (axxx != null) {
@@ -112,59 +66,29 @@ public class blg extends class_437 implements dlc, amh {
                break label50;
             }
 
-            short var31 = 23663;
-            var38 = 790598763161700640L ^ ax;
             var21 = axx + 30;
          }
 
          float var22 = var21;
-         short var42 = 8959;
-         var52 = 8425928369888147388L ^ ax;
          dmp.asa(var22, axxxx + 25, 20.0F, 1.5F, dar.gqy().deo(), dar.gqy().cxj(), false);
       }
 
       fll var23 = dfk;
       String var32 = a.gwo();
-      short var54 = 7706;
-      long var64 = 1776256140969118529L ^ ax;
       float var43 = axx + 60;
-      short var65 = 13192;
-      long var74 = 8645992437431871183L ^ ax;
       var23.aof(var32, var43, axxxx + 15, a.cit() ? dar.gqy().deo() : Color.WHITE);
       String var25;
       if (a.cit()) {
-         short var24 = 19032;
-         var10001 = 2444806533420063516L ^ ax;
          var25 = "Premium Account";
       } else {
-         short var26 = 19796;
-         var10001 = 6754858921753353233L ^ ax;
          var25 = "Offline Account";
       }
 
       String axxxxxxxxx = var25;
-      var54 = 7706;
-      var64 = 1776256140969118529L ^ ax;
       var43 = axx + 60;
-      short var67 = 23663;
-      var74 = 790598763161700640L ^ ax;
       float var56 = axxxx + 30;
-      short var79 = 1889;
-      long var81 = 6175656380598063673L ^ ax;
-      short var82 = 8613;
-      long var84 = 3948683546568865003L ^ ax;
-      short var85 = 8613;
-      long var10009 = 3948683546568865003L ^ ax;
       cbl.ebb(axxxxxxxxx, var43, var56, new Color(180, 180, 180));
       if (a) {
-         short var83 = 8492;
-         var84 = 5133710942471173228L ^ ax;
-         short var87 = 4476;
-         var10009 = 3275928267681039417L ^ ax;
-         short var89 = 4476;
-         long var10010 = 3275928267681039417L ^ ax;
-         short var90 = 19445;
-         long var10011 = 7597213920963518122L ^ ax;
          dmp.cpp(a, a, 150.0F, 50.0F, 8.0F, new Color(255, 255, 255, 15));
       }
    }

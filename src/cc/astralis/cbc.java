@@ -49,18 +49,11 @@ public class cbc extends bmd {
       super();
       a.gaw = new ArrayList<>();
       int[] axx = var10000;
-      short var10004 = 4345;
-      long var10005 = 9160063788821229682L ^ ax;
       a.beq = new erp(dtw.EASE_IN_OUT_SINE, 300L);
-      var10004 = 32520;
-      var10005 = 8220452856284635010L ^ ax;
       a.bxz = new erp(dtw.EASE_IN_OUT_SINE, 300L);
       a.cca = a;
       a.fqg(a);
       a.fuo(a);
-      short var17 = 1194;
-      long var10001 = 8893480117252632943L ^ ax;
-      int axxx = 16;
 
       for (ffn<?> axxxx : a.cbf()) {
          label41: {
@@ -135,47 +128,25 @@ public class cbc extends bmd {
       a.axc(a);
       float axxx = a + 6.0F - 2.0F;
       a.beq.dwm(a.aks ? 1.0 : 0.0);
-      short var12 = 27955;
       dmp.cpp(a, a, a.arq(), a.ajg(), 5.0F, gb);
-      long var10001 = 3648109378523621489L ^ ax;
       dmp.cpp(a, a, a.arq(), super.ajg(), 5.0F, crk);
-      short var19 = 16714;
-      long var10002 = 5895515782007327814L ^ ax;
       bxc.emc("Sf-Ui", 11).aof(a.cca.clp(), a + 6.0F, axxx, Color.white.darker());
       String axxxx = a.cca.epz();
       String var13 = axxxx;
       if (axx != null) {
          int var14 = axxxx.length();
-         short var20 = 4399;
-         var10002 = 4745630967335083050L ^ ax;
          if (var14 > 60) {
-            short var26 = 10716;
-            long var10003 = 5101288115960145106L ^ ax;
-            short var29 = 22347;
-            long var10004 = 1546223269843718664L ^ ax;
             String var15 = axxxx.substring(0, 60 - "...".length());
-            short var21 = 31640;
-            var10002 = 6828968594870566622L ^ ax;
             axxxx = var15 + "...";
          }
 
-         short var16 = 498;
-         var10001 = 1296937962295067827L ^ ax;
          var13 = "Sf-Ui";
       }
 
-      short var23 = 20579;
-      var10002 = 7721822871290027365L ^ ax;
       bxc.emc(var13, 10).aof(axxxx, a + 6.0F, axxx + 11.0F, fgl);
       float axxxxx = super.ajg() - 12.0F;
       float var17 = a + a.arq() - (axxxxx + 6.0F);
       float var24 = a + 6.0F;
-      short var10007 = 19049;
-      long var10008 = 3378823903697274720L ^ ax;
-      short var30 = 2370;
-      long var10009 = 5116010269914350657L ^ ax;
-      short var31 = 2370;
-      long var10010 = 5116010269914350657L ^ ax;
       dmp.cpp(var17, var24, axxxxx, axxxxx, 4.0F, new Color(28, 28, 28));
       int var18 = a.cca.dsv();
       if (axx != null) {
@@ -399,8 +370,6 @@ public class cbc extends bmd {
                   if ((var35 += var25) >= var28) {
                      b = var29;
                      c = new String[5];
-                     short var38 = 14837;
-                     long var48 = 1647303624595382415L ^ var31;
                      czp = "...";
                      g = new HashMap(13);
                      Cipher var11;
@@ -465,14 +434,8 @@ public class cbc extends bmd {
                                  if (var13 >= var16) {
                                     e = var17;
                                     f = new Integer[16];
-                                    short var41 = 18500;
-                                    long var52 = var31 ^ 2965449311517219185L;
                                     elx = 4;
-                                    short var42 = 9707;
-                                    long var53 = var31 ^ 700732302808577243L;
                                     gsu = 6;
-                                    short var43 = 27654;
-                                    long var54 = var31 ^ 6887966977629437244L;
                                     eas = 60;
                                     j = new HashMap(13);
                                     Cipher var0;
@@ -524,32 +487,16 @@ public class cbc extends bmd {
                                           | (var10[5] & 255L) << 16
                                           | (var10[6] & 255L) << 8
                                           | var10[7] & 255L;
-                                       byte var72 = -1;
                                        var6[var55] = var79;
                                     } while (var2 < var5);
 
                                     h = var6;
                                     i = new Long[2];
-                                    short var65 = 23559;
-                                    long var73 = 8411112501445201212L ^ var31;
-                                    short var74 = 20950;
                                     var79 = 163263822954791147L ^ var31;
-                                    short var82 = 20950;
-                                    long var10005 = 163263822954791147L ^ var31;
                                     gb = new Color(30, 30, 30);
-                                    short var66 = 31001;
-                                    long var75 = 1136647800637270059L ^ var31;
-                                    short var76 = 130;
                                     var79 = 6360019278598427068L ^ var31;
-                                    short var84 = 130;
-                                    var10005 = 6360019278598427068L ^ var31;
                                     crk = new Color(33, 33, 33);
-                                    short var67 = 24063;
-                                    long var77 = 1413486048155700424L ^ var31;
-                                    short var78 = 15348;
                                     var79 = 8199838361593866956L ^ var31;
-                                    short var86 = 15348;
-                                    var10005 = 8199838361593866956L ^ var31;
                                     fgl = new Color(180, 180, 180).darker();
                                     return;
                                  }

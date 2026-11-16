@@ -36,9 +36,7 @@ public enum cfg {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static cfg fxk(String name) {
-      long ax = b ^ 79640051694327L;
       int[] var10000 = dar.abu();
-      long axx = f;
       int[] axxx = var10000;
       var10000 = eqj();
       cfg[] var7 = values();
@@ -189,12 +187,9 @@ public enum cfg {
                         | (var4[5] & 255L) << 16
                         | (var4[6] & 255L) << 8
                         | var4[7] & 255L;
-                     byte var38 = -1;
                      f = var48;
                      String[] var27 = new String[2];
-                     short var33 = 6132;
                      int var25 = 0;
-                     long var39 = 3489288711104186260L ^ var20;
                      int[] var49 = new int[5];
                      String var24 = var16;
                      int var26 = var16.length();
@@ -203,10 +198,7 @@ public enum cfg {
                      int var22 = -1;
 
                      while (true) {
-                        short var34 = 12392;
-                        long var40 = 6400587531921481743L ^ var20;
                         String var50 = a(85, a(var24.substring(++var22, var22 + var23)));
-                        var38 = -1;
                         var27[var25++] = var50;
                         if ((var22 += var23) >= var26) {
                            a = var27;
@@ -256,12 +248,9 @@ public enum cfg {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 88178797799499L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 31767;
-         long var10005 = 8639592207148267294L ^ var1;
          var10000[0] = (char)(var10003 ^ '0');
       }
 
@@ -269,7 +258,6 @@ public enum cfg {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 103459633798030L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -277,43 +265,34 @@ public enum cfg {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 12978;
-         long var10009 = 5478481308983724661L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 11597;
-               long var23 = 4217626868104992139L ^ var2;
                var10 = 115;
                break;
             case 1:
                var10 = 26553;
-               long var22 = 1177126824176443252L ^ var2;
                var10 = 24;
                break;
             case 2:
                var10 = 3473;
-               long var21 = 8773215490636133723L ^ var2;
                var10 = 66;
                break;
             case 3:
                var10 = 29816;
-               long var20 = 987260915417107639L ^ var2;
                var10 = 23;
                break;
             case 4:
                var10 = 15825;
-               long var19 = 4371738985074689306L ^ var2;
                var10 = 34;
                break;
             case 5:
                var10 = 9980;
-               long var18 = 7589692151907262004L ^ var2;
                var10 = 22;
                break;
             default:
                var10 = 31141;
-               long var17 = 8221877394622038368L ^ var2;
                var10 = 48;
          }
 

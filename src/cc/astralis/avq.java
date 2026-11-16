@@ -39,8 +39,6 @@ public class avq extends guu {
       long ax = avq.a ^ 120878497251612L;
       int[] var10000 = dar.abu();
       double var10002 = a.buo.dnp().intValue();
-      short var10003 = 26245;
-      long var10004 = 5186733959573098595L ^ ax;
       a.efe(String.valueOf(ftb.hbp(var10002, 6)));
       int[] axx = var10000;
       class_1309 axxx = dar.gqy().aws().diy(ekb.class).gvw;
@@ -143,12 +141,8 @@ public class avq extends guu {
                      int var20 = (var27 = a - 0.0) == 0.0 ? 0 : (var27 < 0.0 ? -1 : 1);
                      if (axx != null) {
                         if (var20 > 0) {
-                           short var21 = 21235;
-                           long var24 = 6229066711129893767L ^ ax;
                            var20 = -45;
                         } else {
-                           short var22 = 17212;
-                           long var25 = 6598539049297590857L ^ ax;
                            var20 = 45;
                         }
                      }
@@ -174,12 +168,8 @@ public class avq extends guu {
 
                   if (axx != null) {
                      if (var10001 > 0) {
-                        short var17 = 7334;
-                        long var10002 = 5747110825395971537L ^ ax;
                         var10001 = 45;
                      } else {
-                        short var18 = 11493;
-                        long var23 = 405631583200531859L ^ ax;
                         var10001 = -45;
                      }
                   }

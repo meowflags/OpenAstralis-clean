@@ -139,8 +139,6 @@ public enum bfm {
                                  if (var2 >= var5) {
                                     b = var6;
                                     c = new Integer[5];
-                                    short var29 = 20479;
-                                    long var36 = 8415668347169245928L ^ var20;
                                     COMBAT = new bfm(var11[2]);
                                     efy(22);
                                     MOVEMENT = new bfm(var11[11]);
@@ -149,7 +147,6 @@ public enum bfm {
                                     VISUAL = new bfm(var11[5]);
                                     EXPLOIT = new bfm(var11[6]);
                                     String var44 = var11[10];
-                                    short var48 = 14668;
                                     var49 = 722215381007989849L ^ var20;
                                     CLIENT = new bfm(var11[0]);
                                     return;
@@ -214,14 +211,11 @@ public enum bfm {
    }
 
    public static int egc() {
-      long var0 = a ^ 877379365480L;
       int[] var2 = dar.abu();
       int var3 = cmu();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 32608;
-            long var10001 = 3182213891602931097L ^ var0;
             return 67;
          }
 

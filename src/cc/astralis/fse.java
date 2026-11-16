@@ -30,7 +30,6 @@ public class fse {
 
    public fse(String name, String description) {
       long ax = fse.a ^ 40517696339819L;
-      long axx = b;
       int[] var10000 = glz();
       super();
       a.gdd = a;
@@ -82,7 +81,6 @@ public class fse {
          | (var6[5] & 255L) << 16
          | (var6[6] & 255L) << 8
          | var6[7] & 255L;
-      byte var10001 = -1;
       b = var7;
       if (glz() != null) {
          bmj(new int[4]);

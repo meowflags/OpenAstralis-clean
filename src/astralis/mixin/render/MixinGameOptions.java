@@ -47,15 +47,12 @@ public class MixinGameOptions {
       )
    )
    private class_7172<Integer> blur$overrideBlurriness(class_315 a) {
-      long ax = b ^ 42226334462836L;
       dk axx = dar.gqy().aws().diy(dk.class);
       if (axx != null && axx.dsv() && axx.chd.dnp()) {
          String[] var5 = MixinGameOptions.a;
          String var10002 = var5[1];
          class_7277 var10003 = class_7172.method_42717(class_2561.method_43471(var5[0]));
          class_7303 var10004 = (axxx, axxxx) -> class_2561.method_43469(MixinGameOptions.a[2], new Object[]{axxx, axxxx});
-         short var10008 = 32003;
-         long var10009 = 6773462802065946361L ^ ax;
          return new class_7172(var10002, var10003, var10004, new class_7174(0, 20), axx.fcg.dnp().intValue(), axxx -> {});
       } else {
          return a.field_49476;
@@ -145,19 +142,14 @@ public class MixinGameOptions {
                      c = var6;
                      d = new Integer[12];
                      String[] var22 = new String[3];
-                     short var27 = 16675;
                      int var20 = 0;
-                     long var32 = 232090450398494880L ^ var15;
                      String var19 = var11;
                      int var21 = var11.length();
                      char var18 = '*';
                      int var17 = -1;
 
                      while (true) {
-                        short var28 = 18031;
-                        long var33 = 6589687097203574761L ^ var15;
                         String var40 = a(112, a(var19.substring(++var17, var17 + var18)));
-                        byte var34 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            a = var22;
@@ -198,12 +190,9 @@ public class MixinGameOptions {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 89767861355085L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 6064;
-         long var10005 = 1912985187921456496L ^ var1;
          var10000[0] = (char)(var10003 ^ 's');
       }
 
@@ -211,7 +200,6 @@ public class MixinGameOptions {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 51294843758453L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -219,43 +207,34 @@ public class MixinGameOptions {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 11355;
-         long var10009 = 3354158841931051946L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 15695;
-               long var23 = 7872878489667674812L ^ var2;
                var10 = 20;
                break;
             case 1:
                var10 = 32052;
-               long var22 = 3340564281563538112L ^ var2;
                var10 = 116;
                break;
             case 2:
                var10 = 10116;
-               long var21 = 5667755048925280371L ^ var2;
                var10 = 30;
                break;
             case 3:
                var10 = 11777;
-               long var20 = 5307574295366709755L ^ var2;
                var10 = 75;
                break;
             case 4:
                var10 = 19637;
-               long var19 = 1159645929280885580L ^ var2;
                var10 = 43;
                break;
             case 5:
                var10 = 5858;
-               long var18 = 4607587144897497360L ^ var2;
                var10 = 127;
                break;
             default:
                var10 = 18505;
-               long var17 = 2881755187877140415L ^ var2;
                var10 = 115;
          }
 

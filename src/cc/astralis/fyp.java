@@ -34,11 +34,7 @@ class fyp {
       a.fgu = a;
       a.afs = dar.gqy().deo();
       a.frs = dar.gqy().cxj();
-      short var10004 = 13100;
-      long var10005 = 6372972534865142963L ^ ax;
       a.apg = new erp(dtw.EASE_OUT_BACK, 800L);
-      var10004 = 14253;
-      var10005 = 5872098799670108211L ^ ax;
       a.fjf = new erp(dtw.EASE_IN_OUT_QUAD, 800L);
       a.apg.bpt(0.0);
       a.apg.gbi(10.0);
@@ -183,7 +179,6 @@ class fyp {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

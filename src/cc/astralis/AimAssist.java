@@ -38,20 +38,10 @@ public class AimAssist extends guu {
    public AimAssist() {
       long a = AimAssist.a ^ 106561042914098L;
       super(bfm.COMBAT);
-      short var10003 = 3528;
-      long var10004 = 7210878921415089198L ^ a;
       a.fsn = new bes("Range", 5.0F, 1.0F, 6.0F, 0.1F);
-      var10003 = 6958;
-      var10004 = 721233996133452494L ^ a;
       a.fmo = new gbp("1.8 Swing Order", false);
-      var10003 = 28235;
-      var10004 = 6051667497571172265L ^ a;
       a.cts = new bes("Hit Cool Down", 200.0F, 0.0F, 1000.0F, 1.0F);
-      var10003 = 16333;
-      var10004 = 3731740550070398508L ^ a;
       a.gsl = new bes("Min Rotation Speed", 100.0F, 0.0F, 180.0F, 1.0F);
-      var10003 = 2340;
-      var10004 = 5366684964885747911L ^ a;
       a.ceb = new bes("Max Rotation Speed", 100.0F, 0.0F, 180.0F, 1.0F);
       a.gif = new ArrayList<>();
       a.cuf = new cbm();

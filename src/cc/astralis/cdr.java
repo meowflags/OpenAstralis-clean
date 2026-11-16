@@ -170,24 +170,16 @@ public abstract class cdr {
                                     String var29 = var11[2];
                                     hjr = 0;
                                     adf(var29);
-                                    short var47 = 15040;
-                                    long var10005 = 8260500375291495672L ^ var20;
                                     cdr[] var48 = new cdr[3];
                                     String[] var10006 = new String[3];
                                     String var10007 = var11[3];
-                                    short var10011 = 6453;
-                                    long var10012 = 1002206762459703043L ^ var20;
                                     String var10013 = var11[1];
                                     int[] var10014 = new int[2];
                                     String[] var10015 = new String[4];
                                     String var10017 = var11[0];
                                     String[] var10018 = new String[2];
                                     String var10019 = var11[4];
-                                    short var10024 = 27643;
-                                    long var10025 = 6286032918803895756L ^ var20;
                                     String[] var10026 = new String[5];
-                                    short var10028 = 24671;
-                                    long var10029 = 6932028929893654122L ^ var20;
                                     gig = 0;
                                     cdr[] var10031 = new cdr[2];
                                     int[] var10032 = new int[4];
@@ -311,14 +303,11 @@ public abstract class cdr {
    }
 
    public static int eqg() {
-      long var0 = b ^ 82939838242018L;
       int[] var2 = dar.abu();
       int var3 = cub();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 21448;
-            long var10001 = 7013959633889909121L ^ var0;
             return 119;
          }
 
@@ -361,14 +350,11 @@ public abstract class cdr {
    }
 
    public static int fra() {
-      long var0 = b ^ 35647653519787L;
       int[] var2 = dar.abu();
       int var3 = hgn();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 28323;
-            long var10001 = 5278095071406348712L ^ var0;
             return 99;
          }
 
@@ -435,14 +421,11 @@ public abstract class cdr {
    }
 
    public static int cag() {
-      long var0 = b ^ 69604596111538L;
       int[] var2 = dar.abu();
       int var3 = fjm();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 16048;
-            long var10001 = 7688783323299934368L ^ var0;
             return 110;
          }
 
@@ -461,14 +444,11 @@ public abstract class cdr {
    }
 
    public static int hdt() {
-      long var0 = b ^ 935920719558L;
       int[] var2 = dar.abu();
       int var3 = bsq();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 810;
-            long var10001 = 7146670185374925638L ^ var0;
             return 113;
          }
 
@@ -487,14 +467,11 @@ public abstract class cdr {
    }
 
    public static int hbi() {
-      long var0 = b ^ 65388045966112L;
       int[] var2 = dar.abu();
       int var3 = afr();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 2526;
-            long var10001 = 2925293874262803549L ^ var0;
             return 10;
          }
 
@@ -513,14 +490,11 @@ public abstract class cdr {
    }
 
    public static int feu() {
-      long var0 = b ^ 132016595838372L;
       int[] var2 = dar.abu();
       int var3 = abn();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 30095;
-            long var10001 = 5186627646252205706L ^ var0;
             return 109;
          }
 
@@ -555,7 +529,6 @@ public abstract class cdr {
    }
 
    public static boolean ace() {
-      long var0 = b ^ 135675603999464L;
       int[] var2 = dar.abu();
       boolean var3 = ef();
       boolean var10000 = var3;
@@ -611,14 +584,11 @@ public abstract class cdr {
    }
 
    public static int gjt() {
-      long var0 = b ^ 80259332826961L;
       int[] var2 = dar.abu();
       int var3 = acc();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 21488;
-            long var10001 = 4736734176917103109L ^ var0;
             return 48;
          }
 
@@ -661,7 +631,6 @@ public abstract class cdr {
    }
 
    public static boolean afn() {
-      long var0 = b ^ 121745326324615L;
       int[] var2 = dar.abu();
       boolean var3 = fhj();
       boolean var10000 = var3;
@@ -717,7 +686,6 @@ public abstract class cdr {
    }
 
    public static int ezl() {
-      long var0 = b ^ 50570077722662L;
       int[] var2 = dar.abu();
       int var3 = gcc();
       int var10000 = var3;
@@ -749,7 +717,6 @@ public abstract class cdr {
    }
 
    public static int cze() {
-      long var0 = b ^ 89776538577395L;
       int[] var2 = dar.abu();
       int var3 = drn();
       int var10000 = var3;
@@ -781,7 +748,6 @@ public abstract class cdr {
    }
 
    public static boolean dpc() {
-      long var0 = b ^ 41905196242023L;
       int[] var2 = dar.abu();
       boolean var3 = cge();
       boolean var10000 = var3;

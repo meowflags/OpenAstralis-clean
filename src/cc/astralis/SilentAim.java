@@ -60,119 +60,45 @@ public class SilentAim extends guu {
    public SilentAim() {
       long a = SilentAim.a ^ 36880257364086L;
       super(bfm.COMBAT);
-      short var10003 = 30728;
-      long var10004 = 7953229018705552167L ^ a;
-      short var35 = 31343;
-      long var10005 = 1960545951199387991L ^ a;
       String[] var67 = new String[3];
-      short var10008 = 31343;
-      long var10009 = 1960545951199387991L ^ a;
       var67[0] = "Normal";
-      var10008 = 927;
-      var10009 = 5338264378376296637L ^ a;
       var67[1] = "Silent";
-      var10008 = 27409;
-      var10009 = 7059447205718421548L ^ a;
       var67[2] = "Flex";
       a.ggy = new adu("Mode", "Normal", var67);
-      var10003 = 27854;
-      var10004 = 5313805394322192367L ^ a;
       a.deb = new bes("Range", 4.5F, 1.0F, 6.0F, 0.1F);
-      var10003 = 28546;
-      var10004 = 2053113130001888440L ^ a;
       a.ff = new bes("FOV", 90.0F, 1.0F, 180.0F, 1.0F);
-      var10003 = 28298;
-      var10004 = 6687961805906408885L ^ a;
       a.fd = new gbp("Use Sensitivity", true);
-      var10003 = 30222;
-      var10004 = 7100042087782149418L ^ a;
       a.dxd = new gbp("Only While Clicking", false);
-      var10003 = 7725;
-      var10004 = 5166220133049894144L ^ a;
       a.cjg = new gbp("Weapon Only", false);
-      var10003 = 15810;
-      var10004 = 6418421380856522492L ^ a;
       a.cjf = new gbp("Ignore Teammates", false);
-      var10003 = 31497;
-      var10004 = 7244066710292357173L ^ a;
       a.gzv = new gbp("Though Walls", false);
-      var10003 = 8758;
-      var10004 = 8097949212642261252L ^ a;
       a.hda = new gbp("Stop Aiming on Target", false);
-      var10003 = 16703;
-      var10004 = 4174540189984741912L ^ a;
       a.gcy = new gbp("Slow Aim if Close", true);
-      var10003 = 1758;
-      var10004 = 3186086160944471547L ^ a;
       a.gux = (bes)new bes("Slow Aim Threshold", 10.0F, 1.0F, 30.0F, 1.0F).bih(a.gcy::dnp);
-      var10003 = 7153;
-      var10004 = 3425859419194851543L ^ a;
       a.cte = (bes)new bes("Slow Aim Factor", 0.3F, 0.1F, 1.0F, 0.1F).bih(a.gcy::dnp);
-      var10003 = 30311;
-      var10004 = 4509748522956811612L ^ a;
       a.cxj = new gbp("Take Curved Way", false);
-      var10003 = 10784;
-      var10004 = 2053718109340152073L ^ a;
       a.fzb = (bes)new bes("Curve Amplitude", 1.5F, 0.5F, 5.0F, 0.1F).bih(a.cxj::dnp);
-      var10003 = 2388;
-      var10004 = 351719911379014263L ^ a;
       a.bff = (bes)new bes("Curve Frequency", 0.3F, 0.1F, 1.5F, 0.05F).bih(a.cxj::dnp);
-      var10003 = 17714;
-      var10004 = 6974823618677235224L ^ a;
       a.brm = new bes("Min Speed", 3.0F, 1.0F, 15.0F, 0.1F);
-      var10003 = 19214;
-      var10004 = 7036203271295946789L ^ a;
       a.fpp = new bes("Max Speed", 6.0F, 1.0F, 20.0F, 0.1F);
-      var10003 = 9249;
-      var10004 = 1867478239720259337L ^ a;
       a.acu = new bes("Random Amount", 1.0F, 0.0F, 5.0F, 0.1F);
-      var10003 = 24512;
-      var10004 = 3861473497659884793L ^ a;
       a.emm = new bes("Random Frequency", 0.3F, 0.05F, 2.0F, 0.05F);
       a.egm = 0.0F;
       a.fh = 0;
       a.anv = false;
-      short var10001 = 6847;
-      long var10002 = 5770393222059781850L ^ a;
       ffn[] var3 = new ffn[]{a.ggy, a.deb, a.ff, a.fd, a.brm, a.fpp, null, null, null, null, null, null, null, null, null, null, null, null, null};
-      var10003 = 14982;
-      var10004 = 1493188800026824425L ^ a;
       var3[6] = a.cjg;
-      var10003 = 19996;
-      var10004 = 1109123320207948402L ^ a;
       var3[7] = a.dxd;
-      var10003 = 18499;
-      var10004 = 5823633853097262119L ^ a;
       var3[8] = a.cjf;
-      var10003 = 29412;
-      var10004 = 4350541447197263496L ^ a;
       var3[9] = a.gzv;
-      var10003 = 28163;
-      var10004 = 4820647502951553643L ^ a;
       var3[10] = a.hda;
-      var10003 = 8171;
-      var10004 = 7867947616034941824L ^ a;
       var3[11] = a.gcy;
-      var10003 = 28254;
-      var10004 = 3106033526362577464L ^ a;
       var3[12] = a.gux;
-      var10003 = 6596;
-      var10004 = 1960178898609171875L ^ a;
       var3[13] = a.cte;
-      var10003 = 30766;
-      var10004 = 3545106078976511053L ^ a;
       var3[14] = a.cxj;
-      var10003 = 18320;
-      var10004 = 1863568349737759738L ^ a;
       var3[15] = a.fzb;
-      var10003 = 8940;
-      var10004 = 589091958891992717L ^ a;
       var3[16] = a.bff;
-      var10003 = 25066;
-      var10004 = 8735227110279517575L ^ a;
       var3[17] = a.acu;
-      var10003 = 28054;
-      var10004 = 659869461956434431L ^ a;
       var3[18] = a.emm;
       a.bfi(var3);
    }
@@ -333,8 +259,6 @@ public class SilentAim extends guu {
             if (axx != null) {
                switch (var26) {
                   case -1955878649:
-                     short var10001 = 24251;
-                     long var10002 = 1528242106189825155L ^ ax;
                      var26 = var17.equals("Normal");
                      if (axx == null) {
                         break label147;
@@ -349,8 +273,6 @@ public class SilentAim extends guu {
                         break;
                      }
                   case -1818460043:
-                     short var27 = 26650;
-                     long var29 = 8957008784972673568L ^ ax;
                      var26 = var17.equals("Silent");
                      if (axx == null) {
                         break label147;
@@ -365,8 +287,6 @@ public class SilentAim extends guu {
                         break;
                      }
                   case 2192409:
-                     short var28 = 9420;
-                     long var30 = 5568364506756038392L ^ ax;
                      var26 = var17.equals("Flex");
                      if (axx == null) {
                         break label147;
@@ -437,8 +357,6 @@ public class SilentAim extends guu {
             var10 = a.fh;
          }
 
-         short var10001 = 5618;
-         long var10002 = 1273727101809050241L ^ ax;
          if (var10 < 15) {
             return;
          }
@@ -754,7 +672,6 @@ public class SilentAim extends guu {
                                        | (var4[5] & 255L) << 16
                                        | (var4[6] & 255L) << 8
                                        | var4[7] & 255L;
-                                    byte var41 = -1;
                                     v = var50;
                                     return;
                                  }

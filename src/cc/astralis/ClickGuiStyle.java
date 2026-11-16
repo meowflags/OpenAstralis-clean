@@ -39,66 +39,22 @@ public class ClickGuiStyle extends guu {
 
    public ClickGuiStyle() {
       long a = ClickGuiStyle.a ^ 88186770967055L;
-      short var10002 = 27467;
-      long var10003 = 7384325445755836013L ^ a;
       super(bfm.VISUAL, 344);
-      short var5 = 18107;
-      long var10004 = 2759237807182245576L ^ a;
-      short var19 = 11930;
-      long var10005 = 228222474198714092L ^ a;
       String[] var33 = new String[3];
-      short var10008 = 11942;
-      long var10009 = 3647115420588279511L ^ a;
       var33[0] = "Imgui";
-      var10008 = 25356;
-      var10009 = 4286326299898923902L ^ a;
       var33[1] = "Dropdown";
-      var10008 = 11930;
-      var10009 = 228222474198714092L ^ a;
       var33[2] = "Astralis";
       a.btx = new adu("Mode", "Astralis", var33);
-      short var6 = 29036;
-      var10004 = 7207955339131509016L ^ a;
       a.ejf = new bes("Imgui Alpha", 240.0F, 0.0F, 255.0F, 1.0F);
-      short var7 = 602;
-      var10004 = 3071866221391358511L ^ a;
       a.cof = new gbp("Blur", true);
-      short var8 = 738;
-      var10004 = 7101460557567371925L ^ a;
       a.hhk = new gbp("Only Blur Imgui", false);
-      short var9 = 21288;
-      var10004 = 2126014252662389592L ^ a;
       a.eo = new bes("Blur Radius", 7.0F, 1.0F, 50.0F, 1.0F);
-      short var10 = 11711;
-      var10004 = 1875536054612919748L ^ a;
       a.fik = new gbp("Gradient", true);
-      short var11 = 4301;
-      var10004 = 3706392816434526389L ^ a;
       a.cvi = new gbp("Only Gradient With Imgui", false);
-      short var12 = 5918;
-      var10004 = 617682022817152864L ^ a;
       a.giq = new bes("Gradient Alpha", 55.0F, 1.0F, 255.0F, 1.0F);
-      short var13 = 18356;
-      var10004 = 6121195337136566216L ^ a;
-      short var10006 = 14569;
-      long var10007 = 3045534332942140871L ^ a;
-      short var35 = 14942;
-      long var40 = 7604280631087875953L ^ a;
-      var10008 = 3368;
-      var10009 = 5893150852530630661L ^ a;
       a.clb = new acn("Color", new Color(78, 73, 165));
-      short var14 = 16265;
-      var10004 = 3378872232881821686L ^ a;
-      var10006 = 12125;
-      var10007 = 4309550962764206712L ^ a;
-      short var37 = 20000;
-      long var42 = 4050273958091698948L ^ a;
-      var10008 = 5715;
-      var10009 = 1397662354952907640L ^ a;
       a.eem = new acn("Hover Color", new Color(66, 61, 140));
       a.bja = new gaf();
-      short var10001 = 1241;
-      long var4 = 4661484237782710768L ^ a;
       ffn[] var3 = new ffn[]{a.btx, a.cof.bih(() -> {
          long ax = ClickGuiStyle.a ^ 120699933667943L;
          short var10001x = 11942;
@@ -161,8 +117,6 @@ public class ClickGuiStyle extends guu {
             return var10000 ? true : false;
          }
       }), null, null, null, null};
-      short var15 = 30832;
-      var10004 = 3302555396282418519L ^ a;
       var3[6] = a.giq.bih(() -> {
          long ax = ClickGuiStyle.a ^ 120778519841586L;
          int[] var3x = dar.abu();
@@ -181,24 +135,18 @@ public class ClickGuiStyle extends guu {
             return var10000 ? true : false;
          }
       });
-      short var16 = 20814;
-      var10004 = 2682155171491753058L ^ a;
       var3[7] = a.ejf.bih(() -> {
          long ax = ClickGuiStyle.a ^ 80752484212380L;
          short var10001x = 11942;
          long var10002x = 3647125578421178948L ^ ax;
          return a.btx.emb("Imgui");
       });
-      short var17 = 24297;
-      var10004 = 660778176315302849L ^ a;
       var3[8] = a.clb.bih(() -> {
          long ax = ClickGuiStyle.a ^ 100365317949299L;
          short var10001x = 11942;
          long var10002x = 3647110144056363947L ^ ax;
          return a.btx.emb("Imgui");
       });
-      short var18 = 9138;
-      var10004 = 1120345234682470040L ^ a;
       var3[9] = a.eem.bih(() -> {
          long ax = ClickGuiStyle.a ^ 45034611254153L;
          short var10001x = 11942;
@@ -222,8 +170,6 @@ public class ClickGuiStyle extends guu {
       if (a != null) {
          switch (var6) {
             case 70766967:
-               short var10001 = 10178;
-               long var10002 = 5108993456514841133L ^ ax;
                var6 = var4.equals("Imgui");
                if (a == null) {
                   break label90;
@@ -238,8 +184,6 @@ public class ClickGuiStyle extends guu {
                   break;
                }
             case -268477211:
-               short var9 = 3278;
-               long var11 = 4079359511127429410L ^ ax;
                var6 = var4.equals("Astralis");
                if (a == null) {
                   break label90;
@@ -254,8 +198,6 @@ public class ClickGuiStyle extends guu {
                   break;
                }
             case -367417295:
-               short var10 = 6085;
-               long var12 = 4834107428238428718L ^ ax;
                var6 = var4.equals("Dropdown");
                if (a == null) {
                   break label90;

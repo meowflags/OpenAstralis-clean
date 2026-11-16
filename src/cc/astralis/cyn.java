@@ -29,8 +29,6 @@ public class cyn extends fwu {
 
    public cyn() {
       long a = cyn.a ^ 88707157759900L;
-      short var10001 = 32399;
-      long var10002 = 1477938906907462259L ^ a;
       super("Prediction");
       a.fzh = 0;
       a.eid = new gbg();
@@ -42,8 +40,6 @@ public class cyn extends fwu {
 
    private String ey(class_243 a) {
       long ax = cyn.a ^ 112637995619210L;
-      short var10000 = 29079;
-      long var10001 = 2096195019910627708L ^ ax;
       return String.format("(%.3f, %.3f, %.3f)", a.field_1352, a.field_1351, a.field_1350);
    }
 
@@ -75,7 +71,6 @@ public class cyn extends fwu {
       while (true) {
          byte[] var17 = var9.doFinal(var13.substring(++var11, var11 + var12).getBytes("ISO-8859-1"));
          String var22 = b(var17).intern();
-         byte var10001 = -1;
          var16[var14++] = var22;
          if ((var11 += var12) >= var15) {
             f = var16;
@@ -111,7 +106,6 @@ public class cyn extends fwu {
                | (var6[5] & 255L) << 16
                | (var6[6] & 255L) << 8
                | var6[7] & 255L;
-            var10001 = -1;
             long var0 = var25;
             fqo = (int)var0;
             return;

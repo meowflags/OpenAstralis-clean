@@ -33,8 +33,6 @@ public class gqs extends blz {
    public gqs() {
       long a = b ^ 139950668338483L;
       super();
-      short var10004 = 5335;
-      long var10005 = 7741881176100800887L ^ a;
       a.boa = new File(a.bf, "drag.json");
    }
 
@@ -50,11 +48,7 @@ public class gqs extends blz {
          if (var5.hasNext()) {
             env axxx = (env)var5.next();
             JsonObject axxxx = new JsonObject();
-            short var10001 = 22608;
-            long var10002 = 2977320769443052069L ^ a;
             axxxx.addProperty("xPos", axxx.grp());
-            var10001 = 24152;
-            var10002 = 4359651582824856623L ^ a;
             axxxx.addProperty("yPos", axxx.azb());
             ax.add(axxx.cdc(), axxxx);
             if (axx == null) {
@@ -118,14 +112,10 @@ public class gqs extends blz {
                               break label63;
                            }
 
-                           short var10002 = 23553;
-                           long var10003 = 2560621379103465449L ^ a;
                            axxxxxxxx.biu(axxxxxxx.get("xPos").getAsFloat());
                            var16 = axxxxxxxx;
                         }
 
-                        short var17 = 30049;
-                        long var18 = 7811853833831790222L ^ a;
                         var16.dfy(axxxxxxx.get("yPos").getAsFloat());
                      }
 

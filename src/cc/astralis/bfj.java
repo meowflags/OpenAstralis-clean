@@ -11,7 +11,6 @@ public class bfj {
    }
 
    public static void duq() {
-      long var0 = a ^ 118005792473660L;
       int[] var2 = dar.abu();
       Object var10000 = dsz;
       if (var2 != null) {

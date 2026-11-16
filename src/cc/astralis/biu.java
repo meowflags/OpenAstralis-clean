@@ -67,7 +67,6 @@ public class biu extends bmd {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       byte[] var9 = var7.doFinal("Sf-Ui".getBytes("ISO-8859-1"));
       String var12 = a(var9).intern();
-      byte var10001 = -1;
       b = var12;
       Cipher var0;
       var10000 = var0 = Cipher.getInstance("DES/CBC/NoPadding");
@@ -100,7 +99,6 @@ public class biu extends bmd {
          | (var4[5] & 255L) << 16
          | (var4[6] & 255L) << 8
          | var4[7] & 255L;
-      var10001 = -1;
       c = var14;
    }
 

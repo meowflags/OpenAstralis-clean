@@ -32,32 +32,14 @@ public class heo extends hcr {
 
    public heo(guu parentClass) {
       long ax = heo.a ^ 102234937253593L;
-      short var10002 = 28680;
-      long var10003 = 7208581237298988871L ^ ax;
       super(a, "Watchdog Fireball");
-      short var4 = 31839;
-      long var10004 = 562284155678690072L ^ ax;
-      short var6 = 10186;
-      long var10005 = 8678038681501061250L ^ ax;
       String[] var8 = new String[5];
-      short var10008 = 25478;
-      long var10009 = 1961991825402959053L ^ ax;
       var8[0] = "Boost";
-      var10008 = 30616;
-      var10009 = 5342108095321538774L ^ ax;
       var8[1] = "Flat";
-      var10008 = 1725;
-      var10009 = 7346473342842860028L ^ ax;
       var8[2] = "Opal";
-      var10008 = 10473;
-      var10009 = 8224925327334662061L ^ ax;
       var8[3] = "Chef";
-      var10008 = 9598;
-      var10009 = 6290308645009183288L ^ ax;
       var8[4] = "Chef-High";
       a.fsb = new adu("Mode", "Boost", var8);
-      short var5 = 16379;
-      var10004 = 1166545441157597371L ^ ax;
       a.ggt = new bes("Speed", 1.5F, 0.0F, 10.0F, 0.1F);
       a.dxe(new ffn[]{a.fsb, a.ggt});
    }
@@ -71,8 +53,6 @@ public class heo extends hcr {
       if (var3 != null) {
          if (dar.gqy().aws().diy(dqk.class).dsv()) {
             dar.gqy().aws().diy(dqk.class).fga(false);
-            short var4 = 30032;
-            long var10001 = 1900502418661400515L ^ a;
             bpa.dhu("Velocity module was disabled to prevent conflicts.");
          }
 
@@ -131,8 +111,6 @@ public class heo extends hcr {
       if (axx != null) {
          switch (var8) {
             case 2192281:
-               short var10001 = 10065;
-               long var10002 = 2963629894454339243L ^ ax;
                var8 = var5.equals("Flat");
                if (axx == null) {
                   break label251;
@@ -147,8 +125,6 @@ public class heo extends hcr {
                   break;
                }
             case 2464236:
-               short var10 = 32380;
-               long var22 = 6229714018358247310L ^ ax;
                var8 = var5.equals("Opal");
                if (axx == null) {
                   break label251;
@@ -163,8 +139,6 @@ public class heo extends hcr {
                   break;
                }
             case 2099174:
-               short var11 = 23482;
-               long var23 = 4722431185437399619L ^ ax;
                var8 = var5.equals("Chef");
                if (axx == null) {
                   break label251;
@@ -179,8 +153,6 @@ public class heo extends hcr {
                   break;
                }
             case -1864144055:
-               short var12 = 12560;
-               long var24 = 3249769772129939693L ^ ax;
                var8 = var5.equals("Chef-High");
                if (axx == null) {
                   break label251;
@@ -207,7 +179,6 @@ public class heo extends hcr {
                            if (a.fqf > 0) {
                               var8 = a.fqf;
                               var14 = 11881;
-                              long var25 = 4679312769892686908L ^ ax;
                               var14 = 30;
                               if (axx == null) {
                                  break label269;
@@ -229,7 +200,6 @@ public class heo extends hcr {
                         }
 
                         var14 = 11243;
-                        long var26 = 741294005178079675L ^ ax;
                         var14 = 31;
                      }
 
@@ -279,7 +249,6 @@ public class heo extends hcr {
                   if (a.fqf >= 1) {
                      var8 = a.fqf;
                      var16 = 21839;
-                     long var27 = 7976565332477732638L ^ ax;
                      var16 = 33;
                      if (axx == null) {
                         break label207;
@@ -299,7 +268,6 @@ public class heo extends hcr {
                   }
 
                   var16 = 11463;
-                  long var28 = 2943661761614651028L ^ ax;
                   var16 = 33;
                }
 
@@ -321,7 +289,6 @@ public class heo extends hcr {
                if (a.fqf >= 1) {
                   var8 = a.fqf;
                   var19 = 9375;
-                  long var29 = 1653456697773364937L ^ ax;
                   var19 = 28;
                   if (axx == null) {
                      break label185;
@@ -344,7 +311,6 @@ public class heo extends hcr {
                }
 
                var19 = 10279;
-               long var30 = 1101827452964575859L ^ ax;
                var19 = 28;
             }
 
@@ -402,8 +368,6 @@ public class heo extends hcr {
       }
 
       label112: {
-         short var10001 = 10966;
-         long var10002 = 3537298817153421159L ^ ax;
          short var8 = 9;
          if (var4 != null) {
             label95: {
@@ -413,7 +377,6 @@ public class heo extends hcr {
                      label91: {
                         label115: {
                            var8 = 25478;
-                           var10002 = 1961937297814582683L ^ ax;
                            var10000 = a.fsb.emb("Boost");
                            if (var4 != null) {
                               if (var10000 != 0) {
@@ -421,7 +384,6 @@ public class heo extends hcr {
                               }
 
                               var8 = 32380;
-                              var10002 = 6229712262049917032L ^ ax;
                               var10000 = a.fsb.emb("Opal");
                            }
 
@@ -441,14 +403,11 @@ public class heo extends hcr {
                      }
 
                      var8 = 10065;
-                     var10002 = 2963628041907941709L ^ ax;
                      var10000 = a.fsb.emb("Flat");
                   }
 
                   if (var4 != null) {
                      if (var10000 != 0) {
-                        short var5 = 1806;
-                        long var12 = 2745933319000559901L ^ ax;
                         bpa.dhu("flat");
                         if (var4 != null) {
                            break label94;
@@ -457,7 +416,6 @@ public class heo extends hcr {
 
                      String var6 = a.fsb.dnp();
                      var8 = 23482;
-                     var10002 = 4722432729019043237L ^ ax;
                      var10000 = var6.contains("Chef");
                   }
 
@@ -466,8 +424,6 @@ public class heo extends hcr {
                   }
 
                   if (var10000 != 0) {
-                     short var7 = 27671;
-                     long var14 = 2658335181150714381L ^ ax;
                      bpa.dhu("cjef");
                      evd.fdo(a, 1.4);
                   }
@@ -481,7 +437,6 @@ public class heo extends hcr {
             }
 
             var8 = 25385;
-            var10002 = 3578041145376736925L ^ ax;
             var8 = 8;
          }
 
@@ -490,7 +445,6 @@ public class heo extends hcr {
          }
 
          var8 = 10065;
-         var10002 = 2963628041907941709L ^ ax;
          var10000 = a.fsb.emb("Flat");
       }
 

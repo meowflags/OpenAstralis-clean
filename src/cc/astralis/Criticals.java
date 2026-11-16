@@ -30,30 +30,16 @@ public class Criticals extends guu {
    public Criticals() {
       long a = Criticals.a ^ 80977404320595L;
       super(bfm.COMBAT);
-      short var10003 = 1829;
-      long var10004 = 1830790340972771012L ^ a;
-      short var4 = 26535;
-      long var10005 = 3465249545336886853L ^ a;
       String[] var6 = new String[3];
-      short var10008 = 26535;
-      long var10009 = 3465249545336886853L ^ a;
       var6[0] = "Watchdog 2";
-      var10008 = 7336;
-      var10009 = 1908268595998584141L ^ a;
       var6[1] = "Legit";
-      var10008 = 8801;
-      var10009 = 1591752869445129094L ^ a;
       var6[2] = "Vanilla";
       a.dzu = new adu("Mode", "Watchdog 2", var6);
-      var10003 = 12749;
-      var10004 = 6075134535112966190L ^ a;
       a.evg = new bes("Critical On Ticks", 3.0F, 1.0F, 10.0F, 1.0F);
       a.egn = 0.0;
       a.hjl = 0;
       a.bfi(new ffn[]{a.dzu, a.evg.bih(() -> {
          long ax = Criticals.a ^ 31193653851423L;
-         short var10001 = 32325;
-         long var10002 = 4665311666502492655L ^ ax;
          return a.dzu.emb("Watchdog 2");
       })});
    }
@@ -76,8 +62,6 @@ public class Criticals extends guu {
       if (ax != null) {
          switch (var9) {
             case 73298841:
-               short var10001 = 1174;
-               long var10002 = 7174899041585403267L ^ axxx;
                var9 = var6.equals("Legit");
                if (ax == null) {
                   break label121;
@@ -92,8 +76,6 @@ public class Criticals extends guu {
                   break;
                }
             case 1898048255:
-               short var15 = 26535;
-               long var16 = 3465289142610196144L ^ axxx;
                var9 = var6.equals("Watchdog 2");
                if (ax == null) {
                   break label121;

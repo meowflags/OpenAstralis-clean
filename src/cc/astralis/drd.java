@@ -27,11 +27,7 @@ public class drd implements dlc {
       long a = drd.a ^ 7331617082099L;
       super();
       File var10003 = chi.field_1697;
-      short var10004 = 7721;
-      long var10005 = 6477308756884743199L ^ a;
       String var3 = "Astralis".toLowerCase();
-      short var10006 = 19264;
-      long var10007 = 870974033757254004L ^ a;
       a.ail = new File(var10003, "/" + var3 + "/Configs");
       a.ddp = new HashMap<>();
    }
@@ -61,16 +57,12 @@ public class drd implements dlc {
             if (axxx.isFile()) {
                String var11 = axxx.getName();
                if (axx != null) {
-                  short var10001 = 4476;
-                  long var10002 = 1343871686962441411L ^ a;
                   if (!var11.endsWith(".astralis")) {
                      break label40;
                   }
 
                   String var12 = axxx.getName();
                   int var13 = axxx.getName().length();
-                  short var10003 = 4476;
-                  long var10004 = 1343871686962441411L ^ a;
                   var11 = var12.substring(0, var13 - ".astralis".length());
                }
 
@@ -105,8 +97,6 @@ public class drd implements dlc {
                break label34;
             }
 
-            short var10001 = 2214;
-            long var10002 = 8522950748590432593L ^ a;
             var10000 = a.ddp.containsKey("default");
          }
 
@@ -120,15 +110,11 @@ public class drd implements dlc {
          var4 = a;
       }
 
-      short var5 = 7181;
-      long var6 = 1062651074254927353L ^ a;
       var4.esg("default");
    }
 
    public void faw() {
       long a = drd.a ^ 100210367624802L;
-      short var10001 = 7181;
-      long var10002 = 1062611899970296494L ^ a;
       a.flb("default");
    }
 
@@ -140,14 +126,10 @@ public class drd implements dlc {
       flh var6 = axx;
       if (axxx != null) {
          if (axx == null) {
-            short var7 = 7907;
-            long var8 = 2659416874129418371L ^ ax;
             bpa.dhu("Failed To Load Config " + a);
             return;
          }
 
-         short var10001 = 13193;
-         long var10002 = 1296906134030796269L ^ ax;
          bpa.dhu("Loaded Config " + a);
          var6 = axx;
       }
@@ -179,8 +161,6 @@ public class drd implements dlc {
       flh axx = a.ddp.get(a);
       int[] axxx = var10000;
       if (axx != null) {
-         short var10004 = 5410;
-         long var10005 = 8160617137561466710L ^ ax;
          File axxxx = new File(a.ail, a + ".astralis");
          boolean var7 = axxxx.exists();
          if (axxx != null) {

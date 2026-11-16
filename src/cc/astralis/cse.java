@@ -152,16 +152,12 @@ public class cse extends brc {
                            int var25 = 0;
                            String var24;
                            int var26 = (var24 = var11[0]).length();
-                           short var43 = 14329;
-                           long var53 = 7332260207066383912L ^ var20;
                            char var23 = 7;
                            bpl(null);
                            int var31 = -1;
 
                            label44:
                            while (true) {
-                              short var34 = 1688;
-                              long var44 = 7350101694644729676L ^ var20;
                               byte var35 = 104;
                               String var45 = var24.substring(++var31, var31 + var23);
                               byte var54 = -1;
@@ -186,14 +182,10 @@ public class cse extends brc {
                                        }
 
                                        var26 = (var24 = var11[1]).length();
-                                       short var37 = 3899;
-                                       long var46 = 7270124820467302125L ^ var20;
                                        var23 = '`';
                                        var31 = -1;
                                  }
 
-                                 short var38 = 7944;
-                                 long var47 = 4124300716344323802L ^ var20;
                                  var35 = 95;
                                  var45 = var24.substring(++var31, var31 + var23);
                                  var54 = 0;
@@ -235,12 +227,9 @@ public class cse extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 70418497216535L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 21775;
-         long var10005 = 395899884245911342L ^ var1;
          var10000[0] = (char)(var10003 ^ '$');
       }
 
@@ -248,7 +237,6 @@ public class cse extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 17961787531683L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -256,43 +244,34 @@ public class cse extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 3062;
-         long var10009 = 7973988338578282607L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 21233;
-               long var23 = 4990986430394499431L ^ var2;
                var10 = 117;
                break;
             case 1:
                var10 = 1558;
-               long var22 = 4475765059565999500L ^ var2;
                var10 = 116;
                break;
             case 2:
                var10 = 29018;
-               long var21 = 2558166148779221697L ^ var2;
                var10 = 47;
                break;
             case 3:
                var10 = 21202;
-               long var20 = 4541048841812771151L ^ var2;
                var10 = 102;
                break;
             case 4:
                var10 = 4978;
-               long var19 = 5233966716541583585L ^ var2;
                var10 = 88;
                break;
             case 5:
                var10 = 10794;
-               long var18 = 4068480857362790843L ^ var2;
                var10 = 102;
                break;
             default:
                var10 = 342;
-               long var17 = 6189940491263496910L ^ var2;
                var10 = 36;
          }
 

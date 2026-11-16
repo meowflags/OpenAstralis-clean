@@ -15,7 +15,6 @@ public class hcr extends cdr implements dlc {
    }
 
    public void hkh(boolean hooked) {
-      long ax = c ^ 20750934743910L;
       int[] var4 = dar.abu();
       hcr var10000 = a;
       if (var4 != null) {
@@ -51,7 +50,6 @@ public class hcr extends cdr implements dlc {
    }
 
    public <T> void dxe(ffn<?>... properties) {
-      long ax = c ^ 82245306178855L;
       int[] var10000 = dar.abu();
       ffn[] var5 = a;
       int var6 = a.length;

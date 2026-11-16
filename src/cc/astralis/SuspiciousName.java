@@ -41,32 +41,16 @@ public class SuspiciousName extends guu {
    public SuspiciousName() {
       long a = SuspiciousName.a ^ 63128029353857L;
       super(bfm.CLIENT);
-      short var10003 = 10159;
-      long var10004 = 7641413934940890321L ^ a;
       a.bwv = new gbp("Send Chat message", false);
-      var10003 = 18088;
-      var10004 = 4095742163759285717L ^ a;
       a.gfh = new gbp("Send Notification", false);
-      var10003 = 4501;
-      var10004 = 3603990733480858338L ^ a;
       a.esz = new gbp("Alert if Suspicious Name", true);
       int[] var10000 = dar.abu();
       String[] var10002 = new String[4];
-      short var10005 = 6975;
-      long var10006 = 3051663235284113472L ^ a;
       var10002[0] = "Mikan_";
-      var10005 = 4225;
-      var10006 = 5888447920174863357L ^ a;
       var10002[1] = "tzi_";
-      var10005 = 21138;
-      var10006 = 7920773619021894121L ^ a;
       var10002[2] = "EKKOREE_";
-      var10005 = 17797;
-      var10006 = 3944886547694175996L ^ a;
       var10002[3] = "zzxgp_";
       a.gfp = Arrays.asList(var10002);
-      short var7 = 25330;
-      long var10 = 8003815479889224072L ^ a;
       a.gro = Pattern.compile("^([a-zA-Z]+_[a-zA-Z0-9]{5}_\\d{2}_\\d{2}$)|^[a-zA-Z0-9]{3}_[a-zA-Z0-9]{4}_[a-zA-Z0-9]{3}$|(^[a-zA-Z]{7}_[a-zA-Z]{7}\\d{2}$)");
       a.cke = new HashSet<>();
       int[] ax = var10000;
@@ -161,8 +145,6 @@ public class SuspiciousName extends guu {
                }
 
                if (!var17) {
-                  short var10001 = 31406;
-                  long var10002 = 6458132913422990302L ^ ax;
                   String axxxxxxx = "Suspicious player name detected: " + axxxx;
                   boolean var18 = a.gfh.dnp();
                   if (axx != null) {

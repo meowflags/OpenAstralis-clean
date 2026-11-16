@@ -25,11 +25,7 @@ public class Config extends guu {
    public Config() {
       long a = Config.a ^ 135038258065588L;
       super(bfm.CLIENT);
-      short var10003 = 14429;
-      long var10004 = 3266486903481133846L ^ a;
       a.ain = new gbp("Auto Save Config", true);
-      var10003 = 21981;
-      var10004 = 5290928181325203095L ^ a;
       a.dtp = new bes("Auto Save Config Delay", 300000.0F, 1000.0F, 3600000.0F, 1000.0F);
    }
 
@@ -56,7 +52,6 @@ public class Config extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

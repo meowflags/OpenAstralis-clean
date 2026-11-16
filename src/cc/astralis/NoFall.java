@@ -25,19 +25,9 @@ public class NoFall extends guu {
    public NoFall() {
       long a = NoFall.a ^ 68946068907723L;
       super(bfm.PLAYER);
-      byte var10003 = 56;
-      long var10004 = 778548568468693975L ^ a;
-      short var3 = 9077;
-      long var10005 = 8736234284701614233L ^ a;
       String[] var4 = new String[3];
-      short var10008 = 18896;
-      long var10009 = 1105986237570279993L ^ a;
       var4[0] = "Cancel";
-      var10008 = 27377;
-      var10009 = 2085765559664527644L ^ a;
       var4[1] = "Stop";
-      var10008 = 30737;
-      var10009 = 503399316458167290L ^ a;
       var4[2] = "Stop 2";
       a.bub = new adu("Mode", "Cancel", var4);
       a.beb(a.bub);
@@ -57,8 +47,6 @@ public class NoFall extends guu {
       if (ax != null) {
          switch (var7) {
             case 2011110042:
-               short var10001 = 18896;
-               long var10002 = 1106055786565021346L ^ axx;
                var7 = var5.equals("Cancel");
                if (ax == null) {
                   break label59;
@@ -73,8 +61,6 @@ public class NoFall extends guu {
                   break;
                }
             case 2587682:
-               short var8 = 27377;
-               long var10 = 2085764516576857479L ^ axx;
                var7 = var5.equals("Stop");
                if (ax == null) {
                   break label59;
@@ -89,8 +75,6 @@ public class NoFall extends guu {
                   break;
                }
             case -1808203852:
-               short var9 = 30737;
-               long var11 = 503365760430120801L ^ axx;
                var7 = var5.equals("Stop 2");
                if (ax == null) {
                   break label59;
@@ -121,8 +105,6 @@ public class NoFall extends guu {
       long ax = NoFall.a ^ 49840035966693L;
       int[] var4 = dar.abu();
       if (var4 != null) {
-         short var10001 = 27377;
-         long var10002 = 2085786036060668210L ^ ax;
          if (!a.bub.emb("Stop")) {
             return;
          }
@@ -141,8 +123,6 @@ public class NoFall extends guu {
    @gdz
    public void big(eih event) {
       long ax = NoFall.a ^ 139785576645143L;
-      short var10001 = 23996;
-      long var10002 = 5790139900416088714L ^ ax;
       if (a.bub.emb("Stop")) {
          a.gmm(true);
       }
@@ -155,8 +135,6 @@ public class NoFall extends guu {
       if (a.cud() != gpy.RECEIVE && chi.field_1687 != null) {
          amo var5;
          label38: {
-            short var10001 = 5467;
-            long var10002 = 2207333581263723351L ^ ax;
             boolean var10000 = a.bub.emb("Stop 2");
             if (var4 != null) {
                if (!var10000) {

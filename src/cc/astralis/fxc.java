@@ -25,8 +25,6 @@ public class fxc extends brc {
 
    public fxc() {
       long a = c ^ 135100323690953L;
-      short var10001 = 5145;
-      long var10002 = 1241462587314537859L ^ a;
       super(9);
    }
 
@@ -136,17 +134,12 @@ public class fxc extends brc {
                      int var20 = 0;
                      String var19 = var11;
                      int var21 = var11.length();
-                     short var31 = 30457;
-                     long var39 = 5969197993079883591L ^ var15;
                      char var18 = ',';
                      int var17 = -1;
                      dsm(null);
 
                      while (true) {
-                        short var27 = 18308;
-                        long var32 = 1281952968484714041L ^ var15;
                         String var40 = b(27, b(var19.substring(++var17, var17 + var18)));
-                        byte var33 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            b = var22;
@@ -187,12 +180,9 @@ public class fxc extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 18616177945912L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 9846;
-         long var10005 = 1092915554056774416L ^ var1;
          var10000[0] = (char)(var10003 ^ '^');
       }
 
@@ -200,7 +190,6 @@ public class fxc extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 104011179547249L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -208,38 +197,24 @@ public class fxc extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 1586;
-         long var10009 = 3733554449696994331L ^ var2;
          var10001[var4] = (char)(var10005 ^ var10002 ^ switch (var4 % 7) {
             case 0 -> {
-               short var15 = 28975;
-               long var21 = 4122301665425277711L ^ var2;
                yield 84;
             }
             case 1 -> {
-               short var14 = 26651;
-               long var20 = 8785132880487897653L ^ var2;
                yield 89;
             }
             case 2 -> 2;
             case 3 -> {
-               short var13 = 30612;
-               long var19 = 3509279829791851966L ^ var2;
                yield 43;
             }
             case 4 -> {
-               short var12 = 9834;
-               long var18 = 4530180665647993926L ^ var2;
                yield 19;
             }
             case 5 -> {
-               short var11 = 7471;
-               long var17 = 7869092141299543822L ^ var2;
                yield 26;
             }
             default -> {
-               short var10007 = 21946;
-               long var16 = 4247824312219559831L ^ var2;
                yield 94;
             }
          });

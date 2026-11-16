@@ -38,8 +38,6 @@ public class exc {
       while (true) {
          if (var8 < var7) {
             bac axxxx = var6[var8];
-            short var10001 = 3733;
-            long var10002 = 3787318957990796842L ^ a;
             var10 = axxxx.gpl.equals("product_minecraft");
             if (axxx == null) {
                break;
@@ -54,8 +52,6 @@ public class exc {
                      }
                   }
 
-                  var10001 = 13565;
-                  var10002 = 470507365934654531L ^ a;
                   var10 = axxxx.gpl.equals("game_minecraft");
                }
 
@@ -114,7 +110,6 @@ public class exc {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             b = var9;

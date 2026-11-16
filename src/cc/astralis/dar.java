@@ -57,19 +57,13 @@ public class dar implements dlc {
    public void er() {
       long a = dar.a ^ 59900628261579L;
       int[] var10000 = abu();
-      short var10004 = 22884;
-      long var10005 = 8091470373201894480L ^ a;
       File ax = new File(chi.field_1697, "/" + "Astralis".toLowerCase());
       int[] axx = var10000;
       if (axx != null) {
          if (!ax.exists()) {
             if (ax.mkdirs()) {
-               short var10001 = 8973;
-               long var10002 = 1026009889750492731L ^ a;
                ecj.info("/astralis directory created successfully.");
             } else {
-               short var20 = 13550;
-               long var25 = 3792226424265552345L ^ a;
                ecj.error("Failed to create /astralis directory.");
             }
          }
@@ -89,42 +83,28 @@ public class dar implements dlc {
          fow.fjs();
          Runtime var17 = Runtime.getRuntime();
          Runnable var10003 = a::dgy;
-         var10004 = 12224;
-         var10005 = 259031690561563379L ^ a;
          var17.addShutdownHook(new Thread(var10003, "Shutdown Thread"));
 
          try {
-            short var32 = 14497;
-            long var34 = 329264732432121232L ^ a;
             a.ame = new hdl("wss://ws.serenityutils.club");
             eby.fqb();
          } catch (Throwable var14) {
             try {
-               short var23 = 18645;
-               long var27 = 4097609733494033888L ^ a;
                Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
                axxx.setAccessible(true);
                Unsafe axxxx = (Unsafe)axxx.get(null);
                long axxxxx = ThreadLocalRandom.current().nextLong();
                ThreadLocalRandom var19 = ThreadLocalRandom.current();
-               short var28 = 7268;
-               long var30 = 8857430770621373232L ^ a;
                long axxxxxx = var19.nextLong(1L, Long.MAX_VALUE);
                int axxxxxxx = ThreadLocalRandom.current().nextInt(1, (int)e);
                Thread var24 = Thread.currentThread();
-               short var29 = 7005;
-               long var31 = 5818979008806673419L ^ a;
                axxxx.putLong(var24, 8L, axxxxx);
                axxxx.putAddress(axxxxxx, 0L);
                Runtime.getRuntime().halt(axxxxxxx);
             } catch (Throwable var13) {
-               short var18 = 25741;
-               long var21 = 5000024223444706266L ^ a;
                long axxxxxxxx = Long.MIN_VALUE;
 
                do {
-                  short var22 = 16665;
-                  long var26 = 2395108985833129548L ^ a;
                   if (axxxxxxxx >= Long.MAX_VALUE) {
                      break;
                   }
@@ -255,11 +235,7 @@ public class dar implements dlc {
                   if ((var29 += var19) >= var22) {
                      b = var23;
                      c = new String[9];
-                     short var33 = 2637;
-                     long var42 = 837577615751855723L ^ var25;
                      dpr = "Developed by Kawase, Badaiim & IHasseDich";
-                     short var34 = 10941;
-                     long var43 = 2588335785628278423L ^ var25;
                      asu = "Astralis";
                      Cipher var11;
                      Cipher var35 = var11 = Cipher.getInstance("DES/CBC/NoPadding");
@@ -357,8 +333,6 @@ public class dar implements dlc {
                                     f = var6;
                                     g = new Long[4];
                                     dtw = new dar();
-                                    short var38 = 1439;
-                                    long var48 = 362581967194108347L ^ var25;
                                     ecj = LoggerFactory.getLogger("astralis");
                                     return;
                                  }

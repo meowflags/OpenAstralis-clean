@@ -24,12 +24,8 @@ public class ghz extends fso {
    public ghz() {
       long a = ghz.a ^ 18553199456414L;
       String[] var10001 = new String[2];
-      short var10004 = 31975;
-      long var10005 = 2567254588783537116L ^ a;
       var10001[0] = "irc";
       var10001[1] = "i";
-      short var10002 = 32480;
-      long var10003 = 1396937140499392986L ^ a;
       super(var10001, "Sends a message to all client users (.irc <message>");
    }
 
@@ -45,8 +41,6 @@ public class ghz extends fso {
             return;
          }
 
-         short var10000 = 4462;
-         long var10001 = 5395278367228237347L ^ ax;
          bpa.dhu("Wrong Usage .irc <Message>");
       }
    }
@@ -74,7 +68,6 @@ public class ghz extends fso {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             c = var9;

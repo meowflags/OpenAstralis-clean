@@ -41,7 +41,6 @@ public class cnx extends cec {
 
          a.ewc.clear();
          var10000 = (short)3426;
-         long var10001 = 518291142853585089L ^ ax;
          var10000 = 40;
       }
 
@@ -58,8 +57,6 @@ public class cnx extends cec {
          axxxxxx.dia().dho(axxxxxxx, axxxxxxxx, axxxxxxxxx);
          a.ewc.add(() -> a.dia().gkw(a, a, a));
          cbm var15 = axxxxxx.gcf();
-         short var10002 = 6166;
-         long var10003 = 4641760902346735028L ^ ax;
          var10000 = var15.fsc(axxxxxx.dxb + 400);
          if (axx != null) {
             if (var10000 != 0) {
@@ -156,7 +153,6 @@ public class cnx extends cec {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

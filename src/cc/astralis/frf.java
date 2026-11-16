@@ -43,8 +43,6 @@ public class frf extends fig {
          hcr var9 = axx;
          if (axxx != null) {
             if (axx == null) {
-               short var11 = 29065;
-               long var10001 = 1918809685412497757L ^ ax;
                var10 = "None";
                break label16;
             }
@@ -57,8 +55,6 @@ public class frf extends fig {
 
       String axx = var10;
       var10 = a.dmp.fah();
-      short var10002 = 3553;
-      long var10003 = 508038111866565940L ^ ax;
       String axxx = var10 + ": " + axx;
       ety.ebb(axxx, a.hjg() + 4.0F, a.dtt() + 3.0F, Color.WHITE);
    }
@@ -77,8 +73,6 @@ public class frf extends fig {
          hcr var16 = axxx;
          if (axx != null) {
             if (axxx == null) {
-               short var18 = 28668;
-               long var10001 = 5310277267603813343L ^ ax;
                var17 = "None";
                break label31;
             }
@@ -91,8 +85,6 @@ public class frf extends fig {
 
       String axxxx = var17;
       var17 = a.dmp.fah();
-      short var10002 = 13699;
-      long var10003 = 7208630740358179233L ^ ax;
       String axxxxx = var17 + ": " + axxxx;
       if (fuv.bfm(a, a, a.hjg() + 4.0F, a.dtt() + 2.0F, ety.eq(axxxxx), ety.biu(axxxxx))) {
          List<hcr> axxxxxx = new ArrayList<>(a.dmp.ajs().values());

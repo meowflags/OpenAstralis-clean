@@ -31,26 +31,12 @@ public class SpeedMine extends guu {
    public SpeedMine() {
       long a = SpeedMine.a ^ 133023791272449L;
       super(bfm.WORLD);
-      short var10003 = 27297;
-      long var10004 = 7748155856222243330L ^ a;
-      short var6 = 17761;
-      long var10005 = 2252666071476659655L ^ a;
       String[] var10 = new String[2];
-      short var10008 = 16633;
-      long var10009 = 5778108025322922072L ^ a;
       var10[0] = "Packet";
-      var10008 = 3391;
-      var10009 = 8593896371784232344L ^ a;
       var10[1] = "Timer";
       a.fhl = new adu("Mode", "Packet", var10);
-      var10003 = 5443;
-      var10004 = 3294362775103026663L ^ a;
       a.gay = new bes("Speed", 1.25F, 1.0F, 5.0F, 0.05F);
-      var10003 = 11348;
-      var10004 = 3074739062760475892L ^ a;
       a.cct = new gbp("Mining Cooldown", true);
-      var10003 = 6637;
-      var10004 = 190158067090143567L ^ a;
       a.aca = (bes)new bes("Cooldown", 0.0F, 0.0F, 5.0F, 1.0F).bih(a.cct::dnp);
       a.dii = false;
       a.bfi(new ffn[]{a.fhl, a.gay, a.cct, a.aca});
@@ -112,8 +98,6 @@ public class SpeedMine extends guu {
       if (axx != null) {
          switch (var11) {
             case -1911998296:
-               short var10001 = 16633;
-               long var10002 = 5778011440438418424L ^ ax;
                var11 = var7.equals("Packet");
                if (axx == null) {
                   break label133;
@@ -128,8 +112,6 @@ public class SpeedMine extends guu {
                   break;
                }
             case 80811813:
-               short var15 = 10361;
-               long var16 = 737274680739656572L ^ ax;
                var11 = var7.equals("Timer");
                if (axx == null) {
                   break label133;

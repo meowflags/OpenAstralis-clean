@@ -26,14 +26,8 @@ public class dpr extends fso {
    public dpr() {
       long a = dpr.a ^ 105160891441473L;
       String[] var10001 = new String[2];
-      short var10004 = 9192;
-      long var10005 = 4837790490037560912L ^ a;
       var10001[0] = "vclip";
-      var10004 = 15673;
-      var10005 = 814823212602407046L ^ a;
       var10001[1] = "vc";
-      short var10002 = 2336;
-      long var10003 = 7360935678985440410L ^ a;
       super(var10001, "Teleports you vertically by the amount you said.");
    }
 
@@ -46,8 +40,6 @@ public class dpr extends fso {
       String[] var12 = axx;
       if (axxx != null) {
          if (axx.length < 2) {
-            short var16 = 9264;
-            long var20 = 4053944234751575962L ^ ax;
             bpa.dhu("Wrong Usage .vclip <amount>");
             return;
          }
@@ -61,23 +53,17 @@ public class dpr extends fso {
       try {
          axxxxx = Double.parseDouble(axxxx);
       } catch (NumberFormatException var11) {
-         short var10001 = 20366;
-         long var10002 = 7408722112693480481L ^ ax;
          bpa.dhu("Invalid number: " + axxxx);
          return;
       }
 
       if (Math.abs(axxxxx) > 10.0) {
-         short var15 = 14683;
-         long var19 = 7973593759115893493L ^ ax;
          bpa.dhu("§cAmount too large. Max ±10 blocks.");
       } else {
          class_746 axxxxxx = class_310.method_1551().field_1724;
          class_746 var13 = axxxxxx;
          if (axxx != null) {
             if (axxxxxx == null) {
-               short var14 = 16376;
-               long var18 = 1451884504277900381L ^ ax;
                bpa.dhu("§cPlayer not found.");
                return;
             }
@@ -86,10 +72,6 @@ public class dpr extends fso {
          }
 
          var13.method_30634(axxxxxx.method_23317(), axxxxxx.method_23318() + axxxxx, axxxxxx.method_23321());
-         short var17 = 16858;
-         long var21 = 3069032798055015026L ^ ax;
-         short var22 = 7556;
-         long var10003 = 8334221155401858601L ^ ax;
          bpa.dhu("§aVclipped " + axxxxx + " blocks.");
       }
    }

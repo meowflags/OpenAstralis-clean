@@ -601,30 +601,22 @@ public class hee {
    private static String ccs(String a) {
       long ax = hee.a ^ 118759768804771L;
       String axx = new File(a).getName();
-      short var10001 = 18449;
-      long var10002 = 3686098036767980020L ^ ax;
       String var10000 = axx.replaceAll("[^a-zA-Z0-9_-]", "");
-      var10001 = 31622;
-      var10002 = 874930749314976372L ^ ax;
       return var10000.replace(".gif", "");
    }
 
    public static void fnu() throws IOException {
       long a = hee.a ^ 137535479093331L;
       int[] var10000 = dar.abu();
-      short var10001 = 26031;
-      long var10002 = 5298348419814293944L ^ a;
       Path ax = Paths.get("astralis/gif_frames/");
       int[] axx = var10000;
       Path var4 = ax;
-      byte var5 = 0;
       if (axx != null) {
          if (!Files.exists(ax)) {
             return;
          }
 
          var4 = ax;
-         var5 = 0;
       }
 
       Files.walk(var4).sorted((axxx, axxxx) -> axxxx.compareTo(axxx)).map(Path::toFile).forEach(File::delete);
@@ -664,8 +656,6 @@ public class hee {
                   if ((var12 += var5) >= var8) {
                      b = var9;
                      c = new String[25];
-                     short var15 = 13823;
-                     long var20 = 6681130904718901584L ^ var0;
                      akf = "astralis/gif_frames/";
                      String[] var16 = new String[2];
                      bhs = new HashMap<>();

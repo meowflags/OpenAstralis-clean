@@ -27,14 +27,8 @@ public class MovementFix extends guu {
    public MovementFix() {
       long a = MovementFix.a ^ 23926625835099L;
       super(bfm.CLIENT);
-      short var10003 = 12749;
-      long var10004 = 5421647699683077267L ^ a;
       a.fsr = new gbp("Movement Correction", false);
-      var10003 = 18491;
-      var10004 = 4502988922673730916L ^ a;
       a.ftx = new gbp("Old Hit Box Offset", false);
-      var10003 = 2777;
-      var10004 = 5541580614475798405L ^ a;
       a.ecl = new gbp("Modern Hit Vec", true);
       a.bfi(new ffn[]{a.fsr, a.ftx, a.ecl});
    }
@@ -81,8 +75,6 @@ public class MovementFix extends guu {
                      g = var7;
                      h = new String[4];
                      if (hfl() != null) {
-                        short var15 = 27984;
-                        long var19 = 8994239530496101798L ^ var9;
                         elr("Em2wpb");
                      }
 

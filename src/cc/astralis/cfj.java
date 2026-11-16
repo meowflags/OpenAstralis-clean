@@ -26,11 +26,7 @@ public class cfj extends hcr {
 
    public cfj(guu parentClass) {
       long ax = cfj.a ^ 69355607627878L;
-      short var10002 = 19653;
-      long var10003 = 4349185308392838679L ^ ax;
       super(a, "Air");
-      short var4 = 20911;
-      long var10004 = 7515658968407296892L ^ ax;
       a.bwu = new bes("Horizontal Velocity", 0.0F, 0.0F, 100.0F, 1.0F);
       a.ebu(a.bwu);
    }
@@ -107,7 +103,6 @@ public class cfj extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

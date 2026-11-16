@@ -101,10 +101,7 @@ public class MixinInGameHud {
       at = {@At("HEAD")}
    )
    private void onRenderScoreboardSidebar(class_332 a, class_266 a, CallbackInfo a) {
-      long ax = c ^ 87397680898961L;
       int var10000 = 29677;
-      long var10001 = 4781066639527951049L ^ ax;
-      long axx = 76092167215575L;
       if (a != null) {
          class_310 axxx = class_310.method_1551();
          class_269 axxxx = a.method_1117();
@@ -125,14 +122,11 @@ public class MixinInGameHud {
          int var21 = axxx.method_22683().method_4486();
          var10000 = (short)22435;
          int var22 = axxx.method_22683().method_4502();
-         var10001 = 4064989108573791192L ^ ax;
          int axxxxxxxxx = 9;
          int axxxxxxxxxx = axxxxxx.size();
          int axxxxxxxxxxx = axxxxxxxxxx * axxxxxxxxx;
          int axxxxxxxxxxxx = var21 - axxxxxxx - 3;
          var10000 = var22 / 2 + axxxxxxxxxxx / 3;
-         short var10002 = 19234;
-         long var10003 = 902945074178817887L ^ ax;
          int axxxxxxxxxxxxx = var10000 - axxxxxxxxxx * 9;
          ((foz)dar.gqy().aws().diy(foz.class)).beb(new czo(axxxxxxxxxxxx, axxxxxxxxxxxxx, axxxxxxx, axxxxxxxxxxx));
       }
@@ -321,24 +315,15 @@ public class MixinInGameHud {
                            | (var10[5] & 255L) << 16
                            | (var10[6] & 255L) << 8
                            | var10[7] & 255L;
-                        byte var58 = -1;
                         var6[var40] = var59;
                      } while (var2 < var5);
 
                      g = var6;
                      h = new Long[3];
-                     short var34 = 16323;
-                     long var42 = 2287480718963601936L ^ var26;
                      String var52 = a(101, a(var22));
-                     byte var43 = -1;
                      a = var52;
-                     short var35 = 8521;
-                     long var44 = 401959129352212932L ^ var26;
                      long var28 = 73024696905468L;
-                     short var36 = 11200;
-                     long var45 = 5592378988781476686L ^ var26;
                      long var53 = 73024696905459L ^ var28;
-                     var43 = -1;
                      b = var53;
                      return;
                   }
@@ -373,12 +358,9 @@ public class MixinInGameHud {
    }
 
    private static char[] a(String var0) {
-      long var1 = c ^ 104212011951749L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 1972;
-         long var10005 = 4480320397704951518L ^ var1;
          var10000[0] = (char)(var10003 ^ 'Q');
       }
 
@@ -386,7 +368,6 @@ public class MixinInGameHud {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = c ^ 93456275545239L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -394,43 +375,34 @@ public class MixinInGameHud {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 4170;
-         long var10009 = 5208904133450652474L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 12766;
-               long var23 = 6407735514516159148L ^ var2;
                var10 = 56;
                break;
             case 1:
                var10 = 11254;
-               long var22 = 4536317651072049290L ^ var2;
                var10 = 91;
                break;
             case 2:
                var10 = 6994;
-               long var21 = 5409375770166513704L ^ var2;
                var10 = 88;
                break;
             case 3:
                var10 = 25229;
-               long var20 = 8522280359220029950L ^ var2;
                var10 = 87;
                break;
             case 4:
                var10 = 5237;
-               long var19 = 5983613682928148236L ^ var2;
                var10 = 120;
                break;
             case 5:
                var10 = 18379;
-               long var18 = 4543745952340905140L ^ var2;
                var10 = 75;
                break;
             default:
                var10 = 10450;
-               long var17 = 3881758834009236387L ^ var2;
                var10 = 81;
          }
 

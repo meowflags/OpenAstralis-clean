@@ -26,14 +26,8 @@ public class atf extends fso {
    public atf() {
       long a = atf.a ^ 86875414428372L;
       String[] var10001 = new String[2];
-      short var10004 = 25246;
-      long var10005 = 9080863292494585504L ^ a;
       var10001[0] = "teleport";
-      var10004 = 14313;
-      var10005 = 5970246710358264799L ^ a;
       var10001[1] = "tp";
-      short var10002 = 25070;
-      long var10003 = 2675609426424700369L ^ a;
       super(var10001, "Teleports you to a player or coordinates");
    }
 
@@ -64,13 +58,9 @@ public class atf extends fso {
                      if (axxxxx != null) {
                         dlc.chi.field_1724.method_33574(axxxxx.method_73189());
                         String var19 = axx[1];
-                        short var27 = 6816;
-                        long var10002 = 4711507222744827526L ^ ax;
                         bpa.dhu("Teleported you to player " + var19);
                      } else {
                         String var20 = axx[1];
-                        short var28 = 3584;
-                        long var34 = 82463910738891301L ^ ax;
                         bpa.dhu("Player not found: " + var20);
                      }
                   }
@@ -82,8 +72,6 @@ public class atf extends fso {
             String[] var21 = axx;
             if (axxx != null) {
                if (axx.length < 4) {
-                  short var26 = 17501;
-                  long var33 = 8507411468909238394L ^ ax;
                   bpa.dhu("Wrong Usage .tp <x> <y> <z>");
                   return;
                }
@@ -92,8 +80,6 @@ public class atf extends fso {
                   dlc.chi.field_1724.method_5814(Double.parseDouble(axx[1]), Double.parseDouble(axx[2]), Double.parseDouble(axx[3]));
                   var21 = axx;
                } catch (NumberFormatException var16) {
-                  short var22 = 12671;
-                  long var29 = 4548503032664894804L ^ ax;
                   bpa.dhu("Invalid coordinates.");
                   return;
                }
@@ -105,24 +91,14 @@ public class atf extends fso {
                double axxxxx = Double.parseDouble(axx[3]);
                double axxxxxx = var31;
                double axxxxxxx = var24;
-               short var25 = 18574;
-               long var32 = 7376550711035319466L ^ ax;
-               short var35 = 7734;
-               long var10003 = 5533298317848609310L ^ ax;
-               short var10004 = 517;
-               long var10005 = 8359812544859217447L ^ ax;
                bpa.dhu("Teleported to coordinates: " + axxxxxxx + ", " + axxxxxx + ", " + axxxxx);
             } catch (NumberFormatException var15) {
-               short var23 = 12671;
-               long var30 = 4548503032664894804L ^ ax;
                bpa.dhu("Invalid coordinates.");
             }
 
             return;
          }
 
-         short var17 = 19353;
-         long var10001 = 3155851139086997434L ^ ax;
          bpa.dhu("Wrong Usage .tp <x> <y> <z> | .tp <player>");
       }
    }

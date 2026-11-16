@@ -34,14 +34,8 @@ public class ddx extends hcr {
 
    public ddx(guu parent) {
       long ax = ddx.a ^ 100952926615412L;
-      short var10002 = 29225;
-      long var10003 = 4708768181004186458L ^ ax;
       super(a, "Delay");
-      short var4 = 16220;
-      long var10004 = 1909131713692925484L ^ ax;
       a.bry = new bes("Delay Timeout", 400.0F, 0.0F, 1000.0F, 50.0F);
-      short var5 = 20800;
-      var10004 = 2121564146251862065L ^ ax;
       a.bvm = new gbp("Release on Ground", true);
       a.dqh = new ConcurrentLinkedQueue<>();
       a.ebu(a.bry);
@@ -371,7 +365,6 @@ public class ddx extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

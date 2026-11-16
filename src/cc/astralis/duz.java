@@ -60,8 +60,6 @@ public final class duz {
 
          if (var3 != null) {
             if (var10000 < 1) {
-               short var7 = 5894;
-               long var11 = 289528737072018816L ^ a;
                throw new IllegalArgumentException("samples must be >= 1");
             }
 
@@ -71,8 +69,6 @@ public final class duz {
          label73: {
             if (var3 != null) {
                if (var10000 < 0) {
-                  short var6 = 16157;
-                  long var10 = 7795977369965747608L ^ a;
                   throw new IllegalArgumentException("stencilBits must be >= 0");
                }
 
@@ -85,8 +81,6 @@ public final class duz {
             }
 
             if (var10000 < 0) {
-               short var10002 = 5248;
-               long var10003 = 5598922612466775556L ^ a;
                throw new IllegalArgumentException("framebufferId must be >= 0");
             }
 
@@ -94,16 +88,12 @@ public final class duz {
          }
 
          if (var4.ecm == null) {
-            short var5 = 1225;
-            long var9 = 6568888119050266187L ^ a;
             throw new IllegalArgumentException("framebufferFormat must not be null");
          }
 
          return;
       }
 
-      short var8 = 22969;
-      long var12 = 8652689291780537150L ^ a;
       throw new IllegalArgumentException("width/height must be > 0");
    }
 

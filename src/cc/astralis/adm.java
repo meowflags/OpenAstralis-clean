@@ -24,11 +24,7 @@ public class adm extends hcr {
 
    public adm(guu parentClass) {
       long ax = adm.a ^ 29483936448830L;
-      short var10002 = 16041;
-      long var10003 = 2668733853351361169L ^ ax;
       super(a, "Air Walk");
-      short var4 = 1584;
-      long var10004 = 3239583509330461193L ^ ax;
       a.ebk = new gbp("Spoof Ground", false);
       a.ebu(a.ebk);
    }
@@ -80,7 +76,6 @@ public class adm extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

@@ -33,8 +33,6 @@ public enum bdq {
    }
 
    public static bdq bys(String name) {
-      long ax = b ^ 105444763066286L;
-      long axx = f;
       bdq[] var7 = values();
       int[] var10000 = dar.abu();
       int var10001 = bfi();
@@ -198,24 +196,17 @@ public enum bdq {
                               | (var4[5] & 255L) << 16
                               | (var4[6] & 255L) << 8
                               | var4[7] & 255L;
-                           byte var52 = -1;
                            f = var65;
-                           short var41 = 25472;
-                           long var53 = 4612638270054690024L ^ var25;
                            String[] var32 = new String[7];
-                           short var42 = 8275;
                            int var30 = 0;
                            String var29;
                            int var31 = (var29 = var16[0]).length();
                            cki(0);
-                           long var54 = 7825268252585471795L ^ var25;
                            char var28 = '\b';
                            int var36 = -1;
 
                            label50:
                            while (true) {
-                              short var43 = 24881;
-                              long var55 = 7221583024538709584L ^ var25;
                               byte var44 = 121;
                               String var56 = var29.substring(++var36, var36 + var28);
                               byte var66 = -1;
@@ -228,7 +219,6 @@ public enum bdq {
                                        if ((var36 += var28) >= var31) {
                                           a = var32;
                                           String[] var37 = a;
-                                          short var73 = 28465;
                                           var74 = 7321861352567464022L ^ var25;
                                           WEEKLY = new bdq(var37[1]);
                                           MONTHLY = new bdq(var37[5]);
@@ -246,14 +236,10 @@ public enum bdq {
                                        }
 
                                        var31 = (var29 = var16[1]).length();
-                                       short var46 = 25472;
-                                       long var57 = 4612638270054690024L ^ var25;
                                        var28 = 7;
                                        var36 = -1;
                                  }
 
-                                 short var47 = 14096;
-                                 long var58 = 1346780079571351666L ^ var25;
                                  var44 = 107;
                                  var56 = var29.substring(++var36, var36 + var28);
                                  var66 = 0;
@@ -303,14 +289,11 @@ public enum bdq {
    }
 
    public static int bfi() {
-      long var0 = b ^ 1978960495621L;
       int[] var2 = dar.abu();
       int var3 = bdi();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 15742;
-            long var10001 = 4971473586202909355L ^ var0;
             return 98;
          }
 
@@ -321,12 +304,9 @@ public enum bdq {
    }
 
    private static char[] a(String var0) {
-      long var1 = b ^ 76767100829818L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 7410;
-         long var10005 = 4814760879017721683L ^ var1;
          var10000[0] = (char)(var10003 ^ 'W');
       }
 
@@ -334,7 +314,6 @@ public enum bdq {
    }
 
    private static String a(int var0, char[] var1) {
-      long var2 = b ^ 7342630923593L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -342,43 +321,34 @@ public enum bdq {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 2345;
-         long var10009 = 1212968399622277053L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 17530;
-               long var23 = 2936631130867649261L ^ var2;
                var10 = 9;
                break;
             case 1:
                var10 = 24899;
-               long var22 = 7470130806248599509L ^ var2;
                var10 = 50;
                break;
             case 2:
                var10 = 22835;
-               long var21 = 9037059763452696482L ^ var2;
                var10 = 9;
                break;
             case 3:
                var10 = 28093;
-               long var20 = 191176644294697763L ^ var2;
                var10 = 114;
                break;
             case 4:
                var10 = 11059;
-               long var19 = 2409573364237084067L ^ var2;
                var10 = 50;
                break;
             case 5:
                var10 = 29786;
-               long var18 = 2887801944915212994L ^ var2;
                var10 = 28;
                break;
             default:
                var10 = 27884;
-               long var17 = 7747544476008800895L ^ var2;
                var10 = 87;
          }
 

@@ -26,23 +26,11 @@ public class Notifications extends guu {
    public Notifications() {
       long a = Notifications.a ^ 63571761168540L;
       super(bfm.VISUAL);
-      short var10003 = 28076;
-      long var10004 = 8144974742314936773L ^ a;
       a.bnr = new gbp("Notification on Toggle", true);
-      var10003 = 24544;
-      var10004 = 1641327803930139533L ^ a;
-      short var6 = 29545;
-      long var10005 = 2186995945024648963L ^ a;
       String[] var8 = new String[2];
-      short var10008 = 22682;
-      long var10009 = 6627808232126209270L ^ a;
       var8[0] = "Modern";
-      var10008 = 24785;
-      var10009 = 2896030536026580154L ^ a;
       var8[1] = "Legacy";
       a.bph = new adu("Mode", "Modern", var8);
-      var10003 = 2989;
-      var10004 = 2914280575922474949L ^ a;
       a.gde = new gbp("Pop Sound", true);
       a.bfi(new ffn[]{a.bph, a.bnr, a.gde});
    }

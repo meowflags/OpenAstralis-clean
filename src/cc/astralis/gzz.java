@@ -23,11 +23,7 @@ public class gzz extends glv<cec> {
 
    public void cfo() {
       long a = gzz.a ^ 140262696557491L;
-      short var10001 = 24188;
-      long var10002 = 1346885961756432295L ^ a;
       cec[] var3 = new cec[]{new dqq(), new cnx(), new alj(), new hgh(), new bhw(), new gxk(), null};
-      short var10003 = 751;
-      long var10004 = 5789378767878130485L ^ a;
       var3[6] = new chx();
       a.bpq(var3);
       dar.gqy().fyf().glu(a);
@@ -88,7 +84,6 @@ public class gzz extends glv<cec> {
             | (var12[5] & 255L) << 16
             | (var12[6] & 255L) << 8
             | var12[7] & 255L;
-         byte var14 = -1;
          var8[var10001] = var10004;
       } while (var4 < var7);
 

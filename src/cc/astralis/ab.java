@@ -26,14 +26,8 @@ public class ab extends guu {
    public ab() {
       long a = ab.a ^ 14837895774123L;
       super(bfm.MOVEMENT);
-      short var10003 = 30297;
-      long var10004 = 1839359607537138381L ^ a;
       a.dds = new gbp("Blocks only", false);
-      var10003 = 3643;
-      var10004 = 4399128310682419885L ^ a;
       a.cup = new gbp("Pitch check", false);
-      var10003 = 10090;
-      var10004 = 5863050347589217279L ^ a;
       a.hcs = new gbp("Backwards Only", false);
       a.bfi(new ffn[]{a.dds, a.cup, a.hcs});
    }
@@ -61,7 +55,6 @@ public class ab extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

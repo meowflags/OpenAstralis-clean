@@ -38,10 +38,6 @@ public class fwu {
       int[] var10000 = dar.abu();
       a ax = dar.gqy().aws().diy(a.class);
       int[] axx = var10000;
-      short var10003 = 6043;
-      long var10004 = 2160564178633932717L ^ a;
-      short var7 = 457;
-      long var10005 = 606345763411700222L ^ a;
       String axxx = a.gyi.hdy + " failed " + a.eod + " (vl: " + a.ciu + ")";
       a.ciu++;
       boolean var6 = ax.bwv.dnp();
@@ -100,7 +96,6 @@ public class fwu {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var20 = a(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var20;
          if ((var9 += var10) >= var13) {
             c = var14;
@@ -136,7 +131,6 @@ public class fwu {
                | (var4[5] & 255L) << 16
                | (var4[6] & 255L) << 8
                | var4[7] & 255L;
-            var10001 = -1;
             i = var23;
             return;
          }

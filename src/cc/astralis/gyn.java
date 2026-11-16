@@ -25,8 +25,6 @@ public class gyn extends brc {
 
    public gyn() {
       long a = c ^ 120691098759667L;
-      short var10001 = 3633;
-      long var10002 = 5980712947144087861L ^ a;
       super(6);
    }
 
@@ -52,14 +50,11 @@ public class gyn extends brc {
    }
 
    public static int ews() {
-      long var0 = c ^ 100776228640200L;
       int[] var2 = dar.abu();
       int var3 = goo();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
-            short var4 = 21555;
-            long var10001 = 152246494285063943L ^ var0;
             return 114;
          }
 
@@ -155,17 +150,12 @@ public class gyn extends brc {
                      int var20 = 0;
                      String var19 = var11;
                      int var21 = var11.length();
-                     short var31 = 2011;
-                     long var39 = 7881212238042344915L ^ var15;
                      char var18 = '`';
                      aqg(0);
                      int var17 = -1;
 
                      while (true) {
-                        short var27 = 15621;
-                        long var32 = 1323199328176707330L ^ var15;
                         String var40 = b(50, b(var19.substring(++var17, var17 + var18)));
-                        byte var33 = -1;
                         var22[var20++] = var40;
                         if ((var17 += var18) >= var21) {
                            b = var22;
@@ -206,12 +196,9 @@ public class gyn extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 30273374814543L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 1795;
-         long var10005 = 3138397305798516915L ^ var1;
          var10000[0] = (char)(var10003 ^ '9');
       }
 
@@ -219,7 +206,6 @@ public class gyn extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 80935246117104L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -227,43 +213,34 @@ public class gyn extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 11458;
-         long var10009 = 4721574070093738695L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 6961;
-               long var23 = 7629598264276600114L ^ var2;
                var10 = 15;
                break;
             case 1:
                var10 = 23204;
-               long var22 = 6032448499781371050L ^ var2;
                var10 = 90;
                break;
             case 2:
                var10 = 17997;
-               long var21 = 5664617878474233924L ^ var2;
                var10 = 85;
                break;
             case 3:
                var10 = 2453;
-               long var20 = 8781113483628828563L ^ var2;
                var10 = 53;
                break;
             case 4:
                var10 = 5852;
-               long var19 = 9091439182668581073L ^ var2;
                var10 = 118;
                break;
             case 5:
                var10 = 16040;
-               long var18 = 2943356168103321762L ^ var2;
                var10 = 106;
                break;
             default:
                var10 = 855;
-               long var17 = 89359358939192671L ^ var2;
                var10 = 57;
          }
 

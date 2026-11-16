@@ -44,78 +44,26 @@ public class Nametags extends guu {
    public Nametags() {
       long a = Nametags.a ^ 8449320076688L;
       super(bfm.VISUAL);
-      short var10003 = 594;
-      long var10004 = 8202393272308847833L ^ a;
-      short var13 = 16655;
-      long var10005 = 1924092404768151455L ^ a;
-      short var23 = 17904;
-      long var10006 = 4888670143474169709L ^ a;
       String[] var24 = new String[9];
-      short var10008 = 10652;
-      long var10009 = 3146712035735994140L ^ a;
       var24[0] = "Product Sans Regular";
-      var10008 = 27381;
-      var10009 = 789517440437075065L ^ a;
       var24[1] = "Product Sans Bold";
-      var10008 = 8938;
-      var10009 = 167736360851272813L ^ a;
       var24[2] = "JetBrains-Regular";
-      var10008 = 27740;
-      var10009 = 7397281211146222301L ^ a;
       var24[3] = "JetBrains-Bold";
-      var10008 = 1408;
-      var10009 = 4742534046867116814L ^ a;
       var24[4] = "Poppins-Regular";
-      var10008 = 9949;
-      var10009 = 5895107413476110421L ^ a;
       var24[5] = "Poppins-Bold";
-      short var10007 = 5006;
-      long var32 = 8415853406848950546L ^ a;
-      var10008 = 11335;
-      var10009 = 6124567891092601540L ^ a;
       var24[6] = "Sf-Regular";
-      var10007 = 24793;
-      long var34 = 6314581829626745410L ^ a;
-      var10008 = 22357;
-      var10009 = 8440569293560119770L ^ a;
       var24[7] = "Sf-Bold";
-      var10007 = 23016;
-      long var36 = 1518589552073403249L ^ a;
-      var10008 = 733;
-      var10009 = 7700161758414033999L ^ a;
       var24[8] = "Tahoma";
       a.gco = new adu("Font", "Product Sans Regular", var24);
-      var10003 = 3876;
-      var10004 = 4517214158943148454L ^ a;
       a.dk = new gbp("Text Shadow", true);
-      var10003 = 14319;
-      var10004 = 182570006707986793L ^ a;
       a.fua = new gbp("Background", true);
-      var10003 = 14034;
-      var10004 = 7886333898819559512L ^ a;
       a.bff = new gbp("Show Health", true);
-      var10003 = 3914;
-      var10004 = 6142162855814814171L ^ a;
       a.chs = new acn("Text Color", Color.WHITE);
-      var10003 = 26178;
-      var10004 = 3808487343831855311L ^ a;
-      short var46 = 30710;
-      long var10010 = 3353493486050559342L ^ a;
       a.eok = new acn("Background Color", new Color(0, 0, 0, 150));
-      var10003 = 7607;
-      var10004 = 3688868106807855908L ^ a;
       a.aih = new bes("Corner Radius", 3.0F, 0.0F, 10.0F, 0.5F);
-      var10003 = 31384;
-      var10004 = 6856770535481256977L ^ a;
       a.ait = new bes("Padding", 2.0F, 0.0F, 10.0F, 0.5F);
-      short var10001 = 584;
-      long var10002 = 878807782559854807L ^ a;
       ffn[] var3 = new ffn[]{a.gco, a.dk, a.fua, a.bff, a.chs, a.eok, null, null};
-      var10003 = 12601;
-      var10004 = 924028140932531107L ^ a;
       var3[6] = a.aih;
-      var10003 = 21668;
-      var10004 = 7062375412798154288L ^ a;
       var3[7] = a.ait;
       a.bfi(var3);
    }
@@ -236,9 +184,7 @@ public class Nametags extends guu {
             }
 
             class_238 var32 = var46.method_5829();
-            short var47 = 584;
             double axxxxxx = axxx.field_6014 + (axxx.method_23317() - axxx.field_6014) * chi.method_61966().method_60637(false);
-            long var10001 = 878878745273752427L ^ ax;
             double axxxxxxx = axxx.field_6036 + (axxx.method_23318() - axxx.field_6036) * chi.method_61966().method_60637(false);
             double axxxxxxxx = axxx.field_5969 + (axxx.method_23321() - axxx.field_5969) * chi.method_61966().method_60637(false);
             class_238 axxxxxxxxx = new class_238(
@@ -259,11 +205,7 @@ public class Nametags extends guu {
                null,
                null
             };
-            short var10002 = 12601;
-            long var10003 = 923957247204485151L ^ ax;
             var48[6] = new class_243(axxxxxxxxx.field_1320, axxxxxxxxx.field_1322, axxxxxxxxx.field_1324);
-            var10002 = 21668;
-            var10003 = 7062446375143968140L ^ ax;
             var48[7] = new class_243(axxxxxxxxx.field_1320, axxxxxxxxx.field_1325, axxxxxxxxx.field_1324);
             class_243[] axxxxxxxxxx = var48;
             axxxx = null;
@@ -325,8 +267,6 @@ public class Nametags extends guu {
             float axxxxxxxx = (float)axxxx.z;
             float axxxxxxxxx = (float)axxxx.w;
             String var51 = a.gco.dnp();
-            short var54 = 29637;
-            long var58 = 1877102437158234855L ^ ax;
             fll axxxxxxxxxx = bxc.emc(var51, 9);
             float axxxxxxxxxxx = (axxxxxx + axxxxxxxx) / 2.0F;
             float axxxxxxxxxxxx = axxxxxxx - 10.0F;
@@ -337,8 +277,6 @@ public class Nametags extends guu {
                float axxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx / axxxxxxxxxxxxx.method_6063();
                class_124 axxxxxxxxxxxxxxxxxxx = a.dak(axxxxxxxxxxxxxxxxxx);
                StringBuilder var52 = axxxxxxxxxxxxxxxx.append(axxxxxxxxxxxxxxxxxxx);
-               var54 = 6745;
-               var58 = 47410651065198432L ^ ax;
                var52.append(String.format(" %.1f", axxxxxxxxxxxxxxxxx));
             }
 
@@ -346,8 +284,6 @@ public class Nametags extends guu {
             float axxxxxxxxxxxxxxxxxx;
             label149: {
                axxxxxxxxxxxxxxxxx = axxxxxxxxxx.eq(axxxxxxxxxxxxxxxx.toString());
-               var54 = 8080;
-               var58 = 4855583524764426920L ^ ax;
                axxxxxxxxxxxxxxxxxx = axxxxxxxxxx.biu("Ay");
                float axxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxx + a.ait.dnp().intValue() * 4;
                float axxxxxxxxxxxxxxxxxxxx = axxxxxxxxxxxxxxxxxx + a.ait.dnp().intValue() * 2;

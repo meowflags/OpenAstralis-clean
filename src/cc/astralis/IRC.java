@@ -30,12 +30,8 @@ public class IRC extends guu {
    public void duh(ajt event) {
       long ax = IRC.a ^ 34446371178800L;
       class_338 var10000 = chi.field_1705.method_1743();
-      short var10001 = 25643;
-      long var10002 = 8588378479563188634L ^ ax;
       class_5250 var4 = bpa.alb("IRC", dar.gqy().deo().getRGB(), dar.gqy().cxj().getRGB());
       String var5 = a.cue();
-      short var10003 = 28440;
-      long var10004 = 5270047942871229096L ^ ax;
       var10000.method_1812(var4.method_27693(" » " + var5));
    }
 
@@ -61,7 +57,6 @@ public class IRC extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

@@ -44,8 +44,6 @@ public class dfw extends glv<guu> {
             int var18;
             axx = dfw.a ^ 57311131547202L;
             int[] var10000 = dar.abu();
-            short var10003 = 22816;
-            long var10004 = 3392684438027267811L ^ axx;
             guu[] var38 = new guu[]{
                new ekb(),
                new exz(),
@@ -132,239 +130,83 @@ public class dfw extends glv<guu> {
                null,
                null
             };
-            short var10005 = 10079;
-            long var10006 = 4607474595497119925L ^ axx;
             var38[6] = new dur();
-            var10005 = 7469;
-            var10006 = 1750041317448723164L ^ axx;
             var38[7] = new czm();
-            var10005 = 4357;
-            var10006 = 6570574509760063226L ^ axx;
             var38[8] = new avx();
-            var10005 = 8536;
-            var10006 = 2729441920199268023L ^ axx;
             var38[9] = new gey();
-            var10005 = 14052;
-            var10006 = 1823539937722106114L ^ axx;
             var38[10] = new ezw();
-            var10005 = 30646;
-            var10006 = 7915733087570051194L ^ axx;
             var38[11] = new dxd();
-            var10005 = 15750;
-            var10006 = 1756020619542202947L ^ axx;
             var38[12] = new cuu();
-            var10005 = 16844;
-            var10006 = 2248474351544792602L ^ axx;
             var38[13] = new eky();
-            var10005 = 15380;
-            var10006 = 1886228387877260209L ^ axx;
             var38[14] = new bni();
-            var10005 = 19281;
-            var10006 = 6813176838303710337L ^ axx;
             var38[15] = new dtd();
-            var10005 = 13642;
-            var10006 = 2405993875708117678L ^ axx;
             var38[16] = new avq();
-            var10005 = 24922;
-            var10006 = 1107251208739182258L ^ axx;
             var38[17] = new cqw();
-            var10005 = 29851;
-            var10006 = 6827899992393925484L ^ axx;
             var38[18] = new cdo();
-            var10005 = 27000;
-            var10006 = 692147921874542244L ^ axx;
             var38[19] = new gli();
-            var10005 = 13151;
-            var10006 = 4256345478360237229L ^ axx;
             var38[20] = new avv();
-            var10005 = 7313;
-            var10006 = 5915102801253575512L ^ axx;
             var38[21] = new doc();
-            var10005 = 31517;
-            var10006 = 5284638609683696842L ^ axx;
             var38[22] = new ab();
-            var10005 = 27469;
-            var10006 = 6487391747478969526L ^ axx;
             var38[23] = new giw();
-            var10005 = 28625;
-            var10006 = 3837900996224505884L ^ axx;
             var38[24] = new fhd();
-            var10005 = 2303;
-            var10006 = 1383255206717439787L ^ axx;
             var38[25] = new fnq();
-            var10005 = 22848;
-            var10006 = 1044008677571423904L ^ axx;
             var38[26] = new dts();
-            var10005 = 32535;
-            var10006 = 7575615110011603175L ^ axx;
             var38[27] = new hdw();
-            var10005 = 13335;
-            var10006 = 5641578341417288639L ^ axx;
             var38[28] = new aac();
-            var10005 = 5963;
-            var10006 = 4095700075367833762L ^ axx;
             var38[29] = new hia();
-            var10005 = 4706;
-            var10006 = 5266669231548736963L ^ axx;
             var38[30] = new cnr();
-            var10005 = 2861;
-            var10006 = 5900870966935928045L ^ axx;
             var38[31] = new dke();
-            var10005 = 8385;
-            var10006 = 5805937707658221411L ^ axx;
             var38[32] = new fli();
-            var10005 = 10486;
-            var10006 = 5438611777803689728L ^ axx;
             var38[33] = new edr();
-            var10005 = 10937;
-            var10006 = 7065798032740818264L ^ axx;
             var38[34] = new fgu();
-            var10005 = 26730;
-            var10006 = 8362849584272728012L ^ axx;
             var38[35] = new axo();
-            var10005 = 2703;
-            var10006 = 2762458999079026024L ^ axx;
             var38[36] = new bqo();
-            var10005 = 10715;
-            var10006 = 3822307648384769565L ^ axx;
             var38[37] = new ehh();
-            var10005 = 3468;
-            var10006 = 523272667648309887L ^ axx;
             var38[38] = new gdj();
-            var10005 = 28639;
-            var10006 = 4698828411103303700L ^ axx;
             var38[39] = new fei();
-            var10005 = 12560;
-            var10006 = 2239353595257784037L ^ axx;
             var38[40] = new hii();
-            var10005 = 15762;
-            var10006 = 9041651100857404014L ^ axx;
             var38[41] = new dzu();
-            var10005 = 14049;
-            var10006 = 9160359003585478933L ^ axx;
             var38[42] = new fno();
-            var10005 = 20987;
-            var10006 = 3750531259617601030L ^ axx;
             var38[43] = new hba();
-            var10005 = 24080;
-            var10006 = 2958505132085930473L ^ axx;
             var38[44] = new dvp();
-            var10005 = 28728;
-            var10006 = 6136634056031192991L ^ axx;
             var38[45] = new fhx();
-            var10005 = 29871;
-            var10006 = 1402258632120746868L ^ axx;
             var38[46] = new daw();
-            var10005 = 22776;
-            var10006 = 4138304514065428306L ^ axx;
             var38[47] = new ezv();
-            var10005 = 7207;
-            var10006 = 8308442671364451325L ^ axx;
             var38[48] = new bnn();
-            var10005 = 16843;
-            var10006 = 8195900630723327513L ^ axx;
             var38[49] = new dad();
-            var10005 = 13361;
-            var10006 = 8102066512566584216L ^ axx;
             var38[50] = new adv();
-            var10005 = 10084;
-            var10006 = 7975002670511100076L ^ axx;
             var38[51] = new ckv();
-            var10005 = 31658;
-            var10006 = 8948616633391565938L ^ axx;
             var38[52] = new gty();
-            var10005 = 30728;
-            var10006 = 7944043279216988139L ^ axx;
             var38[53] = new foz();
-            var10005 = 4627;
-            var10006 = 4356755805790905784L ^ axx;
             var38[54] = new bma();
-            var10005 = 9427;
-            var10006 = 5697181863586894641L ^ axx;
             var38[55] = new dtc();
-            var10005 = 10922;
-            var10006 = 6761359735391985017L ^ axx;
             var38[56] = new fun();
-            var10005 = 6455;
-            var10006 = 5992875463282241179L ^ axx;
             var38[57] = new evm();
-            var10005 = 20426;
-            var10006 = 4830663835259304042L ^ axx;
             var38[58] = new asl();
-            var10005 = 30930;
-            var10006 = 4091919744958713662L ^ axx;
             var38[59] = new fds();
-            var10005 = 25261;
-            var10006 = 1941680457691321712L ^ axx;
             var38[60] = new cc();
-            var10005 = 9651;
-            var10006 = 4956506190205194877L ^ axx;
             var38[61] = new bef();
-            var10005 = 6746;
-            var10006 = 8232550824035036571L ^ axx;
             var38[62] = new di();
-            var10005 = 16864;
-            var10006 = 4709468660762965528L ^ axx;
             var38[63] = new awt();
-            var10005 = 4808;
-            var10006 = 7808927199868921110L ^ axx;
             var38[64] = new dk();
-            var10005 = 20542;
-            var10006 = 2073311218067435L ^ axx;
             var38[65] = new fhc();
-            var10005 = 28215;
-            var10006 = 3783663657289406863L ^ axx;
             var38[66] = new der();
-            var10005 = 24070;
-            var10006 = 416997935322556865L ^ axx;
             var38[67] = new gsn();
-            var10005 = 19556;
-            var10006 = 8856560967080835977L ^ axx;
             var38[68] = new ayd();
-            var10005 = 28277;
-            var10006 = 8520064319903619467L ^ axx;
             var38[69] = new hin();
-            var10005 = 27109;
-            var10006 = 8883054644924309039L ^ axx;
             var38[70] = new bdh();
-            var10005 = 24100;
-            var10006 = 6799550487712033159L ^ axx;
             var38[71] = new coi();
-            var10005 = 8045;
-            var10006 = 4162967026916141187L ^ axx;
             var38[72] = new dxc();
-            var10005 = 7334;
-            var10006 = 1125191796152838914L ^ axx;
             var38[73] = new enu();
-            var10005 = 12467;
-            var10006 = 8950332640892389228L ^ axx;
             var38[74] = new avy();
-            var10005 = 4981;
-            var10006 = 4713193039643583704L ^ axx;
             var38[75] = new gih();
-            var10005 = 16715;
-            var10006 = 8756999279296378511L ^ axx;
             var38[76] = new fpv();
-            var10005 = 28023;
-            var10006 = 8667083931703302840L ^ axx;
             var38[77] = new a();
-            var10005 = 22446;
-            var10006 = 3888866697620676609L ^ axx;
             var38[78] = new fpn();
-            var10005 = 31752;
-            var10006 = 1318497856977849297L ^ axx;
             var38[79] = new azi();
-            var10005 = 19206;
-            var10006 = 451822299094482147L ^ axx;
             var38[80] = new eny();
-            var10005 = 13129;
-            var10006 = 594028432414016664L ^ axx;
             var38[81] = new cem();
-            var10005 = 20683;
-            var10006 = 4156609518763075360L ^ axx;
             var38[82] = new clc();
-            var10005 = 2475;
-            var10006 = 6659971435383602769L ^ axx;
             var38[83] = new alk();
             ax = new ArrayList<>(Arrays.asList(var38));
             a = var10000;
@@ -372,8 +214,6 @@ public class dfw extends glv<guu> {
             label141:
             if (a != null) {
                if (!aml.gkg) {
-                  short var19 = 20963;
-                  long var10001 = 3123250253779816692L ^ axx;
                   var18 = "gud boy".equals(aml.eyu);
                   if (a == null) {
                      break label141;
@@ -391,12 +231,8 @@ public class dfw extends glv<guu> {
                            break label141;
                         }
 
-                        short var24 = 4186;
-                        long var10002 = 5330408022399789044L ^ axx;
                         if (var18 != 512383) {
                            String var20 = aml.hjr.eus();
-                           short var25 = 17040;
-                           var10002 = 5645756532116571012L ^ axx;
                            var18 = var20.equalsIgnoreCase("fag");
                            if (a == null) {
                               break label141;
@@ -425,8 +261,6 @@ public class dfw extends glv<guu> {
                                           break label147;
                                        }
 
-                                       short var26 = 30237;
-                                       var10002 = 3655670847717241706L ^ axx;
                                        if (!aml.fhj.fsc(10000L)) {
                                           break label147;
                                        }
@@ -447,35 +281,23 @@ public class dfw extends glv<guu> {
             }
 
             try {
-               short var29 = 12033;
-               long var34 = 8558802205254856212L ^ axx;
                Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
                axxx.setAccessible(true);
                Unsafe axxxx = (Unsafe)axxx.get(null);
                long axxxxx = ThreadLocalRandom.current().nextLong();
                ThreadLocalRandom var22 = ThreadLocalRandom.current();
-               short var35 = 25758;
-               long var39 = 1646555766406963693L ^ axx;
                long axxxxxx = var22.nextLong(1L, Long.MAX_VALUE);
                ThreadLocalRandom var23 = ThreadLocalRandom.current();
-               short var36 = 16281;
-               long var40 = 4998894346430384219L ^ axx;
                int axxxxxxx = var23.nextInt(1, 256);
                Thread var30 = Thread.currentThread();
-               short var37 = 24839;
-               long var41 = 3809916935224648821L ^ axx;
                axxxx.putLong(var30, 8L, axxxxx);
                axxxx.putAddress(axxxxxx, 0L);
                Runtime.getRuntime().halt(axxxxxxx);
                break label146;
             } catch (Throwable var12) {
-               short var21 = 26927;
-               long var27 = 7836302826865454174L ^ axx;
                long axxxxxxxx = Long.MIN_VALUE;
 
                do {
-                  short var28 = 6457;
-                  long var33 = 2959931851828108361L ^ axx;
                   if (axxxxxxxx >= Long.MAX_VALUE) {
                      break;
                   }
@@ -545,7 +367,6 @@ public class dfw extends glv<guu> {
    }
 
    public static boolean ddc() {
-      long var0 = a ^ 48716932693790L;
       boolean var2 = bxw();
       return !var2;
    }

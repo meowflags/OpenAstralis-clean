@@ -34,11 +34,8 @@ public class fhx extends guu {
    }
 
    public static int asb() {
-      long var0 = a ^ 30060936037359L;
       int var2 = arz();
       if (var2 == 0) {
-         short var10000 = 1313;
-         long var10001 = 7779173567549487001L ^ var0;
          return 38;
       } else {
          return 0;
@@ -96,15 +93,12 @@ public class fhx extends guu {
             | (var10[5] & 255L) << 16
             | (var10[6] & 255L) << 8
             | var10[7] & 255L;
-         byte var16 = -1;
          var6[var10001] = var10004;
       } while (var2 < var5);
 
       g = var6;
       h = new Integer[2];
       if (asb() == 0) {
-         short var13 = 18698;
-         long var15 = 614202319145856336L ^ var11;
          fmt(62);
       }
    }

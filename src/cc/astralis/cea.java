@@ -24,11 +24,7 @@ public class cea extends hcr {
 
    public cea(guu parentClass) {
       long ax = cea.a ^ 82106530215101L;
-      short var10002 = 1538;
-      long var10003 = 893942990589498266L ^ ax;
       super(a, "Vanilla");
-      short var4 = 22873;
-      long var10004 = 5020772208157543616L ^ ax;
       a.dhj = new bes("Speed", 1.0F, 0.0F, 10.0F, 0.1F);
       a.ebu(a.dhj);
    }
@@ -92,7 +88,6 @@ public class cea extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

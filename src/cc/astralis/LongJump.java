@@ -27,11 +27,7 @@ public class LongJump extends guu {
    public LongJump() {
       long a = LongJump.a ^ 48180071409599L;
       super(bfm.MOVEMENT);
-      short var10003 = 31858;
-      long var10004 = 7391892887483644019L ^ a;
       a.ecb = new bes("Range", 0.6F, 0.0F, 5.0F, 0.1F);
-      var10003 = 5386;
-      var10004 = 7696477082100240650L ^ a;
       a.eiq = new gbp("Only with Space", false);
       a.bfi(new ffn[]{a.ecb, a.eiq});
    }
@@ -154,7 +150,6 @@ public class LongJump extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

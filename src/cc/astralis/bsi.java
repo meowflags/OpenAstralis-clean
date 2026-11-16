@@ -24,11 +24,7 @@ public class bsi extends hcr {
 
    public bsi(guu parent) {
       long ax = bsi.a ^ 10583851485511L;
-      short var10002 = 20459;
-      long var10003 = 9216193035464537194L ^ ax;
       super(a, "Jump");
-      short var4 = 31431;
-      long var10004 = 6890170626406400327L ^ ax;
       a.dnc = new bes("Delay", 100.0F, 0.0F, 100.0F, 1.0F);
       a.ebu(a.dnc);
    }
@@ -97,7 +93,6 @@ public class bsi extends hcr {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var20 = a(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var20;
          if ((var9 += var10) >= var13) {
             d = var14;
@@ -133,7 +128,6 @@ public class bsi extends hcr {
                | (var4[5] & 255L) << 16
                | (var4[6] & 255L) << 8
                | var4[7] & 255L;
-            var10001 = -1;
             g = var23;
             return;
          }

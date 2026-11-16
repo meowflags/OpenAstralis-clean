@@ -49,73 +49,29 @@ public class apm extends hcr {
 
    public apm(guu parentClass) {
       long ax = apm.a ^ 66956390447690L;
-      short var10002 = 4147;
-      long var10003 = 1911081787515655524L ^ ax;
       super(a, "Watchdog");
-      short var6 = 27717;
-      long var10004 = 5555591364281510167L ^ ax;
-      short var22 = 19591;
-      long var10005 = 566627575360457177L ^ ax;
       String[] var38 = new String[3];
-      short var10008 = 28591;
-      long var10009 = 833987858671839994L ^ ax;
       var38[0] = "Strafe";
-      var10008 = 28620;
-      var10009 = 5178970481519471236L ^ ax;
       var38[1] = "Update";
-      var10008 = 2411;
-      var10009 = 6445935139474394168L ^ ax;
       var38[2] = "Correction";
       a.esl = new adu("Event Mode", "Strafe", var38);
-      short var7 = 19307;
-      var10004 = 6514986611216059962L ^ ax;
       a.aqu = new bes("Ground Speed (No Speed Pot)", 0.45F, 0.0F, 2.0F, 0.01F);
-      short var8 = 6282;
-      var10004 = 7626723083527216599L ^ ax;
       a.eso = new bes("Ground Speed (Speed One)", 0.45F, 0.0F, 2.0F, 0.01F);
-      short var9 = 5846;
-      var10004 = 1352205209990386573L ^ ax;
       a.faq = new bes("Ground Speed (Speed Two)", 0.45F, 0.0F, 2.0F, 0.01F);
-      short var10 = 5430;
-      var10004 = 7458380975114801277L ^ ax;
       a.gke = new gbp("Air Strafe", true);
-      short var11 = 12293;
-      var10004 = 522686211129800029L ^ ax;
       a.fqj = new gbp("Air Strafe Extra", true);
-      short var12 = 30542;
-      var10004 = 5633061931968082455L ^ ax;
       a.hhq = new bes("Air Strafe Tolerance", 80.0F, 50.0F, 90.0F, 5.0F);
-      short var13 = 23904;
-      var10004 = 5258305086722152496L ^ ax;
       a.bhq = new gbp("Watchdog Strafe", true);
-      short var14 = 23987;
-      var10004 = 3579372040444483815L ^ ax;
       a.fbw = new gbp("Watchdog Low Hop", true);
-      short var15 = 15254;
-      var10004 = 4181318975943999180L ^ ax;
       a.gzc = new gbp("Seven Tick", true);
-      short var16 = 13061;
-      var10004 = 8677643050215274073L ^ ax;
       a.fig = new gbp("Experimental Strafe Chech", true);
       a.fsf = false;
       a.fz = new cbm();
-      short var10001 = 3523;
-      long var5 = 5421636931912018995L ^ ax;
       ffn[] var4 = new ffn[]{a.esl, a.aqu, a.eso, a.faq, a.gke, a.hhq.bih(a.gke::dnp), null, null, null, null, null};
-      short var17 = 32496;
-      var10004 = 2533730566020423437L ^ ax;
       var4[6] = a.bhq;
-      short var18 = 12818;
-      var10004 = 7866335641628972000L ^ ax;
       var4[7] = a.fbw;
-      short var19 = 28482;
-      var10004 = 810754723440676538L ^ ax;
       var4[8] = a.gzc;
-      short var20 = 1956;
-      var10004 = 4012348149488920158L ^ ax;
       var4[9] = a.fqj.bih(a.gke::dnp);
-      short var21 = 26746;
-      var10004 = 4552583090135812483L ^ ax;
       var4[10] = a.fig;
       a.dxe(var4);
    }
@@ -170,8 +126,6 @@ public class apm extends hcr {
             label184: {
                class_2248 axxx = var7.field_1687.method_8320(chi.field_1724.method_24515().method_10074()).method_26204();
                String var8 = axxx.method_63499();
-               short var10001 = 11747;
-               long var10002 = 6997317501394286329L ^ ax;
                var9 = var8.contains("stairs");
                if (axx != null) {
                   if (var9 != 0) {
@@ -179,8 +133,6 @@ public class apm extends hcr {
                   }
 
                   String var10 = axxx.method_63499();
-                  var10001 = 5532;
-                  var10002 = 4974993320487472773L ^ ax;
                   var9 = var10.contains("slab");
                }
 
@@ -274,8 +226,6 @@ public class apm extends hcr {
       }
 
       if (axx != null) {
-         short var13 = 10841;
-         long var16 = 6979273872067499505L ^ ax;
          if (var11 == 13) {
             a.elr = true;
          }
@@ -292,8 +242,6 @@ public class apm extends hcr {
       }
 
       if (axx != null) {
-         short var14 = 29945;
-         long var17 = 6711695964553169750L ^ ax;
          if (var11 == 3426) {
             a.csp = true;
          }
@@ -316,8 +264,6 @@ public class apm extends hcr {
             a.dji();
          }
 
-         short var10001 = 4153;
-         long var10002 = 8484114981538507232L ^ ax;
          var10000 = a.esl.emb("Update");
       }
 
@@ -365,8 +311,6 @@ public class apm extends hcr {
                break label29;
             }
 
-            short var10001 = 23880;
-            long var10002 = 9137857934452586878L ^ ax;
             var10000 = a.esl.emb("Correction");
          }
 
@@ -397,8 +341,6 @@ public class apm extends hcr {
                break label29;
             }
 
-            short var10001 = 28591;
-            long var10002 = 833937671129539730L ^ ax;
             var10000 = a.esl.emb("Strafe");
          }
 
@@ -682,8 +624,6 @@ public class apm extends hcr {
          var10000 = a.fqj.dnp();
          if (ax != null) {
             if (var10000 != 0) {
-               short var11 = 11516;
-               long var14 = 6917789389888914926L ^ a;
                float var18;
                var10000 = (var18 = axxxx - (180 - axxxxx)) == 0.0F ? 0 : (var18 < 0.0F ? -1 : 1);
                if (ax != null) {
@@ -691,8 +631,6 @@ public class apm extends hcr {
                      return;
                   }
 
-                  var11 = 26841;
-                  var14 = 4703996900315513290L ^ a;
                   float var19;
                   var10000 = (var19 = axxxx - (180 + axxxxx)) == 0.0F ? 0 : (var19 < 0.0F ? -1 : 1);
                }
@@ -703,8 +641,6 @@ public class apm extends hcr {
                break label102;
             }
 
-            short var10001 = 26841;
-            long var10002 = 4703996900315513290L ^ a;
             float var20;
             var10000 = (var20 = axxxx - (180 - axxxxx)) == 0.0F ? 0 : (var20 < 0.0F ? -1 : 1);
          }
@@ -714,8 +650,6 @@ public class apm extends hcr {
                return;
             }
 
-            short var10 = 26841;
-            long var13 = 4703996900315513290L ^ a;
             float var21;
             var10000 = (var21 = axxxx - (180 + axxxxx)) == 0.0F ? 0 : (var21 < 0.0F ? -1 : 1);
          }
@@ -884,7 +818,6 @@ public class apm extends hcr {
                                        | (var4[5] & 255L) << 16
                                        | (var4[6] & 255L) << 8
                                        | var4[7] & 255L;
-                                    byte var41 = -1;
                                     m = var50;
                                     return;
                                  }

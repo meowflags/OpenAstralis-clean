@@ -33,14 +33,8 @@ public class ElytraFly extends guu {
    public ElytraFly() {
       long a = ElytraFly.a ^ 37547127334459L;
       super(bfm.MOVEMENT);
-      short var10003 = 27406;
-      long var10004 = 6143420582507021700L ^ a;
       a.bco = new bes("Speed", 1.5F, 0.1F, 5.0F, 0.1F);
-      var10003 = 29997;
-      var10004 = 2298224377786604454L ^ a;
       a.egq = new bes("Vertical Speed", 0.8F, 0.1F, 2.0F, 0.1F);
-      var10003 = 15865;
-      var10004 = 3468241735569199984L ^ a;
       a.gvd = new gbp("Only With Elytra", true);
       a.bfi(new ffn[]{a.bco, a.egq, a.gvd});
    }
@@ -222,7 +216,6 @@ public class ElytraFly extends guu {
       while (true) {
          byte[] var15 = var7.doFinal(var11.substring(++var9, var9 + var10).getBytes("ISO-8859-1"));
          String var20 = d(var15).intern();
-         byte var10001 = -1;
          var14[var12++] = var20;
          if ((var9 += var10) >= var13) {
             g = var14;
@@ -258,7 +251,6 @@ public class ElytraFly extends guu {
                | (var4[5] & 255L) << 16
                | (var4[6] & 255L) << 8
                | var4[7] & 255L;
-            var10001 = -1;
             p = var23;
             return;
          }

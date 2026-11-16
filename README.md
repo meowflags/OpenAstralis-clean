@@ -331,7 +331,11 @@ names (`net.minecraft.class_310`), so they only compile inside a Fabric workspac
 for the version they were built against; the intermediary ids carry no version
 themselves.
 
-The obfuscator used five layers, all folded offline:
+The obfuscator is **Zelix Klassmaster** with an `opalV2` native-thinning layer
+on top; the fingerprint (DES string scheme, `invokedynamic` + `MutableCallSite`
+bootstraps, 2-3 letter renames, flow splicing) and the four reasons JNIC is
+ruled out are in `docs/analysis/DEOBFUSCATION.md` §10. Its five layers, all
+folded offline:
 
 1. **Encrypted strings in `<clinit>`** — each class carries a `long` key and a
    character blob; `static {}` derives a DES key from a per-class constant.
@@ -355,6 +359,10 @@ entries its `bipush 59 / anewarray` declares.
 
 Two classes Vineflower cannot finish (`ehy`, `hcu`) are decompiled with CFR, so
 `src/` is 518/518 readable files with no `$VF: Couldn't be decompiled` stub.
+After the fold, `tools/strip_zkm_residue.py` deletes the obfuscator's dead
+operand stores (`short var10001 = 9026;` and friends) — 7,474 lines across 319
+files, never touching a store that is read or has side effects
+(`docs/analysis/DEOBFUSCATION.md` §11).
 The 55 sites that stay unfolded are all `(IJ)J` in `cc/astralis/brc`/`cvn`; their
 bootstrap method builds the call site at runtime from a bytewise-composed
 `long[]` that has no static table in the class file, so there is nothing to fold
@@ -404,6 +412,8 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `tools/redact.py` | sweep the folded tree for credential shapes and mark them before publishing |
 | `tools/vineflower.jar` | vendored Vineflower, the last step of the Java-layer pipeline |
 | `tools/indy_scan.py` | list every `invokedynamic` descriptor and its bootstrap method |
+| `tools/fingerprint_obfuscator.py` | class-file fingerprint: DES runtimes, indy sites, native methods, vendor markers |
+| `tools/strip_zkm_residue.py` | delete the dead operand stores the folded `invokedynamic` sites left behind |
 | `tools/jarscan.py`, `tools/rebuild_jar.py` | archive-level inventory and rebuild |
 | `tools/Sanitize.java` | neutralise hardcoded endpoints and `halt` calls |
 | `tools/devirt_dump.py` | turn IDA output into annotated C bodies |
@@ -763,7 +773,12 @@ nativa, y usan nombres intermediarios de Fabric (`net.minecraft.class_310`), as�
 que solo compilan dentro de un workspace de Fabric de la versión contra la que se
 construyeron; los ids intermediarios no llevan versión.
 
-El ofuscador usaba cinco capas, todas plegadas sin conexión: strings cifrados en
+El ofuscador es **Zelix Klassmaster** con una capa de thinning nativo
+`opalV2` encima; la firma (esquema DES de cadenas, bootstraps
+`invokedynamic` + `MutableCallSite`, renombrado de 2-3 letras, esplices de
+flujo) y las cuatro razones por las que se descarta JNIC están en
+`docs/analysis/DEOBFUSCATION.md` §10. Usaba cinco capas, todas plegadas sin
+conexión: strings cifrados en
 `<clinit>` (clave DES por clase, texto plano en **CESU-8**), tablas `long[]`
 cifradas (DES/CBC/NoPadding, IV = 0), y tres sitios `invokedynamic` — `(IJ)I`,
 `(IJ)Ljava/lang/String;` y `(IJ)J` — que devuelven enteros, cadenas y los offsets
@@ -777,6 +792,10 @@ entradas que declara su `bipush 59 / anewarray`.
 
 Dos clases que Vineflower no termina (`ehy`, `hcu`) se decompilan con CFR: `src/`
 queda en 518/518 ficheros legibles, sin el stub `$VF: Couldn't be decompiled`.
+Tras el plegado, `tools/strip_zkm_residue.py` borra las tiendas muertas de
+operandos del ofuscador (`short var10001 = 9026;` y compañía) — 7.474 líneas en
+319 ficheros, sin tocar ninguna tienda que se lea o tenga efectos secundarios
+(`docs/analysis/DEOBFUSCATION.md` §11).
 Los 55 sitios sin plegar son todos `(IJ)J` en `cc/astralis/brc`/`cvn`: su
 bootstrap construye el call site en ejecución desde un `long[]` compuesto byte a
 byte que no existe como tabla estática en el class file.
@@ -818,6 +837,8 @@ sale como `<redacted:discord-bot-token>`.
 | `tools/redact.py` | barre el árbol plegado buscando formas de credencial y las marca antes de publicar |
 | `tools/vineflower.jar` | Vineflower incluido, último paso del pipeline de la capa Java |
 | `tools/indy_scan.py` | lista descriptores `invokedynamic` y su bootstrap |
+| `tools/fingerprint_obfuscator.py` | huella de los `.class`: runtimes DES, sitios indy, métodos `native`, marcadores de fabricante |
+| `tools/strip_zkm_residue.py` | borra las tiendas muertas que dejaron los sitios `invokedynamic` plegados |
 | `mapping/offsets.json` | 3.897 constantes plegadas |
 | `mapping/modules.tsv` | 91 clases de módulo: categoría, ajustes, función inferida |
 | `mapping/modules.proguard.txt` | los 74 renombrados identificados, importables en Recaf |

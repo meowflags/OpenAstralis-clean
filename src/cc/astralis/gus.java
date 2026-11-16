@@ -23,11 +23,7 @@ public class gus extends hcr {
 
    public gus(guu parentClass) {
       long ax = gus.a ^ 58175843992189L;
-      short var10002 = 10197;
-      long var10003 = 7199423830928096675L ^ ax;
       super(a, "MMC");
-      short var4 = 21947;
-      long var10004 = 8609077446868668364L ^ ax;
       a.egf = new bes("MMC Value", 0.8F, 0.75F, 1.0F, 0.01F);
       a.ebu(a.egf);
    }
@@ -97,7 +93,6 @@ public class gus extends hcr {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = a(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             d = var9;

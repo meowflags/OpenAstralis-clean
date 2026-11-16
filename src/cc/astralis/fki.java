@@ -320,7 +320,6 @@ public class fki {
    }
 
    public static boolean gur() {
-      long var0 = a ^ 108280439256770L;
       return class_310.method_1551().field_1687 != null;
    }
 

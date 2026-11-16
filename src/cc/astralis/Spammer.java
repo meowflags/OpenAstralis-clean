@@ -27,11 +27,7 @@ public class Spammer extends guu {
    public Spammer() {
       long a = Spammer.a ^ 111514077699263L;
       super(bfm.PLAYER);
-      short var10003 = 11508;
-      long var10004 = 6384653435316181557L ^ a;
       a.czg = new gbp("Flush Automatically", true);
-      var10003 = 8343;
-      var10004 = 913418725630711383L ^ a;
       a.fmm = (bes)new bes("Flush Interval (ms)", 500.0F, 100.0F, 2000.0F, 50.0F).bih(a.czg::dnp);
       a.czu = new cbm();
       a.bfi(new ffn[]{a.czg, a.fmm});
@@ -113,7 +109,6 @@ public class Spammer extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

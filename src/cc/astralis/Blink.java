@@ -31,16 +31,8 @@ public class Blink extends guu {
    public Blink() {
       long a = Blink.a ^ 79530025290916L;
       super(bfm.PLAYER);
-      short var10003 = 31544;
-      long var10004 = 4011453046589566094L ^ a;
-      short var3 = 1110;
-      long var10005 = 3899400101597565922L ^ a;
       String[] var4 = new String[2];
-      short var10008 = 1110;
-      long var10009 = 3899400101597565922L ^ a;
       var4[0] = "Blink";
-      var10008 = 4090;
-      var10009 = 534518023067195469L ^ a;
       var4[1] = "Stop";
       a.fbp = new adu("Mode", "Blink", var4);
       a.bfi(new ffn[]{a.fbp});
@@ -68,8 +60,6 @@ public class Blink extends guu {
    public void div(fxx event) {
       long ax = Blink.a ^ 13405490388760L;
       int[] var4 = dar.abu();
-      short var10001 = 3780;
-      long var10002 = 961470199450454728L ^ ax;
       boolean var10000 = a.fbp.emb("Stop");
       if (var4 != null) {
          if (!var10000) {
@@ -97,8 +87,6 @@ public class Blink extends guu {
       long ax = Blink.a ^ 52056546233485L;
       int[] axx = dar.abu();
       String var10000 = a.fbp.dnp();
-      short var10001 = 29927;
-      long var10002 = 2125518681722446715L ^ ax;
       boolean var6 = var10000.equals("Blink");
       if (axx != null) {
          label93: {
@@ -162,8 +150,6 @@ public class Blink extends guu {
             }
 
             var10.fjd = false;
-            short var11 = 6878;
-            long var12 = 5937257608482524486L ^ ax;
             bpa.dhu("Saved from void!");
             if (axx != null) {
                return;

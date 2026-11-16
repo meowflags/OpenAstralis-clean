@@ -26,14 +26,8 @@ public class Reach extends guu {
    public Reach() {
       long a = Reach.a ^ 125458427721467L;
       super(bfm.COMBAT);
-      short var10003 = 29704;
-      long var10004 = 3715164604725509929L ^ a;
       a.gdv = new bes("Reach", 3.0F, 3.0F, 6.0F, 0.05F);
-      var10003 = 6919;
-      var10004 = 8768094574087524388L ^ a;
       a.dnp = new gbp("Modify Block Reach", false);
-      var10003 = 6206;
-      var10004 = 5487108788868338462L ^ a;
       a.ffi = (bes)new bes("Block Reach", 3.0F, 3.0F, 6.0F, 0.05F).bih(() -> a.dnp.dnp());
       a.bfi(new ffn[]{a.gdv, a.dnp, a.ffi});
    }
@@ -66,7 +60,6 @@ public class Reach extends guu {
       while (true) {
          byte[] var10 = var2.doFinal(var6.substring(++var4, var4 + var5).getBytes("ISO-8859-1"));
          String var13 = d(var10).intern();
-         byte var10001 = -1;
          var9[var7++] = var13;
          if ((var4 += var5) >= var8) {
             g = var9;

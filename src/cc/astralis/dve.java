@@ -153,16 +153,12 @@ public class dve extends brc {
                            String var24;
                            int var26 = (var24 = var11[2]).length();
                            String var34 = var11[0];
-                           short var44 = 28021;
-                           long var54 = 8669087061252932639L ^ var20;
                            char var23 = 7;
                            hby(var34);
                            int var31 = -1;
 
                            label44:
                            while (true) {
-                              short var35 = 11256;
-                              long var45 = 3878209119543640720L ^ var20;
                               byte var36 = 35;
                               String var46 = var24.substring(++var31, var31 + var23);
                               byte var55 = -1;
@@ -187,14 +183,10 @@ public class dve extends brc {
                                        }
 
                                        var26 = (var24 = var11[1]).length();
-                                       short var38 = 28021;
-                                       long var47 = 8669087061252932639L ^ var20;
                                        var23 = 7;
                                        var31 = -1;
                                  }
 
-                                 short var39 = 25021;
-                                 long var48 = 4534385526265055454L ^ var20;
                                  var36 = 117;
                                  var46 = var24.substring(++var31, var31 + var23);
                                  var55 = 0;
@@ -236,12 +228,9 @@ public class dve extends brc {
    }
 
    private static char[] b(String var0) {
-      long var1 = c ^ 51755667130091L;
       char[] var10000 = var0.toCharArray();
       if (var10000.length < 2) {
          char var10003 = var10000[0];
-         short var10004 = 11487;
-         long var10005 = 7437165448623127289L ^ var1;
          var10000[0] = (char)(var10003 ^ 'T');
       }
 
@@ -249,7 +238,6 @@ public class dve extends brc {
    }
 
    private static String b(int var0, char[] var1) {
-      long var2 = c ^ 125210387259808L;
       int var10003 = var1.length;
       int var10002 = var0;
       char[] var10001 = var1;
@@ -257,43 +245,34 @@ public class dve extends brc {
 
       for (int var4 = 0; var10000 > var4; var4++) {
          char var10005 = var10001[var4];
-         short var10008 = 28953;
-         long var10009 = 114372906967990390L ^ var2;
          byte var10;
          switch (var4 % 7) {
             case 0:
                var10 = 31262;
-               long var23 = 8683991967802788722L ^ var2;
                var10 = 122;
                break;
             case 1:
                var10 = 9730;
-               long var22 = 4827814375576819552L ^ var2;
                var10 = 82;
                break;
             case 2:
                var10 = 8149;
-               long var21 = 5137345472656043700L ^ var2;
                var10 = 110;
                break;
             case 3:
                var10 = 6575;
-               long var20 = 8573600832900753609L ^ var2;
                var10 = 29;
                break;
             case 4:
                var10 = 26885;
-               long var19 = 4144495003474794593L ^ var2;
                var10 = 106;
                break;
             case 5:
                var10 = 32513;
-               long var18 = 4494295205021847137L ^ var2;
                var10 = 63;
                break;
             default:
                var10 = 18502;
-               long var17 = 3087629367617272101L ^ var2;
                var10 = 84;
          }
 

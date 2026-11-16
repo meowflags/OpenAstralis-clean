@@ -31,14 +31,8 @@ public class gco {
          JsonObject axx = new JsonObject();
          int[] axxx = var10000;
          JsonObject axxxx = new JsonObject();
-         short var10001 = 10085;
-         long var10002 = 273540217901235381L ^ ax;
          axx.addProperty("toggled", axxxxxx.dsv());
-         var10001 = 9700;
-         var10002 = 2340630653832019509L ^ ax;
          axx.addProperty("bind", axxxxxx.glr());
-         var10001 = 15780;
-         var10002 = 6306225765565802111L ^ ax;
          axx.addProperty("hide", axxxxxx.aov());
          axxxxxx.cbf().forEach(axxxxxxxxxxxxx -> {
             long ax;
@@ -147,15 +141,11 @@ public class gco {
             }
 
             String var10002x = axxxxxxxxxxxxx.fah();
-            short var10003 = 9387;
-            long var10004 = 5250300152430090133L ^ ax;
             throw new IllegalStateException("Unknown Property Type! " + var10002x);
          });
          JsonObject var7 = axxxx;
          if (axxx != null) {
             if (!axxxx.isEmpty()) {
-               var10001 = 15934;
-               var10002 = 6690535777129440739L ^ ax;
                axx.add("properties", axxxx);
             }
 
@@ -179,14 +169,10 @@ public class gco {
                return;
             }
 
-            short var10001 = 13544;
-            long var10002 = 4494982755194884794L ^ ax;
             var9 = axx.getAsJsonObject("properties");
          }
 
          JsonObject axxxx = var9;
-         short var12 = 9872;
-         long var14 = 3523596786893996225L ^ ax;
          boolean axxxxx = axx.get("toggled").getAsBoolean();
          boolean var10 = axxxxxxxx.dsv();
          if (axxx != null) {
@@ -194,8 +180,6 @@ public class gco {
                axxxxxxxx.fga(axxxxx);
             }
 
-            var12 = 1188;
-            var14 = 2846994107369480947L ^ ax;
             var10 = axx.get("hide").getAsBoolean();
          }
 
@@ -206,8 +190,6 @@ public class gco {
                axxxxxxxx.atd(axxxxxx);
             }
 
-            short var16 = 1266;
-            long var10003 = 5451011034384261793L ^ ax;
             axxxxxxxx.hge(axx.get("bind").getAsInt());
             var11 = axxxxxxxx;
          }
