@@ -1,0 +1,32 @@
+// sub_4F242C0
+// rva 0x04f242c0  size 94  section .text  group text
+// window base 0x184f242c0: Hex-Rays prints an operand at or above the
+// base as base-relative, and one below it as absolute
+__int64 __fastcall sub_4F242C0(__int64 a1, int a2, __int64 a3, int a4)
+{
+  __int64 v4; // r14
+  __int64 v5; // r15
+  __int64 v6; // rcx
+  __int64 v7; // rdi
+  __int64 v8; // rsi
+  __int64 result; // rax
+  char v10; // [rsp+0h] [rbp-18h] BYREF
+  __int64 v11; // [rsp+10h] [rbp-8h]
+
+  v11 = a3;
+  if ( (unsigned __int64)&v10 <= *(_QWORD *)(v5 + 8) )
+  {
+    sub_1EB84E0();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    return sub_4F24320();
+  }
+  else
+  {
+    sub_4F24380(a1: 4, a2, a3, a4, a5: v4 + 8 * *(_DWORD *)(a3 + 16), a6: 0, a7: v10);
+    result = sub_63240A0(a1: v7, a2: v8, a3: v4 + 8LL * *(unsigned int *)(v11 + 16), a4: v6, a5: 0);
+    if ( *(int *)(v5 + 16) <= 0 )
+      return sub_277F280();
+  }
+  return result;
+}

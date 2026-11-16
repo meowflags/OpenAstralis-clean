@@ -23,8 +23,7 @@ Groups:
     runtime/   the functions with the highest in-degree in the call graph
     vmp0/      chunks from the VMProtect band, kept as evidence of what
                decompiling mutated code returns
-    samples/   evenly spaced functions from the rest of .text: AOT code with
-               no symbol, to show what the body looks like
+    text/      every other `.text` function that decompiled to a body
 
 Nothing here is inferred: a function without an export name is shipped as
 `sub_<address>`, and the index says so.
@@ -58,7 +57,8 @@ def main(argv):
                     help="astralis.dll, for sizes and export names (optional)")
     ap.add_argument("--hot", default=None,
                     help="hot_functions.tsv from devirt_native.py (optional)")
-    ap.add_argument("--samples", type=int, default=24)
+    ap.add_argument("--samples", type=int, default=0,
+                    help="evenly-spaced sample size for unnamed .text; 0 keeps all")
     args = ap.parse_args(argv[1:])
 
     sizes, names, hot = {}, {}, []
@@ -94,12 +94,12 @@ def main(argv):
             elif rva in hot:
                 group = "runtime"
             else:
-                group = "samples"
+                group = "text"
             rows.append((group, rva, label, os.path.join(rawdir, f)))
 
-    samples = [r for r in rows if r[0] == "samples"]
+    samples = [r for r in rows if r[0] == "text"]
     keep = set()
-    if samples:
+    if samples and args.samples:
         step = max(1, len(samples) // args.samples)
         for i in range(0, len(samples), step):
             keep.add(samples[i][1])
@@ -131,9 +131,9 @@ def main(argv):
         kept.append((group, rva, label, path, body))
     rows = kept
 
-    samples = [r for r in rows if r[0] == "samples"]
+    samples = [r for r in rows if r[0] == "text"]
     keep = set()
-    if samples:
+    if samples and args.samples:
         step = max(1, len(samples) // args.samples)
         for i in range(0, len(samples), step):
             keep.add(samples[i][1])

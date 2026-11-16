@@ -1,0 +1,85 @@
+// sub_1815ABC60
+// rva 0x015abc60  size 198  section .text  group text
+// window base 0x1815abc60: Hex-Rays prints an operand at or above the
+// base as base-relative, and one below it as absolute
+__int64 __fastcall sub_1815ABC60(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6, char a7)
+{
+  __int64 v7; // r14
+  __int64 v8; // r15
+  __int64 result; // rax
+  int v10; // ecx
+  int v11; // edi
+  int v12; // esi
+  int v13; // r9d
+  __int64 v14; // rdi
+  __int64 v15; // rsi
+  int v16; // edx
+  int v17; // ecx
+  int v18; // edi
+  int v19; // esi
+  int v20; // r8d
+  int v21; // r9d
+  char v22; // [rsp+0h] [rbp-28h] BYREF
+  __int64 v23; // [rsp+10h] [rbp-18h]
+  __int64 v24; // [rsp+18h] [rbp-10h]
+  __int64 v25; // [rsp+20h] [rbp-8h]
+
+  if ( (unsigned __int64)&v22 <= *(_QWORD *)(v8 + 8) )
+  {
+    v25 = a5;
+    v24 = a3;
+    MEMORY[0x181EB84E0]();
+    goto LABEL_11;
+  }
+  result = *(unsigned int *)(a3 + 16);
+  if ( (_DWORD)result == 0 )
+  {
+LABEL_11:
+    MEMORY[0x182771080]();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    return sub_1815ABD40(a1: v18, a2: v19, a3: v16, a4: v17, a5: v20, a6: v21, a7);
+  }
+  if ( *(int *)(v7 + 8 * result + 8) < 2 )
+  {
+    v25 = a5;
+    v24 = a3;
+    v23 = v7 + 376614544;
+    MEMORY[0x181EB8140](a1, a2, a3: v7 + 376614544);
+    sub_1815ABD40(a1: v11, a2: v12, a3: v24, a4: v10, a5: v25, a6: v13, a7: v22);
+    result = MEMORY[0x181EB8320](a1: v14, a2: v15, a3: v23);
+    if ( *(int *)(v8 + 16) <= 0 )
+      return MEMORY[0x18277F280]();
+  }
+  else if ( *(int *)(v8 + 16) <= 0 )
+  {
+    v25 = a5;
+    v24 = a3;
+    return MEMORY[0x18277F280]();
+  }
+  return result;
+}

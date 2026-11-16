@@ -1,0 +1,29 @@
+// Java_java_util_zip_Inflater_setDictionaryBuffer
+// rva 0x132c171c  size 81  section .text  group text
+// window base 0x1932c171c: Hex-Rays prints an operand at or above the
+// base as base-relative, and one below it as absolute
+__int64 __fastcall Java_java_util_zip_Inflater_setDictionaryBuffer(
+        __int64 a1,
+        int a2,
+        __int64 a3,
+        int a4,
+        __int64 a5,
+        int a6,
+        __int64 a7,
+        int a8,
+        int a9,
+        int a10,
+        int a11)
+{
+  __int64 result; // rax
+  __int64 v13; // rdi
+  __int64 v14; // rsi
+  __int64 v15; // r8
+
+  result = sub_132C5DE8(a1: a4, a2, a3: a6, a4: a5, a5: a11, a6);
+  if ( (unsigned int)(result + 3) <= 1 )
+    return JNU_ThrowIllegalArgumentException(a1: v13, a2: v14, a3: *(_QWORD *)(a5 + 32), a4: v13);
+  if ( (_DWORD)result != 0 )
+    return JNU_ThrowInternalError(a1: v13, a2: v14, a3: *(_QWORD *)(a5 + 32), a4: v13, a5: v15);
+  return result;
+}

@@ -284,24 +284,26 @@ binaries at `0x180000000 + rva`, so a decompiler works in the file's own address
 space; each file records its window base, because Hex-Rays prints operands above
 that base relative to it and operands below it absolute. Every `.pdata` start in
 the window is created as a function and run through Hex-Rays. 4,463 distinct
-functions came out, 415,287 lines, 420 of them with an export name. `native/decompiled/` ships 328: the two client entry points, 264 JDK
+functions came out, 415,287 lines, 420 of them with an export name. `native/decompiled/` ships 4,426 of them (388,481 lines): the two client entry points, 264 JDK
 JNI functions (the whole `sun.security.mscapi` family among them), the 30
-highest in-degree functions, 24 unnamed `.text` samples, and 8 `.vmp0` chunks
-that all decompile to a `JUMPOUT` five bytes into themselves.
+highest in-degree functions, 4,122 unnamed `.text` functions that have a body, and 8 `.vmp0` chunks
+that all decompile to a `JUMPOUT` five bytes into themselves. The curation rule
+is one line — ship everything with a body; only the 45 fragments whose entire
+body is one `JUMPOUT` stay out.
 
-`native/readable/` is the same 328 files with the addresses resolved against the
+`native/readable/` is the same 4,426 files with the addresses resolved against the
 image instead of printed raw. Two rules do the work: a `sub_1XXXXXXXX` operand is
 an RVA, so it is looked up in the 498 exports and the 342,822 `.pdata` starts;
 and a `MEMORY[0x…]()` call slot is taken from the function's own bytes, because
 `tools/normalize_native.py` decodes every `call/jmp [rip+d]` and `[r14+d]` in the
 window with capstone and matches the slot against the import table or a code
-pointer, in listing order. Result: 857 of 1,053 `sub_` operands get a name, 656
-call slots become `__imp_WS2_32.dll!#7` or
-`__imp_api-ms-win-crt-heap-l1-1-0.dll!free`, 386 operands resolve to a `.text`
-function, and the 213 left carry their RVA plus the Java string they point at
-when that is what they are. The printed operand is not trusted for this: it
-changes base between windows, and on `getIpDontFragment0` it reads `0x799F8`
-where the real slot is `0x132D39F8`.
+pointer, in listing order. Result: 16,342 of 17,411 `sub_` operands get a name,
+1,487 call slots become `__imp_WS2_32.dll!#7` or
+`__imp_api-ms-win-crt-heap-l1-1-0.dll!free`, 16,246 operands resolve to a
+function or a literal, and the 1,256 left carry their RVA plus the Java string
+they point at when that is what they are. The printed operand is not trusted for
+this: it changes base between windows, and on `getIpDontFragment0` it reads
+`0x799F8` where the real slot is `0x132D39F8`.
 
 `.vmp0` is the part that gets misread. It is not a bytecode VM: it opens with
 `u32 294,735` and a 1.77 MB table of `{u32 rva, u16 length}` records describing a
@@ -423,12 +425,12 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `mapping/image26/` | 26.2 dump: 16,263 MC types, 1,483 client types, 593 hooks, 85 mod manifests, 202,366 member names, 105,012 descriptors |
 | `native/dump/` | `pe.txt`, `exports.tsv`, `imports.tsv`, function counts |
 | `native/devirt/` | `callgraph_top.tsv`, `import_calls.tsv`, `iat_sites.tsv`, the decoded `.vmp0` table |
-| `native/decompiled/` | 328 Hex-Rays functions: client entry points, JDK JNI, hot runtime, samples, `.vmp0` chunks |
-| `native/readable/` | the same 328 with `sub_` and `MEMORY[...]` resolved to export and import names |
+| `native/decompiled/` | 4,426 Hex-Rays functions: client entry points, JDK JNI, hot runtime, every `.text` function with a body, `.vmp0` chunks |
+| `native/readable/` | the same 4,426 with `sub_` and `MEMORY[...]` resolved to export and import names |
 | `native/bodies/`, `native/registry/` | 16 devirtualized bodies, symbol tables |
 | `src/` | 518 decompiled classes, 74 under their real module name |
 | `reconstruct/26.2/scripting/` | 55 files of the 2.2.6 scripting API, the only bytecode in the image |
-| `reconstruct/26.2/native/` | the DLL side of the 26.2 tree: 328 pseudocode files, call graph, import sites, the 294,735-chunk `.vmp0` index |
+| `reconstruct/26.2/native/` | the DLL side of the 26.2 tree: pseudocode, call graph, import sites, the 294,735-chunk `.vmp0` index |
 | `docs/modules.md` | the module map, category by category |
 | `docs/analysis/` | detailed reports (Spanish) |
 | `build.sh`, `build.ps1` | offline build of the tooling |
@@ -480,7 +482,7 @@ tools. No network access is required.
 | host resolves exports itself | `sub_1400071E0` decompiled: PE headers, export name array, ordinal table; called four times from `sub_140001BA0` |
 | host does not import the loader | 13 imports enumerated in IDA, `LoadLibraryW` and `GetProcAddress` absent |
 | client type inventory | `tools/image_inventory.py`, deterministic scan, refuses to finish if the marker `com/astralis/scripting/Script` is missing |
-| `native/readable/` names are right | the slot for each `MEMORY[...]()` is re-decoded from the function bytes, and the bound count equals the listing count in 279 of 328 files; the 49 that disagree keep their operands unresolved rather than guessed |
+| `native/readable/` names are right | the slot for each `MEMORY[...]()` is re-decoded from the function bytes, and the bound count equals the listing count in 1,103 of 4,426 files; the 3,323 that disagree keep their operands unresolved rather than guessed |
 
 ---
 
@@ -715,24 +717,27 @@ direcciones del fichero; cada fichero guarda la base de su ventana, porque
 Hex-Rays imprime relativo a ella lo que cae por encima y absoluto lo que cae por
 debajo. Cada inicio de `.pdata` de la ventana se crea como función y pasa por
 Hex-Rays. Salieron 4.463 funciones distintas, 415.287 líneas, 420 con nombre de
-exportación. `native/decompiled/` publica 328: los dos puntos de entrada del
+exportación. `native/decompiled/` publica 4.426 de ellas (388.481 líneas): los dos puntos de entrada del
 cliente, 264 funciones JNI del JDK (toda la familia `sun.security.mscapi`
-incluida), las 30 de más in-degree, 24 muestras de `.text` sin nombre y 8
+incluida), las 30 de más in-degree, 4.122 funciones de `.text` sin nombre que
+tienen cuerpo y 8
 fragmentos de `.vmp0` que descompilan a un `JUMPOUT` a cinco bytes de su inicio.
+La regla de curación es una línea: se publica todo lo que tiene cuerpo; solo se
+dejan fuera los 45 fragmentos cuyo cuerpo entero es un `JUMPOUT`.
 
-`native/readable/` son los mismos 328 ficheros con las direcciones resueltas
+`native/readable/` son los mismos 4.426 ficheros con las direcciones resueltas
 contra la imagen en vez de impresas en crudo. Dos reglas hacen el trabajo: un
 operando `sub_1XXXXXXXX` es una RVA, así que se busca en las 498 exportaciones y
 en los 342.822 inicios de `.pdata`; y un slot de llamada `MEMORY[0x…]()` se saca
 de los bytes de la propia función, porque `tools/normalize_native.py` decodifica
 con capstone cada `call/jmp [rip+d]` y `[r14+d]` de la ventana y casa el slot con
 la tabla de importaciones o con un puntero a código, en orden de listado.
-Resultado: 857 de 1.053 operandos `sub_` reciben nombre, 656 slots pasan a
-`__imp_WS2_32.dll!#7` o `__imp_api-ms-win-crt-heap-l1-1-0.dll!free`, 386 operandos
-resuelven a una función de `.text`, y los 213 restantes conservan su RVA y la
-cadena Java a la que apuntan cuando es eso lo que son. El operando impreso no se
-usa para esto: cambia de base entre ventanas, y en `getIpDontFragment0` pone
-`0x799F8` donde el slot real es `0x132D39F8`.
+Resultado: 16.342 de 17.411 operandos `sub_` reciben nombre, 1.487 slots pasan a
+`__imp_WS2_32.dll!#7` o `__imp_api-ms-win-crt-heap-l1-1-0.dll!free`, 16.246
+operandos resuelven a una función o a un literal, y los 1.256 restantes conservan
+su RVA y la cadena Java a la que apuntan cuando es eso lo que son. El operando
+impreso no se usa para esto: cambia de base entre ventanas, y en
+`getIpDontFragment0` pone `0x799F8` donde el slot real es `0x132D39F8`.
 
 `.vmp0` es la parte que se malinterpreta. No es una VM de bytecode: empieza con
 `u32 294.735` y una tabla de 1,77 MB de registros `{u32 rva, u16 length}` que
@@ -830,12 +835,12 @@ sale como `<redacted:discord-bot-token>`.
 | `mapping/image26/` | volcado 26.2: 16.263 tipos de MC, 1.483 del cliente, 593 hooks, 85 manifiestos, 202.366 nombres, 105.012 descriptores |
 | `native/dump/` | `pe.txt`, `exports.tsv`, `imports.tsv`, recuentos de funciones |
 | `native/devirt/` | `callgraph_top.tsv`, `import_calls.tsv`, `iat_sites.tsv`, la tabla de `.vmp0` decodificada |
-| `native/decompiled/` | 328 funciones de Hex-Rays: entradas del cliente, JNI del JDK, runtime caliente, muestras y fragmentos de `.vmp0` |
-| `native/readable/` | las mismas 328 con `sub_` y `MEMORY[...]` resueltos a nombres de exportación e importación |
+| `native/decompiled/` | 4.426 funciones de Hex-Rays: entradas del cliente, JNI del JDK, runtime caliente, cada función de `.text` con cuerpo y fragmentos de `.vmp0` |
+| `native/readable/` | las mismas 4.426 con `sub_` y `MEMORY[...]` resueltos a nombres de exportación e importación |
 | `native/bodies/`, `native/registry/` | 16 cuerpos devirtualizados y tablas de símbolos |
 | `src/` | 518 clases descompiladas, 74 con su nombre real de módulo |
 | `reconstruct/26.2/scripting/` | 55 ficheros de la API de scripting 2.2.6, el único bytecode de la imagen |
-| `reconstruct/26.2/native/` | la parte DLL del árbol 26.2: 328 ficheros de pseudocódigo, grafo de llamadas, sitios de import y el índice de los 294.735 fragmentos de `.vmp0` |
+| `reconstruct/26.2/native/` | la parte DLL del árbol 26.2: pseudocódigo, grafo de llamadas, sitios de import y el índice de los 294.735 fragmentos de `.vmp0` |
 | `docs/modules.md` | el mapa de módulos, categoría por categoría |
 | `docs/analysis/` | informes detallados |
 | `build.sh`, `build.ps1` | build sin red |

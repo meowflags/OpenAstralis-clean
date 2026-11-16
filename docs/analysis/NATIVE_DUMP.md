@@ -228,13 +228,16 @@ función por cada inicio de la tabla `.pdata` y se pasa por Hex-Rays.
 | funciones descompiladas | 4.463 distintas (4.957 ficheros, 415.287 líneas) |
 | con nombre de exportación | 420 |
 | fragmentos que Hex-Rays no puede unir (`JUMPOUT`) | 652 |
-| publicadas en `native/decompiled/` | 328 |
+| publicadas en `native/decompiled/` | 4.426 (388.481 líneas) |
 | normalizadas en `native/readable/` | las mismas 328 |
 
 Lo publicado se reparte en 2 puntos de entrada del cliente, 264 funciones JNI del
 JDK (`Java_*`, incluida toda la familia `sun.security.mscapi`), 30 funciones del
-grafo de llamadas con más in-degree, 24 muestras de `.text` sin símbolo y 8
-fragmentos de `.vmp0`.
+grafo de llamadas con más in-degree, 4.122 funciones de `.text` con cuerpo y 8
+fragmentos de `.vmp0`. La regla de curación es una sola: se publica todo lo que
+tiene cuerpo; solo se descartan los fragmentos cuyo cuerpo entero es un
+`JUMPOUT` (45), porque un cuerpo de cinco líneas que salta a sí mismo no añade
+nada que la tabla de `.vmp0` ya no diga.
 
 `serenity_client_bind` (`0x1e43d00`, 992 bytes) es el ejemplo corto: comprueba
 `a4` (el `Isolate`), hace un CAS de 3 a 1 sobre `[a4+0x14]` y llama a tres
@@ -277,13 +280,13 @@ buscan como RVA en las 498 exportaciones y en los 342.822 inicios de `.pdata`.
 
 | | |
 |---|---|
-| operandos `sub_` con nombre | 857 de 1.053 |
-| slots de llamada `__imp_dll!func` | 656 |
-| operandos resueltos a inicio de función | 386 |
-| operandos que siguen opacos (con RVA y cadena si la hay) | 213 |
-| ficheros | 328 |
+| operandos `sub_` con nombre | 16.342 de 17.411 |
+| slots de llamada `__imp_dll!func` | 1.487 |
+| operandos resueltos a inicio de función | 16.246 |
+| operandos que siguen opacos (con RVA y cadena si la hay) | 1.256 |
+| ficheros | 4.426 |
 
-Los 213 que quedan son lecturas de datos, no llamadas: se anotan con su RVA y,
+Los 1.256 que quedan son lecturas de datos, no llamadas: se anotan con su RVA y,
 cuando los cuatro bytes anteriores son una longitud y el contenido es imprimible,
 con la cadena Java a la que apuntan. El listado normalizado se publica en
 `native/readable/` con el mismo árbol que `native/decompiled/`.

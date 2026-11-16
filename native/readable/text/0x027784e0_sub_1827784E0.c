@@ -1,0 +1,44 @@
+// sub_27784E0
+// rva 0x027784e0  size 61  section .text  group text
+// window base 0x1827784e0: Hex-Rays prints an operand at or above the
+// base as base-relative, and one below it as absolute
+__int64 __fastcall sub_27784E0(
+        __int64 a1,
+        __int64 a2,
+        __int64 a3,
+        __int64 a4,
+        __int64 a5,
+        __int64 a6,
+        __m128 a7,
+        __m128 a8,
+        __m128 a9,
+        __m128 a10,
+        __m128 a11,
+        __m128 a12,
+        __m128 a13,
+        __m128 a14)
+{
+  __int64 v14; // r14
+  __int64 v15; // r15
+  __int64 v16; // rax
+  char v18; // [rsp+0h] [rbp-8h] BYREF
+
+  if ( (unsigned __int64)&v18 <= *(_QWORD *)(v15 + 8) )
+  {
+    *(double *)a7.m128_u64 = sub_1EB84E0();
+    goto LABEL_7;
+  }
+  v16 = *(unsigned int *)(v15 + 72);
+  if ( (_DWORD)v16 == 0 )
+  {
+LABEL_7:
+    sub_2771080(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15: v18);
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    __builtin_debugtrap();
+    return sub_2778520();
+  }
+  if ( *(int *)(v15 + 16) <= 0 )
+    v16 = sub_277F280(a1, a2, a3);
+  return v14 + 8LL * *(unsigned int *)(v14 + 8 * v16 + 40);
+}
