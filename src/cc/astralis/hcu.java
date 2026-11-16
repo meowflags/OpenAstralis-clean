@@ -4,7 +4,7 @@
  * Could not load the following classes:
  *  cc.astralis.agz
  *  cc.astralis.cmq
- *  cc.astralis.dar
+ *  cc.astralis.ClientSetup
  *  cc.astralis.ekh
  *  io.github.humbleui.skija.ColorType
  *  io.github.humbleui.skija.DirectContext
@@ -16,8 +16,8 @@ package cc.astralis;
 
 import cc.astralis.agz;
 import cc.astralis.cmq;
-import cc.astralis.dar;
-import cc.astralis.ehy;
+import cc.astralis.ClientSetup;
+import cc.astralis.SessionHelper;
 import cc.astralis.ekh;
 import io.github.humbleui.skija.ColorType;
 import io.github.humbleui.skija.DirectContext;
@@ -69,7 +69,7 @@ public class hcu {
                     int[] a7;
                     block2: {
                         long a8 = hcu.a ^ 0x153FAD5AEFA8L;
-                        int[] nArray = dar.abu();
+                        int[] nArray = ClientSetup.abu();
                         long cfr_ignored_0 = 0x6297610494EFE4DCL ^ a8;
                         GL11.glBindTexture((int)3553, (int)a2);
                         a7 = nArray;
@@ -105,7 +105,7 @@ public class hcu {
         block16: {
             block14: {
                 a = hcu.a ^ 58175727990823L;
-                a = dar.abu();
+                a = ClientSetup.abu();
                 v0 = a;
                 if (a == null) ** GOTO lbl12
                 if (v0 == null) {
@@ -161,7 +161,7 @@ lbl25:
             long a3 = hcu.a ^ 0x2AD7E4B00C78L;
             long cfr_ignored_0 = 0x30120FC876343934L ^ a3;
             InputStream inputStream = hcu.class.getResourceAsStream("assets/astralis/" + a);
-            int[] a4 = dar.abu();
+            int[] a4 = ClientSetup.abu();
             void v0 = a2;
             if (a4 != null) {
                 if (v0 == null) {
@@ -183,7 +183,7 @@ lbl25:
                     int[] nArray;
                     block2: {
                         a3 = hcu.a ^ 0x1745EC34373BL;
-                        nArray = dar.abu();
+                        nArray = ClientSetup.abu();
                         string = a2;
                         if (nArray == null) break block2;
                         if (string == null) break block3;
@@ -228,7 +228,7 @@ lbl25:
         block3: {
             long a = hcu.a ^ 0x3426C9A06F5BL;
             Iterator<Image> iterator = ezx.values().iterator();
-            int[] a2 = dar.abu();
+            int[] a2 = ClientSetup.abu();
             while (iterator.hasNext()) {
                 block5: {
                     Image image;
@@ -259,8 +259,8 @@ lbl25:
         block13: {
             block11: {
                 a = hcu.a ^ 106190640603680L;
-                a = dar.abu();
-                a = ehy.cyx(a);
+                a = ClientSetup.abu();
+                a = SessionHelper.cyx(a);
                 try {
                     var6_6 = hcu.fkx(a);
                     v0 = a;

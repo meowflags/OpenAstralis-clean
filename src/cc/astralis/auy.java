@@ -21,7 +21,7 @@ public class auy implements dlc {
 
    public static class_2960 cyz(String imagePath) throws IOException {
       long ax = auy.a ^ 91456454883526L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Map var10000 = fsc;
       String var10001 = a;
       if (axx != null) {

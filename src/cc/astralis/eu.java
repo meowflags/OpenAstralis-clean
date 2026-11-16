@@ -38,7 +38,7 @@ public class eu {
    public static final char asc;
    public static final char cxh;
    public static final char dlf;
-   public static final char gft;
+   public static final char Watchdog22;
    private static final long a = 64055840184024L;
    private static final String[] b;
    private static final String[] c;
@@ -75,7 +75,7 @@ public class eu {
       // 03: ldc2_w 116632062826189
       // 06: lxor
       // 07: lstore 1
-      // 08: invokestatic cc/astralis/dar.abu ()[I
+      // 08: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 0b: astore 3
       // 0c: ldc cc/astralis/eu
       // 0e: sipush 5970
@@ -173,7 +173,7 @@ public class eu {
       // 003: ldc2_w 115496496480836
       // 006: lxor
       // 007: lstore 1
-      // 008: invokestatic cc/astralis/dar.abu ()[I
+      // 008: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 00b: astore 3
       // 00c: ldc cc/astralis/eu
       // 00e: sipush 31225
@@ -481,7 +481,7 @@ public class eu {
    }
 
    public static void ady() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       ImFont var10000 = dbl;
       if (var2 != null) {
          if (dbl == null) {
@@ -621,7 +621,7 @@ public class eu {
                                  if (var2 >= var5) {
                                     e = var6;
                                     f = new Integer[35];
-                                    gft = '\uf1c6';
+                                    Watchdog22 = '\uf1c6';
                                     cxh = '\uf1c7';
                                     hfo = '\uf15b';
                                     fzp = '\uf07b';

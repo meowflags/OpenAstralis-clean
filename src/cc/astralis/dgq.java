@@ -10,7 +10,7 @@ public class dgq implements dlc {
 
    public static float gz(float from, float to, float speed) {
       long ax = dgq.a ^ 117183610906690L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = class_3532.method_15393(a - a);
       int[] axxx = var10000;
       float var9;
@@ -55,7 +55,7 @@ public class dgq implements dlc {
    public static class_243 grq(class_1297 entity) {
       long ax = dgq.a ^ 78744874373492L;
       class_243 axx = byh();
-      float axxx = dar.gqy().aws().diy(bdh.class).ftx.dnp() ? 0.1F : 0.0F;
+      float axxx = ClientSetup.gqy().aws().diy(bdh.class).ftx.dnp() ? 0.1F : 0.0F;
       class_238 axxxx = a.method_5829().method_1014(axxx);
       double axxxxx = class_3532.method_15350(axx.method_10216(), axxxx.field_1323, axxxx.field_1320);
       double axxxxxx = class_3532.method_15350(axx.method_10214(), axxxx.field_1322, axxxx.field_1325);
@@ -66,7 +66,7 @@ public class dgq implements dlc {
    public static class_243 fgs(class_1297 entity) {
       long ax = dgq.a ^ 13764418050933L;
       class_243 axx = byh();
-      float axxx = dar.gqy().aws().diy(bdh.class).ftx.dnp() ? 0.1F : 0.0F;
+      float axxx = ClientSetup.gqy().aws().diy(bdh.class).ftx.dnp() ? 0.1F : 0.0F;
       class_238 axxxx = a.method_5829().method_1014(axxx);
       double axxxxx = class_3532.method_15350(axx.method_10216(), axxxx.field_1323, axxxx.field_1320);
       double axxxxxx = class_3532.method_15350(axx.method_10214(), axxxx.field_1322, axxxx.field_1325);
@@ -94,7 +94,7 @@ public class dgq implements dlc {
 
    public static class_243 byh() {
       long a = dgq.a ^ 113941391650944L;
-      float ax = dar.gqy().aws().diy(bdh.class).ecl.dnp() ? chi.field_1724.method_18381(chi.field_1724.method_18376()) : chi.field_1724.method_17682() * 0.85F;
+      float ax = ClientSetup.gqy().aws().diy(bdh.class).ecl.dnp() ? chi.field_1724.method_18381(chi.field_1724.method_18376()) : chi.field_1724.method_17682() * 0.85F;
       return new class_243(chi.field_1724.method_23317(), chi.field_1724.method_23318() + ax, chi.field_1724.method_23321());
    }
 

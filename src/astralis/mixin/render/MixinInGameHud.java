@@ -1,13 +1,13 @@
 package astralis.mixin.render;
 
 import cc.astralis.cdr;
-import cc.astralis.coc;
+import cc.astralis.SfBoldScreen;
 import cc.astralis.czo;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
-import cc.astralis.dmr;
+import cc.astralis.DropdownScreen;
 import cc.astralis.foz;
-import cc.astralis.gaf;
+import cc.astralis.ClickGuiWindow;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -62,7 +62,7 @@ public class MixinInGameHud {
       cancellable = true
    )
    private void renderScoreboardSidebarHook(class_332 a, class_266 a, CallbackInfo a) {
-      foz ax = dar.gqy().aws().diy(foz.class);
+      foz ax = ClientSetup.gqy().aws().diy(foz.class);
       if (ax.dsv() && ax.hex.dnp()) {
          a.cancel();
       }
@@ -78,7 +78,7 @@ public class MixinInGameHud {
       index = 4
    )
    private int changeHeaderColor(int a) {
-      foz ax = dar.gqy().aws().diy(foz.class);
+      foz ax = ClientSetup.gqy().aws().diy(foz.class);
       return ax.dsv() && ax.fkl.dnp() ? ax.bpn.dnp().getRGB() : a;
    }
 
@@ -92,7 +92,7 @@ public class MixinInGameHud {
       index = 4
    )
    private int changeBodyColor(int a) {
-      foz ax = dar.gqy().aws().diy(foz.class);
+      foz ax = ClientSetup.gqy().aws().diy(foz.class);
       return ax.dsv() && ax.fkl.dnp() ? ax.bxw.dnp().getRGB() : a;
    }
 
@@ -128,7 +128,7 @@ public class MixinInGameHud {
          int axxxxxxxxxxxx = var21 - axxxxxxx - 3;
          var10000 = var22 / 2 + axxxxxxxxxxx / 3;
          int axxxxxxxxxxxxx = var10000 - axxxxxxxxxx * 9;
-         ((foz)dar.gqy().aws().diy(foz.class)).beb(new czo(axxxxxxxxxxxx, axxxxxxxxxxxxx, axxxxxxx, axxxxxxxxxxx));
+         ((foz)ClientSetup.gqy().aws().diy(foz.class)).beb(new czo(axxxxxxxxxxxx, axxxxxxxxxxxxx, axxxxxxx, axxxxxxxxxxx));
       }
    }
 
@@ -140,7 +140,7 @@ public class MixinInGameHud {
       )
    )
    private class_9022 removeScore(class_9022 a, class_332 a, class_266 a) {
-      foz ax = dar.gqy().aws().diy(foz.class);
+      foz ax = ClientSetup.gqy().aws().diy(foz.class);
       return (class_9022)(ax.dsv() && ax.grq.dnp() ? class_9020.field_47557 : a);
    }
 
@@ -152,7 +152,7 @@ public class MixinInGameHud {
       )}
    )
    private class_9022 changeScoreColor(class_9022 a) {
-      foz ax = dar.gqy().aws().diy(foz.class);
+      foz ax = ClientSetup.gqy().aws().diy(foz.class);
       if (ax.dsv() && ax.fkl.dnp()) {
          return (class_9022)(a == class_9020.field_47557 ? a : new class_9025(class_2583.field_24360.method_36139(ax.ghl.dnp().getRGB())));
       } else {
@@ -181,7 +181,7 @@ public class MixinInGameHud {
       cancellable = true
    )
    private void renderCrosshair(class_332 a, class_9779 a, CallbackInfo a) {
-      if (dlc.chi.field_1755 instanceof dmr || dlc.chi.field_1755 instanceof coc || dlc.chi.field_1755 instanceof gaf) {
+      if (dlc.chi.field_1755 instanceof DropdownScreen || dlc.chi.field_1755 instanceof SfBoldScreen || dlc.chi.field_1755 instanceof ClickGuiWindow) {
          a.cancel();
       }
    }

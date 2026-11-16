@@ -41,12 +41,12 @@ public class ag implements dlc {
    private static final Map d = new HashMap(13);
 
    public ag() {
-      dar.gqy().fyf().glu(a);
+      ClientSetup.gqy().fyf().glu(a);
    }
 
    public void dxy(int width, int height) {
       long ax = ag.a ^ 59614726895504L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       int var10000 = Objects.isNull(a.gnz);
       if (axx != null) {
          if (var10000 != 0) {
@@ -84,7 +84,7 @@ public class ag implements dlc {
 
    public void gao() {
       long a = ag.a ^ 115485896193586L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       ag var10000 = a;
       if (ax != null) {
          if (a.gnz == null) {
@@ -122,10 +122,10 @@ public class ag implements dlc {
       }
    }
 
-   public void bpv() {
+   public void MultithreadingThread() {
       class_1041 a = chi.method_22683();
       dmp.bfk(a.cmc / 2, a.hai / 2);
-      dar.gqy().fyf().brx(new ctt());
+      ClientSetup.gqy().fyf().brx(new ctt());
    }
 
    public void aqk() {

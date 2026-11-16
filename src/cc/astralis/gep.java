@@ -32,27 +32,27 @@ public class gep {
 
    public static String bhj() {
       long a = gep.a ^ 93751257391714L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       try {
          MessageDigest axx = MessageDigest.getInstance("SHA-256");
          StringBuilder axxx = new StringBuilder();
-         StringBuilder var20 = axxx.append(bam.asl()).append(bam.aeb()).append(bam.gzo()).append(bam.bma());
-         StringBuilder var21 = var20.append(bam.hfo("PROCESSOR_IDENTIFIER"));
-         StringBuilder var22 = var21.append(bam.hfo("PROCESSOR_ARCHITECTURE"));
-         StringBuilder var23 = var22.append(bam.hfo("PROCESSOR_ARCHITEW6432"));
-         StringBuilder var24 = var23.append(bam.hfo("NUMBER_OF_PROCESSORS"));
-         StringBuilder var25 = var24.append(bam.hfo("COMPUTERNAME"));
-         StringBuilder var26 = var25.append(bam.hfo("os")).append(bam.dvt());
-         StringBuilder var27 = var26.append(bam.hfo("SystemRoot"));
-         StringBuilder var28 = var27.append(bam.hfo("HOMEDRIVE"));
-         StringBuilder var29 = var28.append(bam.hfo("PROCESSOR_LEVEL"));
-         StringBuilder var30 = var29.append(bam.hfo("PROCESSOR_REVISION"));
-         StringBuilder var31 = var30.append(bam.hfo("HOME"));
-         StringBuilder var32 = var31.append(bam.hfo("HOSTNAME"));
-         StringBuilder var33 = var32.append(bam.hfo("SHELL"));
-         StringBuilder var34 = var33.append(bam.hfo("LOGNAME"));
-         var34.append(bam.hfo("USERNAME"));
+         StringBuilder var20 = axxx.append(SysInfo.asl()).append(SysInfo.aeb()).append(SysInfo.gzo()).append(SysInfo.bma());
+         StringBuilder var21 = var20.append(SysInfo.hfo("PROCESSOR_IDENTIFIER"));
+         StringBuilder var22 = var21.append(SysInfo.hfo("PROCESSOR_ARCHITECTURE"));
+         StringBuilder var23 = var22.append(SysInfo.hfo("PROCESSOR_ARCHITEW6432"));
+         StringBuilder var24 = var23.append(SysInfo.hfo("NUMBER_OF_PROCESSORS"));
+         StringBuilder var25 = var24.append(SysInfo.hfo("COMPUTERNAME"));
+         StringBuilder var26 = var25.append(SysInfo.hfo("os")).append(SysInfo.dvt());
+         StringBuilder var27 = var26.append(SysInfo.hfo("SystemRoot"));
+         StringBuilder var28 = var27.append(SysInfo.hfo("HOMEDRIVE"));
+         StringBuilder var29 = var28.append(SysInfo.hfo("PROCESSOR_LEVEL"));
+         StringBuilder var30 = var29.append(SysInfo.hfo("PROCESSOR_REVISION"));
+         StringBuilder var31 = var30.append(SysInfo.hfo("HOME"));
+         StringBuilder var32 = var31.append(SysInfo.hfo("HOSTNAME"));
+         StringBuilder var33 = var32.append(SysInfo.hfo("SHELL"));
+         StringBuilder var34 = var33.append(SysInfo.hfo("LOGNAME"));
+         var34.append(SysInfo.hfo("USERNAME"));
          byte[] axxxx = axx.digest(axxx.toString().getBytes(StandardCharsets.UTF_8));
          return bct(axxxx);
       } catch (NoSuchAlgorithmException var12) {
@@ -88,7 +88,7 @@ public class gep {
    private static String bct(byte[] a) {
       long ax = gep.a ^ 75524241264489L;
       StringBuilder axx = new StringBuilder();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       byte[] var5 = a;
       int var6 = a.length;
       int[] axxx = var10000;

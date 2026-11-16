@@ -35,8 +35,8 @@ public class fwu {
 
    public void grm() {
       long a = b ^ 122906027910729L;
-      int[] var10000 = dar.abu();
-      a ax = dar.gqy().aws().diy(a.class);
+      int[] var10000 = ClientSetup.abu();
+      a ax = ClientSetup.gqy().aws().diy(a.class);
       int[] axx = var10000;
       String axxx = a.gyi.hdy + " failed " + a.eod + " (vl: " + a.ciu + ")";
       a.ciu++;

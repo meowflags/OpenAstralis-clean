@@ -17,7 +17,7 @@ import javax.crypto.spec.IvParameterSpec;
 public class Camera extends guu {
    public final gbp cmt;
    public final bes dtl;
-   public final gbp gff;
+   public final gbp ListCommand;
    public final gbp ahi;
    public static bes don;
    public static bes boo;

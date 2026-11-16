@@ -26,7 +26,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
-public class flh extends blz {
+public class flh extends ConfigManager {
    private final String eee;
    private static final long b = 58168959103719L;
    private static final String[] f;
@@ -47,7 +47,7 @@ public class flh extends blz {
    @Override
    public void fme() {
       long a = b ^ 10590000864692L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       File ax = new File(a.evx, a.eee + ".astralis");
       int[] axx = var10000;
       if (axx != null) {
@@ -82,7 +82,7 @@ public class flh extends blz {
                               break label113;
                            }
 
-                           dar.ecj.error("Config {} is not a JSON object. Skipping.", ax.getName());
+                           ClientSetup.ecj.error("Config {} is not a JSON object. Skipping.", ax.getName());
                            break label119;
                         }
                      } catch (Throwable var15) {
@@ -117,18 +117,18 @@ public class flh extends blz {
                   String var11 = var29;
                   bpa.dhu("§cConfig '" + var11 + "' is corrupted (" + axxxxxxx + "). A backup was saved as '" + axxxxxx + "'. Loading defaults.");
                } catch (IOException var12) {
-                  dar.ecj.error("Failed to backup corrupt config: {}", var12.getMessage());
+                  ClientSetup.ecj.error("Failed to backup corrupt config: {}", var12.getMessage());
                }
 
                a.apo();
             } catch (IOException var18) {
-               dar.ecj.error("Failed to load config '{}': {}", ax.getName(), var18.getMessage());
+               ClientSetup.ecj.error("Failed to load config '{}': {}", ax.getName(), var18.getMessage());
             }
 
             return;
          }
 
-         dar.ecj.warn("Config file {} not found, skipping load.", ax.getAbsolutePath());
+         ClientSetup.ecj.warn("Config file {} not found, skipping load.", ax.getAbsolutePath());
       }
    }
 

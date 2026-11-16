@@ -6,14 +6,14 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 public class fnq extends guu {
-   public final cyx ffm;
+   public final cyx CloudConfigurations;
    private static final long a = 92157949010697L;
    private static final String g;
 
    public fnq() {
       long a = fnq.a ^ 48796540531651L;
       super(bfm.PLAYER);
-      a.ffm = new cyx(g, new bej(a), new cvh(a), new ffr(a), new ehs(a), new cyh(a));
+      a.ffm = new cyx(g, new Ground(a), new Universal(a), new Vulcan2(a), new Watchdog3(a), new BlocksMC(a));
       a.beb(a.ffm);
    }
 

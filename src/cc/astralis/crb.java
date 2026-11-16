@@ -23,7 +23,7 @@ public class crb extends bmd {
    private float csw = 0.0F;
    private boolean gea;
    private boolean ee;
-   private boolean gsu;
+   private boolean ProductSansRegular;
    private static final int esx;
    private static final int ex;
    private static final long a = 123002813673263L;
@@ -41,10 +41,10 @@ public class crb extends bmd {
    @Override
    public void ckn(float x, float y, float mouseX, float mouseY) {
       long ax = crb.a ^ 128195384806348L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.fji(a);
       a.axc(a);
-      fll axx = bxc.emc(b, 10);
+      fll axx = FontManager.emc(b, 10);
       axx.aof(a.goq.fah(), a + 6.0F, a + 4.0F, cbc.fgl);
       float axxx = super.ajg() - 6.0F;
       dmp.cpp(a + a.arq() - (axxx + 6.0F), a + 3.0F, axxx, axxx, 2.0F, a.goq.dnp());
@@ -74,7 +74,7 @@ public class crb extends bmd {
    @Override
    public void gdj(double mouseX, double mouseY, int button) {
       long ax = crb.a ^ 126175379850816L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.gea = true;
       float axx = a.aqy() - 1.0F + 8.0F;
       int[] axxx = var10000;
@@ -111,7 +111,7 @@ public class crb extends bmd {
       label31: {
          long ax = crb.a ^ 89873368194421L;
          float axx = a.aqy() - 1.0F + 8.0F;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          float axxx = a.gpn() + super.ajg();
          int[] axxxx = var10000;
          boolean var16 = a.ee;
@@ -154,7 +154,7 @@ public class crb extends bmd {
 
    public static void elz(float x, float y, float w, float h, float hue) {
       long ax = crb.a ^ 39485850501040L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = 0;
       int[] axxx = var10000;
 
@@ -189,7 +189,7 @@ public class crb extends bmd {
 
    public static void dxy(float x, float y, float w, float h) {
       long ax = crb.a ^ 62220775244975L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = 0;
       int[] axxx = var10000;
 

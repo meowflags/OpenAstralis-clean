@@ -77,7 +77,7 @@ public class guu extends cdr implements dlc, amh {
                label155: {
                   label154: {
                      ax = c ^ 14982128162435L;
-                     axx = dar.abu();
+                     axx = ClientSetup.abu();
                      boolean var10000 = aml.gkg;
                      if (axx != null) {
                         if (aml.gkg) {
@@ -154,7 +154,7 @@ public class guu extends cdr implements dlc, amh {
                }
 
                a.cko = a;
-               dar.gqy().fyf().brx(new het());
+               ClientSetup.gqy().fyf().brx(new het());
             }
 
             var22 = a;
@@ -166,11 +166,11 @@ public class guu extends cdr implements dlc, amh {
          }
 
          if (var18) {
-            var22 = dar.gqy().aws().diy(dtc.class);
+            var22 = ClientSetup.gqy().aws().diy(dtc.class);
             label114:
             if (axx != null) {
                if (var22 != null) {
-                  var22 = (dtc)dar.gqy().aws().diy(dtc.class);
+                  var22 = (dtc)ClientSetup.gqy().aws().diy(dtc.class);
                   if (axx == null) {
                      break label114;
                   }
@@ -192,13 +192,13 @@ public class guu extends cdr implements dlc, amh {
             }
          }
 
-         var22 = dar.gqy().aws().diy(dtc.class);
+         var22 = ClientSetup.gqy().aws().diy(dtc.class);
       }
 
       label102:
       if (axx != null) {
          if (var22 != null) {
-            var22 = (dtc)dar.gqy().aws().diy(dtc.class);
+            var22 = (dtc)ClientSetup.gqy().aws().diy(dtc.class);
             if (axx == null) {
                break label102;
             }
@@ -218,7 +218,7 @@ public class guu extends cdr implements dlc, amh {
    }
 
    private void hib(boolean a) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var5 = a.ckj.iterator();
       int[] axx = var10000;
 
@@ -272,7 +272,7 @@ public class guu extends cdr implements dlc, amh {
 
    public void gxo() {
       long a = c ^ 109852850254233L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       boolean var10001 = a.dsv();
       if (var3 != null) {
          var10001 = !var10001;
@@ -283,16 +283,16 @@ public class guu extends cdr implements dlc, amh {
 
    public void auj() {
       a.hib(true);
-      dar.gqy().fyf().glu(a);
+      ClientSetup.gqy().fyf().glu(a);
    }
 
    public void frg() {
       a.hib(false);
-      dar.gqy().fyf().bet(a);
+      ClientSetup.gqy().fyf().bet(a);
    }
 
    public String dtp(boolean doesHaveSuffix) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String axx = a.clp();
       int[] axxx = var10000;
       String var6 = a.fgc;
@@ -320,7 +320,7 @@ public class guu extends cdr implements dlc, amh {
          label41: {
             int[] var4;
             String var10000;
-            var4 = dar.abu();
+            var4 = ClientSetup.abu();
             var10000 = a;
             label37:
             if (var4 != null) {
@@ -351,7 +351,7 @@ public class guu extends cdr implements dlc, amh {
             }
          }
 
-         dar.gqy().fyf().brx(new frd());
+         ClientSetup.gqy().fyf().brx(new frd());
       }
 
       a.eml = a.fgc;
@@ -370,7 +370,7 @@ public class guu extends cdr implements dlc, amh {
       return a.cdu;
    }
 
-   public int glr() {
+   public int AddCommand() {
       return a.gtr;
    }
 

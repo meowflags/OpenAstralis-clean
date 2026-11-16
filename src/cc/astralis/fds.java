@@ -1,7 +1,7 @@
 package cc.astralis;
 
 public class fds extends guu {
-   private final een dbc = new een();
+   private final HudEditorScreen dbc = new HudEditorScreen();
 
    public fds() {
       super(bfm.VISUAL);

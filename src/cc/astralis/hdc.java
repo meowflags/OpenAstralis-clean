@@ -27,7 +27,7 @@ public class hdc {
 
    public static void fps() {
       long a = hdc.a ^ 34151672878067L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       long var15;
       label35: {

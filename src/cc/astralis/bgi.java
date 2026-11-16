@@ -124,7 +124,7 @@ public enum bgi {
    }
 
    public static boolean cfg() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       boolean var3 = bfz();
       boolean var10000 = var3;
       if (var2 != null) {

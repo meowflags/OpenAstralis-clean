@@ -30,7 +30,7 @@ public class bfc implements dlc {
 
    public static boolean gto(class_2350 enumFacing, class_2338 pos, boolean strict, float reach, float yaw, float pitch) {
       long ax = bfc.a ^ 23949804770346L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_3965 axx = ejr(a, a, a);
       int[] axxx = var10000;
       class_3965 var11 = axx;
@@ -94,7 +94,7 @@ public class bfc implements dlc {
 
    public static boolean eqw(class_2350 facing, class_2338 position, boolean strict, float reach, float yaw, float pitch) {
       long ax = bfc.a ^ 130606985619120L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_3965 axx = cb(a, a, a);
       int[] axxx = var10000;
       class_3965 var10 = axx;
@@ -150,7 +150,7 @@ public class bfc implements dlc {
 
    public static void fpt(boolean throughWalls) {
       long ax = bfc.a ^ 43740833200453L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = 1.0F;
       int[] axxx = var10000;
       class_1297 axxxx = chi.method_1560();
@@ -212,7 +212,7 @@ public class bfc implements dlc {
       label44: {
          long axxxxxxx = bfc.a ^ 69186783587085L;
          axx = Math.max(a, a);
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axxx = class_3532.method_33723(axx);
          ax = var10000;
          axxxx = a.method_5836(a);
@@ -259,7 +259,7 @@ public class bfc implements dlc {
 
    private static class_239 cy(class_239 a, class_243 a, double a) {
       long ax = bfc.a ^ 87935515383100L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_243 axx = a.method_17784();
       int[] axxx = var10000;
       class_243 var10 = axx;

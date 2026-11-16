@@ -39,7 +39,7 @@ public class amg implements dlc {
       ArrayList axxx;
       byte var14;
       ax = amg.a ^ 57662330064475L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       axxx = new ArrayList();
       axx = var10000;
       var14 = a;
@@ -107,7 +107,7 @@ public class amg implements dlc {
 
    public static int dzc(fux slot) {
       long ax = amg.a ^ 109662325625037L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       Object var10000 = a.gee();
       if (var3 != null) {
          if (var10000 == class_1268.field_5810) {
@@ -123,7 +123,7 @@ public class amg implements dlc {
 
    public static fux bdh(boolean ignore) {
       long ax = amg.a ^ 25954761714492L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       fux[] axx = fww(a);
       int[] axxx = var10000;
       fux[] var5 = axx;
@@ -149,7 +149,7 @@ public class amg implements dlc {
 
    public static aqy asc(int baseY) {
       long ax = amg.a ^ 84071774355004L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_2338 axx = new class_2338(chi.field_1724.method_31477(), a, chi.field_1724.method_31479()).method_10074();
       int[] axxx = var10000;
       byte var30 = gmi(axx);
@@ -311,7 +311,7 @@ public class amg implements dlc {
 
    public static boolean ayj(class_2248 block) {
       long ax = amg.a ^ 2118371842433L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_2248 var10000 = a;
       if (axx != null) {
          if (a == null) {

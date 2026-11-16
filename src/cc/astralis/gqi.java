@@ -53,7 +53,7 @@ public class gqi extends brc {
    @Override
    public String cql() {
       long a = c ^ 45705567330027L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       JsonObject axx = a.fdo();
       String var10001 = dve.bvt();
       Object[] var11 = new Object[8];
@@ -72,7 +72,7 @@ public class gqi extends brc {
       String var9 = axx.toString();
       String[] var10 = var8;
       if (axxxx != null) {
-         var9 = fz.dvr(var9, cni.fsi(var8[8]), cni.fsi(var8[5]));
+         var9 = fz.dvr(var9, Base64Util.fsi(var8[8]), Base64Util.fsi(var8[5]));
          if (axxx != null) {
             return var9;
          }
@@ -109,7 +109,7 @@ public class gqi extends brc {
    }
 
    public static int cuv() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = bdb();
       int var10000 = var3;
       if (var2 != null) {

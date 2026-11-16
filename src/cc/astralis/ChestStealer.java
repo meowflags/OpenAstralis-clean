@@ -48,7 +48,7 @@ public class ChestStealer extends guu {
    @gdz
    public void dwo(bsm event) {
       long ax = ChestStealer.a ^ 128213283915996L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -148,7 +148,7 @@ public class ChestStealer extends guu {
          List<class_1735> axxxxxxxxxxx = axxxxxxxxxx.dsa();
          List<class_1735> axxxxxxxxxxxx = new ArrayList<>(chi.field_1724.field_7512.field_7761.stream().filter(axxxxxxxxxxxxx -> {
             long ax = ChestStealer.a ^ 101289144067153L;
-            int[] var4x = dar.abu();
+            int[] var4x = ClientSetup.abu();
             class_1735 var10000x = axxxxxxxxxxxxx;
             if (var4x != null) {
                if (axxxxxxxxxxxxx.field_7871 == chi.field_1724.method_31548()) {

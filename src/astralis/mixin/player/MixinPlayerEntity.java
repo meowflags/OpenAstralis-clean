@@ -3,7 +3,7 @@ package astralis.mixin.player;
 import cc.astralis.ab;
 import cc.astralis.bav;
 import cc.astralis.cxx;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.dqq;
 import cc.astralis.dxd;
@@ -57,7 +57,7 @@ public abstract class MixinPlayerEntity extends class_1309 {
    private void onSetVelocity(class_1297 a, CallbackInfo a) {
       if (a == class_310.method_1551().field_1724) {
          gwj ax = new gwj();
-         dar.gqy().fyf().brx(ax);
+         ClientSetup.gqy().fyf().brx(ax);
          if (ax.fmc()) {
             a.cancel();
          }
@@ -76,7 +76,7 @@ public abstract class MixinPlayerEntity extends class_1309 {
       if (a == class_310.method_1551().field_1724) {
          class_1657 ax = (class_1657)a;
          gwj axx = new gwj();
-         dar.gqy().fyf().brx(axx);
+         ClientSetup.gqy().fyf().brx(axx);
          if (axx.fmc()) {
             ax.method_5728(true);
             a.cancel();
@@ -91,8 +91,8 @@ public abstract class MixinPlayerEntity extends class_1309 {
    )
    public void ClipatEdgeSafewalk(CallbackInfoReturnable<Boolean> cir) {
       if (a == dlc.chi.field_1724) {
-         ab ax = dar.gqy().aws().diy(ab.class);
-         fhd axx = dar.gqy().aws().diy(fhd.class);
+         ab ax = ClientSetup.gqy().aws().diy(ab.class);
+         fhd axx = ClientSetup.gqy().aws().diy(fhd.class);
          if (ax.dsv()) {
             if (ax.dds.dnp() && !bav.cdc()) {
                return;
@@ -117,7 +117,7 @@ public abstract class MixinPlayerEntity extends class_1309 {
       cancellable = true
    )
    public void getBlockInteractionRangeHook(CallbackInfoReturnable<Double> cir) {
-      dxd ax = dar.gqy().aws().diy(dxd.class);
+      dxd ax = ClientSetup.gqy().aws().diy(dxd.class);
       if (ax != null) {
          if (ax.dsv() && ax.dnp.dnp()) {
             a.setReturnValue((double)ax.ffi.dnp().floatValue());
@@ -131,7 +131,7 @@ public abstract class MixinPlayerEntity extends class_1309 {
       cancellable = true
    )
    public void getEntityInteractionRangeHook(CallbackInfoReturnable<Double> cir) {
-      dxd ax = dar.gqy().aws().diy(dxd.class);
+      dxd ax = ClientSetup.gqy().aws().diy(dxd.class);
       if (ax != null) {
          if (ax.dsv()) {
             a.setReturnValue((double)ax.gdv.dnp().floatValue());

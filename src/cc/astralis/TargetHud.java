@@ -25,7 +25,7 @@ public class TargetHud extends guu {
    public final erp azu;
    private double amt;
    private final erp dgx;
-   private static final DecimalFormat fsg;
+   private static final DecimalFormat WatchdogFull;
    private static final long a = 119043477712123L;
    private static final String[] g;
    private static final String[] h;
@@ -59,16 +59,16 @@ public class TargetHud extends guu {
       Object var13;
       label112: {
          ax = TargetHud.a ^ 54325004497391L;
-         axx = dar.abu();
+         axx = ClientSetup.abu();
          var13 = a;
          if (axx != null) {
             a.efe("Modern");
-            if (chi.field_1755 instanceof een) {
+            if (chi.field_1755 instanceof HudEditorScreen) {
                var13 = chi.field_1724;
                break label112;
             }
 
-            var13 = dar.gqy().aws().diy(KillAura.class);
+            var13 = ClientSetup.gqy().aws().diy(KillAura.class);
          }
 
          var13 = ((KillAura)var13).gvw;
@@ -173,7 +173,7 @@ public class TargetHud extends guu {
    @gdz
    public void eur(eel event) {
       long ax = TargetHud.a ^ 86995143994910L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       TargetHud var10000 = a;
       if (axx != null) {
          if (a.bon == null) {
@@ -251,11 +251,11 @@ public class TargetHud extends guu {
       }
    }
 
-   private void fqj(float a, float a, float a) {
+   private void SpeedBlocksMC(float a, float a, float a) {
       long ax = TargetHud.a ^ 137988092761121L;
       int var10000 = 26719;
       var10000 = (short)20510;
-      int[] var25 = dar.abu();
+      int[] var25 = ClientSetup.abu();
       dmp.hdn();
       float axxxxxx = a + 75.0F;
       float axxxxxxx = a + 23.0F;
@@ -270,7 +270,7 @@ public class TargetHud extends guu {
       float axxxxxxxxxx = (float)(axxxxxxxxx * a.azu.hjo());
       int[] axxxxxxxxxxx = var25;
       var10000 = (short)15416;
-      Glow axxxxxxxxxxxxx = dar.gqy().aws().diy(Glow.class);
+      Glow axxxxxxxxxxxxx = ClientSetup.gqy().aws().diy(Glow.class);
       String axxxxxxxxxxxxxx = axxxxxxxxxxxxx.eqi.dnp();
       byte var20 = -1;
       var10000 = axxxxxxxxxxxxxx.hashCode();
@@ -324,16 +324,16 @@ public class TargetHud extends guu {
       var10003 = a + 46.0F - 3.0F;
       dmp.gst(axxxxxxxx, var43, var52, var10003, new Color(25, 25, 25, 220));
       dmp.dyl(axxxxxxxx, a + 46.0F - 15.0F, axxxxxxxxxx, 12.0F, axxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxx, false);
-      dmp.dzr(a + 3.0F, a + 3.0F, 40.0F, 40.0F, hcu.fkx(ehy.cyx(a.bon.method_5845())), null);
+      dmp.dzr(a + 3.0F, a + 3.0F, 40.0F, 40.0F, hcu.fkx(SessionHelper.cyx(a.bon.method_5845())), null);
       if (axxxxxxxxxxx != null) {
          if (a.bon.method_6032() <= 0.0F) {
             a.azu.dsw();
             a.amt = -1.0;
          }
 
-         bxc.emc("Sf-Ui", 12).ebb(a.bon.method_5477().getString(), axxxxxxxx, a + 3.0F, Color.white);
-         fll var35 = bxc.emc("Sf-Ui", 10);
-         String var48 = fsg.format(a.bon.method_6032());
+         FontManager.emc("Sf-Ui", 12).ebb(a.bon.method_5477().getString(), axxxxxxxx, a + 3.0F, Color.white);
+         fll var35 = FontManager.emc("Sf-Ui", 10);
+         String var48 = WatchdogFull.format(a.bon.method_6032());
          String var49 = var48 + " Health";
          var10003 = a + 3.0F + 14.0F;
          var35.ebb(var49, axxxxxxxx, var10003, new Color(180, 180, 180));
@@ -352,12 +352,12 @@ public class TargetHud extends guu {
       dmp.hdn();
       float axxxxxxxx = a + 90.0F;
       float axxxxxxxxx = a + 27.5F;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       dmp.gpu(axxxxxxxx, axxxxxxxxx);
       dmp.fle(a, a);
       int[] axxxxxxxxxx = var10000;
       dmp.gpu(-axxxxxxxx, -axxxxxxxxx);
-      Glow axxxxxxxxxxx = dar.gqy().aws().diy(Glow.class);
+      Glow axxxxxxxxxxx = ClientSetup.gqy().aws().diy(Glow.class);
       dmp.cpp(
          a,
          a,
@@ -374,10 +374,10 @@ public class TargetHud extends guu {
       float axxxxxxxxxxxx = a + 39.0F + 16.0F;
       float axxxxxxxxxxxxx = 117.0F;
       String axxxxxxxxxxxxxx = a.bon.method_5477().getString();
-      bxc.emc(b<"g">(1778, 4560997727419051296L ^ ax), e<"x">(17580, 1748507910610645606L ^ ax))
+      FontManager.emc(b<"g">(1778, 4560997727419051296L ^ ax), e<"x">(17580, 1748507910610645606L ^ ax))
          .ebb(axxxxxxxxxxxxxx, axxxxxxxxxxxx, a + 8.0F - 1.0F, Color.WHITE);
-      String axxxxxxxxxxxxxxx = fsg.format(a.bon.method_6032()) + b<"g">(2088, 4755451403827848177L ^ ax);
-      bxc.emc(b<"g">(5957, 8784525311967706256L ^ ax), e<"x">(9910, 608429614127681657L ^ ax))
+      String axxxxxxxxxxxxxxx = WatchdogFull.format(a.bon.method_6032()) + b<"g">(2088, 4755451403827848177L ^ ax);
+      FontManager.emc(b<"g">(5957, 8784525311967706256L ^ ax), e<"x">(9910, 608429614127681657L ^ ax))
          .ebb(
             axxxxxxxxxxxxxxx,
             axxxxxxxxxxxx,
@@ -400,7 +400,7 @@ public class TargetHud extends guu {
       int var24 = (var25 = axxxxxxxxxxxxxxxxxxx - 0.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
       if (axxxxxxxxxx != null) {
          if (var24 > 0) {
-            dmp.aho(axxxxxxxxxxxx - 1.0F, axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxx + 1.0F, 8.0F, 5.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
+            dmp.aho(axxxxxxxxxxxx - 1.0F, axxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxx + 1.0F, 8.0F, 5.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
          }
 
          dmp.cpp(
@@ -411,8 +411,8 @@ public class TargetHud extends guu {
             8.0F,
             new Color(e<"x">(25438, 8411559853070177678L ^ ax), e<"x">(3282, 4980589028691360260L ^ ax), e<"x">(2760, 6861509018269400083L ^ ax))
          );
-         dmp.gnj(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, hcu.fkx(ehy.cyx(a.bon.method_5845())), null);
-         dmp.hbm(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, dar.gqy().deo(), dar.gqy().cxj(), true, 1.5F, new Color(0, 0, 0, 0));
+         dmp.gnj(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, hcu.fkx(SessionHelper.cyx(a.bon.method_5845())), null);
+         dmp.hbm(a + 8.0F, a + 8.0F, 39.0F, 39.0F, 8.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true, 1.5F, new Color(0, 0, 0, 0));
          if (axxxxxxxxxx == null) {
             return;
          }
@@ -443,8 +443,8 @@ public class TargetHud extends guu {
       var10000.init(2, var10002.generateSecret(new DESKeySpec(var10003)), new IvParameterSpec(new byte[8]));
       String[] var29 = new String[15];
       int var27 = 0;
-      String var26 = "<t£¡\\\u0017´,\u0095Ç\u0019\u00adN6hn\u00108\bàðøuCì»JO\u0098÷øéÜ0üöFQo¹{-UB=\u007fFÓ\u0013/#\u001cú\u0001¤'ÈzÎù\u000fFH5\bk\u0011ê(íú\u0007.ÚfÂ_\u0013·Ì\u001dà\u0010\u009b\u0090`>\u0086ÿt-á\u0094\u008f8êywU C\u0080ù\u0084\u001f\u008bØÉÀüîª3³\u008bÓ:R`\u009cgÊ\u009bì\u001dÀ\u0007J\u001bã\u00ad\u008f()\u0097z\u0014Åß^~|É¨®Ç\u009cÓ<&Îr\u0011¬©óÖ\u0092¿\u0095\u00adÓx.E?ì³\u009c ¡\u0007D\u0010!Pu\u0096îü\u0086\u001bu)oBÈ» b\u00102\u0007\u0091¢'f¦\u001cèÊçcøUH-\u00105\u0097â\u0095\u0019ËxkÈF=u\u0092\u0001k\u0003\u0010Æ¾aL)Ójl\bu[Sq1Ì\u0003\u0010\\2\u0016=4Ö¶É\u00881\u0085õaw!<\u0010DRûù\u00175h\rõ%\u0087\u0001\u000e³â\u000b\u0010\u000eÔÅøÔ\u0016ª/·F\u0017Rj qG";
-      int var28 = "<t£¡\\\u0017´,\u0095Ç\u0019\u00adN6hn\u00108\bàðøuCì»JO\u0098÷øéÜ0üöFQo¹{-UB=\u007fFÓ\u0013/#\u001cú\u0001¤'ÈzÎù\u000fFH5\bk\u0011ê(íú\u0007.ÚfÂ_\u0013·Ì\u001dà\u0010\u009b\u0090`>\u0086ÿt-á\u0094\u008f8êywU C\u0080ù\u0084\u001f\u008bØÉÀüîª3³\u008bÓ:R`\u009cgÊ\u009bì\u001dÀ\u0007J\u001bã\u00ad\u008f()\u0097z\u0014Åß^~|É¨®Ç\u009cÓ<&Îr\u0011¬©óÖ\u0092¿\u0095\u00adÓx.E?ì³\u009c ¡\u0007D\u0010!Pu\u0096îü\u0086\u001bu)oBÈ» b\u00102\u0007\u0091¢'f¦\u001cèÊçcøUH-\u00105\u0097â\u0095\u0019ËxkÈF=u\u0092\u0001k\u0003\u0010Æ¾aL)Ójl\bu[Sq1Ì\u0003\u0010\\2\u0016=4Ö¶É\u00881\u0085õaw!<\u0010DRûù\u00175h\rõ%\u0087\u0001\u000e³â\u000b\u0010\u000eÔÅøÔ\u0016ª/·F\u0017Rj qG"
+      String var26 = "<t£¡\\\u0017´,\u0095Ç\u0019\u00adN6hn\u00108\bàðøuCì»JO\u0098÷øéÜ0üöFQo¹{-UB=\u007fFÓ\u0013/#\u001cú\u0001¤'ÈzÎù\u000fFH5\bk\u0011ê(íú\u0007.ÚfÂ_\u0013·Ì\u001dà\u0010\u009b\u0090`>\u0086ÿt-á\u0094\u008f8êywU C\u0080ù\u0084\u001f\u008bØÉÀüîª3³\u008bÓ:R`\u009cgÊ\u009bì\u001dÀ\u0007J\u001bã\u00ad\u008f()\u0097z\u0014Åß^~|É¨®Ç\u009cÓ<&Îr\u0011¬©óÖ\u0092¿\u0095\u00adÓx.E?ì³\u009c ¡\u0007D\u0010!Pu\u0096îü\u0086\u001bu)oBÈ» b\u00102\u0007\u0091¢'f¦\u001cèÊçcøUH-\u00105\u0097â\u0095\u0019ËxkÈF=u\u0092\u0001k\u0003\u0010Æ¾aL)Ójl\GuiMoveModernWatchdog[Sq1Ì\u0003\u0010\\2\u0016=4Ö¶É\u00881\u0085õaw!<\u0010DRûù\u00175h\rõ%\u0087\u0001\u000e³â\u000b\u0010\u000eÔÅøÔ\u0016ª/·F\u0017Rj qG";
+      int var28 = "<t£¡\\\u0017´,\u0095Ç\u0019\u00adN6hn\u00108\bàðøuCì»JO\u0098÷øéÜ0üöFQo¹{-UB=\u007fFÓ\u0013/#\u001cú\u0001¤'ÈzÎù\u000fFH5\bk\u0011ê(íú\u0007.ÚfÂ_\u0013·Ì\u001dà\u0010\u009b\u0090`>\u0086ÿt-á\u0094\u008f8êywU C\u0080ù\u0084\u001f\u008bØÉÀüîª3³\u008bÓ:R`\u009cgÊ\u009bì\u001dÀ\u0007J\u001bã\u00ad\u008f()\u0097z\u0014Åß^~|É¨®Ç\u009cÓ<&Îr\u0011¬©óÖ\u0092¿\u0095\u00adÓx.E?ì³\u009c ¡\u0007D\u0010!Pu\u0096îü\u0086\u001bu)oBÈ» b\u00102\u0007\u0091¢'f¦\u001cèÊçcøUH-\u00105\u0097â\u0095\u0019ËxkÈF=u\u0092\u0001k\u0003\u0010Æ¾aL)Ójl\GuiMoveModernWatchdog[Sq1Ì\u0003\u0010\\2\u0016=4Ö¶É\u00881\u0085õaw!<\u0010DRûù\u00175h\rõ%\u0087\u0001\u000e³â\u000b\u0010\u000eÔÅøÔ\u0016ª/·F\u0017Rj qG"
          .length();
       char var25 = 16;
       int var36 = -1;
@@ -588,7 +588,7 @@ public class TargetHud extends guu {
                                                 if (var2 >= var5) {
                                                    v = var6;
                                                    w = new Long[4];
-                                                   fsg = new DecimalFormat("0.0");
+                                                   WatchdogFull = new DecimalFormat("0.0");
                                                    return;
                                                 }
                                                 break;

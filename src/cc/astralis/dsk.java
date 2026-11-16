@@ -51,7 +51,7 @@ public class dsk extends brc {
    @Override
    public String cql() {
       long a = c ^ 87207178776079L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       dve.bvt();
       JsonObject axx = a.fdo();
       int[] axxx = var10000;
@@ -71,7 +71,7 @@ public class dsk extends brc {
       var8 = b;
       String var10001 = var8[4];
       if (axxx != null) {
-         var10 = fz.dvr(var10, cni.fsi(var10001), cni.fsi(var8[2]));
+         var10 = fz.dvr(var10, Base64Util.fsi(var10001), Base64Util.fsi(var8[2]));
          if (cdr.haa() != null) {
             return var10;
          }

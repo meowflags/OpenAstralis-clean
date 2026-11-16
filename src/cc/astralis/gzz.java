@@ -23,10 +23,10 @@ public class gzz extends glv<cec> {
 
    public void cfo() {
       long a = gzz.a ^ 140262696557491L;
-      cec[] var3 = new cec[]{new dqq(), new cnx(), new alj(), new hgh(), new bhw(), new gxk(), null};
-      var3[6] = new chx();
+      cec[] var3 = new cec[]{new dqq(), new cnx(), new alj(), new hgh(), new BlinkController(), new gxk(), null};
+      var3[6] = new LimboHandler();
       a.bpq(var3);
-      dar.gqy().fyf().glu(a);
+      ClientSetup.gqy().fyf().glu(a);
    }
 
    public <T extends cec> T gne(Class<T> clazz) {

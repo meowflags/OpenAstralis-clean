@@ -68,7 +68,7 @@ public class HitSelect extends guu {
       label94: {
          label97: {
             ax = HitSelect.a ^ 116892835401495L;
-            int[] var10000 = dar.abu();
+            int[] var10000 = ClientSetup.abu();
             a.efe(a.hex.dnp() + "");
             class_239 axx = chi.field_1765;
             int[] axxx = var10000;
@@ -165,7 +165,7 @@ public class HitSelect extends guu {
 
    private boolean cdw(class_3966 a) {
       long ax = HitSelect.a ^ 26632573649742L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1297 var6 = a.method_17782();
       int[] axx = var10000;
       boolean var7 = var6 instanceof class_1657;
@@ -234,7 +234,7 @@ public class HitSelect extends guu {
       int var6;
       long ax = HitSelect.a ^ 39215603629272L;
       String var4 = a.efl.dnp();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       byte var5 = -1;
       a = var10000;
       var6 = var4.hashCode();
@@ -321,7 +321,7 @@ public class HitSelect extends guu {
 
    private boolean bkd() {
       long a = HitSelect.a ^ 137567773090250L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       double var4;
       int var10000 = (var4 = chi.field_1724.field_6017 - 0.1F) == 0.0 ? 0 : (var4 < 0.0 ? -1 : 1);
       if (var3 != null) {

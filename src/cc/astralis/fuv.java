@@ -40,8 +40,8 @@ public class fuv extends cdr implements dlc {
 
    public static void fhp(fll uifontrenderer, String text, float x, float y, float spaceBetweenLetters, Color firstColor, Color secondColor, boolean shadow) {
       long ax = fuv.a ^ 114105052704049L;
-      ezv axx = dar.gqy().aws().diy(ezv.class);
-      int[] var10000 = dar.abu();
+      ezv axx = ClientSetup.gqy().aws().diy(ezv.class);
+      int[] var10000 = ClientSetup.abu();
       String var13 = axx.eqi.dnp();
       int[] axxx = var10000;
       byte var14 = -1;
@@ -76,7 +76,7 @@ public class fuv extends cdr implements dlc {
 
    public static boolean bfm(double mouseX, double mouseY, float x, float y, float width, float height) {
       long ax = fuv.a ^ 32453869936251L;
-      int[] var10 = dar.abu();
+      int[] var10 = ClientSetup.abu();
       double var12;
       int var10000 = (var12 = a - a) == 0.0 ? 0 : (var12 < 0.0 ? -1 : 1);
       if (var10 != null) {
@@ -110,7 +110,7 @@ public class fuv extends cdr implements dlc {
       }
    }
 
-   public static String cv() {
+   public static String AltLoginScreen() {
       return Advapi32Util.registryGetStringValue(WinReg.HKEY_CURRENT_USER, "Control Panel\\Desktop", "WallPaper");
    }
 

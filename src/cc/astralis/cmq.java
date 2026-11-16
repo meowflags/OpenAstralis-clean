@@ -18,7 +18,7 @@ class cmq extends LinkedHashMap<Integer, agz> {
    @Override
    protected boolean removeEldestEntry(Entry<Integer, agz> eldest) {
       long ax = cmq.a ^ 134625868233128L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       int var10000 = a.size();
       if (var4 != null) {
          var10000 = var10000 > (int)b ? 1 : 0;

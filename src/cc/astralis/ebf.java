@@ -34,7 +34,7 @@ class ebf {
    public ebf(byte[] key, byte[] nonce, int count) {
       int var10;
       label35: {
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          super();
          int[] axxx = var10000;
          var10 = a.length;
@@ -103,7 +103,7 @@ class ebf {
 
    private int[] bgb() {
       long a = b ^ 69856315582092L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] axx = new int[16];
       int[] axxx = var10000;
       cdr[] var11 = fz.dtf();
@@ -151,7 +151,7 @@ class ebf {
       int[] axxx = a.bgb();
       int[] axxxx = (int[])axxx.clone();
       cdr[] axxxxx = var16;
-      int[] var17 = dar.abu();
+      int[] var17 = ClientSetup.abu();
       int axxxxxx = 0;
       int[] axxxxxxx = var17;
 
@@ -221,8 +221,8 @@ class ebf {
       }
    }
 
-   public byte[] atf(byte[] data) {
-      int[] var10000 = dar.abu();
+   public byte[] TeleportCommand(byte[] data) {
+      int[] var10000 = ClientSetup.abu();
       cdr[] var14 = fz.dtf();
       byte[] axxx = new byte[a.length];
       cdr[] axxxx = var14;

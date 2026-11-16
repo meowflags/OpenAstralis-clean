@@ -1,7 +1,7 @@
 package astralis.mixin.player;
 
 import cc.astralis.cxx;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dgp;
 import cc.astralis.dqq;
 import cc.astralis.epn;
@@ -65,7 +65,7 @@ public abstract class MixinEntity {
    private void weeeooooUpdateVelo(float a, class_243 a, CallbackInfo a) {
       if (a instanceof class_1657) {
          dgp ax = new dgp(a, gpy.PRE);
-         dar.gqy().fyf().brx(ax);
+         ClientSetup.gqy().fyf().brx(ax);
          if (ax.fmc()) {
             a.cancel();
             return;
@@ -81,7 +81,7 @@ public abstract class MixinEntity {
    private void updateVelo(float a, class_243 a, CallbackInfo a) {
       if (a instanceof class_1657) {
          dgp ax = new dgp(a, gpy.POST);
-         dar.gqy().fyf().brx(ax);
+         ClientSetup.gqy().fyf().brx(ax);
          if (ax.fmc()) {
             a.cancel();
             return;
@@ -115,7 +115,7 @@ public abstract class MixinEntity {
    public class_243 hookVelocity(class_243 movementInput, float speed, float yaw) {
       if (a == class_310.method_1551().field_1724) {
          epn ax = new epn(a);
-         dar.gqy().fyf().brx(ax);
+         ClientSetup.gqy().fyf().brx(ax);
          a = ax.dfs();
       }
 

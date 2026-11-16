@@ -1,6 +1,6 @@
 package astralis.mixin.game;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.edr;
 import net.minecraft.class_1922;
 import net.minecraft.class_2338;
@@ -27,7 +27,7 @@ public abstract class MixinFlowableFluid {
       cancellable = true
    )
    private void getVelocityHook(class_1922 a, class_2338 a, class_3610 a, CallbackInfoReturnable<class_243> a) {
-      edr ax = dar.gqy().aws().diy(edr.class);
+      edr ax = ClientSetup.gqy().aws().diy(edr.class);
       if (ax.dsv() && ax.gvb.dnp()) {
          double axx = 0.0;
          double axxx = 0.0;

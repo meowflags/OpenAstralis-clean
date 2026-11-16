@@ -38,7 +38,7 @@ public class hgh extends cec {
    @gdz
    public void erx(amo event) {
       long ax = hgh.a ^ 25380268758732L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (axx != null) {
          if (chi.field_1724.field_6012 >= 200 && !chi.method_1542()) {
             if (a.cud() == gpy.RECEIVE) {
@@ -76,7 +76,7 @@ public class hgh extends cec {
          long ax;
          int[] var4;
          ax = hgh.a ^ 117107892838593L;
-         var4 = dar.abu();
+         var4 = ClientSetup.abu();
          var10000 = a.dps.isEmpty();
          label54:
          if (var4 != null) {
@@ -137,7 +137,7 @@ public class hgh extends cec {
 
    private void elf() {
       long a = hgh.a ^ 46666303917324L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       Queue var10000 = a.dps;
       if (ax != null) {
          if (a.dps.size() < 2) {

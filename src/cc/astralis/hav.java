@@ -26,7 +26,7 @@ public class hav implements dlc {
       int[] ax;
       label72: {
          long axx = hav.a ^ 96161548744511L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          class_268 axxx = a.method_2955();
          ax = var10000;
          class_268 axxxx = chi.field_1724.method_5781();
@@ -88,7 +88,7 @@ public class hav implements dlc {
 
    public static boolean ab(class_1309 entity) {
       long ax = hav.a ^ 60768022434486L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (axx != null) {
          if (chi.field_1724.method_5722(a)) {
@@ -138,7 +138,7 @@ public class hav implements dlc {
 
    private static boolean cdm(class_2561 a, class_2561 a) {
       long ax = hav.a ^ 128424489442890L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_2583 axx = a.method_10866();
       int[] axxx = var10000;
       class_2583 axxxx = a.method_10866();
@@ -168,7 +168,7 @@ public class hav implements dlc {
       int var9;
       label42: {
          long axx = hav.a ^ 1512398042790L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          String axxx = ebi(a.getString());
          ax = var10000;
          String axxxx = ebi(a.getString());
@@ -205,7 +205,7 @@ public class hav implements dlc {
 
    private static boolean et(class_1309 a) {
       long ax = hav.a ^ 99587346902512L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_1309 var10000 = a;
       if (axx != null) {
          if (!(a instanceof class_1657)) {
@@ -245,7 +245,7 @@ public class hav implements dlc {
 
    private static Integer hau(class_1799 a) {
       long ax = hav.a ^ 82046231663174L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       int var10000 = a.method_31573(class_3489.field_48803);
       if (var3 != null) {
          if (var10000 == 0) {

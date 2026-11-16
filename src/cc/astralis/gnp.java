@@ -32,8 +32,8 @@ public class gnp extends bmd {
                   long axxxx = gnp.a ^ 18363553273103L;
                   a.fji(a);
                   a.axc(a);
-                  int[] var10000 = dar.abu();
-                  ezv axxxxx = dar.gqy().aws().diy(ezv.class);
+                  int[] var10000 = ClientSetup.abu();
+                  ezv axxxxx = ClientSetup.gqy().aws().diy(ezv.class);
                   dmp.dsm(a, a, a.arq(), a.ajg(), 5.0F, axxxxx.ehf.dnp(), axxxxx.aoz.dnp());
                   ax = cxc.get(a.cvu);
                   axxx = var10000;
@@ -74,7 +74,7 @@ public class gnp extends bmd {
          axx = 0.5F;
       }
 
-      fll axxxxxx = bxc.emc(b, ax.asw);
+      fll axxxxxx = FontManager.emc(b, ax.asw);
       axxxxxx.aof(ax.ejr, a + a.arq() / 2.0F - axxxxxx.biu(ax.ejr) / 2.0F + axx, a + a.ajg() / 2.0F - axxxxxx.biu(ax.ejr) / 2.0F, Color.white);
    }
 

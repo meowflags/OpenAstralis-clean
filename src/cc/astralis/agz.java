@@ -26,7 +26,7 @@ final class agz {
 
    boolean aec(int a, int a, boolean a) {
       long ax = agz.a ^ 117798882058787L;
-      int[] var6 = dar.abu();
+      int[] var6 = ClientSetup.abu();
       int var10000 = a.bhz;
       int var10001 = a;
       if (var6 != null) {

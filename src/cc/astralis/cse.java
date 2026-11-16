@@ -44,7 +44,7 @@ public class cse extends brc {
       JsonObject a = a.fdo();
       String[] var2 = b;
       a.dqb(a, var2[0], a.hcn);
-      return fz.dvr(a.toString(), cni.fsi(var2[1]), cni.fsi(var2[2]));
+      return fz.dvr(a.toString(), Base64Util.fsi(var2[1]), Base64Util.fsi(var2[2]));
    }
 
    public String bgn() {

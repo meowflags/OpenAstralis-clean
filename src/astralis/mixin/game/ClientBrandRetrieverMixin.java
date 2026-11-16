@@ -1,6 +1,6 @@
 package astralis.mixin.game;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.fhx;
 import net.minecraft.client.ClientBrandRetriever;
 import org.spongepowered.asm.mixin.Final;
@@ -23,7 +23,7 @@ public class ClientBrandRetrieverMixin {
       cancellable = true
    )
    private static void getClientModName(CallbackInfoReturnable<String> a) {
-      if (dar.gqy().aws() != null && dar.gqy().aws().diy(fhx.class) != null && dar.gqy().aws().diy(fhx.class).dsv()) {
+      if (ClientSetup.gqy().aws() != null && ClientSetup.gqy().aws().diy(fhx.class) != null && ClientSetup.gqy().aws().diy(fhx.class).dsv()) {
          a.setReturnValue(field_33204);
       }
    }

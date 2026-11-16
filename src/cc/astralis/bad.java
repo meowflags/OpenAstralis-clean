@@ -59,7 +59,7 @@ public final class bad {
       // 007: lstore 3
       // 008: aload 0
       // 009: invokespecial java/lang/Object.<init> ()V
-      // 00c: invokestatic cc/astralis/dar.abu ()[I
+      // 00c: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 00f: aload 0
       // 010: new io/github/humbleui/skija/Paint
       // 013: dup
@@ -289,7 +289,7 @@ public final class bad {
 
    public synchronized void bq() {
       long a = bad.a ^ 101508794840323L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       bad var10000 = a;
       if (var3 != null) {
          if (a.hav) {
@@ -310,7 +310,7 @@ public final class bad {
    // $VF: Duplicated exception handlers to handle obfuscated exceptions
    private void hdu(String a, float a, float a, Color a, boolean a, boolean a) {
       long ax = bad.a ^ 68762203311366L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Canvas axx = dmp.fpb();
       int[] axxx = var10000;
       if (axx != null && !a.isEmpty()) {
@@ -386,7 +386,7 @@ public final class bad {
 
    public List<gvf> bhy(String input, Paint originalPaint) {
       long ax = bad.a ^ 373671701151L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.isEmpty()) {
          return Collections.emptyList();
       } else {

@@ -48,7 +48,7 @@ public class AutoWeapon extends guu {
    @gdz
    public void dlh(fnt event) {
       long ax = AutoWeapon.a ^ 135558152857018L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -109,7 +109,7 @@ public class AutoWeapon extends guu {
          if (var18) {
             List<class_1735> axxxxxxxxx = new ArrayList<>(Arrays.stream(axxxxxx).filter(axxxxxxxxxx -> {
                long ax = AutoWeapon.a ^ 26262122108873L;
-               int[] var3 = dar.abu();
+               int[] var3 = ClientSetup.abu();
                class_1735 var10000x = axxxxxxxxxx;
                if (var3 != null) {
                   if (axxxxxxxxxx == null) {

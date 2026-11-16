@@ -45,7 +45,7 @@ public class hhl implements dlc {
       // 003: ldc2_w 49384659462789
       // 006: lxor
       // 007: lstore 3
-      // 008: invokestatic cc/astralis/dar.abu ()[I
+      // 008: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 00b: astore 5
       // 00d: new java/net/URL
       // 010: dup
@@ -287,7 +287,7 @@ public class hhl implements dlc {
 
    public static String bvs(String url, String bearer) {
       long ax = hhl.a ^ 32909970608498L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
 
       try {
          HttpsURLConnection axxx = (HttpsURLConnection)new URL(a).openConnection();
@@ -335,7 +335,7 @@ public class hhl implements dlc {
 
    public static afc cwa(String refreshToken, String clientID) {
       afc ax = gxg.ar(a, a);
-      UUID axx = ehy.duo(ax.acp);
+      UUID axx = SessionHelper.duo(ax.acp);
       class_320 axxx = new class_320(ax.av, axx, ax.aqg, Optional.empty(), Optional.empty());
       MinecraftClientSessionAccessor axxxx = (MinecraftClientSessionAccessor)chi;
       axxxx.setSession(axxx);
@@ -344,7 +344,7 @@ public class hhl implements dlc {
 
    public static void fua(String url) {
       long ax = hhl.a ^ 132799888829221L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
 
       try {
          String var10000 = a;

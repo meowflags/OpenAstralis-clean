@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dk;
 import net.minecraft.class_2561;
 import net.minecraft.class_332;
@@ -27,7 +27,7 @@ public class MixinHandledScreen extends class_437 {
       )}
    )
    private void blur$renderContainerBlur(class_332 a, int a, int a, float a, CallbackInfo a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
       if (ax.dsv() && ax.chd.dnp()) {
          a.method_57734(a);
       }

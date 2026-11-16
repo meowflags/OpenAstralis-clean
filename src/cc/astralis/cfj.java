@@ -34,7 +34,7 @@ public class cfj extends hcr {
    @gdz
    public void cnd(amo event) {
       long ax = cfj.a ^ 18859610646576L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       amo var10000 = a;
       if (axx != null) {
          if (a.cud() != gpy.RECEIVE) {

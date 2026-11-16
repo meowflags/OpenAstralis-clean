@@ -31,7 +31,7 @@ public class fnb {
 
    private void ema() {
       long a = fnb.a ^ 120075732579776L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       en var10000 = a.bmb;
       if (var3 != null) {
          if (a.bmb.fjz == null) {

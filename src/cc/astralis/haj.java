@@ -7,7 +7,7 @@ import net.minecraft.class_2680;
 public class haj implements dnb {
    public class_2680 aep;
    public class_2338 bsr;
-   public class_265 ddx;
+   public class_265 Delay;
 
    public class_2680 bqg() {
       return a.aep;

@@ -26,16 +26,16 @@ public class dqk extends guu {
       long a = dqk.a ^ 29714068510638L;
       super(bfm.COMBAT);
       String var10003 = g;
-      hcr[] var3 = new hcr[]{new cfj(a), new cek(a), new hkb(a), new clr(a), new gbc(a), new bvd(a), null, null, null, null, null, null, null, null, null};
-      var3[6] = new aqo(a);
+      hcr[] var3 = new hcr[]{new cfj(a), new Air2(a), new Cancel(a), new Intave2(a), new Normal(a), new Reverse(a), null, null, null, null, null, null, null, null, null};
+      var3[6] = new Vulcan(a);
       var3[7] = new gus(a);
-      var3[8] = new ddx(a);
-      var3[9] = new bod(a);
-      var3[10] = new bqe(a);
-      var3[11] = new hcc(a);
-      var3[12] = new bsi(a);
-      var3[13] = new ayw(a);
-      var3[14] = new hak(a);
+      var3[8] = new Delay(a);
+      var3[9] = new Buffer(a);
+      var3[10] = new ModernWatchdog(a);
+      var3[11] = new Grim2(a);
+      var3[12] = new Jump(a);
+      var3[13] = new Mush(a);
+      var3[14] = new ReducePacket(a);
       a.dag = new cyx(var10003, var3);
       a.beb(a.dag);
    }

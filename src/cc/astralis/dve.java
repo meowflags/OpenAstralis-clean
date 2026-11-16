@@ -44,7 +44,7 @@ public class dve extends brc {
       JsonObject a = a.fdo();
       String[] var2 = b;
       a.dqb(a, var2[2], a.dof);
-      return fz.dvr(a.toString(), cni.fsi(var2[1]), cni.fsi(var2[3]));
+      return fz.dvr(a.toString(), Base64Util.fsi(var2[1]), Base64Util.fsi(var2[3]));
    }
 
    public String gyv() {

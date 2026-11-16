@@ -39,7 +39,7 @@ public final class fbr {
 
    public void glu(Object object) {
       long ax = fbr.a ^ 5692892279525L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Method[] var5 = a.getClass().getDeclaredMethods();
       int var6 = var5.length;
       int[] axx = var10000;
@@ -71,7 +71,7 @@ public final class fbr {
 
    public void duh(Object object, Class<? extends dnb> eventClass) {
       long ax = fbr.a ^ 37025564655115L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Method[] var6 = a.getClass().getDeclaredMethods();
       int var7 = var6.length;
       int var8 = 0;
@@ -105,7 +105,7 @@ public final class fbr {
 
    public void bet(Object object) {
       long ax = fbr.a ^ 68351064258418L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var5 = brd.values().iterator();
       int[] axx = var10000;
 
@@ -148,7 +148,7 @@ public final class fbr {
 
    public void aru(Object object, Class<? extends dnb> eventClass) {
       long ax = fbr.a ^ 83914976162069L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Map var10000 = brd;
       Class var10001 = a;
       if (axx != null) {
@@ -184,7 +184,7 @@ public final class fbr {
       label35: {
          long axx = fbr.a ^ 1301671629818L;
          Class axxx = a.getParameterTypes()[0];
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          ax = new fdg(a, a, a.getAnnotation(gdz.class).value());
          int[] axxxx = var10000;
          boolean var8 = ax.dpg().isAccessible();
@@ -220,7 +220,7 @@ public final class fbr {
 
    public void cdk(Class<? extends dnb> indexClass) {
       long ax = fbr.a ^ 75981348957230L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator axx = brd.entrySet().iterator();
       int[] axxx = var10000;
 
@@ -239,7 +239,7 @@ public final class fbr {
 
    public void fpq(boolean onlyEmptyEntries) {
       long ax = fbr.a ^ 62773266068453L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator axx = brd.entrySet().iterator();
       int[] axxx = var10000;
 
@@ -272,7 +272,7 @@ public final class fbr {
 
    private void dnd(Class<? extends dnb> a) {
       long ax = fbr.a ^ 88723823175363L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       List<fdg> axx = new CopyOnWriteArrayList<>();
       byte[] var6 = erh.cpc;
       int var7 = var6.length;
@@ -327,7 +327,7 @@ public final class fbr {
 
    private boolean chu(Method a) {
       long ax = fbr.a ^ 136493038455170L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       int var10000 = a.getParameterTypes().length;
       if (var4 != null) {
          var10000 = var10000 == 1 && a.isAnnotationPresent(gdz.class) ? 0 : 1;
@@ -338,7 +338,7 @@ public final class fbr {
 
    private boolean duq(Method a, Class<? extends dnb> a) {
       long ax = fbr.a ^ 131592519785880L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       boolean var10000 = a.chu(a);
       if (var5 != null) {
          var10000 = var10000 || !a.getParameterTypes()[0].equals(a);
@@ -354,7 +354,7 @@ public final class fbr {
       label170: {
          label173: {
             ax = fbr.a ^ 33198783018077L;
-            axx = dar.abu();
+            axx = ClientSetup.abu();
             class_310 var10000 = class_310.method_1551();
             if (axx != null) {
                if (var10000.field_1724 != null && class_310.method_1551().field_1687 != null) {
@@ -364,14 +364,14 @@ public final class fbr {
                var10000 = class_310.method_1551();
             }
 
-            var20 = var10000.field_1755 instanceof crv;
+            var20 = var10000.field_1755 instanceof AltManager;
             if (axx == null) {
                break label170;
             }
 
             if (!var20) {
-               if (dar.gqy().aws() != null && dar.gqy().aws().diy(dvw.class) != null) {
-                  ((dvw)dar.gqy().aws().diy(dvw.class)).enu();
+               if (ClientSetup.gqy().aws() != null && ClientSetup.gqy().aws().diy(dvw.class) != null) {
+                  ((dvw)ClientSetup.gqy().aws().diy(dvw.class)).enu();
                }
 
                return a;

@@ -39,7 +39,7 @@ public class bcc {
       return a.bfe;
    }
 
-   public float hbi() {
+   public float BindCommand() {
       return a.gxb;
    }
 

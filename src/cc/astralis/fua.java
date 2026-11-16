@@ -26,7 +26,7 @@ public enum fua {
    public static fua edx(int code) {
       long ax = fua.a ^ 31299698473818L;
       fua[] var4 = values();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int var5 = var4.length;
       int[] axx = var10000;
       int var6 = 0;

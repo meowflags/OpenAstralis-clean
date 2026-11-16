@@ -47,7 +47,7 @@ public class dzk extends cdr implements dlc, amh {
 
    public void dka() {
       long a = dzk.a ^ 8122945945259L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       dzk var10000 = a;
       if (var3 != null) {
          if (a.ati) {
@@ -65,7 +65,7 @@ public class dzk extends cdr implements dlc, amh {
       int[] ax;
       label39: {
          long axx = dzk.a ^ 75203838636802L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          float axxx = 5.0F;
          ax = var10000;
          dzk var13 = a;
@@ -106,7 +106,7 @@ public class dzk extends cdr implements dlc, amh {
    public void dho(float yPos, long elapsed, long totalTime) {
       long ax = dzk.a ^ 45407627274258L;
       class_1041 axx = chi.method_22683();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axxx = Math.max(0L, a - a);
       String var10001 = a.dgr;
       String var43 = String.format("%.1f", axxx / 1000.0);
@@ -136,9 +136,9 @@ public class dzk extends cdr implements dlc, amh {
             axxxxxxxxxxx = axx.method_4502() - a - axxxxxxxx;
             float axxxxxxxxxxxxxx = a > 0L ? Math.max(0.0F, Math.min(1.0F, 1.0F - (float)axxx / (float)a)) : 0.0F;
             axxxxxxxxxxxx = axxxxxxx * axxxxxxxxxxxxxx;
-            axxxxxxxxxxxxx = dar.gqy().aws().diy(ezv.class);
+            axxxxxxxxxxxxx = ClientSetup.gqy().aws().diy(ezv.class);
             if (axxxxxx != null) {
-               if (!dar.gqy().aws().diy(dtc.class).bph.emb("Modern")) {
+               if (!ClientSetup.gqy().aws().diy(dtc.class).bph.emb("Modern")) {
                   break label98;
                }
 
@@ -202,7 +202,7 @@ public class dzk extends cdr implements dlc, amh {
          default -> dec.fbp(new class_5611(0.0F, 6.0F), axxxxxxxxxxxxx.ehf.dnp(), axxxxxxxxxxxxx.aoz.dnp());
       };
       if (axxxxxx != null) {
-         if (dar.gqy().aws().diy(dtc.class).bph.emb("Legacy")) {
+         if (ClientSetup.gqy().aws().diy(dtc.class).bph.emb("Legacy")) {
             dmp.dyl(axxxxxxxxxx, axxxxxxxxxxx + 33.0F, axxxxxxxxxxxx, 2.0F, axxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxx, false);
          }
 
@@ -217,7 +217,7 @@ public class dzk extends cdr implements dlc, amh {
 
    public void gkw(float yPos, long elapsed, long totalTime) {
       long ax = dzk.a ^ 119886990639976L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1041 axx = chi.method_22683();
       float axxx = dfk.eq(a.dgr) + 23.5F;
       int[] axxxx = var10000;
@@ -240,7 +240,7 @@ public class dzk extends cdr implements dlc, amh {
          axxxxxxxx = var16 - axxxxxxx - axxxxx;
          axxxxxxxxx = axx.method_4502() - a - axxxxxx;
          if (axxxx != null) {
-            if (!dar.gqy().aws().diy(dtc.class).bph.emb("Modern")) {
+            if (!ClientSetup.gqy().aws().diy(dtc.class).bph.emb("Modern")) {
                break label29;
             }
 

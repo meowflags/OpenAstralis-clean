@@ -53,7 +53,7 @@ public class fvh extends brc {
       var10002[2] = var2[0];
       var10002[3] = a.eyk;
       a.eqw(a, var10002);
-      return fz.dvr(a.toString(), cni.fsi(var2[4]), cni.fsi(var2[2]));
+      return fz.dvr(a.toString(), Base64Util.fsi(var2[4]), Base64Util.fsi(var2[2]));
    }
 
    public String gmc() {

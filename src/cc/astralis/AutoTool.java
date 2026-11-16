@@ -44,7 +44,7 @@ public class AutoTool extends guu {
       int[] ax;
       int var10000;
       long axx = AutoTool.a ^ 82993914403264L;
-      ax = dar.abu();
+      ax = ClientSetup.abu();
       var10000 = a.gbv.dnp();
       label105:
       if (ax != null) {
@@ -139,7 +139,7 @@ public class AutoTool extends guu {
 
    private int ebm() {
       long a = AutoTool.a ^ 3086261607906L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int ax = -1;
       int[] axx = var10000;
       int axxx = 0;

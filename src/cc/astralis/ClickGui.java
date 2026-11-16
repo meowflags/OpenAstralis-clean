@@ -66,12 +66,12 @@ public class ClickGui extends guu {
    }
 
    private void eiu() {
-      Glow a = dar.gqy().aws().diy(Glow.class);
-      fll ax = bxc.emc(a.ahf.dnp(), a.dfs.dnp().intValue());
+      Glow a = ClientSetup.gqy().aws().diy(Glow.class);
+      fll ax = FontManager.emc(a.ahf.dnp(), a.dfs.dnp().intValue());
       a.flm = Arrays.stream(a.dwz.ape()).filter(a.dwz::emb).map(String::toUpperCase).toList();
-      a.byg = dar.gqy().aws().dmc().stream().filter(axx -> {
+      a.byg = ClientSetup.gqy().aws().dmc().stream().filter(axx -> {
          long ax = ClickGui.a ^ 70321045205006L;
-         int[] var4 = dar.abu();
+         int[] var4 = ClientSetup.abu();
          boolean var10000 = a.flm.contains(axx.aiq().name());
          if (var4 != null) {
             var10000 = !var10000;
@@ -85,9 +85,9 @@ public class ClickGui extends guu {
    @gdz(4)
    public void eux(ctt event) {
       long ax = ClickGui.a ^ 42940884298000L;
-      Glow axx = dar.gqy().aws().diy(Glow.class);
-      int[] var10000 = dar.abu();
-      fll axxx = bxc.emc(axx.ahf.dnp(), a.dfs.dnp().intValue());
+      Glow axx = ClientSetup.gqy().aws().diy(Glow.class);
+      int[] var10000 = ClientSetup.abu();
+      fll axxx = FontManager.emc(axx.ahf.dnp(), a.dfs.dnp().intValue());
       int[] axxxx = var10000;
       class_1041 axxxxx = chi.method_22683();
       float axxxxxx = chi.field_1724.method_6026().isEmpty() ? 4.0F : 25.0F;
@@ -159,7 +159,7 @@ public class ClickGui extends guu {
       while (true) {
          dmm axxxxxxxxxxxx = (dmm)var13.next();
          guu axxxxxxxxxxxxx = axxxxxxxxxxxx.gts();
-         erp axxxxxxxxxxxxxx = dar.gqy().ftn().gqv(axxxxxxxxxxxxx);
+         erp axxxxxxxxxxxxxx = ClientSetup.gqy().ftn().gqv(axxxxxxxxxxxxx);
          boolean var10001 = axxxxxxxxxxxxx.dsv();
          axxxxxxxxxxxxxx.dwm(axxxx != null ? (var10001 ? (!axxxxxxxxxxxxx.aov() ? 1.0 : 0.0) : 0.0) : (!var10001 ? 1.0 : 0.0));
          axxxxxxxxxxxxxx.hef(a.fkz.dnp().longValue());
@@ -214,7 +214,7 @@ public class ClickGui extends guu {
                }
             }
 
-            var40 = dec.fqm(var39, 3 + axxxxxxx * e<"v">(15452, 4054241309666329817L ^ ax), dar.gqy().deo(), dar.gqy().cxj(), false);
+            var40 = dec.fqm(var39, 3 + axxxxxxx * e<"v">(15452, 4054241309666329817L ^ ax), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
          }
 
          Color axxxxxxxxxxxxxxxxxxxxxxxx = var40;
@@ -292,7 +292,7 @@ public class ClickGui extends guu {
 
                      if (var41 != 0) {
                         if (!axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts().aov()) {
-                           erp axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = dar.gqy().ftn().gqv(axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts());
+                           erp axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = ClientSetup.gqy().ftn().gqv(axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.gts());
                            float axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = 5.0F + axxxxxxxxxxxxxxxxxxxxxxxxxxxxx.hec * (float)axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.hjo();
                            float axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx = axxxxx.method_4486() - axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - axxxxxxxxxxxxxxxxxxxxx;
                            float var46;
@@ -352,9 +352,9 @@ public class ClickGui extends guu {
    @gdz
    public void cvj(eel event) {
       long ax = ClickGui.a ^ 74527216819548L;
-      Glow axx = dar.gqy().aws().diy(Glow.class);
-      int[] var10000 = dar.abu();
-      fll axxx = bxc.emc(axx.ahf.dnp(), a.dfs.dnp().intValue());
+      Glow axx = ClientSetup.gqy().aws().diy(Glow.class);
+      int[] var10000 = ClientSetup.abu();
+      fll axxx = FontManager.emc(axx.ahf.dnp(), a.dfs.dnp().intValue());
       class_1041 axxxx = chi.method_22683();
       int[] axxxxx = var10000;
       float axxxxxx = chi.field_1724.method_6026().isEmpty() ? 4.0F : 25.0F;
@@ -366,7 +366,7 @@ public class ClickGui extends guu {
          label66: {
             label65: {
                guu axxxxxxxxxx = axxxxxxxx.gts();
-               axxxxxxxxx = dar.gqy().ftn().gqv(axxxxxxxxxx);
+               axxxxxxxxx = ClientSetup.gqy().ftn().gqv(axxxxxxxxxx);
                boolean var10001 = axxxxxxxxxx.dsv();
                if (axxxxx != null) {
                   if (!var10001) {

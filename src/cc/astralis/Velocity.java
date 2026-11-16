@@ -55,7 +55,7 @@ public class Velocity extends guu {
    @gdz
    public void fav(eov event) {
       long ax = Velocity.a ^ 29104552126045L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1297 axx = a.hfw();
       int[] axxx = var10000;
       class_1297 var26 = axx;
@@ -298,7 +298,7 @@ public class Velocity extends guu {
    @gdz
    public void gfv(dfa event) {
       long ax = Velocity.a ^ 86134256942529L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Object var10000 = a;
       if (axx != null) {
          if (!a.hdk) {

@@ -110,8 +110,8 @@ public class bqf implements dlc {
    public static void enm(class_4587 stack, class_1297 target) {
       long ax = bqf.a ^ 76770334382967L;
       a.method_22903();
-      int[] var10000 = dar.abu();
-      ezv axx = dar.gqy().aws().diy(ezv.class);
+      int[] var10000 = ClientSetup.abu();
+      ezv axx = ClientSetup.gqy().aws().diy(ezv.class);
       int[] axxx = var10000;
       String axxxx = axx.eqi.dnp();
       byte axxxxx = -1;
@@ -185,9 +185,9 @@ public class bqf implements dlc {
             Color axxxxxxxxxxxxxxxxxxxxxxxx = dec.azi(axxxxxxxxx, var31, 0.3F);
             Color axxxxxxxxxxxxxxxxxxxxxxxxx = dec.azi(axxxxxxxxx, var31, 0.0F);
             axxxxxxxxxxxxxxx.method_22918(axxxxxxxxxxxx, (float)axxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxx, (float)axxxxxxxxxxxxxxxxxxxx)
-               .method_39415(dar.gqy().deo().getRGB());
+               .method_39415(ClientSetup.gqy().deo().getRGB());
             axxxxxxxxxxxxxxx.method_22918(axxxxxxxxxxxx, (float)axxxxxxxxxxxxxxxxxxx, axxxxxxxxxxxxxxxxxxxxxxx, (float)axxxxxxxxxxxxxxxxxxxx)
-               .method_39415(dar.gqy().cxj().getRGB());
+               .method_39415(ClientSetup.gqy().cxj().getRGB());
             axxxxxxxxxxxxxxxxx++;
             if (axxx == null) {
                break;
@@ -206,7 +206,7 @@ public class bqf implements dlc {
 
    public static void dd(class_4587 stack, class_243 pos, float size, int alpha) {
       long ax = bqf.a ^ 115789511517961L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.method_22903();
       class_243 axx = chi.field_1773.method_19418().method_19326();
       a.method_22904(a.field_1352 - axx.field_1352, a.field_1351 - axx.field_1351, a.field_1350 - axx.field_1350);
@@ -222,7 +222,7 @@ public class bqf implements dlc {
             double axxxxxxxx = Math.toRadians(axxxxxxx);
             float axxxxxxxxx = (float)Math.sin(axxxxxxxx) * a;
             float axxxxxxxxxx = (float)Math.cos(axxxxxxxx) * a;
-            ezv axxxxxxxxxxx = dar.gqy().aws().diy(ezv.class);
+            ezv axxxxxxxxxxx = ClientSetup.gqy().aws().diy(ezv.class);
             String axxxxxxxxxxxx = axxxxxxxxxxx.eqi.dnp();
             byte var19 = -1;
             var22 = axxxxxxxxxxxx.hashCode();
@@ -272,7 +272,7 @@ public class bqf implements dlc {
    public static void aag(class_4587 stack, class_1297 target, float size) {
       long ax = bqf.a ^ 89475383544946L;
       a.method_22903();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_243 axx = a.method_30950(chi.method_61966().method_60637(true));
       class_243 axxx = chi.field_1773.method_19418().method_19326();
       int[] axxxx = var10000;
@@ -288,7 +288,7 @@ public class bqf implements dlc {
             double axxxxxxxxx = Math.toRadians(axxxxxxxx);
             float axxxxxxxxxx = (float)Math.sin(axxxxxxxxx) * a;
             float axxxxxxxxxxx = (float)Math.cos(axxxxxxxxx) * a;
-            axxxxxxx.method_22918(axxxxx, axxxxxxxxxx, 0.01F, axxxxxxxxxxx).method_39415(dar.gqy().deo().getRGB());
+            axxxxxxx.method_22918(axxxxx, axxxxxxxxxx, 0.01F, axxxxxxxxxxx).method_39415(ClientSetup.gqy().deo().getRGB());
             axxxxxxxx++;
             if (axxxx == null) {
                break;

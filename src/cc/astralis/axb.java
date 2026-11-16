@@ -7,7 +7,7 @@ public class axb<T> {
    private final Supplier<T> gkk;
 
    public axb(Supplier<T> delegate) {
-      a.gkk = Suppliers.memoize(a::get);
+      a.gkk = Suppliers.memoize(a::AutoBlockMode);
    }
 
    public T ehu() {

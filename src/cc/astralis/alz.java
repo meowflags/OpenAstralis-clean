@@ -6,7 +6,7 @@ import net.minecraft.class_1799;
 
 public class alz {
    public double fhs;
-   public int dfw;
+   public int ModuleManager;
    public int djk;
    public int ace;
    public int ajo;
@@ -29,7 +29,7 @@ public class alz {
       int axx;
       label157: {
          long axxx = alz.a ^ 12771102120207L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axx = a.field_6012;
          ax = var10000;
          a.fyt = a;

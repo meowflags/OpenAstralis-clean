@@ -21,7 +21,7 @@ public class fey implements dlc {
 
    public static boolean gfq() {
       long a = fey.a ^ 121110406755454L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (ax != null) {
          if (chi.field_1724 == null) {
@@ -63,7 +63,7 @@ public class fey implements dlc {
 
    public static boolean enx() {
       long a = fey.a ^ 106950294883468L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (ax != null) {
          if (chi.field_1724 == null) {
@@ -104,7 +104,7 @@ public class fey implements dlc {
    }
 
    public static boolean gpy() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (var2 != null) {
          if (chi.field_1724 == null) {
@@ -119,7 +119,7 @@ public class fey implements dlc {
    }
 
    public static List<class_1293> epm() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (var2 != null) {
          if (chi.field_1724 == null) {
@@ -134,7 +134,7 @@ public class fey implements dlc {
 
    public static class_2561 esz(@NotNull class_1293 statusEffect) {
       long ax = fey.a ^ 122028222416306L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_5250 axx = ((class_1291)a.method_5579().comp_349()).method_5560().method_27661();
       int[] axxx = var10000;
       int var7 = a.method_5578();

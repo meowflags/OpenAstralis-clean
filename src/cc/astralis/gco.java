@@ -25,9 +25,9 @@ public class gco {
 
    public static JsonObject bbm() {
       JsonObject a = new JsonObject();
-      dar.gqy().aws().dmc().forEach(axxxxxx -> {
+      ClientSetup.gqy().aws().dmc().forEach(axxxxxx -> {
          long ax = gco.a ^ 125634464445993L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          JsonObject axx = new JsonObject();
          int[] axxx = var10000;
          JsonObject axxxx = new JsonObject();
@@ -47,7 +47,7 @@ public class gco {
                                  label52: {
                                     label51: {
                                        ax = gco.a ^ 107868343869134L;
-                                       int[] var10000x = dar.abu();
+                                       int[] var10000x = ClientSetup.abu();
                                        Objects.requireNonNull(axxxxxxxxxxxxx);
                                        axx = var10000x;
                                        var10000x = (int[])axxxxxxxxxxxxx;
@@ -158,9 +158,9 @@ public class gco {
    }
 
    public static void axu(JsonObject jsonObject) {
-      dar.gqy().aws().dmc().forEach(axxxxxxxx -> {
+      ClientSetup.gqy().aws().dmc().forEach(axxxxxxxx -> {
          long ax = gco.a ^ 135054407764900L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          JsonObject axx = a.getAsJsonObject(axxxxxxxx.clp());
          int[] axxx = var10000;
          JsonObject var9 = axx;
@@ -196,7 +196,7 @@ public class gco {
 
          var11.cbf().forEach(axxxxxxxxxxxxxxxxxxxxxxx -> {
             long ax = gco.a ^ 113920100120892L;
-            int[] var10000x = dar.abu();
+            int[] var10000x = ClientSetup.abu();
             Object axx = axxxxxxxx.ct(axxxxxxxxxxxxxxxxxxxxxxx.fah());
             int[] axxx = var10000x;
             if (axx != null && axxxx != null && axxxx.has(((ffn)axx).fah())) {

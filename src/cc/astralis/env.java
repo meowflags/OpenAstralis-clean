@@ -51,7 +51,7 @@ public class env {
       a.ffq = a;
    }
 
-   public void del(float height) {
+   public void GuiMoveVanilla(float height) {
       a.eoy = a;
    }
 

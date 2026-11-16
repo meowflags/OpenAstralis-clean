@@ -1,7 +1,7 @@
 package astralis.mixin.network;
 
 import cc.astralis.amo;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dmt;
 import cc.astralis.gpy;
 import io.netty.channel.Channel;
@@ -56,7 +56,7 @@ public abstract class MixinClientConnection implements dmt {
    @Overwrite
    public void method_10743(class_2596<?> packet) {
       amo ax = new amo(a, gpy.SEND);
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       if (!ax.fmc()) {
          a = ax.bed();
          a.method_10752(a, null);
@@ -93,7 +93,7 @@ public abstract class MixinClientConnection implements dmt {
       if (a.field_11651.isOpen()) {
          try {
             amo ax = new amo(a, gpy.RECEIVE);
-            dar.gqy().fyf().brx(ax);
+            ClientSetup.gqy().fyf().brx(ax);
             if (ax.fmc()) {
                return;
             }

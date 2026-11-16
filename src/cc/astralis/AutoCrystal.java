@@ -27,7 +27,7 @@ public class AutoCrystal extends guu {
    private final bes gmb;
    private final gbp fwk;
    private final gbp dsp;
-   private class_1309 fqj;
+   private class_1309 SpeedBlocksMC;
    private final cbm ese;
    private class_7422 gqa;
    private static final long a = 16944584109118L;
@@ -54,7 +54,7 @@ public class AutoCrystal extends guu {
 
    private boolean hjv(class_1309 a) {
       long ax = AutoCrystal.a ^ 56100581011423L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Object var10000 = chi.field_1724;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -101,19 +101,19 @@ public class AutoCrystal extends guu {
 
    @Override
    public void frg() {
-      dar.gqy().ccv().gne(bhw.class).fxn();
+      ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
       super.frg();
    }
 
    @gdz
    public void dko(fxx event) {
-      bhw var13;
+      BlinkController var13;
       label155: {
          long ax = AutoCrystal.a ^ 3836798160443L;
          float var10001 = a.gmb.dnp().floatValue();
          a.efe(var10001 + "ms");
-         int[] var10000 = dar.abu();
-         bhw axx = dar.gqy().ccv().gne(bhw.class);
+         int[] var10000 = ClientSetup.abu();
+         BlinkController axx = ClientSetup.gqy().ccv().gne(BlinkController.class);
          class_1309 axxx = bav.elv(false, false, a.fwk.dnp(), true, false, a.fsf.dnp().floatValue()).getFirst();
          int[] axxxx = var10000;
          AutoCrystal var12 = a;
@@ -268,7 +268,7 @@ public class AutoCrystal extends guu {
 
    private float elz(float a, float a) {
       long ax = AutoCrystal.a ^ 133911492069613L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = (a - a) % 360.0F;
       int[] axxx = var10000;
       float var10;
@@ -292,7 +292,7 @@ public class AutoCrystal extends guu {
    @gdz
    public void gby(bsm event) {
       long ax = AutoCrystal.a ^ 114747300612576L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       AutoCrystal var10000 = a;
       if (axx != null) {
          if (a.fqj == null) {
@@ -325,7 +325,7 @@ public class AutoCrystal extends guu {
          class_238 axxxx = axxx.method_30757(a.gqa.method_60933());
          var7 = a.bus();
          class_238 var10001 = axxxx.method_1014(0.08);
-         Color var10002 = dar.gqy().deo();
+         Color var10002 = ClientSetup.gqy().deo();
          bqf.hjf((class_4587)var7, var10001, var10002, 150);
       }
    }

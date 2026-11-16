@@ -37,7 +37,7 @@ public class dgi extends fig {
          long axx = dgi.a ^ 120279297564125L;
          ety.ebb(a.byy.fah(), a.hjg() + 4.0F, a.dtt() + 4.0F, Color.WHITE);
          float axxx = a.hjg() + a.av() - 30.0F;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          ax = a.dtt() + 2.0F;
          int[] axxxx = var10000;
          var9 = axxx;
@@ -56,14 +56,14 @@ public class dgi extends fig {
          var9 += var10001;
       }
 
-      dmp.cpp(var9, ax + 1.0F, 10.0F, 10.0F, 4.0F, dar.gqy().deo());
+      dmp.cpp(var9, ax + 1.0F, 10.0F, 10.0F, 4.0F, ClientSetup.gqy().deo());
    }
 
    @Override
    public void apy(double mouseX, double mouseY, int button) {
       long ax = dgi.a ^ 29906972424489L;
       float axx = a.hjg() + a.av() - 30.0F;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axxx = a.dtt() + 2.5F;
       int[] axxxx = var10000;
       if (fuv.bfm(a, a, a.byy.dnp() ? axx + 15.0F : axx, axxx + 1.0F, 10.0F, 10.0F)) {

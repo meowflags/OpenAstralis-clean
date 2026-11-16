@@ -14,8 +14,8 @@ public final class enn {
 
    public void aof() {
       long a = enn.a ^ 103226767061660L;
-      int[] var10000 = dar.abu();
-      Iterator var4 = dar.gqy().aws().dmc().iterator();
+      int[] var10000 = ClientSetup.abu();
+      Iterator var4 = ClientSetup.gqy().aws().dmc().iterator();
       int[] ax = var10000;
 
       while (var4.hasNext()) {

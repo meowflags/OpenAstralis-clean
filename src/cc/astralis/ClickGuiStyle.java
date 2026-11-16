@@ -26,9 +26,9 @@ public class ClickGuiStyle extends guu {
    public bes giq;
    public acn clb;
    public acn eem;
-   private final gaf bja;
-   private coc gac;
-   private dmr aca;
+   private final ClickGuiWindow bja;
+   private SfBoldScreen gac;
+   private DropdownScreen aca;
    private static final long a = 20532836023902L;
    private static final String[] g;
    private static final String[] h;
@@ -54,7 +54,7 @@ public class ClickGuiStyle extends guu {
       a.giq = new bes("Gradient Alpha", 55.0F, 1.0F, 255.0F, 1.0F);
       a.clb = new acn("Color", new Color(78, 73, 165));
       a.eem = new acn("Hover Color", new Color(66, 61, 140));
-      a.bja = new gaf();
+      a.bja = new ClickGuiWindow();
       ffn[] var3 = new ffn[]{a.btx, a.cof.bih(() -> {
          long ax = ClickGuiStyle.a ^ 120699933667943L;
          short var10001x = 11942;
@@ -62,7 +62,7 @@ public class ClickGuiStyle extends guu {
          return a.btx.emb("Imgui");
       }), a.hhk.bih(() -> {
          long ax = ClickGuiStyle.a ^ 114858229195629L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          boolean var10000 = a.cof.dnp();
          if (var3x != null) {
             if (!var10000) {
@@ -79,7 +79,7 @@ public class ClickGuiStyle extends guu {
          }
       }), a.eo.bih(() -> {
          long ax = ClickGuiStyle.a ^ 4044534049864L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          boolean var10000 = a.cof.dnp();
          if (var3x != null) {
             if (!var10000) {
@@ -101,7 +101,7 @@ public class ClickGuiStyle extends guu {
          return a.btx.emb("Imgui");
       }), a.cvi.bih(() -> {
          long ax = ClickGuiStyle.a ^ 80135056288609L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          boolean var10000 = a.fik.dnp();
          if (var3x != null) {
             if (!var10000) {
@@ -119,7 +119,7 @@ public class ClickGuiStyle extends guu {
       }), null, null, null, null};
       var3[6] = a.giq.bih(() -> {
          long ax = ClickGuiStyle.a ^ 120778519841586L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          boolean var10000 = a.fik.dnp();
          if (var3x != null) {
             if (!var10000) {
@@ -161,7 +161,7 @@ public class ClickGuiStyle extends guu {
       int[] a;
       int var6;
       long ax = ClickGuiStyle.a ^ 28323620880281L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var4 = a.btx.dnp();
       byte var5 = -1;
       a = var10000;
@@ -228,7 +228,7 @@ public class ClickGuiStyle extends guu {
                   var7 = a;
                }
 
-               var7.gac = new coc();
+               var7.gac = new SfBoldScreen();
             }
 
             chi.method_1507(a.gac);
@@ -246,10 +246,10 @@ public class ClickGuiStyle extends guu {
                   var8 = a;
                }
 
-               var8.aca = new dmr();
+               var8.aca = new DropdownScreen();
             }
 
-            dar.gqy().fyf().glu(a.aca);
+            ClientSetup.gqy().fyf().glu(a.aca);
             chi.method_1507(a.aca);
       }
 

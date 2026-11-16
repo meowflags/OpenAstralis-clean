@@ -27,11 +27,11 @@ public class Speed extends guu {
    public Speed() {
       long a = Speed.a ^ 134991279254843L;
       super(bfm.MOVEMENT);
-      hcr[] var4 = new hcr[]{new azv(a), new ewc(a), new eze(a), new aqx(a), new fqj(a), new hil(a), null, null, null, null};
-      var4[6] = new dhd(a);
-      var4[7] = new hfu(a);
-      var4[8] = new dnf(a);
-      var4[9] = new chp(a);
+      hcr[] var4 = new hcr[]{new SpeedVanilla(a), new SpeedStrafe(a), new SpeedMMC(a), new SpeedCubecraft(a), new SpeedBlocksMC(a), new SpeedMush(a), null, null, null, null};
+      var4[6] = new SpeedVulcanStrafe(a);
+      var4[7] = new SpeedVulcanGround(a);
+      var4[8] = new SpeedVulcanLow(a);
+      var4[9] = new SpeedLegit(a);
       a.fyl = new cyx("Speed Modes", var4);
       a.beb(a.fyl);
    }
@@ -44,7 +44,7 @@ public class Speed extends guu {
    @Override
    public void frg() {
       long a = Speed.a ^ 3965819800427L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       aal = 1.0F;
       int[] var3 = var10000;
       Speed var4 = a;
@@ -62,7 +62,7 @@ public class Speed extends guu {
    @gdz
    public void cms(eih event) {
       long ax = Speed.a ^ 30046416518385L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.efe(a.fyl.dnp().akm());
       int[] var4 = var10000;
       int var5 = a.fyl.cmt("Watchdog");

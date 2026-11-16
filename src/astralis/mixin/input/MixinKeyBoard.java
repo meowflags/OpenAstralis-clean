@@ -1,6 +1,6 @@
 package astralis.mixin.input;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.hao;
 import net.minecraft.class_11908;
@@ -18,7 +18,7 @@ public class MixinKeyBoard implements dlc {
    )
    private void onPress(long a, int a, class_11908 a, CallbackInfo a) {
       if (a == 1 && chi.field_1755 == null) {
-         dar.gqy().fyf().brx(new hao(a.comp_4795()));
+         ClientSetup.gqy().fyf().brx(new hao(a.comp_4795()));
       }
    }
 }

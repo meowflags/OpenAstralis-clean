@@ -14,7 +14,7 @@ public class PacketMine extends guu {
    @gdz
    public void cvl(amo event) {
       long ax = PacketMine.a ^ 73066390570491L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       amo var10000 = a;
       if (var4 != null) {
          if (a.cud() == gpy.SEND) {

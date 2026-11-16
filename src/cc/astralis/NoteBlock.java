@@ -32,7 +32,7 @@ public class NoteBlock extends guu {
    public void hco(fxx event) {
       long ax = NoteBlock.a ^ 83204338705242L;
       class_2338 axx = chi.field_1724.method_24515();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       byte axxx = 5;
       int[] axxxx = var10000;
 

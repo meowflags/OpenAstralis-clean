@@ -47,7 +47,7 @@ public class gjp extends brc {
       var10002[0] = var2[3];
       var10002[1] = a.cx;
       a.eqw(a, var10002);
-      return fz.dvr(a.toString(), cni.fsi(var2[0]), cni.fsi(var2[2]));
+      return fz.dvr(a.toString(), Base64Util.fsi(var2[0]), Base64Util.fsi(var2[2]));
    }
 
    public int fak() {
@@ -63,7 +63,7 @@ public class gjp extends brc {
    }
 
    public static int epr() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = fzo();
       int var10000 = var3;
       if (var2 != null) {

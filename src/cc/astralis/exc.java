@@ -28,7 +28,7 @@ public class exc {
    private boolean dnv() {
       long a = exc.a ^ 14959521927782L;
       boolean ax = false;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       boolean axx = false;
       bac[] var6 = a.ejy;
       int var7 = var6.length;

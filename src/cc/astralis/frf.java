@@ -37,7 +37,7 @@ public class frf extends fig {
       String var10;
       label16: {
          ax = frf.a ^ 52700898939586L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          hcr axx = a.dmp.dnp();
          int[] axxx = var10000;
          hcr var9 = axx;
@@ -67,7 +67,7 @@ public class frf extends fig {
       String var17;
       label31: {
          ax = frf.a ^ 98653601920566L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axxx = a.dmp.dnp();
          axx = var10000;
          hcr var16 = axxx;

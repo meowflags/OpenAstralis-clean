@@ -36,7 +36,7 @@ public class Spammer extends guu {
    @gdz
    public void doj(fnt event) {
       long ax = Spammer.a ^ 58947827793827L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -47,7 +47,7 @@ public class Spammer extends guu {
       }
 
       if (var10000.field_1687 != null) {
-         boolean var6 = dar.gqy().ccv().gne(bhw.class).bsw();
+         boolean var6 = ClientSetup.gqy().ccv().gne(BlinkController.class).bsw();
          if (axx != null) {
             if (!var6) {
                return;
@@ -65,7 +65,7 @@ public class Spammer extends guu {
          }
 
          if (var6) {
-            bhw axxx = dar.gqy().ccv().gne(bhw.class);
+            BlinkController axxx = ClientSetup.gqy().ccv().gne(BlinkController.class);
             axxx.fxn();
             axxx.ckv();
             a.czu.glr();
@@ -76,13 +76,13 @@ public class Spammer extends guu {
    @Override
    public void auj() {
       a.czu.glr();
-      dar.gqy().ccv().gne(bhw.class).ckv();
+      ClientSetup.gqy().ccv().gne(BlinkController.class).ckv();
       super.auj();
    }
 
    @Override
    public void frg() {
-      dar.gqy().ccv().gne(bhw.class).fxn();
+      ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
       super.frg();
    }
 

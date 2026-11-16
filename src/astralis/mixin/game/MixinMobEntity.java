@@ -1,6 +1,6 @@
 package astralis.mixin.game;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.giw;
 import net.minecraft.class_1299;
 import net.minecraft.class_1308;
@@ -23,7 +23,7 @@ public abstract class MixinMobEntity extends class_1309 {
       cancellable = true
    )
    private void HookEnityControleSaddel(CallbackInfoReturnable<Boolean> a) {
-      if (((giw)dar.gqy().aws().diy(giw.class)).dsv()) {
+      if (((giw)ClientSetup.gqy().aws().diy(giw.class)).dsv()) {
          a.setReturnValue(true);
       }
    }

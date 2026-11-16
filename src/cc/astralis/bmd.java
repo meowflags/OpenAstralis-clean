@@ -2,7 +2,7 @@ package cc.astralis;
 
 public class bmd {
    private float arr;
-   private float bqe;
+   private float ModernWatchdog;
    private float hdh;
    private float cer;
 

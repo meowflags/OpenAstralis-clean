@@ -26,10 +26,10 @@ public class Disabler extends guu {
       long a = Disabler.a ^ 22322584483985L;
       super(bfm.EXPLOIT);
       String var10003 = g;
-      hcr[] var3 = new hcr[]{new awe(a), new frr(a), new aoy(a), new guc(a), new fii(a), new bey(a), null, null, null};
-      var3[6] = new abn(a);
-      var3[7] = new dxa(a);
-      var3[8] = new dlg(a);
+      hcr[] var3 = new hcr[]{new DisablerWatchdog(a), new DisablerVulcanScaffold(a), new DisablerVerusTimer(a), new DisablerVerusFly2(a), new DisablerVerusFly(a), new DisablerSprint(a), null, null, null};
+      var3[6] = new DisablerCubecraft(a);
+      var3[7] = new DisablerBalls(a);
+      var3[8] = new DisablerMiniblox(a);
       a.epd = new cyx(var10003, var3);
       a.beb(a.epd);
    }

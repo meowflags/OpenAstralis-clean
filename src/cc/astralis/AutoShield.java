@@ -52,7 +52,7 @@ public class AutoShield extends guu {
       label218: {
          label222: {
             long axx = AutoShield.a ^ 107444289336334L;
-            int[] var10000 = dar.abu();
+            int[] var10000 = ClientSetup.abu();
             class_239 axxx = chi.field_1765;
             ax = var10000;
             var12 = axxx instanceof class_3965;
@@ -211,7 +211,7 @@ public class AutoShield extends guu {
                return;
             }
 
-            var12 = ffm(axxxxxxxx -> axxxxxxxx.method_7909() instanceof class_1743);
+            var12 = CloudConfigurations(axxxxxxxx -> axxxxxxxx.method_7909() instanceof class_1743);
          }
 
          label227: {
@@ -244,9 +244,9 @@ public class AutoShield extends guu {
       }
    }
 
-   private static int ffm(Predicate<class_1799> a) {
+   private static int CloudConfigurations(Predicate<class_1799> a) {
       long ax = AutoShield.a ^ 65885716100056L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = 0;
       int[] axxx = var10000;
 

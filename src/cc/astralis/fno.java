@@ -58,7 +58,7 @@ public class fno extends guu {
    public void fhp(fxx event) {
       dkw.dwk(() -> {
          long ax = fno.a ^ 122315026112748L;
-         int[] ax = dar.abu();
+         int[] ax = ClientSetup.abu();
 
          try {
             fno var6;
@@ -93,7 +93,7 @@ public class fno extends guu {
 
    public void bjd() throws Exception {
       long a = fno.a ^ 88959017441592L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       JSONObject ax = a.fwt();
       int[] axx = var10000;
       int var10001 = 32392;
@@ -158,7 +158,7 @@ public class fno extends guu {
 
    private void axk() {
       long a = fno.a ^ 20980541353177L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       int var10000 = a.ecp;
       if (ax != null) {
          if (a.ecp > 0) {
@@ -189,7 +189,7 @@ public class fno extends guu {
 
    private JSONObject fwt() throws Exception {
       long a = fno.a ^ 25646731020055L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       URL ax = new URL("https://api.plancke.io/hypixel/v1/punishmentStats");
       HttpURLConnection axx = (HttpURLConnection)ax.openConnection();
       axx.setRequestMethod("GET");

@@ -52,7 +52,7 @@ public class AimAssist extends guu {
    public void dpl(fxx event) {
       long ax = AimAssist.a ^ 42189072159581L;
       a.efe(a.fsn.dnp().toString());
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.gif = chi.field_1687
          .method_8390(class_1674.class, new class_238(chi.field_1724.method_24515()).method_1014(a.fsn.dnp().floatValue()), axx -> true)
          .stream()

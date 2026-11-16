@@ -12,7 +12,7 @@ public class gzg {
 
    public static String azl() {
       long a = gzg.a ^ 119964272332747L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long ax = GLFW.glfwGetCurrentContext();
       int[] axx = var10000;
       long var5 = ax;

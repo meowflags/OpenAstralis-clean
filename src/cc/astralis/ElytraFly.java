@@ -42,7 +42,7 @@ public class ElytraFly extends guu {
    @gdz
    public void btd(fnt event) {
       long ax = ElytraFly.a ^ 47451484599422L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (var4 != null) {
          if (!a.ekn()) {
             return;
@@ -55,7 +55,7 @@ public class ElytraFly extends guu {
    @gdz
    public void cfz(elx event) {
       long ax = ElytraFly.a ^ 60824303240505L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Object var10000 = a;
       if (axx != null) {
          if (!a.ekn()) {
@@ -121,7 +121,7 @@ public class ElytraFly extends guu {
    @Override
    public void auj() {
       long a = ElytraFly.a ^ 43671764068269L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       ElytraFly var10000 = a;
       if (var3 != null) {
          label24:
@@ -147,7 +147,7 @@ public class ElytraFly extends guu {
    @Override
    public void frg() {
       long a = ElytraFly.a ^ 51818261999870L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       if (var3 != null) {
          if (chi.field_1724 != null) {
             evd.eeo();
@@ -159,7 +159,7 @@ public class ElytraFly extends guu {
 
    private boolean ekn() {
       long a = ElytraFly.a ^ 130055069722257L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       Object var10000 = chi.field_1724;
       if (ax != null) {
          if (chi.field_1724 == null) {

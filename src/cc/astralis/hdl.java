@@ -91,7 +91,7 @@ public class hdl extends WebSocketClient {
       if (!(a instanceof SocketException) || !a.getMessage().toLowerCase().contains(hdl.a[30])) {
          if (!aml.fyy || aml.exv && !aml.fii && aml.fhj.fsc(a(12023, 6538858722573043327L ^ ax))) {
             String[] var12 = hdl.a;
-            dar.ecj.error(var12[20]);
+            ClientSetup.ecj.error(var12[20]);
 
             try {
                Field axxx = Unsafe.class.getDeclaredField(var12[5]);

@@ -4,7 +4,7 @@ import cc.astralis.avx;
 import cc.astralis.ayd;
 import cc.astralis.bav;
 import cc.astralis.cdr;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dgk;
 import cc.astralis.dlc;
 import cc.astralis.eji;
@@ -86,7 +86,7 @@ public class MixinMinecraftClient implements dlc {
       class_746 ax = ((class_310)a).field_1724;
       if (ax != null) {
          eji axx = new eji();
-         dar.gqy().fyf().brx(axx);
+         ClientSetup.gqy().fyf().brx(axx);
       }
    }
 
@@ -98,7 +98,7 @@ public class MixinMinecraftClient implements dlc {
       int[] ax = new int[]{1};
       int[] axx = new int[]{1};
       GLFW.glfwGetFramebufferSize(chi.method_22683().method_4490(), ax, axx);
-      dar.gqy().bav().dxy(ax[0] > 0 ? ax[0] : 1, axx[0] > 0 ? axx[0] : 1);
+      ClientSetup.gqy().bav().dxy(ax[0] > 0 ? ax[0] : 1, axx[0] > 0 ? axx[0] : 1);
    }
 
    @Inject(
@@ -125,7 +125,7 @@ public class MixinMinecraftClient implements dlc {
       )}
    )
    private void startClient(CallbackInfo a) {
-      dar.gqy().er();
+      ClientSetup.gqy().er();
    }
 
    @Inject(
@@ -141,7 +141,7 @@ public class MixinMinecraftClient implements dlc {
          }
       }
 
-      dar.gqy().fyf().brx(new fnt(gpy.PRE));
+      ClientSetup.gqy().fyf().brx(new fnt(gpy.PRE));
    }
 
    @Inject(
@@ -160,7 +160,7 @@ public class MixinMinecraftClient implements dlc {
       at = {@At("TAIL")}
    )
    public void hookEventTickPost(CallbackInfo ci) {
-      dar.gqy().fyf().brx(new fnt(gpy.POST));
+      ClientSetup.gqy().fyf().brx(new fnt(gpy.POST));
    }
 
    @Inject(
@@ -169,7 +169,7 @@ public class MixinMinecraftClient implements dlc {
    )
    private void hookWorldChangeEvent(class_638 a, CallbackInfo a) {
       if (a != null) {
-         dar.gqy().fyf().brx(new dgk());
+         ClientSetup.gqy().fyf().brx(new dgk());
       }
    }
 
@@ -182,7 +182,7 @@ public class MixinMinecraftClient implements dlc {
       )
    )
    private boolean hookKillAuraAutoBlock(class_304 a) {
-      ekb ax = dar.gqy().aws().diy(ekb.class);
+      ekb ax = ClientSetup.gqy().aws().diy(ekb.class);
       if (!a.method_1434()) {
          if (ax.dsv() && ax.gvw != null) {
             String[] var4 = MixinMinecraftClient.a;
@@ -206,7 +206,7 @@ public class MixinMinecraftClient implements dlc {
       )}
    )
    private int injectNoMissCooldown(int a) {
-      avx ax = dar.gqy().aws().diy(avx.class);
+      avx ax = ClientSetup.gqy().aws().diy(avx.class);
       return ax.dsv() && ax.dpg.dnp() ? 0 : a;
    }
 
@@ -219,7 +219,7 @@ public class MixinMinecraftClient implements dlc {
       )}
    )
    private boolean noClickCooldown(class_310 a, int a) {
-      avx ax = dar.gqy().aws().diy(avx.class);
+      avx ax = ClientSetup.gqy().aws().diy(avx.class);
       return !ax.dsv() || !ax.dpg.dnp();
    }
 
@@ -229,7 +229,7 @@ public class MixinMinecraftClient implements dlc {
       cancellable = true
    )
    private void injectswingCancel(CallbackInfoReturnable<Boolean> a) {
-      avx ax = dar.gqy().aws().diy(avx.class);
+      avx ax = ClientSetup.gqy().aws().diy(avx.class);
       if (ax.dsv() || a.field_1724 == null || a.field_1765 == null) {
          if (ax.ccp.dnp() && !bav.glo()) {
             return;
@@ -250,7 +250,7 @@ public class MixinMinecraftClient implements dlc {
       class_310 ax = class_310.method_1551();
       if (!a.serenity$shown && ax.field_1687 == null) {
          a.serenity$shown = true;
-         class_437 axx = dar.gqy().azc();
+         class_437 axx = ClientSetup.gqy().azc();
          ax.method_1507(axx);
       }
    }
@@ -264,7 +264,7 @@ public class MixinMinecraftClient implements dlc {
    )
    public boolean hookGlow(class_1297 entity) {
       boolean ax = a.method_5851();
-      ayd axx = dar.gqy().aws().diy(ayd.class);
+      ayd axx = ClientSetup.gqy().aws().diy(ayd.class);
       return axx.dsv() && a instanceof class_1657 && !ejt.cnv((class_1657)a) ? true : ax;
    }
 

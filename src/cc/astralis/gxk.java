@@ -31,7 +31,7 @@ public class gxk extends cec implements dlc {
    @gdz
    public void bxt(ctt e) {
       long ax = gxk.a ^ 2918218087257L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (!bzn.isEmpty()) {
          class_1041 axxx = chi.method_22683();
          int axxxx = axxx.method_4486();
@@ -181,7 +181,7 @@ public class gxk extends cec implements dlc {
                         axxxxxxxxxxxxxxxxx,
                         axxxxxxxxxxxxxxxxxxxx,
                         8.0F,
-                        () -> dmp.aho(a, a, 200.0F, 8.0F, 4.0F, dar.gqy().deo(), dar.gqy().cxj(), false)
+                        () -> dmp.aho(a, a, 200.0F, 8.0F, 4.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false)
                      );
                   }
 
@@ -208,7 +208,7 @@ public class gxk extends cec implements dlc {
 
    public static void gbu(String id, float progress) {
       long ax = gxk.a ^ 80797800198087L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       bcc axx = bzn.get(a);
       int[] axxx = var10000;
       bcc var6 = axx;
@@ -250,7 +250,7 @@ public class gxk extends cec implements dlc {
 
    public static void dfh(String id) {
       long ax = gxk.a ^ 58768876414996L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       bcc axx = bzn.get(a);
       int[] axxx = var10000;
       bcc var5 = axx;
@@ -266,7 +266,7 @@ public class gxk extends cec implements dlc {
       var5.ceg(true);
    }
 
-   public static void hil() {
+   public static void SpeedMush() {
       bzn.clear();
    }
 

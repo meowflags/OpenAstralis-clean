@@ -1,6 +1,6 @@
 package astralis.mixin.game;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.haj;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.class_1922;
@@ -19,9 +19,9 @@ public class AbstractBlockMixin {
       at = {@At("RETURN")}
    )
    private class_265 getCollisionShapeInject(class_265 a, class_2680 a, class_1922 a, class_2338 a, class_3726 a) {
-      if (a != null && dar.gqy().fyf() != null) {
+      if (a != null && ClientSetup.gqy().fyf() != null) {
          haj ax = new haj(a, a, a);
-         dar.gqy().fyf().brx(ax);
+         ClientSetup.gqy().fyf().brx(ax);
          return ax.bfu();
       } else {
          return a;

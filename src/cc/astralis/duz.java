@@ -40,7 +40,7 @@ public final class duz {
       long a;
       label72: {
          a = duz.a ^ 43949873290713L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          int var10000 = a.alg;
          if (var3 != null) {
             if (a.alg <= 0) {

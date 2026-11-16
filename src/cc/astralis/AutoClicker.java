@@ -21,7 +21,7 @@ public class AutoClicker extends guu {
    public void afz(gwj event) {
       label20: {
          long ax = AutoClicker.a ^ 128517466593331L;
-         int[] var4 = dar.abu();
+         int[] var4 = ClientSetup.abu();
          boolean var10000 = a.czg.dnp();
          if (var4 != null) {
             if (!var10000) {

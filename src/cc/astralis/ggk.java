@@ -48,7 +48,7 @@ public class ggk extends brc {
    @Override
    public String cql() {
       long a = c ^ 129956773087986L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       JsonObject axx = a.fdo();
       String[] var10001 = bcy.drn();
       Object[] var10004 = new Object[4];
@@ -60,7 +60,7 @@ public class ggk extends brc {
       a.eqw(axx, var10004);
       String[] axxx = var10001;
       int[] axxxx = var10000;
-      String var9 = fz.dvr(axx.toString(), cni.fsi(var8[3]), cni.fsi(var8[1]));
+      String var9 = fz.dvr(axx.toString(), Base64Util.fsi(var8[3]), Base64Util.fsi(var8[1]));
       var10001 = axxx;
       if (axxxx != null) {
          if (axxx != null) {

@@ -37,7 +37,7 @@ public class PotionStatus extends guu {
    @gdz
    public void cql(ctt event) {
       long ax = PotionStatus.a ^ 75410712877390L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = a.enk.grp();
       float axxx = a.enk.azb();
       int[] axxxx = var10000;
@@ -48,7 +48,7 @@ public class PotionStatus extends guu {
       int axxxxxxxxx = fey.epm().size();
       Color axxxxxxxxxx = new Color(30, 30, 30);
       float axxxxxxxxxxx = !chi.field_1724.method_6026().isEmpty() ? 0.0F : 3.0F;
-      dmp.caz(axx, axxx, 100.0F, 15.0F, 3.0F, 3.0F, axxxxxxxxxxx, axxxxxxxxxxx, dar.gqy().deo());
+      dmp.caz(axx, axxx, 100.0F, 15.0F, 3.0F, 3.0F, axxxxxxxxxxx, axxxxxxxxxxx, ClientSetup.gqy().deo());
       ety.hbb("Active Potion Effects", axx, axxx, 100.0F, 15.0F, Color.white);
 
       for (class_1293 axxxxxxxxxxxx : chi.field_1724.method_6026()) {

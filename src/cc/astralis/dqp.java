@@ -22,14 +22,14 @@ public class dqp extends bmd {
    public dqp(bfm category, float width, float height) {
       long ax = dqp.a ^ 108798968583392L;
       super();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.afg = new ArrayList<>();
       a.dwz = a;
       a.fqg(a);
       a.fuo(a);
       int[] axx = var10000;
 
-      for (guu axxx : dar.gqy().aws().gtd(a).stream().sorted(Comparator.comparing(guu::clp)).toList()) {
+      for (guu axxx : ClientSetup.gqy().aws().gtd(a).stream().sorted(Comparator.comparing(guu::clp)).toList()) {
          cbc axxxx = new cbc(axxx, a - 14.0F, 31.0F);
          a.afg.add(axxxx);
          if (axx == null) {
@@ -45,7 +45,7 @@ public class dqp extends bmd {
       a.axc(a);
       a.bws = a;
       a.bbj = a;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = 7.0F;
       int[] axxx = var10000;
       Iterator axxxx = a.afg.iterator();
@@ -74,7 +74,7 @@ public class dqp extends bmd {
       float[] axxxxxxxx = new float[]{a + 7.0F - a.dxn};
       dmp.abh(a, a, a.arq(), a.ajg(), () -> {
          long ax = dqp.a ^ 25110237316502L;
-         int[] var10000x = dar.abu();
+         int[] var10000x = ClientSetup.abu();
          Iterator var8x = a.afg.iterator();
          int[] axx = var10000x;
 
@@ -92,7 +92,7 @@ public class dqp extends bmd {
    @Override
    public void gdj(double mouseX, double mouseY, int button) {
       long ax = dqp.a ^ 75309586464097L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), a.ajg())) {
          for (cbc axxx : a.afg) {
             axxx.gdj(a, a, a);
@@ -106,7 +106,7 @@ public class dqp extends bmd {
    @Override
    public void euk(double mouseX, double mouseY, int button) {
       long ax = dqp.a ^ 17767223674306L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var9 = a.afg.iterator();
       int[] axx = var10000;
 
@@ -122,7 +122,7 @@ public class dqp extends bmd {
    @Override
    public void bof(double amount) {
       long ax = dqp.a ^ 59197041077561L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       dqp var10000 = a;
       if (var5 != null) {
          if (!fuv.bfm(a.bws, a.bbj, a.aqy(), a.gpn(), a.arq(), a.ajg())) {

@@ -14,7 +14,7 @@ public class Font extends guu {
    public Font() {
       long a = Font.a ^ 85589165294782L;
       super(bfm.VISUAL);
-      a.gcz = bxc.emc(g, (int)h);
+      a.gcz = FontManager.emc(g, (int)h);
    }
 
    @gdz

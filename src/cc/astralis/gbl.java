@@ -19,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
 
 public final class gbl extends BackendRenderTarget {
    private final duz hhu;
-   private final long adm;
+   private final long AirWalk;
    private static final long a = 42381225352908L;
    private static final String[] b;
    private static final String[] c;

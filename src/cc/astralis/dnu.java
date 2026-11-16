@@ -46,7 +46,7 @@ public class dnu extends brc {
 
    @Override
    public void etg(JsonObject json) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] var15 = fxc.gty();
       a.cps(a);
       int[] axxx = var15;
@@ -87,7 +87,7 @@ public class dnu extends brc {
    public String cql() {
       long a = c ^ 81017775090614L;
       JsonObject axx = a.fdo();
-      int[] var16 = dar.abu();
+      int[] var16 = ClientSetup.abu();
       int[] var21 = fxc.gty();
       JsonArray axxx = new JsonArray();
       Iterator var9 = a.god.iterator();
@@ -153,7 +153,7 @@ public class dnu extends brc {
 
       String var19 = axx.toString();
       String[] var15 = b;
-      String var20 = fz.dvr(var19, cni.fsi(var15[1]), cni.fsi(var15[2]));
+      String var20 = fz.dvr(var19, Base64Util.fsi(var15[1]), Base64Util.fsi(var15[2]));
       if (cdr.haa() == null) {
          fxc.dsm(new int[4]);
       }

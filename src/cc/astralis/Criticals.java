@@ -51,8 +51,8 @@ public class Criticals extends guu {
       int var9;
       long axxx = Criticals.a ^ 120540669197222L;
       a.efe(a.dzu.dnp());
-      axx = dar.gqy().aws().diy(KillAura.class);
-      int[] var10000 = dar.abu();
+      axx = ClientSetup.gqy().aws().diy(KillAura.class);
+      int[] var10000 = ClientSetup.abu();
       a.bvc();
       ax = var10000;
       String var6 = a.dzu.dnp();
@@ -173,8 +173,8 @@ public class Criticals extends guu {
 
    private void bvc() {
       long a = Criticals.a ^ 194095783829L;
-      int[] var10000 = dar.abu();
-      class_1309 ax = dar.gqy().aws().diy(KillAura.class).gvw;
+      int[] var10000 = ClientSetup.abu();
+      class_1309 ax = ClientSetup.gqy().aws().diy(KillAura.class).gvw;
       int[] axx = var10000;
       if (ax != null) {
          class_746 var5 = chi.field_1724;

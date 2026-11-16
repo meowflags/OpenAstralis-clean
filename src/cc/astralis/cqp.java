@@ -12,7 +12,7 @@ public class cqp {
 
    public static String gdu() {
       long a = cqp.a ^ 51023890517648L;
-      Color ax = dar.gqy().deo();
+      Color ax = ClientSetup.gqy().deo();
       float axx = ax.getRed() / 255.0F;
       float axxx = ax.getGreen() / 255.0F;
       float axxxx = ax.getBlue() / 255.0F;

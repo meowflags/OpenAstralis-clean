@@ -9,11 +9,11 @@ public class cec extends cdr implements dlc, amh {
    }
 
    public void bbv() {
-      dar.gqy().fyf().glu(a);
+      ClientSetup.gqy().fyf().glu(a);
    }
 
    public void fvv() {
-      dar.gqy().fyf().bet(a);
+      ClientSetup.gqy().fyf().bet(a);
    }
 
    public static void bxj(int[] var0) {

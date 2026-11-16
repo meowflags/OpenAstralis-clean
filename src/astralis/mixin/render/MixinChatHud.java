@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.gsn;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import javax.crypto.Cipher;
@@ -25,7 +25,7 @@ public class MixinChatHud {
    )
    public int changeMaxHistory(int original) {
       long ax = MixinChatHud.a ^ 46140281890461L;
-      gsn axx = dar.gqy().aws().diy(gsn.class);
+      gsn axx = ClientSetup.gqy().aws().diy(gsn.class);
       return axx.dsv() ? a + (int)b : a;
    }
 

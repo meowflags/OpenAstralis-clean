@@ -88,10 +88,10 @@ public class NoSlow extends guu {
    }
 
    @gdz
-   public void aqo(eih event) {
+   public void Vulcan(eih event) {
       long ax = NoSlow.a ^ 54001334320275L;
-      int[] var10000 = dar.abu();
-      bhw axx = dar.gqy().ccv().gne(bhw.class);
+      int[] var10000 = ClientSetup.abu();
+      BlinkController axx = ClientSetup.gqy().ccv().gne(BlinkController.class);
       int[] axxx = var10000;
       int var8 = chi.field_1724.method_6115();
       if (axxx != null) {
@@ -222,7 +222,7 @@ public class NoSlow extends guu {
                label149:
                if (var9 > 12) {
                   label147: {
-                     bhw var10 = axx;
+                     BlinkController var10 = axx;
                      if (axxx != null) {
                         if (axx.bsw()) {
                            break label147;
@@ -320,7 +320,7 @@ public class NoSlow extends guu {
    @gdz
    public void cff(fyx event) {
       long ax = NoSlow.a ^ 91579069438112L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       String var10000 = a.cdx.dnp();
       int var5 = var10000.equals("Watchdog");
       if (var4 != null) {

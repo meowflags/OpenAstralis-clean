@@ -8,8 +8,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class dkw {
-   private static final ScheduledExecutorService hdk = Executors.newScheduledThreadPool(3, new bpv());
-   public static ExecutorService ctj = Executors.newCachedThreadPool(new dyn());
+   private static final ScheduledExecutorService hdk = Executors.newScheduledThreadPool(3, new MultithreadingThread());
+   public static ExecutorService ctj = Executors.newCachedThreadPool(new MultithreadingThread2());
 
    public static void got(Runnable r, long initialDelay, long delay, TimeUnit unit) {
       hdk.scheduleAtFixedRate(a, a, a, a);

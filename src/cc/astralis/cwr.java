@@ -22,7 +22,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
-public class cwr extends blz {
+public class cwr extends ConfigManager {
    private final File acu;
    private final boolean ggp;
    private static final long b = 96179620453212L;
@@ -39,7 +39,7 @@ public class cwr extends blz {
    @Override
    public void apo() {
       JsonObject a = new JsonObject();
-      crv.emo().forEach(ax -> {
+      AltManager.emo().forEach(ax -> {
          long ax = b ^ 65553175828308L;
          JsonObject axx = new JsonObject();
          axx.addProperty("token", ax.gpj());
@@ -53,7 +53,7 @@ public class cwr extends blz {
    @Override
    public void fme() {
       long a = b ^ 116821919609871L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       try (Reader axx = new FileReader(a.acu.getAbsolutePath())) {
          JsonElement axxx = JsonParser.parseReader(axx);
@@ -74,7 +74,7 @@ public class cwr extends blz {
                String var10003 = axxxxxxx.get("token").getAsString();
                String var15 = axxxxxxx.get("uuid").getAsString();
                gfv axxxxxxxx = new gfv(axxxxxx, var10003, var15, !axxxxxxx.get("token").getAsString().isEmpty());
-               crv.emo().add(axxxxxxxx);
+               AltManager.emo().add(axxxxxxxx);
                if (ax == null) {
                   break;
                }

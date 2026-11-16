@@ -63,7 +63,7 @@ public abstract class brc implements cdw {
    @Override
    public void dak(WebSocketClient socket) {
       long ax = f ^ 120358705185856L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axx = d<"s">(19659, 6222099215705950282L ^ ax);
       int[] axxx = var10000;
       int[] axxxx = ahk();
@@ -74,7 +74,7 @@ public abstract class brc implements cdw {
             if (!a.isOpen() && aml.exv && !aml.fii) {
                if (aml.fhj.fsc(a(16948, d<"s">(1618, 4126762916877664983L ^ ax) ^ axx))) {
                   String[] var26 = brc.a;
-                  dar.ecj.error(var26[9]);
+                  ClientSetup.ecj.error(var26[9]);
 
                   try {
                      Field axxxxx = Unsafe.class.getDeclaredField(var26[12]);
@@ -124,7 +124,7 @@ public abstract class brc implements cdw {
          if (!var28) {
             if (aml.fhj.fsc(a(28013, d<"s">(25393, 7251550785451583414L ^ ax) ^ axx))) {
                String[] var16 = brc.a;
-               dar.ecj.error(var16[2]);
+               ClientSetup.ecj.error(var16[2]);
 
                try {
                   Field axxxxx = Unsafe.class.getDeclaredField(var16[1]);
@@ -160,7 +160,7 @@ public abstract class brc implements cdw {
       long a = f ^ 122613201863390L;
       long ax = d<"s">(29217, 1367676112953651252L ^ a);
       a.cis = System.currentTimeMillis();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] var10001 = ahk();
       a.fkm = fz.hgv(a.cis);
       int[] axx = var10001;
@@ -173,11 +173,11 @@ public abstract class brc implements cdw {
          }
 
          String var8 = brc.a[6];
-         byte[] var11 = cni.fsi(brc.a[3]);
-         String var9 = fz.dvr(var8, var11, cni.fsi(brc.a[13]));
+         byte[] var11 = Base64Util.fsi(brc.a[3]);
+         String var9 = fz.dvr(var8, var11, Base64Util.fsi(brc.a[13]));
          String var12 = String.valueOf(a.cis);
-         byte[] var14 = cni.fsi(brc.a[7]);
-         axxx.addProperty(var9, fz.dvr(var12, var14, cni.fsi(brc.a[8])));
+         byte[] var14 = Base64Util.fsi(brc.a[7]);
+         axxx.addProperty(var9, fz.dvr(var12, var14, Base64Util.fsi(brc.a[8])));
       }
 
       if (axxxx != null && axx == null) {
@@ -189,7 +189,7 @@ public abstract class brc implements cdw {
 
    protected void cps(JsonObject json) {
       long ax = f ^ 89659259467345L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axx = d<"s">(18604, 156230231383096880L ^ ax);
       int[] axxx = var10000;
       if (axxx != null) {
@@ -205,7 +205,7 @@ public abstract class brc implements cdw {
 
    protected void eqw(JsonObject jsonObject, Object... properties) {
       long ax = f ^ 78558248129720L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axx = d<"s">(32094, 2256129694565329199L ^ ax);
       int[] axxx = ahk();
       int[] axxxx = var10000;
@@ -661,7 +661,7 @@ public abstract class brc implements cdw {
    }
 
    private static long a(int var0, long var1) {
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       int var10000 = var0 ^ (int)var1;
       var10000 ^= 22469;
       int var6 = var10000 & 32767;

@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dk;
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -47,7 +47,7 @@ public class MixinGameOptions {
       )
    )
    private class_7172<Integer> blur$overrideBlurriness(class_315 a) {
-      dk axx = dar.gqy().aws().diy(dk.class);
+      dk axx = ClientSetup.gqy().aws().diy(dk.class);
       if (axx != null && axx.dsv() && axx.chd.dnp()) {
          String[] var5 = MixinGameOptions.a;
          String var10002 = var5[1];

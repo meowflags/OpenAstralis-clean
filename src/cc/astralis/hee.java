@@ -41,7 +41,7 @@ public class hee {
       // 003: ldc2_w 139962005950186
       // 006: lxor
       // 007: lstore 1
-      // 008: invokestatic cc/astralis/dar.abu ()[I
+      // 008: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 00b: astore 3
       // 00c: aload 3
       // 00d: ifnull 053
@@ -607,7 +607,7 @@ public class hee {
 
    public static void fnu() throws IOException {
       long a = hee.a ^ 137535479093331L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Path ax = Paths.get("astralis/gif_frames/");
       int[] axx = var10000;
       Path var4 = ax;

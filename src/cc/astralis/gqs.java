@@ -23,7 +23,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
-public class gqs extends blz {
+public class gqs extends ConfigManager {
    private final File boa;
    private static final long b = 33044126901290L;
    private static final String[] f;
@@ -40,7 +40,7 @@ public class gqs extends blz {
    public void apo() {
       long a = b ^ 75099877944037L;
       JsonObject ax = new JsonObject();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var5 = fjk.bfv.iterator();
       int[] axx = var10000;
 
@@ -68,7 +68,7 @@ public class gqs extends blz {
    @Override
    public void fme() {
       long a = b ^ 38807284714361L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       try (Reader axx = new FileReader(a.boa.getAbsolutePath())) {
          JsonElement axxx = JsonParser.parseReader(axx);

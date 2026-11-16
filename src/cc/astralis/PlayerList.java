@@ -43,7 +43,7 @@ public class PlayerList extends guu {
 
    public CopyOnWriteArrayList<class_640> drj() {
       long a = PlayerList.a ^ 20044821381342L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       if (chi.method_1562() == null) {
          return new CopyOnWriteArrayList<>();
       } else {
@@ -72,7 +72,7 @@ public class PlayerList extends guu {
 
    public String gal(class_640 playerEntry) {
       long ax = PlayerList.a ^ 42812861451205L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_640 var10000 = a;
       if (axx != null) {
          if (a == null) {
@@ -126,7 +126,7 @@ public class PlayerList extends guu {
    @gdz
    public void egc(ctt event) {
       long ax = PlayerList.a ^ 16408705693645L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -141,7 +141,7 @@ public class PlayerList extends guu {
          int axxxx = (int)a.cqc.grp();
          int axxxxx = (int)a.cqc.azb();
          float axxxxxxxx = !axxx.isEmpty() ? 0.0F : 4.0F;
-         dmp.cdw(axxxx, axxxxx, a.cxg, 16.0F, 4.0F, 4.0F, axxxxxxxx, axxxxxxxx, dar.gqy().deo(), dar.gqy().cxj(), false);
+         dmp.cdw(axxxx, axxxxx, a.cxg, 16.0F, 4.0F, 4.0F, axxxxxxxx, axxxxxxxx, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
          float var39 = axxxx + a.cxg / 2.0F;
          int var10004 = 23220;
          cbl.fau("Player List", var39, axxxxx + 8, Color.white);

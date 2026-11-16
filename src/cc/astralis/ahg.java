@@ -12,7 +12,7 @@ public class ahg implements dlc {
 
    public void gyx() {
       long a = ahg.a ^ 49177248572259L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ImGui.setNextWindowPos(1301.0F, 354.0F, 2);
       int[] var3 = var10000;
       if (var3 != null) {

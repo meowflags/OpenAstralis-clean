@@ -24,13 +24,13 @@ public final class dc extends glv<fso> {
    private static final Map i;
 
    public dc() {
-      dar.gqy().fyf().glu(a);
+      ClientSetup.gqy().fyf().glu(a);
    }
 
    @gdz
    public void cmw(ese event) {
       long ax = dc.a ^ 30005324783933L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String axx = a.bds();
       int[] axxx = var10000;
       String var10 = axx;
@@ -66,12 +66,12 @@ public final class dc extends glv<fso> {
 
    public void cog() {
       long a = dc.a ^ 13645335721396L;
-      fso[] var3 = new fso[]{new hbi(), new bkv(), new glr(), new gjr(), new dpr(), new bjw(), null, null, null, null, null};
-      var3[6] = new ghz();
-      var3[7] = new gff();
-      var3[8] = new fq();
-      var3[9] = new atf();
-      var3[10] = new fcc();
+      fso[] var3 = new fso[]{new BindCommand(), new ToggleCommand(), new AddCommand(), new HelpCommand(), new VclipCommand(), new HclipCommand(), null, null, null, null, null};
+      var3[6] = new IrcCommand();
+      var3[7] = new ListCommand();
+      var3[8] = new IgnCommand();
+      var3[9] = new TeleportCommand();
+      var3[10] = new HidCommand();
       a.bpq(var3);
    }
 

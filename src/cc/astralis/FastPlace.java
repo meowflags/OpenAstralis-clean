@@ -35,7 +35,7 @@ public class FastPlace extends guu {
    @gdz
    public void fed(fxx e) {
       long ax = FastPlace.a ^ 134962012454884L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (var4 != null) {
          if (chi.field_1724 == null) {
@@ -60,7 +60,7 @@ public class FastPlace extends guu {
                break label30;
             }
 
-            var5 = dar.gqy().aws().diy(GodBridge.class).dsv();
+            var5 = ClientSetup.gqy().aws().diy(GodBridge.class).dsv();
          }
 
          if (var5) {

@@ -20,7 +20,7 @@ public final class fow {
       Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(() -> {
          long a = fow.a ^ 24815551286971L;
          List ax = MediaPlayerInfo.Instance.getMediaSessions();
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          IMediaSession axx = null;
          int[] axxx = var10000;
          Iterator var5 = ax.iterator();

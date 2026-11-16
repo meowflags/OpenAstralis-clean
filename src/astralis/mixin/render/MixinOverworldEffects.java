@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dk;
 import java.awt.Color;
 import net.minecraft.class_243;
@@ -18,7 +18,7 @@ public class MixinOverworldEffects {
       cancellable = true
    )
    private void onAdjustFogColor(class_243 a, float a, CallbackInfoReturnable<class_243> a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
       if (ax != null && ax.dsv() && ax.eyj.dnp()) {
          Color axx = ax.axb.dnp();
          class_243 axxx = new class_243(axx.getRed() / 255.0, axx.getGreen() / 255.0, axx.getBlue() / 255.0);

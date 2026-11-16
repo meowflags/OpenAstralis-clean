@@ -18,7 +18,7 @@ public enum hcp {
 
    public boolean gnc() {
       long a = hcp.a ^ 114829113922353L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       hcp var10000 = a;
       hcp var10001 = Axe;
       if (var3 != null) {
@@ -44,7 +44,7 @@ public enum hcp {
 
    public int ckz() {
       long a = hcp.a ^ 50690894406055L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       hcp var10000 = a;
       hcp var10001 = Shovel;
       if (var3 != null) {

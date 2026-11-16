@@ -10,7 +10,7 @@ public enum gge {
    WARNING,
    INFO;
 
-   private static final gge[] ctv;
+   private static final gge[] KeybindNames;
 
    private static gge[] fss() {
       return new gge[]{WARNING, INFO};
@@ -44,7 +44,7 @@ public enum gge {
          if ((var3 += var4) >= var7) {
             WARNING = new gge();
             INFO = new gge();
-            ctv = fss();
+            KeybindNames = fss();
             return;
          }
 

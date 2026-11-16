@@ -93,7 +93,7 @@ public class Backtrack extends guu {
    @gdz
    public void axo(amo event) {
       long ax = Backtrack.a ^ 126046951648074L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       amo var10000 = a;
       if (axx != null) {
          if (a.cud() != gpy.RECEIVE) {
@@ -346,7 +346,7 @@ public class Backtrack extends guu {
    @gdz
    public void bog(eov event) {
       long ax = Backtrack.a ^ 41560172006113L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1297 axx = a.hfw();
       int[] axxx = var10000;
       if (axxx != null) {
@@ -373,7 +373,7 @@ public class Backtrack extends guu {
    @gdz
    public void cop(fnt event) {
       long ax = Backtrack.a ^ 103292497763050L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (axx != null) {
          if (a.cud() == gpy.POST) {
             return;
@@ -447,7 +447,7 @@ public class Backtrack extends guu {
    @gdz
    public void cpc(bsm event) {
       long ax = Backtrack.a ^ 126319906456998L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Backtrack var10000 = a;
       if (axx != null) {
          if (a.cd == null) {
@@ -473,7 +473,7 @@ public class Backtrack extends guu {
       if (axxxxxx != null) {
          class_4587 var11 = a.bus();
          class_238 var10001 = axxxxx.method_997(axxxxxx);
-         Color var10002 = dar.gqy().deo();
+         Color var10002 = ClientSetup.gqy().deo();
          bqf.hjf(var11, var10001, var10002, 200);
       }
    }
@@ -488,7 +488,7 @@ public class Backtrack extends guu {
       label49: {
          label52: {
             long ax = Backtrack.a ^ 120450238580846L;
-            int[] axx = dar.abu();
+            int[] axx = ClientSetup.abu();
             class_1297 var10001 = a;
             if (axx != null) {
                if (!(a instanceof class_1309)) {
@@ -535,7 +535,7 @@ public class Backtrack extends guu {
 
    private boolean eaa(class_1297 a) {
       long ax = Backtrack.a ^ 124871073660751L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double axx = chi.field_1724.method_5739(a);
       int[] axxx = var10000;
       double var18;
@@ -640,7 +640,7 @@ public class Backtrack extends guu {
       long ax = System.currentTimeMillis();
       a.etp.removeIf(axx -> {
          long ax = Backtrack.a ^ 1233213960469L;
-         int[] var7 = dar.abu();
+         int[] var7 = ClientSetup.abu();
          int var10000 = a;
          if (var7 != null) {
             label27:
@@ -670,7 +670,7 @@ public class Backtrack extends guu {
       label21: {
          label20: {
             long ax = Backtrack.a ^ 97067212687722L;
-            int[] var4 = dar.abu();
+            int[] var4 = ClientSetup.abu();
             if (var4 != null) {
                if (!a) {
                   break label20;
@@ -695,7 +695,7 @@ public class Backtrack extends guu {
 
    public void enu() {
       long a = Backtrack.a ^ 83900531160300L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       while (!a.etp.isEmpty()) {
          label21: {
@@ -724,7 +724,7 @@ public class Backtrack extends guu {
 
    private boolean eiu() {
       long a = Backtrack.a ^ 107710744394892L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       class_1297 var10000 = a.ctp;
       if (var3 != null) {
          if (a.ctp == null) {
@@ -748,7 +748,7 @@ public class Backtrack extends guu {
 
    private boolean cz() {
       long a = Backtrack.a ^ 112732134929684L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       boolean var10000 = a.etp.isEmpty();
       if (var3 != null) {
          if (!var10000) {

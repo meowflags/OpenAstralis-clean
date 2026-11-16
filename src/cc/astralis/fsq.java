@@ -30,7 +30,7 @@ public class fsq {
       int[] ax;
       short var10;
       a = fsq.a ^ 77706811313535L;
-      ax = dar.abu();
+      ax = ClientSetup.abu();
       var10 = 12703;
       var10 = ImGui.beginChild("ConfigFilesChild", 200.0F, 200.0F, true);
       label110:
@@ -38,7 +38,7 @@ public class fsq {
          if (var10) {
             label113: {
                label114: {
-                  File axx = dar.gqy().dy().ail;
+                  File axx = ClientSetup.gqy().dy().ail;
                   boolean var11 = axx.exists();
                   if (ax != null) {
                      if (!var11) {
@@ -90,7 +90,7 @@ public class fsq {
                         boolean var14 = ImGui.button(axxxx + "##" + axxxx);
                         if (ax != null) {
                            if (var14) {
-                              dar.gqy().dy().esg(axxxx);
+                              ClientSetup.gqy().dy().esg(axxxx);
                            }
 
                            ImGui.sameLine();
@@ -102,7 +102,7 @@ public class fsq {
                         }
 
                         if (var14) {
-                           dar.gqy().dy().bgb(axxxx);
+                           ClientSetup.gqy().dy().bgb(axxxx);
                         }
                      }
 
@@ -127,8 +127,8 @@ public class fsq {
 
       if (ax != null) {
          if (var10) {
-            dar.gqy().dy().flb(a.eqo.get());
-            dar.gqy().dy().adk();
+            ClientSetup.gqy().dy().flb(a.eqo.get());
+            ClientSetup.gqy().dy().adk();
          }
 
          ImGui.sameLine();
@@ -137,7 +137,7 @@ public class fsq {
       }
 
       if (var10) {
-         dar.gqy().dy().esg(a.eqo.get());
+         ClientSetup.gqy().dy().esg(a.eqo.get());
       }
    }
 

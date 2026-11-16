@@ -22,7 +22,7 @@ public class fki {
    private static boolean dkx = false;
    private static final Predicate<class_2586> bdu = a -> {
       long ax = fki.a ^ 20578281769080L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       boolean var10000 = a instanceof class_2595;
       if (var3 != null) {
          if (!var10000) {
@@ -59,7 +59,7 @@ public class fki {
 
    public static void asf() {
       long a = fki.a ^ 89765998071511L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       boolean var10000 = dkx;
       if (ax != null) {
          if (!dkx) {
@@ -132,7 +132,7 @@ public class fki {
 
    public static void edf(class_2818 chunk) {
       long ax = fki.a ^ 137387267177157L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (dkx) {
          long axxx = a.method_12004().method_8324();
          ObjectArrayList<class_2338> axxxx = new ObjectArrayList();
@@ -166,7 +166,7 @@ public class fki {
 
    public static void afq(class_2818 chunk, class_2586 be) {
       long ax = fki.a ^ 138673823005015L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       boolean var10000 = dkx;
       if (axx != null) {
          if (!dkx) {
@@ -184,7 +184,7 @@ public class fki {
 
    public static void gd(class_2818 chunk, class_2338 pos) {
       long ax = fki.a ^ 72606352039590L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (dkx) {
          long axxx = a.method_12004().method_8324();
          ObjectArrayList<class_2338> axxxx = (ObjectArrayList<class_2338>)coo.get(axxx);
@@ -239,7 +239,7 @@ public class fki {
    public static ObjectArrayList<class_2338> fvc() {
       long a = fki.a ^ 8846617091774L;
       ObjectArrayList ax = new ObjectArrayList();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ObjectIterator var4 = coo.values().iterator();
       int[] axx = var10000;
 
@@ -266,7 +266,7 @@ public class fki {
 
    public static ObjectArrayList<class_2338> ewx(class_4184 cam, double maxDistSq, Predicate<class_238> frustumVisible) {
       long ax = fki.a ^ 135646295396630L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ObjectArrayList<class_2338> axx = new ObjectArrayList();
       double axxx = a.method_19326().field_1352;
       double axxxx = a.method_19326().field_1351;

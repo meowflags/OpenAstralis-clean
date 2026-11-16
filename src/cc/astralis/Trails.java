@@ -49,7 +49,7 @@ public class Trails extends guu {
    @gdz
    public void bhm(eih event) {
       long ax = Trails.a ^ 128593504456380L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_243 axx = chi.field_1724.method_73189();
       int[] axxx = var10000;
       var10000 = (int[])a.bwl;
@@ -73,7 +73,7 @@ public class Trails extends guu {
    @gdz
    public void goc(bsm event) {
       long ax = Trails.a ^ 114819584924956L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.bwl.size() >= 2) {
          class_4587 axxx = a.bus();
          axxx.method_22903();
@@ -84,7 +84,7 @@ public class Trails extends guu {
          class_4588 axxxxxxx = axxxxxx.method_73477(class_1921.method_49043(2.0));
          a.bwl.removeIf(axxxxxxxx -> {
             long ax = Trails.a ^ 63755914774281L;
-            int[] var3 = dar.abu();
+            int[] var3 = ClientSetup.abu();
             long var10000x = System.currentTimeMillis() - axxxxxxxx.caz;
             long var5x;
             int var4x = (var5x = var10000x - 3000L) == 0L ? 0 : (var5x < 0L ? -1 : 1);
@@ -112,7 +112,7 @@ public class Trails extends guu {
 
    private List<class_243> cch() {
       long a = Trails.a ^ 25295840776250L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ArrayList ax = new ArrayList();
       int[] axx = var10000;
       int var16 = a.bwl.size();
@@ -204,9 +204,9 @@ public class Trails extends guu {
 
    private void fqz(Matrix4f a, class_4588 a, List<class_243> a) {
       long ax = Trails.a ^ 62160183254259L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.size() >= 2) {
-         Glow axxx = dar.gqy().aws().diy(Glow.class);
+         Glow axxx = ClientSetup.gqy().aws().diy(Glow.class);
          int axxxx = 0;
 
          while (axxxx < a.size() - 1) {

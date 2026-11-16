@@ -40,7 +40,7 @@ class eax implements HttpHandler {
    @Override
    public void handle(HttpExchange req) throws IOException {
       long ax = eax.a ^ 67987027169335L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       boolean var12 = false /* VF: Semaphore variable */;
 
       label137: {
@@ -135,7 +135,7 @@ class eax implements HttpHandler {
             "client_id=" + a + "&code=" + a + "&grant_type=authorization_code&redirect_uri=http://localhost:8247",
             false
          );
-         int[] var8 = dar.abu();
+         int[] var8 = ClientSetup.abu();
          ax = (fhm)gxg.djb.fromJson(axxx, fhm.class);
          int[] axxxx = var8;
          if (axxxx != null) {

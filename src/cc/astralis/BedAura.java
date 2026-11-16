@@ -48,7 +48,7 @@ public class BedAura extends guu {
    @gdz
    public void eea(fxx event) {
       long ax = BedAura.a ^ 62318300036568L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double axx = a.fjg.dnp().doubleValue();
       int axxx = (int)(chi.field_1724.method_73189().field_1352 - axx);
       int axxxx = (int)(chi.field_1724.method_73189().field_1352 + axx);
@@ -175,7 +175,7 @@ public class BedAura extends guu {
 
    private void fdn() {
       long a = BedAura.a ^ 104214961579215L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       BedAura var10000 = a;
       if (var3 != null) {
          if (a.dfv != null) {
@@ -194,7 +194,7 @@ public class BedAura extends guu {
    @gdz
    public void fic(bsm event) {
       long ax = BedAura.a ^ 121599428749166L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] axxx = var10000;
       class_2338 var11 = chi.field_1724.method_24515();
       class_2338 var12 = var11.method_10069(-32, -32, -32);

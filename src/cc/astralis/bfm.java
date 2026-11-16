@@ -211,7 +211,7 @@ public enum bfm {
    }
 
    public static int egc() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = cmu();
       int var10000 = var3;
       if (var2 != null) {

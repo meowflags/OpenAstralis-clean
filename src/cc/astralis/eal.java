@@ -5,9 +5,9 @@ import net.minecraft.class_243;
 import net.minecraft.class_2824.class_5908;
 
 class eal implements class_5908 {
-   final bqe bqd;
+   final ModernWatchdog bqd;
 
-   eal(bqe a) {
+   eal(ModernWatchdog a) {
       a.bqd = a;
    }
 

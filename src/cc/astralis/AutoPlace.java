@@ -52,7 +52,7 @@ public class AutoPlace extends guu {
    @gdz
    public void ben(eih event) {
       long ax = AutoPlace.a ^ 133660526672925L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       int var10000 = a.hhz;
       if (var4 != null) {
          if (!a.hhz) {
@@ -98,7 +98,7 @@ public class AutoPlace extends guu {
    @gdz
    public void evs(fxx event) {
       long ax = AutoPlace.a ^ 118343743491827L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       int var10000 = a.eo.dnp();
       if (axx != null) {
          if (var10000 == 0) {
@@ -137,7 +137,7 @@ public class AutoPlace extends guu {
    private void bap() {
       long a = AutoPlace.a ^ 73251340191398L;
       class_2350[] var4 = class_2350.values();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int var5 = var4.length;
       int[] ax = var10000;
       int var6 = 0;
@@ -166,7 +166,7 @@ public class AutoPlace extends guu {
          AutoPlace var12;
          label75: {
             long axx = AutoPlace.a ^ 60295047689754L;
-            int[] var10000 = dar.abu();
+            int[] var10000 = ClientSetup.abu();
             ax = a.foa.get(a.fzr);
             a = var10000;
             int var11 = chi.field_1724.method_31548().method_67532();

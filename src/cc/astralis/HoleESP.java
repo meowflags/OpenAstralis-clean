@@ -37,7 +37,7 @@ public class HoleESP extends guu {
    @gdz
    public void ha(bsm event) {
       long ax = HoleESP.a ^ 37431929279153L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       cc.astralis.fki.asf();
       ObjectListIterator var5 = cc.astralis.fki.fvc().iterator();
       int[] axx = var10000;

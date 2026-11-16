@@ -24,7 +24,7 @@ public class biu extends bmd {
       long ax = biu.a ^ 95355148701881L;
       a.fji(a);
       a.axc(a);
-      fll axx = bxc.emc(b, (int)c);
+      fll axx = FontManager.emc(b, (int)c);
       axx.aof(a.cno.fah(), a + 6.0F, a + 4.0F, cbc.fgl);
       axx.aof(a.cno.dnp().akm(), a + a.arq() - (axx.eq(a.cno.dnp().akm()) + 6.0F), a + 4.0F, cbc.fgl);
    }
@@ -32,7 +32,7 @@ public class biu extends bmd {
    @Override
    public void gdj(double mouseX, double mouseY, int button) {
       long ax = biu.a ^ 88988352879925L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), a.ajg())) {
          hcr axxx = a.cno.dnp();
          List<hcr> axxxx = new ArrayList<>(a.cno.ajs().values());

@@ -10,14 +10,14 @@ import javax.crypto.spec.IvParameterSpec;
 
 public class aml {
    public static boolean gkg;
-   public static String eyu;
+   public static String AccountSettingsScreen;
    public static boolean gsj;
    public static boolean aod;
    public static String euh;
    public static boolean fyy;
    public static final cbm fhj;
    public static boolean exv;
-   public static boolean fii;
+   public static boolean DisablerVerusFly;
    public static bvc hjr;
    public static int cbd;
    public static boolean dxk;
@@ -104,14 +104,14 @@ public class aml {
             } while (var3 < var6);
 
             gkg = true;
-            eyu = null;
+            AccountSettingsScreen = null;
             gsj = false;
             aod = false;
             euh = var11[0];
             fyy = true;
             fhj = new cbm();
             exv = false;
-            fii = false;
+            DisablerVerusFly = false;
             hjr = new dtk(var11[1], (int)var0[1]);
             cbd = (int)var0[0];
             dxk = false;

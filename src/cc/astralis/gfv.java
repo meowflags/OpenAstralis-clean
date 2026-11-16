@@ -9,7 +9,7 @@ import javax.crypto.spec.IvParameterSpec;
 import net.minecraft.class_320;
 
 public class gfv {
-   private blg ez = new blg();
+   private AccountsScreen ez = new AccountsScreen();
    private String goz;
    private String dyh;
    private String ezo;
@@ -34,9 +34,9 @@ public class gfv {
    public gfv(class_320 session) {
       long ax = gfv.a ^ 52702147181746L;
       super();
-      a.ez = new blg();
+      a.ez = new AccountsScreen();
       a.ezo = a.method_1676();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.goz = a.method_1674();
       int[] var4 = var10000;
       a.dyh = UndashedUuid.toString(a.method_44717());
@@ -49,10 +49,10 @@ public class gfv {
    }
 
    public UUID dic() {
-      return ehy.duo(a.dyh);
+      return SessionHelper.duo(a.dyh);
    }
 
-   public blg ern() {
+   public AccountsScreen ern() {
       return a.ez;
    }
 
@@ -72,7 +72,7 @@ public class gfv {
       return a.gmr;
    }
 
-   public void fxi(blg altGUI) {
+   public void fxi(AccountsScreen altGUI) {
       a.ez = a;
    }
 
@@ -84,7 +84,7 @@ public class gfv {
       a.dyh = a;
    }
 
-   public void ayw(String name) {
+   public void Mush(String name) {
       a.ezo = a;
    }
 

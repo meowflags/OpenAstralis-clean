@@ -1,6 +1,6 @@
 package astralis.mixin.player;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.fmj;
 import net.minecraft.class_10387;
 import net.minecraft.class_3222;
@@ -21,6 +21,6 @@ public class ServerPlayNetworkHandlerMixin {
       at = {@At("TAIL")}
    )
    private void onPlayerJoin(class_10387 a, CallbackInfo a) {
-      dar.gqy().fyf().brx(new fmj(System.currentTimeMillis()));
+      ClientSetup.gqy().fyf().brx(new fmj(System.currentTimeMillis()));
    }
 }

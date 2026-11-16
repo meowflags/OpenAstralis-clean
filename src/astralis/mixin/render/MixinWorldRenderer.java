@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.di;
 import com.mojang.blaze3d.buffers.GpuBufferSlice;
 import net.minecraft.class_243;
@@ -20,7 +20,7 @@ public class MixinWorldRenderer {
       cancellable = true
    )
    public void renderoWeather(class_9909 frameGraphBuilder, class_243 cameraPos, GpuBufferSlice fogBuffer, CallbackInfo ci) {
-      di ax = dar.gqy().aws().diy(di.class);
+      di ax = ClientSetup.gqy().aws().diy(di.class);
       if (ax.dsv() && ax.clg.dnp()) {
          a.cancel();
       }
@@ -32,7 +32,7 @@ public class MixinWorldRenderer {
       cancellable = true
    )
    private void noClouds(class_9909 a, class_4063 a, class_243 a, float a, int a, float a, CallbackInfo a) {
-      di ax = dar.gqy().aws().diy(di.class);
+      di ax = ClientSetup.gqy().aws().diy(di.class);
       if (ax.dsv() && ax.fub.dnp()) {
          a.cancel();
       }

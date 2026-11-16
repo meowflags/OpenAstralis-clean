@@ -7,7 +7,7 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 public class eqf implements dlc, amh {
-   private static final erp bxc;
+   private static final erp FontManager;
    private static boolean elj;
 
    public static void ddy(int mouseX, int mouseY) {
@@ -47,7 +47,7 @@ public class eqf implements dlc, amh {
          | (var6[6] & 255L) << 8
          | var6[7] & 255L;
       long var0 = var9;
-      bxc = new erp(dtw.EASE_IN_OUT_SINE, var0);
+      FontManager = new erp(dtw.EASE_IN_OUT_SINE, var0);
       elj = false;
    }
 }

@@ -31,7 +31,7 @@ public final class bti {
    private final int[] atp = new int[1];
    private final int[] fca = new int[1];
    private final int[] emy = new int[1];
-   private final int[] bxc = new int[1];
+   private final int[] FontManager = new int[1];
    private final int[] ewa = new int[1];
    private boolean bte = false;
    private boolean cpx = false;
@@ -137,7 +137,7 @@ public final class bti {
       return a.blo;
    }
 
-   public int[] fq() {
+   public int[] IgnCommand() {
       return a.dne;
    }
 

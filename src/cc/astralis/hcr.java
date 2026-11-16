@@ -15,7 +15,7 @@ public class hcr extends cdr implements dlc {
    }
 
    public void hkh(boolean hooked) {
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       hcr var10000 = a;
       if (var4 != null) {
          a.cum = a;
@@ -50,7 +50,7 @@ public class hcr extends cdr implements dlc {
    }
 
    public <T> void dxe(ffn<?>... properties) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ffn[] var5 = a;
       int var6 = a.length;
       int[] axx = var10000;
@@ -67,11 +67,11 @@ public class hcr extends cdr implements dlc {
    }
 
    public void dil() {
-      dar.gqy().fyf().glu(a);
+      ClientSetup.gqy().fyf().glu(a);
    }
 
    public void cbw() {
-      dar.gqy().fyf().bet(a);
+      ClientSetup.gqy().fyf().bet(a);
    }
 
    public guu clv() {
@@ -90,7 +90,7 @@ public class hcr extends cdr implements dlc {
       return a.gye;
    }
 
-   public void frr(boolean selected) {
+   public void DisablerVulcanScaffold(boolean selected) {
       a.gye = a;
    }
 

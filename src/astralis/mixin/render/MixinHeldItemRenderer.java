@@ -2,7 +2,7 @@ package astralis.mixin.render;
 
 import astralis.mixin.accessor.HeldItemRendererAccessor;
 import cc.astralis.bma;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.ekb;
 import cc.astralis.fhd;
@@ -63,7 +63,7 @@ public abstract class MixinHeldItemRenderer implements dlc {
       cancellable = true
    )
    private void onUpdateHeldItems(CallbackInfo a) {
-      fhd ax = dar.gqy().aws().diy(fhd.class);
+      fhd ax = ClientSetup.gqy().aws().diy(fhd.class);
       if (ax.eru != -1 && ax.euy.dnp()) {
          if (chi.field_1724 != null) {
             class_1799 axx = chi.field_1724.method_31548().method_5438(ax.eru);
@@ -85,7 +85,7 @@ public abstract class MixinHeldItemRenderer implements dlc {
    private void hookRenderFirstPersonItem(
       class_742 a, float a, float a, class_1268 a, float a, class_1799 a, float a, class_4587 a, class_11659 a, int a, CallbackInfo a
    ) {
-      if (class_1268.field_5808 == a && ((hin)dar.gqy().aws().diy(hin.class)).dsv()) {
+      if (class_1268.field_5808 == a && ((hin)ClientSetup.gqy().aws().diy(hin.class)).dsv()) {
          a.method_46416(hin.don.dnp().floatValue() / 10.0F, hin.boo.dnp().floatValue() / 10.0F, hin.djx.dnp().floatValue() / 10.0F);
          a.method_22907(class_7833.field_40714.rotationDegrees(hin.aqe.dnp().floatValue()));
          a.method_22907(class_7833.field_40716.rotationDegrees(hin.afc.dnp().floatValue()));
@@ -116,7 +116,7 @@ public abstract class MixinHeldItemRenderer implements dlc {
       cancellable = true
    )
    private void hideShield(class_742 a, float a, float a, class_1268 a, float a, class_1799 a, float a, class_4587 a, class_11659 a, int a, CallbackInfo a) {
-      bma ax = dar.gqy().aws().diy(bma.class);
+      bma ax = ClientSetup.gqy().aws().diy(bma.class);
       if (a.method_7909() instanceof class_1819 && ax.dsv()) {
          a.cancel();
       }
@@ -131,7 +131,7 @@ public abstract class MixinHeldItemRenderer implements dlc {
       index = 1
    )
    private float injectDisableEquipOffset(float a) {
-      return bma.fga.dnp() && ((bma)dar.gqy().aws().diy(bma.class)).dsv() ? field_32740 : a;
+      return bma.fga.dnp() && ((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv() ? field_32740 : a;
    }
 
    @ModifyExpressionValue(
@@ -159,10 +159,10 @@ public abstract class MixinHeldItemRenderer implements dlc {
       class_1792 ax = a.method_7909();
       return chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611)
             && (
-               ((ekb)dar.gqy().aws().diy(ekb.class)).dsv() && ((ekb)dar.gqy().aws().diy(ekb.class)).dfb()
+               ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dsv() && ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dfb()
                   || class_310.method_1551().field_1690.field_1904.method_1434()
             )
-            && ((bma)dar.gqy().aws().diy(bma.class)).dsv()
+            && ((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv()
          ? class_1839.field_8949
          : a.method_7976();
    }
@@ -179,10 +179,10 @@ public abstract class MixinHeldItemRenderer implements dlc {
       class_1792 ax = a.method_6047().method_7909();
       return chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611)
             && (
-               ((ekb)dar.gqy().aws().diy(ekb.class)).dsv() && ((ekb)dar.gqy().aws().diy(ekb.class)).dfb()
+               ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dsv() && ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dfb()
                   || class_310.method_1551().field_1690.field_1904.method_1434()
             )
-            && ((bma)dar.gqy().aws().diy(bma.class)).dsv()
+            && ((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv()
          ? true
          : a.method_6115();
    }
@@ -199,10 +199,10 @@ public abstract class MixinHeldItemRenderer implements dlc {
       class_1792 ax = a.method_6047().method_7909();
       return chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611)
             && (
-               ((ekb)dar.gqy().aws().diy(ekb.class)).dsv() && ((ekb)dar.gqy().aws().diy(ekb.class)).dfb()
+               ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dsv() && ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dfb()
                   || class_310.method_1551().field_1690.field_1904.method_1434()
             )
-            && ((bma)dar.gqy().aws().diy(bma.class)).dsv()
+            && ((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv()
          ? class_1268.field_5808
          : a.method_6058();
    }
@@ -219,10 +219,10 @@ public abstract class MixinHeldItemRenderer implements dlc {
       class_1792 axx = a.method_6047().method_7909();
       if (chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611)
          && (
-            ((ekb)dar.gqy().aws().diy(ekb.class)).dsv() && ((ekb)dar.gqy().aws().diy(ekb.class)).dfb()
+            ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dsv() && ((ekb)ClientSetup.gqy().aws().diy(ekb.class)).dfb()
                || class_310.method_1551().field_1690.field_1904.method_1434()
          )
-         && ((bma)dar.gqy().aws().diy(bma.class)).dsv()) {
+         && ((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv()) {
          return 7200;
       } else {
          return a.method_6014();
@@ -239,7 +239,7 @@ public abstract class MixinHeldItemRenderer implements dlc {
       index = 2
    )
    private float applyEquipOffset(float a) {
-      return ((bma)dar.gqy().aws().diy(bma.class)).dsv() ? 0.0F : a;
+      return ((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv() ? 0.0F : a;
    }
 
    @Inject(
@@ -260,7 +260,7 @@ public abstract class MixinHeldItemRenderer implements dlc {
    private void transformLegacyBlockAnimations(
       class_742 a, float a, float a, class_1268 a, float a, class_1799 a, float a, class_4587 a, class_11659 a, int a, CallbackInfo a
    ) {
-      if (((bma)dar.gqy().aws().diy(bma.class)).dsv() && chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611)) {
+      if (((bma)ClientSetup.gqy().aws().diy(bma.class)).dsv() && chi.field_1724.method_31548().method_7391().method_31573(class_3489.field_42611)) {
          class_1306 ax = a == class_1268.field_5808 ? a.method_6068() : a.method_6068().method_5928();
          bma.apw(a, ax, a, a);
       }

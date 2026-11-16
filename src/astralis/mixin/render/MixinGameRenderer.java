@@ -3,7 +3,7 @@ package astralis.mixin.render;
 import cc.astralis.bsm;
 import cc.astralis.cdr;
 import cc.astralis.cmx;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.evm;
 import cc.astralis.guf;
@@ -44,7 +44,7 @@ public class MixinGameRenderer implements dlc {
    )
    void onBobViewWhenHurt(class_4587 a, float a, CallbackInfo a) {
       cmx ax = new cmx();
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       if (ax.fmc()) {
          a.cancel();
       }
@@ -63,7 +63,7 @@ public class MixinGameRenderer implements dlc {
       class_4587 ax = new class_4587();
       cdr.dtv = ax;
       ax.method_34425(a);
-      dar.gqy().fyf().brx(new bsm(ax));
+      ClientSetup.gqy().fyf().brx(new bsm(ax));
       guf.gqp = new Matrix4f(ax.method_23760().method_23761());
       guf.gky = a;
    }
@@ -75,7 +75,7 @@ public class MixinGameRenderer implements dlc {
    )
    private void modifyFov(class_4184 a, float a, boolean a, CallbackInfoReturnable<Float> a) {
       double ax = ((Float)a.getReturnValue()).floatValue();
-      evm axx = dar.gqy().aws().diy(evm.class);
+      evm axx = ClientSetup.gqy().aws().diy(evm.class);
       float axxx = axx.czi((float)ax);
       if (axx.dsv() && axxx != ax) {
          a.setReturnValue(axxx);
@@ -88,7 +88,7 @@ public class MixinGameRenderer implements dlc {
       cancellable = true
    )
    public void getBasicProjectionMatrixHook(float fovDegrees, CallbackInfoReturnable<Matrix4f> cir) {
-      hin ax = dar.gqy().aws().diy(hin.class);
+      hin ax = ClientSetup.gqy().aws().diy(hin.class);
       if (ax.dsv() && ax.cmt.dnp()) {
          float axx = ax.dtl.dnp().floatValue();
          if (axx != 1.0F) {

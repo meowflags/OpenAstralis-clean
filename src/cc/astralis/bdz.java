@@ -4,7 +4,7 @@ import java.awt.Color;
 
 public class bdz extends fig {
    private final acn feh;
-   private final int ctv = 100;
+   private final int KeybindNames = 100;
    private final int gpp = 100;
    private final int afi = 10;
    private float ebp;

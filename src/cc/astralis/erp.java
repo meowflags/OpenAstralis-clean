@@ -22,7 +22,7 @@ public class erp {
       label48: {
          label47: {
             long axx = erp.a ^ 90070570455586L;
-            ax = dar.abu();
+            ax = ClientSetup.abu();
             double var10;
             int var10000 = (var10 = a.gdq - a) == 0.0 ? 0 : (var10 < 0.0 ? -1 : 1);
             if (ax != null) {

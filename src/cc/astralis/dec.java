@@ -95,7 +95,7 @@ public class dec implements dlc {
       int var12;
       label23: {
          long ax = dec.a ^ 2305456001948L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          int axx = (int)((System.currentTimeMillis() / a + a) % e);
          int[] axxx = var10000;
          var12 = axx;

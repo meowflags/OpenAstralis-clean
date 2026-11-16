@@ -35,7 +35,7 @@ public class ft extends fig {
    @Override
    public void bfi(float mouseX, float mouseY) {
       long ax = ft.a ^ 132556012323920L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = (a.fyp.dnp().floatValue() - a.fyp.cpl()) / (a.fyp.hgz() - a.fyp.cpl());
       int[] axxx = var10000;
       ft var18 = a;
@@ -55,9 +55,9 @@ public class ft extends fig {
       float axxxxxx = a.av();
       dmp.cpp(axxxxx, axxxx, axxxxxx, 4.0F, 2.0F, new Color(50, 50, 50));
       float axxxxxxx = a.av();
-      dmp.abh(axxxxx, axxxx, axxxxxxx * axx, 4.0F, () -> dmp.aho(a, a, a, 4.0F, 2.0F, dar.gqy().deo(), dar.gqy().cxj(), false));
+      dmp.abh(axxxxx, axxxx, axxxxxxx * axx, 4.0F, () -> dmp.aho(a, a, a, 4.0F, 2.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false));
       float axxxxxxxx = axxxxx + (axxxxxx - 7.0F) * axx;
-      dmp.cpp(axxxxxxxx, a.dtt() + 8.0F, 7.0F, 7.0F, 3.0F, dar.gqy().deo());
+      dmp.cpp(axxxxxxxx, a.dtt() + 8.0F, 7.0F, 7.0F, 3.0F, ClientSetup.gqy().deo());
       String axxxxxxxxx = a.fyp.fah() + " " + a.fyp.dnp().floatValue();
       float axxxxxxxxxx = ety.eq(axxxxxxxxx);
       float axxxxxxxxxxx = axxxxx + (axxxxxx - axxxxxxxxxx) / 2.0F;
@@ -67,7 +67,7 @@ public class ft extends fig {
    @Override
    public void apy(double mouseX, double mouseY, int button) {
       long ax = ft.a ^ 16324847640740L;
-      int[] var8 = dar.abu();
+      int[] var8 = ClientSetup.abu();
       int var10000 = fuv.bfm(a, a, a.hjg(), a.dtt() + 8.0F, a.av(), 6.0F);
       if (var8 != null) {
          if (var10000 == 0) {
@@ -85,7 +85,7 @@ public class ft extends fig {
    @Override
    public void epq(double mouseX, double mouseY, int button) {
       long ax = ft.a ^ 38701825407660L;
-      int[] var8 = dar.abu();
+      int[] var8 = ClientSetup.abu();
       ft var10000 = a;
       if (var8 != null) {
          if (!a.fmr) {
@@ -100,7 +100,7 @@ public class ft extends fig {
 
    private double bef(double a, float a) {
       long ax = ft.a ^ 9883455597816L;
-      int[] var6 = dar.abu();
+      int[] var6 = ClientSetup.abu();
       float var10000 = a;
       float var10001 = 0.0F;
       if (var6 != null) {

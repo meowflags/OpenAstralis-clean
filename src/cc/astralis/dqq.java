@@ -39,7 +39,7 @@ public class dqq extends cec {
          float[] var5;
          label58: {
             long ax = dqq.a ^ 120975774689185L;
-            int[] var4 = dar.abu();
+            int[] var4 = ClientSetup.abu();
             byte var10000 = bzx;
             if (var4 != null) {
                if (bzx) {
@@ -96,7 +96,7 @@ public class dqq extends cec {
    @gdz
    public void dss(etk event) {
       long ax = dqq.a ^ 102816784197647L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (bzx && cit != null) {
          boolean var10000 = fzm;
          if (var4 != null) {
@@ -104,7 +104,7 @@ public class dqq extends cec {
                return;
             }
 
-            var10000 = ((eky)dar.gqy().aws().diy(eky.class)).dsv();
+            var10000 = ((eky)ClientSetup.gqy().aws().diy(eky.class)).dsv();
          }
 
          if (var4 != null) {
@@ -112,7 +112,7 @@ public class dqq extends cec {
                return;
             }
 
-            var10000 = dar.gqy().aws().diy(bni.class).dsv();
+            var10000 = ClientSetup.gqy().aws().diy(bni.class).dsv();
          }
 
          if (!var10000) {
@@ -144,7 +144,7 @@ public class dqq extends cec {
          float[] var7;
          label53: {
             long ax = dqq.a ^ 100174301201549L;
-            int[] axx = dar.abu();
+            int[] axx = ClientSetup.abu();
             byte var10000 = bzx;
             if (axx != null) {
                if (bzx) {
@@ -158,7 +158,7 @@ public class dqq extends cec {
                      float axxxx = cit[1];
                      a.gty(axxx);
                      a.bqy(axxxx);
-                     fzm = dar.gqy().aws().diy(bdh.class).fsr.dnp();
+                     fzm = ClientSetup.gqy().aws().diy(bdh.class).fsr.dnp();
                      ezi = new float[]{axxx, axxxx};
                      var7 = cit;
                      label48:
@@ -200,7 +200,7 @@ public class dqq extends cec {
 
    public static void fwh() {
       long a = dqq.a ^ 45871283185384L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ahf();
       int[] ax = var10000;
       float[] var8 = bgj;

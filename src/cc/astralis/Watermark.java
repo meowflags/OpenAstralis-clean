@@ -59,7 +59,7 @@ public class Watermark extends guu {
       MediaInfo var26;
       label141: {
          ax = Watermark.a ^ 102334053790077L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          a.efe(a.doa.dnp());
          axx = var10000;
          IMediaSession var25 = fow.cza;
@@ -155,7 +155,7 @@ public class Watermark extends guu {
 
       short axxxxxxxxxxxx = var33;
       if ("Legacy".equals(a.doa.dnp())) {
-         Glow axxxxxxxxxxxxxx = dar.gqy().aws().diy(Glow.class);
+         Glow axxxxxxxxxxxxxx = ClientSetup.gqy().aws().diy(Glow.class);
          String var21 = axxxxxxxxxxxxxx.eqi.dnp();
          byte var22 = -1;
          int var37 = var21.hashCode();
@@ -224,7 +224,7 @@ public class Watermark extends guu {
       MediaInfo var13;
       label73: {
          ax = Watermark.a ^ 72569794695578L;
-         axx = dar.abu();
+         axx = ClientSetup.abu();
          IMediaSession var10000 = fow.cza;
          if (axx != null) {
             if (fow.cza == null) {
@@ -306,10 +306,10 @@ public class Watermark extends guu {
       float axxx;
       label41: {
          ax = Watermark.a ^ 41639638567801L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          int axxxxx = a - 6;
          axxx = a + axxxxx + 6.0F;
-         Glow axxxxxx = dar.gqy().aws().diy(Glow.class);
+         Glow axxxxxx = ClientSetup.gqy().aws().diy(Glow.class);
          float var60 = a + a;
          float var10004 = a + a;
          dmp.gst(a, a, var60, var10004, new Color(30, 30, 30, axxxxxx.fug.dnp().intValue()));
@@ -360,7 +360,7 @@ public class Watermark extends guu {
             }
 
             var38 = 32285;
-            bxc.emc("Sf-Ui", 12).ebb(a, axxx, a + 3.0F, Color.white);
+            FontManager.emc("Sf-Ui", 12).ebb(a, axxx, a + 3.0F, Color.white);
             var28 = a;
             if (axx == null) {
                break label44;
@@ -378,13 +378,13 @@ public class Watermark extends guu {
          }
 
          var38 = 15116;
-         fll var31 = bxc.emc("Sf-Ui", 10);
+         fll var31 = FontManager.emc("Sf-Ui", 10);
          float var66 = a + 3.0F + 14.0F;
          var31.ebb(a, axxx, var66, new Color(180, 180, 180));
          var28 = "Sf-Ui";
       }
 
-      fll var33 = bxc.emc(var28, 9);
+      fll var33 = FontManager.emc(var28, 9);
       float var67 = a + 3.0F + 28.0F;
       var33.ebb(a, axxx, var67, new Color(160, 160, 160));
    }
@@ -399,12 +399,12 @@ public class Watermark extends guu {
          label54: {
             ax = Watermark.a ^ 130472548158108L;
             float axxxxxx = 10.0F;
-            int[] var10000 = dar.abu();
+            int[] var10000 = ClientSetup.abu();
             float axxxxxxx = 16.0F;
             axx = var10000;
             axxx = a - 20.0F;
             float axxxxxxxx = 12.0F;
-            Glow axxxxxxxxx = dar.gqy().aws().diy(Glow.class);
+            Glow axxxxxxxxx = ClientSetup.gqy().aws().diy(Glow.class);
             dmp.cpp(
                a,
                a,
@@ -469,7 +469,7 @@ public class Watermark extends guu {
                a = a.substring(0, e<"j">(12827, 5897084761794103746L ^ ax)) + b<"d">(24924, 3531644415791360906L ^ ax);
             }
 
-            bxc.emc(b<"d">(2662, 4159493506368733375L ^ ax), e<"j">(24781, 5987274366644230927L ^ ax)).ebb(a, axxxx, a + 10.0F, Color.WHITE);
+            FontManager.emc(b<"d">(2662, 4159493506368733375L ^ ax), e<"j">(24781, 5987274366644230927L ^ ax)).ebb(a, axxxx, a + 10.0F, Color.WHITE);
             var24 = a;
             if (axx == null) {
                break label58;
@@ -486,7 +486,7 @@ public class Watermark extends guu {
          var24 = b<"d">(21406, 8253681424776124751L ^ ax);
       }
 
-      bxc.emc(var24, e<"j">(16046, 1412814320542008696L ^ ax))
+      FontManager.emc(var24, e<"j">(16046, 1412814320542008696L ^ ax))
          .ebb(
             a,
             axxxx,
@@ -516,7 +516,7 @@ public class Watermark extends guu {
          var26 = axxxxxxxxxx;
       }
 
-      dmp.aho(var25, var26, axxxxxxxxxxxxx, 8.0F, 5.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
+      dmp.aho(var25, var26, axxxxxxxxxxxxx, 8.0F, 5.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
    }
 
    private String avy(long a) {
@@ -529,7 +529,7 @@ public class Watermark extends guu {
 
    public static String chh(String input) {
       long ax = Watermark.a ^ 47753869021151L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       String var10000 = a;
       if (axx != null) {
          if (a != null) {
@@ -772,7 +772,7 @@ public class Watermark extends guu {
    // $VF: Duplicated exception handlers to handle obfuscated exceptions
    public static String gkn(String input) {
       long ax = Watermark.a ^ 82988176095796L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       String var10000 = a;
       if (axx != null) {
          label95:

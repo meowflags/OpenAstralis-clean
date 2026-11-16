@@ -32,8 +32,8 @@ class fyp {
       super();
       a.aag = a;
       a.fgu = a;
-      a.afs = dar.gqy().deo();
-      a.frs = dar.gqy().cxj();
+      a.afs = ClientSetup.gqy().deo();
+      a.frs = ClientSetup.gqy().cxj();
       a.apg = new erp(dtw.EASE_OUT_BACK, 800L);
       a.fjf = new erp(dtw.EASE_IN_OUT_QUAD, 800L);
       a.apg.bpt(0.0);
@@ -51,7 +51,7 @@ class fyp {
 
    public boolean elp() {
       long a = fyp.a ^ 51960410224560L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       boolean var10000 = a.apg.flo();
       if (var3 != null) {
          if (!var10000) {
@@ -66,7 +66,7 @@ class fyp {
 
    public void flv() {
       long a = fyp.a ^ 32528015341719L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float ax = (float)a.apg.hjo();
       int[] axx = var10000;
       float axxx = (float)a.fjf.hjo();

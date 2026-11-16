@@ -194,7 +194,7 @@ public abstract class cdr {
                                     gyq(null);
                                     har(120);
                                     fns(0);
-                                    apm(var10026);
+                                    Watchdog(var10026);
                                     fuw(null);
                                     gwo(56);
                                     String[] var49 = new String[4];
@@ -216,7 +216,7 @@ public abstract class cdr {
                                     fqm(122);
                                     buc(false);
                                     asw(0);
-                                    blz(null);
+                                    ConfigManager(null);
                                     arw(var10007);
                                     bur(var10006);
                                     gii(var48);
@@ -278,7 +278,7 @@ public abstract class cdr {
       }
    }
 
-   public static void apm(String[] var0) {
+   public static void Watchdog(String[] var0) {
       cu = var0;
    }
 
@@ -303,7 +303,7 @@ public abstract class cdr {
    }
 
    public static int eqg() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = cub();
       int var10000 = var3;
       if (var2 != null) {
@@ -350,7 +350,7 @@ public abstract class cdr {
    }
 
    public static int fra() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = hgn();
       int var10000 = var3;
       if (var2 != null) {
@@ -421,7 +421,7 @@ public abstract class cdr {
    }
 
    public static int cag() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = fjm();
       int var10000 = var3;
       if (var2 != null) {
@@ -444,7 +444,7 @@ public abstract class cdr {
    }
 
    public static int hdt() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = bsq();
       int var10000 = var3;
       if (var2 != null) {
@@ -466,8 +466,8 @@ public abstract class cdr {
       return ckd;
    }
 
-   public static int hbi() {
-      int[] var2 = dar.abu();
+   public static int BindCommand() {
+      int[] var2 = ClientSetup.abu();
       int var3 = afr();
       int var10000 = var3;
       if (var2 != null) {
@@ -485,13 +485,13 @@ public abstract class cdr {
       czc = var0;
    }
 
-   public static int abn() {
+   public static int DisablerCubecraft() {
       return czc;
    }
 
    public static int feu() {
-      int[] var2 = dar.abu();
-      int var3 = abn();
+      int[] var2 = ClientSetup.abu();
+      int var3 = DisablerCubecraft();
       int var10000 = var3;
       if (var2 != null) {
          if (var3 == 0) {
@@ -529,7 +529,7 @@ public abstract class cdr {
    }
 
    public static boolean ace() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       boolean var3 = ef();
       boolean var10000 = var3;
       if (var2 != null) {
@@ -584,7 +584,7 @@ public abstract class cdr {
    }
 
    public static int gjt() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = acc();
       int var10000 = var3;
       if (var2 != null) {
@@ -631,7 +631,7 @@ public abstract class cdr {
    }
 
    public static boolean afn() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       boolean var3 = fhj();
       boolean var10000 = var3;
       if (var2 != null) {
@@ -653,7 +653,7 @@ public abstract class cdr {
       return ecu;
    }
 
-   public static void blz(String[] var0) {
+   public static void ConfigManager(String[] var0) {
       aza = var0;
    }
 
@@ -686,7 +686,7 @@ public abstract class cdr {
    }
 
    public static int ezl() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = gcc();
       int var10000 = var3;
       if (var2 != null) {
@@ -717,7 +717,7 @@ public abstract class cdr {
    }
 
    public static int cze() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = drn();
       int var10000 = var3;
       if (var2 != null) {
@@ -748,7 +748,7 @@ public abstract class cdr {
    }
 
    public static boolean dpc() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       boolean var3 = cge();
       boolean var10000 = var3;
       if (var2 != null) {

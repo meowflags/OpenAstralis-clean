@@ -1,7 +1,7 @@
 package astralis.mixin.render;
 
 import cc.astralis.cxx;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.der;
 import cc.astralis.dlc;
 import cc.astralis.dqq;
@@ -37,7 +37,7 @@ public abstract class MixinLivingEntityRenderer<T extends class_1309, S extends 
       if (a == chi.field_1724) {
          a.setReturnValue(true);
       } else {
-         a.setReturnValue(!((der)dar.gqy().aws().diy((Class<T>)der.class)).dsv() && dar.gqy().aws().diy((Class<T>)der.class) != null);
+         a.setReturnValue(!((der)ClientSetup.gqy().aws().diy((Class<T>)der.class)).dsv() && ClientSetup.gqy().aws().diy((Class<T>)der.class) != null);
       }
    }
 

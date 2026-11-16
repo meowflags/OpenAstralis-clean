@@ -39,7 +39,7 @@ public class ek {
 
    public static String bfz(String input) {
       long ax = ek.a ^ 23749658965488L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String[] axx = a.split("\\s");
       int[] axxx = var10000;
       StringBuilder axxxx = new StringBuilder();
@@ -85,7 +85,7 @@ public class ek {
       long ax = ek.a ^ 29519592023760L;
       StringBuilder axx = new StringBuilder();
       byte[] var5 = a;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int var6 = a.length;
       int[] axxx = var10000;
       int var7 = 0;
@@ -135,7 +135,7 @@ public class ek {
       long ax = ek.a ^ 139069205848987L;
       double axx = TimeUnit.MILLISECONDS.toSeconds(a) + a % h / 1000.0;
       long axxx = (long)(axx / 3600.0);
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axxxx = (long)(axx % 3600.0 / 60.0);
       double axxxxx = axx % 60.0;
       int[] axxxxxx = var10000;

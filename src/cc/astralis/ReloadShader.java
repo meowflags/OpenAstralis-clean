@@ -38,7 +38,7 @@ public class ReloadShader extends guu {
       int[] var4;
       boolean var10000;
       long ax = ReloadShader.a ^ 83266892798264L;
-      var4 = dar.abu();
+      var4 = ClientSetup.abu();
       var10000 = a.cgf.dnp();
       label48:
       if (var4 != null) {

@@ -52,7 +52,7 @@ public class gxg implements cds {
 
    public static afc ar(String refreshToken, String clientID) {
       long ax = gxg.a ^ 140318556806502L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       fhm axx = (fhm)djb.fromJson(
          hhl.grf(
             "https://login.live.com/oauth20_token.srf",
@@ -136,7 +136,7 @@ public class gxg implements cds {
    // $VF: Duplicated exception handlers to handle obfuscated exceptions
    private static void dqe(String a) {
       long ax = gxg.a ^ 120663044394061L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       HttpServer var10000 = ai;
       if (axx == null) {
          try {
@@ -159,7 +159,7 @@ public class gxg implements cds {
    }
 
    private static void fug() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       HttpServer var10000 = ai;
       if (var2 != null) {
          if (ai == null) {

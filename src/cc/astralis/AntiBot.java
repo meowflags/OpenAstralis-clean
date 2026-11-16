@@ -39,8 +39,8 @@ public class AntiBot extends guu {
 
    public static boolean cnv(class_1657 entityPlayer) {
       long ax = AntiBot.a ^ 123270302018317L;
-      int[] var10000 = dar.abu();
-      AntiBot axx = dar.gqy().aws().diy(AntiBot.class);
+      int[] var10000 = ClientSetup.abu();
+      AntiBot axx = ClientSetup.gqy().aws().diy(AntiBot.class);
       int[] axxx = var10000;
       AntiBot var7 = axx;
       if (axxx != null) {
@@ -188,8 +188,8 @@ public class AntiBot extends guu {
 
    public static boolean dtl(class_640 playerInfo) {
       long ax = AntiBot.a ^ 65589964621998L;
-      int[] var10000 = dar.abu();
-      AntiBot axx = dar.gqy().aws().diy(AntiBot.class);
+      int[] var10000 = ClientSetup.abu();
+      AntiBot axx = ClientSetup.gqy().aws().diy(AntiBot.class);
       int[] axxx = var10000;
       AntiBot var5 = axx;
       if (axxx != null) {
@@ -263,7 +263,7 @@ public class AntiBot extends guu {
 
    private static boolean dst(class_640 a) {
       long ax = AntiBot.a ^ 57983003000838L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var4 = chi.method_1562().method_2880().iterator();
       int[] axx = var10000;
 
@@ -297,7 +297,7 @@ public class AntiBot extends guu {
 
    private static boolean dcu(class_640 a, String a) {
       long ax = AntiBot.a ^ 8946743455655L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       class_2561 var10000 = a.method_2971();
       if (var4 != null) {
          if (var10000 == null) {

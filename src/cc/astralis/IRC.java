@@ -30,7 +30,7 @@ public class IRC extends guu {
    public void duh(ajt event) {
       long ax = IRC.a ^ 34446371178800L;
       class_338 var10000 = chi.field_1705.method_1743();
-      class_5250 var4 = bpa.alb("IRC", dar.gqy().deo().getRGB(), dar.gqy().cxj().getRGB());
+      class_5250 var4 = bpa.alb("IRC", ClientSetup.gqy().deo().getRGB(), ClientSetup.gqy().cxj().getRGB());
       String var5 = a.cue();
       var10000.method_1812(var4.method_27693(" » " + var5));
    }

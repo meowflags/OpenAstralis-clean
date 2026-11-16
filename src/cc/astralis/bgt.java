@@ -40,7 +40,7 @@ public class bgt {
             GL45.glGetIntegerv(34016, a.avp.hdz());
             var10000 = (short)8641;
             GL45.glActiveTexture(33984);
-            int[] var5 = dar.abu();
+            int[] var5 = ClientSetup.abu();
             GL45.glGetIntegerv(35725, a.avp.cgd());
             var3 = var5;
             var10000 = (short)12788;
@@ -152,7 +152,7 @@ public class bgt {
       label164: {
          label163: {
             a = bgt.a ^ 45585830316362L;
-            int[] var10000 = dar.abu();
+            int[] var10000 = ClientSetup.abu();
             GL45.glUseProgram(a.avp.cgd()[0]);
             var3 = var10000;
             var6 = (short)30816;

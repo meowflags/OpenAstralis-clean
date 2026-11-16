@@ -38,7 +38,7 @@ public class NoFall extends guu {
       int[] ax;
       int var7;
       long axx = NoFall.a ^ 1975195525712L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var5 = a.bub.dnp();
       ax = var10000;
       byte var6 = -1;
@@ -103,7 +103,7 @@ public class NoFall extends guu {
    @gdz
    public void atu(etk event) {
       long ax = NoFall.a ^ 49840035966693L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (var4 != null) {
          if (!a.bub.emb("Stop")) {
             return;
@@ -131,7 +131,7 @@ public class NoFall extends guu {
    @gdz
    public void gon(amo event) {
       long ax = NoFall.a ^ 89612487379753L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (a.cud() != gpy.RECEIVE && chi.field_1687 != null) {
          amo var5;
          label38: {

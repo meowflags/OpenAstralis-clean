@@ -26,7 +26,7 @@ public class cbc extends bmd {
    private static final Color crk;
    public static final Color fgl;
    public static final int elx;
-   public static final int gsu;
+   public static final int ProductSansRegular;
    public static final int eas;
    private static final String czp;
    private final List<dcg> gaw;
@@ -45,7 +45,7 @@ public class cbc extends bmd {
 
    public cbc(guu module, float width, float height) {
       long ax = cbc.a ^ 79183929778877L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       super();
       a.gaw = new ArrayList<>();
       int[] axx = var10000;
@@ -122,7 +122,7 @@ public class cbc extends bmd {
    @Override
    public void ckn(float x, float y, float mouseX, float mouseY) {
       long ax = cbc.a ^ 37889293474419L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.fji(a);
       int[] axx = var10000;
       a.axc(a);
@@ -130,7 +130,7 @@ public class cbc extends bmd {
       a.beq.dwm(a.aks ? 1.0 : 0.0);
       dmp.cpp(a, a, a.arq(), a.ajg(), 5.0F, gb);
       dmp.cpp(a, a, a.arq(), super.ajg(), 5.0F, crk);
-      bxc.emc("Sf-Ui", 11).aof(a.cca.clp(), a + 6.0F, axxx, Color.white.darker());
+      FontManager.emc("Sf-Ui", 11).aof(a.cca.clp(), a + 6.0F, axxx, Color.white.darker());
       String axxxx = a.cca.epz();
       String var13 = axxxx;
       if (axx != null) {
@@ -143,7 +143,7 @@ public class cbc extends bmd {
          var13 = "Sf-Ui";
       }
 
-      bxc.emc(var13, 10).aof(axxxx, a + 6.0F, axxx + 11.0F, fgl);
+      FontManager.emc(var13, 10).aof(axxxx, a + 6.0F, axxx + 11.0F, fgl);
       float axxxxx = super.ajg() - 12.0F;
       float var17 = a + a.arq() - (axxxxx + 6.0F);
       float var24 = a + 6.0F;
@@ -151,7 +151,7 @@ public class cbc extends bmd {
       int var18 = a.cca.dsv();
       if (axx != null) {
          if (var18 != 0) {
-            ezv axxxxxx = dar.gqy().aws().diy(ezv.class);
+            ezv axxxxxx = ClientSetup.gqy().aws().diy(ezv.class);
             dmp.dsm(a + a.arq() - (axxxxx + 6.0F), a + 6.0F, axxxxx, axxxxx, 4.0F, axxxxxx.ehf.dnp(), axxxxxx.aoz.dnp());
          }
 
@@ -162,7 +162,7 @@ public class cbc extends bmd {
       if (var18 > 0) {
          dmp.abh(a, a, a.arq(), a.ajg(), () -> {
             long ax = cbc.a ^ 138558959876021L;
-            int[] var10000x = dar.abu();
+            int[] var10000x = ClientSetup.abu();
             float axx = a + super.ajg() + 3.0F;
             Iterator var9x = a.gaw.iterator();
             int[] axxx = var10000x;
@@ -194,7 +194,7 @@ public class cbc extends bmd {
    @Override
    public void gdj(double mouseX, double mouseY, int button) {
       long ax = cbc.a ^ 39734471383039L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       int var10000 = fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), super.ajg());
       if (axx != null) {
          if (var10000) {
@@ -263,7 +263,7 @@ public class cbc extends bmd {
    @Override
    public void euk(double mouseX, double mouseY, int button) {
       long ax = cbc.a ^ 123651154587484L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var9 = a.gaw.iterator();
       int[] axx = var10000;
 
@@ -291,7 +291,7 @@ public class cbc extends bmd {
    @Override
    public float ajg() {
       long a = cbc.a ^ 64975060597874L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float ax = 0.0F;
       int[] axx = var10000;
       double var7 = a.beq.hjo();
@@ -435,7 +435,7 @@ public class cbc extends bmd {
                                     e = var17;
                                     f = new Integer[16];
                                     elx = 4;
-                                    gsu = 6;
+                                    ProductSansRegular = 6;
                                     eas = 60;
                                     j = new HashMap(13);
                                     Cipher var0;

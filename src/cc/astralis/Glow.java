@@ -106,7 +106,7 @@ public class Glow extends guu {
       });
       var3[8] = a.gle.bih(() -> {
          long ax = Glow.a ^ 31181456646795L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          short var10001x = 18660;
          long var10002x = 203683374179316238L ^ ax;
          boolean var10000 = a.hjj.emb("PSD");
@@ -152,12 +152,12 @@ public class Glow extends guu {
    @gdz(4)
    public void goj(ctt event) {
       long ax = Glow.a ^ 135293710281702L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.efe(a.hjj.dnp());
       int[] axx = var10000;
       String var37 = a.ahf.dnp();
       int var10001 = 10712;
-      fll axxx = bxc.emc(var37, 9);
+      fll axxx = FontManager.emc(var37, 9);
       class_1041 axxxx = chi.method_22683();
       var10000 = (int[])chi.field_1755;
       if (axx != null) {
@@ -168,7 +168,7 @@ public class Glow extends guu {
             int axxxxxx = var10001;
             String axxxxxxx = var39;
             String axxxxxxxx = "User: " + axxxxxxx + " (" + axxxxxx + ") BPS: " + axxxxx;
-            fuv.dfe(cbl, axxxxxxxx, 5.0F, axxxx.method_4502() - (cbl.biu(axxxxxxxx) + 5.0F), dar.gqy().deo(), dar.gqy().cxj(), true);
+            fuv.dfe(cbl, axxxxxxxx, 5.0F, axxxx.method_4502() - (cbl.biu(axxxxxxxx) + 5.0F), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true);
          }
 
          var10000 = (int[])a.hjj.dnp();
@@ -253,9 +253,9 @@ public class Glow extends guu {
       label215: {
          switch (var41) {
             case 0:
-               fll axxxxx = bxc.emc("Product Sans Bold", 20);
+               fll axxxxx = FontManager.emc("Product Sans Bold", 20);
                String axxxxxx = a.eyi.dnp();
-               fuv.dfe(axxxxx, axxxxxx, 3.0F, 3.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
+               fuv.dfe(axxxxx, axxxxxx, 3.0F, 3.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
                if (axx != null) {
                   return;
                }
@@ -315,7 +315,7 @@ public class Glow extends guu {
                   return;
                }
             case 2:
-               fuv.fhp(euz, "A", a.grl.grp(), a.grl.azb(), 0.0F, dar.gqy().deo(), dar.gqy().cxj(), true);
+               fuv.fhp(euz, "A", a.grl.grp(), a.grl.azb(), 0.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), true);
                enh.aof("djust", a.grl.grp() + euz.eq("A"), a.grl.azb(), Color.white);
                if (axx != null) {
                   return;
@@ -352,10 +352,10 @@ public class Glow extends guu {
          float axxxxxxxxx = axxx.eq(axxxxxxxx) + 6.0F;
          float var48 = a.grl.grp();
          float var68 = a.grl.azb();
-         Color var114 = dar.gqy().deo();
-         Color var119 = dar.gqy().cxj();
+         Color var114 = ClientSetup.gqy().deo();
+         Color var119 = ClientSetup.gqy().cxj();
          dmp.hbm(var48, var68, axxxxxxxxx, 18.0F, 3.0F, var114, var119, false, 1.5F, new Color(0, 0, 0, 100));
-         axxx.ebb(axxxxxxxx, a.grl.grp() + 3.5F, a.grl.azb() + 3.0F, dar.gqy().deo());
+         axxx.ebb(axxxxxxxx, a.grl.grp() + 3.5F, a.grl.azb() + 3.0F, ClientSetup.gqy().deo());
          if (axx != null) {
             return;
          }
@@ -367,7 +367,7 @@ public class Glow extends guu {
          String var49 = a.eyi.dnp();
          var36 = "§f" + var49;
          axxxxx = "Sense";
-         var51 = dar.dul;
+         var51 = ClientSetup.dul;
          class_310 var71 = chi;
          if (axx != null) {
             if (chi.method_1542()) {
@@ -409,14 +409,14 @@ public class Glow extends guu {
       dmp.gst(axxxxxxxxxxxxx + 1.5F, axxxxxxxxxxxxxx + 1.5F, axxxxxxxxxx + 5.5F, 16.5F, axxxxxxxxxxx);
       dmp.gst(axxxxxxxxxxxxx + 2.5F, axxxxxxxxxxxxxx + 2.5F, axxxxxxxxxx + 4.5F, 15.5F, axxxxxxxxxxxx);
       dmp.gmg(axxxxxxxxxxxxx + 2.5F, 15.0F, axxxxxxxxxx + 4.5F, 15.0F, a.ehf.dnp(), a.aoz.dnp());
-      axxx.ebb(var36, 8.0F, 4.5F, dar.gqy().deo());
-      fuv.fhp(axxx, axxxxx, 8.0F + axxxxxxx, 4.5F, 0.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
-      axxx.ebb(axxxxxx, 8.0F + axxxxxxx + axxxxxxxx, 4.5F, dar.gqy().deo());
+      axxx.ebb(var36, 8.0F, 4.5F, ClientSetup.gqy().deo());
+      fuv.fhp(axxx, axxxxx, 8.0F + axxxxxxx, 4.5F, 0.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
+      axxx.ebb(axxxxxx, 8.0F + axxxxxxx + axxxxxxxx, 4.5F, ClientSetup.gqy().deo());
    }
 
    public static String a(String serverIp) {
       long ax = Glow.a ^ 39484102665257L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String axx = "liquidproxy.net";
       int[] axxx = var10000;
       String var6 = a;
@@ -452,7 +452,7 @@ public class Glow extends guu {
 
    public int bfl() {
       long a = Glow.a ^ 104071507122341L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       class_634 var10000 = chi.method_1562();
       if (ax != null) {
          if (var10000 == null) {

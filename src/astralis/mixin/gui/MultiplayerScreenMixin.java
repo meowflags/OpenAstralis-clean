@@ -2,8 +2,8 @@ package astralis.mixin.gui;
 
 import astralis.mixin.accessor.ScreenAccessor;
 import cc.astralis.aml;
-import cc.astralis.crv;
-import cc.astralis.dar;
+import cc.astralis.AltManager;
+import cc.astralis.ClientSetup;
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
@@ -48,7 +48,7 @@ public abstract class MultiplayerScreenMixin extends class_437 {
    private void onInit(CallbackInfo a) {
       if (class_310.method_1551().field_1755 instanceof class_500 axx) {
          class_7840 var10000 = class_4185.method_46430(
-            class_2561.method_43470(MultiplayerScreenMixin.a[1]), axxx -> class_310.method_1551().method_1507(new crv())
+            class_2561.method_43470(MultiplayerScreenMixin.a[1]), axxx -> class_310.method_1551().method_1507(new AltManager())
          );
          class_7840 axxx = var10000.method_46437(100, 20);
          ScreenAccessor var7 = (ScreenAccessor)axx;
@@ -64,7 +64,7 @@ public abstract class MultiplayerScreenMixin extends class_437 {
    )
    private void earlyAuthCheck(CallbackInfo a) {
       if (aml.gkg || !Objects.equals(aml.eyu, MultiplayerScreenMixin.a[0]) || !aml.gsj) {
-         class_310.method_1551().method_1507(dar.gqy().azc());
+         class_310.method_1551().method_1507(ClientSetup.gqy().azc());
          a.cancel();
       }
    }

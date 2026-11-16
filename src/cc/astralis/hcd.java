@@ -23,7 +23,7 @@ public class hcd extends bmd {
       long ax = hcd.a ^ 118679014924660L;
       a.fji(a);
       a.axc(a);
-      fll axx = bxc.emc(b, (int)c);
+      fll axx = FontManager.emc(b, (int)c);
       axx.aof(a.btr.fah(), a + 6.0F, a + 4.0F, cbc.fgl);
       axx.aof(a.btr.dnp(), a + a.arq() - (axx.eq(a.btr.dnp()) + 6.0F), a + 4.0F, cbc.fgl);
    }
@@ -31,7 +31,7 @@ public class hcd extends bmd {
    @Override
    public void gdj(double mouseX, double mouseY, int button) {
       long ax = hcd.a ^ 120562725383416L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), a.ajg())) {
          List<String> axxx = List.of(a.btr.ape());
          int axxxx = axxx.size();

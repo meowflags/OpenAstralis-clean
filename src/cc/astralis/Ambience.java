@@ -82,7 +82,7 @@ public class Ambience extends guu {
    @Override
    public void auj() {
       long a = Ambience.a ^ 25207573247626L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       if (var3 != null) {
          if (chi.field_1687 != null) {
             a.ce = chi.field_1687.method_8510();
@@ -95,7 +95,7 @@ public class Ambience extends guu {
    @Override
    public void frg() {
       long a = Ambience.a ^ 33491728228825L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       if (var3 != null) {
          if (chi.field_1687 != null) {
             chi.field_1687.method_28104().method_165(a.ce);
@@ -108,7 +108,7 @@ public class Ambience extends guu {
    @gdz
    public void bgx(amo event) {
       long ax = Ambience.a ^ 82745216906421L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       amo var10000 = a;
       if (var4 != null) {
          if (a.cud() != gpy.RECEIVE) {
@@ -134,7 +134,7 @@ public class Ambience extends guu {
    @gdz
    public void ezs(fnt e) {
       long ax = Ambience.a ^ 7926361623453L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (a.guf.dnp()) {
          class_638 var10000 = chi.field_1687;
          if (var4 != null) {

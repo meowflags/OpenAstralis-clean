@@ -40,7 +40,7 @@ public class avy extends guu {
    @gdz
    public void bhc(amo event) {
       long ax = avy.a ^ 85134797804658L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       amo var10000 = a;
       if (axx != null) {
          if (a.cud() != gpy.RECEIVE) {

@@ -34,7 +34,7 @@ public class elw implements fgh {
 
    @Override
    public boolean fvo(elw other) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] axxx = var10000;
       elw var7 = a;
       if (axxx != null) {

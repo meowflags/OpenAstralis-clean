@@ -44,7 +44,7 @@ public class hhm extends brc {
    @Override
    public String cql() {
       long a = b ^ 39217580348302L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] axx = var10000;
       JsonObject axxx = a.fdo();
       var10000 = fxc.gty();
@@ -69,8 +69,8 @@ public class hhm extends brc {
       String var10 = axxx.toString();
       String[] var10001 = var8;
       if (axx != null) {
-         byte[] var11 = cni.fsi(var8[1]);
-         var10 = fz.dvr(var10, var11, cni.fsi(var8[7]));
+         byte[] var11 = Base64Util.fsi(var8[1]);
+         var10 = fz.dvr(var10, var11, Base64Util.fsi(var8[7]));
          if (axxxx == null) {
             return var10;
          }

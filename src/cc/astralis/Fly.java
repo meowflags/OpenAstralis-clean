@@ -58,7 +58,7 @@ public class Fly extends guu {
       int[] ax;
       int var7;
       long axx = Fly.a ^ 16277571241027L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var5 = a.ata.dnp();
       byte var6 = -1;
       ax = var10000;

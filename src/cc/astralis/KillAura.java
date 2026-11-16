@@ -65,7 +65,7 @@ public class KillAura extends guu {
    private final bes ffp;
    private final gbp dnl;
    private final gbp cbu;
-   public bes ecs;
+   public bes ScaffoldVanilla2;
    public bes cun;
    private final adu cdm;
    private final gbp exp;
@@ -120,7 +120,7 @@ public class KillAura extends guu {
       a.ezs = new bes("Switch Delay", 200.0F, 0.0F, 5000.0F, 1.0F);
       a.flh = new bes("Scout Range", 3.0F, 0.0F, 6.0F, 0.1F);
       a.ejq = new bes("Attack Range", 3.0F, 0.0F, 6.0F, 0.1F);
-      dar.abu();
+      ClientSetup.abu();
       a.boi = new gbp("Auto Block", false);
       a.bjd = new bes("Block Range", 3.0F, 0.0F, 6.0F, 0.1F);
       String[] var151 = new String[6];
@@ -143,7 +143,7 @@ public class KillAura extends guu {
       a.bcj = (adu)new adu("Noise Mode", "Off", var153).bih(a.bdd::dnp);
       a.gfr = (bes)new bes("Noise Yaw Multiplier", 0.08F, 0.01F, 0.5F, 0.01F).bih(() -> {
          long ax = KillAura.a ^ 2236471153753L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431887736755688566L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -168,7 +168,7 @@ public class KillAura extends guu {
       });
       a.cbe = (bes)new bes("Noise Pitch Multiplier", 0.02F, 0.01F, 0.3F, 0.01F).bih(() -> {
          long ax = KillAura.a ^ 22961665098100L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 12390;
          long var10002x = 8213316058764927337L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -193,7 +193,7 @@ public class KillAura extends guu {
       });
       a.dbv = (bes)new bes("Max Yaw Noise", 1.2F, 0.1F, 5.0F, 0.1F).bih(() -> {
          long ax = KillAura.a ^ 104919077273976L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431943963108098391L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -218,7 +218,7 @@ public class KillAura extends guu {
       });
       a.aud = (bes)new bes("Max Pitch Noise", 0.75F, 0.1F, 5.0F, 0.1F).bih(() -> {
          long ax = KillAura.a ^ 122487083565523L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431996717137723900L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -331,7 +331,7 @@ public class KillAura extends guu {
       var4[7] = a.dhq.bih(a.boi::dnp);
       var4[8] = a.djf.bih(() -> {
          long ax = KillAura.a ^ 132229609419692L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 13692;
          long var10002x = 2240900754677225148L ^ ax;
          boolean var10000 = a.dhq.emb("Watchdog 2");
@@ -359,7 +359,7 @@ public class KillAura extends guu {
       var4[16] = a.bcj;
       var4[17] = a.gfr.bih(() -> {
          long ax = KillAura.a ^ 37627143629101L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431922713234090242L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -384,7 +384,7 @@ public class KillAura extends guu {
       });
       var4[18] = a.cbe.bih(() -> {
          long ax = KillAura.a ^ 63732934945894L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431915833330543689L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -409,7 +409,7 @@ public class KillAura extends guu {
       });
       var4[19] = a.dbv.bih(() -> {
          long ax = KillAura.a ^ 89312239616164L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431941415118504075L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -434,7 +434,7 @@ public class KillAura extends guu {
       });
       var4[20] = a.aud.bih(() -> {
          long ax = KillAura.a ^ 10215587474665L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          short var10001x = 4213;
          long var10002x = 8431897915155049670L ^ ax;
          boolean var10000 = a.bcj.emb("Snap");
@@ -467,7 +467,7 @@ public class KillAura extends guu {
       var4[28] = a.exp;
       var4[29] = a.ecs.bih(() -> {
          long ax = KillAura.a ^ 90531660610396L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          boolean var10000 = a.dnl.dnp();
          if (var3 != null) {
             var10000 = !var10000;
@@ -477,7 +477,7 @@ public class KillAura extends guu {
       });
       var4[30] = a.cun.bih(() -> {
          long ax = KillAura.a ^ 98979080666413L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          boolean var10000 = a.dnl.dnp();
          if (var3 != null) {
             var10000 = !var10000;
@@ -494,7 +494,7 @@ public class KillAura extends guu {
       var4[37] = a.dfg.bih(a.fwx::dnp);
       a.bfi(var4);
       if (!ffn.gsn()) {
-         dar.aow(new int[5]);
+         ClientSetup.aow(new int[5]);
       }
    }
 
@@ -514,21 +514,21 @@ public class KillAura extends guu {
    @gdz
    public void aur(fnt event) {
       long ax = KillAura.a ^ 131243582792158L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (a.cud() != gpy.POST) {
-         int var10000 = dar.gqy().aws().diy(GodBridge.class).dsv();
+         int var10000 = ClientSetup.gqy().aws().diy(GodBridge.class).dsv();
          if (var4 != null) {
             if (var10000) {
                return;
             }
 
-            var10000 = dar.gqy().aws().diy(AimAssist.class).dsv();
+            var10000 = ClientSetup.gqy().aws().diy(AimAssist.class).dsv();
          }
 
          label127: {
             label132: {
                if (var4 != null) {
-                  if (var10000 && dar.gqy().aws().diy(AimAssist.class).bvh != null) {
+                  if (var10000 && ClientSetup.gqy().aws().diy(AimAssist.class).bvh != null) {
                      return;
                   }
 
@@ -641,7 +641,7 @@ public class KillAura extends guu {
       int[] ax;
       int var23;
       a = KillAura.a ^ 35820875451594L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = (float)dgq.flj(a.gvw);
       ax = var10000;
       float var62;
@@ -1142,7 +1142,7 @@ public class KillAura extends guu {
 
    private boolean dmb(boolean a, boolean a) {
       long ax = KillAura.a ^ 86013953107038L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       byte var10000 = chi.field_1724.method_24828();
       if (var5 != null) {
          if (var10000 == 0) {
@@ -1228,7 +1228,7 @@ public class KillAura extends guu {
       int[] axx;
       int var10;
       ax = KillAura.a ^ 22901994148339L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var5 = a.dhq.dnp();
       axx = var10000;
       byte var6 = -1;
@@ -1314,7 +1314,7 @@ public class KillAura extends guu {
             }
          case 1:
             if (chi.field_1724.field_6012 % 2 == 0) {
-               dar.gqy().ccv().gne(bhw.class).fxn();
+               ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
                a.bzo = false;
                gix.dsd(new class_2846(class_2847.field_12974, class_2338.field_10980, class_2350.field_11033));
                a.heb = false;
@@ -1323,7 +1323,7 @@ public class KillAura extends guu {
                }
             }
 
-            dar.gqy().ccv().gne(bhw.class).ckv();
+            ClientSetup.gqy().ccv().gne(BlinkController.class).ckv();
             a.bzo = true;
             a.epe(true);
             if (axx != null) {
@@ -1439,7 +1439,7 @@ public class KillAura extends guu {
                   gix.dsd(class_2824.method_34207(a.gvw, chi.field_1724.method_5715(), class_1268.field_5808));
                   gix.avn(axxx -> new class_2886(class_1268.field_5808, axxx, a.bbh[0], a.bbh[1]));
                   a.heb = true;
-                  dar.gqy().ccv().gne(bhw.class).fxn();
+                  ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
                   var14 = a;
                   var21 = 0;
                   break;
@@ -1456,7 +1456,7 @@ public class KillAura extends guu {
          }
       }
 
-      dar.gqy().ccv().gne(bhw.class).ckv();
+      ClientSetup.gqy().ccv().gne(BlinkController.class).ckv();
       a.bzo = true;
       gix.dsd(new class_2846(class_2847.field_12974, class_2338.field_10980, class_2350.field_11033));
       a.heb = false;
@@ -1477,7 +1477,7 @@ public class KillAura extends guu {
          label143: {
             label136: {
                ax = KillAura.a ^ 399136378820L;
-               axx = dar.abu();
+               axx = ClientSetup.abu();
                boolean var10000 = a.boi.dnp();
                if (axx != null) {
                   if (!var10000) {
@@ -1509,7 +1509,7 @@ public class KillAura extends guu {
 
                         if (var10 && a.gvw != null) {
                            label122: {
-                              if (!dar.gqy().ccv().gne(bhw.class).bsw()) {
+                              if (!ClientSetup.gqy().ccv().gne(BlinkController.class).bsw()) {
                                  a.gmm(true);
                                  gix.eex(axxxx);
                                  if (axx != null) {
@@ -1602,7 +1602,7 @@ public class KillAura extends guu {
    @gdz
    public void ben(bsm event) {
       long ax = KillAura.a ^ 91096211361065L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       KillAura var10000 = a;
       if (var4 != null) {
          if (!a.fwx.dnp()) {
@@ -1621,7 +1621,7 @@ public class KillAura extends guu {
       KillAura var5;
       label35: {
          long ax = KillAura.a ^ 1631443414286L;
-         int[] var4 = dar.abu();
+         int[] var4 = ClientSetup.abu();
          boolean var10000 = a;
          if (var4 != null) {
             if (a) {
@@ -1640,7 +1640,7 @@ public class KillAura extends guu {
          }
 
          if (var10000) {
-            dar.gqy().ccv().gne(bhw.class).fxn();
+            ClientSetup.gqy().ccv().gne(BlinkController.class).fxn();
             a.bzo = false;
          }
 
@@ -1652,7 +1652,7 @@ public class KillAura extends guu {
 
    private void cyo(boolean a, boolean a) {
       long ax = KillAura.a ^ 101122312292328L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       boolean var10000 = a;
       if (var5 != null) {
          if (a) {
@@ -1684,7 +1684,7 @@ public class KillAura extends guu {
       label68: {
          label71: {
             ax = KillAura.a ^ 18870269493321L;
-            axx = dar.abu();
+            axx = ClientSetup.abu();
             var10000 = a.heb;
             if (axx != null) {
                if (!a.heb) {
@@ -1758,7 +1758,7 @@ public class KillAura extends guu {
 
    public boolean dfb() {
       long a = KillAura.a ^ 123724835910853L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       Object var10000 = a.gvw;
       if (var3 != null) {
          if (a.gvw == null) {

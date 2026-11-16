@@ -110,7 +110,7 @@ public class SilentAim extends guu {
       SilentAim var19;
       label208: {
          ax = SilentAim.a ^ 123585673933154L;
-         axx = dar.abu();
+         axx = ClientSetup.abu();
          boolean var10000 = a.dxd.dnp();
          if (axx != null) {
             if (var10000 && !chi.field_1690.field_1886.method_1434()) {
@@ -324,7 +324,7 @@ public class SilentAim extends guu {
       SilentAim var11;
       label41: {
          long ax = SilentAim.a ^ 67969425970021L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          float[] axx = dgq.dxs(a);
          int[] axxx = var10000;
          float axxxx = axx[0];
@@ -379,7 +379,7 @@ public class SilentAim extends guu {
          class_243 axxx = chi.field_1724.method_5836(1.0F);
          class_243 axxxx = a.method_1020(axxx);
          double axxxxx = class_3532.method_15349(axxxx.field_1350, axxxx.field_1352) * 180.0 / Math.PI - 90.0;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          double axxxxxx = -class_3532.method_15349(axxxx.field_1351, Math.sqrt(axxxx.field_1352 * axxxx.field_1352 + axxxx.field_1350 * axxxx.field_1350))
             * 180.0
             / Math.PI;
@@ -443,7 +443,7 @@ public class SilentAim extends guu {
       long ax = SilentAim.a ^ 54782843541851L;
       bgi axx = null;
       float axxx = Float.MAX_VALUE;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double axxxx = Double.NEGATIVE_INFINITY;
       bgi[] var9 = bgi.values();
       int[] axxxxx = var10000;
@@ -517,7 +517,7 @@ public class SilentAim extends guu {
 
    private float atv(float a, float a) {
       long ax = SilentAim.a ^ 52059905932071L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = (a - a) % 360.0F;
       int[] axxx = var10000;
       float var10;

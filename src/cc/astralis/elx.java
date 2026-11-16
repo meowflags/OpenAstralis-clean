@@ -4,7 +4,7 @@ import net.minecraft.class_1313;
 
 public class elx extends grf {
    private class_1313 etq;
-   private double bhw;
+   private double BlinkController;
    private double bbt;
    private double ggn;
 

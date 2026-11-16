@@ -40,7 +40,7 @@ public class dtk implements bvc {
    }
 
    public static boolean fwm() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       boolean var3 = ctr();
       boolean var10000 = var3;
       if (var2 != null) {

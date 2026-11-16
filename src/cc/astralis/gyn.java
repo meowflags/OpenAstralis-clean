@@ -38,7 +38,7 @@ public class gyn extends brc {
       JsonObject a = a.fdo();
       String var10000 = a.toString();
       String[] var2 = b;
-      return fz.dvr(var10000, cni.fsi(var2[1]), cni.fsi(var2[0]));
+      return fz.dvr(var10000, Base64Util.fsi(var2[1]), Base64Util.fsi(var2[0]));
    }
 
    public static void aqg(int var0) {
@@ -50,7 +50,7 @@ public class gyn extends brc {
    }
 
    public static int ews() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = goo();
       int var10000 = var3;
       if (var2 != null) {

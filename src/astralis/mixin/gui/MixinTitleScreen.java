@@ -2,8 +2,8 @@ package astralis.mixin.gui;
 
 import cc.astralis.amh;
 import cc.astralis.aml;
-import cc.astralis.crv;
-import cc.astralis.dar;
+import cc.astralis.AltManager;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.eqf;
 import java.lang.invoke.CallSite;
@@ -51,7 +51,7 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
    )
    private void onInit(CallbackInfo a) {
       if (aml.gkg || !Objects.equals(aml.eyu, MixinTitleScreen.a[0]) || !aml.gsj) {
-         chi.method_1507(dar.gqy().azc());
+         chi.method_1507(ClientSetup.gqy().azc());
          a.cancel();
       }
    }
@@ -61,7 +61,7 @@ public class MixinTitleScreen extends class_437 implements dlc, amh {
       method = {"addNormalWidgets(II)I"}
    )
    private void addNormalWidgets(int a, int a, CallbackInfoReturnable<Integer> a) {
-      class_7840 var10000 = class_4185.method_46430(class_2561.method_43470(MixinTitleScreen.a[1]), axxx -> chi.method_1507(new crv()));
+      class_7840 var10000 = class_4185.method_46430(class_2561.method_43470(MixinTitleScreen.a[1]), axxx -> chi.method_1507(new AltManager()));
       class_7840 axxx = var10000.method_46437(60, 20);
       int var9 = a.field_22789 - 65;
       a.method_37063(axxx.method_46433(var9, a.field_22790 - 25).method_46431());

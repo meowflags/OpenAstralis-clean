@@ -15,7 +15,7 @@ final class fdg {
       return a.cby;
    }
 
-   public byte dle() {
+   public byte DiscordRpc() {
       return a.bwy;
    }
 

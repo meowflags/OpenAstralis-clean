@@ -34,7 +34,7 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
       long a = d ^ 98905952416500L;
       long ax = c<"v">(19349, 544520381941361134L ^ a);
       super();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       brc.ahk();
       Class[] var7 = new Class[]{gjp.class, dve.class, dsk.class, aki.class, gqi.class, cse.class, null, null, null, null, null, null, null, null};
       var7[6] = fvh.class;
@@ -55,7 +55,7 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    @SafeVarargs
    private void afa(Class<? extends brc>... a) {
       long ax = d ^ 3759959860392L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axx = c<"v">(18566, 911655437649362083L ^ ax);
       int[] axxx = var10000;
       Class[] var8 = a;
@@ -75,7 +75,7 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
                   a.ctx(axxxxxxx, axxxxx);
                } catch (Exception var22) {
                   String[] var20 = cvn.a;
-                  dar.ecj.error(var20[1]);
+                  ClientSetup.ecj.error(var20[1]);
 
                   try {
                      Field axxxxxxxx = Unsafe.class.getDeclaredField(var20[0]);
@@ -139,7 +139,7 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    @Override
    public cdw bec(int id) throws Exception {
       long ax = d ^ 70148976480479L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       long axx = c<"v">(2488, 6076770207357602276L ^ ax);
       int[] axxx = var10000;
       Class<? extends cdw> axxxx = a.eyd(a);
@@ -541,7 +541,7 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    }
 
    private static long a(int var0, long var1) {
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       int var10000 = var0 ^ (int)var1;
       var10000 ^= 4197;
       int var6 = var10000 & 32767;

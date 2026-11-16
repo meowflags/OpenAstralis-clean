@@ -1,6 +1,6 @@
 package astralis.mixin.game;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.ese;
 import cc.astralis.fki;
 import net.minecraft.class_1923;
@@ -28,7 +28,7 @@ public class MixinClientPlayNetworkHandler {
    )
    private void sendChatMessageHook(String a, CallbackInfo a) {
       ese ax = new ese(a);
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       if (ax.fmc()) {
          a.cancel();
       }

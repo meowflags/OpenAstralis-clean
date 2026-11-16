@@ -59,7 +59,7 @@ public class bav implements dlc {
 
    public static boolean dtz(class_1309 target, float range) {
       long ax = bav.a ^ 100133084961348L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       float var5;
       int var10000 = (var5 = chi.field_1724.method_5739(a) - a) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
       if (var4 != null) {
@@ -94,7 +94,7 @@ public class bav implements dlc {
 
    public static void any(class_2338 pos) {
       long ax = bav.a ^ 121543848717683L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -153,7 +153,7 @@ public class bav implements dlc {
 
    public static float beh() {
       long a = bav.a ^ 132172993574899L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int ax = (int)chi.field_1724.method_23318();
       int[] axx = var10000;
 
@@ -215,7 +215,7 @@ public class bav implements dlc {
 
    public static boolean glo() {
       long a = bav.a ^ 47996847016176L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1799 ax = chi.field_1724.method_31548().method_7391();
       int[] axx = var10000;
       class_1792 axxx = ax.method_7909();
@@ -263,7 +263,7 @@ public class bav implements dlc {
 
    public static boolean bfi() {
       long a = bav.a ^ 94735153922009L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_2338 ax = chi.field_1724.method_24515();
       int[] axx = var10000;
       int axxx = ax.method_10264() - 1;
@@ -318,7 +318,7 @@ public class bav implements dlc {
          class_1309 var10;
          label250: {
             long ax = bav.a ^ 123581430262988L;
-            var8 = dar.abu();
+            var8 = ClientSetup.abu();
             var10 = axxx;
             if (var8 != null) {
                if (axxx == null) {

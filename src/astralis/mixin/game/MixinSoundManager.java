@@ -1,6 +1,6 @@
 package astralis.mixin.game;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.enu;
 import cc.astralis.ezv;
 import cc.astralis.hii;
@@ -34,9 +34,9 @@ public class MixinSoundManager {
       cancellable = true
    )
    private void onPlay(class_1113 a, CallbackInfoReturnable<class_11518> a) {
-      hii ax = dar.gqy().aws().diy(hii.class);
-      if (dar.gqy().aws().diy(ezv.class) != null) {
-         enu axx = dar.gqy().aws().diy(enu.class);
+      hii ax = ClientSetup.gqy().aws().diy(hii.class);
+      if (ClientSetup.gqy().aws().diy(ezv.class) != null) {
+         enu axx = ClientSetup.gqy().aws().diy(enu.class);
          if (ignoredSounds.contains(a.method_4775()) && ax != null && ax.dsv()) {
             a.cancel();
          }

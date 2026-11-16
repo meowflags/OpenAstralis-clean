@@ -30,7 +30,7 @@ public class dqe {
 
    public void dcv() {
       long a = dqe.a ^ 44573939815911L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       if (ImGui.beginPopup("Font Picker")) {
          for (fv axx : dvt.bru()) {
             if (ax == null) {

@@ -38,8 +38,8 @@ public class ffz extends bmd {
       long ax = ffz.a ^ 54392747049461L;
       a.fji(a);
       a.axc(a);
-      fll axx = bxc.emc(b, 10);
-      int[] var10000 = dar.abu();
+      fll axx = FontManager.emc(b, 10);
+      int[] var10000 = ClientSetup.abu();
       axx.aof(a.aeb.fah(), a + 6.0F, a + 4.0F, cbc.fgl);
       String axxx = String.valueOf(a.aeb.dnp());
       int[] axxxx = var10000;
@@ -55,7 +55,7 @@ public class ffz extends bmd {
          }
 
          dmp.cpp(a + 6.0F, a + super.ajg(), axxxxx, 7.0F, 2.0F, aot);
-         dmp.aho(a + 6.0F, a + super.ajg(), axxxxx * axxxxxx, 7.0F, 2.0F, dar.gqy().deo(), dar.gqy().cxj(), false);
+         dmp.aho(a + 6.0F, a + super.ajg(), axxxxx * axxxxxx, 7.0F, 2.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
       }
    }
 
@@ -79,7 +79,7 @@ public class ffz extends bmd {
 
    private double hhb(double a, float a) {
       long ax = ffz.a ^ 1554043445496L;
-      int[] var6 = dar.abu();
+      int[] var6 = ClientSetup.abu();
       float var10000 = a;
       float var10001 = 0.0F;
       if (var6 != null) {

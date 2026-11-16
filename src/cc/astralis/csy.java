@@ -19,7 +19,7 @@ public class csy extends fwu {
    @Override
    public void ayy(eih event) {
       long ax = csy.a ^ 115214276819551L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1657 axx = a.bv().fyt;
       int[] axxx = var10000;
       if (axx != null) {

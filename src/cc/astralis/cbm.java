@@ -11,7 +11,7 @@ public class cbm {
 
    public boolean fsc(long delay) {
       long ax = cbm.a ^ 50053690831291L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       long var6;
       int var10000 = (var6 = System.currentTimeMillis() - a - a.edc) == 0L ? 0 : (var6 < 0L ? -1 : 1);
       if (var5 != null) {
@@ -21,7 +21,7 @@ public class cbm {
       return (boolean)var10000;
    }
 
-   public void glr() {
+   public void AddCommand() {
       a.edc = System.currentTimeMillis();
    }
 

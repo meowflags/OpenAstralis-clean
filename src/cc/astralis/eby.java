@@ -37,7 +37,7 @@ public class eby {
    public static void fqb() throws Throwable {
       short var18;
       long a = eby.a ^ 37005503122882L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       eab();
       int[] ax = var10000;
       var18 = 17528;
@@ -72,7 +72,7 @@ public class eby {
                         }
                      }
 
-                     dar.ecj.error("Runtime Standard Failed 0x02");
+                     ClientSetup.ecj.error("Runtime Standard Failed 0x02");
                   }
 
                   try {
@@ -117,13 +117,13 @@ public class eby {
       }
 
       if (!var18) {
-         dar.gqy().gp().cat();
+         ClientSetup.gqy().gp().cat();
       }
    }
 
    private static void eab() {
       long a = eby.a ^ 71400700065002L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String[] var30 = new String[13];
       var30[0] = "-agentlib:jdwp";
       var30[1] = "-XBootclasspath";
@@ -234,7 +234,7 @@ public class eby {
             }
          }
 
-         dar.ecj.error("Runtime Standards Failed 0x01");
+         ClientSetup.ecj.error("Runtime Standards Failed 0x01");
          var26 = true;
       }
 

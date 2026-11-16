@@ -11,7 +11,7 @@ public class bfj {
    }
 
    public static void duq() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       Object var10000 = dsz;
       if (var2 != null) {
          if (dsz.empty()) {

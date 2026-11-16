@@ -40,7 +40,7 @@ class ayk {
       byte[] var15;
       label42: {
          ax = b ^ 17336323711036L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axx = var10000;
          cdr[] var13 = fz.dtf();
          super();

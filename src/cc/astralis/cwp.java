@@ -59,7 +59,7 @@ public class cwp implements dlc {
    public static hcp bos(class_1799 itemStack) {
       long ax = cwp.a ^ 107965391225558L;
       class_1792 axx = a.method_7909();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_9424 axxx = (class_9424)a.method_58694(class_9334.field_50077);
       int[] axxxx = var10000;
       class_9424 var8 = axxx;
@@ -75,7 +75,7 @@ public class cwp implements dlc {
       if (axxxx != null) {
          if (var10000.noneMatch(axxxxx -> {
             long axxxxxx = cwp.a ^ 1726914224685L;
-            int[] var3x = dar.abu();
+            int[] var3x = ClientSetup.abu();
             boolean var10000x = axxxxx.comp_2503().isPresent();
             if (var3x != null) {
                if (!var10000x) {
@@ -149,7 +149,7 @@ public class cwp implements dlc {
 
    public static boolean gvl(class_1799 itemStack) {
       long ax = cwp.a ^ 130500206570239L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_10192 axx = (class_10192)a.method_58694(class_9334.field_54196);
       int[] axxx = var10000;
       class_10192 var5 = axx;
@@ -166,7 +166,7 @@ public class cwp implements dlc {
 
    public static int bzt(class_1799 itemStack) {
       long ax = cwp.a ^ 111135477460683L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = 0;
       Iterator var5 = ((class_9285)a.method_58695(class_9334.field_49636, class_9285.field_49326)).comp_2393().iterator();
       int[] axxx = var10000;
@@ -202,7 +202,7 @@ public class cwp implements dlc {
    public static float fsw(class_1799 itemStack) {
       long ax = cwp.a ^ 39912462180996L;
       float axx = 20.0F * (25 - bzt(a)) / 25.0F;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axxx = 0;
       int[] axxxx = var10000;
       Iterator var6 = a.method_58657().method_57539().iterator();
@@ -284,10 +284,10 @@ public class cwp implements dlc {
 
    public static float ept(class_1799 itemStack) {
       long ax = cwp.a ^ 79988925092350L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = Optional.ofNullable((class_9424)a.method_58694(class_9334.field_50077)).map(axxx -> axxx.comp_2498().stream().filter(axxxx -> {
          long axxxxx = cwp.a ^ 126770399731966L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          boolean var10000x = axxxx.comp_2503().isPresent();
          if (var3x != null) {
             if (!var10000x) {
@@ -330,7 +330,7 @@ public class cwp implements dlc {
 
    public static double dw(class_1799 itemStack) {
       long ax = cwp.a ^ 87171128751661L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = 0.0F;
       Iterator axxx = ((class_9285)a.method_58695(class_9334.field_49636, class_9285.field_49326)).comp_2393().iterator();
       int[] axxxx = var10000;
@@ -412,7 +412,7 @@ public class cwp implements dlc {
 
    public static boolean cxo(class_1735 slot, class_1735 slotO) {
       long ax = cwp.a ^ 30672606068927L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1799 axx = a.method_7677();
       int[] axxx = var10000;
       class_1799 axxxx = a.method_7677();
@@ -628,7 +628,7 @@ public class cwp implements dlc {
                long axxxxxxxx = cwp.a ^ 102944967830772L;
                ax = axxxxxxxxxxxxxx.method_7677();
                axxxxxxx = ax.method_7909();
-               int[] var10000 = dar.abu();
+               int[] var10000 = ClientSetup.abu();
                axxxx = bos(ax);
                ax = var10000;
                label233:
@@ -824,7 +824,7 @@ public class cwp implements dlc {
 
    public static void gmh(int index, int button, class_1713 type) {
       long ax = cwp.a ^ 18548511318529L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       class_310 var10000 = chi;
       if (var5 != null) {
          if (chi.field_1761 == null) {

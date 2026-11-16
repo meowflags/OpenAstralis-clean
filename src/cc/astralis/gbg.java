@@ -33,7 +33,7 @@ public class gbg {
 
    private class_243 esq(class_243 a) {
       long ax = gbg.a ^ 25928794889842L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_243 var10000 = a.fkk;
       class_243 var10001 = class_243.field_1353;
       if (axx != null) {
@@ -92,7 +92,7 @@ public class gbg {
       double ax;
       label45: {
          long axx = gbg.a ^ 130015879528845L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          ax = a.method_23318();
          int[] axxx = var10000;
          int var8 = a.method_24828();
@@ -136,7 +136,7 @@ public class gbg {
 
    private boolean amq(class_1657 a, class_243 a) {
       long ax = gbg.a ^ 61392000023550L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       int var10000 = a.method_24828();
       if (var5 != null) {
          if (var10000 == 0) {
@@ -164,7 +164,7 @@ public class gbg {
 
    private class_243 afd(class_1657 a, class_243 a, class_243 a) {
       long ax = gbg.a ^ 129735228671183L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double axx = a.field_1352;
       double axxx = a.field_1350;
       int[] axxxx = var10000;
@@ -231,7 +231,7 @@ public class gbg {
 
    public boolean gqy(class_243 actualPos, class_243 predictedPos, double threshold) {
       long ax = gbg.a ^ 69485557568304L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double axx = a.method_1022(a);
       int[] axxx = var10000;
       double var11;

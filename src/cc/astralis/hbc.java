@@ -83,7 +83,7 @@ public class hbc {
       String var10002 = ek.gkf(a);
       URL axx = new URL("https://bwstats.shivam.pro/user/" + var10002);
       HttpURLConnection axxx = (HttpURLConnection)axx.openConnection();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       axxx.setRequestMethod("GET");
       BufferedReader axxxx = new BufferedReader(new InputStreamReader(axxx.getInputStream()));
       int[] axxxxx = var10000;
@@ -148,7 +148,7 @@ public class hbc {
 
    private static String djn(String a, String a, String a) {
       long ax = hbc.a ^ 84755650176298L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = a.indexOf(a);
       int[] axxx = var10000;
       int var9 = axx;

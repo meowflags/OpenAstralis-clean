@@ -46,7 +46,7 @@ public class egf extends brc {
       a.eqw(a, new Object[]{a.dnp});
       String var10000 = a.toString();
       String[] var2 = b;
-      return fz.dvr(var10000, cni.fsi(var2[1]), cni.fsi(var2[0]));
+      return fz.dvr(var10000, Base64Util.fsi(var2[1]), Base64Util.fsi(var2[0]));
    }
 
    public int gkh() {

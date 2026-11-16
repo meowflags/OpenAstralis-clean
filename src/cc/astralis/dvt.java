@@ -66,7 +66,7 @@ public class dvt implements dlc {
       // 03: ldc2_w 129199266711853
       // 06: lxor
       // 07: lstore 1
-      // 08: invokestatic cc/astralis/dar.abu ()[I
+      // 08: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 0b: astore 3
       // 0c: invokestatic net/minecraft/class_310.method_1551 ()Lnet/minecraft/class_310;
       // 0f: invokevirtual net/minecraft/class_310.method_1478 ()Lnet/minecraft/class_3300;
@@ -116,7 +116,7 @@ public class dvt implements dlc {
       // 75: aload 7
       // 77: athrow
       // 78: astore 4
-      // 7a: getstatic cc/astralis/dar.ecj Lorg/slf4j/Logger;
+      // 7a: getstatic cc/astralis/ClientSetup.ecj Lorg/slf4j/Logger;
       // 7d: aload 4
       // 7f: invokevirtual java/lang/Exception.getMessage ()Ljava/lang/String;
       // 82: sipush 9443
@@ -170,7 +170,7 @@ public class dvt implements dlc {
 
    private static List<fv> bvb() {
       long a = dvt.a ^ 66863973077759L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       ArrayList ax = new ArrayList();
       int[] axx = var10000;
 
@@ -221,7 +221,7 @@ public class dvt implements dlc {
    // $VF: Duplicated exception handlers to handle obfuscated exceptions
    private static void ekv(File a, List<fv> a) {
       long ax = dvt.a ^ 24249824466416L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       File[] axx = a.listFiles();
       int[] axxx = var10000;
       File[] var14 = axx;

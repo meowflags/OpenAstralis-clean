@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.di;
 import cc.astralis.dk;
 import com.mojang.blaze3d.buffers.Std140Builder;
@@ -27,7 +27,7 @@ public abstract class MixinFogRenderer {
       ordinal = 0
    )
    private Vector4f modifyFogColor(Vector4f a, class_4184 a, int a, boolean a, class_9779 a, float a, class_638 a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
       if (ax != null && ax.dsv() && ax.eth.dnp()) {
          Color axx = ax.fct.dnp();
          return new Vector4f(axx.getRed() / 255.0F, axx.getGreen() / 255.0F, axx.getBlue() / 255.0F, 1.0F);
@@ -41,8 +41,8 @@ public abstract class MixinFogRenderer {
       at = {@At("TAIL")}
    )
    private void modifyFogDistance(class_4184 a, int a, boolean a, class_9779 a, float a, class_638 a, CallbackInfoReturnable<Vector4f> a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
-      di axx = dar.gqy().aws().diy(di.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
+      di axx = ClientSetup.gqy().aws().diy(di.class);
       class_7285 axxx = new class_7285();
       if (axx != null && axx.dsv() && axx.hdp.dnp()) {
          axxx.field_60583 = 10000.0F;
@@ -70,8 +70,8 @@ public abstract class MixinFogRenderer {
       )
    )
    private void redirectApplyFog(class_758 a, ByteBuffer a, int a, Vector4f a, float a, float a, float a, float a, float a, float a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
-      di axx = dar.gqy().aws().diy(di.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
+      di axx = ClientSetup.gqy().aws().diy(di.class);
       float axxx = a;
       float axxxx = a;
       float axxxxx = a;

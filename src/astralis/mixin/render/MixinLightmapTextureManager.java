@@ -1,7 +1,7 @@
 package astralis.mixin.render;
 
 import cc.astralis.bef;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import net.minecraft.class_7172;
 import net.minecraft.class_765;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +19,7 @@ public class MixinLightmapTextureManager {
       )
    )
    private Object update(class_7172 a) {
-      bef ax = dar.gqy().aws().diy(bef.class);
+      bef ax = ClientSetup.gqy().aws().diy(bef.class);
       return ax.dsv() ? 8.0 : a.method_41753();
    }
 }

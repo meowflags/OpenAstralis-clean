@@ -35,7 +35,7 @@ public class Freecam extends guu {
 
    public float czi(float currentFov) {
       long ax = Freecam.a ^ 45607865081044L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1755 != null) {

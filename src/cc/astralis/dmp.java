@@ -71,7 +71,7 @@ public class dmp {
 
    private static float[] adt(float... a) {
       long ax = dmp.a ^ 107827427960627L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = 0;
       int[] axxx = var10000;
 
@@ -97,7 +97,7 @@ public class dmp {
    }
 
    private static void bzp() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       Path var10000 = bqh;
       if (var2 != null) {
          if (bqh != null) {
@@ -114,8 +114,8 @@ public class dmp {
       Object var7;
       label29: {
          long ax = dmp.a ^ 12454729550107L;
-         int[] var10000 = dar.abu();
-         ezv axx = dar.gqy().aws().diy(ezv.class);
+         int[] var10000 = ClientSetup.abu();
+         ezv axx = ClientSetup.gqy().aws().diy(ezv.class);
          int[] axxx = var10000;
          boolean var6 = axx.dsv();
          if (axxx != null) {
@@ -173,14 +173,14 @@ public class dmp {
 
    public static void bfk(int width, int height) {
       long ax = dmp.a ^ 86167002798790L;
-      int[] axx = dar.abu();
-      dfw var10000 = dar.gqy().aws();
+      int[] axx = ClientSetup.abu();
+      ModuleManager var10000 = ClientSetup.gqy().aws();
       if (axx != null) {
          if (var10000 == null) {
             return;
          }
 
-         var10000 = dar.gqy().aws();
+         var10000 = ClientSetup.gqy().aws();
       }
 
       ezv axxx = var10000.diy(ezv.class);
@@ -227,7 +227,7 @@ public class dmp {
                      }
 
                      eel axxxx = new eel(a, a);
-                     dar.gqy().fyf().brx(axxxx);
+                     ClientSetup.gqy().fyf().brx(axxxx);
                      var11 = axxx.btt.dnp();
                      if (axx == null) {
                         break label91;
@@ -257,7 +257,7 @@ public class dmp {
 
             float axxxxx = dxk(((ImFloat)var10).floatValue());
             fxd.setImageFilter(ImageFilter.makeBlur(axxxxx, axxxxx, FilterTileMode.CLAMP));
-            Image axxxxxx = dar.gqy().bav().adw();
+            Image axxxxxx = ClientSetup.gqy().bav().adw();
             gex.drawImageRect(axxxxxx, Rect.makeXYWH(0.0F, 0.0F, dxk(axxxxxx.getWidth()), dxk(axxxxxx.getHeight())), fxd);
             bzg();
          }
@@ -272,7 +272,7 @@ public class dmp {
       label21: {
          long ax = dmp.a ^ 118630354419613L;
          a = dxk(a);
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          a = dxk(a);
          int[] axx = var10000;
          a = dxk(a);
@@ -470,7 +470,7 @@ public class dmp {
    public static Rect gpf(float x1, float y1, float x2, float y2) {
       long ax = dmp.a ^ 30588663345959L;
       float axx = Math.min(a, a);
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axxx = Math.max(a, a);
       float axxxx = Math.min(a, a);
       int[] axxxxx = var10000;
@@ -507,7 +507,7 @@ public class dmp {
 
    public static void dzr(float x, float y, float w, float h, Image image, Color tint) {
       long ax = dmp.a ^ 101390462154759L;
-      int[] var8 = dar.abu();
+      int[] var8 = ClientSetup.abu();
       if (var8 != null) {
          if (a != null) {
             enz.setColorFilter(ColorFilter.makeBlend(a.getRGB(), BlendMode.SRC_ATOP));

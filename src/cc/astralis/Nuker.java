@@ -73,7 +73,7 @@ public class Nuker extends guu {
    @Override
    public void frg() {
       long a = Nuker.a ^ 117243917036864L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       if (var3 != null) {
          gcs var10000;
          label65: {
@@ -141,7 +141,7 @@ public class Nuker extends guu {
       class_2596 var6;
       label58: {
          long axx = Nuker.a ^ 91257612064151L;
-         ax = dar.abu();
+         ax = ClientSetup.abu();
          boolean var10000 = a.gdd.dsv;
          if (ax != null) {
             if (!a.gdd.dsv) {
@@ -201,7 +201,7 @@ public class Nuker extends guu {
    @gdz
    public void dao(fnt event) {
       long ax = Nuker.a ^ 45179422147563L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.cud() != gpy.POST) {
          class_310 var10000 = chi;
          if (axx != null) {
@@ -471,7 +471,7 @@ public class Nuker extends guu {
 
    private void ham(class_2338 a, boolean a) {
       long ax = Nuker.a ^ 128121266005640L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -587,7 +587,7 @@ public class Nuker extends guu {
 
    private void fkj(class_2338 a, boolean a) {
       long ax = Nuker.a ^ 65597726125656L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a != null) {
          class_310 var10000 = chi;
          if (axx != null) {
@@ -665,7 +665,7 @@ public class Nuker extends guu {
    private class_2338 bcm(class_2338 a, int a) {
       long ax = Nuker.a ^ 122153907694199L;
       class_2338 axx = null;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double axxx = Double.MAX_VALUE;
       int[] axxxx = var10000;
       int axxxxx = -a;
@@ -758,7 +758,7 @@ public class Nuker extends guu {
 
    private class_2338 axa(class_2338 a, class_2338 a) {
       long ax = Nuker.a ^ 5064342350702L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_2338[] var10001 = new class_2338[e<"f">(3000, 7627687406845998569L ^ ax)];
       var10001[0] = a.method_10084();
       var10001[1] = a.method_10095();
@@ -886,7 +886,7 @@ public class Nuker extends guu {
 
    private void enn(class_2338 a) {
       long ax = Nuker.a ^ 134604357294357L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -983,7 +983,7 @@ public class Nuker extends guu {
 
    private void ejp(class_3965 a) {
       long ax = Nuker.a ^ 64513601166101L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_2350 axx = a.method_17780();
       class_2338 axxx = a.method_17777();
       int[] axxxx = var10000;
@@ -1001,7 +1001,7 @@ public class Nuker extends guu {
 
    private boolean cll(class_2338 a) {
       long ax = Nuker.a ^ 127331631792200L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       boolean var10000 = chi.field_1687.method_8320(a.method_10084()).method_26215();
       if (axx != null) {
          if (!var10000) {

@@ -41,7 +41,7 @@ public class HitMarker extends guu {
    public void hdo(eih event) {
       label26: {
          long ax = HitMarker.a ^ 95335315014646L;
-         int[] axx = dar.abu();
+         int[] axx = ClientSetup.abu();
          boolean var10000 = chi.field_1724.method_24828();
          if (axx != null) {
             if (!var10000) {
@@ -72,7 +72,7 @@ public class HitMarker extends guu {
    @gdz
    public void esu(bsm event) {
       long ax = HitMarker.a ^ 137140300897637L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator axx = a.eoa.iterator();
       int[] axxx = var10000;
 

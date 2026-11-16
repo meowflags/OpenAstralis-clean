@@ -1,7 +1,7 @@
 package astralis.mixin.render;
 
 import cc.astralis.ag;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dfr;
 import net.minecraft.class_1041;
 import net.minecraft.class_310;
@@ -17,7 +17,7 @@ public class MixinWindow {
       at = {@At("RETURN")}
    )
    private void onFramebufferSizeChanged(long a, int a, int a, CallbackInfo a) {
-      dar.gqy().bav().dxy(a > 0 ? a : 1, a > 0 ? a : 1);
+      ClientSetup.gqy().bav().dxy(a > 0 ? a : 1, a > 0 ? a : 1);
    }
 
    @Inject(
@@ -25,7 +25,7 @@ public class MixinWindow {
       at = {@At("HEAD")}
    )
    private void onSwapBuffers(CallbackInfo a) {
-      ag ax = dar.gqy().bav();
+      ag ax = ClientSetup.gqy().bav();
       ax.gao();
 
       try {

@@ -71,7 +71,7 @@ public class Nametags extends guu {
    @gdz
    public void cal(ctt event) {
       long ax = Nametags.a ^ 78224763792940L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.method_1561().field_4686 == null) {
@@ -267,7 +267,7 @@ public class Nametags extends guu {
             float axxxxxxxx = (float)axxxx.z;
             float axxxxxxxxx = (float)axxxx.w;
             String var51 = a.gco.dnp();
-            fll axxxxxxxxxx = bxc.emc(var51, 9);
+            fll axxxxxxxxxx = FontManager.emc(var51, 9);
             float axxxxxxxxxxx = (axxxxxx + axxxxxxxx) / 2.0F;
             float axxxxxxxxxxxx = axxxxxxx - 10.0F;
             class_1309 axxxxxxxxxxxxx = (class_1309)axxx;
@@ -293,7 +293,7 @@ public class Nametags extends guu {
                      break label149;
                   }
 
-                  var10000 = dar.gqy().aws().diy(Glow.class);
+                  var10000 = ClientSetup.gqy().aws().diy(Glow.class);
                }
 
                Glow axxxxxxxxxxxxxxxxxxxxx = (Glow)var10000;
@@ -335,7 +335,7 @@ public class Nametags extends guu {
 
    private class_124 dak(float a) {
       long ax = Nametags.a ^ 110634512394943L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       float var5;
       int var10000 = (var5 = a - 0.6F) == 0.0F ? 0 : (var5 < 0.0F ? -1 : 1);
       if (var4 != null) {

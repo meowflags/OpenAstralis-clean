@@ -34,7 +34,7 @@ public enum bdq {
 
    public static bdq bys(String name) {
       bdq[] var7 = values();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int var10001 = bfi();
       int var8 = var7.length;
       int axxx = var10001;
@@ -289,7 +289,7 @@ public enum bdq {
    }
 
    public static int bfi() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = bdi();
       int var10000 = var3;
       if (var2 != null) {

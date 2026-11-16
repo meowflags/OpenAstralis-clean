@@ -104,7 +104,7 @@ public class Scaffold extends guu {
    public final cbm eat;
    private float[] gpi;
    private int hek;
-   private aqy hil;
+   private aqy SpeedMush;
    private boolean hjm;
    private static int[] bd;
    private static final long a = 109583705240673L;
@@ -119,7 +119,7 @@ public class Scaffold extends guu {
    public Scaffold() {
       long a = Scaffold.a ^ 12973103487419L;
       super(bfm.MOVEMENT);
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String[] var169 = new String[4];
       var169[0] = "Normal";
       var169[1] = "Modern Watchdog";
@@ -145,9 +145,9 @@ public class Scaffold extends guu {
       a.fpf = new gbp("Sprint On Jump", false);
       a.bza = new gbp("Sprint", false);
       a.epf = new gbp("Change FOV", false);
-      a.gdh = new cyx("Sprint Mode", new ecs(a), new arx(a), new dkm(a));
+      a.gdh = new cyx("Sprint Mode", new ScaffoldVanilla2(a), new ScaffoldModernWatchdog(a), new ScaffoldIntave(a));
       a.gez = new gbp("Tower", false);
-      a.cuw = new cyx("Tower Mode", new cgw(a), new bgl(a));
+      a.cuw = new cyx("Tower Mode", new ScaffoldWatchdogVanilla(a), new ScaffoldVanilla(a));
       a.czw = new gbp("No Off Hand check", true);
       a.gso = new gbp("Block Counter", true);
       String[] var161 = new String[2];
@@ -268,7 +268,7 @@ public class Scaffold extends guu {
       var4[29] = a.hfi.bih(a.esl::dnp);
       var4[30] = a.aof.bih(() -> {
          long ax = Scaffold.a ^ 13125369025572L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          short var10001x = 18203;
          long var10002x = 8473884395555587481L ^ ax;
          boolean var10000x = a.hfi.emb("Intave");
@@ -280,7 +280,7 @@ public class Scaffold extends guu {
       });
       var4[31] = a.dgy.bih(() -> {
          long ax = Scaffold.a ^ 88191224945843L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          short var10001x = 18203;
          long var10002x = 8473825255495224590L ^ ax;
          boolean var10000x = a.hfi.emb("Intave");
@@ -292,7 +292,7 @@ public class Scaffold extends guu {
       });
       var4[32] = a.aba.bih(() -> {
          long ax = Scaffold.a ^ 33248483775458L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          short var10001x = 17758;
          long var10002x = 5268222821387649071L ^ ax;
          boolean var10000x = a.hfi.emb("Modern Watchdog");
@@ -312,7 +312,7 @@ public class Scaffold extends guu {
       });
       var4[33] = a.cci.bih(() -> {
          long ax = Scaffold.a ^ 57955359090107L;
-         int[] var3x = dar.abu();
+         int[] var3x = ClientSetup.abu();
          short var10001x = 17758;
          long var10002x = 5268180457919166070L ^ ax;
          boolean var10000x = a.hfi.emb("Modern Watchdog");
@@ -350,7 +350,7 @@ public class Scaffold extends guu {
          int[] var3;
          label47: {
             long a = Scaffold.a ^ 115192212698534L;
-            var3 = dar.abu();
+            var3 = ClientSetup.abu();
             Object var10000 = chi.field_1724;
             if (var3 != null) {
                if (chi.field_1724 != null) {
@@ -406,7 +406,7 @@ public class Scaffold extends guu {
    @Override
    public void frg() {
       long a = Scaffold.a ^ 105951340897013L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       Object var10000 = chi.field_1724;
       if (var3 != null) {
          if (chi.field_1724 != null) {
@@ -450,7 +450,7 @@ public class Scaffold extends guu {
    @gdz
    public void dig(etk event) {
       long ax = Scaffold.a ^ 114416202490459L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (var4 != null) {
          if (!a.bza.dnp()) {
             chi.field_1724.method_5728(false);
@@ -470,7 +470,7 @@ public class Scaffold extends guu {
                long ax;
                label110: {
                   ax = Scaffold.a ^ 11603565930606L;
-                  var4 = dar.abu();
+                  var4 = ClientSetup.abu();
                   Object var10000 = a.cud();
                   if (var4 != null) {
                      if (var10000 != gpy.POST) {
@@ -528,7 +528,7 @@ public class Scaffold extends guu {
                   var7 = a.bdd.dnp();
                   if (var4 != null) {
                      if (var7 == 0) {
-                        var7 = dar.gqy().aws().diy(Speed.class).dsv();
+                        var7 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
                         if (var4 == null) {
                            break label77;
                         }
@@ -580,7 +580,7 @@ public class Scaffold extends guu {
       label160: {
          label163: {
             ax = Scaffold.a ^ 16075841959500L;
-            int[] var10000 = dar.abu();
+            int[] var10000 = ClientSetup.abu();
             chi.field_1690.field_1886.method_23481(false);
             chi.field_1690.field_1904.method_23481(false);
             axx = var10000;
@@ -738,7 +738,7 @@ public class Scaffold extends guu {
    @gdz
    public void dnw(eih event) {
       long ax = Scaffold.a ^ 130677418956617L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       boolean var10000 = chi.field_1690.field_1903.method_1434();
       if (var4 != null) {
          if (var10000) {
@@ -839,7 +839,7 @@ public class Scaffold extends guu {
    @gdz
    public void czx(bsm event) {
       long ax = Scaffold.a ^ 15714748086590L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       Scaffold var10000 = a;
       if (var4 != null) {
          if (!a.dhl.dnp()) {
@@ -863,14 +863,14 @@ public class Scaffold extends guu {
 
       class_4587 var5 = a.bus();
       class_238 var10001 = new class_238(a.fdv.emb("Accurate") ? a.adx : (evd.dbj() ? a.adx.method_10093(chi.field_1724.method_5755()) : a.adx.method_10084()));
-      Color var10002 = dar.gqy().deo();
+      Color var10002 = ClientSetup.gqy().deo();
       bqf.hjf(var5, var10001, var10002, 50);
    }
 
    @gdz
    public void bjy(ctt event) {
       long ax = Scaffold.a ^ 105764698656053L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.gso.dnp()) {
          float axxx;
          float axxxx;
@@ -919,7 +919,7 @@ public class Scaffold extends guu {
                float axxxxxxxxxxxx = acy.eq("Blocks");
                float axxxxxxxxxxxxx = ahh.eq(axxxxx);
                float axxxxxxxxxxxxxx = axxx - (axxxxxxxxxxxxx + 2.0F + axxxxxxxxxxxx) / 2.0F;
-               ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, dar.gqy().deo());
+               ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, ClientSetup.gqy().deo());
                acy.aof("Blocks", axxxxxxxxxxxxxx + axxxxxxxxxxxxx + 2.0F, axxxx, Color.white);
                if (axx != null) {
                   break;
@@ -933,7 +933,7 @@ public class Scaffold extends guu {
                float var19 = axxxxxxxxxx - 3.0F;
                float var29 = axxxxxxxxx + 6.0F;
                dmp.cpp(var19, axxxx, var29, 15.0F, 3.0F, dec.ceu(Color.black, 150));
-               bsf.aof(axxxxx, axxxxxxxxxx, axxxxxxxxxxx, dar.gqy().deo());
+               bsf.aof(axxxxx, axxxxxxxxxx, axxxxxxxxxxx, ClientSetup.gqy().deo());
                ety.aof("Blocks", axxxxxxxxxx + axxxxxxxx + 2.0F, axxxxxxxxxxx, Color.white);
          }
       }
@@ -941,7 +941,7 @@ public class Scaffold extends guu {
 
    private void gsj() {
       long a = Scaffold.a ^ 1645893413115L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       fux[] ax = amg.fww(a.czw.dnp());
       int[] axx = var10000;
       int var7 = ax.length;
@@ -984,7 +984,7 @@ public class Scaffold extends guu {
                         var10001 = a.bdd.dnp();
                         if (axx != null) {
                            if (var10001 == 0) {
-                              var10001 = dar.gqy().aws().diy(Speed.class).dsv();
+                              var10001 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
                               if (axx == null) {
                                  break label201;
                               }
@@ -1141,7 +1141,7 @@ public class Scaffold extends guu {
 
    public static float fuk(float f) {
       long ax = Scaffold.a ^ 84226634279081L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a %= 90.0F;
       int[] var3 = var10000;
       float var7;
@@ -1173,7 +1173,7 @@ public class Scaffold extends guu {
       short var10001;
       label985: {
          a = Scaffold.a ^ 139167474333626L;
-         ax = dar.abu();
+         ax = ClientSetup.abu();
          var10000 = chi.field_1724.method_36454() - a.bld.dnp().floatValue();
          var10001 = chi.field_1690.field_1849.method_1434();
          if (ax != null) {
@@ -1637,7 +1637,7 @@ public class Scaffold extends guu {
                            var78 = a.hba;
                         }
 
-                        float[] axxxxxxxxxxxxxxxxxxxxxxxxx = eze(var78.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                        float[] axxxxxxxxxxxxxxxxxxxxxxxxx = SpeedMMC(var78.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
                         axxx = axxxxxxxxxxxxxxxxxxxxxxxxx[1];
                         return new float[]{axxxx, axxx};
                      case 2:
@@ -2085,7 +2085,7 @@ public class Scaffold extends guu {
                         var63 = chi.field_1690.field_1903.method_1434();
                         if (ax != null) {
                            if (var63 != 0) {
-                              return eze(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                              return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
                            }
 
                            var63 = amg.gmi(chi.field_1724.method_24515());
@@ -2101,11 +2101,11 @@ public class Scaffold extends guu {
                         }
 
                         if (ax == null) {
-                           return eze(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                           return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
                         }
 
                         if (a.hba != null) {
-                           return eze(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+                           return SpeedMMC(a.hba.dnc.method_10263(), a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
                         }
                      default:
                         if (ax != null) {
@@ -2135,7 +2135,7 @@ public class Scaffold extends guu {
       return var79;
    }
 
-   public static float[] eze(double x, double y, double z, class_2350 direction) {
+   public static float[] SpeedMMC(double x, double y, double z, class_2350 direction) {
       long ax = Scaffold.a ^ 77659228772320L;
       class_638 axx = chi.field_1687;
       if (axx == null) {
@@ -2165,7 +2165,7 @@ public class Scaffold extends guu {
 
    private void fuf() {
       long a = Scaffold.a ^ 131201626064356L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       if (a.euu.dnp()) {
          class_304 var10000 = chi.field_1690.field_1832;
          float var4;
@@ -2180,7 +2180,7 @@ public class Scaffold extends guu {
 
    private void boi(etk a) {
       long ax = Scaffold.a ^ 19025279213700L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       Scaffold var10000 = a;
       if (axx != null) {
          label249:
@@ -2207,7 +2207,7 @@ public class Scaffold extends guu {
                   break label249;
                }
 
-               var8 = dar.gqy().aws().diy(Speed.class).dsv();
+               var8 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
             }
 
             if (axx != null) {
@@ -2416,7 +2416,7 @@ public class Scaffold extends guu {
       label38: {
          label40: {
             long a = Scaffold.a ^ 109687426923737L;
-            int[] var3 = dar.abu();
+            int[] var3 = ClientSetup.abu();
             boolean var10000 = a.gez.dnp();
             if (var3 != null) {
                if (var10000) {
@@ -2459,7 +2459,7 @@ public class Scaffold extends guu {
       int[] a;
       int var6;
       long ax = Scaffold.a ^ 131098510183973L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var4 = a.aqg.dnp();
       a = var10000;
       byte var5 = -1;
@@ -2526,7 +2526,7 @@ public class Scaffold extends guu {
       label123: {
          label126: {
             a = Scaffold.a ^ 47040505262308L;
-            ax = dar.abu();
+            ax = ClientSetup.abu();
             var10000 = a.hfi.emb("Modern Watchdog");
             if (ax != null) {
                if (!var10000) {
@@ -2573,7 +2573,7 @@ public class Scaffold extends guu {
                var10000 = a.hba.dnc.method_10263();
             }
 
-            float[] axxxxx = eze(var10000, a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
+            float[] axxxxx = SpeedMMC(var10000, a.hba.dnc.method_10264(), a.hba.dnc.method_10260(), a.hba.aoc);
             axxx = axxxxx[0];
          }
 
@@ -2649,7 +2649,7 @@ public class Scaffold extends guu {
 
    private boolean ddd() {
       long a = Scaffold.a ^ 81548417848521L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       class_239 var10000 = chi.field_1765;
       if (ax != null) {
          if (chi.field_1765 == null) {
@@ -2690,7 +2690,7 @@ public class Scaffold extends guu {
 
    private class_243 dri() {
       long a = Scaffold.a ^ 95257378059904L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       aqy var10000 = a.hba;
       if (ax != null) {
          if (a.hba == null) {
@@ -2783,7 +2783,7 @@ public class Scaffold extends guu {
    private int dtm() {
       long a = Scaffold.a ^ 132750061608338L;
       int ax = 0;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int axx = 0;
       int[] axxx = var10000;
 

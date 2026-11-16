@@ -42,7 +42,7 @@ public class aki extends brc {
       JsonObject a = a.fdo();
       String var10000 = a.toString();
       String[] var2 = b;
-      return fz.dvr(var10000, cni.fsi(var2[1]), cni.fsi(var2[2]));
+      return fz.dvr(var10000, Base64Util.fsi(var2[1]), Base64Util.fsi(var2[2]));
    }
 
    public long gy() {

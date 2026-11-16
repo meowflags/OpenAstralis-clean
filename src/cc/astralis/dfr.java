@@ -16,7 +16,7 @@ public class dfr {
 
    public static void dsv() {
       long a = dfr.a ^ 41083207471392L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       Queue var10000 = cjw;
       if (ax != null) {
          if (cjw.isEmpty()) {

@@ -45,7 +45,7 @@ public class AutoQueue extends guu {
    @gdz
    public void bdq(fmj event) {
       long ax = AutoQueue.a ^ 44942172487315L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       if (var4 != null) {
          if (!a.ghu.dnp()) {
             return;
@@ -59,7 +59,7 @@ public class AutoQueue extends guu {
    @gdz
    public void bha(amo packetEvent) {
       long ax = AutoQueue.a ^ 132500186647771L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.gov.dnp()) {
          class_2596 axxx = a.bed();
          class_2596 var10000 = axxx;

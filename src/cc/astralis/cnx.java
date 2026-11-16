@@ -19,7 +19,7 @@ import javax.crypto.spec.IvParameterSpec;
 
 public class cnx extends cec {
    private static final List<en> cyi;
-   private final List<Runnable> ewc = new ArrayList<>();
+   private final List<Runnable> SpeedStrafe = new ArrayList<>();
    private static final long a = 15955583874397L;
    private static final long[] c;
    private static final Integer[] d;
@@ -32,8 +32,8 @@ public class cnx extends cec {
    @gdz
    public void bbv(ctt event) {
       long ax = cnx.a ^ 135503268901991L;
-      int[] axx = dar.abu();
-      int var10000 = ((dtc)dar.gqy().aws().diy(dtc.class)).dsv();
+      int[] axx = ClientSetup.abu();
+      int var10000 = ((dtc)ClientSetup.gqy().aws().diy(dtc.class)).dsv();
       if (axx != null) {
          if (var10000 == 0) {
             return;
@@ -76,7 +76,7 @@ public class cnx extends cec {
    @gdz
    public void afj(eel event) {
       long ax = cnx.a ^ 49038848126200L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       Iterator var5 = a.ewc.iterator();
       int[] axx = var10000;
 

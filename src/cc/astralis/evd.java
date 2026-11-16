@@ -49,7 +49,7 @@ public class evd implements dlc {
    public static float esw(float inputYaw, boolean keys) {
       long ax = evd.a ^ 36939254575617L;
       class_241 axx = chi.field_1724.field_3913.method_3128();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axxx = a;
       float axxxx = 1.0F;
       int[] axxxxx = var10000;
@@ -126,7 +126,7 @@ public class evd implements dlc {
    public static void dek(double speed) {
       label20: {
          long ax = evd.a ^ 90385851608168L;
-         int[] var4 = dar.abu();
+         int[] var4 = ClientSetup.abu();
          if (var4 != null) {
             if (!dbj()) {
                break label20;
@@ -146,7 +146,7 @@ public class evd implements dlc {
    public static void fdo(elx event, double speed) {
       label20: {
          long ax = evd.a ^ 57639617733804L;
-         int[] var5 = dar.abu();
+         int[] var5 = ClientSetup.abu();
          if (var5 != null) {
             if (!dbj()) {
                break label20;
@@ -165,7 +165,7 @@ public class evd implements dlc {
    }
 
    public static boolean bpi() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       double var3;
       int var10000 = (var3 = Math.abs(chi.field_1724.method_18798().field_1352) - 0.05) == 0.0 ? 0 : (var3 < 0.0 ? -1 : 1);
       if (var2 != null) {
@@ -194,7 +194,7 @@ public class evd implements dlc {
             label72: {
                label78: {
                   long axxx = evd.a ^ 29236538067373L;
-                  int[] var10000 = dar.abu();
+                  int[] var10000 = ClientSetup.abu();
                   ax = false;
                   a = var10000;
                   var6 = chi.field_1724.method_5799();
@@ -269,7 +269,7 @@ public class evd implements dlc {
 
    public static float cqz(float noSpeed, float speed1, float speed2) {
       long ax = evd.a ^ 52409091187391L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = a;
       Iterator var7 = chi.field_1724.method_6026().iterator();
       int[] axxx = var10000;
@@ -317,7 +317,7 @@ public class evd implements dlc {
 
    public static boolean dbj() {
       long a = evd.a ^ 30313913434226L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_241 ax = chi.field_1724.field_3913.method_3128();
       int[] axx = var10000;
       float var5;
@@ -343,7 +343,7 @@ public class evd implements dlc {
 
    public static boolean h() {
       long a = evd.a ^ 33337616659455L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_241 ax = chi.field_1724.field_3913.method_3128();
       int[] axx = var10000;
       float var5;
@@ -369,7 +369,7 @@ public class evd implements dlc {
 
    public static double cvw(double motion, int ticks) {
       long ax = evd.a ^ 105598844981284L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a == 0) {
          return a;
       } else {
@@ -407,7 +407,7 @@ public class evd implements dlc {
 
    public static double eve(float rotationYaw, double moveForward, double moveStrafing) {
       long ax = evd.a ^ 17065728863583L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a < 0.0) {
          a += 180.0F;
       }
@@ -475,7 +475,7 @@ public class evd implements dlc {
       long a = evd.a ^ 102819842943839L;
       boolean ax = chi.field_1690.field_1894.method_1434();
       boolean axx = chi.field_1690.field_1913.method_1434();
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       boolean axxx = chi.field_1690.field_1849.method_1434();
       int[] axxxx = var10000;
       boolean var6 = ax;

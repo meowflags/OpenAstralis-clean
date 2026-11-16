@@ -28,7 +28,7 @@ public class ftb {
 
    public static boolean coi(float num1, float num2, int maxDifference) {
       long ax = ftb.a ^ 72291231970998L;
-      int[] var5 = dar.abu();
+      int[] var5 = ClientSetup.abu();
       float var6;
       int var10000 = (var6 = Math.abs(a - a) - a) == 0.0F ? 0 : (var6 < 0.0F ? -1 : 1);
       if (var5 != null) {
@@ -40,7 +40,7 @@ public class ftb {
 
    public static double gnl(double value) {
       long ax = ftb.a ^ 103100695843881L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a %= 360.0;
       int[] var4 = var10000;
       double var8;

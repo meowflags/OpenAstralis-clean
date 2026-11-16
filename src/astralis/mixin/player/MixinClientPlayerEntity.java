@@ -5,7 +5,7 @@ import cc.astralis.ajd;
 import cc.astralis.aky;
 import cc.astralis.cdr;
 import cc.astralis.cxq;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.dqq;
 import cc.astralis.eih;
@@ -73,7 +73,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
    )
    public void tick(CallbackInfo info) {
       fxx ax = new fxx();
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       if (ax.fmc()) {
          a.cancel();
       }
@@ -89,7 +89,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
    )
    private class_243 hookMove(class_243 a, class_1313 a) {
       elx ax = new elx(a, a.field_1352, a.field_1351, a.field_1350);
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       return ax.fmc() ? class_243.field_1353 : new class_243(ax.gch(), ax.cqr(), ax.bug());
    }
 
@@ -102,7 +102,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
    )
    private boolean onItemSlowdown(class_746 a) {
       fyx ax = new fyx();
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       return !ax.fmc() && a.method_6115();
    }
 
@@ -115,7 +115,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
    )
    public boolean canStartSprinting(class_746 clientPlayerEntity) {
       fyx ax = new fyx();
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       return ax.fmc() ? false : a.method_6115();
    }
 
@@ -127,7 +127,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
    )
    private float modifyItemUseSlowdown(float a) {
       fyx ax = new fyx();
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       return ax.fmc() ? ax.fpk() : a;
    }
 
@@ -141,7 +141,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
       )}
    )
    private void hookSprintingTickEndEvent(CallbackInfo a) {
-      dar.gqy().fyf().brx(new aky());
+      ClientSetup.gqy().fyf().brx(new aky());
    }
 
    @Redirect(
@@ -153,7 +153,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
    )
    private boolean hookSprintingSendEvent(class_746 a) {
       cxq ax = new cxq(a.method_5624());
-      dar.gqy().fyf().brx(ax);
+      ClientSetup.gqy().fyf().brx(ax);
       return ax.fmc() ? ((ClientPlayerEntityAccessor)chi.field_1724).getLastSprinting() : ax.fco();
    }
 
@@ -170,7 +170,7 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
       a.positionSendEvent = new eih(
          ax.method_23317(), ax.method_23318(), ax.method_23321(), axx ? dqq.ev() : ax.method_36454(), axx ? dqq.czi() : ax.method_36455(), ax.method_24828()
       );
-      dar.gqy().fyf().brx(a.positionSendEvent);
+      ClientSetup.gqy().fyf().brx(a.positionSendEvent);
       if (a.positionSendEvent.fmc()) {
          a.cancel();
       }
@@ -247,6 +247,6 @@ public abstract class MixinClientPlayerEntity extends class_742 implements dlc {
       at = {@At("TAIL")}
    )
    private void hookPositionSendEndEvent(CallbackInfo a) {
-      dar.gqy().fyf().brx(new ajd());
+      ClientSetup.gqy().fyf().brx(new ajd());
    }
 }

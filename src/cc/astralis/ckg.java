@@ -41,7 +41,7 @@ public class ckg extends fig {
       a.dmy = new erp(dtw.EASE_IN_OUT_QUAD, f);
       a.cxl = true;
       a.btb = false;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.dty = a;
       int[] axx = var10000;
       a.hif = a;
@@ -61,7 +61,7 @@ public class ckg extends fig {
       int[] axx;
       label139: {
          ax = ckg.a ^ 6065496822340L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          Color axxx = new Color(30, 30, 30);
          axx = var10000;
          ckg var14 = a;
@@ -76,7 +76,7 @@ public class ckg extends fig {
             var14 = a;
          }
 
-         dmp.dyl(var14.hjg(), a.dtt(), a.av(), a.gqc(), dar.gqy().deo(), dar.gqy().cxj(), false);
+         dmp.dyl(var14.hjg(), a.dtt(), a.av(), a.gqc(), ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false);
       }
 
       Color axxx = new Color(245, 245, 245);
@@ -219,7 +219,7 @@ public class ckg extends fig {
 
       dmp.abh(var20, var10001, a.av(), a, () -> {
          long ax = ckg.a ^ 133640739532297L;
-         int[] var10000x = dar.abu();
+         int[] var10000x = ClientSetup.abu();
          float var10001x = a.hjg();
          float var10002x = a[0];
          float var10003x = a.av();
@@ -257,7 +257,7 @@ public class ckg extends fig {
    @Override
    public void apy(double mouseX, double mouseY, int button) {
       long ax = ckg.a ^ 127353522042544L;
-      int[] var8 = dar.abu();
+      int[] var8 = ClientSetup.abu();
       int var10000 = a.dfv;
       if (var8 != null) {
          if (a.dfv) {
@@ -331,7 +331,7 @@ public class ckg extends fig {
                label36: {
                   label35: {
                      long axx = ckg.a ^ 80695596132285L;
-                     int[] var10000 = dar.abu();
+                     int[] var10000 = ClientSetup.abu();
                      Objects.requireNonNull(a);
                      ax = var10000;
                      var10000 = (int[])a;
@@ -361,7 +361,7 @@ public class ckg extends fig {
                   }
 
                   adu axxx = (adu)a;
-                  a.ais.add(new gsu(axxx));
+                  a.ais.add(new ProductSansRegular(axxx));
                   if (ax != null) {
                      return;
                   }
@@ -388,7 +388,7 @@ public class ckg extends fig {
          }
       }
 
-      dar.ecj.error(b + a.fah());
+      ClientSetup.ecj.error(b + a.fah());
    }
 
    public guu fhm() {

@@ -45,7 +45,7 @@ public class SpeedMine extends guu {
    @gdz
    public void bmj(fxx event) {
       long ax = SpeedMine.a ^ 18228237445537L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1761 == null) {

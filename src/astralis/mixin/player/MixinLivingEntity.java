@@ -2,7 +2,7 @@ package astralis.mixin.player;
 
 import cc.astralis.bma;
 import cc.astralis.cxx;
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dlc;
 import cc.astralis.dqq;
 import cc.astralis.edr;
@@ -93,7 +93,7 @@ public abstract class MixinLivingEntity extends class_1297 implements cxx {
    private float redirectYRotForMoveFix(class_1309 a) {
       if (a == class_310.method_1551().field_1724) {
          goc ax = new goc(a.method_36454());
-         dar.gqy().fyf().brx(ax);
+         ClientSetup.gqy().fyf().brx(ax);
          return ax.hio();
       } else {
          return a.method_36454();
@@ -107,7 +107,7 @@ public abstract class MixinLivingEntity extends class_1297 implements cxx {
       )}
    )
    private int modifyHandSwingDuration(int a) {
-      bma ax = dar.gqy().aws().diy(bma.class);
+      bma ax = ClientSetup.gqy().aws().diy(bma.class);
       return ax.dsv() ? (int)((double)a / ax.fql.dnp().floatValue()) : a;
    }
 
@@ -168,7 +168,7 @@ public abstract class MixinLivingEntity extends class_1297 implements cxx {
       cancellable = true
    )
    private void onPushAwayFrom(class_1297 a, CallbackInfo a) {
-      edr ax = dar.gqy().aws().diy(edr.class);
+      edr ax = ClientSetup.gqy().aws().diy(edr.class);
       if (ax.dsv() && ax.fup.dnp()) {
          a.cancel();
       }

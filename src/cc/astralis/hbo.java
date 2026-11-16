@@ -55,7 +55,7 @@ public class hbo implements ago {
    @Override
    public JsonObject dpp() {
       long a = b ^ 133664549034906L;
-      int[] var9 = dar.abu();
+      int[] var9 = ClientSetup.abu();
       int[] var11 = gfb();
       JsonObject axx = new JsonObject();
       int[] axxx = var11;
@@ -88,7 +88,7 @@ public class hbo implements ago {
       Object axx;
       label67: {
          ax = b ^ 71618489369922L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          int[] axxxx = var10000;
          var10000 = gfb();
          axx = new JsonObject();

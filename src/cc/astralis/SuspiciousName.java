@@ -44,7 +44,7 @@ public class SuspiciousName extends guu {
       a.bwv = new gbp("Send Chat message", false);
       a.gfh = new gbp("Send Notification", false);
       a.esz = new gbp("Alert if Suspicious Name", true);
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String[] var10002 = new String[4];
       var10002[0] = "Mikan_";
       var10002[1] = "tzi_";
@@ -58,7 +58,7 @@ public class SuspiciousName extends guu {
       a.ezd = new HashMap<>();
       a.bfi(new ffn[]{a.gfh, a.bwv, a.esz});
 
-      for (fwu axx : List.of(new get(), new csy(), new cgk(), new cyn())) {
+      for (fwu axx : List.of(new AutoBlockMode(), new csy(), new ScaffoldMode(), new PredictionMode())) {
          a.dmq.put(axx.bmv(), axx);
          if (ax == null) {
             break;
@@ -76,7 +76,7 @@ public class SuspiciousName extends guu {
    @gdz
    public void cjn(eih event) {
       long ax = SuspiciousName.a ^ 8715781592457L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_638 var10000 = chi.field_1687;
       if (axx != null) {
          if (chi.field_1687 == null) {

@@ -246,7 +246,43 @@ python tools/strip_zkm_residue.py src   # repetir hasta que quite 0
 ```
 
 Resultado: **7.474 líneas muertas** en 319 de los 518 ficheros. Los splices de
-`dar.abu()`, el runtime de descifrado de cadenas y las 55 llamadas sin plegar
-quedan intactos — el pase solo toca tiendas puras a locales no leídas.
+`ClientSetup.abu()`, el runtime de descifrado de cadenas y las 55 llamadas sin
+plegar quedan intactos — el pase solo toca tiendas puras a locales no leídas.
+
+
+## 12. Nombres inferidos para las clases renombradas
+
+Los 449 ficheros de `src/cc/astralis/` conservan el nombre corto de ZKM salvo
+los 74 módulos ya probados. El resto se puede nombrar con evidencia propia:
+cada clase del cliente lleva plegadas sus propias cadenas de UI, y las
+familias estructurales dan el rol. `tools/infer_names.py` vuelca la tabla de
+evidencia (superclase, interfaces, `class_*` de Minecraft referenciados,
+literales) y emite un borrador con cuatro reglas:
+
+- singletons y pantallas curadas: el nombre sale de sus cadenas distintivas
+  ("Alt Manager", "Enter UID", "Reinitializing all fonts") — confianza high;
+- pantallas (`extends class_437`) y modos de predicción (`extends fwu`):
+  literal de display + sufijo de rol (`DropdownScreen`, `PredictionMode`);
+- comandos (`extends fso`): el verbo, el literal corto no-runtime
+  (`vclip` → `VclipCommand`);
+- modos de movimiento (`extends hcr`): literal de display prefijado con el
+  módulo que los registra (`Speed` + `Watchdog` → `SpeedWatchdog`).
+
+Los literales que pertenecen al runtime de descifrado (`DES/CBC`,
+`PKCS5Padding`, `ISO-8859-1`), a mensajes de excepción ("must not be null") o
+que son blobs cifrados se descartan como fuente de nombres. Las etiquetas de
+ajustes de los 17 módulos sin resolver de `mapping/modules.tsv` no cuentan
+como nombre de módulo: los hijos de `guu` sin nombre probado no se tocan.
+
+`tools/apply_names.py` aplica el borrador: renombra ficheros, declaraciones y
+todas las referencias por palabra completa (excepto accesos a miembros
+`x.<nombre>`, que nunca son clases). Verificado: 0 referencias residuales.
+
+Resultado: **103 clases con nombre inferido** (23 high + 80 medium), todas con
+la evidencia registrada en `mapping/inferred.tsv` y el mapa ProGuard en
+`mapping/inferred.proguard.txt`. Quedan **275 ficheros con nombre corto**: no
+llevan ningún literal identificativo propio (utilidades internas, mixins,
+helpers de render) y nombrarlos sería inventar. La columna `evidence` de
+`inferred.tsv` permite revisar cada decisión.
 
 

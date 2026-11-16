@@ -41,7 +41,7 @@ class eix {
 
    private char dch(String a) {
       long ax = eix.a ^ 135648585550375L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       int var10000 = a.fde;
       if (axx != null) {
          if (!a.fde) {

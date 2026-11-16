@@ -1,6 +1,6 @@
 package astralis.mixin.input;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.eov;
 import net.minecraft.class_1297;
 import net.minecraft.class_1657;
@@ -26,6 +26,6 @@ public class MixinClientPlayerInteractionManager {
       )}
    )
    private void hookAttack(class_1657 a, class_1297 a, CallbackInfo a) {
-      dar.gqy().fyf().brx(new eov(a));
+      ClientSetup.gqy().fyf().brx(new eov(a));
    }
 }

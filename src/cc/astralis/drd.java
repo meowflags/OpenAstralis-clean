@@ -34,7 +34,7 @@ public class drd implements dlc {
 
    public void adk() {
       long a = drd.a ^ 79905176227196L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       File[] ax = a.ail.listFiles();
       int[] axx = var10000;
       File[] var10 = ax;
@@ -84,7 +84,7 @@ public class drd implements dlc {
       drd var4;
       label34: {
          a = drd.a ^ 60769721817397L;
-         int[] var3 = dar.abu();
+         int[] var3 = ClientSetup.abu();
          boolean var10000 = a.ail.exists();
          if (var3 != null) {
             if (!var10000) {
@@ -120,7 +120,7 @@ public class drd implements dlc {
 
    public void esg(String configName) {
       long ax = drd.a ^ 67231101388452L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       flh axx = a.ddp.get(a);
       int[] axxx = var10000;
       flh var6 = axx;
@@ -139,7 +139,7 @@ public class drd implements dlc {
 
    public void flb(String configName) {
       long ax = drd.a ^ 88624493588217L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       flh axx = a.ddp.get(a);
       int[] axxx = var10000;
       flh var6 = axx;
@@ -157,7 +157,7 @@ public class drd implements dlc {
 
    public void bgb(String configName) {
       long ax = drd.a ^ 66735366116018L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       flh axx = a.ddp.get(a);
       int[] axxx = var10000;
       if (axx != null) {

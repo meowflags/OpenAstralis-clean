@@ -59,7 +59,7 @@ public enum dtw {
                      EASE_IN_OUT_SINE = new dtw(a -> -(Math.cos(Math.PI * a) - 1.0) / 2.0);
                      EASE_IN_OUT_QUAD = new dtw(a -> {
                         long ax = dtw.a ^ 25065342208013L;
-                        int[] var3 = dar.abu();
+                        int[] var3 = ClientSetup.abu();
                         double var10000x = a;
                         double var10001x = 0.5;
                         if (var3 != null) {

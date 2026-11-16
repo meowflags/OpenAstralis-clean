@@ -19,7 +19,7 @@ class ekh extends LinkedHashMap<String, Image> {
    @Override
    protected boolean removeEldestEntry(Entry<String, Image> eldest) {
       long ax = ekh.a ^ 30712338857734L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       int var10000 = a.size();
       if (var4 != null) {
          if (var10000 > (int)b) {

@@ -127,7 +127,7 @@ public class ESP extends guu {
    @gdz(0)
    private void awu(ctt a) {
       long ax = ESP.a ^ 110635434909912L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.method_1561().field_4686 == null) {

@@ -42,7 +42,7 @@ public class HitSound extends guu {
    @gdz
    public void ana(eov event) {
       long ax = HitSound.a ^ 1574698828899L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_3414 axx = (class_3414)class_7923.field_41172.method_63535(a.bqv());
       int[] axxx = var10000;
       class_3414 var7 = axx;
@@ -63,7 +63,7 @@ public class HitSound extends guu {
       long a;
       int var6;
       a = HitSound.a ^ 14397752065821L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var4 = a.bjz.dnp();
       int[] ax = var10000;
       byte var5 = -1;

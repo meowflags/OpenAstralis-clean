@@ -31,7 +31,7 @@ public class gus extends hcr {
    @gdz
    public void aop(fnt event) {
       long ax = gus.a ^ 23113448045710L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       int var10000 = chi.field_1724.field_6235;
       if (var4 != null) {
          if (chi.field_1724.field_6235 <= 1) {

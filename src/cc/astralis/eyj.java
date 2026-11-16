@@ -33,7 +33,7 @@ public class eyj {
    private static final Map h;
 
    public static byte[] ere(byte[] data, byte[] key, byte[] aad) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       cdr[] axxx = fz.dtf();
       int[] axxxx = var10000;
       int var15 = a.length;
@@ -65,7 +65,7 @@ public class eyj {
       byte[] var15;
       label43: {
          ax = b ^ 61017601237987L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axx = var10000;
          int var14 = a.length;
          short var18 = 32;
@@ -121,7 +121,7 @@ public class eyj {
    }
 
    public static int cyq() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       int var3 = ceu();
       int var10000 = var3;
       if (var2 != null) {

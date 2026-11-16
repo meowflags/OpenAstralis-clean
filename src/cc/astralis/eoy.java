@@ -29,7 +29,7 @@ public class eoy extends fig {
 
    public eoy(bfm category, float x, float y, float width, float height) {
       long ax = eoy.a ^ 29942878013799L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       super();
       int[] axx = var10000;
       a.gzf = new ArrayList<>();
@@ -39,7 +39,7 @@ public class eoy extends fig {
       a.ans(a);
       a.dzm(a);
 
-      for (guu axxx : dar.gqy().aws().gtd(a)) {
+      for (guu axxx : ClientSetup.gqy().aws().gtd(a)) {
          a.gzf.add(new ckg(axxx, a.gzf));
          if (axx == null) {
             break;
@@ -50,7 +50,7 @@ public class eoy extends fig {
    @Override
    public void bfi(float mouseX, float mouseY) {
       long ax = eoy.a ^ 128492427151268L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       float axx = a.gqc();
       int[] axxx = var10000;
       Iterator axxxx = a.gzf.iterator();
@@ -124,7 +124,7 @@ public class eoy extends fig {
             }
          }
 
-         dmp.hbm(a.hjg(), a.dtt() - 1.0F, a.av() + 1.0F, axx + 2.0F, 6.0F, dar.gqy().deo(), dar.gqy().cxj(), false, 2.0F, new Color(0, 0, 0, 0));
+         dmp.hbm(a.hjg(), a.dtt() - 1.0F, a.av() + 1.0F, axx + 2.0F, 6.0F, ClientSetup.gqy().deo(), ClientSetup.gqy().cxj(), false, 2.0F, new Color(0, 0, 0, 0));
          break;
       }
    }
@@ -139,7 +139,7 @@ public class eoy extends fig {
       a.gzf.forEach(ax -> ax.epq(a, a, a));
    }
 
-   public List<ckg> eze() {
+   public List<ckg> SpeedMMC() {
       return a.gzf;
    }
 

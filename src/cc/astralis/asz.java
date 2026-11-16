@@ -37,7 +37,7 @@ public class asz {
 
    public asz(byte[] key) {
       int var10000 = 19031;
-      int[] var9 = dar.abu();
+      int[] var9 = ClientSetup.abu();
       super();
       int[] axxx = var9;
       byte[] var10 = a;
@@ -380,7 +380,7 @@ public class asz {
    }
 
    public static boolean gco() {
-      int[] var2 = dar.abu();
+      int[] var2 = ClientSetup.abu();
       boolean var3 = gry();
       boolean var10000 = var3;
       if (var2 != null) {

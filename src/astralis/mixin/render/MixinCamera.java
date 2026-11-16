@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.hin;
 import net.minecraft.class_4184;
 import org.spongepowered.asm.mixin.Mixin;
@@ -16,7 +16,7 @@ public class MixinCamera {
       cancellable = true
    )
    public void hookCameraNoClip(float f, CallbackInfoReturnable<Float> cir) {
-      hin ax = dar.gqy().aws().diy(hin.class);
+      hin ax = ClientSetup.gqy().aws().diy(hin.class);
       if (ax.dsv() && ax.ahi.dnp() && ax.gff.dnp()) {
          a.setReturnValue(a);
       }

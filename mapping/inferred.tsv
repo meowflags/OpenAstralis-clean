@@ -1,0 +1,104 @@
+class	new	evidence	confidence
+abn	DisablerCubecraft	mode label 'Cubecraft', owner Disabler	medium
+adm	AirWalk	mode label 'Air Walk', owner ?	medium
+agu	WatchdogYport	mode label 'Watchdog Yport', owner ?	medium
+anp	OldMush	mode label 'Old Mush', owner ?	medium
+aoy	DisablerVerusTimer	mode label 'Verus Timer', owner Disabler	medium
+apm	Watchdog	mode label 'Watchdog', owner ?	medium
+apt	WatchdogAir	mode label 'Watchdog Air', owner ?	medium
+aqo	Vulcan	mode label 'Vulcan', owner ?	medium
+aqx	SpeedCubecraft	mode label 'Cubecraft', owner Speed	medium
+arx	ScaffoldModernWatchdog	mode label 'Modern Watchdog', owner Scaffold	medium
+atf	TeleportCommand	curated: distinctive folded strings	high
+awe	DisablerWatchdog	mode label 'Watchdog', owner Disabler	medium
+ayw	Mush	mode label 'Mush', owner ?	medium
+azc	VerusGlide	mode label 'Verus Glide', owner ?	medium
+azv	SpeedVanilla	mode label 'Vanilla', owner Speed	medium
+bam	SysInfo	curated: distinctive folded strings	high
+bej	Ground	mode label 'Ground', owner ?	medium
+bey	DisablerSprint	mode label 'Sprint', owner Disabler	medium
+bgl	ScaffoldVanilla	mode label 'Vanilla', owner Scaffold	medium
+bhw	BlinkController	curated: distinctive folded strings	high
+bjw	HclipCommand	command verb: 'hclip'	medium
+bjx	WatchdogSafe	mode label 'Watchdog Safe', owner ?	medium
+bkv	ToggleCommand	curated: distinctive folded strings	high
+ble	Watchdog2	mode label 'Watchdog', owner ?	medium
+blg	AccountsScreen	curated: distinctive folded strings	high
+blz	ConfigManager	curated: distinctive folded strings	high
+bod	Buffer	mode label 'Buffer', owner ?	medium
+bpv	MultithreadingThread	title string: 'Multithreading Thread'	medium
+bqe	ModernWatchdog	mode label 'Modern Watchdog', owner ?	medium
+bsi	Jump	mode label 'Jump', owner ?	medium
+bu	GuiMoveModernWatchdog	mode label 'Modern Watchdog', owner GuiMove	medium
+bvd	Reverse	mode label 'Reverse', owner ?	medium
+bxc	FontManager	curated: distinctive folded strings	high
+bxr	Intave	mode label 'Intave', owner ?	medium
+cea	Vanilla	mode label 'Vanilla', owner ?	medium
+cek	Air2	mode label 'Air 2', owner ?	medium
+cgk	ScaffoldMode	display string: 'Scaffold'	medium
+cgw	ScaffoldWatchdogVanilla	mode label 'Watchdog Vanilla', owner Scaffold	medium
+chp	SpeedLegit	mode label 'Legit', owner Speed	medium
+chx	LimboHandler	curated: distinctive folded strings	high
+ckb	ConfigsScreen	curated: distinctive folded strings	high
+clr	Intave2	mode label 'Intave', owner ?	medium
+cni	Base64Util	curated: distinctive folded strings	high
+coc	SfBoldScreen	display string: 'Sf-Bold'	medium
+cqh	CubeCraft	mode label 'Cube Craft', owner ?	medium
+crv	AltManager	curated: distinctive folded strings	high
+crw	ShaUtil	curated: distinctive folded strings	high
+ctv	KeybindNames	curated: distinctive folded strings	high
+cv	AltLoginScreen	curated: distinctive folded strings	high
+cvh	Universal	mode label 'Universal', owner ?	medium
+cyh	BlocksMC	mode label 'Blocks MC', owner ?	medium
+cyn	PredictionMode	display string: 'Prediction'	medium
+dar	ClientSetup	curated: distinctive folded strings	high
+ddx	Delay	mode label 'Delay', owner ?	medium
+del	GuiMoveVanilla	mode label 'Vanilla', owner GuiMove	medium
+dfw	ModuleManager	curated: distinctive folded strings	high
+dhd	SpeedVulcanStrafe	mode label 'Vulcan Strafe', owner Speed	medium
+dhi	BlocksMC2	mode label 'Blocks MC', owner ?	medium
+dkm	ScaffoldIntave	mode label 'Intave', owner Scaffold	medium
+dle	DiscordRpc	curated: distinctive folded strings	high
+dlg	DisablerMiniblox	mode label 'Miniblox', owner Disabler	medium
+dmr	DropdownScreen	display string: 'Dropdown'	medium
+dnf	SpeedVulcanLow	mode label 'Vulcan Low', owner Speed	medium
+dpr	VclipCommand	command verb: 'vclip'	medium
+duc	Block	mode label 'Block', owner ?	medium
+dxa	DisablerBalls	mode label 'Balls', owner Disabler	medium
+dyn	MultithreadingThread2	title string: 'Multithreading Thread'	medium
+ecs	ScaffoldVanilla2	mode label 'Vanilla', owner Scaffold	medium
+een	HudEditorScreen	curated: distinctive folded strings	high
+ehs	Watchdog3	mode label 'Watchdog', owner ?	medium
+ehy	SessionHelper	curated: distinctive folded strings	high
+eno	GuiMoveModernWatchdog2	mode label 'Modern Watchdog 2', owner GuiMove	medium
+ent	Grim	mode label 'Grim', owner ?	medium
+ewc	SpeedStrafe	mode label 'Strafe', owner Speed	medium
+eyu	AccountSettingsScreen	curated: distinctive folded strings	high
+eze	SpeedMMC	mode label 'MMC', owner Speed	medium
+fcc	HidCommand	command verb: 'Hid'	medium
+ffm	CloudConfigurations	title string: 'Cloud Configurations'	medium
+ffr	Vulcan2	mode label 'Vulcan', owner ?	medium
+fii	DisablerVerusFly	mode label 'Verus Fly', owner Disabler	medium
+fkc	FileExplorer	curated: distinctive folded strings	high
+fq	IgnCommand	command verb: 'ign'	medium
+fqj	SpeedBlocksMC	mode label 'Blocks MC', owner Speed	medium
+frr	DisablerVulcanScaffold	mode label 'Vulcan Scaffold', owner Disabler	medium
+fsg	WatchdogFull	mode label 'Watchdog Full', owner ?	medium
+gaf	ClickGuiWindow	curated: distinctive folded strings	high
+gbc	Normal	mode label 'Normal', owner ?	medium
+get	AutoBlockMode	display string: 'Auto Block'	medium
+gff	ListCommand	command verb: 'list'	medium
+gft	Watchdog22	mode label 'Watchdog 2', owner ?	medium
+ghz	IrcCommand	command verb: 'irc'	medium
+gjr	HelpCommand	command verb: 'help'	medium
+glr	AddCommand	command verb: 'add'	medium
+goy	AuthScreen	curated: distinctive folded strings	high
+gsu	ProductSansRegular	title string: 'Product Sans Regular'	medium
+guc	DisablerVerusFly2	mode label 'Verus Fly 2', owner Disabler	medium
+hak	ReducePacket	mode label 'Reduce Packet', owner ?	medium
+hbi	BindCommand	command verb: 'bind'	medium
+hcc	Grim2	mode label 'Grim', owner ?	medium
+heo	WatchdogFireball	mode label 'Watchdog Fireball', owner ?	medium
+hfu	SpeedVulcanGround	mode label 'Vulcan Ground', owner Speed	medium
+hil	SpeedMush	mode label 'Mush', owner Speed	medium
+hkb	Cancel	mode label 'Cancel', owner ?	medium

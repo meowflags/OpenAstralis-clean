@@ -39,7 +39,7 @@ public class Session extends guu {
    @gdz
    public void aap(fxx event) {
       long ax = Session.a ^ 137073874600331L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_310 var10000 = chi;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -53,7 +53,7 @@ public class Session extends guu {
          a.hc.glr();
          Runnable axxx = () -> {
             long axxxx = Session.a ^ 122696742775376L;
-            int[] var10000x = dar.abu();
+            int[] var10000x = ClientSetup.abu();
             HttpURLConnection ax = a.fxi();
             int[] axx = var10000x;
 
@@ -87,7 +87,7 @@ public class Session extends guu {
       // 03: ldc2_w 33206681422324
       // 06: lxor
       // 07: lstore 1
-      // 08: invokestatic cc/astralis/dar.abu ()[I
+      // 08: invokestatic cc/astralis/ClientSetup.abu ()[I
       // 0b: new com/google/gson/JsonObject
       // 0e: dup
       // 0f: invokespecial com/google/gson/JsonObject.<init> ()V

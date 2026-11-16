@@ -36,7 +36,7 @@ public enum cfg {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public static cfg fxk(String name) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int[] axxx = var10000;
       var10000 = eqj();
       cfg[] var7 = values();

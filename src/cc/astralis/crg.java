@@ -7,7 +7,7 @@ public class crg implements dlc {
 
    public static float gj(float min, float max) {
       long ax = crg.a ^ 44686469845143L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       float var10000 = a;
       if (var4 != null) {
          if (a == 0.0F) {

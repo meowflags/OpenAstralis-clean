@@ -54,7 +54,7 @@ public class Animations extends guu {
       float axxxxx;
       int var10000;
       ax = Animations.a ^ 18247149726056L;
-      axx = dar.abu();
+      axx = ClientSetup.abu();
       axxx = a == class_1306.field_6183 ? 1 : -1;
       axxxx = class_3532.method_15374((float)(a * a * Math.PI));
       axxxxx = class_3532.method_15374((float)(class_3532.method_15355(a) * Math.PI));

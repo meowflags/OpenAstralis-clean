@@ -41,7 +41,7 @@ public class Blink extends guu {
    @Override
    public void auj() {
       long a = Blink.a ^ 96254037516966L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       super.auj();
       int[] var3 = var10000;
       if (var3 != null) {
@@ -59,7 +59,7 @@ public class Blink extends guu {
    @gdz
    public void div(fxx event) {
       long ax = Blink.a ^ 13405490388760L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       boolean var10000 = a.fbp.emb("Stop");
       if (var4 != null) {
          if (!var10000) {
@@ -85,7 +85,7 @@ public class Blink extends guu {
    @gdz
    public void dzn(amo event) {
       long ax = Blink.a ^ 52056546233485L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       String var10000 = a.fbp.dnp();
       boolean var6 = var10000.equals("Blink");
       if (axx != null) {

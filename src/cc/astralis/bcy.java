@@ -46,7 +46,7 @@ public class bcy extends brc {
 
    @Override
    public void etg(JsonObject json) {
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String[] var18 = drn();
       a.cps(a);
       String[] axxx = var18;
@@ -90,7 +90,7 @@ public class bcy extends brc {
    @Override
    public String cql() {
       long a = b ^ 24001319222129L;
-      int[] var16 = dar.abu();
+      int[] var16 = ClientSetup.abu();
       String[] var21 = drn();
       JsonObject axx = a.fdo();
       String[] axxx = var21;
@@ -147,7 +147,7 @@ public class bcy extends brc {
 
       String var19 = axx.toString();
       String[] var15 = c;
-      String var20 = fz.dvr(var19, cni.fsi(var15[2]), cni.fsi(var15[0]));
+      String var20 = fz.dvr(var19, Base64Util.fsi(var15[2]), Base64Util.fsi(var15[0]));
       String[] var22 = cdr.haa();
       if (axxxx != null) {
          if (var22 != null) {
@@ -161,7 +161,7 @@ public class bcy extends brc {
       return var20;
    }
 
-   public List<fse> blg() {
+   public List<fse> AccountsScreen() {
       return a.ftv;
    }
 

@@ -1,6 +1,6 @@
 package astralis.mixin.render;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dk;
 import java.awt.Color;
 import net.minecraft.class_437;
@@ -20,7 +20,7 @@ public abstract class MixinScreen {
       index = 5
    )
    private int modifyGradientEndColor(int a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
       return ax != null && ax.dsv() && ax.dsk.dnp() ? a.applyAlpha(ax.els.dnp(), ax.cic.dnp().floatValue()) : a;
    }
 
@@ -33,7 +33,7 @@ public abstract class MixinScreen {
       index = 4
    )
    private int modifyGradientStartColor(int a) {
-      dk ax = dar.gqy().aws().diy(dk.class);
+      dk ax = ClientSetup.gqy().aws().diy(dk.class);
       return ax != null && ax.dsv() && ax.dsk.dnp() ? a.applyAlpha(ax.beo.dnp(), ax.ddd.dnp().floatValue()) : a;
    }
 

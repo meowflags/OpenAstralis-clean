@@ -184,7 +184,7 @@ public class GodBridge extends guu {
    @Override
    public void auj() {
       long a = GodBridge.a ^ 6823736943010L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       if (ax != null) {
          if (chi.field_1724 != null && chi.field_1687 != null) {
             a.bet = chi.field_1724.method_31478();
@@ -212,7 +212,7 @@ public class GodBridge extends guu {
    @Override
    public void frg() {
       long a = GodBridge.a ^ 16132845614833L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.aeb = null;
       int[] var3 = var10000;
       class_746 var4 = chi.field_1724;
@@ -242,7 +242,7 @@ public class GodBridge extends guu {
    @gdz
    public void hjc(etk event) {
       long ax = GodBridge.a ^ 12118531113921L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_1041 var10001 = chi.method_22683();
       boolean axx = class_3675.method_15987(var10001, 32);
       int[] axxx = var10000;
@@ -281,7 +281,7 @@ public class GodBridge extends guu {
 
    private boolean aen() {
       long a = GodBridge.a ^ 70256392400668L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       int var10000 = chi.field_1724.method_24828();
       if (ax != null) {
          if (var10000 == 0) {
@@ -314,7 +314,7 @@ public class GodBridge extends guu {
    @gdz
    public void cwy(fxx event) {
       long ax = GodBridge.a ^ 72736847706790L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.efe("Normal");
       int[] axx = var10000;
       GodBridge var15 = a;
@@ -549,7 +549,7 @@ public class GodBridge extends guu {
       float var7;
       label31: {
          a = GodBridge.a ^ 35437829175698L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          int[] axx = aac.getOrDefault(a.dee.dnp(), new int[0]);
          ax = var10000;
          int var6 = hjr;
@@ -592,7 +592,7 @@ public class GodBridge extends guu {
          int[] var5;
          label47: {
             long ax = GodBridge.a ^ 107716994536350L;
-            var5 = dar.abu();
+            var5 = ClientSetup.abu();
             boolean var10000 = aud;
             if (var5 != null) {
                label48: {
@@ -641,7 +641,7 @@ public class GodBridge extends guu {
       int var13;
       label68: {
          long axxxxx = GodBridge.a ^ 92395695272441L;
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axx = a.method_36454();
          boolean axxxxxx = chi.field_1690.field_1894.method_1434();
          byte axxxxxxx = chi.field_1690.field_1881.method_1434();
@@ -705,7 +705,7 @@ public class GodBridge extends guu {
 
    private void brh(etk a) {
       long ax = GodBridge.a ^ 25172407335797L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       GodBridge var10000 = a;
       if (axx != null) {
          label225:
@@ -732,7 +732,7 @@ public class GodBridge extends guu {
                   break label225;
                }
 
-               var8 = dar.gqy().aws().diy(Speed.class).dsv();
+               var8 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
             }
 
             if (axx != null) {
@@ -916,7 +916,7 @@ public class GodBridge extends guu {
    @gdz
    public void gjj(bsm event) {
       long ax = GodBridge.a ^ 15300708672982L;
-      int[] var4 = dar.abu();
+      int[] var4 = ClientSetup.abu();
       GodBridge var10000 = a;
       if (var4 != null) {
          if (!a.ckt.dnp()) {
@@ -943,7 +943,7 @@ public class GodBridge extends guu {
       } else {
          class_4587 var5 = a.bus();
          class_238 var10001 = new class_238(a.aeb.ddn);
-         Color var10002 = dar.gqy().deo();
+         Color var10002 = ClientSetup.gqy().deo();
          bqf.hjf(var5, var10001, var10002, 50);
       }
    }
@@ -951,7 +951,7 @@ public class GodBridge extends guu {
    @gdz
    public void cxn(ctt event) {
       long ax = GodBridge.a ^ 129838818100957L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       if (a.bnq.dnp()) {
          float axxx;
          float axxxx;
@@ -1000,7 +1000,7 @@ public class GodBridge extends guu {
                float axxxxxxxxxxxx = acy.eq("Blocks");
                float axxxxxxxxxxxxx = ahh.eq(axxxxx);
                float axxxxxxxxxxxxxx = axxx - (axxxxxxxxxxxxx + 2.0F + axxxxxxxxxxxx) / 2.0F;
-               ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, dar.gqy().deo());
+               ahh.aof(axxxxx, axxxxxxxxxxxxxx, axxxx, ClientSetup.gqy().deo());
                acy.aof("Blocks", axxxxxxxxxxxxxx + axxxxxxxxxxxxx + 2.0F, axxxx, Color.white);
                if (axx != null) {
                   break;
@@ -1014,7 +1014,7 @@ public class GodBridge extends guu {
                float var19 = axxxxxxxxxx - 3.0F;
                float var29 = axxxxxxxxx + 6.0F;
                dmp.cpp(var19, axxxx, var29, 15.0F, 3.0F, new Color(15, 15, 18, a.csq.dnp().intValue()));
-               bsf.aof(axxxxx, axxxxxxxxxx, axxxxxxxxxxx, dar.gqy().deo());
+               bsf.aof(axxxxx, axxxxxxxxxx, axxxxxxxxxxx, ClientSetup.gqy().deo());
                ety.aof("Blocks", axxxxxxxxxx + axxxxxxxx + 2.0F, axxxxxxxxxxx, Color.white);
          }
       }
@@ -1036,7 +1036,7 @@ public class GodBridge extends guu {
 
    public static float awo(float f) {
       long ax = GodBridge.a ^ 985714522663L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a %= 90.0F;
       int[] var3 = var10000;
       float var7;
@@ -1071,7 +1071,7 @@ public class GodBridge extends guu {
                int[] axx;
                float axxx;
                ax = GodBridge.a ^ 12441410494553L;
-               int[] var10000 = dar.abu();
+               int[] var10000 = ClientSetup.abu();
                a = 81.5F;
                axx = var10000;
                axxx = ast(chi.field_1724) + 180.0F;
@@ -1323,7 +1323,7 @@ public class GodBridge extends guu {
 
    private static float fst(class_746 a) {
       long ax = GodBridge.a ^ 122694096422616L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_243 axx = a.method_18798();
       int[] axxx = var10000;
       double var11 = axx.method_1027();
@@ -1396,7 +1396,7 @@ public class GodBridge extends guu {
       int[] ax;
       int var7;
       long axx = GodBridge.a ^ 115593265294453L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       String var5 = a.hio.dnp();
       ax = var10000;
       byte var6 = -1;
@@ -1480,7 +1480,7 @@ public class GodBridge extends guu {
          label182: {
             label186: {
                a = GodBridge.a ^ 122960221265420L;
-               int[] var10000 = dar.abu();
+               int[] var10000 = ClientSetup.abu();
                axx = chi.field_1724.method_24515();
                ax = var10000;
                var18 = a.ady.dnp();
@@ -1675,7 +1675,7 @@ public class GodBridge extends guu {
 
    private int cfe() {
       long a = GodBridge.a ^ 10562836269993L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int ax = -1;
       int[] axx = var10000;
       int axxx = 0;
@@ -1722,7 +1722,7 @@ public class GodBridge extends guu {
 
    private class_243 dax() {
       long a = GodBridge.a ^ 112315981941545L;
-      int[] ax = dar.abu();
+      int[] ax = ClientSetup.abu();
       efy var10000 = a.aeb;
       if (ax != null) {
          if (a.aeb == null) {
@@ -1814,7 +1814,7 @@ public class GodBridge extends guu {
 
    private int aaq() {
       long a = GodBridge.a ^ 18556761390697L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       int ax = 0;
       int[] axx = var10000;
       int axxx = 0;

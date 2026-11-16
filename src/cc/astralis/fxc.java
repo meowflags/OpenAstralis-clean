@@ -38,7 +38,7 @@ public class fxc extends brc {
       JsonObject a = a.fdo();
       String var10000 = a.toString();
       String[] var2 = b;
-      return fz.dvr(var10000, cni.fsi(var2[0]), cni.fsi(var2[1]));
+      return fz.dvr(var10000, Base64Util.fsi(var2[0]), Base64Util.fsi(var2[1]));
    }
 
    public static void dsm(int[] var0) {

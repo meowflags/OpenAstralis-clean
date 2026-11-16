@@ -28,8 +28,8 @@ public class bni extends guu {
    public bni() {
       long a = cc.astralis.bni.a ^ 36869029189369L;
       super(bfm.MOVEMENT);
-      hcr[] var5 = new hcr[]{new adm(a), new duc(a), new cea(a), new anp(a), new cqh(a), new ent(a), null};
-      var5[6] = new azc(a);
+      hcr[] var5 = new hcr[]{new AirWalk(a), new Block(a), new Vanilla(a), new OldMush(a), new CubeCraft(a), new Grim(a), null};
+      var5[6] = new VerusGlide(a);
       a.bbh = new cyx("Mode", var5);
       a.cns = new gbp("Stop on Disable", true);
       a.bfi(new ffn[]{a.bbh, a.cns});
@@ -43,7 +43,7 @@ public class bni extends guu {
    @Override
    public void frg() {
       long a = cc.astralis.bni.a ^ 49573944433592L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       bni var10000 = a;
       if (var3 != null) {
          if (a.cns.dnp()) {

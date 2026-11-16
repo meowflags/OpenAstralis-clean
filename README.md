@@ -363,6 +363,11 @@ After the fold, `tools/strip_zkm_residue.py` deletes the obfuscator's dead
 operand stores (`short var10001 = 9026;` and friends) — 7,474 lines across 319
 files, never touching a store that is read or has side effects
 (`docs/analysis/DEOBFUSCATION.md` §11).
+Beyond the 74 proven modules, `tools/infer_names.py` + `tools/apply_names.py`
+rename 103 more classes from their own folded strings and structural family
+(23 high + 80 medium confidence, every decision logged in
+`mapping/inferred.tsv`); the remaining 275 carry no self-identifying evidence
+and stay short-named (§12).
 The 55 sites that stay unfolded are all `(IJ)J` in `cc/astralis/brc`/`cvn`; their
 bootstrap method builds the call site at runtime from a bytewise-composed
 `long[]` that has no static table in the class file, so there is nothing to fold
@@ -414,6 +419,7 @@ interpreter that fills in the `native` methods of `dqq`, `evd`, `fz` and `hdl`;
 | `tools/indy_scan.py` | list every `invokedynamic` descriptor and its bootstrap method |
 | `tools/fingerprint_obfuscator.py` | class-file fingerprint: DES runtimes, indy sites, native methods, vendor markers |
 | `tools/strip_zkm_residue.py` | delete the dead operand stores the folded `invokedynamic` sites left behind |
+| `tools/infer_names.py`, `tools/apply_names.py` | infer names for the remaining obfuscated classes from their own constants, then apply them |
 | `tools/jarscan.py`, `tools/rebuild_jar.py` | archive-level inventory and rebuild |
 | `tools/Sanitize.java` | neutralise hardcoded endpoints and `halt` calls |
 | `tools/devirt_dump.py` | turn IDA output into annotated C bodies |
@@ -796,6 +802,11 @@ Tras el plegado, `tools/strip_zkm_residue.py` borra las tiendas muertas de
 operandos del ofuscador (`short var10001 = 9026;` y compañía) — 7.474 líneas en
 319 ficheros, sin tocar ninguna tienda que se lea o tenga efectos secundarios
 (`docs/analysis/DEOBFUSCATION.md` §11).
+Además de los 74 módulos probados, `tools/infer_names.py` +
+`tools/apply_names.py` renombran 103 clases más a partir de sus propias
+cadenas plegadas y su familia estructural (23 high + 80 medium, cada decisión
+registrada en `mapping/inferred.tsv`); las 275 restantes no llevan evidencia
+identificativa propia y conservan el nombre corto (§12).
 Los 55 sitios sin plegar son todos `(IJ)J` en `cc/astralis/brc`/`cvn`: su
 bootstrap construye el call site en ejecución desde un `long[]` compuesto byte a
 byte que no existe como tabla estática en el class file.
@@ -839,6 +850,7 @@ sale como `<redacted:discord-bot-token>`.
 | `tools/indy_scan.py` | lista descriptores `invokedynamic` y su bootstrap |
 | `tools/fingerprint_obfuscator.py` | huella de los `.class`: runtimes DES, sitios indy, métodos `native`, marcadores de fabricante |
 | `tools/strip_zkm_residue.py` | borra las tiendas muertas que dejaron los sitios `invokedynamic` plegados |
+| `tools/infer_names.py`, `tools/apply_names.py` | infiere nombres para las clases ofuscadas restantes desde sus propias constantes y los aplica |
 | `mapping/offsets.json` | 3.897 constantes plegadas |
 | `mapping/modules.tsv` | 91 clases de módulo: categoría, ajustes, función inferida |
 | `mapping/modules.proguard.txt` | los 74 renombrados identificados, importables en Recaf |

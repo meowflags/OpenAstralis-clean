@@ -36,7 +36,7 @@ public class GuiMove extends guu {
    public GuiMove() {
       long a = GuiMove.a ^ 74059892849784L;
       super(bfm.PLAYER);
-      a.eda = new cyx("Mode", new del(a), new bu(a), new eno(a));
+      a.eda = new cyx("Mode", new GuiMoveVanilla(a), new GuiMoveModernWatchdog(a), new GuiMoveModernWatchdog2(a));
       a.aig = new gbp("Inventory", true);
       a.cnd = new gbp("Chest", true);
       a.gms = new gbp("ClickGui", true);
@@ -55,7 +55,7 @@ public class GuiMove extends guu {
 
    public boolean ech() {
       long a = GuiMove.a ^ 128288205828742L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       boolean var10000 = chi.field_1755 instanceof class_490;
       if (var3 != null) {
          if (var10000) {
@@ -84,7 +84,7 @@ public class GuiMove extends guu {
             }
          }
 
-         var10000 = chi.field_1755 instanceof dmr;
+         var10000 = chi.field_1755 instanceof DropdownScreen;
       }
 
       if (var3 != null) {

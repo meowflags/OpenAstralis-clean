@@ -43,7 +43,7 @@ public class azx {
          axxx = ImGui.getStyle();
          axxx.setWindowRounding(8.0F);
          axxx.setFrameRounding(6.0F);
-         int[] var10000 = dar.abu();
+         int[] var10000 = ClientSetup.abu();
          axxx.setGrabRounding(6.0F);
          axxx.setPopupRounding(8.0F);
          axxx.setScrollbarRounding(6.0F);
@@ -58,14 +58,14 @@ public class azx {
          axxxxx = new Color(12, 12, 12).getRGB();
          axxxxxx = new Color(240, 240, 240).getRGB();
          axxxxxxx = new Color(180, 180, 180).getRGB();
-         var13 = dar.gqy().aws().diy(daw.class);
+         var13 = ClientSetup.gqy().aws().diy(daw.class);
          if (axx != null) {
             if (var13 == null) {
                var13 = Color.blue;
                break label34;
             }
 
-            var13 = dar.gqy().aws().diy(daw.class).clb.dnp();
+            var13 = ClientSetup.gqy().aws().diy(daw.class).clb.dnp();
          }
 
          var13 = var13;

@@ -15,7 +15,7 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 public class cyx extends ffn<hcr> {
-   private final HashMap<String, hcr> aqo;
+   private final HashMap<String, hcr> Vulcan;
    private static String gvx;
    private static final long a = 7582954100446L;
    private static final String[] b;
@@ -24,7 +24,7 @@ public class cyx extends ffn<hcr> {
 
    public cyx(String name, hcr... classes) {
       long ax = cyx.a ^ 119726206910525L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       super(a, a.length > 0 ? a[0] : null);
       a.aqo = new HashMap<>();
       HashMap var10000 = a.aqo;
@@ -88,7 +88,7 @@ public class cyx extends ffn<hcr> {
             label55: {
                label60: {
                   long ax = cyx.a ^ 61801631822741L;
-                  var4 = dar.abu();
+                  var4 = ClientSetup.abu();
                   Object var10000 = a.dnp();
                   if (var4 != null) {
                      if (var10000 != null) {

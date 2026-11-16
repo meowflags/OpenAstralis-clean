@@ -1,6 +1,6 @@
 package astralis.mixin.input;
 
-import cc.astralis.dar;
+import cc.astralis.ClientSetup;
 import cc.astralis.dfa;
 import cc.astralis.etk;
 import net.minecraft.class_10185;
@@ -40,7 +40,7 @@ public class MixinKeyboardInput extends class_744 {
          a.field_3902.field_1832.method_1434(),
          a.field_3902.field_1867.method_1434()
       );
-      dar.gqy().fyf().brx(a);
+      ClientSetup.gqy().fyf().brx(a);
       class_310 ax = class_310.method_1551();
       class_746 axx = ax.field_1724;
       boolean axxx = a.bxg;
@@ -51,7 +51,7 @@ public class MixinKeyboardInput extends class_744 {
       float axxxxxxx = method_40218(a.field_54155.comp_3159(), a.field_54155.comp_3160());
       float axxxxxxxx = method_40218(a.field_54155.comp_3161(), a.field_54155.comp_3162());
       dfa axxxxxxxxx = new dfa(axxxxxxx, axxxxxxxx);
-      dar.gqy().fyf().brx(axxxxxxxxx);
+      ClientSetup.gqy().fyf().brx(axxxxxxxxx);
       a.field_55868 = new class_241(axxxxxxxxx.aop(), axxxxxxxxx.eyl()).method_35581();
    }
 }

@@ -37,13 +37,13 @@ public class avq extends guu {
    @gdz(4)
    public void ahs(elx event) {
       long ax = avq.a ^ 120878497251612L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       double var10002 = a.buo.dnp().intValue();
       a.efe(String.valueOf(ftb.hbp(var10002, 6)));
       int[] axx = var10000;
-      class_1309 axxx = dar.gqy().aws().diy(ekb.class).gvw;
-      eky axxxx = dar.gqy().aws().diy(eky.class);
-      bni axxxxx = dar.gqy().aws().diy(bni.class);
+      class_1309 axxx = ClientSetup.gqy().aws().diy(ekb.class).gvw;
+      eky axxxx = ClientSetup.gqy().aws().diy(eky.class);
+      bni axxxxx = ClientSetup.gqy().aws().diy(bni.class);
       if (axxx != null) {
          int var13 = evd.dbj();
          if (axx != null) {
@@ -113,8 +113,8 @@ public class avq extends guu {
    @gdz
    public void awh(bsm event) {
       long ax = avq.a ^ 28599393816904L;
-      int[] var10000 = dar.abu();
-      class_1309 axx = dar.gqy().aws().diy(ekb.class).gvw;
+      int[] var10000 = ClientSetup.abu();
+      class_1309 axx = ClientSetup.gqy().aws().diy(ekb.class).gvw;
       int[] axxx = var10000;
       if (axxx != null) {
          if (axx == null) {
@@ -127,7 +127,7 @@ public class avq extends guu {
 
    public static void azr(elx moveEvent, double moveSpeed, float yaw, double strafe, double forward) {
       long ax = avq.a ^ 39882610609800L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       double var10000 = a;
       if (axx != null) {
          if (a != 0.0) {

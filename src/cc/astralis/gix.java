@@ -13,7 +13,7 @@ public class gix implements dlc {
 
    public static void fcd(class_2596<?> packet) {
       long ax = gix.a ^ 18498291160631L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -38,7 +38,7 @@ public class gix implements dlc {
 
    public static void eex(class_2596<?> packet) {
       long ax = gix.a ^ 86917963569961L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -63,7 +63,7 @@ public class gix implements dlc {
 
    public static void dsd(class_2596<?> packet) {
       long ax = gix.a ^ 64092931290784L;
-      int[] axx = dar.abu();
+      int[] axx = ClientSetup.abu();
       class_746 var10000 = chi.field_1724;
       if (axx != null) {
          if (chi.field_1724 == null) {
@@ -88,7 +88,7 @@ public class gix implements dlc {
 
    public static void avn(class_7204 packetCreator) {
       long ax = gix.a ^ 3715236783731L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       class_310 var10000 = chi;
       if (var3 != null) {
          if (chi.field_1687 == null) {
@@ -109,7 +109,7 @@ public class gix implements dlc {
       }
    }
 
-   public static void ewc(int[] var0) {
+   public static void SpeedStrafe(int[] var0) {
       bb = var0;
    }
 
@@ -119,7 +119,7 @@ public class gix implements dlc {
 
    static {
       if (bme() == null) {
-         ewc(new int[1]);
+         SpeedStrafe(new int[1]);
       }
    }
 }

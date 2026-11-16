@@ -36,12 +36,12 @@ public class fal extends bmd {
       long ax = fal.a ^ 89707573487305L;
       a.fji(a);
       a.axc(a);
-      fll axx = bxc.emc(b, 10);
+      fll axx = FontManager.emc(b, 10);
       axx.aof(a.gvd.fah(), a + 6.0F, a + 4.0F - 1.5F, cbc.fgl);
       float axxx = super.ajg() - 6.0F;
       dmp.cpp(a + a.arq() - (axxx + 6.0F), a + 3.0F, axxx, axxx, 2.0F, bcr);
       if (a.gvd.dnp()) {
-         ezv axxxx = dar.gqy().aws().diy(ezv.class);
+         ezv axxxx = ClientSetup.gqy().aws().diy(ezv.class);
          dmp.dsm(a + a.arq() - (axxx + 6.0F), a + 3.0F, axxx, axxx, 2.0F, axxxx.ehf.dnp(), axxxx.aoz.dnp());
       }
    }
@@ -49,7 +49,7 @@ public class fal extends bmd {
    @Override
    public void gdj(double mouseX, double mouseY, int button) {
       long ax = fal.a ^ 96482193615685L;
-      int[] var8 = dar.abu();
+      int[] var8 = ClientSetup.abu();
       if (fuv.bfm(a, a, a.aqy(), a.gpn(), a.arq(), a.ajg())) {
          gbp var10000 = a.gvd;
          boolean var10001 = a.gvd.dnp();

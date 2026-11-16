@@ -29,7 +29,7 @@ public class bpa implements dlc {
 
    public static void dhu(Object message) {
       long ax = bpa.a ^ 7578634929766L;
-      int[] var3 = dar.abu();
+      int[] var3 = ClientSetup.abu();
       class_310 var10000 = chi;
       if (var3 != null) {
          if (chi.field_1724 == null) {
@@ -48,15 +48,15 @@ public class bpa implements dlc {
       }
 
       class_746 var4 = var10000.field_1724;
-      class_5250 var5 = alb("Astralis", dar.gqy().deo().getRGB(), dar.gqy().cxj().getRGB());
+      class_5250 var5 = alb("Astralis", ClientSetup.gqy().deo().getRGB(), ClientSetup.gqy().cxj().getRGB());
       String var6 = String.valueOf(a);
       var4.method_7353(var5.method_27693(" » " + var6), false);
    }
 
    public static void bez(Object message) {
       long ax = bpa.a ^ 34193282613605L;
-      int[] var3 = dar.abu();
-      Object var10000 = dar.gqy().aws().diy(dxc.class);
+      int[] var3 = ClientSetup.abu();
+      Object var10000 = ClientSetup.gqy().aws().diy(dxc.class);
       if (var3 != null) {
          if (!((dxc)var10000).dsv()) {
             return;
@@ -70,7 +70,7 @@ public class bpa implements dlc {
 
    public static class_5250 alb(String message, int firstColor, int secondColor) {
       long ax = bpa.a ^ 56950682075184L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       class_5250 axx = class_2561.method_43473();
       axx.method_27693(class_124.field_1063 + "[");
       int axxx = 0;

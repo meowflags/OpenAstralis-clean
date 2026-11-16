@@ -35,22 +35,22 @@ public class LongJump extends guu {
    @gdz(4)
    public void ege(dfa event) {
       long ax = LongJump.a ^ 121636383184461L;
-      int[] var10000 = dar.abu();
+      int[] var10000 = ClientSetup.abu();
       a.efe(String.valueOf(a.ecb.dnp().floatValue()));
       int[] axx = var10000;
-      class_1309 axxx = dar.gqy().aws().diy(KillAura.class).gvw;
+      class_1309 axxx = ClientSetup.gqy().aws().diy(KillAura.class).gvw;
       if (axxx != null) {
-         var24 = dar.gqy().aws().diy(Speed.class).dsv();
+         var24 = ClientSetup.gqy().aws().diy(Speed.class).dsv();
          label75:
          if (axx != null) {
             if (!var24) {
-               var24 = dar.gqy().aws().diy(ElytraFly.class).dsv();
+               var24 = ClientSetup.gqy().aws().diy(ElytraFly.class).dsv();
                if (axx == null) {
                   break label75;
                }
 
                if (!var24) {
-                  var24 = dar.gqy().aws().diy(bni.class).dsv();
+                  var24 = ClientSetup.gqy().aws().diy(bni.class).dsv();
                   if (axx == null) {
                      break label75;
                   }
@@ -82,7 +82,7 @@ public class LongJump extends guu {
                return;
             }
 
-            var10000 = (int[])dar.gqy().aws().diy(KillAura.class);
+            var10000 = (int[])ClientSetup.gqy().aws().diy(KillAura.class);
          }
 
          class_1309 axxxx = ((KillAura)var10000).gvw;
@@ -116,8 +116,8 @@ public class LongJump extends guu {
    @gdz
    public void dba(bsm event) {
       long ax = LongJump.a ^ 39193386835517L;
-      int[] var10000 = dar.abu();
-      class_1309 axx = dar.gqy().aws().diy(KillAura.class).gvw;
+      int[] var10000 = ClientSetup.abu();
+      class_1309 axx = ClientSetup.gqy().aws().diy(KillAura.class).gvw;
       int[] axxx = var10000;
       if (axxx != null) {
          if (axx == null) {
