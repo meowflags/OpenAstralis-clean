@@ -9,7 +9,7 @@ def check(root):
     failures = []
     patterns = {
         "unsafe memory access": r"\bUnsafe\s*\.class|\.(?:putAddress|halt)\s*\(",
-        "native loading": r"System\s*\.\s*(?:load|loadLibrary)\s*\(|\bstatic\s+native\b",
+        "native loading": r"System\s*\.\s*(?:load|loadLibrary)\s*\(|\bnative\s+[\w.$<>?,\[\] ]+\s+\w+\s*\(",
         "hidden native initializer": r"Hidden0\s*\.|import\s+dev\.opalV2\.",
         "removed remote endpoint": r"serenityutils\.club|pastebin\.com|discord\.com/api",
         "embedded bot credential": r"<redacted:discord-bot-token>",
