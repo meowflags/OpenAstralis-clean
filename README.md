@@ -1,5 +1,34 @@
 # OpenAstralis
 
+## Static cleanup fork
+
+This fork removes the identified remote WebSocket channel, Discord bot polling,
+Pastebin startup/configuration gates, native-library loader and unsafe crash
+blocks from the recovered Java source. The original compiled-class ZIP has been
+removed from the current tree. Upstream history and the historical analysis
+documents still describe the original behavior.
+
+The recovered source already contains decompiler errors and missing native
+implementations. Native-dependent functions now fail explicitly. Reconstructing
+their Java implementations and a version-matched Fabric build is still required
+for a playable client. This fork carries no verified gameplay build.
+
+Validation uses source inspection and bytecode parsing with ASM. Client classes
+are never defined, instantiated or initialized by the cleanup tools. The
+sanitizer always removes native implementations, validates rewritten bytecode
+and publishes output only when every input class succeeds. The archive builder
+requires a matching cleanup digest for every included class and omits native
+binaries and nested archives. Its output is marked for static inspection.
+
+Run `python tools/check_cleanup.py` to check the edited source. Build scripts
+compile the analysis tools. Historical instructions for `astralis-clean.jar`
+in the upstream reports describe an earlier cleanup and do not certify this fork
+or any external download.
+
+Reviewed upstream revision `b510128a6f3d6c2fb325e42be02d2670ffd76fa5`.
+
+---
+
 Static reverse engineering of **`astralis.exe`** — the **DrCrypter Astralis 2.11**
 build of the **Astralis** Minecraft cheat client (**`astralis-recode 2.2`**, its
 own manifest declares `minecraft ~26.2`).
