@@ -1,62 +1,87 @@
 #!/usr/bin/env python3
-"""
-rebuild_jar.py - reassemble a jar from the original archive plus patched classes.
-
-Every entry of the source jar is copied verbatim; entries whose .class file
-exists in <classes-dir> are replaced. With --drop, matching prefixes are
-skipped entirely (used to remove the native loader payload).
-
-usage:
-  python rebuild_jar.py <src.jar> <classes-dir> <out.jar> [--drop dev/opalV2/]
-"""
-from __future__ import annotations
-
+"""Package checked inspection classes. Every included class must have a cleanup digest."""
+import argparse
+from hashlib import sha256
+from pathlib import Path, PurePosixPath
 import os
-import sys
+import tempfile
 import zipfile
 
 
-def main() -> int:
-    if len(sys.argv) < 4:
-        print(__doc__)
-        return 2
-    src, cls_dir, out = sys.argv[1], sys.argv[2], sys.argv[3]
-    drops = [a for a in sys.argv[4:] if not a.startswith("--")]
-    drops += [sys.argv[i + 1] for i, a in enumerate(sys.argv) if a == "--drop" and i + 1 < len(sys.argv)]
+def cleanup_manifest(classes):
+    entries = {}
+    for line in (classes / "SHA256SUMS.cleaned").read_text(encoding="utf-8").splitlines():
+        digest, name = line.split("\t", 1)
+        path = PurePosixPath(name)
+        if path.is_absolute() or ".." in path.parts or "\\" in name or name in entries:
+            raise ValueError("Invalid or duplicated cleanup manifest path")
+        if len(digest) != 64 or not name.endswith(".class"):
+            raise ValueError("Invalid cleanup manifest entry")
+        data = (classes / name).read_bytes()
+        if sha256(data).hexdigest() != digest:
+            raise ValueError(f"Cleanup digest mismatch for {name}")
+        entries[name] = data
+    if not entries:
+        raise ValueError("Cleanup manifest is empty")
+    return entries
 
-    replaced = added = dropped = 0
-    seen: set[str] = set()
 
-    with zipfile.ZipFile(src, "r") as zin, zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as zout:
-        for item in zin.infolist():
-            name = item.filename
-            if any(name.startswith(d) for d in drops):
-                dropped += 1
-                continue
-            data = zin.read(name)
-            if name.endswith(".class"):
-                p = os.path.join(cls_dir, *name.split("/"))
-                if os.path.isfile(p):
-                    data = open(p, "rb").read()
-                    replaced += 1
-            zout.writestr(item, data)
-            seen.add(name)
-
-        # patched classes that did not exist in the source jar
-        for dirpath, _, files in os.walk(cls_dir):
-            for f in files:
-                if not f.endswith(".class"):
+def rebuild(source, classes, output, drops):
+    source, classes, output = source.resolve(), classes.resolve(), output.resolve()
+    if output.exists() or output == source or output.is_relative_to(classes):
+        raise ValueError("Use a new output file outside the class tree")
+    checked = cleanup_manifest(classes)
+    binary_extensions = {".dll", ".so", ".dylib", ".exe", ".zip", ".jar", ".zst"}
+    seen = set()
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(dir=output.parent, prefix=".inspection-", delete=False) as stream:
+            temporary = Path(stream.name)
+        with zipfile.ZipFile(source) as original, zipfile.ZipFile(temporary, "w", zipfile.ZIP_DEFLATED) as result:
+            for entry in original.infolist():
+                name = entry.filename
+                path = PurePosixPath(name)
+                if path.is_absolute() or ".." in path.parts or "\\" in name or name in seen:
+                    raise ValueError(f"Unsafe or duplicated archive path {name}")
+                seen.add(name)
+                if name.startswith(("dev/opalV2/", *drops)) or path.suffix.lower() in binary_extensions:
                     continue
-                full = os.path.join(dirpath, f)
-                rel = os.path.relpath(full, cls_dir).replace("\\", "/")
-                if rel in seen or any(rel.startswith(d) for d in drops):
+                if name.upper().endswith((".SF", ".RSA", ".DSA", ".EC")):
                     continue
-                zout.write(full, rel)
-                added += 1
+                if name == "META-INF/MANIFEST.MF":
+                    continue
+                if name.endswith(".class"):
+                    if name not in checked:
+                        raise ValueError(f"Missing checked class {name}")
+                    result.writestr(name, checked.pop(name))
+                else:
+                    result.writestr(name, original.read(entry))
+            for name, data in sorted(checked.items()):
+                result.writestr(name, data)
+            result.writestr("META-INF/MANIFEST.MF",
+                "Manifest-Version: 1.0\r\nOpenAstralis-Cleanup: static-inspection-only\r\n\r\n")
+            result.writestr("META-INF/OPENASTRALIS-CLEANUP.txt",
+                "Static inspection artifact. Native-dependent behavior requires reconstruction.\n")
+        with zipfile.ZipFile(temporary) as result:
+            if result.testzip():
+                raise ValueError("Inspection archive failed its integrity check")
+        # A pre-existing output is never overwritten.
+        os.link(temporary, output)
+        print(f"Wrote static inspection archive {output}")
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
-    print(f"replaced={replaced} added={added} dropped={dropped} -> {out}")
-    return 0
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("source", type=Path)
+    parser.add_argument("classes", type=Path)
+    parser.add_argument("output", type=Path)
+    parser.add_argument("--drop", action="append", default=[])
+    args = parser.parse_args()
+    rebuild(args.source, args.classes, args.output, args.drop)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
