@@ -1,7 +1,5 @@
 package cc.astralis;
 
-import dev.opalV2.Loader;
-import dev.opalV2.hidden.Hidden0;
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
@@ -25,10 +23,10 @@ public class evd implements dlc {
    public static final float fug = 0.3F;
    public static final float djz = 1.3F;
    private static int[] ctw;
-   private static final long a;
-   private static final long[] b;
-   private static final Integer[] c;
-   private static final Map d;
+   private static final long a = 0L;
+   private static final long[] b = null;
+   private static final Integer[] c = null;
+   private static final Map d = null;
 
    public static float fgd() {
       return (float)Math.toRadians(des(chi.field_1724.method_36454()));
@@ -350,7 +348,9 @@ public class evd implements dlc {
       return Math.hypot(chi.field_1724.method_18798().field_1352, chi.field_1724.method_18798().field_1350);
    }
 
-   public static native void dnu(etk event, float yaw);
+   public static void dnu(etk event, float yaw) {
+      throw new UnsupportedOperationException("Native movement implementation removed");
+   }
 
    public static double eve(float rotationYaw, double moveForward, double moveStrafing) {
       long ax = evd.a ^ 17065728863583L;
@@ -431,8 +431,11 @@ public class evd implements dlc {
    }
 
    static {
-      Loader.registerNativesForClass(1, evd.class);
-      Hidden0.special_clinit_1_230(evd.class);
+      requireRecoveredInitialization();
+   }
+
+   private static void requireRecoveredInitialization() {
+      throw new UnsupportedOperationException("Native initializer removed; recover Java constants first");
    }
 
    private static int a(int var0, long var1) {

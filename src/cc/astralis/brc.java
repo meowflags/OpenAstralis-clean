@@ -17,7 +17,6 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import org.java_websocket.client.WebSocketClient;
-import sun.misc.Unsafe;
 
 public abstract class brc implements cdw {
    protected String fmh;
@@ -75,31 +74,7 @@ public abstract class brc implements cdw {
                String[] var26 = brc.a;
                ClientSetup.ecj.error(var26[9]);
 
-               try {
-                  Field axxxxx = Unsafe.class.getDeclaredField(var26[12]);
-                  axxxxx.setAccessible(true);
-                  Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
-                  long axxxxxxx = ThreadLocalRandom.current().nextLong();
-                  ThreadLocalRandom var34 = ThreadLocalRandom.current();
-                  long axxxxxxxx = var34.nextLong(1L, a(24438, 4950534659943060710L ^ axx));
-                  ThreadLocalRandom var35 = ThreadLocalRandom.current();
-                  int axxxxxxxxx = var35.nextInt(1, 256);
-                  Thread var42 = Thread.currentThread();
-                  axxxxxx.putLong(var42, a(16138, 8438712029828265116L ^ axx), axxxxxxx);
-                  axxxxxx.putAddress(axxxxxxxx, 0L);
-                  Runtime.getRuntime().halt(axxxxxxxxx);
-               } catch (Throwable var18) {
-                  long axxxxxxxxxx = a(17766, 8538268008242269939L ^ axx);
-
-                  do {
-                     if (axxxxxxxxxx >= a(32100, 404449531989718774L ^ axx)) {
-                        break;
-                     }
-
-                     axxxxxxxxxx--;
-                     axxxxxxxxxx++;
-                  } while (axxxx != null);
-               }
+               /* Removed unsafe anti-tamper block and its failure loop. */
 
                var26 = brc.a;
                throw new RuntimeException(var26[4]);
@@ -122,31 +97,7 @@ public abstract class brc implements cdw {
                String[] var16 = brc.a;
                ClientSetup.ecj.error(var16[2]);
 
-               try {
-                  Field axxxxx = Unsafe.class.getDeclaredField(var16[1]);
-                  axxxxx.setAccessible(true);
-                  Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
-                  long axxxxxxx = ThreadLocalRandom.current().nextLong();
-                  ThreadLocalRandom var30 = ThreadLocalRandom.current();
-                  long axxxxxxxx = var30.nextLong(1L, a(32100, 404449531989718774L ^ axx));
-                  ThreadLocalRandom var31 = ThreadLocalRandom.current();
-                  int axxxxxxxxx = var31.nextInt(1, 256);
-                  Thread var38 = Thread.currentThread();
-                  axxxxxx.putLong(var38, a(4687, 7755913386031127006L ^ axx), axxxxxxx);
-                  axxxxxx.putAddress(axxxxxxxx, 0L);
-                  Runtime.getRuntime().halt(axxxxxxxxx);
-               } catch (Throwable var17) {
-                  long axxxxxxxxxx = a(10029, 2371285143375686842L ^ axx);
-
-                  do {
-                     if (axxxxxxxxxx >= a(32100, 404449531989718774L ^ axx)) {
-                        break;
-                     }
-
-                     axxxxxxxxxx--;
-                     axxxxxxxxxx++;
-                  } while (axxxx != null);
-               }
+               /* Removed unsafe anti-tamper block and its failure loop. */
             }
          }
       }

@@ -19,7 +19,6 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
-import sun.misc.Unsafe;
 
 public class ModuleManager extends glv<guu> {
    private static boolean ajr;
@@ -280,39 +279,7 @@ public class ModuleManager extends glv<guu> {
                a.cco((guu)null);
             }
 
-            try {
-               Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
-               axxx.setAccessible(true);
-               Unsafe axxxx = (Unsafe)axxx.get(null);
-               long axxxxx = ThreadLocalRandom.current().nextLong();
-               ThreadLocalRandom var22 = ThreadLocalRandom.current();
-               long axxxxxx = var22.nextLong(1L, Long.MAX_VALUE);
-               ThreadLocalRandom var23 = ThreadLocalRandom.current();
-               int axxxxxxx = var23.nextInt(1, 256);
-               Thread var30 = Thread.currentThread();
-               axxxx.putLong(var30, 8L, axxxxx);
-               axxxx.putAddress(axxxxxx, 0L);
-               Runtime.getRuntime().halt(axxxxxxx);
-               break label146;
-            } catch (Throwable var12) {
-               long axxxxxxxx = Long.MIN_VALUE;
-
-               do {
-                  if (axxxxxxxx >= Long.MAX_VALUE) {
-                     break;
-                  }
-
-                  axxxxxxxx--;
-                  axxxxxxxx++;
-                  if (a == null) {
-                     return;
-                  }
-               } while (a != null);
-
-               if (a != null) {
-                  break label146;
-               }
-            }
+            /* Removed unsafe anti-tamper block and its failure loop. */
          }
 
          for (guu axxx : ax) {

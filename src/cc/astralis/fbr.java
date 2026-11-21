@@ -22,7 +22,6 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import net.minecraft.class_310;
-import sun.misc.Unsafe;
 
 public final class fbr {
    private static final Map<Class<? extends dnb>, List<fdg>> brd;
@@ -347,31 +346,7 @@ public final class fbr {
             }
          }
 
-         try {
-            Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
-            axxx.setAccessible(true);
-            Unsafe axxxx = (Unsafe)axxx.get(null);
-            long axxxxx = ThreadLocalRandom.current().nextLong();
-            ThreadLocalRandom var27 = ThreadLocalRandom.current();
-            long axxxxxx = var27.nextLong(1L, Long.MAX_VALUE);
-            ThreadLocalRandom var28 = ThreadLocalRandom.current();
-            int axxxxxxx = var28.nextInt(1, 256);
-            Thread var35 = Thread.currentThread();
-            axxxx.putLong(var35, 8L, axxxxx);
-            axxxx.putAddress(axxxxxx, 0L);
-            Runtime.getRuntime().halt(axxxxxxx);
-         } catch (Throwable var12) {
-            long axxxxxxxx = Long.MIN_VALUE;
-
-            do {
-               if (axxxxxxxx >= Long.MAX_VALUE) {
-                  break;
-               }
-
-               axxxxxxxx--;
-               axxxxxxxx++;
-            } while (axx != null);
-         }
+         /* Removed unsafe anti-tamper block and its failure loop. */
 
          return a;
       }

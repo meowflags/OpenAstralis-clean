@@ -15,7 +15,6 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
-import sun.misc.Unsafe;
 
 public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
    private static int[] ec;
@@ -77,41 +76,7 @@ public class cvn extends fsa<Integer, Class<? extends cdw>> implements ge {
                   String[] var20 = cvn.a;
                   ClientSetup.ecj.error(var20[1]);
 
-                  try {
-                     Field axxxxxxxx = Unsafe.class.getDeclaredField(var20[0]);
-                     axxxxxxxx.setAccessible(true);
-                     Unsafe axxxxxxxxx = (Unsafe)axxxxxxxx.get(null);
-                     long axxxxxxxxxx = ThreadLocalRandom.current().nextLong();
-                     ThreadLocalRandom var29 = ThreadLocalRandom.current();
-                     long axxxxxxxxxxx = var29.nextLong(1L, a(10167, 1870759889522642574L ^ axx));
-                     ThreadLocalRandom var30 = ThreadLocalRandom.current();
-                     int axxxxxxxxxxxx = var30.nextInt(1, 256);
-                     Thread var32 = Thread.currentThread();
-                     axxxxxxxxx.putLong(var32, a(26982, 6259330809832570973L ^ axx), axxxxxxxxxx);
-                     axxxxxxxxx.putAddress(axxxxxxxxxxx, 0L);
-                     Runtime.getRuntime().halt(axxxxxxxxxxxx);
-                  } catch (Throwable var21) {
-                     long axxxxxxxxxxxxx = a(7784, 6085947342150268754L ^ axx);
-
-                     label49:
-                     while (true) {
-                        if (axxxxxxxxxxxxx >= a(12343, 7858841050935417103L ^ axx)) {
-                           break;
-                        }
-
-                        axxxxxxxxxxxxx--;
-                        axxxxxxxxxxxxx++;
-
-                        while (true) {
-                           var10000 = axxxx;
-
-
-                           break;
-
-                           break label49;
-                        }
-                     }
-                  }
+                  /* Removed unsafe anti-tamper block and its failure loop. */
                }
 
                var10++;

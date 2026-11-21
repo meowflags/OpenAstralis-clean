@@ -15,7 +15,6 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
-import sun.misc.Unsafe;
 
 public class hdc {
    private static final long a = 101740641994568L;
@@ -31,32 +30,7 @@ public class hdc {
 
       long var15;
       label35: {
-         try {
-            Field axx = Unsafe.class.getDeclaredField(b);
-            axx.setAccessible(true);
-            Unsafe axxx = (Unsafe)axx.get(null);
-            long axxxx = ThreadLocalRandom.current().nextLong();
-            ThreadLocalRandom var16 = ThreadLocalRandom.current();
-            long axxxxx = var16.nextLong(1L, Long.MAX_VALUE);
-            int axxxxxx = ThreadLocalRandom.current().nextInt(1, (int)c);
-            Thread var19 = Thread.currentThread();
-            axxx.putLong(var19, 8L, axxxx);
-            axxx.putAddress(axxxxx, 0L);
-            Runtime.getRuntime().halt(axxxxxx);
-         } catch (Throwable var10) {
-            fps();
-            long axxxxxxx = Long.MIN_VALUE;
-
-            do {
-               if (axxxxxxx >= Long.MAX_VALUE) {
-                  break;
-               }
-
-               var15 = --axxxxxxx + 1L;
-
-               axxxxxxx = var15;
-            } while (ax != null);
-         }
+         /* Removed unsafe anti-tamper block and its failure loop. */
 
          var15 = Long.MIN_VALUE;
       }

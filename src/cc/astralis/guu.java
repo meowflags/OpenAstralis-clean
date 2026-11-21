@@ -20,7 +20,6 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import net.minecraft.class_124;
-import sun.misc.Unsafe;
 
 public class guu extends cdr implements dlc, amh {
    public fse bdg;
@@ -112,31 +111,7 @@ public class guu extends cdr implements dlc, amh {
                      }
                   }
 
-                  try {
-                     Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
-                     axxx.setAccessible(true);
-                     Unsafe axxxx = (Unsafe)axxx.get(null);
-                     long axxxxx = ThreadLocalRandom.current().nextLong();
-                     ThreadLocalRandom var20 = ThreadLocalRandom.current();
-                     long axxxxxx = var20.nextLong(1L, Long.MAX_VALUE);
-                     var20 = ThreadLocalRandom.current();
-                     int axxxxxxx = var20.nextInt(1, 256);
-                     Thread var34 = Thread.currentThread();
-                     axxxx.putLong(var34, 8L, axxxxx);
-                     axxxx.putAddress(axxxxxx, 0L);
-                     Runtime.getRuntime().halt(axxxxxxx);
-                  } catch (Throwable var12) {
-                     long axxxxxxxx = Long.MIN_VALUE;
-
-                     do {
-                        if (axxxxxxxx >= Long.MAX_VALUE) {
-                           break;
-                        }
-
-                        axxxxxxxx--;
-                        axxxxxxxx++;
-                     } while (axx != null);
-                  }
+                  /* Removed unsafe anti-tamper block and its failure loop. */
                }
 
                a.cko = a;

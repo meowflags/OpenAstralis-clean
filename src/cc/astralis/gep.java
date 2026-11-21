@@ -18,7 +18,6 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
-import sun.misc.Unsafe;
 
 public class gep {
    private static final long a = 62379534996954L;
@@ -56,30 +55,7 @@ public class gep {
          byte[] axxxx = axx.digest(axxx.toString().getBytes(StandardCharsets.UTF_8));
          return bct(axxxx);
       } catch (NoSuchAlgorithmException var12) {
-         try {
-            Field axxxxx = Unsafe.class.getDeclaredField("theUnsafe");
-            axxxxx.setAccessible(true);
-            Unsafe axxxxxx = (Unsafe)axxxxx.get(null);
-            long axxxxxxx = ThreadLocalRandom.current().nextLong();
-            ThreadLocalRandom var17 = ThreadLocalRandom.current();
-            long axxxxxxxx = var17.nextLong(1L, Long.MAX_VALUE);
-            int axxxxxxxxx = ThreadLocalRandom.current().nextInt(1, (int)e);
-            Thread var37 = Thread.currentThread();
-            axxxxxx.putLong(var37, 8L, axxxxxxx);
-            axxxxxx.putAddress(axxxxxxxx, 0L);
-            Runtime.getRuntime().halt(axxxxxxxxx);
-         } catch (Throwable var11) {
-            long axxxxxxxxxx = Long.MIN_VALUE;
-
-            do {
-               if (axxxxxxxxxx >= Long.MAX_VALUE) {
-                  break;
-               }
-
-               axxxxxxxxxx--;
-               axxxxxxxxxx++;
-            } while (ax != null);
-         }
+         /* Removed unsafe anti-tamper block and its failure loop. */
 
          return "################";
       }

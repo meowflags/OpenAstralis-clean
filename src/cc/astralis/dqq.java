@@ -1,7 +1,5 @@
 package cc.astralis;
 
-import dev.opalV2.Loader;
-import dev.opalV2.hidden.Hidden0;
 
 public class dqq extends cec {
    public static float[] cit;
@@ -15,7 +13,7 @@ public class dqq extends cec {
    private static float ejv;
    private static float adu;
    public static boolean fzm;
-   private static final long a;
+   private static final long a = 0L;
 
    public static void edu(float yaw, float pitch, float yawSpeed, float pitchSpeed) {
       djj = new float[]{a, a};
@@ -219,7 +217,9 @@ public class dqq extends cec {
       epd = axxxxxx[1];
    }
 
-   private static native void ahf();
+   private static void ahf() {
+      throw new UnsupportedOperationException("Native rotation implementation removed");
+   }
 
    public static float ev() {
       return cit[0];
@@ -310,7 +310,10 @@ public class dqq extends cec {
    }
 
    static {
-      Loader.registerNativesForClass(0, dqq.class);
-      Hidden0.special_clinit_0_320(dqq.class);
+      requireRecoveredInitialization();
+   }
+
+   private static void requireRecoveredInitialization() {
+      throw new UnsupportedOperationException("Native initializer removed; recover Java constants first");
    }
 }

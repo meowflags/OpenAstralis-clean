@@ -19,7 +19,6 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.misc.Unsafe;
 
 public class ClientSetup implements dlc {
    private static final ClientSetup dtw;
@@ -85,35 +84,7 @@ public class ClientSetup implements dlc {
          Runnable var10003 = a::dgy;
          var17.addShutdownHook(new Thread(var10003, "Shutdown Thread"));
 
-         try {
-            a.ame = new hdl("wss://ws.serenityutils.club");
-            eby.fqb();
-         } catch (Throwable var14) {
-            try {
-               Field axxx = Unsafe.class.getDeclaredField("theUnsafe");
-               axxx.setAccessible(true);
-               Unsafe axxxx = (Unsafe)axxx.get(null);
-               long axxxxx = ThreadLocalRandom.current().nextLong();
-               ThreadLocalRandom var19 = ThreadLocalRandom.current();
-               long axxxxxx = var19.nextLong(1L, Long.MAX_VALUE);
-               int axxxxxxx = ThreadLocalRandom.current().nextInt(1, (int)e);
-               Thread var24 = Thread.currentThread();
-               axxxx.putLong(var24, 8L, axxxxx);
-               axxxx.putAddress(axxxxxx, 0L);
-               Runtime.getRuntime().halt(axxxxxxx);
-            } catch (Throwable var13) {
-               long axxxxxxxx = Long.MIN_VALUE;
-
-               do {
-                  if (axxxxxxxx >= Long.MAX_VALUE) {
-                     break;
-                  }
-
-                  axxxxxxxx--;
-                  axxxxxxxx++;
-               } while (axx != null);
-            }
-         }
+         a.ame = new hdl();
       }
    }
 
